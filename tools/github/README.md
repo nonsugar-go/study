@@ -20,10 +20,8 @@ $ git config --global user.email "999999999+nonsugar-go@users.noreply.github.com
 - [とほほのGitHub入門 - とほほのWWW入門](https://www.tohoho-web.com/ex/github.html)
 
 ## SSH での接続
-- [【入門】Githubにsshで接続する手順・注意点まとめ - カゴヤのサーバー研究室](https://www.kagoya.jp/howto/it-glos
-sary/develop/github_ssh/)
-- [git pushの接続方式をhttpsからsshに切り替える #Git - Qiita](https://qiita.com/ryomoucmei/items/ec8c225603ef983
-fc318)
+- [【入門】Githubにsshで接続する手順・注意点まとめ - カゴヤのサーバー研究室](https://www.kagoya.jp/howto/it-glossary/develop/github_ssh/)
+- [git pushの接続方式をhttpsからsshに切り替える #Git - Qiita](https://qiita.com/ryomoucmei/items/ec8c225603ef983fc318)
 
 1. Create Key Pair
 ```bash
@@ -70,9 +68,9 @@ $ git log --oneline --graph --all
 
 5. ローカルリポジトリの内容をリモートリポジトリに反映する (push)
 ```bash
-$ git remote -v                   ## リモート リポジトリに名前は origin
+$ git remote -v  ## リモート リポジトリに名前は origin
 $ git push -u origin update  ## -u は上流ブランチの設定 / 次回は git push で OK
-$ git branch -av
+$ git branch -avv
 $ git log --oneline --graph --all
 ```
 
@@ -84,8 +82,3 @@ $ git checkout main
 $ git pull
 $ git checkout update
 ```
-
-
-
-
-
