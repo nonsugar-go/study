@@ -9,6 +9,10 @@ set cursorline
 let g:xml_syntax_folding=1
 set foldmethod=syntax
 colorscheme desert
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsEditSplit="vertical"
 " mkdir -p ~/.vim/autoload
 " cd ~/.vim/autoload
 " curl -LO https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -16,6 +20,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'gyim/vim-boxdraw'
 Plug 'mattn/vim-goimports'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 call plug#end()
 augroup vimrc
 	au!
