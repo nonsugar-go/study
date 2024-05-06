@@ -10,7 +10,7 @@ $ vim [-p|-o|-O] FILE1 FILE2 ...  ## 複数ファイルを開く (-p…タブペ
 ```
 
 # .vimrc
-- [.vimrc]
+- [./.vimrc]
 
 ```vim
 set vb t_vb=
