@@ -1,7 +1,7 @@
 # VyOS のインストール
 # 概要
 - https://docs.vyos.io/ja/latest/configuration/index.html
-- [[VyOS nightly builds>https://vyos.net/get/nightly-builds/]]
+- [VyOS nightly builds](https://vyos.net/get/nightly-builds/)
 
 検証環境構築のためソフトウェア ルータ VyOS を利用しています。
 次のような環境で利用している想定で記述しています。
@@ -26,8 +26,8 @@
 
 # インストール
 ## LIVE CD (iso ファイル) からのインストール
-0. [[VyOS nightly builds>https://vyos.net/get/nightly-builds/]] から、''vyos-1.5-rolling-YYYYMMDDhhmm-amd64.iso'' をダウンロードします。
-0. VMware ESXi での仮想マシン作成例
+1. [VyOS nightly builds](https://vyos.net/get/nightly-builds/) から、`vyos-1.5-rolling-YYYYMMDDhhmm-amd64.iso` をダウンロードします。
+2. VMware ESXi での仮想マシン作成例
     - ゲスト OS タイプ: その他の Linux 5.x 以降 (64 ビット)
     (VyOS は Debian ベースなので近いものを選ぶ)
     - [仮想ハードウェア] タブ
@@ -41,7 +41,7 @@
         -- CD/DVD ドライブ1: vyos-1.5-rolling-YYYYMMDDhhmm-amd64.iso
     - [仮想マシン オプション]
         -- 起動オプション > ファームウェア: BIOS
-0. live CD で起動し、ログイン (id: vyos, passwd: vyos)
+3. live CD で起動し、ログイン (id: vyos, passwd: vyos)
 ```bash
 $ install image
 ## 以下の選択肢以外は既定値 (enter) で進める。
@@ -55,8 +55,8 @@ $ install image
 $ reboot
 ## Are you sure you want to reboot this system? [y/N] y
 ```
-0. CD/DVD を抜く。(アクション > 設定の編集 > CD/DVD ドライブ: ホスト デバイス, [接続] のチェックを外す)
-0. HDD からブートしたら、vyos ユーザでログインし、初期設定を実施します。
+4. CD/DVD を抜く。(アクション > 設定の編集 > CD/DVD ドライブ: ホスト デバイス, [接続] のチェックを外す)
+5. HDD からブートしたら、vyos ユーザでログインし、初期設定を実施します。
 
 ## 仮想マシン複製時の注意
 仮想マシンのイメージを複製して使用する場合、MAC アドレスが変更されます。
@@ -101,7 +101,7 @@ $ poweroff
 ```
 
 ## 更新
-+ [[VyOS nightly builds>https://vyos.net/get/nightly-builds/]] から、''vyos-1.5-rolling-YYYYMMDDhhmm-amd64.iso'' のリンクを確認しておきます。(wget の引数で指定する URL となります。)
++ [VyOS nightly builds](https://vyos.net/get/nightly-builds/) から、`vyos-1.5-rolling-YYYYMMDDhhmm-amd64.iso` のリンクを確認しておきます。(wget の引数で指定する URL となります。)
 
 ```
 $ sh ver ## 現状のバージョン確認
