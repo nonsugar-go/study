@@ -1,6 +1,6 @@
 # CentOS
 
-## CD-ROM を `yum` のリポジトリに設定する
+## CentOS 7 の CD-ROM を `yum` のリポジトリに設定する
 ```bash
 $ sudo mkdir /mnt/cdrom
 $ sudo mount /dev/cdrom /mnt/cdrom
