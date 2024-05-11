@@ -21,7 +21,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 ```
 
 ```bash
-$ sudo yum --disablerepo=\* --enablerepo=cdrom update
+$ sudo yum update
 ```
 
 😃
