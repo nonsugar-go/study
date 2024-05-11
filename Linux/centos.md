@@ -5,7 +5,7 @@
 $ sudo mkdir /mnt/cdrom
 $ sudo mount /dev/cdrom /mnt/cdrom
 $ cd /etc/yum.repos.d
-$ sudo CentOS-Media.repo cdrom.repo
+$ sudo cp -p CentOS-Media.repo cdrom.repo
 $ sudo vi cdrom.repo
 ```
 
