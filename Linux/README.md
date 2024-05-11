@@ -1,3 +1,3 @@
 # Linux
 
-- [CentOS]
+- [CentOS](centos.md)
