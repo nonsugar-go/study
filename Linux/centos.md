@@ -20,6 +20,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 ```
 
 ```bash
+$ sudo yum clean all
 $ sudo yum update
 ```
 
