@@ -20,8 +20,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 ```
 
 ```bash
-$ sudo yum clean all
-$ sudo yum update
+$ sudo yum --disablerepo=\* --enablerepo=cdrom update
 ```
 
 😃
