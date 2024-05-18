@@ -6,6 +6,7 @@
 
 # クラス
 - https://docs.python.org/ja/3/tutorial/classes.html
+- https://docs.python.org/ja/3/library/abc.html
 - https://docs.python.org/ja/3/library/functions.html#super
 - https://docs.python.org/ja/3/library/operator.html
 - https://docs.python.org/ja/3/library/functions.html#classmethod
