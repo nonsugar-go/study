@@ -10,7 +10,7 @@
 - https://docs.python.org/ja/3/library/operator.html
 - https://docs.python.org/ja/3/library/functions.html#classmethod
 - https://docs.python.org/ja/3/library/functions.html#staticmethod
-- [[Pythonの特殊メソッド一覧を備忘録としてまとめてみた。 - Qiita>https://qiita.com/y518gaku/items/07961c61f5efef13cccc]]
+- [Pythonの特殊メソッド一覧を備忘録としてまとめてみた。 - Qiita](https://qiita.com/y518gaku/items/07961c61f5efef13cccc)
 
 # パッケージ管理
 ## 確認
@@ -67,43 +67,24 @@ for row in reader:
 
 # openpyxl
 - インストール
- $ pip3 install openpyxl
+```bash
+$ pip3 install openpyxl
+```
 
 # python-docx
 - インストール
- $ pip3 install python-docx
-
-# Pexpect の使用例
-概要: ネットワーク機器にログインして、コマンドを実行するスクリプト
-- Cygwin をインストール
-- Packages: Python/python3-pexpect
--           Net/inetutils (telnet, ftp)
--           Net/openssh (ssh, sftp)
-
-作成中...
+```bash
+$ pip3 install python-docx
+```
 
 # Jinja2
 - Cygwin をインストール
 - Packages: Python/python3-jinja2
 
-# Ansible
-作成中...
-- Cygwin と 以下のパッケージをインストール
--- Devel/gcc-core
--- Devel/make
--- Libs/libffi-devel
--- Net/openssl-devel
--- Python/python-crypto
--- Python/python2-devel
--- Python/python2-pip
-
- $ pip2 install ansible
- $ ssh-copy-id USER@IpAddress
-
 # 参考
--[[はじめに &mdash; pep8-ja 1.0 ドキュメント>http://pep8-ja.readthedocs.io/ja/latest/]]
--[[ネットワーク自動化、なに使う？ ～自動化ツール紹介～　(2017/07/21開催)>https://www.slideshare.net/akira6592/networkautomationtools20170721-78191620]]
--[[Python for Network Engineers>https://pynet.twb-tech.com/blog/]]
+- [はじめに &mdash; pep8-ja 1.0 ドキュメント](http://pep8-ja.readthedocs.io/ja/latest/)
+- [ネットワーク自動化、なに使う？ ～自動化ツール紹介～　(2017/07/21開催)](https://www.slideshare.net/akira6592/networkautomationtools20170721-78191620)
+- [Python for Network Engineers](https://pynet.twb-tech.com/blog/)
 -[[コーシンラボ>http://kooshin.hateblo.jp/]]
 -[[Network Automation  Template Configurations with Jinja2 and YAML &#8211; Network Otaku>http://networkotaku.com/2017/06/06/network-automation-template-configurations-with-jinja2-and-yaml/]]
 -[[Load a Jinja2 template from the filesystem and render it>http://matthiaseisen.com/pp/patterns/p0198/]]
