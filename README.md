@@ -4,7 +4,7 @@
 - [Linux](Linux)
 - [Network Devices](network-devices)
 - [Tools](tools)
-- [Programming](porogramming)
+- [Programming](programming)
 
 # About me
 :tomato: :tomato:
