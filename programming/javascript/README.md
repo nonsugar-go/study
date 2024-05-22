@@ -10,11 +10,11 @@
 - https://www.tohoho-web.com/ex/typescript.html
 - Microsoft が中心となって開発を進める JavaScript に静的な型付け機能などを搭載したプログラミング言語
 # Node.js
+- [Node.js](node_js.md)
 - サーバサイドの JavaScript 実行環境
 # React
 - Web フロントエンド ライブラリ
 # Next.js
-- [Node.js](node_js.md)
 - https://nextjs.org/
 - https://www.tohoho-web.com/ex/nextjs.html
 - オープンソースの Web アプリケーション フレームワーク
