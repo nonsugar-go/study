@@ -6,6 +6,7 @@
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 # TypeScript
 - https://www.typescriptlang.org/
+- https://learn.microsoft.com/ja-jp/training/modules/typescript-get-started/
 - https://www.tohoho-web.com/ex/typescript.html
 - Microsoft が中心となって開発を進める JavaScript に静的な型付け機能などを搭載したプログラミング言語
 # Node.js
