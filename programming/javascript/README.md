@@ -14,7 +14,7 @@
 # React
 - Web フロントエンド ライブラリ
 # Next.js
-- [node_js.md]
+- [Node.js](node_js.md)
 - https://nextjs.org/
 - https://www.tohoho-web.com/ex/nextjs.html
 - オープンソースの Web アプリケーション フレームワーク
