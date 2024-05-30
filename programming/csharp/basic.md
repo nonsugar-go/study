@@ -10,3 +10,6 @@
    - プロジェクト名: Tomato.UI
    - 場所: (任意の場所)
    - ソリューション名: Tomato
+
+# C# と Java
+- [C#とJavaの書き方の違いをまとめる #Java - Qiita](https://qiita.com/yunomichawan/items/9c9e036383545a74ee6e)
