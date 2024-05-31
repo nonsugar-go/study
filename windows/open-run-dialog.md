@@ -1,13 +1,7 @@
 # ファイル名を指定して実行 (Ctrl + R)
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
-
 | 表示                                    | ファイル名を指定して実行           |
-|-----------------------------------------+------------------------------------|
+|-----------------------------------------|------------------------------------|
 | 設定 (Win + I)                          | ms-settings:                       |
 | 設定 > Windows Update                   | ms-settings:windowsupdate          |
 | Administrator で エクスプローラの表示   | runas /user:Administrator explorer |
