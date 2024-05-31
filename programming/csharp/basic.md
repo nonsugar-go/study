@@ -11,12 +11,14 @@
    - プロジェクト名: Tomato.UI
    - 場所: (任意の場所)
    - ソリューション名: Tomato
-
-# お作法的なもの
-## ファイルへの書き込み
-- https://johobase.com/streamwriter-class-writetext-csharp/
+# 文法
 ## 書式指定
 - [C#(.NET)の書式指定 #C# - Qiita](https://qiita.com/haruka_kotani/items/8d738e3fb76c6fdf0b3a)
+## ref, out, in
+- [C#のref・out・inの違いをまとめました #C# - Qiita](https://qiita.com/fksk36/items/dfa7e7e6ab40ecdd4ee8)
+# 例
+## ファイルへの書き込み
+- https://johobase.com/streamwriter-class-writetext-csharp/
 # Misc
 ## C# と Java
 - [C#とJavaの書き方の違いをまとめる #Java - Qiita](https://qiita.com/yunomichawan/items/9c9e036383545a74ee6e)
