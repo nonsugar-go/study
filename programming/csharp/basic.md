@@ -13,3 +13,7 @@
 
 # C# と Java
 - [C#とJavaの書き方の違いをまとめる #Java - Qiita](https://qiita.com/yunomichawan/items/9c9e036383545a74ee6e)
+
+# ソースコードの確認
+- VS で関数上で [F12] で定義を確認する
+- https://referencesource.microsoft.com/
