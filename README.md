@@ -1,8 +1,9 @@
 # study
 ネットワークとプログラミング言語の学習用
 
-- [Linux](Linux)
 - [Network Devices](network-devices)
+- [Windows](windows)
+- [Linux](Linux)
 - [Tools](tools)
 - [Programming](programming)
 
