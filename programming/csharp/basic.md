@@ -1,6 +1,7 @@
 # C# の基礎
 # ドキュメント
 - https://dotnet.microsoft.com/ja-jp/languages/csharp
+- https://learn.microsoft.com/ja-jp/dotnet/csharp/tour-of-csharp/overview
 - https://www.tohoho-web.com/ex/c-sharp.html
 # インストール
 1. https://visualstudio.microsoft.com/ja/downloads/ から Visual Studio Community Ed. をダウンロードしてインストール
