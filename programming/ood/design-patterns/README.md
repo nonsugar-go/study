@@ -1,6 +1,15 @@
 # Design Patterns
-- [Desing Patters in Golang. What a Design Pattern is? | by Israel Josu&#233; Parra Rosales | Towards Dev](https://medium.com/@josueparra2892/desing-patters-in-golang-24a142d2cc91)
+- [デザインパターン (ソフトウェア) - Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3_(%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2))
 - https://refactoring.guru/design-patterns
+
+## Golang
+* Go 言語
+- [Desing Patters in Golang. What a Design Pattern is? | by Israel Josu&#233; Parra Rosales | Towards Dev](https://medium.com/@josueparra2892/desing-patters-in-golang-24a142d2cc91)
+- https://golangbyexample.com/all-design-patterns-golang/
+- [Go Behavioral Patterns](https://www.packtpub.com/product/go-behavioral-patterns-video/9781788397377)
+- [&#129504; DESIGN PATTERNS &#129504; - YouTube](https://www.youtube.com/playlist?list=PLfyLecA5DLOcUXmgk3BLDgWQvBoHbea2m)
+- [オブジェクト指向言語としてGolangをやろうとするとハマること #Go - Qiita](https://qiita.com/shibukawa/items/16acb36e94cfe3b02aa1)
+- https://go.dev/play/p/IM0gpYOJVY
 - https://www.youtube.com/playlist?list=PLUg0hJGmtzyrY0oxbUpSVdfcgguubifnK
 - https://www.youtube.com/playlist?list=PLZ6pHHPq5DrnH7XK5NXAXbCFeHfQzIauk
 
