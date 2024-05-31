@@ -3,7 +3,7 @@
 
 - [Network Devices](network-devices)
 - [Windows](windows)
-- [Linux](Linux)
+- [Linux](linux)
 - [Tools](tools)
 - [Programming](programming)
 
