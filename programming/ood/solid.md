@@ -1,4 +1,8 @@
 # SOLID Principles / SOLID 原則
+- https://en.wikipedia.org/wiki/SOLID
+- http://www.butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod
+- https://en.wikipedia.org/wiki/Barbara_Liskov
+- [イラストで理解するSOLID原則 #初心者 - Qiita](https://qiita.com/baby-degu/items/d058a62f145235a0f007)
 
 - Single Responsibility Principle (SRP) / 単一責任の原則
 - Open Closed Principle (OCP) / オープンクローズドの原則
