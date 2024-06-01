@@ -11,13 +11,13 @@
     - **規定のプロファイルの選択**で Cygwin を追加
     - コマンド パレット (Ctrl+Shift+P): Open User Settings JSON
     ```json
-            "Cygwin": {
-            "path": "C:\\cygwin64\\bin\\bash.exe",
-            "args": [
-                "--login"
-            ]
-            "env": {"CHERE_INVOKING": "1"},
-        }
+    "Cygwin": {
+      "path": "C:\\cygwin64\\bin\\bash.exe",
+      "args": [
+         "--login"
+      ]
+      "env": {"CHERE_INVOKING": "1"},
+    }
     ```
 # ショートカット キー
 
