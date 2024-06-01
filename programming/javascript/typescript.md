@@ -12,10 +12,10 @@
 2. https://www.typescriptlang.org/download/ を確認する
 ```bash
 $ npm install typescript --save-dev
-$ ../node_modules/typescript/bin/tsc --version
+$ ../node_modules/.bin/tsc --version
 ```
 
 # Compile
 ```bash
-$ ../node_modules/typescript/bin/tsc using-ts.ts 
+$ ../node_modules/.bin/tsc using-ts.ts 
 ```
