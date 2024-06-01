@@ -1,10 +1,7 @@
 # Visual Stadio Code
-- [VS Codeのターミナルにcygwinを使用する - ICT Diary](https://ictdiary.hatenadiary.jp/entry/2022/12/26/VS_Code%E3%81%AE%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%ABcygwin%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B)
-- [Visual Studio Code TIPS - ＠IT](https://atmarkit.itmedia.co.jp/ait/series/9744/index.html)
-- [VS Code の便利なショートカットキー #VSCode - Qiita](https://qiita.com/12345/items/64f4372fbca041e949d0)
-- [【Windows版】VS Code キーボードショートカット一覧 （オススメ付き） #VSCode - Qiita](https://qiita.com/TakahiRoyte/items/cdab6fca64da386a690b)
-- https://motamemo.com/vscode/vscode-tips/keyboard-shortcut-sidebar/
-- [VS Codeで指定範囲をコメントにしたり戻したりするには](https://atmarkit.itmedia.co.jp/ait/articles/1806/22/news034.html)
+
+# Install
+- https://code.visualstudio.com/download
 
 # ショートカット キー
 
@@ -50,3 +47,12 @@
   - 拡張: Markdown Preview Enhanced
   - 拡張: Markdown All in One
   - 拡張: Excel to Markdown table
+
+# 参考
+- [VS Codeのターミナルにcygwinを使用する - ICT Diary](https://ictdiary.hatenadiary.jp/entry/2022/12/26/VS_Code%E3%81%AE%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%ABcygwin%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B)
+- [Visual Studio Code TIPS - ＠IT](https://atmarkit.itmedia.co.jp/ait/series/9744/index.html)
+- [VS Code の便利なショートカットキー #VSCode - Qiita](https://qiita.com/12345/items/64f4372fbca041e949d0)
+- [【Windows版】VS Code キーボードショートカット一覧 （オススメ付き） #VSCode - Qiita](https://qiita.com/TakahiRoyte/items/cdab6fca64da386a690b)
+- https://motamemo.com/vscode/vscode-tips/keyboard-shortcut-sidebar/
+- [VS Codeで指定範囲をコメントにしたり戻したりするには](https://atmarkit.itmedia.co.jp/ait/articles/1806/22/news034.html)
+
