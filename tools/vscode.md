@@ -1,25 +1,6 @@
 # Visual Stadio Code
-
 # Install
 - https://code.visualstudio.com/download
-# Extensions (Ctrl+Shift+X)
-## 初期設定
-- Japanese Language Pack for VS Code
-  - コマンド パレット (Ctrl+Shift+P): Configure Display Language > 日本語 (ja)
-- MSYS2/Cygwin/MinGW/Clang support
-  - https://iww.hateblo.jp/entry/20240220/cygwin
-    - **規定のプロファイルの選択**で Cygwin を追加
-    - コマンド パレット (Ctrl+Shift+P): Open User Settings JSON
-    ```json
-    "Cygwin": {
-      "path": "C:\\cygwin64\\bin\\bash.exe",
-      "args": [
-         "--login"
-      ]
-      "env": {"CHERE_INVOKING": "1"},
-    }
-    ```
-
 # ショートカット キー
 - ショートカットキーの編集 (Ctrl+K, Ctrl+S)
   - 最大化されるパネルの切り替え > 既定でないので Ctrl + Alt + @ に割り当て
@@ -44,28 +25,46 @@
 | すべて展開 | Ctrl + K, Ctrl + J |
 | 再帰的にたたむ | Ctrl + K, Ctrl + [ |
 | 再帰手に展開 | Ctrl + K, Ctrl + ] |
-
+# Extensions (Ctrl+Shift+X)
+## 初期設定
+- Japanese Language Pack for VS Code
+  - コマンド パレット (Ctrl+Shift+P): Configure Display Language > 日本語 (ja)
+- MSYS2/Cygwin/MinGW/Clang support
+  - https://iww.hateblo.jp/entry/20240220/cygwin
+    - **規定のプロファイルの選択**で Cygwin を追加
+    - コマンド パレット (Ctrl+Shift+P): Open User Settings JSON
+    ```json
+    "Cygwin": {
+      "path": "C:\\cygwin64\\bin\\bash.exe",
+      "args": [
+         "--login"
+      ]
+      "env": {"CHERE_INVOKING": "1"},
+    }
+    ```
+# JavaScript
+- ESLint
+# Markdown
+- https://dev.classmethod.jp/articles/non-97-operation-manual/
+  - 拡張: Markdown Preview Enhanced
+  - 拡張: Markdown All in One
+  - 拡張: Excel to Markdown table
 # Golang
 - https://code.visualstudio.com/docs/languages/go
 - https://zenn.dev/ikoba/articles/vscode-golang-snippets
 - [意外と知らないVSCode上でGoを爆速開発するためのTips5選 #Go - Qiita](https://qiita.com/yagi_eng/items/9e599913605625809d9c)
 - 拡張: gotemplate-syntax ( https://github.com/casualjim/vscode-gotemplate )
  html:5<tab>
-
 # HTML
 - VS Code ES7+ React/Redux/React-Native/JS snippets
 - CSS Peek
 - HTML Boilerplate
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-
 # AWS
 - https://docs.aws.amazon.com/ja_jp/toolkit-for-vscode/latest/userguide/setup-toolkit.html
-
-# Markdown
-- https://dev.classmethod.jp/articles/non-97-operation-manual/
-  - 拡張: Markdown Preview Enhanced
-  - 拡張: Markdown All in One
-  - 拡張: Excel to Markdown table
+# その他
+- Path Intellisense
+- Prettier - Code formatter
 
 # 参考
 - [VS Codeのターミナルにcygwinを使用する - ICT Diary](https://ictdiary.hatenadiary.jp/entry/2022/12/26/VS_Code%E3%81%AE%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%ABcygwin%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B)
