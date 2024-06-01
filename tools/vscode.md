@@ -2,6 +2,9 @@
 
 # Install
 - https://code.visualstudio.com/download
+# Extensions
+## 一般
+- Japanese Language Pack for VS Code
 
 # ショートカット キー
 
