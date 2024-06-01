@@ -17,5 +17,5 @@ $ ../node_modules/.bin/tsc --version
 
 # Compile
 ```bash
-$ ../node_modules/.bin/tsc using-ts.ts 
+$ ../node_modules/.bin/tsc app-ts.ts 
 ```
