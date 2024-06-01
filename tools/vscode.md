@@ -7,29 +7,32 @@
 - [VS Codeで指定範囲をコメントにしたり戻したりするには](https://atmarkit.itmedia.co.jp/ait/articles/1806/22/news034.html)
 
 # ショートカット キー
-- コマンド パレット: Ctrl + Shift + P
-- ショートカットキーの編集: Ctrl + K, Ctrl + S
--- 最大化されるパネルの切り替え: 既定でないので Ctrl + Alt + @ に割り当て
-- 配色変更: Ctrl + K, Ctrl + T
-- 全画面: F11
-- サイドバーを閉じる: Ctrl + B
-- エクスプローラー: Ctrl + Shift + E
-- カーソルのある行の選択: Ctrl + L
-- 行の複製: Shift + Alt + ↓(↑)
-- コメント化(トグル): Ctrl + /
-- ブロックコメント化(トグル): Shift + Alt + A
-- 複数個所選択: Ctrl + D
-- フォーマット: Shift + Alt + F
-- 行末の空白削除: Ctrl + K, Ctrl + X
-- すべてたたむ: Ctrl + K, Ctrl + 0
-- すべて展開: Ctrl + K, Ctrl + J
-- 再帰的にたたむ: Ctrl + K, Ctrl + [
-- 再帰手に展開: Ctrl + K, Ctrl + ]
+
+| 機能 | ショートカット キー |
+| ---- | ------------------- |
+| コマンド パレット | Ctrl + Shift + P |
+|> ショートカットキーの編集 | Ctrl + K, Ctrl + S |
+|> 最大化されるパネルの切り替え | 既定でないので Ctrl + Alt + @ に割り当て |
+| 配色変更 | Ctrl + K, Ctrl + T |
+| 全画面 | F11 |
+| サイドバーを閉じる | Ctrl + B |
+| エクスプローラー | Ctrl + Shift + E |
+| カーソルのある行の選択 | Ctrl + L |
+| 行の複製 | Shift + Alt + ↓(↑) |
+| コメント化(トグル) | Ctrl + / |
+| ブロックコメント化(トグル)| Shift + Alt + A |
+| 複数個所選択 | Ctrl + D |
+| フォーマット | Shift + Alt + F |
+| 行末の空白削除 | Ctrl + K, Ctrl + X |
+| すべてたたむ | Ctrl + K, Ctrl + 0 |
+| すべて展開 | Ctrl + K, Ctrl + J |
+| 再帰的にたたむ | Ctrl + K, Ctrl + [ |
+| 再帰手に展開 | Ctrl + K, Ctrl + ] |
 
 # Golang
 - https://code.visualstudio.com/docs/languages/go
 - https://zenn.dev/ikoba/articles/vscode-golang-snippets
-- [[意外と知らないVSCode上でGoを爆速開発するためのTips5選 #Go - Qiita>https://qiita.com/yagi_eng/items/9e599913605625809d9c]]
+- [意外と知らないVSCode上でGoを爆速開発するためのTips5選 #Go - Qiita](https://qiita.com/yagi_eng/items/9e599913605625809d9c)
 - 拡張: gotemplate-syntax ( https://github.com/casualjim/vscode-gotemplate )
  html:5<tab>
 
@@ -37,7 +40,7 @@
 - VS Code ES7+ React/Redux/React-Native/JS snippets
 - CSS Peek
 - HTML Boilerplate
-- [[Live Server>https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer]]
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 # AWS
 - https://docs.aws.amazon.com/ja_jp/toolkit-for-vscode/latest/userguide/setup-toolkit.html
