@@ -2,11 +2,23 @@
 
 # Install
 - https://code.visualstudio.com/download
-# Extensions
-## 一般
+# Extensions (Ctrl+Shift+X)
+## 初期設定
 - Japanese Language Pack for VS Code
   - コマンド パレット (Ctrl+Shift+P): Configure Display Language > 日本語 (ja)
-
+- MSYS2/Cygwin/MinGW/Clang support
+  - https://iww.hateblo.jp/entry/20240220/cygwin
+    - **規定のプロファイルの選択**で Cygwin を追加
+    - コマンド パレット (Ctrl+Shift+P): Open User Settings JSON
+    ```json
+            "Cygwin": {
+            "path": "C:\\cygwin64\\bin\\bash.exe",
+            "args": [
+                "--login"
+            ]
+            "env": {"CHERE_INVOKING": "1"},
+        }
+    ```
 # ショートカット キー
 
 | 機能 | ショートカット キー |
