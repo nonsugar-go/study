@@ -47,6 +47,6 @@
 
 # Markdown
 - https://dev.classmethod.jp/articles/non-97-operation-manual/
--- 拡張: Markdown Preview Enhanced
--- 拡張: Markdown All in One
--- 拡張: Excel to Markdown table
+  - 拡張: Markdown Preview Enhanced
+  - 拡張: Markdown All in One
+  - 拡張: Excel to Markdown table
