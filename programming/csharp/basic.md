@@ -22,6 +22,22 @@ export PATH="${PATH}:$(cygpath ${GOPATH}\\bin):/cygdrive/e/Program Files/Microso
 
 コンパイル
 
+```C#
+using System;
+
+class TestClass
+{
+    public static void Main(string[] args)
+    {
+        foreach (var arg in args)
+        {
+            Console.WriteLine($"arg: {arg}");
+        }
+        Console.WriteLine("Hello, World!");
+    }
+}
+```
+
 ```bash
 $ csc Hello.cs
 $ ./Hello
