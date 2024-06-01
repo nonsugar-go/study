@@ -5,6 +5,7 @@
 # Extensions
 ## 一般
 - Japanese Language Pack for VS Code
+  - コマンド パレット (Ctrl+Shift+P): Configure Display Language > 日本語 (ja)
 
 # ショートカット キー
 
