@@ -1,0 +1,17 @@
+# TypeScript
+
+# Reference
+- https://www.tohoho-web.com/ex/typescript.html
+
+# Install
+1. npm コマンドを使用するために Node.js のインストール (https://nodejs.org/)
+2. https://www.typescriptlang.org/download/ を確認する
+```bash
+$ npm install typescript --save-dev
+$ ../node_modules/typescript/bin/tsc --version
+```
+
+# Compile
+```bash
+$ ../node_modules/typescript/bin/tsc using-ts.ts 
+```
