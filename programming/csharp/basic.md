@@ -22,7 +22,7 @@ export PATH="${PATH}:$(cygpath ${GOPATH}\\bin):/cygdrive/e/Program Files/Microso
 
 コンパイル
 
-```C#
+```cs
 using System;
 
 class TestClass
