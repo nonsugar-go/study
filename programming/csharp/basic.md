@@ -11,6 +11,22 @@
    - プロジェクト名: Tomato.UI
    - 場所: (任意の場所)
    - ソリューション名: Tomato
+# Hello, World!
+- https://learn.microsoft.com/ja-jp/dotnet/csharp/fundamentals/program-structure/main-command-line
+
+Cygwin でパスに追加 **~/.bash_profile**
+
+```bash
+export PATH="${PATH}:$(cygpath ${GOPATH}\\bin):/cygdrive/e/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn"
+```
+
+コンパイル
+
+```bash
+$ csc Hello.cs
+$ ./Hello
+```
+
 # 文法
 ## 書式指定
 - [C#(.NET)の書式指定 #C# - Qiita](https://qiita.com/haruka_kotani/items/8d738e3fb76c6fdf0b3a)
