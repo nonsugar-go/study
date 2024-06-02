@@ -24,4 +24,7 @@
 # let, const
 - let, const はブロックスコープ
 - var はグローバルスコープか関数スコープ
-
+# アロー関数式
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+# デフォルト引数
+- https://typescriptbook.jp/reference/functions/default-parameters
