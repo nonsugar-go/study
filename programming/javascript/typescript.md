@@ -67,6 +67,45 @@ $ ../node_modules/.bin/tsc -w
     "using-ts.ts"
   ],
 ```
+
+## Compiler Options
+`tsconfig.js` の説明
+
+```json
+{
+  "compilerOptions": {
+    "target": "es2016",
+    // コンパイルされる JavaScript のバージョン
+    "module": "commonjs",
+    // "lib": [],
+    // "allowJs": files. // *.js をコンパイル対象に
+    // "checkJs": true, // *.js をチェック対象に
+    // "jsx": "preserve", // React 使用時
+    "sourceMap": true, // *.js.map が生成される。ブラウザで TypeScript のソースが見れる
+    // "outFile": "./",
+    // JavaScript のファイルを一つにまとめるときに使用
+    "outDir": "./dist", // JavaScript の出力先
+    "rootDir": "./src", // *.ts ファイル格納先
+    "removeComments": true, // コメントを削除
+    // "noEmit": true, // コンパイルせず、チェックのみ
+    // "downlevelIteration": true, // 古い JavaScript で for ループがうまく動作しない場合
+    "noEmitOnError": true, // コンパイルエラーがある場合、出力しない
+    "strict": true, // 厳格な型チェック
+    "noUnusedLocals": true, // 未使用のローカル変数を許可しない
+    "noUnusedParameters": true, // 未使用のパラメータを許可しない
+    "noImplicitReturns": true,  // return が無い分岐を許可しない
+    "noFallthroughCasesInSwitch": true, // switch 文でbreak無しを許可しない
+    "forceConsistentCasingInFileNames": true, // ファイル名の大文字小文字が正しいことを強制する
+  }
+}
+```
+
+## Visual Studio Code + Chrome でデバッグ
+1. `tsconfig.js` の設定 `"sourceMap": true,`
+2. `npm start`
+3. vscode でブレイクポイントを設定
+4. Ctrl+Shift+P > Debug: Open Link: http://localhost:3000/
+
 # 文法
 ## Type
 ```js
