@@ -31,3 +31,5 @@
 # スプレッド/レスト 演算子 (spread / rest)
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 - https://github.com/tc39/proposal-object-rest-spread
+# 分割代入 (Destructuring assignment)
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
