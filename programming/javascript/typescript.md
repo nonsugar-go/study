@@ -20,7 +20,35 @@ $ ../node_modules/.bin/tsc --version
 $ ../node_modules/.bin/tsc app.ts 
 ```
 
-# Type
+# lite-server (簡易的な Web サーバ)
+1. 初期化
+```bash
+$ npm init
+$ npm install --save-dev lite-server
+```
+
+2. `package.json` に以下を追加
+```json
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+```
+
+3. lite-server を起動
+```bash
+$ npm start
+```
+
+> [!NOTE]
+> `node_modules` フォルダを削除したときは、`npm install`  で再作成する
+
+> [!NOTE]
+> watch mode を使うこともできる。
+> `../node_modules/.bin/tsc app.ts -w`
+
+# 文法
+## Type
 ```js
 // Type
 // number: 1, 3.14, -100
