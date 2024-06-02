@@ -5,7 +5,7 @@
 ## アロー関数式
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 # TypeScript
-- [TypeScript](typescript.md)
+- [TypeScript](typescript)
 # Node.js
 - [Node.js](node_js.md)
 - サーバサイドの JavaScript 実行環境
