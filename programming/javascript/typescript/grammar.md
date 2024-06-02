@@ -28,5 +28,6 @@
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 # デフォルト引数
 - https://typescriptbook.jp/reference/functions/default-parameters
-# スプレッド 演算子
+# スプレッド/レスト 演算子 (spread / rest)
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+- https://github.com/tc39/proposal-object-rest-spread
