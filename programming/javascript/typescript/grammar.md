@@ -20,3 +20,8 @@
 // nuknown // any を使うよりは良い
 // never // 戻り値を返さない
 ```
+
+# let, const
+- let, const はブロックスコープ
+- var はグローバルスコープか関数スコープ
+
