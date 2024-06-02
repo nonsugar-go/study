@@ -34,4 +34,9 @@ $ ../node_modules/.bin/tsc app.ts
 // Union: number | string
 // Literal: 'jp'
 // type alias: type NumberOrString = number | string;
+// void // 何も返さない
+// undefined
+// Function
+// nuknown // any を使うよりは良い
+// never // 戻り値を返さない
 ```
