@@ -42,11 +42,31 @@ $ npm start
 
 > [!NOTE]
 > `node_modules` フォルダを削除したときは、`npm install`  で再作成する
+## watch モード
+### 一つの ts ファイルを監視
+```bash
+$ ../node_modules/.bin/tsc app.ts -w
+```
+### 複数ファイルを監視
+```
+## 初期化 (tsconfig.json が作成される)
+$ ../node_modules/.bin/tsc --init
 
-> [!NOTE]
-> watch mode を使うこともできる。
-> `../node_modules/.bin/tsc app.ts -w`
+## *.ts ファイルをコンパイル 
+$ ../node_modules/.bin/tsc
 
+## watch モード
+$ ../node_modules/.bin/tsc -w
+```
+### tsc コマンドのコンパイル除外指定
+`tsconfig.json` に記述
+```json
+  "exclude": [
+    "node_modules",
+    "**/type-*.ts",
+    "using-ts.ts"
+  ],
+```
 # 文法
 ## Type
 ```js
