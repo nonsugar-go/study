@@ -61,7 +61,7 @@
 - https://refactoring.guru/design-patterns/state/go/example
 ## Strategy
 - https://refactoring.guru/design-patterns/strategy/go/example
-## Template Method
+## [Template Method](template-method.md)
 - https://refactoring.guru/design-patterns/template-method/go/example
 - https://qiita.com/ttsubo/items/a36c6fc9acac3513b4af
 - https://www.youtube.com/watch?v=QWKbLWoRlyA
