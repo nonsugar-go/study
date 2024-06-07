@@ -49,6 +49,8 @@
       "env": {"CHERE_INVOKING": "1"},
     }
     ```
+## Python
+- Python (microsoft.com)
 ## JavaScript
 - ESLint
 ## Markdown
