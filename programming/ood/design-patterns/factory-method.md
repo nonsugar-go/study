@@ -3,6 +3,8 @@
 classDiagram
     Creator <|-- ConcreteCreator
     Product <|-- ConcreteProduct
+    Creator --> Product : Creates ▶
+    ConcreteCreator --> ConcreteProduct : Creates ▶
     namespace フレームワーク {
         class Creator{
             <<Abstract>>
@@ -20,7 +22,7 @@ classDiagram
             method2()*
             method3()*
         }
-        class ConcrateProduct{
+        class ConcreteProduct{
             method1()
             method2()
             method3()
