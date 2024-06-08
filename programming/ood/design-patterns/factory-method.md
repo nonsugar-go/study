@@ -12,7 +12,7 @@ classDiagram
             factoryMethod()*
         }
         class ConcreteCreator{
-            factroyMethod
+            factroyMethod()
         }
     }
     namespace 具体的な肉付け {
