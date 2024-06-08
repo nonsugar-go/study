@@ -59,11 +59,10 @@
   - 拡張: Markdown All in One
   - 拡張: Excel to Markdown table
 ## Golang
-- https://code.visualstudio.com/docs/languages/go
+- [Go (go.dev)](https://marketplace.visualstudio.com/items?itemName=golang.go)
+- gotemplate-syntax ( https://github.com/casualjim/vscode-gotemplate ) `html:5<tab>`
 - https://zenn.dev/ikoba/articles/vscode-golang-snippets
 - [意外と知らないVSCode上でGoを爆速開発するためのTips5選 #Go - Qiita](https://qiita.com/yagi_eng/items/9e599913605625809d9c)
-- 拡張: gotemplate-syntax ( https://github.com/casualjim/vscode-gotemplate )
- html:5<tab>
 ## C#
 - C# Dev Kit (Microsoft)
 ## HTML
