@@ -64,6 +64,8 @@
 - [意外と知らないVSCode上でGoを爆速開発するためのTips5選 #Go - Qiita](https://qiita.com/yagi_eng/items/9e599913605625809d9c)
 - 拡張: gotemplate-syntax ( https://github.com/casualjim/vscode-gotemplate )
  html:5<tab>
+## C#
+- C# Dev Kit (Microsoft)
 ## HTML
 - VS Code ES7+ React/Redux/React-Native/JS snippets
 - CSS Peek
