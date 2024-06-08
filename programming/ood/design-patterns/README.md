@@ -19,7 +19,7 @@
 - https://medium.com/@josueparra2892/builder-pattern-in-go-56605f9e7387
 - https://refactoring.guru/design-patterns/builder/go/example
 - https://qiita.com/ttsubo/items/0331d842bb775a81f12a
-## Factory Method
+## [Factory Method](factory-method.md)
 - https://refactoring.guru/design-patterns/factory-method/go/example
 ## Prototype
 - https://refactoring.guru/design-patterns/prototype/go/example
