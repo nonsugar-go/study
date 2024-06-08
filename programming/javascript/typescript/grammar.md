@@ -33,3 +33,5 @@
 - https://github.com/tc39/proposal-object-rest-spread
 # 分割代入 (Destructuring assignment)
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+# Class
+- https://www.typescriptlang.org/docs/handbook/2/classes.html
