@@ -35,3 +35,10 @@
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 # Class
 - https://www.typescriptlang.org/docs/handbook/2/classes.html
+
+# Intersection Types (交差型)
+- https://typescriptbook.jp/reference/values-types-variables/intersection
+# Type Guards (型ガード)
+# DiscriminateUnions (判別される Union 型)
+# Type Casting (型キャスト)
+# Function Overloads (関数オーバーロード)
