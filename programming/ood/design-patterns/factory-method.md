@@ -1,24 +1,29 @@
 # Factory Method
 ```mermaid
 classDiagram
-    Creator <|-- ConcreateCreator
-    Product <|-- ConcreateProduct
-    class Creator{
-        <<Abstract>>
-        create() 
-        factoryMethod()*
+    Creator <|-- ConcreteCreator
+    Product <|-- ConcreteProduct
+    namespace フレームワーク {
+        class Creator{
+            <<Abstract>>
+            create() 
+            factoryMethod()*
+        }
+        class ConcreteCreator{
+            factroyMethod
+        }
     }
-    class ConcreateCreator{
-        factroyMethod
-    }
-    class Product{
-        method1()*
-        method2()*
-        method3()*
-    }
-    class Concreateproduct{
-        method1()
-        method2()
-        method3()
+    namespace 具体的な肉付け {
+        class Product{
+            <<Abstract>>
+            method1()*
+            method2()*
+            method3()*
+        }
+        class ConcrateProduct{
+            method1()
+            method2()
+            method3()
+        }
     }
 ```
