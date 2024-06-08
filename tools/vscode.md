@@ -63,6 +63,7 @@
   - Ctrl + Shift + P > Go: Install/Update Tools > 全てチェック
 - [gotemplate-syntax](https://github.com/casualjim/vscode-gotemplate) `html:5<tab>`
 - https://zenn.dev/ikoba/articles/vscode-golang-snippets
+- [VSCode の Go extension でよく利用するコマンド 7選 | フューチャー技術ブログ](https://future-architect.github.io/articles/20200707/)
 - [意外と知らないVSCode上でGoを爆速開発するためのTips5選 #Go - Qiita](https://qiita.com/yagi_eng/items/9e599913605625809d9c)
 ## C#
 - C# Dev Kit (Microsoft)
