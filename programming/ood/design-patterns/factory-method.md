@@ -4,15 +4,21 @@ classDiagram
     Creator <|-- ConcreateCreator
     Product <|-- ConcreateProduct
     class Creator{
-        <<Abstract>> 
-        templateMothod()
-        step1()*
-        step2()*
-        step3()*
+        <<Abstract>>
+        create() 
+        factoryMethod()*
     }
     class ConcreateCreator{
-        step1()
-        step2()
-        step3()
+        factroyMethod
+    }
+    class Product{
+        method1()*
+        method2()*
+        method3()*
+    }
+    class Concreateproduct{
+        method1()
+        method2()
+        method3()
     }
 ```
