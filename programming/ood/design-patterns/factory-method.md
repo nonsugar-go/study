@@ -3,8 +3,8 @@
 classDiagram
     Creator <|-- ConcreteCreator
     Product <|-- ConcreteProduct
-    Creator --> Product : Creates ▶
-    ConcreteCreator --> ConcreteProduct : Creates ▶
+    Creator --> Product : Creates
+    ConcreteCreator --> ConcreteProduct : Creates
     namespace フレームワーク {
         class Creator{
             <<Abstract>>
