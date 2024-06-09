@@ -17,7 +17,9 @@
 #include <iostream>
 
 int main() {
-	std::cout << "Hello, World\n";
+	using namespace std;
+	cout << "Hello, " << "World!" << endl;
+	return 0;
 }
 ```
 3. メニュー > ビルド > ソリューションのビルド
