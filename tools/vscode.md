@@ -49,10 +49,6 @@
       "env": {"CHERE_INVOKING": "1"},
     }
     ```
-## Python
-- Python (microsoft.com)
-## JavaScript
-- ESLint
 ## Markdown
 - https://dev.classmethod.jp/articles/non-97-operation-manual/
   - 拡張: Markdown Preview Enhanced
@@ -66,7 +62,13 @@
 - [VSCode の Go extension でよく利用するコマンド 7選 | フューチャー技術ブログ](https://future-architect.github.io/articles/20200707/)
 - [意外と知らないVSCode上でGoを爆速開発するためのTips5選 #Go - Qiita](https://qiita.com/yagi_eng/items/9e599913605625809d9c)
 ## C#
-- C# Dev Kit (Microsoft)
+- C# Dev Kit (microsoft.com)
+## Java
+- Extension Pack for Java (microsoft.com)
+## Python
+- Python (microsoft.com)
+## JavaScript
+- ESLint
 ## HTML
 - VS Code ES7+ React/Redux/React-Native/JS snippets
 - CSS Peek
