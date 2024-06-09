@@ -1,5 +1,6 @@
 # C++
 # ドキュメント
+- [C++ - Wikipedia](https://ja.wikipedia.org/wiki/C%2B%2B)
 - https://learn.microsoft.com/ja-jp/cpp/windows/overview-of-windows-programming-in-cpp
 # インストール
 1. https://visualstudio.microsoft.com/ja/downloads/ から Visual Studio Community Ed. をダウンロードしてインストール
