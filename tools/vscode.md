@@ -32,6 +32,8 @@
 | すべて展開 | Ctrl + K, Ctrl + J |
 | 再帰的にたたむ | Ctrl + K, Ctrl + [ |
 | 再帰手に展開 | Ctrl + K, Ctrl + ] |
+## Visual Studio
+Visual Studio で VSCode のショートカット キーを使用するには、「メニュー > ツール > オプション > 環境 > キーボード」、「次の追加キーボードマップ スキームを適用」: Visual Studio Code にする。
 # Extensions (Ctrl+Shift+X)
 ## 初期設定
 - Japanese Language Pack for VS Code
