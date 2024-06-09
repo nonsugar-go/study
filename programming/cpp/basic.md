@@ -3,6 +3,7 @@
 - [C++ - Wikipedia](https://ja.wikipedia.org/wiki/C%2B%2B)
 - https://learn.microsoft.com/ja-jp/cpp/windows/overview-of-windows-programming-in-cpp
 # インストール
+## Visual Studio
 1. https://visualstudio.microsoft.com/ja/downloads/ から Visual Studio Community Ed. をダウンロードしてインストール
 2. **C++ によるデスクトップ開発** をインストールします。
 3. **空のプロジェクト (C++)** を選択します。
@@ -21,4 +22,5 @@ int main() {
 ```
 3. メニュー > ビルド > ソリューションのビルド
 4. ▶ローカル Windows デバッガー (**F5**)
-
+## GCC
+- Cygwin のパッケージ選択で、**gcc-g++** を選択する。
