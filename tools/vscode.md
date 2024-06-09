@@ -63,6 +63,8 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 - https://zenn.dev/ikoba/articles/vscode-golang-snippets
 - [VSCode の Go extension でよく利用するコマンド 7選 | フューチャー技術ブログ](https://future-architect.github.io/articles/20200707/)
 - [意外と知らないVSCode上でGoを爆速開発するためのTips5選 #Go - Qiita](https://qiita.com/yagi_eng/items/9e599913605625809d9c)
+## C/C++
+- C/C++ Extension Pack (microsoft.com)
 ## C#
 - C# Dev Kit (microsoft.com)
 ## Java
