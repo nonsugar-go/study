@@ -11,6 +11,8 @@
    - プロジェクト名: HelloWorld
    - 場所: (任意の場所)
    - ソリューション名: CPP
+## GCC
+- Cygwin のパッケージ選択で、**gcc-g++** を選択する。
 # Hello, World! (Main.cpp)
 1. 追加 > 新しい項目... > C++ ファイル (.cpp): Main.cpp
 ```cpp
@@ -24,5 +26,4 @@ int main() {
 ```
 3. メニュー > ビルド > ソリューションのビルド
 4. ▶ローカル Windows デバッガー (**F5**)
-## GCC
-- Cygwin のパッケージ選択で、**gcc-g++** を選択する。
+
