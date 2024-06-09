@@ -12,3 +12,5 @@ int array[3] = { 1, 2, 3 };
 
 
 ```
+## nullptr
+- https://learn.microsoft.com/ja-jp/cpp/extensions/nullptr-cpp-component-extensions
