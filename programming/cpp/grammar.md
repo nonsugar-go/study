@@ -20,3 +20,4 @@ int array[3] = { 1, 2, 3 };
 - https://learn.microsoft.com/ja-jp/cpp/cpp/auto-cpp
 ## 参照
 - https://learn.microsoft.com/ja-jp/cpp/cpp/references-cpp
+## 範囲for文
