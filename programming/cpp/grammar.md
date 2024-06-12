@@ -14,5 +14,7 @@ int array[3] = { 1, 2, 3 };
 ```
 ## nullptr
 - https://learn.microsoft.com/ja-jp/cpp/extensions/nullptr-cpp-component-extensions
+## const
+- https://learn.microsoft.com/ja-jp/cpp/cpp/const-cpp
 ## 参照
 - https://learn.microsoft.com/ja-jp/cpp/cpp/references-cpp
