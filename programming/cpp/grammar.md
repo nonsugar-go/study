@@ -16,5 +16,7 @@ int array[3] = { 1, 2, 3 };
 - https://learn.microsoft.com/ja-jp/cpp/extensions/nullptr-cpp-component-extensions
 ## const
 - https://learn.microsoft.com/ja-jp/cpp/cpp/const-cpp
+## 型推論
+- https://learn.microsoft.com/ja-jp/cpp/cpp/auto-cpp
 ## 参照
 - https://learn.microsoft.com/ja-jp/cpp/cpp/references-cpp
