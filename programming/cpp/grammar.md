@@ -23,3 +23,5 @@ int array[3] = { 1, 2, 3 };
 ## 範囲for文
 ## extern "C"
 - https://learn.microsoft.com/ja-jp/cpp/cpp/extern-cpp
+## 既定の引数
+- https://learn.microsoft.com/ja-jp/cpp/cpp/default-arguments
