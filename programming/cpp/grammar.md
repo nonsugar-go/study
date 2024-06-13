@@ -12,6 +12,8 @@ int array[3] = { 1, 2, 3 };
 
 
 ```
+## 名前空間
+- https://learn.microsoft.com/ja-jp/cpp/cpp/namespaces-cpp
 ## nullptr
 - https://learn.microsoft.com/ja-jp/cpp/extensions/nullptr-cpp-component-extensions
 ## const
