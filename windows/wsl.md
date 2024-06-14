@@ -8,8 +8,9 @@ PS> wsl -l --online
 PS> wsl --install
 PS> wsl -l -v
 ```
+(再起動)
 # 使い方
-- Cygwin の bash もしくはコマンド プロンプトで wsl を実行するとコンソール接続できる。
+- コマンド プロンプトで wsl を実行するとコンソール接続できる。
 - wsl -u root で root ユーザーでログインできる
 - /mnt/c/ で C:\ ドライブに接続できる。
 - Windows からは \\wsl$ で wsl 側のファイルシステムにアクセスできる
