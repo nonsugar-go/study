@@ -1,16 +1,9 @@
 # WSL
 # インストール
-## Windows 10
 - https://learn.microsoft.com/ja-jp/windows/wsl/install
-1. アプリと機能
-   1. プログラムと機能
-   2. Windows の機能の有効化または無効化
-   3. \[Linux 用 WIndows サブシステム] をチェック
-   4. Microsoft Store アプリ
-   5. [Ubuntu xx.xx LTS] をインストール
 ## Windows 11
-```powershell
-\[管理者モード]
+PowerShell \[管理者モード]
+```pwsh
 PS> wsl -l --online
 PS> wsl --install
 PS> wsl -l -v
