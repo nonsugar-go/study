@@ -1,6 +1,8 @@
 # WSL
 # インストール
 - https://learn.microsoft.com/ja-jp/windows/wsl/install
+## ESXi 仮想マシンで動かす場合
+- ビデオカード > 3D グラフィックス: 3D サポートを有効化: [x]
 ## Windows 11
 PowerShell \[管理者モード]
 ```pwsh
@@ -9,6 +11,10 @@ PS> wsl --install
 PS> wsl -l -v
 ```
 (再起動)
+```bash
+Enter new UNIX username: USERNAME
+New password: PASSWORD
+```
 # 使い方
 - コマンド プロンプトで wsl を実行するとコンソール接続できる。
 - wsl -u root で root ユーザーでログインできる
