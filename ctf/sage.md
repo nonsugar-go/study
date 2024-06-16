@@ -4,5 +4,5 @@
 
 # Install / Ubuntu
 ```bash
-$ sudo apt install sagemath
+$ sudo apt install sagemath    ## ディスク容量を大量消費します
 ```
