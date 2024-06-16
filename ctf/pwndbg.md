@@ -18,3 +18,16 @@ FileNotFoundError: [Errno 2] No such file or directory: 'poetry'
 
 ## 上記エラーが出たので、-poetry をインストールする
 $ sudo apt install python3-poetry
+# Usage
+```bash
+$ gdb -q chall
+pwndbg> cyclic 100
+aaaaaaaabaaaaaaacaaaaaaadaaaaaaaeaaaaaaafaaaaaaagaaaaaaahaaaaaaaiaaaaaaajaaaaaaakaaaaaaalaaaaaaamaaa
+pwndbg> r
+  (snip)
+input:aaaaaaaabaaaaaaacaaaaaaadaaaaaaaeaaaaaaafaaaaaaagaaaaaaahaaaaaaaiaaaaaaajaaaaaaakaaaaaaalaaaaaaamaaa
+  (snip)
+pwndbg> cyclic -l 0x6164616161616161  <-- ret の値を貼り付け
+Finding cyclic pattern of 8 bytes: b'aaaaaada' (hex: 0x6161616161616461)
+Found at offset 18
+```
