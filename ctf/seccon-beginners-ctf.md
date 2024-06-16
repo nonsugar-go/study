@@ -1,5 +1,6 @@
 # SECCON Beginners CTF 2024
 - https://score.beginners.seccon.jp/
+- https://melonattacker.github.io/posts/44/
 
 # SECCON Beginners CTF 2023
 - https://github.com/SECCON/SECCON_Beginners_CTF_2023
