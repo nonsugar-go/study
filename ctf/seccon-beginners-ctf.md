@@ -1,5 +1,5 @@
 # SECCON Beginners CTF 2024
-- https://score.beginners.seccon.jp/
+- https://score.beginners.seccon.jp/ranking
 - https://zenn.dev/mizar/articles/83515f8291bb76
 - https://melonattacker.github.io/posts/44/
 - https://www.ryotosaito.com/blog/?p=601
