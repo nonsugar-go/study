@@ -9,3 +9,12 @@ $ git clone https://github.com/pwndbg/pwndbg
 $ cd pwndbg
 $ ./setup.sh
 ```
+
+```bash
+$ gdb ./a.out
+  (snip)
+FileNotFoundError: [Errno 2] No such file or directory: 'poetry'
+  (snip)
+
+## 上記エラーが出たので、-poetry をインストールする
+$ sudo apt install python3-poetry
