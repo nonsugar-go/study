@@ -17,8 +17,8 @@
 - ディープラーニングの分野で重要な貢献をした科学者で、バックプロパゲーションアルゴリズムを開発: [ジェフリー・ヒントン](https://ja.wikipedia.org/wiki/%E3%82%B8%E3%82%A7%E3%83%95%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%92%E3%83%B3%E3%83%88%E3%83%B3)
 
 - 人工知能: artificial intelligence, AI
-  - 機械学習: machine learning
-    - 深層学習: deep learning
+  - 機械学習: machine learning, ML
+    - 深層学習: deep learning, DL
 ## 機械学習とディープ・ラーニング
 # 機械学習の主な概念と用語の説明
 - 教師あり学習: Supervised learning
