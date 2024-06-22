@@ -19,6 +19,7 @@
 - 人工知能: artificial intelligence, AI
   - 機械学習: machine learning, ML
     - 深層学習: deep learning, DL
+      - 生成AI: generative artificial intelligence
 ## 機械学習とディープ・ラーニング
 # 機械学習の主な概念と用語の説明
 - 教師あり学習: Supervised learning
