@@ -29,6 +29,7 @@
 - 強化学習: reinforcement learning, RL
   - Q 学習: Q-learning
 ## ディープ・ラーニングの主な概念と用語の説明
+- ニューラルネットワーク: neural network, NN
 ## 共通の機械学習タイプの識別
 # 生成 AI および大規模言語モデル
 ## 生成 AI の基礎の理解
