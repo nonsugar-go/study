@@ -15,8 +15,15 @@
 - ニューラルネットワークの研究で知らる: [マービン・ミンスキー](https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%83%93%E3%83%B3%E3%83%BB%E3%83%9F%E3%83%B3%E3%82%B9%E3%82%AD%E3%83%BC)
 - ディープラーニングの先駆者, 畳み込みニューラルネットワーク(CNN): [ヤン・ルカン](https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%B3%E3%83%BB%E3%83%AB%E3%82%AB%E3%83%B3)
 - ディープラーニングの分野で重要な貢献をした科学者で、バックプロパゲーションアルゴリズムを開発: [ジェフリー・ヒントン](https://ja.wikipedia.org/wiki/%E3%82%B8%E3%82%A7%E3%83%95%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%92%E3%83%B3%E3%83%88%E3%83%B3)
+
+- 人工知能: artificial intelligence, AI
+  - 機械学習: machine learning
+    - 深層学習: deep learning
 ## 機械学習とディープ・ラーニング
 # 機械学習の主な概念と用語の説明
+- 教師あり学習: Supervised learning
+- 教師なし学習: Unsupervised Learning
+- 強化学習: reinforcement learning, RL
 ## ディープ・ラーニングの主な概念と用語の説明
 ## 共通の機械学習タイプの識別
 # 生成 AI および大規模言語モデル
