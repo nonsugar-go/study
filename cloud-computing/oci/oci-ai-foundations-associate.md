@@ -30,8 +30,19 @@
   - Q 学習: Q-learning
 ## ディープ・ラーニングの主な概念と用語の説明
 - ニューラルネットワーク: neural network, NN
-  - 畳み込みニューラルネットワーク: Convolutional neural network, CNN
-  - 回帰型ニューラルネットワーク: Recurrent neural network, RNN
+
+- DL Algorithms
+  - Images and Videos
+    - 畳み込みニューラルネットワーク: Convolutional neural network, CNN
+  - Sequential, Time Series, and Natural Language Data
+    - トランスフォーマー: Transformers
+    - 回帰型ニューラルネットワーク: Recurrent neural network, RNN
+    - 長・短期記憶: Long-Short-Term Memory, LSTM
+  - Images, Text, Audio Generation
+    - トランスフォーマー: Transformers
+    - 拡散モデル: Diffusion Models
+    - 敵対的生成ネットワーク
+: Generative adversarial networks, GAN
 ## 共通の機械学習タイプの識別
 # 生成 AI および大規模言語モデル
 ## 生成 AI の基礎の理解
