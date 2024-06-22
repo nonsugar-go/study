@@ -53,4 +53,7 @@
 # OCI AI サービスおよびインフラストラクチャ
 ## OCI AI インフラストラクチャの説明
 - OCI スーパークラスタ
+  - 高性能計算: high-performance computing, HPC
+  - リモートDMA: Remote Direct Memory Access, RDMA
+  - グラフィックス プロセッシング ユニット: Graphics Processing Unit, GPU
 ## OCI AI サービスの説明
