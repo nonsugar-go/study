@@ -22,7 +22,10 @@
 ## 機械学習とディープ・ラーニング
 # 機械学習の主な概念と用語の説明
 - 教師あり学習: Supervised learning
+  - Classification
+  - Regression
 - 教師なし学習: Unsupervised Learning
+  - Clustering
 - 強化学習: reinforcement learning, RL
   - Q 学習: Q-learning
 ## ディープ・ラーニングの主な概念と用語の説明
