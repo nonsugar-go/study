@@ -57,3 +57,11 @@
   - リモートDMA: Remote Direct Memory Access, RDMA
   - グラフィックス プロセッシング ユニット: Graphics Processing Unit, GPU
 ## OCI AI サービスの説明
+- AI Services
+  - Language
+  - Vison
+  - Speech
+  - Document Understanding
+  - Anomaly Detection
+  - Digital Assistant
+
