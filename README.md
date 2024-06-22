@@ -1,6 +1,7 @@
 # study
 ネットワークとプログラミング言語の学習用
 
+- [Cloud Computing](cloud-computing)
 - [CTF](ctf)
 - [Linux](linux)
 - [Network Devices](network-devices)
