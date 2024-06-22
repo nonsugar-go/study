@@ -25,7 +25,7 @@
   - Classification
   - Regression
 - 教師なし学習: Unsupervised Learning
-  - Clustering
+  - Clustering / Association
 - 強化学習: reinforcement learning, RL
   - Q 学習: Q-learning
 ## ディープ・ラーニングの主な概念と用語の説明
