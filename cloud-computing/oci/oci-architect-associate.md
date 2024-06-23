@@ -1,5 +1,6 @@
 # Oracle Cloud Infrastructure 2023 Certified Architect Associate (1Z0-1072-23)
 - [Oracle Cloud Infrastructure 2023 Architect Associate (1Z0-1072)](https://education.oracle.com/ja/oracle-cloud-infrastructure-2023-architect-associate/pexam_1Z0-1072-23)
+- https://mylearn.oracle.com/ou/learning-path/japanese-become-a-oci-architect-associate-2023-/125270
 # コンピュート [20%]
 ## 適切なコンピュートの選択
 ## コンピュート・インスタンスの構成
