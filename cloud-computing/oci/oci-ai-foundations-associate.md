@@ -1,5 +1,6 @@
 # Certification Exams
 - [Oracle Cloud Infrastructure 2023 AI Foundations Associate (1Z0-1122-23)](https://education.oracle.com/ja/oracle-cloud-infrastructure-2023-ai-foundations-associate/pexam_1Z0-1122-23)
+- https://mylearn.oracle.com/ou/learning-path/japanese-become-an-oci-ai-foundations-associate-2023-/131421
 
 | カテゴリ | % |
 | --------| -- |
