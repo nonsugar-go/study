@@ -58,10 +58,27 @@
   - グラフィックス プロセッシング ユニット: Graphics Processing Unit, GPU
 ## OCI AI サービスの説明
 - AI Services
+  - OCI Generative AI, cohere
   - Language
   - Vison
   - Speech
   - Document Understanding
   - Anomaly Detection
   - Digital Assistant
-
+- Machine Learning Services
+  - Model Catalog
+  - Projects
+  - JupyterLab Notebook
+  - Model Deployment
+  - Model Training
+  - Model Management
+  - Model Explanation
+  - Open Source Libraries
+  - Accelerated Data Science SDK (ADS), autoML
+- Data Management
+  - Database, Data Lake, Access, Integration, Preparation
+- AI Infrastructure
+  - GPU
+  - Networking
+  - Super Clusters
+  - Storage
