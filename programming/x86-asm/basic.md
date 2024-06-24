@@ -3,6 +3,7 @@
 # x86 アセンブリ言語の基礎
 - https://en.wikipedia.org/wiki/X86_assembly_language
 - https://en.wikibooks.org/wiki/X86_Assembly/Interfacing_with_Linux
+- [呼出規約 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%91%BC%E5%87%BA%E8%A6%8F%E7%B4%84#cdecl)
 # syscall
 ```bash
 $ locate unistd_32.h
