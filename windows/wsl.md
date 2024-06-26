@@ -33,7 +33,7 @@ $ echo "export PS1='\\u@\\h:\\W\\$ '" >>~/.bash_profile
 ## CTF で使用できるパッケージ
 ```bash
 $ sudo apt update -y && sudo apt upgrade -y
-$ sudo apt install unzip plocate gdb gcc-multilib gdbserver nasm python3-z3 python3-scapy python3-pip \
+$ sudo apt install unzip plocate gdb gcc-multilib gdbserver nasm python3-pycryptodome python3-z3 python3-scapy python3-pip \
   ltrace socat docker-compose bat -y
 $ sudo pip3 install -U pwntools
 $ sudo pip3 install -U ropper
@@ -50,16 +50,6 @@ $ sudo /etc/init.d/ssh start
 $ sudo apt install podman -y
 ```
 # その他、過去に試行錯誤した内容 (うまくいっていない)
-## GDB
-- https://github.com/microsoft/WSL/issues/8516
-- https://launchpad.net/~ubuntu-support-team/+archive/ubuntu/gdb
-```bash
-$ sudo add-apt-repository ppa:ubuntu-support-team/gdb
-$ sudo apt update
-$ sudo apt-get install gdb
-```
-## 32bit 環境
-- [Ubuntu 14.04 64bit で 32bit アプリを動作させる方法 - 明日にはでっかい太陽が昇るかもしれません。](https://agekuno.hatenablog.com/entry/2014/10/22/190712)
 ## ネットワークからの接続を許可する
 - 管理者として実行する
 ```pwsh
