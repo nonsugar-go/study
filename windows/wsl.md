@@ -32,7 +32,7 @@ $ echo "export PS1='\\u@\\h:\\W\\$ '" >>~/.bash_profile
 ```
 ## CTF で使用できるパッケージ
 ```bash
-$ sudo apt update -y && sudo apt upgrade -y
+$ sudo apt update && sudo apt upgrade -y
 $ sudo apt install unzip plocate gdb gcc-multilib gdbserver nasm python3-pycryptodome python3-z3 python3-scapy python3-pip \
   ltrace socat docker-compose bat -y
 $ sudo pip3 install -U pwntools
