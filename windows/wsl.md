@@ -37,6 +37,12 @@ $ sudo apt install unzip plocate gdb gcc-multilib gdbserver nasm python3-pycrypt
   ltrace socat docker-compose bat -y
 $ sudo pip3 install -U pwntools
 $ sudo pip3 install -U ropper
+$ git clone https://github.com/pwndbg/pwndbg
+$ cd pwndbg
+$ ./setup.sh
+```
+## pwndbg でなく gdb-peda を使用する場合
+```bash
 $ git clone https://github.com/longld/peda.git ~/peda
 $ echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
@@ -55,16 +61,3 @@ $ sudo apt install podman -y
 ```pwsh
 PS> netsh interface portproxy add v4tov4 listenport=4444 listenaddress=0.0.0.0 connectport=4444 connectaddress=(wsl hostname -I)
 ```
-
-## PyCrypto -> PyCryptodome
-```bash
-$ sudo apt install python3-pycryptodome
-```
-
-```diff
-< from Crypto.Util.number import getPrime, isPrime
----
-> from Cryptodome.Util.number import getPrime, isPrime
-```
-
-- https://stackoverflow.com/questions/58569361/attributeerror-module-time-has-no-attribute-clock-in-python-3-8
