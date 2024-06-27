@@ -12,7 +12,18 @@ $ man 2 exit
 $ man syscall
 ```
 # nasm
-```bash
-$ nasm -f elf32 -o chall.o chall.nasm
-$ ld -m elf_i386 -o a.out chall.o
+```asm
+; $ nasm -f elf32 shell.nasm
+; $ ld -m elf_i386 shell.o
+global  _start
+_start:
+        xor eax, eax
+        xor ecx, ecx
+        xor edx, edx
+        mov al, 0xb
+        push ecx ; "\0\0\0\0"
+        push 0x68732f6e ; "n/sh"
+        push 0x69622f2f ; "//bi"
+        mov ebx, esp
+        int 0x80
 ```
