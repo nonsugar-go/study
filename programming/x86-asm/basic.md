@@ -13,8 +13,8 @@ $ man syscall
 ```
 # nasm
 ```asm
-; $ nasm -f elf32 shell.nasm
-; $ ld -m elf_i386 shell.o
+; $ nasm -f elf32 shell.nasm && ld -m elf_i386 shell.o
+; $ readelf -x .text a.out | grep -Eow '[0-9a-f]{2,8}' | tr -d '\n'
 global  _start
 _start:
         xor eax, eax
@@ -28,7 +28,3 @@ _start:
         int 0x80
 ```
 
-```bash
-$ readelf -x .text a.out | grep -Eow '[0-9a-f]{8}' | tr -d '\n'
-31c031c931d2b00b51686e2f7368682f2f626989
-```
