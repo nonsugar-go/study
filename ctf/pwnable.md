@@ -22,3 +22,12 @@ $ objdump -d -M intel a.out
 | Heap    |
 | Unused  |
 | Stack   |
+## Stack
+| Stack     |
+| --------- |
+| var1      |
+| ...       |
+| saved EBP |
+| ret addr  |
+| argc      |
+| **argv    |
