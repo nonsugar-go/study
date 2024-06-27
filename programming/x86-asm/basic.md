@@ -30,4 +30,5 @@ _start:
 
 ```bash
 $ readelf -x .text a.out | grep -Eow '[0-9a-f]{8}' | tr -d '\n'
+31c031c931d2b00b51686e2f7368682f2f626989
 ```
