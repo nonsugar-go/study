@@ -7,10 +7,15 @@ $ objdump -d -M intel a.out
 ```
 # Memory Layout
 ## Binary File
+
+| Section | Desc       |
+| ------- | ---------- |
 | .data   | 10         |
 | .rodata | "Hello"    |
 | .text   | code       |
+
 ## Process
+
 | .text   |
 | .bas    |
 | .rodata |
