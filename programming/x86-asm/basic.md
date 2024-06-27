@@ -27,3 +27,7 @@ _start:
         mov ebx, esp
         int 0x80
 ```
+
+```bash
+$ readelf -x .text a.out | grep -Eow '[0-9a-f]{8}' | tr -d '\n'
+```
