@@ -5,6 +5,13 @@ $ readelf -x .rodata a.out
 $ readelf -x .text a.out
 $ objdump -d -M intel a.out
 ```
+## ELF format
+| ELF               | command                 |
+| ----------------- | ----------------------- |
+| Executable Header | readelf -h ./a.out      |
+| Program Headers   | readelf --wide -l a.out |
+| Sections          | readelf --wide -S a.out |
+| Section Headers   |         |
 # Memory Layout
 ## Binary File
 | Section | Desc       |
