@@ -41,6 +41,10 @@ pwndbg> b main
 pwndbg> r
 
 pwndbg> ni
+pwndbg> ni
+pwndbg> ni
 
-pwndbg> x/dw $rbp-0xc 
+pwndbg> x/dw $rbp-0xc
+
+pwndbg> context 
 ```
