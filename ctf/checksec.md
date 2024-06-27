@@ -19,7 +19,16 @@ $ checksec ./a.out
 | NX       | -z execstack | NX bit(No eXecute bit)、DEP(Data Execution Prevention) を無効化する。実行ファイルや共有ライブラリに実行可能なスタックを必要とすることをマーク。|
 | PIE      | -no-pie    | PIE(Position Independent Executable)、実行ファイルを位置独立コード（PIC）として生成しないことを指定|
 | RELRO    | -Wl,-z,norelro | RELRO(RELocation Read Only) を無効化。No RELROとPartial RELROの場合、GOT Overwrite攻撃が使える。|
-
+# ASLR(Address Space Layout Randomize)
+```bash
+$ cat /proc/<pid>/maps                       ## メモリのアドレスを確認できる (ASLR 有効だと毎回変化する)
+$ sudo sysctl kernel.randomize_va_space=0    ## 無効化
+$ sudo sysctl kernel.randomize_va_space=2    ## 有効化
+## もしくは以下のようにする
+$ cat /proc/sys/kernel/randomize_va_space    ## 確認
+2
+$ sudo bash -c 'echo 0 >/proc/sys/kernel/randomize_va_space'    ## 無効化
+```
 # スタック配置 (SSP 有効時)
 | stack |
 | ----- |
