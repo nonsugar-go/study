@@ -19,3 +19,13 @@ $ checksec ./a.out
 | NX       | -z execstack | NX bit(No eXecute bit)、DEP(Data Execution Prevention) を無効化する。実行ファイルや共有ライブラリに実行可能なスタックを必要とすることをマーク。|
 | PIE      | -no-pie    | PIE(Position Independent Executable)、実行ファイルを位置独立コード（PIC）として生成しないことを指定|
 | RELRO    | -Wl,-z,norelro | RELRO(RELocation Read Only) を無効化。No RELROとPartial RELROの場合、GOT Overwrite攻撃が使える。|
+
+# スタック配置 (SSP 有効時)
+| stack |
+| ----- |
+| local variables |
+| canary |
+| saved rbp |
+| ret addr |
+| arg 1 |
+| ... |
