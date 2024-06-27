@@ -24,11 +24,23 @@ $ sudo apt install python3-poetry
 $ gdb -q chall
 pwndbg> cyclic 100
 aaaaaaaabaaaaaaacaaaaaaadaaaaaaaeaaaaaaafaaaaaaagaaaaaaahaaaaaaaiaaaaaaajaaaaaaakaaaaaaalaaaaaaamaaa
+
 pwndbg> r
   (snip)
 input:aaaaaaaabaaaaaaacaaaaaaadaaaaaaaeaaaaaaafaaaaaaagaaaaaaahaaaaaaaiaaaaaaajaaaaaaakaaaaaaalaaaaaaamaaa
   (snip)
+
 pwndbg> cyclic -l 0x6164616161616161  <-- ret の値を貼り付け
 Finding cyclic pattern of 8 bytes: b'aaaaaada' (hex: 0x6161616161616461)
-Found at offset 18
+Found at offset 18e
+
+pwndbg> disassemble main
+
+pwndbg> b main
+
+pwndbg> r
+
+pwndbg> ni
+
+pwndbg> x/dw $rbp-0xc 
 ```
