@@ -38,3 +38,7 @@ $ objdump -d -M intel a.out
 | ret addr  |
 | argc      |
 | **argv    |
+# シンボルテーブルの確認
+```bash
+$ objdump --wide -t a.out
+```
