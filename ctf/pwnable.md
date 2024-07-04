@@ -42,3 +42,7 @@ $ objdump -d -M intel a.out
 ```bash
 $ objdump --wide -t a.out
 ```
+## セクション ヘッダの確認
+```bash
+$ readelf --wide -S helloworld
+```
