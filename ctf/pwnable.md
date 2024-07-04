@@ -46,3 +46,5 @@ $ objdump --wide -t a.out
 ```bash
 $ readelf --wide -S helloworld
 ```
+- [.got](https://en.wikipedia.org/wiki/Global_Offset_Table)
+- .plt (Procedure Linkage Tables)
