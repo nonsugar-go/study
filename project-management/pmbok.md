@@ -6,25 +6,25 @@
 - プロジェクト
 - 定常業務
 # プロジェクトマネジメントの原理・原則
-- スチュワードシップ
-- チーム
-- ステークホルダー
-- 価値
-- システム思考
-- リーダーシップ
-- テーラリング
-- 品質
-- 複雑さ
-- リスク
-- 適応力と回復力
-- 変革
-# プロジェクト・パフォーマンス領域
-- ステークホルダー・パフォーマンス領域
-- チーム・パフォーマンス領域
-- 開発アプローチとライフサイクル・パフォーマンス領域
-- 計画パフォーマンス領域
-- プロジェクト作業パフォーマンス領域
-- デリバリー・パフォーマンス領域
-- 測定パフォーマンス領域
-- 不確かさパフォーマンス領域
-# テーラリング
+- スチュワードシップ (Stewardship)
+- チーム (Team)
+- ステークホルダー (Stakeholders)
+- 価値 (Value)
+- システム思考 (System Thinking)
+- リーダーシップ (Leadership)
+- テーラリング (Tailoring)
+- 品質 (Quality)
+- 複雑さ (Complexity)
+- リスク (Rsik)
+- 適応力と回復力 (Adaptability and Resiliency)
+- 変革 (Change)
+# プロジェクト・パフォーマンス領域 (Project Management Domains)
+- ステークホルダー・パフォーマンス領域 (Stakeholder Performance Domain)
+- チーム・パフォーマンス領域 (Team Performance Domain)
+- 開発アプローチとライフサイクル・パフォーマンス領域 (Development Approach Life Cycle Performance Domain)
+- 計画パフォーマンス領域 (Planning Performance Domain)
+- プロジェクト作業パフォーマンス領域 (Work Performance Domain)
+- デリバリー・パフォーマンス領域 (Delivery Performance Domain)
+- 測定パフォーマンス領域 (Measurement Performance Domain)
+- 不確かさパフォーマンス領域 (Uncertainty Performance Domain)
+# テーラリング ( Performance Domain)
