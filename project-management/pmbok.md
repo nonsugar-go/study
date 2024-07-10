@@ -27,4 +27,4 @@
 - デリバリー・パフォーマンス領域 (Delivery Performance Domain)
 - 測定パフォーマンス領域 (Measurement Performance Domain)
 - 不確かさパフォーマンス領域 (Uncertainty Performance Domain)
-# テーラリング ( Performance Domain)
+# テーラリング (Tailoring)
