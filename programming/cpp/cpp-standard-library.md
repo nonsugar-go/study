@@ -5,3 +5,5 @@
 - https://learn.microsoft.com/ja-jp/cpp/standard-library/cfloat
 # vector
 - https://learn.microsoft.com/ja-jp/cpp/standard-library/vector-class
+# numeric
+- https://learn.microsoft.com/ja-jp/cpp/standard-library/numeric-functions#accumulate
