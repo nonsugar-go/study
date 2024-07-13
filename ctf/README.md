@@ -2,6 +2,7 @@
 
 - [IDA](ida.md)
 - [SECCON Beginners CTF](seccon-beginners-ctf.md)
+- [WaniCTF](wani-ctf.md)
 - [Pwnable](pwnable.md)
 - [checksec](checksec.md)
 - [pwndbg](pwndbg.md)
