@@ -30,4 +30,5 @@ int array[3] = { 1, 2, 3 };
 ## Rvalue reference declarator (rvalue 参照宣言子: &&)
 - https://learn.microsoft.com/ja-jp/cpp/cpp/rvalue-reference-declarator-amp-amp
 - https://qiita.com/seriru13/items/e5953f88fe23e4140687
-
+## once pragma
+- https://learn.microsoft.com/ja-jp/cpp/preprocessor/once
