@@ -20,6 +20,8 @@ int array[3] = { 1, 2, 3 };
 - https://learn.microsoft.com/ja-jp/cpp/cpp/const-cpp
 ## 型推論
 - https://learn.microsoft.com/ja-jp/cpp/cpp/auto-cpp
+## 型変換
+- https://learn.microsoft.com/ja-jp/cpp/cpp/type-conversions-and-type-safety-modern-cpp
 ## 参照
 - https://learn.microsoft.com/ja-jp/cpp/cpp/references-cpp
 ## 範囲for文
