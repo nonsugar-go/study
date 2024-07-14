@@ -7,6 +7,7 @@
 - https://learn.microsoft.com/ja-jp/cpp/cpp/constructors-cpp
 - https://learn.microsoft.com/ja-jp/cpp/cpp/delegating-constructors
 - https://learn.microsoft.com/ja-jp/cpp/cpp/move-constructors-and-move-assignment-operators-cpp
+- https://learn.microsoft.com/ja-jp/cpp/cpp/operator-overloading
 ## Rule of 5
 - Destructor
 - Copy constructor
