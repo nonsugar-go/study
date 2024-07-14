@@ -24,6 +24,7 @@ int array[3] = { 1, 2, 3 };
 - https://learn.microsoft.com/ja-jp/cpp/cpp/type-conversions-and-type-safety-modern-cpp
 - https://learn.microsoft.com/ja-jp/cpp/cpp/static-cast-operator
 - https://learn.microsoft.com/ja-jp/cpp/cpp/reinterpret-cast-operator
+- https://learn.microsoft.com/ja-jp/cpp/cpp/const-cast-operator
 ## 参照
 - https://learn.microsoft.com/ja-jp/cpp/cpp/references-cpp
 ## 範囲for文
