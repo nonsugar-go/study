@@ -29,3 +29,4 @@ int array[3] = { 1, 2, 3 };
 - https://learn.microsoft.com/ja-jp/cpp/cpp/default-arguments
 ## Rvalue reference declarator (rvalue 参照宣言子: &&)
 - https://learn.microsoft.com/ja-jp/cpp/cpp/rvalue-reference-declarator-amp-amp
+- https://qiita.com/seriru13/items/e5953f88fe23e4140687
