@@ -27,3 +27,5 @@ int array[3] = { 1, 2, 3 };
 - https://learn.microsoft.com/ja-jp/cpp/cpp/extern-cpp
 ## 既定の引数
 - https://learn.microsoft.com/ja-jp/cpp/cpp/default-arguments
+## Rvalue reference declarator (rvalue 参照宣言子: &&)
+- https://learn.microsoft.com/ja-jp/cpp/cpp/rvalue-reference-declarator-amp-amp
