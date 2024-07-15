@@ -11,3 +11,6 @@
 - https://learn.microsoft.com/ja-jp/cpp/standard-library/random
 # thread
 - https://learn.microsoft.com/ja-jp/cpp/standard-library/thread-functions#sleep_for
+# memory
+- https://learn.microsoft.com/ja-jp/cpp/standard-library/unique-ptr-class
+- https://learn.microsoft.com/ja-jp/cpp/standard-library/shared-ptr-class
