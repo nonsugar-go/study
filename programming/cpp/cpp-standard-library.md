@@ -9,3 +9,5 @@
 - https://learn.microsoft.com/ja-jp/cpp/standard-library/numeric-functions#accumulate
 # random
 - https://learn.microsoft.com/ja-jp/cpp/standard-library/random
+# thread
+- https://learn.microsoft.com/ja-jp/cpp/standard-library/thread-functions#sleep_for
