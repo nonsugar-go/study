@@ -8,6 +8,7 @@
 - https://learn.microsoft.com/ja-jp/cpp/cpp/delegating-constructors
 - https://learn.microsoft.com/ja-jp/cpp/cpp/move-constructors-and-move-assignment-operators-cpp
 - https://learn.microsoft.com/ja-jp/cpp/cpp/operator-overloading
+- https://stackoverflow.com/questions/3814865/what-is-an-operator-int-function
 - https://learn.microsoft.com/ja-jp/cpp/cpp/friend-cpp
 - https://learn.microsoft.com/ja-jp/cpp/cpp/smart-pointers-modern-cpp
 ## Rule of 5
