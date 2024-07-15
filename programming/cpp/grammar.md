@@ -37,6 +37,4 @@ int array[3] = { 1, 2, 3 };
 - https://qiita.com/seriru13/items/e5953f88fe23e4140687
 ## once pragma
 - https://learn.microsoft.com/ja-jp/cpp/preprocessor/once
-## Memory Management
-- https://learn.microsoft.com/ja-jp/cpp/standard-library/unique-ptr-class
-- https://learn.microsoft.com/ja-jp/cpp/standard-library/shared-ptr-class
+
