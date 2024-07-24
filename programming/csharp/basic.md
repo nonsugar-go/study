@@ -53,6 +53,8 @@ $ ./Hello
 # 例
 ## ファイルへの書き込み
 - https://johobase.com/streamwriter-class-writetext-csharp/
+## LINQ
+- https://learn.microsoft.com/ja-jp/dotnet/csharp/linq/
 # Misc
 ## C# と Java
 - [C#とJavaの書き方の違いをまとめる #Java - Qiita](https://qiita.com/yunomichawan/items/9c9e036383545a74ee6e)
