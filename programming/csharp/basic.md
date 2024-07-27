@@ -12,7 +12,6 @@
 export PATH="${PATH}:$(cygpath ${GOPATH}\\bin):/cygdrive/e/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn"
 ```
 ## Visual Stadio
-- https://learn.microsoft.com/en-us/visualstudio/ide/visual-csharp-code-snippets?view=vs-2022
 1. ファイル > 新規作成 > プロジェクト
 2. 以下のどちらかを選択
    - **Windows フォーム アプリケーション (.NET Framework) C#**
@@ -30,6 +29,8 @@ export PATH="${PATH}:$(cygpath ${GOPATH}\\bin):/cygdrive/e/Program Files/Microso
 
 ## その他
 - **ビルド > ソリューションのクリーン** でデバッグ時に作成したファイルを削除
+- https://learn.microsoft.com/ja-jp/visualstudio/ide/visual-csharp-code-snippets?view=vs-2022
+
 ## Hello, World!
 - https://learn.microsoft.com/ja-jp/dotnet/csharp/fundamentals/program-structure/main-command-line
 
