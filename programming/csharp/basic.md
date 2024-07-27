@@ -6,25 +6,30 @@
 # インストール
 1. https://visualstudio.microsoft.com/ja/downloads/ から Visual Studio Community Ed. をダウンロードしてインストール
 2. **.NET デスクトップ開発** をインストールします。
-3. 以下のどちらかを選択
-   - **Windows フォーム アプリケーション (.NET Framework) C#**
-   - **コンソール アプリ**
-5. **新しいプロジェクトを作成します**
-   - プロジェクト名: Tomato.UI
-   - 場所: (任意の場所)
-   - ソリューション名: Tomato
-## Visual Stadio
-- https://learn.microsoft.com/en-us/visualstudio/ide/visual-csharp-code-snippets?view=vs-2022
-# Hello, World!
-- https://learn.microsoft.com/ja-jp/dotnet/csharp/fundamentals/program-structure/main-command-line
-
-Cygwin でパスに追加 **~/.bash_profile**
+3. Cygwin でパスに追加 **~/.bash_profile**
 
 ```bash
 export PATH="${PATH}:$(cygpath ${GOPATH}\\bin):/cygdrive/e/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn"
 ```
+## Visual Stadio
+- https://learn.microsoft.com/en-us/visualstudio/ide/visual-csharp-code-snippets?view=vs-2022
+1. ファイル > 新規作成 > プロジェクト
+2. 以下のどちらかを選択
+   - **Windows フォーム アプリケーション (.NET Framework) C#**
+   - **コンソール アプリ**
+3. **新しいプロジェクトを作成します**
+   - プロジェクト名: Tomato.UI
+   - 場所: (任意の場所)
+   - ソリューション名: Tomato
 
-コンパイル
+- ツール > オプション
+  - デバッグ/全般/デバッグの停止時に自動的に閉じる: [x]
+
+> {!INFO]
+> コンソール アプリの場合、自動で画面が閉じるようになるので、`Console.ReadKey();` を入れる
+
+## Hello, World!
+- https://learn.microsoft.com/ja-jp/dotnet/csharp/fundamentals/program-structure/main-command-line
 
 ```cs
 using System;
@@ -42,6 +47,7 @@ class TestClass
 }
 ```
 
+## コンパイル
 ```bash
 $ csc Hello.cs
 $ ./Hello
