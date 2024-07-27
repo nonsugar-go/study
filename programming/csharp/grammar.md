@@ -24,4 +24,6 @@
 ## ソースコードの確認
 - VS で関数上で [F12] で定義を確認する
 - https://referencesource.microsoft.com/
+# 型変換
+- https://learn.microsoft.com/ja-jp/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number
 
