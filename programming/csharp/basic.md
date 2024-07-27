@@ -28,6 +28,8 @@ export PATH="${PATH}:$(cygpath ${GOPATH}\\bin):/cygdrive/e/Program Files/Microso
 > [!TIP]
 > コンソール アプリの場合、自動で画面が閉じるようになるので、`Console.ReadKey();` を入れる
 
+## その他
+- **ビルド > ソリューションのクリーン** でデバッグ時に作成したファイルを削除
 ## Hello, World!
 - https://learn.microsoft.com/ja-jp/dotnet/csharp/fundamentals/program-structure/main-command-line
 
