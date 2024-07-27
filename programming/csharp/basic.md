@@ -25,7 +25,7 @@ export PATH="${PATH}:$(cygpath ${GOPATH}\\bin):/cygdrive/e/Program Files/Microso
 - ツール > オプション
   - デバッグ/全般/デバッグの停止時に自動的に閉じる: [x]
 
-> {!INFO]
+> {!TIP]
 > コンソール アプリの場合、自動で画面が閉じるようになるので、`Console.ReadKey();` を入れる
 
 ## Hello, World!
