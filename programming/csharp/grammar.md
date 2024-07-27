@@ -27,4 +27,5 @@
 - https://referencesource.microsoft.com/
 # 型変換
 - https://learn.microsoft.com/ja-jp/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number
-
+# 文字列補完
+- https://learn.microsoft.com/ja-jp/dotnet/csharp/language-reference/tokens/interpolated
