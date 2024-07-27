@@ -15,7 +15,7 @@ export PATH="${PATH}:$(cygpath ${GOPATH}\\bin):/cygdrive/e/Program Files/Microso
 1. ファイル > 新規作成 > プロジェクト
 2. 以下のどちらかを選択
    - **Windows フォーム アプリケーション (.NET Framework) C#**
-   - **コンソール アプリ**
+   - **コンソール アプリ (.NET Framework) C#**
 3. **新しいプロジェクトを作成します**
    - プロジェクト名: Tomato.UI
    - 場所: (任意の場所)
