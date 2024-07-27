@@ -11,6 +11,8 @@
    - プロジェクト名: Tomato.UI
    - 場所: (任意の場所)
    - ソリューション名: Tomato
+## Visual Stadio
+- https://learn.microsoft.com/en-us/visualstudio/ide/visual-csharp-code-snippets?view=vs-2022
 # Hello, World!
 - https://learn.microsoft.com/ja-jp/dotnet/csharp/fundamentals/program-structure/main-command-line
 
