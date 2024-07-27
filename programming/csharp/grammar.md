@@ -1,5 +1,6 @@
 # 学習コンテンツ
 - https://github.com/KrystynaSlusarczykLearning/UltimateCSharpMasterclass
+- https://github.com/KrystynaSlusarczykLearning/50InterviewQuestionsMid
 # 文法
 - https://learn.microsoft.com/ja-jp/dotnet/csharp/fundamentals/coding-style/coding-conventions
 - https://learn.microsoft.com/ja-jp/dotnet/csharp/language-reference/keywords/
