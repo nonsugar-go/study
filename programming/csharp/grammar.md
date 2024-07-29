@@ -10,6 +10,7 @@
 - https://stackoverflow.com/questions/3346450/what-is-the-difference-between-i-and-i-in-c
 ## 書式指定
 - [C#(.NET)の書式指定 #C# - Qiita](https://qiita.com/haruka_kotani/items/8d738e3fb76c6fdf0b3a)
+- https://learn.microsoft.com/ja-jp/dotnet/standard/base-types/standard-numeric-format-strings
 ## ref, out, in
 - [C#のref・out・inの違いをまとめました #C# - Qiita](https://qiita.com/fksk36/items/dfa7e7e6ab40ecdd4ee8)
 ## オブジェクト指向
