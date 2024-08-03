@@ -2,6 +2,16 @@
 # PIP 8
 - https://peps.python.org/pep-0008/
 - https://pep8-ja.readthedocs.io/ja/latest/
+## 命名規則
+| 種別 | 説明 | 例 |
+|----|----|----|
+| Packages | 短い、小文字、アンダースコアは無し | utilities |
+| Modules | 短い、小文字、アンダースコアを含むこともある | db_utils db_utils |
+| Classes | upper camel case | BankAccount |
+| Functions | 小文字、snake case | open_account |
+| Variables | 小文字、snake case | accout_id |
+| Constatns | 大文字、upper snake case | MIN_APR
+
 
 # 基礎
 - https://docs.python.org/ja/3/tutorial/index.html
