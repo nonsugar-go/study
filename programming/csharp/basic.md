@@ -56,3 +56,6 @@ class TestClass
 $ csc Hello.cs
 $ ./Hello
 ```
+
+# Main()
+- https://learn.microsoft.com/ja-jp/dotnet/csharp/fundamentals/program-structure/main-command-line
