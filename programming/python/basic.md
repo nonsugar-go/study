@@ -1,4 +1,8 @@
 # Python の基礎
+# PIP 8
+- https://peps.python.org/pep-0008/
+- https://pep8-ja.readthedocs.io/ja/latest/
+
 # 基礎
 - https://docs.python.org/ja/3/tutorial/index.html
 - https://docs.python.org/ja/3/howto/argparse.html
