@@ -28,7 +28,7 @@ New password: PASSWORD
 ```bash
 $ echo 'set t_u7=' > ~/.vimrc        ## Windows 10 の場合のみ
 $ echo 'setw -g mode-keys vi' > ~/.tmux.conf
-$ echo "export PS1='\\u@\\h:\\W\\$ '" >>~/.bash_profile
+$ echo "PS1='\[\e[32m\]\u@\[\e[36m\]WSL \[\e[33m\]\w\[\e[0m\]\n\$ '" >>~/.bash_profile
 ```
 ## CTF で使用できるパッケージ
 ```bash
