@@ -31,7 +31,7 @@ $ echo "PS1='\[\e[32m\]\u@\[\e[36m\]WSL \[\e[33m\]\w\[\e[0m\]\n\\$ '" >>~/.bash_
 ```
 ## symlink
 ```bash
-$ USERPROFILE=/mnt/c/Users/$(cmd.exe /c echo %USERNAME%)
+$ USERPROFILE=/mnt/c/Users/$(cmd.exe /c echo %USERNAME% | tr -d '\r')
 $ ln -s $USERPROFILE/Desktop .
 $ ln -s $USERPROFILE/Documents .
 $ ln -s $USERPROFILE/Download .
