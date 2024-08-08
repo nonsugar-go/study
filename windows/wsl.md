@@ -36,6 +36,16 @@ $ ln -s $USERPROFILE/Desktop .
 $ ln -s $USERPROFILE/Documents .
 $ ln -s $USERPROFILE/Downloads .
 ```
+## vim 関連
+```
+if [ ! -d ~/.vim/autoload ]; then
+  mkdir -p ~/.vim/autoload
+  (
+  cd ~/.vim/autoload
+  curl -LO https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  )
+fi
+```
 ## CTF で使用できるパッケージ
 ```bash
 $ sudo apt update && sudo apt upgrade -y
