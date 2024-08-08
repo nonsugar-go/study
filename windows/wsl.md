@@ -29,6 +29,13 @@ New password: PASSWORD
 $ echo -e 'setw -g mode-keys vi\nset -g prefix F1' > ~/.tmux.conf
 $ echo "PS1='\[\e[32m\]\u@\[\e[36m\]WSL \[\e[33m\]\w\[\e[0m\]\n\\$ '" >>~/.bash_profile
 ```
+## symlink
+```bash
+$ USERPROFILE=/mnt/c/Users/$(cmd.exe /c echo %USERNAME%)
+$ ln -s $USERPROFILE/Desktop .
+$ ln -s $USERPROFILE/Documents .
+$ ln -s $USERPROFILE/Download .
+```
 ## CTF で使用できるパッケージ
 ```bash
 $ sudo apt update && sudo apt upgrade -y
