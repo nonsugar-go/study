@@ -58,6 +58,12 @@ if [ ! -d ~/.vim/autoload ]; then
   )
 fi
 ```
+## zsh
+```bash
+$ sudo apt install zsh -y
+$ chsh -s /bin/zsh
+```
+- 初回の選択肢には、[1], [0] を選択
 ## CTF で使用できるパッケージ
 ```bash
 $ sudo apt update && sudo apt upgrade -y
