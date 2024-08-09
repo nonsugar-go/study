@@ -19,7 +19,7 @@ New password: PASSWORD
 - コマンド プロンプトで wsl を実行するとコンソール接続できる。
 - wsl -u root で root ユーザーでログインできる
 - /mnt/c/ で C:\ ドライブに接続できる。
-- Windows からは \\wsl$ で wsl 側のファイルシステムにアクセスできる
+- Windows からは `\\wsl$ubuntu\` で wsl 側のファイルシステムにアクセスできる
 
 # 初期設定
 ## 設定ファイル
