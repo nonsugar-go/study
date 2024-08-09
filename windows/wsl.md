@@ -29,6 +29,18 @@ New password: PASSWORD
 $ echo -e 'setw -g mode-keys vi\nset -g prefix F1' > ~/.tmux.conf
 $ echo "PS1='\[\e[32m\]\u@\[\e[36m\]WSL \[\e[33m\]\w\[\e[0m\]\n\\$ '" >>~/.bash_profile
 ```
+### ~/.tmux.conf
+```
+setw -g mode-keys vi
+set -g prefix F1
+bind-key -n F12 select-pane -P 'bg=colour52,fg=white'
+```
+### ~/.vimrc
+```
+call plug#begin()
+Plug 'terryma/vim-multiple-cursors'
+call plug#end()
+```
 ## symlink
 ```bash
 $ USERPROFILE=/mnt/c/Users/$(cmd.exe /c echo %USERNAME% | tr -d '\r')
