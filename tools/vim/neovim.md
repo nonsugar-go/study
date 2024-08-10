@@ -24,5 +24,7 @@ syntax on
 ```
 # Plugin
 - https://github.com/junegunn/vim-plug
-# NERDTree
+## vim-horizon
+- https://github.com/ntk148v/vim-horizon/
+## NERDTree
 - https://github.com/preservim/nerdtree
