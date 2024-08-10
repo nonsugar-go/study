@@ -65,6 +65,10 @@ $ sudo apt install zsh -y
 $ chsh -s /bin/zsh
 ```
 - 初回ログイン時の `zsh-newuser-install` の問いには、`(0)  Exit, creating the file ~/.zshrc containing just a comment.` を選択
+## neovim
+```
+% sudo apt install neovim -y
+```
 ## CTF で使用できるパッケージ
 ```bash
 $ sudo apt update && sudo apt upgrade -y
