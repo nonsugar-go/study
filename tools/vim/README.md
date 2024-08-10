@@ -1,5 +1,5 @@
 # Tools/Vim
-
+- [NeoVim](neovim.md)
 # ノーマル モード
 | key | desc |
 | --- | ---- |
