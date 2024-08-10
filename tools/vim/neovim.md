@@ -30,3 +30,15 @@ syntax on
 - https://github.com/preservim/nerdtree
 ## FuzzyFinder
 - https://github.com/junegunn/fzf
+## vim-fugitive
+- https://github.com/tpope/vim-fugitive
+## vim-gitgutter
+- https://github.com/airblade/vim-gitgutter
+## vim-commentary
+- https://github.com/tpope/vim-commentary
+## vim-polyglot
+- https://github.com/sheerun/vim-polyglot
+## coc.nvim
+- https://github.com/neoclide/coc.nvim
+## vim-go
+https://github.com/fatih/vim-go
