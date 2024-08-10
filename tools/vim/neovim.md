@@ -28,3 +28,5 @@ syntax on
 - https://github.com/ntk148v/vim-horizon/
 ## NERDTree
 - https://github.com/preservim/nerdtree
+## FuzzyFinder
+- https://github.com/junegunn/fzf
