@@ -22,3 +22,7 @@ set hlsearch
 set clipboard+=unnamedplus
 syntax on
 ```
+# Plugin
+- https://github.com/junegunn/vim-plug
+# NERDTree
+- https://github.com/preservim/nerdtree
