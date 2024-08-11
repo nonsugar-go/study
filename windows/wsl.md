@@ -36,12 +36,6 @@ setw -g mode-keys vi
 set -g prefix F1
 bind-key -n F12 select-pane -P 'bg=colour52,fg=white'
 ```
-### ~/.vimrc
-```
-call plug#begin()
-Plug 'terryma/vim-multiple-cursors'
-call plug#end()
-```
 ## symlink
 ```bash
 $ USERPROFILE=/mnt/c/Users/$(cmd.exe /c echo %USERNAME% | tr -d '\r')
