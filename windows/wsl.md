@@ -63,6 +63,8 @@ $ chsh -s /bin/zsh
 ```
 % sudo apt install neovim -y
 ```
+
+- (NeoVim)[tools/vim/neovim.md]
 ## CTF で使用できるパッケージ
 ```bash
 $ sudo apt update && sudo apt upgrade -y
