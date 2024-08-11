@@ -71,6 +71,7 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 - Extension Pack for Java (microsoft.com)
 ## Python
 - Python (microsoft.com)
+- [Visual Studio Codeの設定「虎の巻」：Python編：特集：Visual Studio Codeを使いこなそう！（1/3 ページ） - ＠IT](https://atmarkit.itmedia.co.jp/ait/articles/1711/24/news034.html)
 ## JavaScript
 - ESLint
 ## HTML
