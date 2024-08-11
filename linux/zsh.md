@@ -17,3 +17,5 @@
 | % source ~/.zshrc | ~/.zshrc の再読み込み |
 | C-R | コマンド履歴 |
   
+# Plugin
+- https://ohmyz.sh/
