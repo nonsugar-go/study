@@ -34,6 +34,7 @@ $ echo "PS1='\[\e[32m\]\u@\[\e[36m\]WSL \[\e[33m\]\w\[\e[0m\]\n\\$ '" >>~/.bash_
 set -g prefix F1
 unbind C-b
 setw -g mode-keys vi
+set -s escape-time 0
 bind-key -n F12 select-pane -P 'bg=colour88,fg=white'
 bind-key -n S-F12 select-pane -P 'bg=black,fg=white'
 ```
