@@ -1,5 +1,6 @@
 # zsh
 - https://zsh.sourceforge.io/Doc/Release/zsh_toc.html
+- https://zsh.sourceforge.io/Doc/Release/Options.html
 ## カーソル移動
 | key | description |
 | ---- | ------ |
