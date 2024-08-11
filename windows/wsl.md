@@ -27,14 +27,15 @@ New password: PASSWORD
 - https://superuser.com/questions/1284561/why-is-vim-starting-in-replace-mode
 
 ```bash
-$ echo -e 'setw -g mode-keys vi\nset -g prefix F1' > ~/.tmux.conf
 $ echo "PS1='\[\e[32m\]\u@\[\e[36m\]WSL \[\e[33m\]\w\[\e[0m\]\n\\$ '" >>~/.bash_profile
 ```
 ### ~/.tmux.conf
 ```
-setw -g mode-keys vi
 set -g prefix F1
-bind-key -n F12 select-pane -P 'bg=colour52,fg=white'
+unbind C-b
+setw -g mode-keys vi
+bind-key -n F12 select-pane -P 'bg=colour88,fg=white'
+bind-key -n S-F12 select-pane -P 'bg=black,fg=white'
 ```
 ## symlink
 ```bash
