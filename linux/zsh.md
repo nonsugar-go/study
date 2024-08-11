@@ -18,4 +18,8 @@
 | C-R | コマンド履歴 |
   
 # Plugin
+## Oh My Zsh
 - https://ohmyz.sh/
+```zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
