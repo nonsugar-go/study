@@ -1,4 +1,5 @@
 # Visual Stadio Code
+- [Insider.NET 全記事一覧 - ＠IT](https://atmarkit.itmedia.co.jp/ait/subtop/features/dotnet/all.html#xe789b9e99b86efbc9aVisualStudioCodee38292e4bdbfe38184e38193e381aae3819de38186)
 # Install
 - https://code.visualstudio.com/download
 # ショートカット キー
