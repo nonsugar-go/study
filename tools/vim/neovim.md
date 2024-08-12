@@ -24,6 +24,8 @@ syntax on
 ```
 # Plugin
 - https://github.com/junegunn/vim-plug
+## vim-maketable
+- https://github.com/mattn/vim-maketable
 ## vim-visual-multi
 - https://github.com/mg979/vim-visual-multi
 ## vim-horizon
