@@ -30,4 +30,5 @@ cat ~/.zshrc.pre-oh-my-zsh >>~/.zshrc
 - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z
 - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search
 - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/python
+- https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fzf
 
