@@ -23,6 +23,8 @@ set clipboard+=unnamedplus
 syntax on
 ```
 # Plugin
+- [にわか管理者のためのLinux運用入門(234) Vimを使う - 開発者向けプラグイン「vim-commentary」「vim-fugitive」 | TECH+（テックプラス）](https://news.mynavi.jp/techplus/article/techp4993/)
+## vim-plug
 - https://github.com/junegunn/vim-plug
 ## vim-maketable
 - https://github.com/mattn/vim-maketable
