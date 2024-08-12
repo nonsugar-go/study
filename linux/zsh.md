@@ -31,4 +31,5 @@ cat ~/.zshrc.pre-oh-my-zsh >>~/.zshrc
 - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search
 - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/python
 - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fzf
-
+## zsh-syntax-highlighting
+- https://github.com/zsh-users/zsh-syntax-highlighting
