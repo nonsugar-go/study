@@ -18,6 +18,7 @@
 | C-R | コマンド履歴 |
   
 # Plugin
+- [zshの外部プラグインまとめ #Zsh - Qiita](https://qiita.com/mollifier/items/1220c0eeaa93e82f8afc)
 ## Oh My Zsh
 - https://ohmyz.sh/
 ```zsh
