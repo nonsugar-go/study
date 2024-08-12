@@ -100,6 +100,11 @@ $ sudo /etc/init.d/ssh start
 ```bash
 $ sudo apt install podman -y
 ```
+
+## Golang
+```bash
+sudo apt install golang -y
+```
 # その他、過去に試行錯誤した内容 (うまくいっていない)
 ## ネットワークからの接続を許可する
 - 管理者として実行する
