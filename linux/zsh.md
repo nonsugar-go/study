@@ -25,3 +25,5 @@
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cat ~/.zshrc.pre-oh-my-zsh >>~/.zshrc
 ```
+## autojump
+- https://github.com/wting/autojump
