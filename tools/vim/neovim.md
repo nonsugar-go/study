@@ -58,6 +58,10 @@ sudo apt install nodejs npm -y
 ```zsh
 sudo apt install python-is-python3 pylint python3-jedi -y
 ```
+3. `vim ~/.config/nvim/init.vim` を編集
+```vim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+```
 
 
 ## vim-go
