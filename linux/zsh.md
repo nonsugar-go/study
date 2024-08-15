@@ -43,3 +43,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ```
 ## powerlevel10k
 - https://github.com/romkatv/powerlevel10k
+1. Fonts のインストール
+   - MesloLGS NF Regular.ttf
+   - MesloLGS NF Bold.ttf
+   - MesloLGS NF Italic.ttf
+   - MesloLGS NF Bold Italic.ttf
+2. Windows Terminal のフォント設定
