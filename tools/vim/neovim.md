@@ -48,9 +48,13 @@ syntax on
 - https://github.com/neoclide/coc.nvim
 - https://learn.microsoft.com/ja-jp/windows/dev-environment/javascript/nodejs-on-wsl
 
-1. nvm をインストール
+1. Node.js, npm をインストール
 ```zsh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash 
+sudo apt install nodejs npm -y 
+```
+2. symlink python -> python3
+```zsh
+sudo apt install python-is-python3 -y
 ```
 
 
