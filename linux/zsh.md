@@ -49,3 +49,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
    - MesloLGS NF Italic.ttf
    - MesloLGS NF Bold Italic.ttf
 2. Windows Terminal のフォント設定
+   - ⚙設定 > プロファイル > 規定値 > 外観 > フォント フェイス: MesloLGS NF
+3. Powerlevel10k をインストール
+4. `exec zsh`
+   
