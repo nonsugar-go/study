@@ -68,6 +68,7 @@ sudo apt install python-is-python3 pylint python3-jedi -y
 ```vim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 ```
+4. nvim を起動して `:PlugInstall`
 
 
 ## vim-go
