@@ -52,9 +52,9 @@ syntax on
 ```zsh
 sudo apt install nodejs npm -y 
 ```
-2. symlink の作成 (python to python3), jedi のインストール
+2. symlink の作成 (python to python3), pylint, jedi のインストール
 ```zsh
-sudo apt install python-is-python3 pylint -y
+sudo apt install python-is-python3 pylint python3-jedi -y
 ```
 
 
