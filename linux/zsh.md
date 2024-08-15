@@ -51,5 +51,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 2. Windows Terminal のフォント設定
    - ⚙設定 > プロファイル > 規定値 > 外観 > フォント フェイス: MesloLGS NF
 3. Powerlevel10k をインストール
-4. `exec zsh`
+```zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+4. `~/.zshrc` を編集 `(ZSH_THEME="powerlevel10k/powerlevel10k")`
+5. `exec zsh`
    
