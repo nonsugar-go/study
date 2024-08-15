@@ -50,9 +50,15 @@ syntax on
 - https://github.com/neoclide/coc-python
 - https://learn.microsoft.com/ja-jp/windows/dev-environment/javascript/nodejs-on-wsl
 
-1. Node.js, npm をインストール
+1. nvm, Node.js をインストール
 ```zsh
-sudo apt install nodejs npm -y 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+command -v nvm 
+nvm ls
+nvm install node
+nvm ls
+node --version
+npm --version
 ```
 2. symlink の作成 (python to python3), pylint, jedi のインストール
 ```zsh
