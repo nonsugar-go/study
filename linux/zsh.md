@@ -56,4 +56,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ```
 4. `~/.zshrc` を編集 `(ZSH_THEME="powerlevel10k/powerlevel10k")`
 5. `exec zsh`
-   
+### 再設定
+```zsh
+p10k configure
+```
