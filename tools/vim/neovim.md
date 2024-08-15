@@ -46,6 +46,8 @@ syntax on
 - https://github.com/sheerun/vim-polyglot
 ## coc.nvim
 - https://github.com/neoclide/coc.nvim
+- https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
+- https://github.com/neoclide/coc-python
 - https://learn.microsoft.com/ja-jp/windows/dev-environment/javascript/nodejs-on-wsl
 
 1. Node.js, npm をインストール
