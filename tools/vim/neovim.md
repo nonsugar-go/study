@@ -46,5 +46,13 @@ syntax on
 - https://github.com/sheerun/vim-polyglot
 ## coc.nvim
 - https://github.com/neoclide/coc.nvim
+- https://learn.microsoft.com/ja-jp/windows/dev-environment/javascript/nodejs-on-wsl
+
+1. nvm をインストール
+```zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash 
+```
+
+
 ## vim-go
 https://github.com/fatih/vim-go
