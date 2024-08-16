@@ -52,6 +52,8 @@ Visual Studio で VSCode のショートカット キーを使用するには、
       "env": {"CHERE_INVOKING": "1"},
     }
     ```
+## Vim
+- https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
 ## Markdown
 - https://dev.classmethod.jp/articles/non-97-operation-manual/
   - 拡張: Markdown Preview Enhanced
