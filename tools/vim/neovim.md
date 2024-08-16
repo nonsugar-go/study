@@ -72,7 +72,7 @@ call plug#end()
 let g:coc_disable_startup_warning = 1
 ```
 4. nvim を起動して `:PlugInstall`
-
+5. coc extension のインストール `:CocInstall coc-python`
 
 ## vim-go
 https://github.com/fatih/vim-go
