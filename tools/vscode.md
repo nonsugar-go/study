@@ -53,8 +53,8 @@ Visual Studio で VSCode のショートカット キーを使用するには、
     }
     ```
 ## Vim
-<!-- - https://marketplace.visualstudio.com/items?itemName=vscodevim.vim -->
-- https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim
+- https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
+<!-- - https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim -->
 ## Markdown
 - https://dev.classmethod.jp/articles/non-97-operation-manual/
   - 拡張: Markdown Preview Enhanced
