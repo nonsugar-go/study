@@ -75,4 +75,10 @@ let g:coc_disable_startup_warning = 1
 5. coc extension のインストール `:CocInstall coc-python`
 
 ## vim-go
-https://github.com/fatih/vim-go
+- https://github.com/fatih/vim-go
+
+- vim ~/.config/nvim/init.vim を編集
+```vim
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+```
+
