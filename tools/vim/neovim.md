@@ -66,7 +66,10 @@ sudo apt install python-is-python3 pylint python3-jedi -y
 ```
 3. `vim ~/.config/nvim/init.vim` を編集
 ```vim
+call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+let g:coc_disable_startup_warning = 1
 ```
 4. nvim を起動して `:PlugInstall`
 
