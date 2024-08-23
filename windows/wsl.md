@@ -114,3 +114,5 @@ PS> netsh interface portproxy add v4tov4 listenport=4444 listenaddress=0.0.0.0 c
 # Windows Terminal の設定
 - Ctrl + V の無効化: 設定 > ⌨ 操作 > 貼り付け > Ctrl + V: 設定を🗑️をクリックして消す
 - ビープ音を消す: 設定 > 規定値 > 詳細設定 > ベル通知スタイル > 音によるチャイム: チェックを外す
+
+- https://learn.microsoft.com/ja-jp/windows/wsl/setup/environment
