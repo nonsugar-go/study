@@ -2,7 +2,7 @@
 
 - [IDA](ida.md)
 - [SECCON Beginners CTF](seccon-beginners-ctf.md)
-- [AlpacaHack](alpacahack.com.md)
+- [AlpacaHack](alpacahack.md)
 - [WaniCTF](wani-ctf.md)
 - [Pwnable](pwnable.md)
 - [checksec](checksec.md)
