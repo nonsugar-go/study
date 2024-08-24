@@ -5,6 +5,12 @@ $ sudo useradd -g superheros -s /bin/bash -c 'Perman 1' -m -d /home/perman perma
 $ sudo passwd perman
 ```
 
+```bash
+$ sudo groupadd superheros
+$ sudo useradd booby
+$ sudo 
+```
+
 ## /etc/login.def
 ```bash
 $ grep UID_ /etc/login.defs
