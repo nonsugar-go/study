@@ -1,4 +1,10 @@
 # アカウント管理
+# useradd
+```bash
+$ sudo useradd -g superheros -s /bin/bash -c 'Perman 1' -m -d /home/perman perman
+$ sudo passwd perman
+```
+
 ## /etc/login.def
 ```bash
 $ grep UID_ /etc/login.defs
