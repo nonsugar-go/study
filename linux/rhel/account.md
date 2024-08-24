@@ -8,10 +8,15 @@ $ sudo passwd perman
 ## /etc/login.def
 ```bash
 $ grep UID_ /etc/login.defs
+# No LASTLOG_UID_MAX means that there is no user ID limit for writing
+#LASTLOG_UID_MAX
 UID_MIN                  1000
 UID_MAX                 60000
-#SYS_UID_MIN              100
-#SYS_UID_MAX              999
+SYS_UID_MIN               201
+SYS_UID_MAX               999
+SUB_UID_MIN                100000
+SUB_UID_MAX             600100000
+SUB_UID_COUNT               65536
 ```
 
 ```bash
