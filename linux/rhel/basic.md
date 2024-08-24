@@ -20,7 +20,7 @@
 | CPU | 1 Core |
 | Memory | 1.5GB |
 | Storage | 10GB (20GB 推奨) |
-## Red Hat Developer Subscription for Individuals
+# Red Hat Developer Subscription for Individuals
 - 1ユーザー、16台までの物理マシン/仮想マシンまで」という制約のもと、任意の用途での利用が可能
 - 1年間有効のサブスクリプションで、有効期限が切れた場合には、Red Hat Developer Program に再登録することで、新しく Developer Subscription が利用可能となる。
 - https://developers.redhat.com/articles/renew-your-red-hat-developer-program-subscription#how_to_renew_your_red_hat_developer_for_individual_subscription
@@ -36,3 +36,10 @@
 5. \[Red Hat Developer Subscription for Individuals] が表示されることを確認します。
 6. [Red Hat カスタマーポータル](https://access.redhat.com/ja) のトップ画面左上にある \[ダウンロード] をクリックします。
 7. \[Red Hat Enterprise Linux 9.4 Boot ISO] をダウンロードします。
+# ESXi に RHEL9 をインストールする
+| 項目 | 値 |
+|----|----|
+| CPU | 1 |
+| メモリ | 2048 |
+| ハードディスク 1 | 16GB, シン プロビジョニング |
+| CD/DVD ドライブ 1 | rhel-9.4-x86_64-boot.iso |
