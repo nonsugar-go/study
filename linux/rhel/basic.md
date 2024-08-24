@@ -55,6 +55,7 @@
 |┃| 時刻と日付 || アジア/東京タイムゾーン |
 |┃| インストール先 || デフォルト設定のまま \[完了] をクリック |
 |┃| Red Hat に接続 |━|━|
+|┃|┃| 認証 | アカウント |
 |┃|┃| \[ユーザー名] と \[パスワード] | Red Hat アカウントを入力 |
 |┃|┃| 用途 | \[システムの用途の設定] にチェックを入れる |
 |┃|┃| 用途/ロール | Red Hat Enterprise Linux Server |
@@ -62,3 +63,14 @@
 |┃|┃| 用途/使用法 | Development/Test |
 |┃|┃| Red Hat Insights に接続します | チェックを入れたまま |
 |┃|┃| [登録] をクリック |
+### \[Red Hat に接続] で「認証=アカウント」でうまくいかない場合
+認証を \[アクティベーション キー] にして試してください
+
+1. [アクティベーションキー](https://console.redhat.com/settings/connector/activation-keys) を開く
+2. \[Organization ID] (組織 ID) を控える (8桁数字)
+4. \[Create activation Key] をクリックする
+   1. Name: (英数字、アンダースコア、ハイフン で任意の名前を付ける)
+   2. Select Workload: Latest release
+   3. Select system purpose/Role: RHEL Server
+   4. Select system purpose/Service level agreement (SLA): Self-Support
+   5. Select system purpose/Development/Test
