@@ -28,3 +28,8 @@
 
 1. [Red Hat カスタマーポータル](https://access.redhat.com/ja) にアクセスし、\[登録する] をクリックして、無料でアカウント作成ができます。
 2. [Red Hat Developer](https://developers.redhat.com) にアクセスして、\[Join Red Hat Developer] をクリックします。
+   1. Login Infomation で Red Hat アカウントを選択
+   2. \[I have read and agree to all the terms and conditions below (check all boxes).] にチェックを入れる
+   3. \[Create my account] をクリック
+3. [Red Hat カスタマーポータル](https://access.redhat.com/ja) に戻り、\[サブスクリプション] をクリックします。
+4. 
