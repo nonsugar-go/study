@@ -4,7 +4,8 @@
 $ sudo groupadd superheros
 $ sudo useradd booby
 $ id booby
-$ sudo usermod -G superheroes booby
+$ sudo usermod -aG superheroes booby
+$ sudo usermod -aG wheel booby
 $ sudo passwd booby
 ```
 
