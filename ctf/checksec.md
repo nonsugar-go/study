@@ -10,6 +10,10 @@ $ checksec ./a.out
     PIE:      PIE enabled
 ```
 # gcc オプション
+```bash
+gcc -m32 -fno-stack-protector -D_FORTIFY_SOURCE=0       -z execstack -no-pie -Wl,-z,norelro -o chall chall.c
+```
+
 | checksec | gcc option	| desc |
 | -------- | ---------- | -----|
 | -	       | -m32       | 32bit (int, long, ポインターは 32bit) |
