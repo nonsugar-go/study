@@ -21,5 +21,5 @@
 | Memory | 1.5GB |
 | Storage | 10GB (20GB 推奨) |
 ## Red Hat Developer Subscription for Individuals
-1. [Red Hat カスタマーポータル](https://access.redhat.com/ja) にアクセスし、[登録する] をクリックして、無料でアカウント作成ができます。
-2. 
+1. [Red Hat カスタマーポータル](https://access.redhat.com/ja) にアクセスし、\[登録する] をクリックして、無料でアカウント作成ができます。
+2. [Red Hat Developer](https://developers.redhat.com) にアクセスして、\[Join Red Hat Developer] をクリックします。
