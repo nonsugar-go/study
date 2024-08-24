@@ -11,3 +11,12 @@
 | ------| -------------|
 | RHEL9 | 2032年5月31日 |
 | RHEL8 | 2029年5月31日 |
+# システム要件
+- https://catalog.redhat.com/hardware/search
+- https://access.redhat.com/articles/rhel-limits
+## RHEL9, x86_64 の場合のシステム要件
+| 項目 | 最小 |
+| ---- | ---- |
+| CPU | 1 Core |
+| Memory | 1.5GB |
+| Storage | 10GB (20GB 推奨) |
