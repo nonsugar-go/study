@@ -101,3 +101,11 @@
 |┃|┃| 用途/使用法 | Development/Test |
 |┃|┃| Red Hat Insights に接続します | チェックを入れたまま |
 |┃|┃| [登録] をクリック |
+# 再起動・電源オフ
+```bash
+sudo reboot
+```
+
+```bash
+sudo poweroff
+```
