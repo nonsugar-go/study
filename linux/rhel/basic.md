@@ -21,5 +21,10 @@
 | Memory | 1.5GB |
 | Storage | 10GB (20GB 推奨) |
 ## Red Hat Developer Subscription for Individuals
+- 1ユーザー、16台までの物理マシン/仮想マシンまで」という制約のもと、任意の用途での利用が可能
+- 1年間有効のサブスクリプションで、有効期限が切れた場合には、Red Hat Developer Program に再登録することで、新しく Developer Subscription が利用可能となる。
+- https://developers.redhat.com/articles/renew-your-red-hat-developer-program-subscription#how_to_renew_your_red_hat_developer_for_individual_subscription
+- https://developers.redhat.com/articles/faqs-no-cost-red-hat-enterprise-linux#getting_your_no_cost_subscription
+
 1. [Red Hat カスタマーポータル](https://access.redhat.com/ja) にアクセスし、\[登録する] をクリックして、無料でアカウント作成ができます。
 2. [Red Hat Developer](https://developers.redhat.com) にアクセスして、\[Join Red Hat Developer] をクリックします。
