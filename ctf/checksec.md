@@ -11,7 +11,7 @@ $ checksec ./a.out
 ```
 # gcc オプション
 ```bash
-gcc -m32 -fno-stack-protector -D_FORTIFY_SOURCE=0       -z execstack -no-pie -Wl,-z,norelro -o chall chall.c
+gcc -m32 -fno-stack-protector -D_FORTIFY_SOURCE=0 -z execstack -no-pie -Wl,-z,norelro -o chall chall.c
 ```
 
 | checksec | gcc option	| desc |
