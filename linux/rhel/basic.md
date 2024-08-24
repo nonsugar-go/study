@@ -74,3 +74,16 @@
    3. Select system purpose/Role: RHEL Server
    4. Select system purpose/Service level agreement (SLA): Self-Support
    5. Select system purpose/Development/Test
+
+インストーラーの \[Red Hat に接続] で、認証を \[アクティベーションキー] とする場合
+| 大項目 | 中項目 | 小項目 | 値 |
+|----|----|----|----|
+|┃| Red Hat に接続 |━|━|
+|┃|┃| 認証 | アクティベーションキー |
+|┃|┃| 組織 ID | 控えた値を入力 |
+|┃|┃| アクティベーションキー | 作成したアクティベーションキーの名前を入力 |
+|┃|┃| 用途/ロール | Red Hat Enterprise Linux Server |
+|┃|┃| 用途/SLA | Self-Support |
+|┃|┃| 用途/使用法 | Development/Test |
+|┃|┃| Red Hat Insights に接続します | チェックを入れたまま |
+|┃|┃| [登録] をクリック |
