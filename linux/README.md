@@ -1,5 +1,5 @@
 # Linux
 
 - [CentOS](centos.md)
-- [RHEL](rhel.md)
+- [RHEL](rhel)
 - [zsh](zsh.md)
