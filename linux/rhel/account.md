@@ -31,3 +31,7 @@ PASS_WARN_AGE   7
 chage -m MIN_DAYS -M MAX_DAYS -d LAST_DAY -I INACTIVE -E EXPIRE_DATE -W WARN_DAYS LOGIN
 chage -l LOGIN
 ```
+
+```bash
+$ sudo chage -m 5 -M 90 -W 10 -I 3 perman
+```
