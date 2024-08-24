@@ -8,7 +8,9 @@ $ sudo passwd perman
 ```bash
 $ sudo groupadd superheros
 $ sudo useradd booby
-$ sudo 
+$ id booby
+$ sudo usermod -G superheroes booby
+$ sudo passwd booby
 ```
 
 ## /etc/login.def
