@@ -31,6 +31,8 @@
    1. Login Infomation で Red Hat アカウントを選択
    2. \[I have read and agree to all the terms and conditions below (check all boxes).] にチェックを入れる
    3. \[Create my account] をクリック
-3. [Red Hat カスタマーポータル](https://access.redhat.com/ja) に戻り、\[サブスクリプション] をクリックします。
+3. [Red Hat カスタマーポータル](https://access.redhat.com/ja) のトップ画面左上にある \[サブスクリプション] をクリックします。
 4. \[Subscriptions Inventory](https://console.redhat.com/insights/subscriptions/inventory) をクリックします。
 5. \[Red Hat Developer Subscription for Individuals] が表示されることを確認します。
+6. [Red Hat カスタマーポータル](https://access.redhat.com/ja) のトップ画面左上にある \[ダウンロード] をクリックします。
+7. \[Red Hat Enterprise Linux 9.4 Boot ISO] をダウンロードします。
