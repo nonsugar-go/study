@@ -37,9 +37,15 @@
 6. [Red Hat カスタマーポータル](https://access.redhat.com/ja) のトップ画面左上にある \[ダウンロード] をクリックします。
 7. \[Red Hat Enterprise Linux 9.4 Boot ISO] をダウンロードします。
 # ESXi に RHEL9 をインストールする
+## 仮想マシンの作成
 | 項目 | 値 |
 |----|----|
 | CPU | 1 |
 | メモリ | 2048 |
 | ハードディスク 1 | 16GB, シン プロビジョニング |
 | CD/DVD ドライブ 1 | rhel-9.4-x86_64-boot.iso |
+## インストーラー
+| 項目 | 値 |
+| 起動メニュー | Install Red Hat Enterprise Linux 9.0 |
+| 言語を選択 | 日本語 / 日本語 (日本) |
+| インストール概要 | 》 |
