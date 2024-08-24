@@ -60,5 +60,5 @@
 |┃|┃| 用途/ロール | Red Hat Enterprise Linux Server |
 |┃|┃| 用途/SLA | Self-Support |
 |┃|┃| 用途/使用法 | Development/Test |
-|┃|┃| red Hat Insights に接続します | チェックを入れたまま |
+|┃|┃| Red Hat Insights に接続します | チェックを入れたまま |
 |┃|┃| [登録] をクリック |
