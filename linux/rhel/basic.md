@@ -111,3 +111,4 @@ sudo poweroff
 ```
 ## Cockpit
 $ sudo systemctl enable --now cockpit.socket
+$ sudo systemctl status cockpit.socket
