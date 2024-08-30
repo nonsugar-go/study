@@ -110,5 +110,7 @@ sudo reboot
 sudo poweroff
 ```
 ## Cockpit
+```bash
 $ sudo systemctl enable --now cockpit.socket
 $ sudo systemctl status cockpit.socket
+```
