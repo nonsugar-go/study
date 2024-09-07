@@ -23,7 +23,7 @@ export PATH=$PATH:/usr/local/go/bin
 export GOPATH="$(cygpath -w ${HOME}/go)"
 export PATH="${PATH}:$(cygpath ${GOPATH}\\bin)"
 ```
-1. バージョン、環境確認とツールのインストール
+## バージョン、環境確認とツールのインストール
 ```bash
 $ go version
 go version go1.23.1 windows/amd64
