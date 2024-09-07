@@ -1,5 +1,6 @@
 # Golang
-- [Excel](excel.md)
 - [Install](install.md)
 - [Basic](basic.md)
+- [Excel](excel.md)
 - [GUI](gui)
+- [mygodoc](mygodoc.md)
