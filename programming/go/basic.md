@@ -66,7 +66,7 @@ $ ~/work/go/go_setup.sh
 ## vim
 - https://github.com/mattn/vim-goimports
 
-- [[Programming/Go/mygodoc]]
+- [mygodoc](mygodoc)
 
 ## VSCode
 - Ctrl + Shift + P > Go: Install/Update Tools > 全てチェック
