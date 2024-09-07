@@ -108,7 +108,6 @@ $GOPATH/bin/helloworld
 
 - https://github.com/fukata/golang-stats-api-handler
 
-- [みんなのGo言語[現場で使える実践テクニック](https://www.amazon.co.jp/dp/B01LMS7B1O/)
 - https://shinpei.github.io/blog/2014/10/07/use-build-constrains-or-build-tag-in-golang
 
 - [Learn Go Programming by Building 11 Projects &#8211; Full Course(YouTube)](https://www.youtube.com/watch?v=jFfo23yIWac)
