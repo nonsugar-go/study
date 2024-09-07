@@ -9,8 +9,8 @@
 - https://pkg.go.dev/github.com/josharian/impl#section-readme
 ## Linux
 ```bash
-curl -OL https://go.dev/dl/go1.23.0.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.23.0.linux-amd64.tar.gz
+curl -OL https://go.dev/dl/go1.23.1.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.23.1.linux-amd64.tar.gz
 ```
 ### ~/.zshrc
 ```
@@ -26,7 +26,7 @@ export PATH="${PATH}:$(cygpath ${GOPATH}\\bin)"
 1. バージョン、環境確認とツールのインストール
 ```bash
 $ go version
-go version go1.20.4 windows/amd64
+go version go1.23.1 windows/amd64
 
 $ go env
 $ vim ~/work/go/go_setup.sh
