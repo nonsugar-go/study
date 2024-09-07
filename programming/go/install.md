@@ -1,5 +1,15 @@
 # インストール
 - https://go.dev/dl/
+- https://go.dev/doc/install
+
+- https://pkg.go.dev/golang.org/x/tools
+- https://pkg.go.dev/golang.org/x/tools/cmd
+- https://github.com/x-motemen/gore
+- https://pkg.go.dev/github.com/lifeibo/gotags#section-readme
+- https://pkg.go.dev/github.com/josharian/impl#section-readme
+
+- https://staticcheck.io/docs/getting-started/
+- [【Go】デファクトなlinter staticcheckの設定方法 - Qiita](https://qiita.com/yagi_eng/items/1c34f9691128c51846e7)
 ## Linux
 ```bash
 curl -OL https://go.dev/dl/go1.23.0.linux-amd64.tar.gz
@@ -9,24 +19,15 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.23.0.linux-amd64.ta
 ```
 export PATH=$PATH:/usr/local/go/bin
 ```
-# インストール
-- https://go.dev/doc/install
-- https://pkg.go.dev/golang.org/x/tools
-- https://pkg.go.dev/golang.org/x/tools/cmd
-- https://github.com/x-motemen/gore
-- https://pkg.go.dev/github.com/lifeibo/gotags#section-readme
-- https://pkg.go.dev/github.com/josharian/impl#section-readme
-
-- https://staticcheck.io/docs/getting-started/
-- [【Go】デファクトなlinter staticcheckの設定方法 - Qiita](https://qiita.com/yagi_eng/items/1c34f9691128c51846e7)
-
+## Cygwin
 1. MSI のインストーラーでインストールします。
 2. ~/.bash_profile に追加します
 ```bash
 vim ~/.bash_profile
 ```
-## 追加します
+
 ```bash
+## 追加します
 export GOPATH="$(cygpath -w ${HOME}/go)"
 export PATH="${PATH}:$(cygpath ${GOPATH}\\bin)"
 ```
