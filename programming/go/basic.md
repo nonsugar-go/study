@@ -3,6 +3,32 @@
 - [Gopherfest 2015 | Go Proverbs with Rob Pike](https://www.youtube.com/watch?v=PAAkCSZUG1c)
 # プロジェクトの構造
 - https://github.com/golang-standards/project-layout/blob/master/README_ja.md
+## workspaces
+- https://go.dev/doc/tutorial/workspaces
+- https://go.dev/ref/mod#workspaces
+
+
+```bash
+cd toolkit-project/toolkit
+go mod init github.com/nonsugar-go/toolkit
+cd ../app
+go mod init myapp
+cd ..
+toolkit-project/toolkit
+cd ..
+```
+
+output:
+```bash
+find toolkit-project
+toolkit-project
+toolkit-project/app
+toolkit-project/app/go.mod
+toolkit-project/go.work
+toolkit-project/toolkit
+toolkit-project/toolkit/go.mod
+toolkit-project/toolkit.code-workspace
+```
 # チュートリアル
 - https://go.dev/doc/tutorial/getting-started
 - https://go.dev/tour/
@@ -116,31 +142,3 @@ $GOPATH/bin/helloworld
 - https://news.mynavi.jp/techplus/series/gogogo/
 
 - https://github.com/GomaGoma676/go-basics 講座
-
-
-# workspaces
-- https://go.dev/doc/tutorial/workspaces
-- https://go.dev/ref/mod#workspaces
-
-
-```bash
-cd toolkit-project/toolkit
-go mod init github.com/nonsugar-go/toolkit
-cd ../app
-go mod init myapp
-cd ..
-toolkit-project/toolkit
-cd ..
-```
-
-output:
-```bash
-find toolkit-project
-toolkit-project
-toolkit-project/app
-toolkit-project/app/go.mod
-toolkit-project/go.work
-toolkit-project/toolkit
-toolkit-project/toolkit/go.mod
-toolkit-project/toolkit.code-workspace
-```
