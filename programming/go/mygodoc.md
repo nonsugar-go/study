@@ -2,28 +2,31 @@
 # Makefile
 ```makefile
 BINARY_NAME := mygodoc
-
-.PHONY: all run clean install
+ifeq (${OS},Windows_NT)
+	BINARY_NAME := ${BINARY_NAME}.exe
+else
+	SUDO := sudo
+endif
+.PHONY: all init clean install
 
 all: ${BINARY_NAME}
 
-run: ${BINARY_NAME}
- 	./${BINARY_NAME}.exe
+init:
+	rm -f go.mod go.sum
+	go mod init example/mygodoc
+	go mod tidy
 
 clean:
- 	go clean
- 	rm -f ${BINARY_NAME}.exe tags
+	go clean
 
 install:
- 	cp -f ${BINARY_NAME}.exe /usr/local/bin
+	${SUDO} cp -f ${BINARY_NAME} /usr/local/bin
 
 ${BINARY_NAME}: main.go
- 	go mod tidy
- 	goimports -w $<
- 	staticcheck $<
- 	go vet $<
- 	gotags -f tags $<
- 	go build -o $@.exe $<
+	goimports -w $<
+	staticcheck $<
+	go vet $<
+	go build -o $@ $<
 ```
 # main.go
 ```go
