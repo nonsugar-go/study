@@ -89,8 +89,8 @@ go build -ldflags -H=windowsgui .
 
 ```bash
 go install fyne.io/fyne/v2/cmd/fyne@latest
- 
 fyne package -icon myapp.png  ## Icon.png をカレントディレクトリに置けば、-icon オプションはいらない
+```
 
 # Makefile
 ```makefile
