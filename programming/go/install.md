@@ -7,9 +7,6 @@
 - https://github.com/x-motemen/gore
 - https://pkg.go.dev/github.com/lifeibo/gotags#section-readme
 - https://pkg.go.dev/github.com/josharian/impl#section-readme
-
-- https://staticcheck.io/docs/getting-started/
-- [【Go】デファクトなlinter staticcheckの設定方法 - Qiita](https://qiita.com/yagi_eng/items/1c34f9691128c51846e7)
 ## Linux
 ```bash
 curl -OL https://go.dev/dl/go1.23.0.linux-amd64.tar.gz
@@ -62,6 +59,9 @@ $ ~/work/go/go_setup.sh
 - https://github.com/fzipp/gocyclo
 - https://github.com/jgautheron/goconst
 - https://github.com/golangci/golangci-lint
+
+- https://staticcheck.io/docs/getting-started/
+- [【Go】デファクトなlinter staticcheckの設定方法 - Qiita](https://qiita.com/yagi_eng/items/1c34f9691128c51846e7)
 ## フォーマッター
 - https://golang.org/cmd/gofmt/
 - https://godoc.org/golang.org/x/tools/cmd/goimports
