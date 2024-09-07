@@ -15,6 +15,9 @@ go run fyne.io/fyne/v2/cmd/fyne_demo@latest
 ```
 ### WSL2 (Ubuntu)
 - [Go+Fyneで作ったデスクトップアプリを新WSL上で動かしてみる｜SHIFT Group 技術ブログ](https://note.shiftinc.jp/n/nff7670275af4)
+```bash
+sudo apt install -y libx11-dev libxcursor-dev libxrandr-dev libxinerama-dev libxi-dev libgl1-mesa-dev libxxf86vm-dev
+```
 # Hello World
 - https://developer.fyne.io/started/hello
 - https://developer.fyne.io/started/apprun
