@@ -11,8 +11,7 @@
 
 ```bash
 export CC=x86_64-w64-mingw32-gcc
-go install fyne.io/fyne/v2/cmd/fyne_demo@latest
-fyne_demo
+go run fyne.io/fyne/v2/cmd/fyne_demo@latest
 ```
 # Hello World
 - https://developer.fyne.io/started/hello
