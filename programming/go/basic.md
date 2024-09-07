@@ -66,7 +66,7 @@ $ ~/work/go/go_setup.sh
 ## vim
 - https://github.com/mattn/vim-goimports
 
-- [mygodoc](mygodoc)
+- [mygodoc](mygodoc.md)
 
 ## VSCode
 - Ctrl + Shift + P > Go: Install/Update Tools > 全てチェック
@@ -113,44 +113,43 @@ clean:
  	rm -f *.exe rsrc.syso
 ```
 
-- make 実行
- $ make
-- 実行
- $ go run .
-- ビルド
- $ go build .
- $ ./hello.exe
-- Linux 64bit 用バイナリを作成する。
- $ GOOS=linux GOARCH=amd64 go build -o ./helo_linux
-- インストール済みパッケージ一覧
- $ go list ...
+```bash
+## make 実行
+make
+## 実行
+go run .
+## ビルド
+go build .
+./hello.exe
+## Linux 64bit 用バイナリを作成する。
+GOOS=linux GOARCH=amd64 go build -o ./helo_linux
+## インストール済みパッケージ一覧
+go list ...
+```
 
-* Hello, World! (プログラミング言語Go)
-- [[プログラミング言語Go>https://www.amazon.co.jp/dp/B099928SJD]]
+# Hello, World! (プログラミング言語Go)
+- [プログラミング言語Go](https://www.amazon.co.jp/dp/B099928SJD)
 - http://www.gopl.io/
 - https://github.com/YoshikiShibata/gpl
 - https://github.com/torbiak/gopl
 
-- helloworld
- $ GOPATH=$(cygpath -w $HOME/work/go/gobook)
- $ mkdir -p $GOPATH
- $ go install gopl.io/ch1/helloworld@latest  # go get gopl.io/ch1/helloworld ではエラーが出る
- $ $GOPATH/bin/helloworld
-
-* 眺めて覚えるGo言語
-- [[眺めて覚えるGo言語 - Qiita>https://qiita.com/hiratarich/items/adf6fd3c4ec4cdd436d5]]
-- [[眺めて覚えるGo言語 その2 - Qiita>https://qiita.com/hiratarich/items/6914c5b2944ec3458915]]
-
-* 標準ライブラリ
+```bash
+## helloworld
+GOPATH=$(cygpath -w $HOME/work/go/gobook)
+mkdir -p $GOPATH
+go install gopl.io/ch1/helloworld@latest  # go get gopl.io/ch1/helloworld ではエラーが出る
+$GOPATH/bin/helloworld
+```
+# 眺めて覚えるGo言語
+- [眺めて覚えるGo言語 - Qiita](https://qiita.com/hiratarich/items/adf6fd3c4ec4cdd436d5)
+- [眺めて覚えるGo言語 その2 - Qiita](https://qiita.com/hiratarich/items/6914c5b2944ec3458915)
+# 標準ライブラリ
 - https://pkg.go.dev/std
-
-* オブジェクト指向
+# オブジェクト指向
 - https://golangdocs.com/object-oriented-programming-in-golang
-
-* デバッグ
+# デバッグ
 - https://dave.cheney.net/2014/09/28/using-build-to-switch-between-debug-and-release
-
-* 参考
+# 参考
 - https://go.dev/doc/
 - https://go.dev/ref/spec
 - https://pkg.go.dev/
@@ -161,14 +160,14 @@ clean:
 - https://github.com/golang/go/wiki/
 - https://github.com/golang/go/wiki/Modules/
 
-- [[Writing, building, installing, and testing Go code(YouTube)>https://www.youtube.com/watch?v=XCsL89YtqCs]]
+- [Writing, building, installing, and testing Go code(YouTube)](https://www.youtube.com/watch?v=XCsL89YtqCs)
 - https://go.dev/doc/code
-- [[Google I/O 2012 - Go Concurrency Patterns(YouTube)>https://www.youtube.com/watch?v=f6kdp27TYZs]]
+- [Google I/O 2012 - Go Concurrency Patterns(YouTube)](https://www.youtube.com/watch?v=f6kdp27TYZs)
 - https://go.dev/talks/2012/concurrency.slide#1
-- [[Google I/O 2013 - Advanced Go Concurrency Patterns(YouTube)>https://www.youtube.com/watch?v=QDDwwePbDtw]]
+- [Google I/O 2013 - Advanced Go Concurrency Patterns(YouTube)](https://www.youtube.com/watch?v=QDDwwePbDtw)
 - https://go.dev/talks/2013/advconc.slide#1
 - https://go.dev/doc/codewalk/sharemem/
-- [[Vimeoで Go: a simple programming environment(動画)>https://vimeo.com/53221558]]
+- [Vimeoで Go: a simple programming environment(動画)](https://vimeo.com/53221558)
 - https://go.dev/talks/2012/simple.slide#1
 - https://go.dev/doc/articles/wiki/
 - https://go.dev/doc/codewalk/functions/
@@ -177,12 +176,12 @@ clean:
 
 - https://github.com/fukata/golang-stats-api-handler
 
-- [[みんなのGo言語[現場で使える実践テクニック]>https://www.amazon.co.jp/dp/B01LMS7B1O/]]
+- [みんなのGo言語[現場で使える実践テクニック](https://www.amazon.co.jp/dp/B01LMS7B1O/)
 - https://shinpei.github.io/blog/2014/10/07/use-build-constrains-or-build-tag-in-golang
 
-- [[Learn Go Programming by Building 11 Projects &#8211; Full Course(YouTube)>https://www.youtube.com/watch?v=jFfo23yIWac]]
+- [Learn Go Programming by Building 11 Projects &#8211; Full Course(YouTube)](https://www.youtube.com/watch?v=jFfo23yIWac)
 
-- [[Web上の参考になった記事のリスト - golangの日記>https://golang.hateblo.jp/web-articles]]
+- [Web上の参考になった記事のリスト - golangの日記](https://golang.hateblo.jp/web-articles)
 - https://news.mynavi.jp/techplus/series/gogogo/
 
 - https://github.com/GomaGoma676/go-basics 講座
@@ -193,7 +192,7 @@ clean:
 - https://go.dev/ref/mod#workspaces
 
 
-```zsh
+```bash
 cd toolkit-project/toolkit
 go mod init github.com/nonsugar-go/toolkit
 cd ../app
@@ -204,7 +203,7 @@ cd ..
 ```
 
 output:
-```zsh
+```bash
 find toolkit-project
 toolkit-project
 toolkit-project/app
