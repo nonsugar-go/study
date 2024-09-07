@@ -61,7 +61,6 @@ go list ...
 ```
 
 # Hello, World! (プログラミング言語Go)
-- [プログラミング言語Go](https://www.amazon.co.jp/dp/B099928SJD)
 - http://www.gopl.io/
 - https://github.com/YoshikiShibata/gpl
 - https://github.com/torbiak/gopl
