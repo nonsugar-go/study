@@ -1,18 +1,20 @@
 # Fyne - Basic
 ## 事前準備, Demo
-### Install Cygwin Packages
-- make
-- mingw64-x86_64-gcc-core: 64-bit C compiler for native 64-bit Windows. The executable is "x86_64-w64-mingw32-gcc".
-<!-- - mingw64-i686-gcc-core: 64-bit C compiler for native 32-bit Windows. The executable is "i686-w64-mingw32-gcc". (いらない) -->
-### VMware 上で動かす場合、以下の設定が必要
-- 仮想マシン > 設定の編集 > 仮想ハードウェア > ビデオ カード > 3D グラフィックス: &#9745; 3Dサポートを有効化
 - https://developer.fyne.io/started/
 - https://github.com/fyne-io/fyne/tree/master/cmd/fyne_demo
-
+### VMware 上で動かす場合、以下の設定が必要
+- 仮想マシン > 設定の編集 > 仮想ハードウェア > ビデオ カード > 3D グラフィックス: &#9745; 3Dサポートを有効化
+### Install Cygwin Packages
+- Cygwin Packages
+  - make
+  - mingw64-x86_64-gcc-core: 64-bit C compiler for native 64-bit Windows. The executable is "x86_64-w64-mingw32-gcc".
+<!-- - mingw64-i686-gcc-core: 64-bit C compiler for native 32-bit Windows. The executable is "i686-w64-mingw32-gcc". (いらない) -->
 ```bash
 export CC=x86_64-w64-mingw32-gcc
 go run fyne.io/fyne/v2/cmd/fyne_demo@latest
 ```
+### WSL2 (Ubuntu)
+- [Go+Fyneで作ったデスクトップアプリを新WSL上で動かしてみる｜SHIFT Group 技術ブログ](https://note.shiftinc.jp/n/nff7670275af4)
 # Hello World
 - https://developer.fyne.io/started/hello
 - https://developer.fyne.io/started/apprun
