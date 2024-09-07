@@ -23,7 +23,7 @@ gofmt -w .
 ## フォーマット (インポート宣言の挿入と削除も行う)
 goimports -w .
 ## go.mod ファイルを作成する
-go mod init example.hello
+go mod init example/hello
 ## 標準モジュール以外を呼び出す場合、go.sum　ファイルを作成する
 go mod tidy
 ```
