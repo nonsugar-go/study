@@ -14,7 +14,7 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.23.1.linux-amd64.ta
 ```
 ### ~/.zshrc
 ```
-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin:$(go env GOPATH)/bin
 ```
 ## Cygwin
 1. MSI のインストーラーでインストールします。
