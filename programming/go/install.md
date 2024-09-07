@@ -65,6 +65,7 @@ $ ~/work/go/go_setup.sh
 ## フォーマッター
 - https://golang.org/cmd/gofmt/
 - https://godoc.org/golang.org/x/tools/cmd/goimports
+# エディタ
 ## vim
 - https://github.com/mattn/vim-goimports
 
