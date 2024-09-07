@@ -23,11 +23,6 @@ export PATH=$PATH:/usr/local/go/bin
 1. MSI のインストーラーでインストールします。
 2. ~/.bash_profile に追加します
 ```bash
-vim ~/.bash_profile
-```
-
-```bash
-## 追加します
 export GOPATH="$(cygpath -w ${HOME}/go)"
 export PATH="${PATH}:$(cygpath ${GOPATH}\\bin)"
 ```
