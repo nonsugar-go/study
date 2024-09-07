@@ -33,7 +33,7 @@ $ vim ~/work/go/go_setup.sh
 ```
 
 ```bash
-#! /bin/bash
+#!/bin/bash
 set -x
 
 go install github.com/akavel/rsrc@latest
