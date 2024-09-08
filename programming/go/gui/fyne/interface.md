@@ -15,7 +15,7 @@ type CanvasObject interface {
 }
 ```
 # Widget
-- https://developer.fyne.io/api/v2.4/widget.html#type-widget
+- https://docs.fyne.io/api/v2.5/widget
 ```go
 type Widget interface {
         CanvasObject
