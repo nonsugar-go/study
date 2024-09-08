@@ -31,7 +31,8 @@ type WidgetRenderer interface {
         MinSize() Size
         Objects() []CanvasObject
         Refresh()
-}```
+}
+```
 # Container
 - https://docs.fyne.io/api/v2.5/container
 ```go
