@@ -95,11 +95,9 @@ type Layout interface {
 ```
 ## Layout List
 - https://docs.fyne.io/explore/layouts
-```go
-func NewStackLayout() fyne.Layout
-```
 ## Box
 - https://docs.fyne.io/container/box
+- https://docs.fyne.io/api/v2.5/layout/
 ```go
 func NewSpacer() fyne.CanvasObject
 func NewVBoxLayout() fyne.Layout
@@ -110,24 +108,65 @@ func NewHBoxLayout() fyne.Layout
 ## Border
 - https://docs.fyne.io/container/border
 ```go
-func NewBorder(top, bottom, left, right fyne.CanvasObject, objects ...fyne.CanvasObject) *fyne.Container
+func NewBorderLayout(top, bottom, left, right fyne.CanvasObject) fyne.Layout
 ```
 ## Size, Position, Padding
-- https://docs.fyne.io/api/v2.4/size
+- https://docs.fyne.io/api/v2.5/size
 ```go
 type Size struct {
-        Width  float32
-        Height float32
+        Width  float32 // The number of units along the X axis.
+        Height float32 // The number of units along the Y axis.
 }
+func MeasureText(text string, size float32, style TextStyle) Size
+func NewSize(w float32, h float32) Size
+func NewSquareSize(side float32) Size
+func (s Size) Add(v Vector2) Size
+func (s Size) AddWidthHeight(width, height float32) Size
+func (s Size) Components() (float32, float32)
+func (s Size) IsZero() bool
+func (s Size) Max(v Vector2) Size
+func (s Size) Min(v Vector2) Size
+func (s Size) Subtract(v Vector2) Size
+func (s Size) SubtractWidthHeight(width, height float32) Size
 ```
 - https://docs.fyne.io/api/v2.5/position
 ```go
 type Position struct {
-        X float32
-        Y float32
+        X float32 // The position from the parent's left edge
+        Y float32 // The position from the parent's top edge
 }
+func NewPos(x float32, y float32) Position
+func NewSquareOffsetPos(length float32) Position
+func (p Position) Add(v Vector2) Position
+func (p Position) AddXY(x, y float32) Position
+func (p Position) Components() (float32, float32)
+func (p Position) IsZero() bool
+func (p Position) Subtract(v Vector2) Position
+func (p Position) SubtractXY(x, y float32) Position```
 ```
 - https://docs.fyne.io/api/v2.5/legacytheme
 ```go
-func Padding() float32
+type LegacyTheme interface {
+	BackgroundColor() color.Color
+	ButtonColor() color.Color
+	DisabledButtonColor() color.Color
+	TextColor() color.Color
+	DisabledTextColor() color.Color
+	PlaceHolderColor() color.Color
+	PrimaryColor() color.Color
+	HoverColor() color.Color
+	FocusColor() color.Color
+	ScrollBarColor() color.Color
+	ShadowColor() color.Color
+	TextSize() int
+	TextFont() Resource
+	TextBoldFont() Resource
+	TextItalicFont() Resource
+	TextBoldItalicFont() Resource
+	TextMonospaceFont() Resource
+	Padding() int
+	IconInlineSize() int
+	ScrollBarSize() int
+	ScrollBarSmallSize() int
+}
 ```
