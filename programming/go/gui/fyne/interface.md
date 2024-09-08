@@ -32,8 +32,11 @@ type CanvasObject interface {
 - https://docs.fyne.io/api/v2.5/widget
 ```go
 type Widget interface {
-        CanvasObject
-        CreateRenderer() WidgetRenderer
+	CanvasObject
+
+	// CreateRenderer returns a new WidgetRenderer for this widget.
+	// This should not be called by regular code, it is used internally to render a widget.
+	CreateRenderer() WidgetRenderer
 }
 ```
 -- https://developer.fyne.io/api/v2.5/widgetrenderer.html#type-widgetrenderer
