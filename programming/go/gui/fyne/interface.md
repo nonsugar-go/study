@@ -1,6 +1,6 @@
 # interface
 # CanvasObject
-- https://developer.fyne.io/api/v2.4/canvasobject.html#type-canvasobject
+- https://developer.fyne.io/api/v2.5/canvasobject.html#type-canvasobject
 ```go
 type CanvasObject interface {
         MinSize() Size
@@ -22,7 +22,7 @@ type Widget interface {
         CreateRenderer() WidgetRenderer
 }
 ```
--- https://developer.fyne.io/api/v2.4/widgetrenderer.html#type-widgetrenderer
+-- https://developer.fyne.io/api/v2.5/widgetrenderer.html#type-widgetrenderer
 ```go
 type WidgetRenderer interface {
         Destroy()
@@ -33,7 +33,7 @@ type WidgetRenderer interface {
 }
 ```
 # Container
-- https://developer.fyne.io/api/v2.4/container.html#type-container
+- https://developer.fyne.io/api/v2.5/container.html#type-container
 ```go
 type Container struct {
         Hidden bool
@@ -55,12 +55,12 @@ func (c *Container) Show()
 func (c *Container) Size() Size
 func (c *Container) Visible() bool
 ```
--- https://developer.fyne.io/api/v2.4/container/#func--new
+-- https://developer.fyne.io/api/v2.5/container/#func--new
 ```go
 func New(layout fyne.Layout, objects ...fyne.CanvasObject) *fyne.Container
 ```
 # Window
-- https://developer.fyne.io/api/v2.4/window.html#type-window
+- https://developer.fyne.io/api/v2.5/window.html#type-window
 ```go
 type Window interface {
 	Title() string
@@ -93,7 +93,7 @@ type Window interface {
 }
 ```
 # Layout
-- https://developer.fyne.io/api/v2.4/layout.html#type-layout
+- https://developer.fyne.io/api/v2.5/layout.html#type-layout
 ```go
  package fyne // import "fyne.io/fyne/v2"
  
@@ -118,22 +118,22 @@ func NewHBoxLayout() fyne.Layout
 ```go
 func NewBorder(top, bottom, left, right fyne.CanvasObject, objects ...fyne.CanvasObject) *fyne.Container
 ```
-** Size, Position, Padding
-- https://developer.fyne.io/api/v2.4/size.html#type-size
+## Size, Position, Padding
+- https://developer.fyne.io/api/v2.5/size.html#type-size
 ```go
 type Size struct {
         Width  float32
         Height float32
 }
 
-- https://developer.fyne.io/api/v2.4/position.html#type-position
+- https://developer.fyne.io/api/v2.5/position.html#type-position
 ```go
 type Position struct {
         X float32
         Y float32
 }
-
-- https://developer.fyne.io/api/v2.4/legacytheme.html
+```
+- https://developer.fyne.io/api/v2.5/legacytheme.html
 ```go
 func Padding() float32
 ```
