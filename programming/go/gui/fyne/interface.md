@@ -1,6 +1,6 @@
 # interface
 # CanvasObject
-- https://developer.fyne.io/api/v2.5/canvasobject.html#type-canvasobject
+- https://docs.fyne.io/api/v2.5/canvasobject
 ```go
 type CanvasObject interface {
         MinSize() Size
