@@ -93,37 +93,40 @@ type Layout interface {
 }
 ```
 ## Layout List
-- https://developer.fyne.io/explore/layouts
+- https://docs.fyne.io/explore/layouts
 ```go
 func NewStackLayout() fyne.Layout
 ```
--- https://developer.fyne.io/container/box
+## Box
+- https://docs.fyne.io/container/box
 ```go
 func NewSpacer() fyne.CanvasObject
 func NewVBoxLayout() fyne.Layout
 func NewHBoxLayout() fyne.Layout
 ```
--- https://developer.fyne.io/container/center
--- https://developer.fyne.io/container/border
+## Center
+- https://docs.fyne.io/container/center
+## Border
+- https://docs.fyne.io/container/border
 ```go
 func NewBorder(top, bottom, left, right fyne.CanvasObject, objects ...fyne.CanvasObject) *fyne.Container
 ```
 ## Size, Position, Padding
-- https://developer.fyne.io/api/v2.5/size.html#type-size
+- https://docs.fyne.io/api/v2.4/size
 ```go
 type Size struct {
         Width  float32
         Height float32
 }
-
-- https://developer.fyne.io/api/v2.5/position.html#type-position
+```
+- https://docs.fyne.io/api/v2.5/position
 ```go
 type Position struct {
         X float32
         Y float32
 }
 ```
-- https://developer.fyne.io/api/v2.5/legacytheme.html
+- https://docs.fyne.io/api/v2.5/legacytheme
 ```go
 func Padding() float32
 ```
