@@ -4,10 +4,10 @@
 - https://www.youtube.com/watch?v=qFMuMh_0p0A
 - https://www.youtube.com/watch?v=HYrF7_PVqVU
 
-- https://docs.fyne.io/api/v2.4/window.html
-- https://docs.fyne.io/api/v2.4/mainmenu.html
-- https://docs.fyne.io/api/v2.4/menu.html
-- https://docs.fyne.io/api/v2.4/menuitem.html
+- https://docs.fyne.io/api/v2.5/window.html
+- https://docs.fyne.io/api/v2.5/mainmenu.html
+- https://docs.fyne.io/api/v2.5/menu.html
+- https://docs.fyne.io/api/v2.5/menuitem.html
 
 ```go
 func main() {
@@ -36,10 +36,10 @@ func main() {
 }
 ```
 # Toolbar
-- https://developer.fyne.io/widget/toolbar
-- https://developer.fyne.io/api/v2.4/widget/toolbar.html#func--newtoolbar
-- https://developer.fyne.io/api/v2.4/widget/toolbaraction.html#func--newtoolbaraction
-- https://developer.fyne.io/api/v2.4/widget/toolbarseparator.html#func--newtoolbarseparator
-- https://developer.fyne.io/api/v2.4/widget/toolbarspacer.html#func--newtoolbarspacer
+- https://docs.fyne.io/widget/toolbar
+- https://docs.fyne.io/api/v2.5/widget/toolbar
+- https://docs.fyne.io/api/v2.5/widget/toolbaraction
+- https://docs.fyne.io/api/v2.5/widget/toolbarseparator
+- https://docs.fyne.io/api/v2.5/widget/toolbarspacer
 ## Icons
-- https://developer.fyne.io/explore/icons
+- https://docs.fyne.io/explore/icons
