@@ -4,7 +4,7 @@
 - [Excel](excel.md)
 - [GUI](gui)
 - [mygodoc](mygodoc.md)
-- [database](database.md)
+- [Database](database.md)
 
 # Links
 - https://github.com/tsawler
