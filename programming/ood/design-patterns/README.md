@@ -2,20 +2,20 @@
 - [デザインパターン (ソフトウェア) - Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3_(%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2))
 - https://refactoring.guru/design-patterns
 
-| Scope  | Creational       | Structural       | Behavioral                  |
-| ------ | ---------------- | ---------------- | --------------------------- |
-| Class  | [Factory Method](factory-method.md)   | [Adapter (class)](adapter.md)  | Interpreter                 |
-|        |                  |                  | [Template Method](template-method.md)             |
-| Object | [Abstract Factory](abstract-factory.md) | [Adapter (object)](adapter.md) | Chain Of Responsibility     |
-|        | Builder          | Bridge           | Responsibility              |
-|        | Prototype        | Composite        | Command                     |
-|        | Singleton        | Decorator        | Iterator                    |
-|        |                  | Facade           | Mediator                    |
-|        |                  | Flyweight        | Memento                     |
-|        |                  | Proxy            | Observer                    |
-|        |                  |                  | State                       |
-|        |                  |                  | Strategy                    |
-|        |                  |                  | Visitor                     |
+| Scope  | Creational                              | Structural                     | Behavioral                            |
+| ------ | --------------------------------------- | ------------------------------ | ------------------------------------- |
+| Class  | [Factory Method](factory-method.md)     | [Adapter (class)](adapter.md)  | Interpreter                           |
+|        |                                         |                                | [Template Method](template-method.md) |
+| Object | [Abstract Factory](abstract-factory.md) | [Adapter (object)](adapter.md) | Chain Of Responsibility               |
+|        | [Builder](builder.md)                   | Bridge                         | Responsibility                        |
+|        | Prototype                               | Composite                      | Command                               |
+|        | Singleton                               | Decorator                      | Iterator                              |
+|        |                                         | Facade                         | Mediator                              |
+|        |                                         | Flyweight                      | Memento                               |
+|        |                                         | Proxy                          | Observer                              |
+|        |                                         |                                | State                                 |
+|        |                                         |                                | Strategy                              |
+|        |                                         |                                | Visitor                               |
 ## Golang
 * Go 言語
 - [Desing Patters in Golang. What a Design Pattern is? | by Israel Josu&#233; Parra Rosales | Towards Dev](https://medium.com/@josueparra2892/desing-patters-in-golang-24a142d2cc91)
