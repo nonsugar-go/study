@@ -1,4 +1,4 @@
-# Factory Method
+# Abstract Factory
 ```mermaid
 classDiagram
     AbstractProduct1 <|-- ConcreteProduct1
