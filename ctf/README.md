@@ -4,6 +4,7 @@
 - [SECCON Beginners CTF](seccon-beginners-ctf.md)
 - [AlpacaHack](alpacahack.md)
 - [WaniCTF](wani-ctf.md)
+- [Scan](scan.md)
 - [Pwnable](pwnable.md)
 - [checksec](checksec.md)
 - [pwndbg](pwndbg.md)
