@@ -47,7 +47,7 @@ classDiagram
             performOne() 
             performTwo()
         }
-        class ConncreteFactory{
+        class ConcreteFactory{
             createProduct1()
             createProduct2()
             createProduct3()
