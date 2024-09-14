@@ -4,9 +4,9 @@
 
 | Scope  | Creational       | Structural       | Behavioral                  |
 | ------ | ---------------- | ---------------- | --------------------------- |
-| Class  | Factory Method   | Adapter (class)  | Interpreter                 |
-|        |                  |                  | Template Method             |
-| Object | Abstract Factory | Adapter (object) | Chain Of Responsibility     |
+| Class  | [Factory Method](factory-method.md)   | [Adapter (class)](adapter.md)  | Interpreter                 |
+|        |                  |                  | [Template Method](template-method.md)             |
+| Object | [Abstract Factory](abstract-factory.md) | [Adapter (object)](adapter.md) | Chain Of Responsibility     |
 |        | Builder          | Bridge           | Responsibility              |
 |        | Prototype        | Composite        | Command                     |
 |        | Singleton        | Decorator        | Iterator                    |
