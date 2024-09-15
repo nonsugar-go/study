@@ -11,5 +11,5 @@ sudo apt install netdiscover -y
 sudo netdiscover -r 192.168.1.0/24
 ```
 
-> !WARN
+> [!NOTE]
 > WSL2 では NAT で外部と接続するため、外部のネットワークの ARP スキャンはできない
