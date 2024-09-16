@@ -49,6 +49,20 @@ emerge from self-organizing teams.
 to become more effective, then tunes and adjusts
 its behavior accordingly.
 
-# 用語
+# Agile Terms
 - https://enlyt.co.jp/blog/agile/
 - https://abi-agile.com/retrospective/
+
+- Product Owner
+- Agile Project Manager/Scram Master
+- Product Backlog
+- Sprint Planning Meeting
+- Sprint Backlog
+- Sprint
+- Daily Stand Up Meeting
+- Sprint Review
+- Retrospective
+- Partial Completed Product
+- Release
+
+- Sprint = Iteration
