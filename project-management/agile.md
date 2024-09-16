@@ -48,3 +48,7 @@ emerge from self-organizing teams.
 12. At regular intervals, the team reflects on how
 to become more effective, then tunes and adjusts
 its behavior accordingly.
+
+# 用語
+- https://enlyt.co.jp/blog/agile/
+- https://abi-agile.com/retrospective/
