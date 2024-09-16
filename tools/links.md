@@ -5,3 +5,4 @@
 - [Google Fonts](https://fonts.google.com/)
 - [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 - [Open Trivia DB: Free to use, user-contributed trivia question database.](https://opentdb.com/api_config.php)
+- [Python Tkinter Colors list](https://www.plus2net.com/python/tkinter-colors.php)
