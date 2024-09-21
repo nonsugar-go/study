@@ -26,3 +26,9 @@
 |EAC|現在までは特殊要因での差異で今後は計画通りと想定される場合|AC+(BAC-EV)|
 |EAC|現在までの差異傾向が今後も継続すると想定される場合|BAC/CPI
 |EAC|現在までの差異傾向が今後も継続すると想定される場合|AC+[(BAC-EV)/(CPI×SPI)]
+
+|頭文字|用語|意味|計算式|
+|--|--|--|--|
+|TCPI|To-Complete Performance Index|残作業効率指数|(BAC-EV) / (BAC-AC)|
+|ETC|Estimate To Complete|残作業見積もり|EAC - AC|
+|VAC|Valiance At Completion|完成時差異|BAC - EAC|
