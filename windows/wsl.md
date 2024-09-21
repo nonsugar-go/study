@@ -108,15 +108,18 @@ sudo apt install golang -y
 
 # ネットワークからの接続を許可する
 - https://learn.microsoft.com/ja-jp/windows/wsl/networking?WT.mc_id=AZ-MVP-4021785#default-networking-mode-nat
+
 - 管理者として実行する
 ```pwsh
 ## アドレスを調べておく
 wsl hostname -I
 netsh int portproxy add v4tov4 listenport=3000 listenaddress=0.0.0.0 connectport=3000 connectaddr=172.21.42.164
+New-NetFirewallRule -DisplayName "TCP_3000" -Protocol TCP -LocalPort 3000 -Action Allow
 ```
 - 削除
 ```pwsh
 netsh int portproxy del v4tov4 listenport=3000 listenaddress=0.0.0.0
+Remove-NetFirewallRule -DisplayName TCP_3000
 ```
 # Windows Terminal の設定
 - Ctrl + V の無効化: 設定 > ⌨ 操作 > 貼り付け > Ctrl + V: 設定を🗑️をクリックして消す
