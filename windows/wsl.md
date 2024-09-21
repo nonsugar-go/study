@@ -105,11 +105,18 @@ $ sudo apt install podman -y
 ```bash
 sudo apt install golang -y
 ```
-# その他、過去に試行錯誤した内容 (うまくいっていない)
-## ネットワークからの接続を許可する
+
+# ネットワークからの接続を許可する
+- https://learn.microsoft.com/ja-jp/windows/wsl/networking?WT.mc_id=AZ-MVP-4021785#default-networking-mode-nat
 - 管理者として実行する
 ```pwsh
-PS> netsh interface portproxy add v4tov4 listenport=4444 listenaddress=0.0.0.0 connectport=4444 connectaddress=(wsl hostname -I)
+## アドレスを調べておく
+wsl hostname -I
+netsh int portproxy add v4tov4 listenport=3000 listenaddress=0.0.0.0 connectport=3000 connectaddr=172.21.42.164
+```
+- 削除
+```pwsh
+netsh int portproxy del v4tov4 listenport=3000 listenaddress=0.0.0.0
 ```
 # Windows Terminal の設定
 - Ctrl + V の無効化: 設定 > ⌨ 操作 > 貼り付け > Ctrl + V: 設定を🗑️をクリックして消す
