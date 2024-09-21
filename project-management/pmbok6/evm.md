@@ -19,3 +19,10 @@
 |EAC|Estimate At Completion|完成時総見積もり、PJ開始時～PJ完了時までの総見積もり|
 |ETC|Estimate To Complete|残作業見積もり、現時点～PJ完了時までの見積もり|
 |VAC|Variance At Completion|完成時差異、PJ完了時の差異の見積もり|
+
+|用語|パターン|計算式|
+|--|--|--|
+|EAC|当初の見積もりが適応できず全体的な再精査が必要な場合|AC+ボトムアップETC|
+|EAC|現在までは特殊要因での差異で今後は計画通りと想定される場合|AC+(BAC-EV)|
+|EAC|現在までの差異傾向が今後も継続すると想定される場合|BAC/CPI
+|EAC|現在までの差異傾向が今後も継続すると想定される場合|AC+[(BAC-EV)/(CPI×SPI)]
