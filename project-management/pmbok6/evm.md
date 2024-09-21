@@ -12,3 +12,10 @@
 |SV|Schedule Variance|スケジュール差異|EV-PV|
 |CPI|Cost Performance Index|コストパフォーマンス指数|EV/AC|
 |SPI|Schedule Performance Index|スケジュール効率指数|EV/PV|
+
+|頭文字|用語|意味|
+|--|--|--|
+|BAC|Budget At Completion|完成時総予算=コストベースライン、プロジェクト完了までの計画予算|
+|EAC|Estimate At Completion|完成時総見積もり、PJ開始時～PJ完了時までの総見積もり|
+|ETC|Estimate To Complete|残作業見積もり、現時点～PJ完了時までの見積もり|
+|VAC|Variance At Completion|完成時差異、PJ完了時の差異の見積もり|
