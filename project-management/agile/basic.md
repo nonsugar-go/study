@@ -1,6 +1,7 @@
 # Agile
-## Agile Manifesto
+## Agile Manifesto - アジャイルソフトウェア開発宣言
 - https://agilemanifesto.org/
+- https://agilemanifesto.org/iso/ja/manifesto.html
 ### Agile Manifesto Values
 - Individuals and interactions over processes and tools
 - Working software over comprehensive documentation
