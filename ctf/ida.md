@@ -1,6 +1,20 @@
 # IDA Free
 # インストール
 - https://hex-rays.com/ida-free/#download
+## wsl2 (Ubuntu 22.04.5 LTS)
+```bash
+cull -LO https://out7.hex-rays.com/files/idafree84_linux.run
+chmod +x idafree84_linux.run
+./idafree84_linux.run
+rm ./idafree84_linux.run
+
+## メッセージを見て足りないライブラリをインストールする
+QT_DEBUG_PLUGINS=1 ~/idafree-8.4/ida64
+sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0 libxcb-xinerama0 libxcb-xkb1 libxkbcommon-x11-0
+
+## 起動
+~/id
+```
 # 構造体
 - https://hex-rays.com/products/ida/support/tutorials/structs/
 # 設定
