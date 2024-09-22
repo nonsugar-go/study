@@ -1,13 +1,16 @@
 # Agile
-## Agile Manifesto - アジャイルソフトウェア開発宣言
+## Manifesto for Agile Software Development - アジャイルソフトウェア開発宣言
 - https://agilemanifesto.org/
 - https://agilemanifesto.org/iso/ja/manifesto.html
 ### Agile Manifesto Values
-- Individuals and interactions over processes and tools
-- Working software over comprehensive documentation
-- Customer collaboration over contract negotiation
-- Responding to change over following a plan
-### Agile Guiding Principles
+- Individuals and interactions over processes and tools / プロセスやツールよりも個人と対話を、
+- Working software over comprehensive documentation / 包括的なドキュメントよりも動くソフトウェアを、
+- Customer collaboration over contract negotiation / 契約交渉よりも顧客との協調を、
+- Responding to change over following a plan / 計画に従うことよりも変化への対応を、
+### Twelve Principles of Agile Software - アジャイルソフトウェアの12の原則
+- https://agilemanifesto.org/principles.html
+- https://agilemanifesto.org/iso/ja/principles.html
+
 1. Our highest priority is to satisfy the customer
 through early and continuous delivery
 of valuable software.
