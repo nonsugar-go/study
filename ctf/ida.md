@@ -16,7 +16,7 @@ sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0
 ~/id
 ```
 # 設定
-- Options > General...: Number of opcode bytes (non-graph): 8
+- Options > General...: Number of opcode bytes (non-graph): 6
 # 構造体
 - https://hex-rays.com/products/ida/support/tutorials/structs/
 # 使い方
