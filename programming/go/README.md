@@ -5,6 +5,7 @@
 - [GUI](gui)
 - [mygodoc](mygodoc.md)
 - [Database](database.md)
+- [gRPC](grpc.md)
 
 # Links
 - https://github.com/tsawler
