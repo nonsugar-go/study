@@ -1,6 +1,6 @@
 # IDA Free
 # インストール
-- https://hex-rays.com/products/ida/support/%20download_freeware%20/
+- https://hex-rays.com/ida-free/#download
 # 構造体
 - https://hex-rays.com/products/ida/support/tutorials/structs/
 # 設定
