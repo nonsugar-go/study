@@ -1,17 +1,11 @@
 # CTF
-
-- [IDA](ida.md)
 - [SECCON Beginners CTF](seccon-beginners-ctf.md)
 - [AlpacaHack](alpacahack.md)
 - [WaniCTF](wani-ctf.md)
-- [Scan](scan.md)
-- [Pwnable](pwnable.md)
-- [checksec](checksec.md)
-- [pwndbg](pwndbg.md)
-- [Pwntools](pwntools.md)
 - [Crypto](crypto.md)
 - [Sage](sage.md)
 - [Webhook.site](webhook-site.md)
+- [Scan](scan.md)
 - [Burp Suite](burp-suite.md)
 - [Pwn](pwn)
 - [Rev](rev)
