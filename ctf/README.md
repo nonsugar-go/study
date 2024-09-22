@@ -1,7 +1,4 @@
 # CTF
-- [SECCON Beginners CTF](seccon-beginners-ctf.md)
-- [AlpacaHack](alpacahack.md)
-- [WaniCTF](wani-ctf.md)
 - [Crypto](crypto.md)
 - [Sage](sage.md)
 - [Webhook.site](webhook-site.md)
