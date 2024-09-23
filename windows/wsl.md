@@ -86,12 +86,12 @@ $ git clone https://github.com/pwndbg/pwndbg
 $ cd pwndbg
 $ ./setup.sh
 ```
-## pwndbg (pwndbg でなく gdb-peda を使用する場合)
+### pwndbg (pwndbg でなく gdb-peda を使用する場合)
 ```bash
 $ git clone https://github.com/longld/peda.git ~/peda
 $ echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
-## IDA
+### IDA
 - https://hex-rays.com/ida-free/#download
 
 ```bash
