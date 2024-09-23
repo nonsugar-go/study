@@ -91,7 +91,7 @@ $ ./setup.sh
 $ git clone https://github.com/longld/peda.git ~/peda
 $ echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
-# IDA
+## IDA
 - https://hex-rays.com/ida-free/#download
 
 ```bash
@@ -102,6 +102,7 @@ rm ./idafree84_linux.run
 ## メッセージを見て足りないライブラリをインストールする
 QT_DEBUG_PLUGINS=1 ~/idafree-8.4/ida64
 sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0 libxcb-xinerama0 libxcb-xkb1 libxkbcommon-x11-0
+```
 ## sshd
 ```bash
 $ sudo apt install openssh-server -y
