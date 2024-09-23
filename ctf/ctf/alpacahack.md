@@ -3,7 +3,7 @@
 - [AlpacaHack Round 1 (Pwn)のWriteup - CTFするぞ](https://ptr-yudai.hatenablog.com/entry/2024/08/19/035647)
 
 # AlpacaHack Round 1 (Pwn) / echo
-(echo)[https://alpacahack.com/ctfs/round-1/challenges/echo]
+[echo](https://alpacahack.com/ctfs/round-1/challenges/echo)
 
 **exploit1.py**
 ```python
