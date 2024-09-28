@@ -8,8 +8,15 @@
 - Second Levvel Address Tranlation) (SLAT)
 
 - msinfo32 でチェック
-  - システムの要約で、[Hpyer-V - VM Monitor Mode Extensions], [Hyper-V - Second Level Address Translation Extentions], [Hyper-V - Virtualization Enabled in firmware], [Hyper-V - Data Execution Protection]
-が yes であること
+  - システムの要約で、以下が yes であること
+    - Hpyer-V - VM Monitor Mode Extensions
+    - Hyper-V - Second Level Address Translation Extentions
+    - Hyper-V - Virtualization Enabled in firmware
+    - Hyper-V - Data Execution Protection
+# Hyper-V の設定
+- サーバー/拡張セッション モード ポリシー/拡張セッション モードを許可する: ☑
+(仮想マシン接続で、クリップボードのコピぺとファイルのコピペが使えるようになる)
+- ユーザー/キーボード/仮想マシン接続の実行中に Windows キーをどのように組み合わせて使用しますか？: 全画面で実行中にのみ仮想マシンで使用する
 # Windows 11 に Hyper-V マネージャーをインストールして、Hyper-V マネージャーで接続
 - https://www.vwnet.jp/windows/WS16TP2/HVMan/Credential.htm
 - https://jpn.nec.com/nx7700x/support/ws2019/WS2019_Hyper-V_install.pdf
