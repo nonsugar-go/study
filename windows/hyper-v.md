@@ -25,6 +25,6 @@ Enable-WSManCredSSP -Role Server -Force
 winrm quickconfig -Force
 Enable-WSManCredSSP -Role Client -DelegateComputer * -Force
 ```
-4. Windows 11 (クライアント側): ローカル グループ エディタ (epedit.msc)
+4. Windows 11 (クライアント側): ローカル グループ エディタ (gepedit.msc)
   - コンピューターの構成 > 管理用テンプレート > システム > 資格情報の委任 の NTLM のみのサーバー認証で新しい資格情報の委任を許可する: 有効, WSMAN/*
   - 「NTLM のみのサーバー認証で保存された資格情報の委任を許可する」
