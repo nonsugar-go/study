@@ -13,6 +13,12 @@
     - Hyper-V - Second Level Address Translation Extentions
     - Hyper-V - Virtualization Enabled in firmware
     - Hyper-V - Data Execution Protection
+## Hyper-V on ESXi の場合
+vi で VMNAME.vmx を編集する。
+```
+vhv.enable = "TRUE"
+hypervisor.cpuid.v0="FALSE"
+```
 # Hyper-V の設定
 - サーバー/拡張セッション モード ポリシー/拡張セッション モードを許可する: ☑
 (仮想マシン接続で、クリップボードのコピぺとファイルのコピペが使えるようになる)
