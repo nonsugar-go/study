@@ -49,3 +49,9 @@ Enable-WSManCredSSP -Role Client -DelegateComputer * -Force
 6. Hyper-V マネージャーを起動 > サーバーに接続
   - 別のコンピューター: IP アドレスを指定
   - 別のユーザーとして接続する: ユーザー名: **.\vmadmin** (**このアカウントを記憶する** にチェック)
+# 仮想マシンの作成
+- https://learn.microsoft.com/ja-jp/windows/whats-new/windows-11-requirements#virtual-machine-support
+
+|OS|仮想マシンの世代|起動メモリ|動的メモリ|最小RAM|最大RAM|仮想HDD|セキュアブート|TPM|プロセッサ数|
+|--|--|--|--|--|--|--|--|--|--|
+|Windows 11|第2世代|2GB|有効|512MB|4096MB|64GB|有効(テンプレート: Microsoft Windows)|有効|2|
