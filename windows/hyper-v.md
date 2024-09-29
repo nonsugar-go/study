@@ -9,10 +9,10 @@
 
 - msinfo32 でチェック
   - システムの要約で、以下が yes であること
-    - Hpyer-V - VM Monitor Mode Extensions
-    - Hyper-V - Second Level Address Translation Extentions
-    - Hyper-V - Virtualization Enabled in firmware
-    - Hyper-V - Data Execution Protection
+    - Hpyer-V - VM モニター モード拡張機能
+    - Hyper-V - 第 2 レベル アドレス変換拡張機能
+    - Hyper-V - ファームウェアで仮想化が有効
+    - Hyper-V - データ実行防止
 ## Hyper-V on ESXi の場合
 vi で VMNAME.vmx を編集する。
 ```
