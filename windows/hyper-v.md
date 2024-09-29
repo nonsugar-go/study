@@ -31,19 +31,21 @@ hypervisor.cpuid.v0="FALSE"
 - https://jpn.nec.com/nx7700x/support/ws2019/WS2019_Hyper-V_install.pdf
 (2.1.2  一部の環境におけるライブマイグレーション操作に必要な設定)
 ## 手順
-1. Hyper-V (サーバー側の操作): PowerSehll (管理者として実行)
+1. 管理用ユーザーの作成 (サーバー側の操作): コンピューターの管理 (Win+X, G) > システム ツール > ローカル ユーザーとグループ
+   - ユーザー名: vmadmin, 所属グループ: Hyper-V Administrators, Remote Management Users (既定の Users は消してよい)
+3. Hyper-V (サーバー側の操作): PowerSehll (管理者として実行)
 ```powershell
 Enable-WSManCredSSP -Role Server -Force
 ```
-2. Windows 11 (クライアント側): 設定 (Win+I), システム > オプション機能 > Windows のその他の機能, Hyper-V/Hyper-V 管理ツール にチェック
-3. Windows 11 (クライアント側): PowerShell (管理者として実行)
+3. Windows 11 (クライアント側): 設定 (Win+I), システム > オプション機能 > Windows のその他の機能, Hyper-V/Hyper-V 管理ツール にチェック
+4. Windows 11 (クライアント側): PowerShell (管理者として実行)
 ```powershell
 winrm quickconfig -Force
 Enable-WSManCredSSP -Role Client -DelegateComputer * -Force
 ```
-4. Windows 11 (クライアント側): ローカル グループ エディタ (gepedit.msc)
+5. Windows 11 (クライアント側): ローカル グループ エディタ (gepedit.msc)
   - コンピューターの構成 > 管理用テンプレート > システム > 資格情報の委任 > NTLM のみのサーバー認証で新しい資格情報の委任を許可する: 有効, 表示: WSMAN/*
   - コンピューターの構成 > 管理用テンプレート > システム > 資格情報の委任 > NTLM のみのサーバー認証で保存された資格情報の委任を許可する: 有効, 表示: *
-5. Hyper-V マネージャーを起動 > サーバーに接続
+6. Hyper-V マネージャーを起動 > サーバーに接続
   - 別のコンピューター: IP アドレスを指定
-  - 別のユーザーとして接続する: .\Administrator (**このアカウントを記憶する** にチェック)
+  - 別のユーザーとして接続する: ユーザー名: **.\vmadmin** (**このアカウントを記憶する** にチェック)
