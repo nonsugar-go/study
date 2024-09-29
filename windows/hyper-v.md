@@ -33,7 +33,7 @@ hypervisor.cpuid.v0="FALSE"
 ## 手順
 1. Hyper-V (サーバー側の操作): PowerSehll (管理者として実行)
 ```powershell
-Enable-WSManCredSSP -Role Server -Force
+Enable-WSManCredSSP -Role Server
 ```
 2. Windows 11 (クライアント側): 設定 (Win+I), システム > オプション機能 > Windows のその他の機能, Hyper-V/Hyper-V 管理ツール にチェック
 3. Windows 11 (クライアント側): PowerShell (管理者として実行)
