@@ -20,13 +20,14 @@ vhv.enable = "TRUE"
 hypervisor.cpuid.v0="FALSE"
 ```
 # Hyper-V のインストール
-- サーバー マネージャー > 管理 > 役割と機能の追加 (役割で [Hyper-V] を選択)
+- サーバー マネージャー > 管理 > 役割と機能の追加 (役割で **Hyper-V** を選択)
 # Hyper-V の設定
 - サーバー/拡張セッション モード ポリシー/拡張セッション モードを許可する: ☑
 (仮想マシン接続で、クリップボードのコピぺとファイルのコピペが使えるようになる)
 - ユーザー/キーボード/仮想マシン接続の実行中に Windows キーをどのように組み合わせて使用しますか？: 全画面で実行中にのみ仮想マシンで使用する
 # Windows 11 に Hyper-V マネージャーをインストールして、Hyper-V マネージャーで接続
 - https://www.vwnet.jp/windows/WS16TP2/HVMan/Credential.htm
+- https://www.support.nec.co.jp/DownLoad.aspx?file=WS2022_Hyper-V_install.pdf
 - https://jpn.nec.com/nx7700x/support/ws2019/WS2019_Hyper-V_install.pdf
 (2.1.2  一部の環境におけるライブマイグレーション操作に必要な設定)
 ## 手順
