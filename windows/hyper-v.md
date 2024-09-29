@@ -46,4 +46,4 @@ Enable-WSManCredSSP -Role Client -DelegateComputer * -Force
   - コンピューターの構成 > 管理用テンプレート > システム > 資格情報の委任 > NTLM のみのサーバー認証で保存された資格情報の委任を許可する: 有効, 表示: *
 5. Hyper-V マネージャーを起動 > サーバーに接続
   - 別のコンピューター: IP アドレスを指定
-  - 別のユーザーとして接続する: .\Administrator
+  - 別のユーザーとして接続する: .\Administrator (**このアカウントを記憶する** にチェック)
