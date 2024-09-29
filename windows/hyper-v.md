@@ -8,7 +8,7 @@
 - Second Levvel Address Tranlation) (SLAT)
 
 - msinfo32 でチェック
-  - システムの要約で、以下が yes であること
+  - システムの要約で、以下が「はい」であること
     - Hpyer-V - VM モニター モード拡張機能
     - Hyper-V - 第 2 レベル アドレス変換拡張機能
     - Hyper-V - ファームウェアで仮想化が有効
