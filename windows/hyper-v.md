@@ -27,7 +27,7 @@ hypervisor.cpuid.v0="FALSE"
 - ユーザー/キーボード/仮想マシン接続の実行中に Windows キーをどのように組み合わせて使用しますか？: 全画面で実行中にのみ仮想マシンで使用する
 # Windows 11 に Hyper-V マネージャーをインストールして、Hyper-V マネージャーで接続
 - https://www.vwnet.jp/windows/WS16TP2/HVMan/Credential.htm
-- https://www.support.nec.co.jp/DownLoad.aspx?file=WS2022_Hyper-V_install.pdf
+- https://www.support.nec.co.jp/DownLoad.aspx?file=WS2022_Hyper-V_install.pdf&id=3140108387
 - https://jpn.nec.com/nx7700x/support/ws2019/WS2019_Hyper-V_install.pdf
 (2.1.2  一部の環境におけるライブマイグレーション操作に必要な設定)
 ## 手順
