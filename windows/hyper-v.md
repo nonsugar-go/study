@@ -54,4 +54,4 @@ Enable-WSManCredSSP -Role Client -DelegateComputer * -Force
 
 |OS|仮想マシンの世代|起動メモリ|動的メモリ|最小RAM|最大RAM|仮想HDD|セキュアブート|TPM|プロセッサ数|
 |--|--|--|--|--|--|--|--|--|--|
-|Windows 11|第2世代|2GB|有効|512MB|4096MB|64GB|有効(テンプレート: Microsoft Windows)|有効|2|
+|Windows 11|第2世代|4GB|有効|512MB|4096MB|64GB|有効(テンプレート: Microsoft Windows)|有効|2|
