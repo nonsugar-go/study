@@ -15,5 +15,9 @@ PS> cd my-app
 PS> npm start
 ```
 # asdf を利用した手順
-## asdf のインストール
+## asdf のインストール (wsl2)
 - https://asdf-vm.com/ja-jp/guide/getting-started.html
+
+```zsh
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
+```
