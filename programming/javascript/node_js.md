@@ -46,5 +46,5 @@ cd study
 asdf list all nodejs 16.17
 echo "nodejs 16.17.1" >.tool-versions
 asdf install
-code .
+node -v
 ```
