@@ -56,6 +56,12 @@ npm install --save-dev typescript@4.8.3 ts-node@10.9.1
 echo "console.log('Hello TypeScript')" >hello.ts
 npx ts-node hello.ts
 ```
+
+7. Express のインストール
+```zsh
+npm install express@4.18.1
+```
+
 ## グローバルに ts-node を使えるようにする
 ```zsh
 npm install -g ts-node
