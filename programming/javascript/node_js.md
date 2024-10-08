@@ -48,3 +48,11 @@ echo "nodejs 16.17.1" >.tool-versions
 asdf install
 node -v
 ```
+
+6. ts-code のインストール
+```zsh
+npm init
+npm install --save-dev typescript@4.8.3 ts-node@10.9.1
+echo "console.log('Hello TypeScript')" >hello.ts
+npx ts-node hello.ts
+```
