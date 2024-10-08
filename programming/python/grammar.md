@@ -1,5 +1,6 @@
 # 文法
 # 型ヒント
+- https://zenn.dev/trecodea/articles/3bb3a54237a1ac
 - https://docs.python.org/ja/3/library/typing.html
 - https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
 # イテレーター
