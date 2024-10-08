@@ -31,3 +31,9 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
 ```zsh
 source ~/.zshrc
 ```
+
+4. Node.js のインストール
+```zsh
+sudo apt-get install dirmngr gpg curl gawk
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+```
