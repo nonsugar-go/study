@@ -63,6 +63,23 @@ npm install express@4.18.1
 npm install --save-dev @types/express@4.17.14
 ```
 
+8. src/main.ts
+```ts
+import express from 'express'
+
+const PORT = 3000
+const app = express()
+app.get('/api/hello', async (req, res) => {
+    res.json({
+        message: 'Hello, Express'
+    })
+})
+
+app.listen(PORT, () => {
+    console.log(`application started: http://localhost:${PORT}`)
+})
+```
+
 ## グローバルに ts-node を使えるようにする
 ```zsh
 npm install -g ts-node
