@@ -14,3 +14,6 @@ PS> npx create-react-app my-app
 PS> cd my-app
 PS> npm start
 ```
+# asdf を利用した手順
+## asdf のインストール
+- https://asdf-vm.com/ja-jp/guide/getting-started.html
