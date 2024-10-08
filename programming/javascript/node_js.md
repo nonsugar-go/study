@@ -36,4 +36,13 @@ source ~/.zshrc
 ```zsh
 sudo apt-get install dirmngr gpg curl gawk
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf list all nodejs 16.17
+```
+
+5. ディレクトリを作成
+```zsh
+mkdir study
+cd study
+echo "nodejs 16.17.1" >.tool-versions
+code .
 ```
