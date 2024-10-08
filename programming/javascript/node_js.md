@@ -26,3 +26,8 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
 ```zsh
 . "$HOME/.asdf/asdf.sh"
 ```
+
+3 ~/.zshrc を読み込む
+```zsh
+source ~/.zshrc
+```
