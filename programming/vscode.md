@@ -96,6 +96,7 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 ## AWS
 - https://docs.aws.amazon.com/ja_jp/toolkit-for-vscode/latest/userguide/setup-toolkit.html
 ## その他
+- https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio
 - Path Intellisense
 - Prettier - Code formatter
 # 参考
