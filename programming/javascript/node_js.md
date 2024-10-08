@@ -60,6 +60,7 @@ npx ts-node hello.ts
 7. Express のインストール
 ```zsh
 npm install express@4.18.1
+npm install --save-dev @types/express@4.17.14
 ```
 
 ## グローバルに ts-node を使えるようにする
