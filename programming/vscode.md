@@ -95,8 +95,11 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 ## AWS
 - https://docs.aws.amazon.com/ja_jp/toolkit-for-vscode/latest/userguide/setup-toolkit.html
-## その他
+## Draw.io
 - https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio
+## OpenAPI
+- https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer
+## その他
 - Path Intellisense
 - Prettier - Code formatter
 # 参考
