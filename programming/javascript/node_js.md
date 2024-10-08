@@ -16,8 +16,13 @@ PS> npm start
 ```
 # asdf を利用した手順
 ## asdf のインストール (wsl2)
-- https://asdf-vm.com/ja-jp/guide/getting-started.html
+1. https://asdf-vm.com/ja-jp/guide/getting-started.html
 
 ```zsh
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
+```
+
+2. ~/.zshrcに下記の行を追記します:
+```zsh
+. "$HOME/.asdf/asdf.sh"
 ```
