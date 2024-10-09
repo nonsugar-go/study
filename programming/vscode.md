@@ -74,7 +74,7 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 ## C#
 - C# Dev Kit (microsoft.com)
 ## Java
-- Extension Pack for Java (microsoft.com)
+- https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
 ## Python
 - Python (microsoft.com)
 - Black Formatter (microsoft.com)
