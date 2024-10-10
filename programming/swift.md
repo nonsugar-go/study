@@ -10,3 +10,8 @@ curl -LO https://download.swift.org/swift-6.0.1-release/ubuntu2204/swift-6.0.1-R
 rm swift-6.0.1-RELEASE-ubuntu22.04.tar.gz
 tar xzf ./swift-6.0.1-RELEASE-ubuntu22.04.tar.gz -C ~/
 ```
+
+- ~/.zshrc (末尾に追加)
+```zsh
+export PATH=$PATH:$HOME/swift-6.0.1-RELEASE-ubuntu22.04/usr/bin
+```
