@@ -8,5 +8,5 @@
 sudo apt install gcc-multilib
 curl -LO https://download.swift.org/swift-6.0.1-release/ubuntu2204/swift-6.0.1-RELEASE/swift-6.0.1-RELEASE-ubuntu22.04.tar.gz
 curl -LO https://download.swift.org/swift-6.0.1-release/ubuntu2204/swift-6.0.1-RELEASE/swift-6.0.1-RELEASE-ubuntu22.04.tar.gz.sig
-tar xzf swift-6.0.1-RELEASE-ubuntu22.04.tar.gz
+tar xzf ./swift-6.0.1-RELEASE-ubuntu22.04.tar.gz -C ~/
 ```
