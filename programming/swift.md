@@ -18,5 +18,6 @@ export PATH=$PATH:$HOME/swift-6.0.1-RELEASE-ubuntu22.04/usr/bin
 
 ```zsh
 source ~/.zshrc
+swift --version
 ```
 
