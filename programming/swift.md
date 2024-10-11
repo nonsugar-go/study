@@ -22,4 +22,6 @@ swift --version
 echo 'print("Hello, World🌐")' >hello.swift
 swift hello.swift
 ```
-
+# Study
+- https://github.com/appbrewery/Dicee-iOS13
+- https://github.com/angelabauer
