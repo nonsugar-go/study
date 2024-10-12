@@ -10,8 +10,20 @@
 ```go
 // 1. 値を返さない
 func(func() bool)
+// 使い方
+var f1 func(func() bool)
+for range f1 {} // 値が何も返らないので、 x := range f1 の形式では書けない
+
 // 2. channel, 整数と同じで値を一つ返す
 func(func(V) bool)
+// 使い方
+var f2 func(func(int) bool)
+for x := range f2 {} // x: int
+
 // 3. 配列、スライス、文字列, map と同じで値を二つ返す
 func(func(K, V) bool)
+// 使い方
+var f3 func(func(string, int) bool)
+for x, y := range f3 {} // x: string, y: int
 ```
+
