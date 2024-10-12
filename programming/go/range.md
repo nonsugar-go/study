@@ -37,6 +37,16 @@ type (
 ## package slices, maps
 - https://pkg.go.dev/slices#All
 - https://pkg.go.dev/slices#Values
+- https://pkg.go.dev/slices#AppendSeq
+- https://pkg.go.dev/slices#Backward
+- https://pkg.go.dev/slices#Chunk
+- https://pkg.go.dev/slices#Collect
+- https://pkg.go.dev/slices#Sorted
+- https://pkg.go.dev/slices#SortedFunc
+- https://pkg.go.dev/slices#SortedStableFunc
+
 - https://pkg.go.dev/maps#All
 - https://pkg.go.dev/maps#Keys
 - https://pkg.go.dev/maps#Values
+- https://pkg.go.dev/maps#Collect
+- https://pkg.go.dev/maps#Insert
