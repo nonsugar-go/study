@@ -2,6 +2,7 @@
 - https://future-architect.github.io/articles/20240718a/
 - https://tip.golang.org/doc/go1.23
 - https://tip.golang.org/blog/range-functions
+- https://bitfieldconsulting.com/posts/iterators
 - [Go 1.23のイテレータについて知っておくべきこと<](https://zenn.dev/syumai/articles/cqud4gab5gv2qkig5vh0)
 # rangeループの対象
 - 配列, スライス, 文字列, map, channel, 整数
