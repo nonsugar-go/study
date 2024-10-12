@@ -34,7 +34,9 @@ type (
 	Seq2[K, V any] func(yield func(K, V) bool)
 )
 ```
-## package slices
-- https://pkg.go.dev/slices
+## package slices, maps
 - https://pkg.go.dev/slices#All
 - https://pkg.go.dev/slices#Values
+- https://pkg.go.dev/maps#All
+- https://pkg.go.dev/maps#Keys
+- https://pkg.go.dev/maps#Values
