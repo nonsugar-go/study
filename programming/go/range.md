@@ -26,4 +26,11 @@ func(func(K, V) bool)
 var f3 func(func(string, int) bool)
 for x, y := range f3 {} // x: string, y: int
 ```
-
+## package iter 
+- https://pkg.go.dev/iter
+``` go
+type (
+	Seq[V any]     func(yield func(V) bool)
+	Seq2[K, V any] func(yield func(K, V) bool)
+)
+```
