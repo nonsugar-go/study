@@ -1,6 +1,7 @@
 # Golang
 - [Install](install.md)
 - [Basic](basic.md)
+- [grammar](grammar.md)
 - [Range](range.md)
 - [Excel](excel.md)
 - [GUI](gui)
