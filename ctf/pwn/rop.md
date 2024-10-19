@@ -56,11 +56,12 @@ pwndbg> p system
 $2 = {int (const char *)} 0xf7dc1170 <__libc_system>
 pwndbg> p exit
 $3 = {void (int)} 0xf7db3460 <__GI_exit>
+pwndbg>
 pwndbg> search /bin/sh
 Searching for value: '/bin/sh'
 libc.so.6       0xf7f360d5 '/bin/sh'
 pwndbg> rop --grep "pop e.. ; pop e.. ; pop e.. ; ret" -- --depth 4
-Saved corefile /tmp/tmpwavgtsrz
+Saved corefile /tmp/tmp54twxftw
 0xf7fdaf81 : pop ebp ; pop edi ; pop ebx ; ret
 0xf7fc4549 : pop ebp ; pop edx ; pop ecx ; ret
 0xf7fc5478 : pop ebx ; pop esi ; pop ebp ; ret
