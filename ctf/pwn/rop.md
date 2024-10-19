@@ -4,6 +4,7 @@
 # Example
 ```c
 // gcc -m32 -fno-stack-protector -D_FORTIFY_SOURCE=0 -z execstack -no-pie -o chall chall.c
+// sudo bash -c 'echo 0 >/proc/sys/kernel/randomize_va_space'
 #include <stdio.h>
 void buf()
 {
