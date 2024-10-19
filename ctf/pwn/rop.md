@@ -54,7 +54,9 @@ pwndbg> p system
 $2 = {int (const char *)} 0xf7dc1170 <__libc_system>
 pwndbg> p exit
 $3 = {void (int)} 0xf7db3460 <__GI_exit>
-pwndbg>
+pwndbg> search /bin/sh
+Searching for value: '/bin/sh'
+libc.so.6       0xf7f360d5 '/bin/sh'
 ```
 
 ## Stack
