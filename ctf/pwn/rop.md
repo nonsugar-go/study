@@ -2,7 +2,7 @@
 - https://tc.gts3.org/cs6265/tut/tut06-01-rop.html
 - https://github.com/pwndbg/pwndbg/blob/dev/FEATURES.md#rop-gadgets
 - https://qiita.com/Koukyosyumei/items/89cf4d061cbe405e56b6
-# Example
+# Example (TODO: 作りかけ)
 ```c
 // gcc -m32 -fno-stack-protector -D_FORTIFY_SOURCE=0 -z execstack -no-pie -o chall chall.c
 // sudo bash -c 'echo 0 >/proc/sys/kernel/randomize_va_space'
