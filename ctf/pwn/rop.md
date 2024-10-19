@@ -19,6 +19,7 @@ int main()
 ```
 ## Solution
 ```bash
+$ gdb -q ./chall
 pwndbg> checksec
 File:     /mnt/e/work/ctf/Udemy/Exploit_Development_Tutorial_for_Hackers_and_Pentesters/sec5/chall
 Arch:     i386
