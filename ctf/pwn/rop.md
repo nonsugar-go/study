@@ -48,8 +48,8 @@ Dump of assembler code for function buf:
 End of assembler dump.
 pwndbg> b main
 pwndbg> r
-pwndbg> p setreuid
-$1 = {int (uid_t, uid_t)} 0xf7e91000 <__setreuid>
+pwndbg> p setresuid
+$1 = {int (uid_t, uid_t, uid_t)} 0xf7e58710 <__GI___setresuid>
 pwndbg> p system
 $2 = {int (const char *)} 0xf7dc1170 <__libc_system>
 pwndbg> p exit
