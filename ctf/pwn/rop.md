@@ -46,8 +46,17 @@ Dump of assembler code for function buf:
    0x080491a2 <+44>:    leave
    0x080491a3 <+45>:    ret
 End of assembler dump.
+pwndbg> b main
+pwndbg> r
+pwndbg> p setreuid
+$1 = {int (uid_t, uid_t)} 0xf7e91000 <__setreuid>
+pwndbg> p system
+$2 = {int (const char *)} 0xf7dc1170 <__libc_system>
+pwndbg> p exit
+$3 = {void (int)} 0xf7db3460 <__GI_exit>
 pwndbg>
 ```
+
 ## Stack
 ```
 -88 buf
