@@ -12,8 +12,6 @@
 # About me
 :tomato: :tomato:
 
-- http://152.70.105.14:8080/
-
 # Simple Syslog Server for Cygwin
 ```bash
 $ cat syslog.sh
