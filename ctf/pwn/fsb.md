@@ -1,4 +1,4 @@
-# Format String Vulnerability
+# Format String Bug
 - https://ctf101.org/binary-exploitation/what-is-a-format-string-vulnerability/
 - https://docs.pwntools.com/en/stable/fmtstr.html
 # example1
