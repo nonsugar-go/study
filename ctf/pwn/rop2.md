@@ -6,6 +6,7 @@
 - https://manpages.ubuntu.com/manpages/noble/ja/man2/syscalls.2.html
 - https://manpages.ubuntu.com/manpages/noble/ja/man2/open.2.html
 - https://manpages.ubuntu.com/manpages/noble/ja/man2/read.2.html
+- https://manpages.ubuntu.com/manpages/noble/ja/man2/write.2.html
 - https://manpages.ubuntu.com/manpages/noble/ja/man2/getdents.2.html
 
 # SECCON_Beginners_CTF_2024/pwnable/gachi-rop
