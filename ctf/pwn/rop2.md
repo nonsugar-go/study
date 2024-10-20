@@ -10,6 +10,7 @@
 - https://manpages.ubuntu.com/manpages/noble/ja/man2/getdents.2.html
 
 # SECCON_Beginners_CTF_2024/pwnable/gachi-rop
+- https://gitlab.mma.club.uec.ac.jp/mmabeginners/seccon-beginners-ctf-2024/-/blob/main/pwnable/gachi-rop/README.md
 - https://github.com/satoki/ctf4b_2024_satoki_writeups/tree/main/pwnable/gachi-rop
 
 ```bash
