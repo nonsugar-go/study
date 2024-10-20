@@ -1,4 +1,4 @@
-# Format String Vulnerability
+# Format String Bug
 - https://feneshi.co/ctf4b2024writeup/#pure_and_easy
 - https://docs.pwntools.com/en/stable/fmtstr.html
 # 解説
