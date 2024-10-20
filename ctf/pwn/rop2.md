@@ -8,6 +8,7 @@
 - https://manpages.ubuntu.com/manpages/noble/ja/man2/read.2.html
 - https://manpages.ubuntu.com/manpages/noble/ja/man2/write.2.html
 - https://manpages.ubuntu.com/manpages/noble/ja/man2/getdents.2.html
+- https://manpages.ubuntu.com/manpages/noble/ja/man2/exit.2.html
 - [呼出規約](https://ja.wikipedia.org/wiki/%E5%91%BC%E5%87%BA%E8%A6%8F%E7%B4%84)
 
 # SECCON_Beginners_CTF_2024/pwnable/gachi-rop
