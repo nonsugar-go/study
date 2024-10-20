@@ -10,3 +10,7 @@
 
 # SECCON_Beginners_CTF_2024/pwnable/gachi-rop
 - https://github.com/satoki/ctf4b_2024_satoki_writeups/tree/main/pwnable/gachi-rop
+
+```bash
+sudo apt install patchelf -y
+```
