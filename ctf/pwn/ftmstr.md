@@ -1,6 +1,5 @@
 # Format String Vulnerability
 - https://ctf101.org/binary-exploitation/what-is-a-format-string-vulnerability/
-- https://feneshi.co/ctf4b2024writeup/#pure_and_easy
 - https://docs.pwntools.com/en/stable/fmtstr.html
 # example1
 ```c
