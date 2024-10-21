@@ -16,6 +16,7 @@
 - https://gitlab.mma.club.uec.ac.jp/mmabeginners/seccon-beginners-ctf-2024/-/blob/main/pwnable/gachi-rop/README.md
 - https://github.com/satoki/ctf4b_2024_satoki_writeups/tree/main/pwnable/gachi-rop
 - https://kashiwaba-yuki.com/ctf-pwn-gachi-rop
+- https://qiita.com/toha/items/65cfc6144128c5988e22#gachi-rop
 
 ```bash
 sudo apt install patchelf -y
