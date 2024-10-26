@@ -97,6 +97,8 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 ## AWS
 - https://docs.aws.amazon.com/ja_jp/toolkit-for-vscode/latest/userguide/setup-toolkit.html
+## Terraform
+- https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform
 ## Draw.io
 - https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio
 ## OpenAPI
