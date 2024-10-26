@@ -12,4 +12,5 @@ pwndbg> r
 pwndbg> vmmap
 pwndbg> n
 pwndbg> vis
+pwndbg> context
 ```
