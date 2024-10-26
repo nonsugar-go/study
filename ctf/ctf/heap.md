@@ -13,4 +13,5 @@ pwndbg> vmmap
 pwndbg> n
 pwndbg> vis
 pwndbg> context
+pwndbg> dq ADDRESS
 ```
