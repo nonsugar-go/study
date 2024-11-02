@@ -3,6 +3,7 @@
 # Win32 API - winuser.h
 - https://learn.microsoft.com/ja-jp/windows/win32/api/winuser/nf-winuser-messagebox
 - https://learn.microsoft.com/ja-jp/windows/win32/api/winuser/nf-winuser-messageboxa
+- https://learn.microsoft.com/ja-jp/windows/win32/api/winuser/nf-winuser-getdlgitemtexta
 - https://learn.microsoft.com/ja-jp/windows/win32/api/winuser/nf-winuser-setdlgitemtexta
 # Win32 API - fileapi.h
 - https://learn.microsoft.com/ja-jp/windows/win32/api/fileapi/nf-fileapi-createfilea
