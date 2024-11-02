@@ -19,6 +19,7 @@
 - Ctrl+F2: 再スタート
 - Shfit+D: 右クリック > 検索 > 現モジュール > 参照文字列
 - SPACE: パッチ (アセンブル)
+- Ctrl+P: ファイル > ファイルをパッチ
 # Detect-It-Easy
 - https://github.com/horsicq/Detect-It-Easy
 # crackinglessons.com
