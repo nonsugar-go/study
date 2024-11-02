@@ -17,3 +17,6 @@
 - Shfit+D: 右クリック > 検索 > 現モジュール > 参照文字列
 # Detect-It-Easy
 - https://github.com/horsicq/Detect-It-Easy
+# crackinglessons.com
+- https://crackinglessons.com/category/challenges/
+- https://github.com/cspinstructor/github-crackmes
