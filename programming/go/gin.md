@@ -13,3 +13,6 @@ go install github.com/air-verse/air@latest
 air init
 air
 ```
+
+# godotenv
+- https://github.com/joho/godotenv
