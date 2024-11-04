@@ -27,5 +27,5 @@ go get github.com/joho/godotenv
 ```bash
 go get -u gorm.io/gorm
 go get -u gorm.io/driver/sqlite
-get -u gorm.io/driver/sqlite
+go get -u gorm.io/driver/postgres
 ```
