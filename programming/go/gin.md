@@ -14,5 +14,5 @@ air init
 air
 ```
 
-# godotenv
+# GoDotEnv
 - https://github.com/joho/godotenv
