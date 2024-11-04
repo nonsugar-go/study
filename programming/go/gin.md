@@ -16,3 +16,6 @@ air
 
 # GoDotEnv
 - https://github.com/joho/godotenv
+
+# GORM
+- https://gorm.io/ja_JP/docs/index.html
