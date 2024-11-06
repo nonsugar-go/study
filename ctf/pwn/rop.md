@@ -1,4 +1,5 @@
 # ROP
+- [SECCON beginners ctf 2023でReturn-Oriented Programming(ROP) #Python - Qiita](https://qiita.com/hachan0179/items/78264808d152d47731a8)
 - https://tc.gts3.org/cs6265/tut/tut06-01-rop.html
 - https://github.com/pwndbg/pwndbg/blob/dev/FEATURES.md#rop-gadgets
 - https://qiita.com/Koukyosyumei/items/89cf4d061cbe405e56b6
