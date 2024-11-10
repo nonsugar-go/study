@@ -1,9 +1,10 @@
-# Forensics - Web Tools
-## Steganography
-- https://stylesuxx.github.io/steganography/
-- https://futureboy.us/stegano/decinput.html
 # Forensics - Tools
 - [Forensics入門（CTF） #CTF - Qiita](https://qiita.com/knqyf263/items/6ebf06e27be7c48aab2e)
+## Binwalk
+```zsh
+sudo apt install binwalk
+binwalk -e Town.jpg
+```
 ## Steghide
 ```zsh
 sudo apt install steghide
