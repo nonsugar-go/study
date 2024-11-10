@@ -1,10 +1,22 @@
 # Forensics - Tools
 - [Forensics入門（CTF） #CTF - Qiita](https://qiita.com/knqyf263/items/6ebf06e27be7c48aab2e)
 - https://georgeom.net/StegOnline/checklist
+## 7zip
+```zsh
+sudo apt install 7zip
+
+7z e -pPASSWORD a.zip
+```
 ## Binwalk
 ```zsh
 sudo apt install binwalk
 binwalk -e foo.jpg
+```
+## pngcheck
+```zsh
+sudo apt install pngcheck
+
+pngcheck -v a.png
 ```
 ## Steghide
 ```zsh
