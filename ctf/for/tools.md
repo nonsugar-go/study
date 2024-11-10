@@ -3,7 +3,7 @@
 ## Binwalk
 ```zsh
 sudo apt install binwalk
-binwalk -e Town.jpg
+binwalk -e foo.jpg
 ```
 ## Steghide
 ```zsh
