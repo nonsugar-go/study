@@ -1,4 +1,4 @@
-# Forensics - Web TOols
+# Forensics - Web Tools
 ## Steganography
 - https://stylesuxx.github.io/steganography/
 - https://futureboy.us/stegano/decinput.html
