@@ -11,4 +11,5 @@
 ~/volatility3/vol.py -f memdump.mem windows.cmdline
 ~/volatility3/vol.py -f memdump.mem windows.filescan
 ~/volatility3/vol.py -f memdump.mem windows.netstat
+~/volatility3/vol.py -f memdump.mem windows.netscan
 ```
