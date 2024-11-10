@@ -27,6 +27,20 @@ steghide info foo.jpg
 ## John the Ripper
 - https://www.openwall.com/john/doc/EXAMPLES.shtml
 - [john the ripper メモ #JohntheRipper - Qiita](https://qiita.com/shorii-shelly/items/e259c609458e2402432b)
+## pkcrack
+- https://github.com/keyunluo/pkcrack
+- https://zenn.dev/mattsunkun/articles/9a4165634a4f9a
+- [PkCrack は -d を付けないと処理が終わらない #CTF - Qiita](https://qiita.com/tomii9273/items/e78918b8d72802968e34)
+### Install
+```zsh
+git clone https://github.com/keyunluo/pkcrack
+chmod +x ~/pkcrack/bin/pkcrack
+```
+### Usage
+```zsh
+pkcrack -C encrypted-ZIP -c ciphertextname -P plaintext-ZIP
+      -p plaintextname -d decrypted_file -a
+```
 ## Autopsy
 - https://www.autopsy.com/
 ## Volatility3
