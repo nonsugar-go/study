@@ -4,4 +4,5 @@
 # Usage
 ```zsh
 ~/volatility3/vol.py -f memdump.mem windows.info
+~/volatility3/vol.py -f memdump.mem windows.verinfo
 ```
