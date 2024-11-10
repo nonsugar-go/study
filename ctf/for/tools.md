@@ -8,7 +8,7 @@
 ## Volatility3
 - https://github.com/volatilityfoundation/volatility3
 - https://blog.onfvp.com/post/volatility-cheatsheet/
-### Install
+### Install on WSL2 (Ubuntu 22.04 LTS)
 ```zsh
 sudo apt install python3-pip python3-yara python3-capstone python3-pycryptodome
 sudo pip3 install -U pefile leechcorepyc gcsfs s3fs
