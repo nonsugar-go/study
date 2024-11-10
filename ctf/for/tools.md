@@ -29,7 +29,7 @@ steghide info foo.jpg
 - [john the ripper メモ #JohntheRipper - Qiita](https://qiita.com/shorii-shelly/items/e259c609458e2402432b)
 ## pkcrack
 - https://github.com/keyunluo/pkcrack
-- https://zenn.dev/mattsunkun/articles/9a4165634a4f9a
+- [【CTF】 SECCON 2015 online「Unzip the file」解説](https://zenn.dev/mattsunkun/articles/9a4165634a4f9a)
 - [PkCrack は -d を付けないと処理が終わらない #CTF - Qiita](https://qiita.com/tomii9273/items/e78918b8d72802968e34)
 ### Install
 ```zsh
