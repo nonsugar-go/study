@@ -7,4 +7,5 @@
 ~/volatility3/vol.py -f memdump.mem windows.pstree
 ~/volatility3/vol.py -f memdump.mem windows.cmdscan
 ~/volatility3/vol.py -f memdump.mem windows.consoles
+~/volatility3/vol.py -f memdump.mem windows.cmdline
 ```
