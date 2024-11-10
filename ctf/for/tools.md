@@ -3,6 +3,8 @@
 ## Steghide
 ```zsh
 sudo apt install steghide
+
+steghide info foo.jpg
 ```
 ## John the Ripper
 - https://www.openwall.com/john/doc/EXAMPLES.shtml
