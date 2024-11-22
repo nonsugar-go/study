@@ -6,6 +6,9 @@
 # Protocol Buffers
 - https://protobuf.dev/programming-guides/proto3/#scalar
 
+# Quick start
+- https://grpc.io/docs/languages/go/quickstart/
+
 # Golang Docs
 - https://golangdocs.com/grpc-golang
 - https://golangdocs.com/unary-grpc-golang
