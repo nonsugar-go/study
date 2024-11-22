@@ -4,6 +4,12 @@
 - https://www.tohoho-web.com/ex/grpc.html
 
 # Protocol Buffers
+- https://grpc.io/docs/protoc-installation/
+```zsh
+apt install -y protobuf-compiler
+protoc --version  # Ensure compiler version is 3+
+```
+
 - https://protobuf.dev/programming-guides/proto3/#scalar
 
 # Quick start
