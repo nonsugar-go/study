@@ -1,7 +1,6 @@
 # gRPC
 - https://grpc.io/docs/languages/go/quickstart/
 - https://github.com/Clement-Jean/grpc-go-course
-- https://www.tohoho-web.com/ex/grpc.html
 
 # Protocol Buffers
 - https://grpc.io/docs/protoc-installation/
@@ -23,3 +22,6 @@ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 - https://golangdocs.com/grpc-golang
 - https://golangdocs.com/unary-grpc-golang
 - https://golangdocs.com/unary-grpc-golang-part-2
+
+# Tohoho
+- https://www.tohoho-web.com/ex/grpc.html
