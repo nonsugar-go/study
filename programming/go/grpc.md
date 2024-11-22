@@ -1,6 +1,7 @@
 # gRPC
 - https://grpc.io/docs/languages/go/quickstart/
 - https://github.com/Clement-Jean/grpc-go-course
+- https://www.tohoho-web.com/ex/grpc.html
 
 # Protocol Buffers
 - https://protobuf.dev/programming-guides/proto3/#scalar
