@@ -6,6 +6,8 @@
 # Types
 ## Scalar Value Types 
 - [Scalar Value Types](https://protobuf.dev/programming-guides/proto3/#scalar)
+## Examples
+- https://github.com/googleapis/googleapis/tree/master/google/type
 # Programming Guides
 - https://protobuf.dev/programming-guides/style/
 # Go
