@@ -3,7 +3,7 @@
 - https://github.com/Clement-Jean/grpc-go-course
 
 # Protocol Buffers
-- [Protocol Buffers](../../protobuf/)
+- [Protocol Buffers](../protobuf/)
 - https://grpc.io/docs/protoc-installation/
 ```zsh
 apt install -y protobuf-compiler
