@@ -5,6 +5,6 @@
 - https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3
 # Types
 ## Scalar Value Types 
-- Scalar Value Types
+- [Scalar Value Types](https://protobuf.dev/programming-guides/proto3/#scalar)
 # Go
 - [Go/gRPC](../go/grpc.md)
