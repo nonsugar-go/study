@@ -106,8 +106,9 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 ## OpenAPI
 - https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer
 ## その他
-- Path Intellisense
-- Prettier - Code formatter
+- https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
+- https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense
+- https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 # 参考
 - [VS Codeのターミナルにcygwinを使用する - ICT Diary](https://ictdiary.hatenadiary.jp/entry/2022/12/26/VS_Code%E3%81%AE%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%ABcygwin%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B)
 - [Visual Studio Code TIPS - ＠IT](https://atmarkit.itmedia.co.jp/ait/series/9744/index.html)
