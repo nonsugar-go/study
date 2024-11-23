@@ -1,4 +1,5 @@
 # Red Hat Enterprise Linux (れる)
+- [サブスクリプション](subscription.md)
 - [Basic](basic.md)
 - [ファイルとディレクトリの操作](files.md)
 - [アカウント管理](account.md)
