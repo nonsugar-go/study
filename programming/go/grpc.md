@@ -10,8 +10,6 @@ apt install -y protobuf-compiler
 protoc --version  # Ensure compiler version is 3+
 ```
 
-- https://protobuf.dev/programming-guides/proto3/#scalar
-
 # Quick start
 - https://grpc.io/docs/languages/go/quickstart/
 ```zsh
