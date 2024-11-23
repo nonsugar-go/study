@@ -6,7 +6,7 @@
 # Types
 ## Scalar Value Types 
 - [Scalar Value Types](https://protobuf.dev/programming-guides/proto3/#scalar)
-## Programming Guides
+# Programming Guides
 - https://protobuf.dev/programming-guides/style/
 # Go
 - [Go/gRPC](../go/grpc.md)
