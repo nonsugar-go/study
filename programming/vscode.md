@@ -93,7 +93,7 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 ## Protocol Buffer
 - https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3
 ## HTML
-- VS Code ES7+ React/Redux/React-Native/JS snippets
+- https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
 - CSS Peek
 - HTML Boilerplate
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
