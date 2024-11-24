@@ -14,3 +14,5 @@ $ sudo apt install python3-pycryptodome
 ```
 
 - https://stackoverflow.com/questions/58569361/attributeerror-module-time-has-no-attribute-clock-in-python-3-8
+# 参考
+- https://zenn.dev/anko/articles/ctf-crypto-rsa
