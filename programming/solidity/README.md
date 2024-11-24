@@ -4,6 +4,8 @@
 - https://remix.ethereum.org/
 # Hardhat
 - https://hardhat.org/
+# Ethers
+- https://docs.ethers.org/v5/getting-started/
 # 文法
 ## コントラクト
 - https://solidity-jp.readthedocs.io/ja/latest/contracts.html
