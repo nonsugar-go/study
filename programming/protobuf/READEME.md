@@ -12,3 +12,7 @@
 - https://protobuf.dev/programming-guides/style/
 # Go
 - [Go/gRPC](../go/grpc.md)
+# Python
+```zsh
+sudo apt install python3-protobuf -y
+```
