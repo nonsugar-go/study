@@ -15,4 +15,6 @@
 # Python
 ```zsh
 sudo apt install python3-protobuf -y
+
+protoc -I proto --python_out=proto proto/*.proto
 ```
