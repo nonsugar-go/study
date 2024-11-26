@@ -13,6 +13,8 @@
 # Go
 - [Go/gRPC](../go/grpc.md)
 # Python
+- https://protobuf.dev/reference/python/python-generated/
+
 ```zsh
 sudo apt install python3-protobuf -y
 
