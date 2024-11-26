@@ -4,7 +4,7 @@
 
 - https://grpc.io/docs/protoc-installation/
 ```zsh
-apt install -y protobuf-compiler
+sudo apt install -y protobuf-compiler
 protoc --version  # Ensure compiler version is 3+
 ```
 # VSCode extensions
