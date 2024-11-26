@@ -17,6 +17,7 @@ protoc --version  # Ensure compiler version is 3+
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 
 go mod init example/m
+go mod tidy
 
 protoc -Iproto --go_opt=module=example/m --go_out=. proto/*.proto
 ```
