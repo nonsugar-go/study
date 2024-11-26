@@ -30,6 +30,7 @@ deactive
 - https://protobuf.dev/reference/java/
 ```zsh
 sudo apt install libprotobuf-java
+dpkg -L libprotobuf-java | grep '\.jar'
 
 protoc -Iproto --java_out=java proto/*.proto
 ```
