@@ -16,7 +16,13 @@
 - https://protobuf.dev/reference/python/python-generated/
 
 ```zsh
-sudo apt install python3-protobuf -y
+python3 -m venv venv
+. ./venv/bin/activate
 
-protoc -I proto --python_out=proto proto/*.proto
+python -m pip install protobuf==3.20.3
+python -m pip freeze > requirements.txt
+
+protoc -Iproto --python_out=proto proto/*.proto
+
+deactive
 ```
