@@ -13,6 +13,13 @@ protoc --version  # Ensure compiler version is 3+
 ## Go
 - https://protobuf.dev/reference/go/
 - [Go/gRPC](../go/grpc.md)
+```zsh
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+
+go mod init example/m
+
+protoc -Iproto --go_opt=module=example/m --go_out=. proto/*.proto
+```
 ## Python
 - https://protobuf.dev/reference/python/
 ```zsh
