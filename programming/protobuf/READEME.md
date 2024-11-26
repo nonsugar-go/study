@@ -35,5 +35,3 @@ deactive
 - [Scalar Value Types](https://protobuf.dev/programming-guides/proto3/#scalar)
 ### Examples
 - https://github.com/googleapis/googleapis/tree/master/google/type
-
-- 
