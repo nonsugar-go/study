@@ -9,18 +9,12 @@ protoc --version  # Ensure compiler version is 3+
 ```
 # VSCode extensions
 - https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3
-# Types
-## Scalar Value Types 
-- [Scalar Value Types](https://protobuf.dev/programming-guides/proto3/#scalar)
-## Examples
-- https://github.com/googleapis/googleapis/tree/master/google/type
-# Programming Guides
-- https://protobuf.dev/programming-guides/style/
-# Go
+# Languages
+## Go
+- https://protobuf.dev/reference/go/
 - [Go/gRPC](../go/grpc.md)
-# Python
-- https://protobuf.dev/reference/python/python-generated/
-
+## Python
+- https://protobuf.dev/reference/python/
 ```zsh
 python3 -m venv venv
 . ./venv/bin/activate
@@ -32,3 +26,14 @@ protoc -Iproto --python_out=proto proto/*.proto
 
 deactive
 ```
+## Java
+- https://protobuf.dev/reference/java/
+# Programming Guides
+- https://protobuf.dev/programming-guides/style/
+## Types
+### Scalar Value Types 
+- [Scalar Value Types](https://protobuf.dev/programming-guides/proto3/#scalar)
+### Examples
+- https://github.com/googleapis/googleapis/tree/master/google/type
+
+- 
