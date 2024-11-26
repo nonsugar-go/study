@@ -28,6 +28,9 @@ deactive
 ```
 ## Java
 - https://protobuf.dev/reference/java/
+```zsh
+sudo apt install libprotobuf-java
+```
 # Programming Guides
 - https://protobuf.dev/programming-guides/style/
 ## Types
