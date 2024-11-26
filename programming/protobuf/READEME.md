@@ -48,5 +48,6 @@ protoc -Iproto --java_out=java proto/*.proto
 ## Types
 ### Scalar Value Types 
 - [Scalar Value Types](https://protobuf.dev/programming-guides/proto3/#scalar)
-### Examples
+# Examples
+- https://github.com/protocolbuffers/protobuf/tree/main/examples
 - https://github.com/googleapis/googleapis/tree/master/google/type
