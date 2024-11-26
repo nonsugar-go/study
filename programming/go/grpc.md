@@ -16,7 +16,12 @@ protoc --version  # Ensure compiler version is 3+
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 ```
-
+# grpc
+```zsh
+go mod init example/m
+mkdir -p greet{server,client,proto}
+protoc -Igreet/proto --go_out=. --go_opt=module=example/m --go-grpc_out=. --go-grpc_opt=module=example/m greet/proto/*.proto
+```
 # Golang Docs
 - https://golangdocs.com/grpc-golang
 - https://golangdocs.com/unary-grpc-golang
