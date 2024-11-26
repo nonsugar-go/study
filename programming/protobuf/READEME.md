@@ -29,8 +29,9 @@ deactive
 ## Java
 - https://protobuf.dev/reference/java/
 ```zsh
-sudo apt install libprotobuf-java
-dpkg -L libprotobuf-java | grep '\.jar'
+sudo apt install libprotobuf-java libgoogle-gson-java
+dpkg -L libprotobuf-java | grep '\.jar'  ## CLASSPATH に追加
+dpkg -L libgoogle-gson-java | grep '\.jar'  ## CLASSPATH に追加
 
 protoc -Iproto --java_out=java proto/*.proto
 ```
