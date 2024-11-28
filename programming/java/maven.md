@@ -1,5 +1,10 @@
 # Maven
 - https://maven.apache.org/
+- https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+- https://maven.apache.org/guides/introduction/introduction-to-the-pom.html
+- https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html
+- https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
+
 - https://zenn.dev/caunus/books/apache-maven-introduction
 # Install
 ```zsh
