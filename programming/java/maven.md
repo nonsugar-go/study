@@ -3,6 +3,7 @@
 ```zsh
 mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.5 -DinteractiveMode=false
 mvn package
+cd my-app
 java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
 ```
 - https://maven.apache.org/guides/introduction/introduction-to-the-pom.html
