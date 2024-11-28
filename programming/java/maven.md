@@ -19,3 +19,11 @@ sudo apt install maven
 # VScode
 - https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven
 - https://tigertaizo.hatenablog.com/entry/2022/03/26/200000
+
+1. Java: Create Java Project...
+   1. Maven
+   2. maven-archetype-quickstart
+   3. version: 1.4
+   4. group id: com.example
+   5. artifact id: demo
+   6. directory
