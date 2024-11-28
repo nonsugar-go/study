@@ -27,3 +27,7 @@ sudo apt install maven
    4. group id: com.example
    5. artifact id: demo
    6. directory
+# ローカル リポジトリの削除
+```zsh
+rm -rf ~/.m2/repository
+```
