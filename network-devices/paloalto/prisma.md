@@ -11,3 +11,8 @@
 - Network sandbox
 - Remote browser isolation
 - Support for managed and unmanaged devices
+# Prisma Access - Service Infrastructure subnet
+- 169.254.169.253, 169.254.169.254
+- 100.64.0.0/10
+- 169.254.201.0/24
+- 169.254.202.0/24
