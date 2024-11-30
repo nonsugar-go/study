@@ -1,4 +1,5 @@
 # Prisma Access
+- https://www.paloaltonetworks.jp/sase/ztna
 # Secure Access Service Edge (SASE)
 - Cloud Security Web Gateway (SWG)
 - Firewall As a Service (FWaas)
