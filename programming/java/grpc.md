@@ -9,7 +9,9 @@ cd my-app
 mvn package
 java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
 ```
-- https://github.com/grpc/grpc-java // for Maven with non-Android, add to your pom.xml:
+- https://github.com/grpc/grpc-java
+// for Maven with non-Android, add to your pom.xml:
+// For protobuf-based codegen integrated with the Maven build system, you can use protobuf-maven-plugin
 ```zsh
 vim pom.xml
 ```
