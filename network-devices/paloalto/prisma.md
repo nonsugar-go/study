@@ -1,6 +1,9 @@
 # Prisma Access
 - https://www.paloaltonetworks.jp/sase/ztna
 - https://www.hitachi-solutions.co.jp/paloalto/products/cloud/prisma-access.html
+- https://docs.paloaltonetworks.com/compatibility-matrix/reference/prisma-access
+- https://www.paloaltonetworks.jp/apps/pan/public/downloadResource?pagePath=/content/pan/ja_JP/resources/datasheets/prisma-access-licensing-guide
+- https://www.paloaltonetworks.jp/resources/datasheets/prisma-access-licensing-guide
 # Secure Access Service Edge (SASE)
 - Cloud Security Web Gateway (SWG)
 - Firewall As a Service (FWaas)
