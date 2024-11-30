@@ -16,7 +16,7 @@
 - 100.64.0.0/10 - RFC6890で定義されたShared Address Space
 - 169.254.201.0/24
 - 169.254.202.0/24
-# 擁護
+# 用語
 1. **SC-CAN (Service Connection - Corporate Access Node)**:
    - **Service Connection (SC)** は、企業の内部リソースへのアクセスを提供するための接続です。これにより、リモートネットワークやモバイルユーザーが企業のデータセンターや本社のリソースにアクセスできるようになります。
    - **Corporate Access Node (CAN)** は、サービス接続の別名で、企業の内部リソースへのアクセスを提供するノードです。
