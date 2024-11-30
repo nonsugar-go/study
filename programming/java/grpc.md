@@ -9,7 +9,7 @@ cd my-app
 mvn package
 java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
 ```
-- https://github.com/grpc/grpc-java
+- https://github.com/grpc/grpc-java // for Maven with non-Android, add to your pom.xml:
 ```zsh
 vim pom.xml
 ```
