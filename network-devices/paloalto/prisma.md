@@ -1,4 +1,5 @@
 # Prisma Access
+- [Palo Alto Networks Prisma Access SASE Security: Design and Operation (EDU-318)](https://www.trainocate.co.jp/reference/course_details.aspx?code=SCC0561V)
 - https://www.paloaltonetworks.jp/sase/ztna
 - https://www.hitachi-solutions.co.jp/paloalto/products/cloud/prisma-access.html
 - https://docs.paloaltonetworks.com/compatibility-matrix/reference/prisma-access
