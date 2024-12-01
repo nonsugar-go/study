@@ -10,6 +10,7 @@ vim pom.xml
 ```
 ## pom.xml (追加)
 - https://github.com/grpc/grpc-java
+For protobuf-based codegen, you can put your proto files in the src/main/proto and src/test/proto directories along with an appropriate plugin.
 
 - for Maven with non-Android, add to your pom.xml:
 ```xml
