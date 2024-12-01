@@ -38,10 +38,6 @@ deactive
 - https://protobuf.dev/reference/java/
 - [Java/gRPC](../java/grpc.md)
 ```zsh
-sudo apt install libprotobuf-java libgoogle-gson-java
-dpkg -L libprotobuf-java | grep '\.jar'  ## CLASSPATH に追加
-dpkg -L libgoogle-gson-java | grep '\.jar'  ## CLASSPATH に追加
-
 protoc -Iproto --java_out=java proto/*.proto
 ```
 # Programming Guides
