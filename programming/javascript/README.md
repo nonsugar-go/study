@@ -7,7 +7,7 @@
 # TypeScript
 - [TypeScript](typescript)
 # Node.js
-- [Node.js](node/node.md)
+- [Node.js](node)
 - サーバサイドの JavaScript 実行環境
 # React
 - Web フロントエンド ライブラリ
