@@ -19,3 +19,12 @@ vim pom.xml
 必要ならば、com.google.protobuf » protobuf-java-util を追加
 - https://protobuf.dev/reference/java/api-docs/overview-summary.html
 - https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java-util
+
+# pom.xml (追加)
+```xml
+<dependency>
+    <groupId>com.google.protobuf</groupId>
+    <artifactId>protobuf-java-util</artifactId>
+    <version>4.29.0</version>
+</dependency>
+```
