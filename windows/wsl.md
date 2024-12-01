@@ -124,14 +124,15 @@ sudo apt install golang -y
 - 管理者として実行する
 ```pwsh
 ## アドレスを調べておく
-wsl hostname -I
-netsh int portproxy add v4tov4 listenport=3000 listenaddress=0.0.0.0 connectport=3000 connectaddr=172.21.42.164
-New-NetFirewallRule -DisplayName "TCP_3000" -Protocol TCP -LocalPort 3000 -Action Allow
+$wslip=(wsl hostname -I).split(' ')[0]
+$port=3000
+netsh int portproxy add v4tov4 listenport=$port listenaddress=0.0.0.0 connectport=$port connectaddr=$wslip
+New-NetFirewallRule -DisplayName "TCP_$port" -Protocol TCP -LocalPort $port -Action Allow
 ```
 - 削除
 ```pwsh
-netsh int portproxy del v4tov4 listenport=3000 listenaddress=0.0.0.0
-Remove-NetFirewallRule -DisplayName TCP_3000
+netsh int portproxy del v4tov4 listenport=$port listenaddress=0.0.0.0
+Remove-NetFirewallRule -DisplayName "TCP_$port"
 ```
 # Windows Terminal の設定
 - Ctrl + V の無効化: 設定 > ⌨ 操作 > 貼り付け > Ctrl + V: 設定を🗑️をクリックして消す
