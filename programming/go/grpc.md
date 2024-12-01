@@ -18,7 +18,7 @@ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 ```zsh
 go mod init example/m
 mkdir -p greet{server,client,proto}
-protoc -Igreet/proto --go_out=. --go_opt=module=example/m --go-grpc_out=. --go-grpc_opt=module=example/m greet/proto/*.proto
+protoc -Igreet/proto --go_opt=module=example/m --go_out=. --go-grpc_opt=module=example/m --go-grpc_out=. greet/proto/*.proto
 ```
 # Golang Docs
 - https://golangdocs.com/grpc-golang
