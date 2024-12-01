@@ -15,6 +15,22 @@
 - Network sandbox
 - Remote browser isolation
 - Support for managed and unmanaged devices
+# Prisma Access License Types
+## License Options
+- Prisma Access for Mobile User
+- Prisma Access for Rmote networks
+- Both 1 and 2
+- Add-Ons
+## Editions
+- Business
+- Business Premium
+- Enterprise
+## Add-Ons Licenses
+- Enterprise DLP
+- Interconnect
+- Additional Service Connections
+- [ADEM (Autonomous Digital Experience Management: 自律的デジタルエクスペリエンス管理)](https://www.paloaltonetworks.com/blog/2022/08/operational-issues-solved-by-adem/?lang=ja)
+- SaaS Security
 # Prisma Access - Service Infrastructure subnet
 - 169.254.169.253, 169.254.169.254
 - 100.64.0.0/10 - RFC6890で定義されたShared Address Space
