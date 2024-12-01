@@ -27,3 +27,4 @@ protoc -Igreet/proto --go_out=. --go_opt=module=example/m --go-grpc_out=. --go-g
 # Misc Docs
 - https://www.tohoho-web.com/ex/grpc.html
 - https://docs.insomnia.rest/insomnia/grpc
+- https://konghq.com/blog/engineering/insomnia-grpc
