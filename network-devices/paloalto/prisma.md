@@ -3,7 +3,6 @@
 - https://www.paloaltonetworks.jp/sase/ztna
 - https://www.hitachi-solutions.co.jp/paloalto/products/cloud/prisma-access.html
 - https://docs.paloaltonetworks.com/compatibility-matrix/reference/prisma-access
-- https://www.paloaltonetworks.jp/apps/pan/public/downloadResource?pagePath=/content/pan/ja_JP/resources/datasheets/prisma-access-licensing-guide
 - https://www.paloaltonetworks.jp/resources/datasheets/prisma-access-licensing-guide
 # Secure Access Service Edge (SASE)
 - Cloud Security Web Gateway (SWG)
@@ -16,6 +15,8 @@
 - Remote browser isolation
 - Support for managed and unmanaged devices
 # Prisma Access License Types
+- https://docs.paloaltonetworks.com/prisma/prisma-access/3-2/prisma-access-panorama-admin/prisma-access-overview/prisma-access-licenses
+- https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/ja_JP/resources/datasheets/prisma-access-licensing-guide
 ## License Options
 - Prisma Access for Mobile User
 - Prisma Access for Rmote networks
@@ -24,6 +25,7 @@
 ## Editions
 - Business
 - Business Premium
+- Zero Trust Network Access (ZTNA) Secure Internet Gateway (SIG)
 - Enterprise
 ## Add-Ons Licenses
 - Enterprise DLP
