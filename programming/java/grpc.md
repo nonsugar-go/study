@@ -15,3 +15,6 @@ vim pom.xml
 ```
 # protobuf
 - [protobuf](../protobuf/READEME.md)
+
+必要ならば、com.google.protobuf » protobuf-java-util を追加
+- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java-util
