@@ -90,6 +90,8 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 - ESLint
 ## Swift
 - https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang
+## PowerShell
+- https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell
 ## Protocol Buffer
 - https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3
 ## HTML
