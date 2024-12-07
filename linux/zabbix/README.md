@@ -71,6 +71,7 @@ DBPassword=password
 ## Zabbix サービスの起動
 ```bash
 $ sudo systemctl enable zabbix-server zabbix-agent httpd php-fpm --now
+$ systemctl status zabbix-server zabbix-agent httpd php-fpm
 ```
 ## ブラウザで接続
 http://IP_ADDRESS/zabbix
