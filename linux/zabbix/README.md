@@ -68,5 +68,10 @@ $ sudo diff /etc/zabbix/zabbix_server.conf{.orig,}
 > DBPassword=password
 DBPassword=password
 ```
+## Zabbix サービスの起動
+```bash
+$ sudo systemctl enable zabbix-server zabbix-agent httpd php-fpm --now
+```
 ## ブラウザで接続
+http://ホスト名/zabbix
 - https://www.zabbix.com/documentation/7.0/en/manual/quickstart/login
