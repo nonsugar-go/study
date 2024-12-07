@@ -60,8 +60,12 @@ mysql> quit;
 ```
 ## データベースのパスワードを編集
 ```bash
+$ sudo cp -p /etc/zabbix/zabbix_server.conf{,.orig}
 $ sudo vi /etc/zabbix/zabbix_server.conf
 
+$ sudo diff /etc/zabbix/zabbix_server.conf{.orig,}
+131a132
+> DBPassword=password
 DBPassword=password
 ```
 
