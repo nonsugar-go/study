@@ -44,7 +44,7 @@ $ sudo dnf install zabbix-server-mysql zabbix-web-mysql zabbix-apache-conf zabbi
 ## データベースの作成
 ```bash
 $ mysql -uroot -p
-password
+Enter password: SECRET
 mysql> create database zabbix character set utf8mb4 collate utf8mb4_bin;
 mysql> create user zabbix@localhost identified by 'password';
 mysql> grant all privileges on zabbix.* to zabbix@localhost;
@@ -54,7 +54,14 @@ mysql> quit;
 $ zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
 
 $ mysql -uroot -p
-password
+Enter password: SECRET
 mysql> set global log_bin_trust_function_creators = 0;
 mysql> quit;
 ```
+## データベースのパスワードを編集
+```bash
+$ sudo vi /etc/zabbix/zabbix_server.conf
+
+DBPassword=password
+```
+
