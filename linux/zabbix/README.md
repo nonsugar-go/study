@@ -89,7 +89,7 @@ http://IP_ADDRESS/zabbix
 
 ```bash
 $ sudo rpm -Uvh https://repo.zabbix.com/zabbix/7.0/rhel/9/x86_64/zabbix-release-latest-7.0.el9.noarch.rpm
-$ sudo dnf install zabbix-agent
+$ sudo dnf install zabbix-agent -y
 $ sudo cp -a /etc/zabbix{,.orig}
 $ sudo cp -p /etc/zabbix/zabbix_agentd.conf{,.orig}
 $ sudo vi /etc/zabbix/zabbix_agentd.conf
