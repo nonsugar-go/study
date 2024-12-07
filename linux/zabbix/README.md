@@ -93,6 +93,26 @@ $ sudo dnf install zabbix-agent -y
 $ sudo cp -a /etc/zabbix{,.orig}
 $ sudo cp -p /etc/zabbix/zabbix_agentd.conf{,.orig}
 $ sudo vi /etc/zabbix/zabbix_agentd.conf
+
+$ diff /etc/zabbix/zabbix_agentd.conf{.orig,}
+74a75,76
+> AllowKey=system.run[*]
+>
+117c119,120
+< Server=127.0.0.1
+---
+> ##Server=127.0.0.1
+> Server=192.168.100.123
+171c174,175
+< ServerActive=127.0.0.1
+---
+> ##ServerActive=127.0.0.1
+> ServerActive=192.168.100.123
+182c186
+< Hostname=Zabbix server
+---
+> ##Hostname=Zabbix server
+
 $ sudo systemctl enable zabbix-agent --now
 $ sudo firewall-cmd --add-port=10050/tcp
 $ sudo firewall-cmd --list-all
