@@ -68,4 +68,5 @@ $ sudo diff /etc/zabbix/zabbix_server.conf{.orig,}
 > DBPassword=password
 DBPassword=password
 ```
-
+## ブラウザで接続
+- https://www.zabbix.com/documentation/7.0/en/manual/quickstart/login
