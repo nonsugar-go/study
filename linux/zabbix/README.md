@@ -8,5 +8,8 @@ Red Hat Enterprise Linux release 9.5 (Plow)
 ```
 
 ```bash
-sudo dnf install mariadb-server -y
+$ sudo dnf install mariadb-server -y
+
+$ rpm -q mariadb
+mariadb-10.5.22-1.el9_2.x86_64
 ```
