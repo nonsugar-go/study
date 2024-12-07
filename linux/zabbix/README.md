@@ -77,9 +77,24 @@ $ systemctl status zabbix-server zabbix-agent httpd php-fpm
 ## firewalld の設定
 ```bash
 $ sudo firewall-cmd --add-service=http
+$ sudo firewall-cmd --permanent --add-port=10051/tcp
 $ sudo firewall-cmd --list-all
 $ sudo firewall-cmd --runtime-to-permanent
 ```
 ## ブラウザで接続
 http://IP_ADDRESS/zabbix
 - https://www.zabbix.com/documentation/7.0/en/manual/quickstart/login
+# Zabbix Agent
+- https://www.zabbix.com/download?zabbix=7.0&os_distribution=red_hat_enterprise_linux&os_version=9&components=agent&db=&ws=
+
+```bash
+$ sudo rpm -Uvh https://repo.zabbix.com/zabbix/7.0/rhel/9/x86_64/zabbix-release-latest-7.0.el9.noarch.rpm
+$ sudo dnf install zabbix-agent
+$ sudo cp -a /etc/zabbix{,.orig}
+$ sudo cp -p /etc/zabbix/zabbix_agentd.conf{,.orig}
+$ sudo vi /etc/zabbix/zabbix_agentd.conf
+$ sudo systemctl enable zabbix-agent --now
+$ sudo firewall-cmd --permanent --add-port=10050/tcp
+$ sudo firewall-cmd --list-all
+$ sudo firewall-cmd --runtime-to-permanent
+```
