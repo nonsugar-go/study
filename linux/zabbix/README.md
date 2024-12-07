@@ -118,3 +118,5 @@ $ sudo firewall-cmd --add-port=10050/tcp
 $ sudo firewall-cmd --list-all
 $ sudo firewall-cmd --runtime-to-permanent
 ```
+# Zabbix Agent 2 (Windows)
+- https://www.zabbix.com/download_agents?version=7.0+LTS&release=7.0.6&os=Windows&os_version=Any&hardware=amd64&encryption=OpenSSL&packaging=MSI&show_legacy=0
