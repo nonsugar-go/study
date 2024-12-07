@@ -77,7 +77,7 @@ $ systemctl status zabbix-server zabbix-agent httpd php-fpm
 ## firewalld の設定
 ```bash
 $ sudo firewall-cmd --add-service=http
-$ sudo firewall-cmd --permanent --add-port=10051/tcp
+$ sudo firewall-cmd --add-port=10051/tcp
 $ sudo firewall-cmd --list-all
 $ sudo firewall-cmd --runtime-to-permanent
 ```
@@ -94,7 +94,7 @@ $ sudo cp -a /etc/zabbix{,.orig}
 $ sudo cp -p /etc/zabbix/zabbix_agentd.conf{,.orig}
 $ sudo vi /etc/zabbix/zabbix_agentd.conf
 $ sudo systemctl enable zabbix-agent --now
-$ sudo firewall-cmd --permanent --add-port=10050/tcp
+$ sudo firewall-cmd --add-port=10050/tcp
 $ sudo firewall-cmd --list-all
 $ sudo firewall-cmd --runtime-to-permanent
 ```
