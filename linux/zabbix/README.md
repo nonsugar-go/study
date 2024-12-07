@@ -7,11 +7,32 @@
 $ cat /etc/redhat-release
 Red Hat Enterprise Linux release 9.5 (Plow)
 ```
-## Mariadb のインストール
+## MariaDB のインストール・設定
 ```bash
 $ sudo dnf install mariadb-server -y
 
 $ rpm -q mariadb
 mariadb-10.5.22-1.el9_2.x86_64
+
+$ sudo systemctl enable mariadb --now
+$ systemctl status mariadb
+
+$ sudo mariadb-secure-installation
+ (snip)
+Enter current password for root (enter for none): ↵
+ (snip)
+Switch to unix_socket authentication [Y/n] n
+ (snip)
+Change the root password? [Y/n] y
+New password: SECRET
+Re-enter new password: SECRET
+ (snip)
+Remove anonymous users? [Y/n] y
+ (snip)
+Disallow root login remotely? [Y/n] y
+ (snip)
+Remove test database and access to it? [Y/n] y
+ (snip)
+Reload privilege tables now? [Y/n] y
 ```
 
