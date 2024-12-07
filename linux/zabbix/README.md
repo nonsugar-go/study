@@ -73,6 +73,12 @@ DBPassword=password
 $ sudo systemctl enable zabbix-server zabbix-agent httpd php-fpm --now
 $ systemctl status zabbix-server zabbix-agent httpd php-fpm
 ```
+## firewalld の設定
+```bash
+$ sudo firewall-cmd --add-service=http
+$ sudo firewall-cmd --list-all
+$ sudo firewall-cmd --runtime-to-permanent
+```
 ## ブラウザで接続
 http://IP_ADDRESS/zabbix
 - https://www.zabbix.com/documentation/7.0/en/manual/quickstart/login
