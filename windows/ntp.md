@@ -2,3 +2,5 @@
 - https://learn.microsoft.com/ja-jp/troubleshoot/windows-server/active-directory/support-boundary-high-accuracy-time
 - https://learn.microsoft.com/ja-jp/windows-server/networking/windows-time-service/accurate-time
 - https://learn.microsoft.com/ja-jp/windows-server/networking/windows-time-service/windows-server-2016-improvements
+>[!NOTE]
+>ドメインに参加している Windows Server 2016 のゲストは、ホストを既定値とするのではなく、最も正確な時刻を利用できます。 この理由により、Windows Server 2012 R2 以前のドメインに参加しているマシンに対して [Hyper-V タイム プロバイダー] 設定を手動で無効にすることが推奨されていました。
