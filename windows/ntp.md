@@ -18,6 +18,7 @@ w32tm /query /configuration /verbose
 キーの場所 | 値の名前 | 値の種類 | 値のデータ
 -- | -- | -- | -- 
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Parameters | Type | REG_SZ | NTP
+HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | AnnounceFlags | REG_DWORD | 5
 
 キーの場所 | 値の名前 | 値の種類 | 値のデータ
 -- | -- | -- | -- 
@@ -26,7 +27,6 @@ HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | MaxPollInterval | REG_DW
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | UpdateInterval | REG_DWORD | 100
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient | SpecialPollInterval | REG_DWORD | 1024 -> **64**
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | FrequencyCorrectRate | REG_DWORD | 4 -> **2**
-HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | AnnounceFlags | REG_DWORD | 5
 
 レジストリ変更後反映
 ```cmd
