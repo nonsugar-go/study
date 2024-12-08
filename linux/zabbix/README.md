@@ -118,5 +118,22 @@ $ sudo firewall-cmd --add-port=10050/tcp
 $ sudo firewall-cmd --list-all
 $ sudo firewall-cmd --runtime-to-permanent
 ```
+
+## PSK
+```bash
+$ openssl rand -hex 32 | sudo tee /etc/zabbix/secret.psk
+$ sudo chown zabbix:zabbix /etc/zabbix/secret.psk
+$ sudo chmod 600 /etc/zabbix/secret.psk
+$ sudo vi /etc/zabbix/zabbix_agentd.conf
+
+$ grep ^TLS /etc/zabbix/zabbix_agentd.conf
+TLSConnect=psk
+TLSAccept=psk
+TLSPSKIdentity=RH9-1
+TLSPSKFile=/etc/zabbix/secret.psk
+
+$ sudo systemctl restart zabbix-agent
+$ sudo systemctl status zabbix-agent
+```
 # Zabbix Agent 2 (Windows)
 - https://www.zabbix.com/download_agents?version=7.0+LTS&release=7.0.6&os=Windows&os_version=Any&hardware=amd64&encryption=OpenSSL&packaging=MSI&show_legacy=0
