@@ -30,6 +30,11 @@ HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | MaxNegPhaseCorrection | 
 net stop w32time && net start w32time
 ```
 
+Windows Firewall の受信規則の設定
+```pwsh
+ New-NetFirewallRule -DisplayName "UDP_123" -Protocol UDP -LocalPort 123 -Action Allow
+```
+
 キーの場所 | 値の名前 | 値の種類 | 値のデータ
 -- | -- | -- | -- 
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | MinPollInterval | REG_DWORD | 6 (2^6 = 64秒)
