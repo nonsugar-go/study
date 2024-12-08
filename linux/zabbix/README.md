@@ -135,5 +135,12 @@ TLSPSKFile=/etc/zabbix/secret.psk
 $ sudo systemctl restart zabbix-agent
 $ sudo systemctl status zabbix-agent
 ```
+- ホスト > 暗号化
+  - ホストへの接続: PSK
+  - ホストからの接続: [ ] 暗号化なし
+  - ホストからの接続: [x] PSK
+  - ホストからの接続: [ ] 証明書
+  - PSKアイデンティティ: RH9-1
+  - PSK: ********
 # Zabbix Agent 2 (Windows)
 - https://www.zabbix.com/download_agents?version=7.0+LTS&release=7.0.6&os=Windows&os_version=Any&hardware=amd64&encryption=OpenSSL&packaging=MSI&show_legacy=0
