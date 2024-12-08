@@ -28,8 +28,8 @@ HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | MaxPosPhaseCorrection | 
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | MaxNegPhaseCorrection | REG_DWORD | 54000 (15時間)
 
 レジストリ変更後反映
-```cmd
-net stop w32time && net start w32time
+```pwsh
+net stop w32time; net start w32time
 ```
 
 Windows Firewall の受信規則の設定
@@ -46,6 +46,6 @@ HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient | Special
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | FrequencyCorrectRate | REG_DWORD | 4 -> **2**
 
 レジストリ変更後反映
-```cmd
-net stop w32time && net start w32time
+```pwsh
+net stop w32time; net start w32time
 ```
