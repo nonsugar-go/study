@@ -4,3 +4,9 @@
 - https://learn.microsoft.com/ja-jp/windows-server/networking/windows-time-service/windows-server-2016-improvements
 >[!NOTE]
 >ドメインに参加している Windows Server 2016 のゲストは、ホストを既定値とするのではなく、最も正確な時刻を利用できます。 この理由により、Windows Server 2012 R2 以前のドメインに参加しているマシンに対して [Hyper-V タイム プロバイダー] 設定を手動で無効にすることが推奨されていました。
+# 確認コマンド
+```
+w32tm /query /peers /verbose
+w32tm /query /status /verbose
+w32tm /query /configuration /verbose
+```
