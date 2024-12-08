@@ -19,7 +19,11 @@ w32tm /query /configuration /verbose
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | MinPollInterval | REG_DWORD | 6 (2^6 = 64秒)
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | MaxPollInterval | REG_DWORD | 10 (2^10 = 1024秒 = 17分4秒)
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | UpdateInterval | REG_DWORD | 100
+HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient | SpecialPollInterval | REG_DWORD | 1024 -> **64**
+HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | FrequencyCorrectRate | REG_DWORD | 4
+
 レジストリ変更後反映
 ```cmd
 w32tm /config /update
+net stop w32time && net start w32time
 ```
