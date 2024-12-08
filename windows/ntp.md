@@ -19,9 +19,16 @@ w32tm /query /configuration /verbose
 キーの場所 | 値の名前 | 値の種類 | 値のデータ
 -- | -- | -- | -- 
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Parameters | Type | REG_SZ | NTP
-HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | AnnounceFlags | REG_DWORD | 10 (0xa) or 5
+HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | AnnounceFlags | REG_DWORD | 10 (0xa) -> **5**
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpServer | Enabled | REG_DWORD | 1
-HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Parameters | NtpServer | REG_SZ | time.windows.com,0x8 -> ntp.nict.jp,0x8 ats1.e-timing.ne.jp,0x8
+HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Parameters | NtpServer | REG_SZ | time.windows.com,0x8 -> **ntp.nict.jp,0x8 ats1.e-timing.ne.jp,0x8**
+HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | MaxPosPhaseCorrection | REG_DWORD | 54000 (15時間)
+HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | MaxNegPhaseCorrection | REG_DWORD | 54000 (15時間)
+
+レジストリ変更後反映
+```cmd
+net stop w32time && net start w32time
+```
 
 キーの場所 | 値の名前 | 値の種類 | 値のデータ
 -- | -- | -- | -- 
@@ -33,6 +40,5 @@ HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | FrequencyCorrectRate | R
 
 レジストリ変更後反映
 ```cmd
-w32tm /config /update
 net stop w32time && net start w32time
 ```
