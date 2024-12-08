@@ -14,6 +14,7 @@ w32tm /query /configuration /verbose
 - https://learn.microsoft.com/ja-jp/windows-server/networking/windows-time-service/configuring-systems-for-high-accuracy
 - https://learn.microsoft.com/ja-jp/troubleshoot/windows-server/active-directory/support-boundary-high-accuracy-time
 - https://learn.microsoft.com/ja-jp/windows-server/networking/windows-time-service/windows-time-service-tools-and-settings
+- https://www.bytefusion.com/products/ntm/pts/3_3modesofoperation.htm
 ## レジストリの設定
 キーの場所 | 値の名前 | 値の種類 | 値のデータ
 -- | -- | -- | -- 
