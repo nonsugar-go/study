@@ -18,7 +18,7 @@ w32tm /query /configuration /verbose
 キーの場所 | 値の名前 | 値の種類 | 値のデータ
 -- | -- | -- | -- 
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Parameters | Type | REG_SZ | NTP
-HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | AnnounceFlags | REG_DWORD | 5 -> 10 (0xa)
+HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | AnnounceFlags | REG_DWORD | 10 (0xa) or 5
 
 キーの場所 | 値の名前 | 値の種類 | 値のデータ
 -- | -- | -- | -- 
