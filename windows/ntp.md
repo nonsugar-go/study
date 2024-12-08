@@ -19,6 +19,8 @@ w32tm /query /configuration /verbose
 -- | -- | -- | -- 
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Parameters | Type | REG_SZ | NTP
 HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | AnnounceFlags | REG_DWORD | 10 (0xa) or 5
+HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpServer | Enabled | REG_DWORD | 1
+HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Parameters | NtpServer | REG_SZ | time.windows.com,0x8 -> ntp.nict.jp,0x8 ats1.e-timing.ne.jp,0x8
 
 キーの場所 | 値の名前 | 値の種類 | 値のデータ
 -- | -- | -- | -- 
