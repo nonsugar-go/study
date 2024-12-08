@@ -12,3 +12,4 @@ w32tm /query /configuration /verbose
 # NTP サーバの設定 (高精度を確保するためのシステム構成方法)
 - https://learn.microsoft.com/ja-jp/windows-server/networking/windows-time-service/configuring-systems-for-high-accuracy
 - https://learn.microsoft.com/ja-jp/troubleshoot/windows-server/active-directory/support-boundary-high-accuracy-time
+- https://learn.microsoft.com/ja-jp/windows-server/networking/windows-time-service/windows-time-service-tools-and-settings
