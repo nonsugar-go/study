@@ -83,4 +83,7 @@ app.listen(PORT, () => {
 ## グローバルに ts-node を使えるようにする
 ```zsh
 npm install -g ts-node
+
+asdf global nodejs
 ```
+- [No version is set for command npm Consider adding one of the following versions in your config file at  nodejs <version>; #Node.js - Qiita](https://qiita.com/tiger7112/items/559e588ced077e048250)
