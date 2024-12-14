@@ -49,3 +49,10 @@ HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config | FrequencyCorrectRate | R
 ```pwsh
 net stop w32time; net start w32time
 ```
+
+## サービスの設定
+- サービス (services.msc) > [Windows Time]
+-- | -- | --
+項目 | 値 | 備考
+[全般] タブ > スタートアップの種類 | 手動 -> 自動
+
