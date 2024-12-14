@@ -62,6 +62,8 @@ Visual Studio で VSCode のショートカット キーを使用するには、
   - 拡張: Markdown Preview Enhanced
   - 拡張: Markdown All in One
   - 拡張: Excel to Markdown table
+## CSV
+- https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv
 ## Golang
 - [Go (go.dev)](https://marketplace.visualstudio.com/items?itemName=golang.go)
   - Ctrl + Shift + P > Go: Install/Update Tools > 全てチェック
