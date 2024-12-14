@@ -109,6 +109,7 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 - https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer
 ## その他
 - https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
+- https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete
 - https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense
 - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 # 参考
