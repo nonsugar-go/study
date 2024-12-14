@@ -52,7 +52,8 @@ net stop w32time; net start w32time
 
 ## サービスの設定
 - サービス (services.msc) > [Windows Time]
--- | -- | --
-項目 | 値 | 備考
+
+項目 | 値
+-- | --
 [全般] タブ > スタートアップの種類 | 手動 -> 自動
 
