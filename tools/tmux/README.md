@@ -3,6 +3,7 @@
 # 概要
 - https://github.com/tmux/tmux/wiki/Getting-Started
 - https://www.tohoho-web.com/ex/tmux.html
+- https://tmuxcheatsheet.com/
 
 # ペイン
 | Key bind         | Description                                              |
