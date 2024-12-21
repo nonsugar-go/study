@@ -12,3 +12,5 @@
 - https://nginx.org/en/docs/varindex.html
 - https://nginx.org/en/docs/http/ngx_http_core_module.html#var_arg_
 - https://nginx.org/en/docs/http/ngx_http_ssi_module.html#var_date_local
+# php-fpm
+- [6.2. Web サーバーでの PHP スクリプト言語の使用 | Red Hat Product Documentation](https://docs.redhat.com/ja/documentation/red_hat_enterprise_linux/9/html/installing_and_using_dynamic_programming_languages/using-the-php-scripting-language-with-a-web-server_assembly_using-the-php-scripting-language#using-php-with-the-apache-http-server_using-the-php-scripting-language-with-a-web-server) 
