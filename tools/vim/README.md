@@ -53,6 +53,10 @@ set foldmethod=syntax
 ```
 
 # タブストップの設定
+command | desc
+--|--
+:set sw=4 ts=4 et|インデント幅、タブ幅を4文字、タブを空白に変換
+
 ```vim
  <!-- vim: set sw=4 ts=4 et tw=80 : -->
 ```
