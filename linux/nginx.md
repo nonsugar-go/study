@@ -5,3 +5,5 @@
 - https://nginx.org/en/docs/http/ngx_http_core_module.html#location
 # varibales
 - https://nginx.org/en/docs/varindex.html
+- 
+- https://nginx.org/en/docs/http/ngx_http_ssi_module.html#var_date_local
