@@ -168,6 +168,9 @@ sudo systemctl status php-fpm
 - https://nginx.org/en/docs/http/ngx_http_gzip_module.html#gzip
 - https://nginx.org/en/docs/http/ngx_http_gzip_module.html#gzip_comp_level
 - https://nginx.org/en/docs/http/ngx_http_gzip_module.html#gzip_types
+## Basic Auth
+- https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html#auth_basic
+- https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html#auth_basic_user_file
 ## Limit
 - https://nginx.org/en/docs/http/ngx_http_limit_req_module.html#limit_req_zone
 - https://nginx.org/en/docs/http/ngx_http_limit_req_module.html#limit_req
