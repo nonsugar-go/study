@@ -162,7 +162,7 @@ sudo dnf install pcre-devel gd-devel -y
 curl -O http://nginx.org/download/nginx-1.24.0.tar.gz
 tar xvf nginx-1.24.0.tar.gz
 cd nginx-1.24.0
-./configure --with-http_image_filter_module
+./configure --with-http_image_filter_module=dynamic
 make
 ```
 # Reverse Proxy
