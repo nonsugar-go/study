@@ -158,7 +158,7 @@ sudo systemctl status php-fpm
 - https://runebook.dev/ja/docs/nginx/http/ngx_http_image_filter_module
 ```bash
 sudo dnf group install 'Development Tools' -y
-sudo dnf install pcre-devel zlib-devel
+sudo dnf install pcre-devel -y
 curl -O http://nginx.org/download/nginx-1.24.0.tar.gz
 tar xvf nginx-1.24.0.tar.gz
 cd nginx-1.24.0
