@@ -10,4 +10,5 @@ ab -n 100 -c 10 http://192.168.1.111/
 
 ```zsh
 sudo apt install siege -y
+siege -v -r 2 -c 5 https://192.168.1.111/thumb.png
 ```
