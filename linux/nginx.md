@@ -197,10 +197,17 @@ load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
         }
   (snip)
 ```
-# https
+# SSL
 - https://docs.nginx.com/nginx/admin-guide/security-controls/terminating-ssl-http/
 - https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_certificate
 - https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_certificate_key
+- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_protocols
+- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_prefer_server_ciphers
+- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_ciphers
+- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_dhparam
+- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_session_cache
+- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_session_timeout
+- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_session_tickets
 - https://nginx.org/en/docs/http/ngx_http_v2_module.html#http2_push
 
 `/etc/nginx/nginx.conf`
