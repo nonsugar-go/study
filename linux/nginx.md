@@ -124,6 +124,7 @@ sudo systemctl status php-fpm
 ## Core
 - https://nginx.org/en/docs/http/ngx_http_core_module.html#location
 - https://nginx.org/en/docs/http/ngx_http_core_module.html#try_files
+- https://nginx.org/en/docs/ngx_core_module.html#worker_processes
 ## Log
 - https://nginx.org/en/docs/http/ngx_http_log_module.html#access_log
 - https://nginx.org/en/docs/ngx_core_module.html#error_log
