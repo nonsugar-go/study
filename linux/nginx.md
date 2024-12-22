@@ -102,6 +102,7 @@ php          8.2 [e]        common [d] [i], devel, minimal        PHP scripting 
 ヒント: [d]efault, [e]nabled, [x]disabled, [i]nstalled
 ```
 
+```
 $ rpm -qa | grep ^php
 php-common-8.2.25-1.module+el9.5.0+22477+5fdac06d.x86_64
 php-fpm-8.2.25-1.module+el9.5.0+22477+5fdac06d.x86_64
