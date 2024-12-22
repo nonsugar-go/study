@@ -121,8 +121,10 @@ sudo systemctl status php-fpm
 - /etc/php-fpm.conf
 - /etc/php-fpm.d/www.conf
 # Configuration
-## Core
+## Location
 - https://nginx.org/en/docs/http/ngx_http_core_module.html#location
+- https://www.slingacademy.com/article/nginx-location-block-the-complete-guide/#location-block-precedence
+## Core
 - https://nginx.org/en/docs/http/ngx_http_core_module.html#try_files
 - https://nginx.org/en/docs/ngx_core_module.html#worker_processes
 - https://nginx.org/en/docs/ngx_core_module.html#worker_connections
