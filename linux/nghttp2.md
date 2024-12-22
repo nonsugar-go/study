@@ -17,5 +17,5 @@ nghttp -nv https://www.google.com
 ```
 
 ```
-nghttp -nsya https://192.168.1.111
+nghttp -nysa https://192.168.1.111
 ```
