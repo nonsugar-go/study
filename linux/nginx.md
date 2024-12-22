@@ -161,6 +161,7 @@ sudo systemctl status php-fpm
 - https://nginx.org/en/docs/varindex.html
 - https://nginx.org/en/docs/http/ngx_http_core_module.html#var_arg_
 - https://nginx.org/en/docs/http/ngx_http_ssi_module.html#var_date_local
+- https://nginx.org/en/docs/http/ngx_http_upstream_module.html#var_upstream_cache_status
 ## Gzip
 - https://nginx.org/en/docs/http/ngx_http_gzip_module.html#gzip
 - https://nginx.org/en/docs/http/ngx_http_gzip_module.html#gzip_comp_level
