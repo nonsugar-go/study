@@ -156,6 +156,10 @@ sudo systemctl status php-fpm
 - https://nginx.org/en/docs/varindex.html
 - https://nginx.org/en/docs/http/ngx_http_core_module.html#var_arg_
 - https://nginx.org/en/docs/http/ngx_http_ssi_module.html#var_date_local
+## Gzip
+- https://nginx.org/en/docs/http/ngx_http_gzip_module.html#gzip
+- https://nginx.org/en/docs/http/ngx_http_gzip_module.html#gzip_comp_level
+- https://nginx.org/en/docs/http/ngx_http_gzip_module.html#gzip_types
 # Module ngx_http_image_filter_module
 - https://runebook.dev/ja/docs/nginx/http/ngx_http_image_filter_module
 - https://nginx.org/en/docs/http/ngx_http_image_filter_module.html
