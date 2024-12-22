@@ -197,5 +197,22 @@ load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
         }
   (snip)
 ```
+# https
+- https://docs.nginx.com/nginx/admin-guide/security-controls/terminating-ssl-http/
+- https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_certificate
+- https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_certificate_key
+
+`/etc/nginx/nginx.conf`
+```
+http {
+    include mime.types;
+    server {
+        #listen 80;
+        listen 443 ssl http2;
+        ssl_certificate /etc/nginx/ssl/server.crt;
+        ssl_certificate_key /etc/nginx/ssl/server.key;
+    }
+}
+```
 # Reverse Proxy
 - [第2章 NGINX の設定および設定 | Red Hat Product Documentation](https://docs.redhat.com/ja/documentation/red_hat_enterprise_linux/9/html/deploying_web_servers_and_reverse_proxies/setting-up-and-configuring-nginx_deploying-web-servers-and-reverse-proxies)
