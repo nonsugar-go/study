@@ -8,7 +8,9 @@
 - https://docs.nginx.com/nginx/admin-guide/monitoring/logging/
 - https://nginx.org/en/docs/ngx_core_module.html#error_log
 - https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#rewrite
-# varibales
+# Heders
+- https://nginx.org/en/docs/http/ngx_http_headers_module.html#add_header
+# Varibales
 - https://nginx.org/en/docs/varindex.html
 - https://nginx.org/en/docs/http/ngx_http_core_module.html#var_arg_
 - https://nginx.org/en/docs/http/ngx_http_ssi_module.html#var_date_local
