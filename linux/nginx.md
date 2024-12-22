@@ -168,6 +168,38 @@ sudo systemctl status php-fpm
 - https://nginx.org/en/docs/http/ngx_http_gzip_module.html#gzip
 - https://nginx.org/en/docs/http/ngx_http_gzip_module.html#gzip_comp_level
 - https://nginx.org/en/docs/http/ngx_http_gzip_module.html#gzip_types
+## Limit
+- https://nginx.org/en/docs/http/ngx_http_limit_req_module.html#limit_req_zone
+- https://nginx.org/en/docs/http/ngx_http_limit_req_module.html#limit_req
+## SSL
+- https://docs.nginx.com/nginx/admin-guide/security-controls/terminating-ssl-http/
+- https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_certificate
+- https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_certificate_key
+- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_protocols
+- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_prefer_server_ciphers
+- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_ciphers
+- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_dhparam
+- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_session_cache
+- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_session_timeout
+- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_session_tickets
+- https://nginx.org/en/docs/http/ngx_http_v2_module.html#http2_push
+
+`/etc/nginx/nginx.conf`
+```
+http {
+    server {
+        listen 443 ssl http2;
+        ssl_certificate /etc/nginx/ssl/server.crt;
+        ssl_certificate_key /etc/nginx/ssl/server.key;
+    }
+    location = /index.html {
+        http2_push /style.css;
+        http2_push /thumb.png;
+    }
+}
+```
+## Reverse Proxy
+- [第2章 NGINX の設定および設定 | Red Hat Product Documentation](https://docs.redhat.com/ja/documentation/red_hat_enterprise_linux/9/html/deploying_web_servers_and_reverse_proxies/setting-up-and-configuring-nginx_deploying-web-servers-and-reverse-proxies)
 # Module ngx_http_image_filter_module
 - https://runebook.dev/ja/docs/nginx/http/ngx_http_image_filter_module
 - https://nginx.org/en/docs/http/ngx_http_image_filter_module.html
@@ -197,32 +229,3 @@ load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
         }
   (snip)
 ```
-# SSL
-- https://docs.nginx.com/nginx/admin-guide/security-controls/terminating-ssl-http/
-- https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_certificate
-- https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_certificate_key
-- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_protocols
-- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_prefer_server_ciphers
-- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_ciphers
-- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_dhparam
-- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_session_cache
-- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_session_timeout
-- https://nginx.org/en/docs/mail/ngx_mail_ssl_module.html#ssl_session_tickets
-- https://nginx.org/en/docs/http/ngx_http_v2_module.html#http2_push
-
-`/etc/nginx/nginx.conf`
-```
-http {
-    server {
-        listen 443 ssl http2;
-        ssl_certificate /etc/nginx/ssl/server.crt;
-        ssl_certificate_key /etc/nginx/ssl/server.key;
-    }
-    location = /index.html {
-        http2_push /style.css;
-        http2_push /thumb.png;
-    }
-}
-```
-# Reverse Proxy
-- [第2章 NGINX の設定および設定 | Red Hat Product Documentation](https://docs.redhat.com/ja/documentation/red_hat_enterprise_linux/9/html/deploying_web_servers_and_reverse_proxies/setting-up-and-configuring-nginx_deploying-web-servers-and-reverse-proxies)
