@@ -169,6 +169,19 @@ nginx -V
 make
 sudo mkdir /etc/nginx/modules
 sudo cp ./objs/ngx_http_image_filter_module.so /etc/nginx/modules
+sudo vi /etc/nginx/nginx.conf
+sudo systemctl reload nginx
+```
+
+`/etc/nginx/nginx.conf`
+```
+load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
+  (snip)
+        location /thumb.png {
+            image_filter resize 150 100;
+            image_filter rotate 180;
+        }
+  (snip)
 ```
 # Reverse Proxy
 - [第2章 NGINX の設定および設定 | Red Hat Product Documentation](https://docs.redhat.com/ja/documentation/red_hat_enterprise_linux/9/html/deploying_web_servers_and_reverse_proxies/setting-up-and-configuring-nginx_deploying-web-servers-and-reverse-proxies)
