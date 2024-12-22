@@ -66,7 +66,8 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 sudo systemctl reload nginx
 ```
 # php-fpm
-- [第6章 PHP スクリプト言語の使用 | Red Hat Product Documentation](https://docs.redhat.com/ja/documentation/red_hat_enterprise_linux/9/html/installing_and_using_dynamic_programming_languages/assembly_using-the-php-scripting-language_installing-and-using-dynamic-programming-languages#installing-the-php-scripting-language_assembly_using-the-php-scripting-language)                - [6.2. Web サーバーでの PHP スクリプト言語の使用 | Red Hat Product Documentation](https://docs.redhat.com/ja/documentation/red_hat_enterprise_linux/9/html/installing_and_using_dynamic_programming_languages/using-the-php-scripting-language-with-a-web-server_assembly_using-the-php-scripting-language#using-php-with-the-apache-http-server_using-the-php-scripting-language-with-a-web-server) 
+- [第6章 PHP スクリプト言語の使用 | Red Hat Product Documentation](https://docs.redhat.com/ja/documentation/red_hat_enterprise_linux/9/html/installing_and_using_dynamic_programming_languages/assembly_using-the-php-scripting-language_installing-and-using-dynamic-programming-languages#installing-the-php-scripting-language_assembly_using-the-php-scripting-language)
+- [6.2. Web サーバーでの PHP スクリプト言語の使用 | Red Hat Product Documentation](https://docs.redhat.com/ja/documentation/red_hat_enterprise_linux/9/html/installing_and_using_dynamic_programming_languages/using-the-php-scripting-language-with-a-web-server_assembly_using-the-php-scripting-language#using-php-with-the-apache-http-server_using-the-php-scripting-language-with-a-web-server) 
 
 ```bash
 $ sudo dnf info php | grep バージョン
@@ -90,15 +91,16 @@ sudo dnf module install php:8.2/common -y
 ```
 
 ```bash
-$ sudo dnf module list php
-サブスクリプション管理リポジトリーを更新しています。
-メタデータの期限切れの最終確認: 0:58:49 前の 2024年12月22日 11時58分33秒 に実施しました。
+$ dnf module list php
+root ではありません。サブスクリプション管理リポジトリーは更新されていません
+メタデータの期限切れの最終確認: 0:49:54 前の 2024年12月22日 12時59分47秒 に実施しました。
 Red Hat Enterprise Linux 9 for x86_64 - AppStream (RPMs)
 Name         Stream         Profiles                              Summary
 php          8.1            common [d], devel, minimal            PHP scripting language
 php          8.2 [e]        common [d] [i], devel, minimal        PHP scripting language
 
 ヒント: [d]efault, [e]nabled, [x]disabled, [i]nstalled
+```
 
 $ rpm -qa | grep ^php
 php-common-8.2.25-1.module+el9.5.0+22477+5fdac06d.x86_64
