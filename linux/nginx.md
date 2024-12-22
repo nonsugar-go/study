@@ -135,6 +135,8 @@ sudo systemctl status php-fpm
 ## Heders
 - https://nginx.org/en/docs/http/ngx_http_headers_module.html#add_header
 - https://nginx.org/en/docs/http/ngx_http_headers_module.html#expires
+## Fastcgi
+- https://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#fastcgi_pass
 # Varibales
 - https://nginx.org/en/docs/varindex.html
 - https://nginx.org/en/docs/http/ngx_http_core_module.html#var_arg_
