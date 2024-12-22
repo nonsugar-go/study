@@ -158,13 +158,12 @@ sudo systemctl status php-fpm
 - https://runebook.dev/ja/docs/nginx/http/ngx_http_image_filter_module
 ```bash
 sudo dnf group install 'Development Tools' -y
-sudo dnf install pcre-devel -y
+sudo dnf install pcre-devel gd-devel -y
 curl -O http://nginx.org/download/nginx-1.24.0.tar.gz
 tar xvf nginx-1.24.0.tar.gz
 cd nginx-1.24.0
 ./configure --with-http_image_filter_module
 make
-
 ```
 # Reverse Proxy
 - https://docs.redhat.com/ja/documentation/red_hat_enterprise_linux/9/html/deploying_web_servers_and_reverse_proxies/setting-up-and-configuring-nginx_deploying-web-servers-and-reverse-proxies
