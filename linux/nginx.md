@@ -29,36 +29,22 @@ sudo systemctl status nginx
 ```
 
 ```bash
-$ dnf list installed nginx
-root ではありません。サブスクリプション管理リポジトリーは更新されていません
-インストール済みパッケージ
-nginx.x86_64             1:1.24.0-4.module+el9.5.0+22074+d5873014             @rhel-9-for-x86_64-appstream-rpms
-```
-
-```bash
-$ rpm -qa | grep nginx
-nginx-filesystem-1.24.0-4.module+el9.5.0+22074+d5873014.noarch
-nginx-core-1.24.0-4.module+el9.5.0+22074+d5873014.x86_64
-nginx-1.24.0-4.module+el9.5.0+22074+d5873014.x86_64
-```
-
-```bash
-$ dnf list installed nginx
-root ではありません。サブスクリプション管理リポジトリーは更新されていません
-インストール済みパッケージ
-nginx.x86_64             1:1.24.0-4.module+el9.5.0+22074+d5873014             @rhel-9-for-x86_64-appstream-rpms
-```
-
-```bash
-$ rpm -qa | grep nginx
-nginx-filesystem-1.24.0-4.module+el9.5.0+22074+d5873014.noarch
-nginx-core-1.24.0-4.module+el9.5.0+22074+d5873014.x86_64
-nginx-1.24.0-4.module+el9.5.0+22074+d5873014.x86_64
-```
-
-```bash
 $ sudo firewall-cmd --list-ports
 80/tcp 443/tcp 10050/tcp
+```
+
+```bash
+$ dnf list installed nginx
+root ではありません。サブスクリプション管理リポジトリーは更新されていません
+インストール済みパッケージ
+nginx.x86_64             1:1.24.0-4.module+el9.5.0+22074+d5873014             @rhel-9-for-x86_64-appstream-rpms
+```
+
+```bash
+$ rpm -qa | grep nginx
+nginx-filesystem-1.24.0-4.module+el9.5.0+22074+d5873014.noarch
+nginx-core-1.24.0-4.module+el9.5.0+22074+d5873014.x86_64
+nginx-1.24.0-4.module+el9.5.0+22074+d5873014.x86_64
 ```
 
 ```bash
