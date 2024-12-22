@@ -207,7 +207,6 @@ load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
 http {
     include mime.types;
     server {
-        #listen 80;
         listen 443 ssl http2;
         ssl_certificate /etc/nginx/ssl/server.crt;
         ssl_certificate_key /etc/nginx/ssl/server.key;
