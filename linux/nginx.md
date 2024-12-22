@@ -128,6 +128,15 @@ sudo systemctl status php-fpm
 - https://nginx.org/en/docs/ngx_core_module.html#worker_connections
 - https://nginx.org/en/docs/ngx_core_module.html#pid
 - https://nginx.org/en/docs/ngx_core_module.html#user
+- https://nginx.org/en/docs/http/ngx_http_core_module.html#client_header_buffer_size
+- https://nginx.org/en/docs/http/ngx_http_core_module.html#client_max_body_size
+- https://nginx.org/en/docs/http/ngx_http_core_module.html#client_header_buffer_size
+- https://nginx.org/en/docs/http/ngx_http_core_module.html#client_body_timeout
+- https://nginx.org/en/docs/http/ngx_http_core_module.html#client_header_timeout
+- https://nginx.org/en/docs/http/ngx_http_core_module.html#keepalive_timeout
+- https://nginx.org/en/docs/http/ngx_http_core_module.html#send_timeout
+- https://nginx.org/en/docs/http/ngx_http_core_module.html#sendfile
+- https://nginx.org/en/docs/http/ngx_http_core_module.html#tcp_nopush
 ## Log
 - https://nginx.org/en/docs/http/ngx_http_log_module.html#access_log
 - https://nginx.org/en/docs/ngx_core_module.html#error_log
