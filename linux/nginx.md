@@ -151,7 +151,12 @@ sudo systemctl status php-fpm
 - https://nginx.org/en/docs/http/ngx_http_headers_module.html#add_header
 - https://nginx.org/en/docs/http/ngx_http_headers_module.html#expires
 ## Fastcgi
-- https://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#fastcgi_pass
+- https://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#fastcgi_cache_path
+- https://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#fastcgi_cache_key
+- https://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#fastcgi_cache
+- https://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#fastcgi_cache_valid
+- https://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#fastcgi_cache_bypass
+- https://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#fastcgi_no_cache
 ## Varibales
 - https://nginx.org/en/docs/varindex.html
 - https://nginx.org/en/docs/http/ngx_http_core_module.html#var_arg_
