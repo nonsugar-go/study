@@ -150,9 +150,21 @@ sudo systemctl status php-fpm
 - https://nginx.org/en/docs/http/ngx_http_headers_module.html#expires
 ## Fastcgi
 - https://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#fastcgi_pass
-# Varibales
+## Varibales
 - https://nginx.org/en/docs/varindex.html
 - https://nginx.org/en/docs/http/ngx_http_core_module.html#var_arg_
 - https://nginx.org/en/docs/http/ngx_http_ssi_module.html#var_date_local
+# Module ngx_http_image_filter_module
+- https://runebook.dev/ja/docs/nginx/http/ngx_http_image_filter_module
+```bash
+sudo dnf group install 'Development Tools' -y
+sudo dnf install pcre-devel zlib-devel
+curl -O http://nginx.org/download/nginx-1.24.0.tar.gz
+tar xvf nginx-1.24.0.tar.gz
+cd nginx-1.24.0
+./configure --with-http_image_filter_module
+make
+
+```
 # Reverse Proxy
 - https://docs.redhat.com/ja/documentation/red_hat_enterprise_linux/9/html/deploying_web_servers_and_reverse_proxies/setting-up-and-configuring-nginx_deploying-web-servers-and-reverse-proxies
