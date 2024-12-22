@@ -201,6 +201,7 @@ load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
 - https://docs.nginx.com/nginx/admin-guide/security-controls/terminating-ssl-http/
 - https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_certificate
 - https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_certificate_key
+- https://nginx.org/en/docs/http/ngx_http_v2_module.html#http2_push
 
 `/etc/nginx/nginx.conf`
 ```
@@ -209,6 +210,10 @@ http {
         listen 443 ssl http2;
         ssl_certificate /etc/nginx/ssl/server.crt;
         ssl_certificate_key /etc/nginx/ssl/server.key;
+    }
+    location = /index.html {
+        http2_push /style.css;
+        http2_push /thumb.png;
     }
 }
 ```
