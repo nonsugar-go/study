@@ -90,6 +90,9 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 - [Visual Studio Codeの設定「虎の巻」：Python編：特集：Visual Studio Codeを使いこなそう！（1/3 ページ） - ＠IT](https://atmarkit.itmedia.co.jp/ait/articles/1711/24/news034.html)
 ## JavaScript
 - ESLint
+## Rust
+- https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
+- https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
 ## Swift
 - https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang
 ## PowerShell
