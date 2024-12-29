@@ -19,3 +19,5 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 - https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
 # Prelude
 - https://doc.rust-lang.org/std/prelude/index.html
+# command line
+- https://rust-cli.github.io/book/index.html
