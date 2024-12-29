@@ -13,3 +13,6 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 -  Git for Windows もミックスに追加します (検索ボックスを使用して、名前でそれを検索します
 2. https://www.rust-lang.org/tools/install
 -->
+# VSCode Extentions
+- https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
+- https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
