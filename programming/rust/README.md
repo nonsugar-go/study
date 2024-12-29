@@ -1,4 +1,5 @@
 # Rust
+- https://doc.rust-lang.org/book/ch01-01-installation.html
 - https://learn.microsoft.com/ja-jp/windows/dev-environment/rust/setup
 
 1. Visual Studio をインストール
