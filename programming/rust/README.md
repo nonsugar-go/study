@@ -17,6 +17,8 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 # VSCode Extentions
 - https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
 - https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
+# 所有権
+- https://doc.rust-jp.rs/rust-nomicon-ja/ownership.html
 # Prelude
 - https://doc.rust-lang.org/std/prelude/index.html
 # Creates (クレート)
