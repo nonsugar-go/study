@@ -1,5 +1,6 @@
 # Rust
-- https://doc.rust-lang.org/book/ch01-01-installation.html
+- https://doc.rust-lang.org/book/
+- https://doc.rust-jp.rs/book-ja/
 - https://play.rust-lang.org/
 # Install for WSL2 (ubuntu)
 ```zsh
