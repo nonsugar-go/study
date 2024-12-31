@@ -5,3 +5,5 @@
 - https://doc.rust-jp.rs/rust-by-example-ja/trait/derive.html
 # Generics (ジェネリクス)
 - https://doc.rust-jp.rs/rust-by-example-ja/generics.html
+# エラーハンドリング
+- https://doc.rust-jp.rs/rust-by-example-ja/error.html
