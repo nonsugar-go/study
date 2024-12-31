@@ -20,10 +20,11 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 - https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
 # 所有権
 - https://doc.rust-jp.rs/rust-nomicon-ja/ownership.html
-# Prelude
-- https://doc.rust-lang.org/std/prelude/index.html
-# Creates (クレート)
+# Crates (クレート)
+- https://doc.rust-jp.rs/book-ja/ch07-01-packages-and-crates.html
 - https://crates.io/
 - https://crates.io/crates/rand
+# Standard Library
+- https://doc.rust-lang.org/stable/std/
 # command line
 - https://rust-cli.github.io/book/index.html
