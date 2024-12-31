@@ -8,6 +8,7 @@
 - https://doc.rust-jp.rs/rust-by-example-ja/trait/derive.html
 ## イテレーター
 - https://doc.rust-jp.rs/rust-by-example-ja/trait/iter.html
+- https://doc.rust-jp.rs/rust-by-example-ja/trait/impl_trait.html
 # Generics (ジェネリクス)
 - https://doc.rust-jp.rs/rust-by-example-ja/generics.html
 # エラーハンドリング
