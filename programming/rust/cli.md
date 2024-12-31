@@ -4,6 +4,44 @@
 - https://doc.rust-jp.rs/book-ja/ch12-01-accepting-command-line-arguments.html
 # ファイルの読み込み
 - https://doc.rust-jp.rs/book-ja/ch12-02-reading-a-file.html
+# ファイル操作
+- https://doc.rust-lang.org/stable/std/fs/index.html
+
+```rust
+use std::{
+    fs,
+    os::unix::prelude::PermissionsExt,
+    path::{Path, PathBuf},
+};
+
+fn main() {
+    let path = Path::new("src");
+    println!("{:?}", path.exists());
+    println!("{:?}", path.is_dir());
+    println!("{:?}", path.is_file());
+    println!("{:?}", path.file_name());
+    let mut pb = PathBuf::from("src");
+    pb.push("sample1.txt");
+    println!("{:?}", pb);
+    pb.set_file_name("README.md");
+    println!("{:?}", pb);
+    pb.set_extension("txt");
+    println!("{:?}", pb);
+    pb.pop();
+    println!("{:?}", pb);
+    // fs::create_dir("src/test1").unwrap();
+    // fs::create_dir_all("src/test2/sub-test2").unwrap();
+    // fs::remove_dir("src/test1").unwrap();
+    // fs::remove_dir_all("src/test2").unwrap();
+    // fs::remove_file("src/sample1.txt").unwrap();
+    // fs::copy("src/sample2.txt", "src/sample3.txt").unwrap();
+    // fs::create_dir("src/test1").unwrap();
+    // fs::rename("src/sample3.txt", "src/test1/sample3.txt").unwrap();
+    let mut permissions = fs::metadata("src/sample2.txt").unwrap().permissions();
+    permissions.set_mode(0o600);
+    fs::set_permissions("src/sample2.txt", permissions).unwrap();
+}
+```
 # JSON
 - https://crates.io/crates/serde
 - https://crates.io/crates/serde_json
