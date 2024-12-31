@@ -35,5 +35,7 @@ cargo doc --no-deps --open
 ```zsh
 cargo run --bin NAME --release
 ```
+# テスト
+- https://doc.rust-jp.rs/rust-by-example-ja/testing.html
 # command line
 - https://rust-cli.github.io/book/index.html
