@@ -42,5 +42,58 @@ fn main() {
 # 標準ライブラリの型
 ## ベクタ型
 - https://doc.rust-jp.rs/rust-by-example-ja/std/vec.html
+```rust
+fn main() {
+    let city = vec!["Tokyo", "Osaka", "Nagoya", "Fukuoka"];
+    println!("{:?}", city);
+    println!("{:?}", city.as_ptr());
+    println!("{}", city.len());
+    println!("{}", city.capacity());
+    println!("{}", &city[0]);
+    println!("{:?}", city.get(0));
+    let mut country = vec!["JP", "US", "GB", "FR", "DE"];
+    println!("{:?}", country);
+    country.push("CN");
+    println!("{:?}", country);
+    let pop_val = country.pop();
+    println!("{:?}", pop_val);
+    println!("{:?}", country);
+    country.insert(1, "IN");
+    println!("{:?}", country);
+    country.remove(2);
+    println!("{:?}", country);
+    let l1 = vec!["English", "Hindi", "Arabic"];
+    let l2 = vec!["French", "Japanese"];
+    let l3 = [l1, l2].concat();
+    println!("{:?}", l3);
+    let (l4, l5) = l3.split_at(2);
+    println!("{:?} | {:?}", l4, l5);
+    let mut num = vec![32, -2, -9, 3];
+    num.sort();
+    println!("{:?}", num);
+    num.reverse();
+    println!("{:?}", num);
+    println!("{}", num.contains(&-9));
+    println!("{}", num.contains(&2));
+    let pos = num.iter().position(|x| *x == 3);
+    println!("{:?}", pos);
+
+    #[derive(Debug)]
+    struct Foo {
+        id: u32,
+        rank: i32,
+    }
+
+    let mut foo = vec![
+        Foo { id: 1, rank: 3 },
+        Foo { id: 2, rank: 2 },
+        Foo { id: 3, rank: 5 },
+    ];
+    foo.sort_by_key(|x| x.rank);
+    println!("{:?}", foo);
+
+
+}
+```
 ## ハッシュマップ
 - https://doc.rust-jp.rs/rust-by-example-ja/std/hash.html
