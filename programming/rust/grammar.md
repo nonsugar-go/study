@@ -39,3 +39,8 @@ fn main() {
 - https://doc.rust-jp.rs/rust-by-example-ja/generics.html
 # エラーハンドリング
 - https://doc.rust-jp.rs/rust-by-example-ja/error.html
+# 標準ライブラリの型
+## ベクタ型
+- https://doc.rust-jp.rs/rust-by-example-ja/std/vec.html
+## ハッシュマップ
+- https://doc.rust-jp.rs/rust-by-example-ja/std/hash.html
