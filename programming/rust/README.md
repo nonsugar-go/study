@@ -2,6 +2,7 @@
 - https://doc.rust-lang.org/book/
 - https://doc.rust-jp.rs/book-ja/
 - https://play.rust-lang.org/
+- https://www.tohoho-web.com/ex/rust.html
 # Install for WSL2 (ubuntu)
 ```zsh
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
