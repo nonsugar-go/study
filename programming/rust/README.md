@@ -26,5 +26,9 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 - https://crates.io/crates/rand
 # Standard Library
 - https://doc.rust-lang.org/stable/std/
+# Docs
+```zsh
+cargo doc --no-deps --open
+```
 # command line
 - https://rust-cli.github.io/book/index.html
