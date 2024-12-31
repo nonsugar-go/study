@@ -93,8 +93,6 @@ fn main() {
     println!("{:?}", foo);
 }
 ```
-## ハッシュマップ
-- https://doc.rust-jp.rs/rust-by-example-ja/std/hash.html
 ## キュー
 ```rust
 use std::collections::{BinaryHeap, VecDeque};
@@ -120,7 +118,8 @@ fn main() {
     println!("{:?}", bh);
 }
 ```
-## マップ
+## ハッシュマップ
+- https://doc.rust-jp.rs/rust-by-example-ja/std/hash.html
 ```rust
 use std::collections::HashMap;
 
@@ -139,5 +138,36 @@ fn main() {
     for (k, v) in &score {
         println!("{}: {}", k, v);
     }
+}
+```
+## セット
+```rust
+use std::collections::HashSet;
+
+fn main() {
+    let mut s1 = HashSet::new();
+    s1.insert(5);
+    s1.insert(8);
+    s1.insert(28);
+    s1.insert(8);
+    s1.insert(33);
+    s1.insert(3);
+    s1.insert(8);
+    println!("s1: {:?}", s1);
+    let s2 = HashSet::from([3, 9, 8, 28, 32]);
+    println!("s2: {:?}", s2);
+    println!("s1 contains 8: {}", s1.contains(&8));
+    println!("s1 contains 99: {}", s1.contains(&99));
+    println!("s1 remove 33: {}", s1.remove(&33));
+    println!("s1: {:?}", s1);
+    println!("s2: {:?}", s2);
+    let s3 = &s1 | &s2;
+    println!("s1 | s2: {:?}", s3);
+    let s4 = &s1 & &s2;
+    println!("s1 & s2: {:?}", s4);
+    let s5 = &s1 - &s2;
+    println!("s1 - s2: {:?}", s5);
+    let s6 = &s1 ^ &s2;
+    println!("s1 ^ s2: {:?}", s6);
 }
 ```
