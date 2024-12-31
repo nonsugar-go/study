@@ -30,5 +30,9 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 ```zsh
 cargo doc --no-deps --open
 ```
+# リリース時のコンパイル
+```zsh
+cargo run --bin NAME --release
+```
 # command line
 - https://rust-cli.github.io/book/index.html
