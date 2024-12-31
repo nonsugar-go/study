@@ -6,3 +6,4 @@
 - https://doc.rust-jp.rs/book-ja/ch12-02-reading-a-file.html
 # JSON
 - https://crates.io/crates/serde
+- https://crates.io/crates/serde_json
