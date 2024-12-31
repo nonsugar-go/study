@@ -91,9 +91,32 @@ fn main() {
     ];
     foo.sort_by_key(|x| x.rank);
     println!("{:?}", foo);
-
-
 }
 ```
 ## ハッシュマップ
 - https://doc.rust-jp.rs/rust-by-example-ja/std/hash.html
+## キュー
+```rust
+use std::collections::{BinaryHeap, VecDeque};
+
+fn main() {
+    let mut q1 = VecDeque::new();
+    q1.push_back("Linux");
+    q1.push_back("Windows");
+    q1.push_back("Mac");
+    q1.push_back("MS-DOS");
+    println!("{:?}", q1);
+    let mut q2 = VecDeque::from([99, 77, 103, 52]);
+    println!("{:?}", q2);
+    println!("{:?}", q2.pop_front());
+    println!("{:?}", q2);
+    let mut bh = BinaryHeap::new();
+    bh.push(3);
+    bh.push(5);
+    bh.push(300);
+    bh.push(99);
+    println!("{:?}", bh);
+    println!("{:?}", bh.pop());
+    println!("{:?}", bh);
+}
+```
