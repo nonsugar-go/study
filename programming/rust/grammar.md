@@ -120,3 +120,24 @@ fn main() {
     println!("{:?}", bh);
 }
 ```
+## マップ
+```rust
+use std::collections::HashMap;
+
+fn main() {
+    let mut score = HashMap::new();
+    score.insert("Tanaka", 32);
+    score.insert("Mamiya", 23);
+    score.insert("Nishida", 82);
+    score.insert("Suzuki", 92);
+    println!("{:?}", score);
+    score.insert("Nishida", 84);
+    println!("{:?}", score.get("Suzuki"));
+    println!("{:?}", score.remove("Tanaka"));
+    println!("{:?}", score);
+
+    for (k, v) in &score {
+        println!("{}: {}", k, v);
+    }
+}
+```
