@@ -2,6 +2,8 @@
 - https://doc.rust-jp.rs/book-ja/ch12-00-an-io-project.html
 # コマンドライン引数
 - https://doc.rust-jp.rs/book-ja/ch12-01-accepting-command-line-arguments.html
+# 時刻
+- https://crates.io/crates/chrono
 # ファイルの読み込み
 - https://doc.rust-jp.rs/book-ja/ch12-02-reading-a-file.html
 # ファイル操作
