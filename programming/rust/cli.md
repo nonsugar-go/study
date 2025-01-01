@@ -4,6 +4,9 @@
 - https://doc.rust-jp.rs/book-ja/ch12-01-accepting-command-line-arguments.html
 # 時刻
 - https://crates.io/crates/chrono
+```toml
+chrono = { version = "0.4.39", features = ["serde"] }
+```
 # ファイルの読み込み
 - https://doc.rust-jp.rs/book-ja/ch12-02-reading-a-file.html
 # ファイル操作
