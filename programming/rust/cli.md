@@ -5,6 +5,7 @@
 # 時刻
 - https://crates.io/crates/chrono
 ```toml
+[dependencies]
 chrono = { version = "0.4.39", features = ["serde"] }
 ```
 # ファイルの読み込み
