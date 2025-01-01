@@ -78,8 +78,8 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 ## Java
 - https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
 ## Python
-- Python (microsoft.com)
-- Black Formatter (microsoft.com)
+- https://marketplace.visualstudio.com/items?itemName=ms-python.python
+- https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter
   - settings.json
 ```json
     "[python]": {
