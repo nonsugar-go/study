@@ -9,3 +9,4 @@
 - https://tkdocs.com/shipman/ttk-Button.html
 - https://tkdocs.com/shipman/entry.html
 - https://tkdocs.com/tutorial/morewidgets.html#text
+- https://tkdocs.com/tutorial/morewidgets.html#spinbox
