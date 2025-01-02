@@ -13,3 +13,4 @@
 - https://tkdocs.com/tutorial/morewidgets.html#scale
 - https://tkdocs.com/tutorial/widgets.html#checkbutton
 - https://tkdocs.com/tutorial/widgets.html#radiobutton
+- https://tkdocs.com/tutorial/morewidgets.html#listbox
