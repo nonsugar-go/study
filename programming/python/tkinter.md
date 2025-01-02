@@ -17,3 +17,6 @@
 - https://tkdocs.com/tutorial/widgets.html#checkbutton
 - https://tkdocs.com/tutorial/widgets.html#radiobutton
 - https://tkdocs.com/tutorial/morewidgets.html#listbox
+## Canpas
+- https://tkdocs.com/tutorial/canvas.html
+- https://tkdocs.com/tutorial/fonts.html#images
