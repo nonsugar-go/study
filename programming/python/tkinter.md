@@ -11,3 +11,4 @@
 - https://tkdocs.com/tutorial/morewidgets.html#text
 - https://tkdocs.com/tutorial/morewidgets.html#spinbox
 - https://tkdocs.com/tutorial/morewidgets.html#scale
+- https://tkdocs.com/tutorial/widgets.html#checkbutton
