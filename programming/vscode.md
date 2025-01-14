@@ -55,6 +55,8 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 ## Vim
 - https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
 <!-- - https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim -->
+## SSH
+- https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
 ## WSL
 - https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
 ## Markdown
