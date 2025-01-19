@@ -1,4 +1,6 @@
 # Microsoft DNS Server
 - https://learn.microsoft.com/ja-jp/windows-server/networking/dns/quickstart-install-configure-dns-server?tabs=powershell
+- https://learn.microsoft.com/ja-jp/powershell/module/dnsserver/export-dnsserverzone?view=windowsserver2022-ps
 # PowerShell
 - [PowershellでMicrosoft DNS Serverの管理をする #PowerShell - Qiita](https://qiita.com/kokonutscookie/items/f2873ae96777100254a6)
+- https://www.virtualizationhowto.com/2019/07/export-and-import-dns-zone-with-powershell-from-one-server-to-another/
