@@ -67,8 +67,8 @@ fi
 ## zsh
 - [zsh](/linux/zsh.md)
 ```bash
-$ sudo apt install zsh -y
-$ chsh -s /bin/zsh
+sudo apt install zsh -y
+chsh -s /bin/zsh
 ```
 - 初回ログイン時の `zsh-newuser-install` の問いには、`(0)  Exit, creating the file ~/.zshrc containing just a comment.` を選択
 ### ~/.zshrc
@@ -76,6 +76,9 @@ $ chsh -s /bin/zsh
 alias vi="nvim"
 alias vim="nvim"
 alias view="nvim -R"
+alias bat="batcat"
+
+export PATH=$PATH:/usr/local/go/bin
 ```
 ## neovim
 ```
