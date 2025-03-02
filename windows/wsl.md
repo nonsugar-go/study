@@ -22,7 +22,6 @@ PowerShell \[管理者モード]
 ```pwsh
 wsl --export Ubuunt ./Ubuntutar
 wsl --unregister Ubuntu
-mkdir E:\wsl
 wsl --import Ubunnt E:\wsl ./Ubuntu.tar
 rm .\Ubuntu.tar
 ```
