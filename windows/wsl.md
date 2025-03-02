@@ -48,10 +48,11 @@ bind-key -n S-F12 select-pane -P 'bg=black,fg=white'
 ```
 ## symlink
 ```bash
-$ USERPROFILE=/mnt/c/Users/$(cmd.exe /c echo %USERNAME% | tr -d '\r')
-$ ln -s $USERPROFILE/Desktop .
-$ ln -s $USERPROFILE/Documents .
-$ ln -s $USERPROFILE/Downloads .
+USERPROFILE=/mnt/c/Users/$(cmd.exe /c echo %USERNAME% | tr -d '\r')
+ln -s $USERPROFILE/Desktop .
+ln -s $USERPROFILE/Documents .
+ln -s $USERPROFILE/Downloads .
+ln -s $USERPROFILE/OneDrive .
 ```
 ## vim 関連
 ```
