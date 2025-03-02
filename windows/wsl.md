@@ -6,14 +6,25 @@
 ## Windows 11
 PowerShell \[管理者モード]
 ```pwsh
-PS> wsl -l --online
-PS> wsl --install
-PS> wsl -l -v
+wsl -l --online
+wsl --install
+wsl -l -v
 ```
 (再起動)
 ```bash
 Enter new UNIX username: USERNAME
 New password: PASSWORD
+```
+## 既定のインストールパスから別のフォルダーへ移動
+- 既定のインストールパス: c/Users/yutaka/AppData/Local/wsl/
+
+PowerShell \[管理者モード]
+```pwsh
+wsl --export Ubuunt ./Ubuntutar
+wsl --unregister Ubuntu
+mkdir E:\wsl
+wsl --import Ubunnt E:\wsl ./Ubuntu.tar
+rm .\Ubuntu.tar
 ```
 # 使い方
 - コマンド プロンプトで wsl を実行するとコンソール接続できる。
@@ -23,13 +34,7 @@ New password: PASSWORD
 - Windows からは `\\wsl$\Ubuntu\` で wsl 側のファイルシステムにアクセスできる
 
 # 初期設定
-## 設定ファイル
-- https://superuser.com/questions/1284561/why-is-vim-starting-in-replace-mode
-
-```bash
-$ echo "PS1='\[\e[32m\]\u@\[\e[36m\]WSL \[\e[33m\]\w\[\e[0m\]\n\\$ '" >>~/.bash_profile
-```
-### ~/.tmux.conf
+## ~/.tmux.conf
 ```
 set -g prefix F1
 unbind C-b
