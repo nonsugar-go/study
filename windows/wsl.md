@@ -33,6 +33,10 @@ rm .\Ubuntu.tar
 - Windows からは `\\wsl$\Ubuntu\` で wsl 側のファイルシステムにアクセスできる
 
 # 初期設定
+## Update
+```bash
+sudo apt update && sudo apt upgrade -y
+```
 ## ~/.tmux.conf
 ```
 set -g prefix F1
