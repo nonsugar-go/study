@@ -158,3 +158,5 @@ USER(ユーザー) --> GROUP(グループ) --> POLICY1(ポリシー) --> TENANCY
 RESOURCE(リソース・プリンシパル) --> DGROUP(動的グループ) --> POLICY2(ポリシー) --> TENANCY
 SERVIE(サービス・プリンシパル) --> POLICY3(ポリシー) --> TENANCY
 ```
+
+- https://docs.oracle.com/ja-jp/iaas/Content/Identity/dynamicgroups/Writing_Matching_Rules_to_Define_Dynamic_Groups.htm#Writing
