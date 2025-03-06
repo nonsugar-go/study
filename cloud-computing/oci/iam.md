@@ -130,6 +130,12 @@ Allow group 'DomainA'/'GroupA' to manage all-resources in tenancy where target.r
 ```
 Allow group 'DomainA'/'Teters' to use all-resources in tenancy where target.resource.compartment.tag.ResourceGroup.Role='Test'
 ```
+## ネットワーク・ソース
+- https://docs.oracle.com/ja-jp/iaas/Content/Identity/networksources/Restricting_Access_to_Specific_IP_Addresses.htm
+
+```
+Allow group 'DomainA'/AdminGrp-A' to manage object-family in tenancy where request.networkSource.name='corpnet'
+```
 # 割り当て制限ポリシーの構文
 - https://docs.oracle.com/ja-jp/iaas/Content/Quotas/Concepts/quota_policy_syntax.htm
 
