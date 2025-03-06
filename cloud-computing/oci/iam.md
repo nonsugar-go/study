@@ -45,6 +45,7 @@ Allow group DomainA/PHX-Admins to manage all-resources in tenancy where request.
 - NetworkAdminsグループは、oocid1.compartment.oc1..aaaaa以外の任意のコンパートメント内のVCNを管理できる
 ```
 Allow group DomainA/NetworkAdmins to manage virtual-network-family in tenancy where target.compartment.id != 'ocid1.compartmetn.oc1..aaaaa'
+```
 
 - Autodomous Databaseに関して、OLTPワークロード・タイプのデータベースおよびバックアップのみを許可
 ```
