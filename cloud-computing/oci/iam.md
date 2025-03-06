@@ -9,7 +9,7 @@ flowchart LR
 
 Start --> verb
 verb[Hard] -->|Text| Any-resource(Round)
-verb[Hard] -->|Text| Resouce Kind
+verb[Hard] -->|Text| Resouce_Kind
 ```
 
 動詞|アクセスのタイプ|権限の例
