@@ -5,8 +5,8 @@
 ```mermaid
 flowchart LR
 
-S((Start)) --> AL([Allow]) --> SUB[Subjects] --> TO([to]) --> AC[Actions] --> IN[(in)] --> PL[Placement] --> WH([where]) --> COND[Condition] --> E((End))
-PL --> E
+S((Start)) --> AL([Allow]) --> SUB[Subjects] --> TO([to]) --> AC[Actions] --> IN([in])--> PL[Placement] --> E((End))
+PL --> WH([where]) --> COND[Condition] --> E
 ```
 
 ```
