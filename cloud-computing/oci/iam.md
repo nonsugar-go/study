@@ -7,10 +7,10 @@ Allow group 'Procution'/'NetworkAdmin' to manage virtual-network-family in compa
 ```mermaid
 flowchart LR
 
-S(Start) --> V[verb]
-V --> AR(Any-resource)
-V --> RK[Resouce_Kind]
-AR --> E(End)
+S((Start)) --> V[verb]
+V --> AR([Any-resource])
+V --> RK[Resouce Kind]
+AR --> E((End))
 RK --> E
 ```
 
