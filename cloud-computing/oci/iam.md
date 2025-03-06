@@ -8,8 +8,10 @@ Allow group 'Procution'/'NetworkAdmin' to manage virtual-network-family in compa
 flowchart LR
 
 Start --> verb
-verb[Hard] -->|Text| Any-resource(Round)
-verb[Hard] -->|Text| Resouce_Kind
+verb --> Any-resource
+verb --> Resouce_Kind
+Any-resource --> End
+Resouce_Kind --> End
 ```
 
 動詞|アクセスのタイプ|権限の例
