@@ -32,3 +32,10 @@ inspect|監査、列挙、監視|inspect objects
 read|変更しない|read objects
 use|変更する|use objects
 manage|何かをする権限|manage objects
+
+# 割り当て制限ポリシーの構文
+- https://docs.oracle.com/ja-jp/iaas/Content/Quotas/Concepts/quota_policy_syntax.htm
+
+```
+set vcn quota vcn-count to 4 in compartment Production
+```
