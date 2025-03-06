@@ -39,17 +39,42 @@ manage|何かをする権限|manage objects
 
 - PHX-AdminsはPHXリージョンのすべてのリソースが管理できる
 ```
-Allow group DomainA/PHX-Admins to manage all-resources in tenancy where request.region = 'PHX'
+Allow group 'DomainA'/'PHX-Admins' to manage all-resources in tenancy where request.region = 'PHX'
 ```
 
 - NetworkAdminsグループは、oocid1.compartment.oc1..aaaaa以外の任意のコンパートメント内のVCNを管理できる
 ```
-Allow group DomainA/NetworkAdmins to manage virtual-network-family in tenancy where target.compartment.id != 'ocid1.compartmetn.oc1..aaaaa'
+Allow group 'DomainA'/'NetworkAdmins' to manage virtual-network-family in tenancy where target.compartment.id != 'ocid1.compartmetn.oc1..aaaaa'
 ```
 
 - Autodomous Databaseに関して、OLTPワークロード・タイプのデータベースおよびバックアップのみを許可
 ```
-Allow group DomainA/ADB-Admins to manage autonomous-database in tenancy where target.workloadType = 'OLTP'
+Allow group 'DomainA'/'ADB-Admins' to manage autonomous-database in tenancy where target.workloadType = 'OLTP'
+```
+
+- XYZグループに対して、ブロック・ボリュームを一覧/作成/書き込み/更新/移動はできますが、削除はできない
+```
+Allow group 'DomainA'/XYZ to manage volumes in tenancy where any {
+request.permission='VOLUME_INSPECT',
+request.permission='VOLUME_CREATE',
+request.permission='VOLUME_WRITE',
+request.permission='VOLUME_UPDATE',
+request.permission='VOLUME_MOVE'}
+```
+
+- != を使った表現
+```
+Allow group 'DomainA'/'XYZ' to manage volumes in tenancy where request.permissions!= 'VOLUME_DELETE'
+```
+
+- 特定のAPI操作に基づき条件指定(where requese.operation =)
+```
+Allog group 'DomainA'/'XYZ to manage volumes in tenancy whree any {
+request.operation='ListVolumes',
+request.operation='GetVolumes',
+request.operation='attachVolumes',
+request.operation='CreateVolumes',
+request.operation='ChangeVolumeCompartment',}
 ```
 
 # 割り当て制限ポリシーの構文
