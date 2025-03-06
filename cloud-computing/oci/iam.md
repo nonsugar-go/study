@@ -92,6 +92,13 @@ any {request.permissions='OBJECT_CREATE',
 request.permissions='OBJECT_INSPECT'}
 }
 ```
+
+- Contractoresグループは、特定の期間中にのみインスタンスを使用できます
+```
+Allow group 'DomainA'/'Contractors to use instances in compartment 'contractors' where
+all {request.utctimestamp after '<TIME>',
+request.utctimestamp before '<TIME>'}
+```
 # 割り当て制限ポリシーの構文
 - https://docs.oracle.com/ja-jp/iaas/Content/Quotas/Concepts/quota_policy_syntax.htm
 
