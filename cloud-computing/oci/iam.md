@@ -155,6 +155,6 @@ unset database quota /*exadata*/ in compartment Production
 flowchart LR
 
 USER(ユーザー) --> GROUP(グループ) --> POLICY1(ポリシー) --> TENANCY(テナンシ・コンパートメント)
-RESOURCE(リソース・プリンシパル) --> DGROUP(動的グループ) --> POLICY2 --> TENANCY
-SERVIE(サービス・プリンシパル) --> POLICY3 --> TENANCY
+RESOURCE(リソース・プリンシパル) --> DGROUP(動的グループ) --> POLICY2(ポリシー) --> TENANCY
+SERVIE(サービス・プリンシパル) --> POLICY3(ポリシー) --> TENANCY
 ```
