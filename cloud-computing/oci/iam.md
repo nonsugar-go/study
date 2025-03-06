@@ -99,6 +99,22 @@ Allow group 'DomainA'/'Contractors to use instances in compartment 'contractors'
 all {request.utctimestamp after '<TIME>',
 request.utctimestamp before '<TIME>'}
 ```
+### タグ・ベースのアクセス制御 (TBAC)
+#### リクエスト元のリソース (グループ、動的グループ、コンパートメント)
+- グループ (Operations.Project='Prod'でタグのグループに所属するすべてのユーザーはHRのインスタンスを管理できます)
+```
+Allow any-user to manage instances in compartment 'HR' where request.principal.group.tag.Operations.Project='Prod'
+```
+- 動的グループ (Operations.Project='Prod'タグの動的グループInstanceA内のインスタンスは、HRオブジェクトを管理できる
+```
+Allow dynamic-group 'DomainA'/'InstanceA' to manage object-family in compartment 'HR' where request.principal.group.tag.Operations.Project='Prod'
+```
+- コンパートメント (動的グループInstancesA内のインスタンス(Operations.Project='Prod'タグのコンパートメントに存在)は、HRのオブジェクトを管理できる)
+```
+Allow dynamic-group 'DomainA/InstancesA' to manage object-family in compartment 'HR' where request.principal.compartment.tag.Operations.Project='Prod'
+```
+#### リクエストのターゲット (リソースまたはコンパートメント)
+
 # 割り当て制限ポリシーの構文
 - https://docs.oracle.com/ja-jp/iaas/Content/Quotas/Concepts/quota_policy_syntax.htm
 
