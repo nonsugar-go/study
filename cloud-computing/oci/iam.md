@@ -54,7 +54,7 @@ Allow group 'DomainA'/'ADB-Admins' to manage autonomous-database in tenancy wher
 
 - XYZグループに対して、ブロック・ボリュームを一覧/作成/書き込み/更新/移動はできますが、削除はできない
 ```
-Allow group 'DomainA'/XYZ to manage volumes in tenancy where any {
+Allow group 'DomainA'/XYZ' to manage volumes in tenancy where any {
 request.permission='VOLUME_INSPECT',
 request.permission='VOLUME_CREATE',
 request.permission='VOLUME_WRITE',
@@ -71,9 +71,9 @@ Allow group 'DomainA'/'XYZ' to manage volumes in tenancy where request.permissio
 ```
 Allog group 'DomainA'/'XYZ to manage volumes in tenancy whree any {
 request.operation='ListVolumes',
-request.operation='GetVolumes',
-request.operation='attachVolumes',
-request.operation='CreateVolumes',
+request.operation='GetVolume',
+request.operation='AttachVolume',
+request.operation='CreateVolume',
 request.operation='ChangeVolumeCompartment',}
 ```
 
