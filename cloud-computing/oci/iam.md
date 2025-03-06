@@ -150,3 +150,11 @@ set compute-core quota standard2-core-count to 10 in tenancy
 zero database quota /*exadata*/ in tenancy
 unset database quota /*exadata*/ in compartment Production
 ```
+# 動的グループ
+```mermaid
+flowchart LR
+
+USER(ユーザー) --> GROUP(グループ) --> POLICY(ポリシー) --> TENANCY(テナンシ・コンパートメント)
+RESOURCE(リソース・プリンシパル) --> DGROUP(動的グループ) --> POLICY --> TENANCY
+SERVIE(サービス・プリンシパル) --> POLICY --> TENANCY
+```
