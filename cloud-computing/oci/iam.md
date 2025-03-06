@@ -51,7 +51,7 @@ Allow group 'DomainA'/'NetworkAdmins' to manage virtual-network-family in tenanc
 ```
 Allow group 'DomainA'/'ADB-Admins' to manage autonomous-database in tenancy where target.workloadType = 'OLTP'
 ```
-
+## 最小権限の強制: 拡張ポリシー
 - XYZグループに対して、ブロック・ボリュームを一覧/作成/書き込み/更新/移動はできますが、削除はできない
 ```
 Allow group 'DomainA'/XYZ' to manage volumes in tenancy where any {
@@ -77,6 +77,21 @@ request.operation='CreateVolume',
 request.operation='ChangeVolumeCompartment',}
 ```
 
+- グループObjectWritersは、ABC内の任意のバケット内のオブジェクトを検査(inspect)およびアップロード(create)できる
+```
+Allow group 'DomainA'/'ObjectWriters' to manage objects in compartment 'ABC' where any {
+request.permissions='OBJECT_CREATE',
+request.permissions='OBJECT_INSPECT'}
+```
+
+- ABC内のBucketAを検査(inspect)およびアップロード(create)できる
+```
+Allow group 'DomainA'/'ObjectWriters' to manage objects in compartment 'ABC' where any {
+all {terget.bucket.name='BucketA',
+any {request.permissions='OBJECT_CREATE',
+request.permissions='OBJECT_INSPECT'}
+}
+```
 # 割り当て制限ポリシーの構文
 - https://docs.oracle.com/ja-jp/iaas/Content/Quotas/Concepts/quota_policy_syntax.htm
 
