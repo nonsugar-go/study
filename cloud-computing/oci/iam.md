@@ -38,4 +38,6 @@ manage|何かをする権限|manage objects
 
 ```
 set vcn quota vcn-count to 4 in compartment Production
+set database quota /*exadata*/ to 1 in tenancy
+set compute-core quota standard2-core-count to 10 in tenancy
 ```
