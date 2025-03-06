@@ -7,11 +7,11 @@ Allow group 'Procution'/'NetworkAdmin' to manage virtual-network-family in compa
 ```mermaid
 flowchart LR
 
-Start --> verb
-verb --> Any-resource
-verb --> Resouce_Kind
-Any-resource --> End
-Resouce_Kind --> End
+S(Start) --> V[verb]
+V --> AR(Any-resource)
+V --> RK[Resouce_Kind]
+AR --> E(End)
+RK --> E
 ```
 
 動詞|アクセスのタイプ|権限の例
