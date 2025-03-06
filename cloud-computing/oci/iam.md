@@ -99,8 +99,8 @@ Allow group 'DomainA'/'Contractors to use instances in compartment 'contractors'
 all {request.utctimestamp after '<TIME>',
 request.utctimestamp before '<TIME>'}
 ```
-### タグ・ベースのアクセス制御 (TBAC)
-#### リクエスト元のリソース (グループ、動的グループ、コンパートメント)
+## タグ・ベースのアクセス制御 (TBAC)
+### リクエスト元のリソース (グループ、動的グループ、コンパートメント)
 - グループ (Operations.Project='Prod'でタグのグループに所属するすべてのユーザーはHRのインスタンスを管理できます)
 ```
 Allow any-user to manage instances in compartment 'HR' where request.principal.group.tag.Operations.Project='Prod'
@@ -117,7 +117,7 @@ Allow dynamic-group 'DomainA/InstancesA' to manage object-family in compartment 
 ```
 Allow any-user to manage all-resources in compartment Test where request.principal.group.tag.EmployeeGroup.Role='Admin'
 ```
-#### リクエストのターゲット (リソースまたはコンパートメント)
+### リクエストのターゲット (リソースまたはコンパートメント)
 - リソース (GroupAはOperations.Project='Prod'のリソースを管理できる)
 ```
 Allow group 'DomainA'/'GroupA' to manage all-resources in compartment HR where target.resource.tag.Operations.Project='Prod'
@@ -135,20 +135,6 @@ Allow group 'DomainA'/'Teters' to use all-resources in tenancy where target.reso
 
 ```
 Allow group 'DomainA'/AdminGrp-A' to manage object-family in tenancy where request.networkSource.name='corpnet'
-```
-# 割り当て制限ポリシーの構文
-- https://docs.oracle.com/ja-jp/iaas/Content/Quotas/Concepts/quota_policy_syntax.htm
-
-```
-set vcn quota vcn-count to 4 in compartment Production
-set database quota /*exadata*/ to 1 in tenancy
-set compute-core quota standard2-core-count to 10 in tenancy
-```
-
-- 本番(Production)コンパートメントのみが、デフォルトの割り当て数にリセット
-```
-zero database quota /*exadata*/ in tenancy
-unset database quota /*exadata*/ in compartment Production
 ```
 # 動的グループ
 ```mermaid
@@ -170,4 +156,18 @@ target.bucket.name='Log', target.region.name='NRT'}
 ```
 Allow dynamic-group 'DomainA'/'DatabaseBackUps' to manage objects in tenancy where all {
 target.bucket.name='DBBackup', target.region.name='KIX'}
+```
+# 割り当て制限ポリシーの構文
+- https://docs.oracle.com/ja-jp/iaas/Content/Quotas/Concepts/quota_policy_syntax.htm
+
+```
+set vcn quota vcn-count to 4 in compartment Production
+set database quota /*exadata*/ to 1 in tenancy
+set compute-core quota standard2-core-count to 10 in tenancy
+```
+
+- 本番(Production)コンパートメントのみが、デフォルトの割り当て数にリセット
+```
+zero database quota /*exadata*/ in tenancy
+unset database quota /*exadata*/ in compartment Production
 ```
