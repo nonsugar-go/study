@@ -113,8 +113,23 @@ Allow dynamic-group 'DomainA'/'InstanceA' to manage object-family in compartment
 ```
 Allow dynamic-group 'DomainA/InstancesA' to manage object-family in compartment 'HR' where request.principal.compartment.tag.Operations.Project='Prod'
 ```
+- グループ (Adminタグを持つ管理グループはTestにアクセスできる)
+```
+Allow any-user to manage all-resources in compartment Test where request.principal.group.tag.EmployeeGroup.Role='Admin'
+```
 #### リクエストのターゲット (リソースまたはコンパートメント)
-
+- リソース (GroupAはOperations.Project='Prod'のリソースを管理できる)
+```
+Allow group 'DomainA'/'GroupA' to manage all-resources in compartment HR where target.resource.tag.Operations.Project='Prod'
+```
+- コンパートメント (GroupAのメンバはOperations.Project='Prod'のコンパートメントにあるリソースを管理できる)
+```
+Allow group 'DomainA'/'GroupA' to manage all-resources in tenancy where target.resource.compartment.tag.Operations.Project='Prod'
+```
+- コンパートメント (グループTestersが、Testタグのコンパートメントにアクセスできる)
+```
+Allow group 'DomainA'/'Teters' to use all-resources in tenancy where target.resource.compartment.tag.ResourceGroup.Role='Test'
+```
 # 割り当て制限ポリシーの構文
 - https://docs.oracle.com/ja-jp/iaas/Content/Quotas/Concepts/quota_policy_syntax.htm
 
