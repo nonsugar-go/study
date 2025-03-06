@@ -1,4 +1,6 @@
 # IAM
+# アイデンティティ・ドメイン・タイプ
+- https://docs.oracle.com/ja-jp/iaas/Content/Identity/sku/overview.htm
 # Policy
 - https://docs.oracle.com/ja-jp/iaas/Content/Identity/policieshow/Policy_Basics.htm
 
