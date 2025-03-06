@@ -34,6 +34,22 @@ inspect|監査、列挙、監視|inspect objects
 read|変更しない|read objects
 use|変更する|use objects
 manage|何かをする権限|manage objects
+## 条件付きポリシー
+- https://docs.oracle.com/ja-jp/iaas/Content/Identity/policysyntax/conditions.htm
+
+- PHX-AdminsはPHXリージョンのすべてのリソースが管理できる
+```
+Allow group DomainA/PHX-Admins to manage all-resources in tenancy where request.region = 'PHX'
+```
+
+- NetworkAdminsグループは、oocid1.compartment.oc1..aaaaa以外の任意のコンパートメント内のVCNを管理できる
+```
+Allow group DomainA/NetworkAdmins to manage virtual-network-family in tenancy where target.compartment.id != 'ocid1.compartmetn.oc1..aaaaa'
+
+- Autodomous Databaseに関して、OLTPワークロード・タイプのデータベースおよびバックアップのみを許可
+```
+Allow group DomainA/ADB-Admins to manage autonomous-database in tenancy where target.workloadType = 'OLTP'
+```
 
 # 割り当て制限ポリシーの構文
 - https://docs.oracle.com/ja-jp/iaas/Content/Quotas/Concepts/quota_policy_syntax.htm
