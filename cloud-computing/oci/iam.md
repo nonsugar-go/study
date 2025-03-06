@@ -1,5 +1,14 @@
 # IAM
 # Policy
+- https://docs.oracle.com/ja-jp/iaas/Content/Identity/policieshow/Policy_Basics.htm
+
+```mermaid
+flowchart LR
+
+S((Start)) --> ([Allow]) --> [Subjects] --> ([to]) --> Actions --> [(in)] --[Placement] --> ([where]) --> [Condition] --> E((End))
+Placement --> E
+```
+
 ```
 Allow group 'Procution'/'NetworkAdmin' to manage virtual-network-family in compartment Sandbox
 ```
@@ -13,6 +22,8 @@ V --> RK[Resouce Kind]
 AR --> E((End))
 RK --> E
 ```
+
+- https://docs.oracle.com/ja-jp/iaas/Content/Identity/policieshow/Verbs.htm
 
 動詞|アクセスのタイプ|権限の例
 --|--|--
