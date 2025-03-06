@@ -160,3 +160,14 @@ SERVIE(サービス・プリンシパル) --> POLICY3(ポリシー) --> TENANCY
 ```
 
 - https://docs.oracle.com/ja-jp/iaas/Content/Identity/dynamicgroups/Writing_Matching_Rules_to_Define_Dynamic_Groups.htm#Writing
+
+- 動的グループDR1がバケット名Log、東京リージョンのオブジェクトを管理できる
+```
+Allow dynamic-group 'DomainA'/'DR1' to manage objects in tenancy where all {
+target.bucket.name='Log', target.region.name='NRT'}
+```
+- 動的グループDatabaseBackUpsが、バケット名DBBackup、大阪リージョンのオブジェクトを管理できる
+```
+Allow dynamic-group 'DomainA'/'DatabaseBackUps' to manage objects in tenancy where all {
+target.bucket.name='DBBackup', target.region.name='KIX'}
+```
