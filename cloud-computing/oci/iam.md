@@ -154,7 +154,7 @@ unset database quota /*exadata*/ in compartment Production
 ```mermaid
 flowchart LR
 
-USER(ユーザー) --> GROUP(グループ) --> POLICY(ポリシー) --> TENANCY(テナンシ・コンパートメント)
-RESOURCE(リソース・プリンシパル) --> DGROUP(動的グループ) --> POLICY --> TENANCY
-SERVIE(サービス・プリンシパル) --> POLICY --> TENANCY
+USER(ユーザー) --> GROUP(グループ) --> POLICY1(ポリシー) --> TENANCY(テナンシ・コンパートメント)
+RESOURCE(リソース・プリンシパル) --> DGROUP(動的グループ) --> POLICY2 --> TENANCY
+SERVIE(サービス・プリンシパル) --> POLICY3 --> TENANCY
 ```
