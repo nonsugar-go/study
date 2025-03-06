@@ -10,7 +10,8 @@ PL --> WH([where]) --> COND[Condition] --> E
 ```
 
 ```
-Allow group 'Procution'/'NetworkAdmin' to manage virtual-network-family in compartment Sandbox
+ALLOW GROUP 'default'/'Administrator' to manage all-resources IN TENNCY
+ALLOW GROUP 'Procution'/'NetworkAdmin' to manage virtual-network-family IN compartment Sandbox
 ```
 ## Actions句
 ```mermaid
