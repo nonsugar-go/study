@@ -32,3 +32,15 @@
 - 容量の設定で定義されたシェープに限定されたインスタンスのシェープ
 - あるアベイラビリティー・ドメインから別のドメインに移動することはできません
 - 容量は作成時に割り当てられる。容量が利用できない場合は、容量の作成は失敗します。
+# 専用仮想マシンホスト - Dedicated VM Hosts (共有されないシングルテナント・モデル)
+- シェイプ
+  - DVH.Standard2.52 - VM.Standard2 series
+  - DVH.Standard.E2.64 - VM.Standard.E2 series
+  - DVH.Standard.E3.128 - VM.Standard.E3 series
+  - SVH.DenselO2.52 - VM.DenselO2 series
+- 制限事項
+  - 自動スケーリング
+  - 容量予約
+  - インスタンス構成
+  - インスタンスプールのバースト可能インスタンス
+  - リブート・マイグレーション
