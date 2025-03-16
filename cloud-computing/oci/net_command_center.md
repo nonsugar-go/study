@@ -4,7 +4,7 @@
 - ネットワーキング > Inter-Region Latency
 # ネットワーク・パス・アナライザ
 # ネットワーク・ビジュアライザ
-- Remote Peering Connection <RPC>
+- Remote Peering Connection &lt;RPC&gt;
 - Nat Gateway (NAT)
 - Security Gateway (SGW)
 - Internet Geteway (IGW)
