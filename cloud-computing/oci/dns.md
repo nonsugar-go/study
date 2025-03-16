@@ -12,4 +12,9 @@
   - udp/53 での通信の許可 (ただし、169.254.0.0/16 にはセキュリティ ルールは不要)
 - 「ネットワーキング > DNS管理 > ゾーン > プライベート・ゾーン」で設定する
 # OCI DNS トラフィック管理
-- DNS リゾルバ (169.254.169.254)
+- トラフィック管理のステアリング・ポリシー
+  - Load Balancer
+  - Filover
+  - Geolocation Steering (ジオロケーション・ステアリング)
+  - ASN Steering
+  - IP Prefix Steering (IP 接頭辞ステアリング)
