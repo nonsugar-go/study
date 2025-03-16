@@ -18,3 +18,4 @@
   - Geolocation Steering (ジオロケーション・ステアリング)
   - ASN Steering
   - IP Prefix Steering (IP 接頭辞ステアリング)
+- ネットワーキング > DNS管理 > トラフィック管理ステアリング・ポリシー
