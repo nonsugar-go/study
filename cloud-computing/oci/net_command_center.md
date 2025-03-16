@@ -12,4 +12,10 @@
 - Oracle region (PHX)
 - Resource outside the region or compartment (dettail are not visible) \👁
 # 仮想テスト・アクセス・ポイント(VTAP)
+- IPv4 と IPv6 の両方のトラフィックのミラーリングをサポートします。
+- コンポーネント
+  - VTAP ソース
+  - VTAP ターゲット
+  - 取得フィルタ
+- トラフィックは、VxLAN にカプセル化され、UDP ポート 4789 を介して VTAP ターゲット (ネットワーク・ロード・バランサ) に送信されます。
 # フロー・ログ
