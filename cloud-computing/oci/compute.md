@@ -1,4 +1,5 @@
 # コンピュート
+- 「コンピュート > インスタンス」で作成する
 - シェイプ
   - Fixed シェイプ: サイズ変更不可 (Bare Metal / Virtual Machine)
   - Flexible シェイプ: サイズ変更可能 (Virtual Machine のみ)
