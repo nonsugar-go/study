@@ -13,3 +13,10 @@
 - VM.Standard3.Flex (Intel)
 - VM.Optimized3.Flex (Intel)
 - VM.Standard.A1.Flex (Arm processor from Ampere)
+# GPU シェイプ
+- A100, A10, V100, P100 の NVIDIA GPU を搭載
+# イメージ
+- Oracle-provided: Orace 提供イメージ (Oracle Linux, Ubuntu, CentOS, Microsoft Windows)
+- Custom images: カスタムイメージ (既存のインスタンスから作成、上限 300GB)
+- Marketplace: マーケットプレース (Oracle やサードパーティによる構築済みアプリケーション・イメージ
+- Bring Your Own Image: 独自イメージ
