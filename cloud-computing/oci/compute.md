@@ -85,3 +85,10 @@
 4. OSMS エージェントをインストールする (sudo yum install osms-agent)
 ### マネージド・インスタンス・グループの作成: フリート・マネジメント
 ## Windows Server インスタンスの OS 管理サービス
+# 保護インスタンス (Sheled インスタンス)
+- ファームウェアのセキュリティを強化
+- 悪意のあるブートレベルソフトウェアから防御
+- セキュアブート (Secure Boot)、測定ブート (Measured Boot)、信頼プラットフォーム・モジュール (Trusted Platform Module)
+- 機密 (Confidential) コンピューティング
+- 第2及び第3世代 AMD EPYCTM プロセッサを搭載した Oracle の AMD インスタンスで使用できる
+- 機密 VM は AMD セキュア暗号化仮想化 (SEV) テクノロジを使用し、機密ベア・メタル・インスタンスは AMD 透過的セキュア・メモリー暗号化 (TSME) テクノロジを使用
