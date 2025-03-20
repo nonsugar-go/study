@@ -18,7 +18,7 @@
 - A100, A10, V100, P100 の NVIDIA GPU を搭載
 # イメージ
 - Oracle-provided: Orace 提供イメージ (Oracle Linux, Ubuntu, CentOS, Microsoft Windows)
-- Custom images: カスタムイメージ (既存のインスタンスから作成、上限 300GB)
+- Custom images: カスタムイメージ (既存のインスタンスから作成、上限 300GB)e
 - Marketplace: マーケットプレース (Oracle やサードパーティによる構築済みアプリケーション・eイメージ
 - Bring Your Own Image: 独自イメージ
 # プリエンプティブル・インスタンス
@@ -70,7 +70,7 @@
 ## 例
 - 要塞: パブリックIPアドレスのないインスタンスへのSSH接続を許可
 - OSMSエージェント: OS環境のパッチおよび更新を管理する
-# OS 管理サービス
+# OS 管理サービス (OSMS: Oracle Cloud Management Service)
 - 自動化されたパッチ管理
 - パッケージ管理
 - OCI コンソールに統合されたサービス
@@ -78,3 +78,10 @@
 ## Enterprise-Class Oracle Linux サポート
 ### Oracle Cloud Infrastraucdture に含まれる Oracle Linux プライマリ・サポート
 - Oracle Ksplice (Oracle Kspliceは、再起動の必要なく、すべてのクリティカルなセキュリティ・パッチを適用), KVM, Docker, Kubernetes, Gluster (分散ファイルシステム), Ceph (セフ: 分散オブジェクトストレージ機能) などサポート
+### OSMS for Oracle Linux
+1. IAM 用の OCI ダイナミック・グループ・ポリシーを作成
+2. ポリシーを作成
+3. Oracle Cloud Agent Management を有効にする
+4. OSMS エージェントをインストールする (sudo yum install osms-agent)
+### マネージド・インスタンス・グループの作成: フリート・マネジメント
+## Windows Server インスタンスの OS 管理サービス
