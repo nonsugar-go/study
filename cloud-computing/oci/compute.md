@@ -89,6 +89,12 @@
 - ファームウェアのセキュリティを強化
 - 悪意のあるブートレベルソフトウェアから防御
 - セキュアブート (Secure Boot)、測定ブート (Measured Boot)、信頼プラットフォーム・モジュール (Trusted Platform Module)
-- 機密 (Confidential) コンピューティング
+# 機密 (Confidential) コンピューティング
 - 第2及び第3世代 AMD EPYCTM プロセッサを搭載した Oracle の AMD インスタンスで使用できる
 - 機密 VM は AMD セキュア暗号化仮想化 (SEV) テクノロジを使用し、機密ベア・メタル・インスタンスは AMD 透過的セキュア・メモリー暗号化 (TSME) テクノロジを使用
+## サポートされるシェイプ
+- VM.Standard.E4.Flex (Oralce Linux 7.x or 8.x プラットフォーム・イメージ)
+- VM.Standard.E3.Flex (Oracle Linux 7.x or 8.x プラットフォーム・イメージ)
+- BM.DenseIO.E4.128 (任意のプラットフォーム・イメージ上)
+- BM.Standard.E4.128 (任意のプラットフォーム・イメージ上)
+- BM.Standard.E3.128 (任意のプラットフォーム・イメージ上)
