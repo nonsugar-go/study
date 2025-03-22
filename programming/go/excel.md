@@ -16,6 +16,7 @@
 - https://xuri.me/excelize/ja/sheet.html#SetRowHeight
 ## Cell
 - https://xuri.me/excelize/ja/cell.html#MergeCell
+- https://xuri.me/excelize/ja/cell.html#SetCellStyle
 ## Utils
 - https://xuri.me/excelize/ja/utils.html#CoordinatesToCellName
 - https://xuri.me/excelize/ja/utils.html#JoinCellName
