@@ -12,6 +12,8 @@
 ## Worksheet
 - https://xuri.me/excelize/ja/sheet.html#SetSheetName
 - https://xuri.me/excelize/ja/sheet.html#SetSheetRow
+- https://xuri.me/excelize/ja/sheet.html#SetColWidth
+- https://xuri.me/excelize/ja/sheet.html#SetRowHeight
 # Utils
 - https://xuri.me/excelize/ja/utils.html#CoordinatesToCellName
 - https://xuri.me/excelize/ja/utils.html#JoinCellName
