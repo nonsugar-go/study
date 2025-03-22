@@ -14,4 +14,5 @@
 - https://xuri.me/excelize/ja/sheet.html#SetSheetRow
 # Utils
 - https://xuri.me/excelize/ja/utils.html#CoordinatesToCellName
+- https://xuri.me/excelize/ja/utils.html#JoinCellName
 
