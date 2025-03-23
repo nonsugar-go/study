@@ -21,6 +21,8 @@
 - https://xuri.me/excelize/ja/style.html#SetDefaultFont
 - https://xuri.me/excelize/ja/style.html#NewStyle
 - https://xuri.me/excelize/ja/style.html#border
+- https://xuri.me/excelize/ja/style.html#border
+- https://xuri.me/excelize/ja/style.html#align
 ## Utils
 - https://xuri.me/excelize/ja/utils.html#CoordinatesToCellName
 - https://xuri.me/excelize/ja/utils.html#JoinCellName
