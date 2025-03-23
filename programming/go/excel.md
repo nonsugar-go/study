@@ -22,6 +22,8 @@
 - https://xuri.me/excelize/ja/style.html#NewStyle
 - https://xuri.me/excelize/ja/style.html#border
 - https://xuri.me/excelize/ja/style.html#align
+## Data validation
+- https://xuri.me/excelize/ja/data.html#AddDataValidation
 ## Utils
 - https://xuri.me/excelize/ja/utils.html#CoordinatesToCellName
 - https://xuri.me/excelize/ja/utils.html#JoinCellName
