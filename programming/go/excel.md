@@ -18,6 +18,7 @@
 ## Cell
 - https://xuri.me/excelize/ja/cell.html#MergeCell
 - https://xuri.me/excelize/ja/cell.html#SetCellStyle
+- https://xuri.me/excelize/ja/cell.html#SetCellFormula
 ## Style
 - https://xuri.me/excelize/ja/style.html#SetDefaultFont
 - https://xuri.me/excelize/ja/style.html#NewStyle
