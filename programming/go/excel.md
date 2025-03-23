@@ -10,12 +10,12 @@
 - https://xuri.me/excelize/ja/workbook.html#Close
 - https://xuri.me/excelize/ja/workbook.html#SetSheetView
 - https://xuri.me/excelize/ja/workbook.html#SetDefinedName
-- https://xuri.me/excelize/ja/sheet.html#GetSheetList
 ## Worksheet
 - https://xuri.me/excelize/ja/sheet.html#SetSheetName
 - https://xuri.me/excelize/ja/sheet.html#SetSheetRow
 - https://xuri.me/excelize/ja/sheet.html#SetColWidth
 - https://xuri.me/excelize/ja/sheet.html#SetRowHeight
+- https://xuri.me/excelize/ja/sheet.html#GetSheetList
 ## Cell
 - https://xuri.me/excelize/ja/cell.html#MergeCell
 - https://xuri.me/excelize/ja/cell.html#SetCellStyle
