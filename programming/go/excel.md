@@ -10,6 +10,7 @@
 - https://xuri.me/excelize/ja/workbook.html#Close
 - https://xuri.me/excelize/ja/workbook.html#SetSheetView
 - https://xuri.me/excelize/ja/workbook.html#SetDefinedName
+- https://xuri.me/excelize/ja/sheet.html#GetSheetList
 ## Worksheet
 - https://xuri.me/excelize/ja/sheet.html#SetSheetName
 - https://xuri.me/excelize/ja/sheet.html#SetSheetRow
