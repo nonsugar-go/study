@@ -16,8 +16,11 @@
 - https://xuri.me/excelize/ja/sheet.html#SetRowHeight
 ## Cell
 - https://xuri.me/excelize/ja/cell.html#MergeCell
-- https://xuri.me/excelize/ja/style.html#NewStyle
 - https://xuri.me/excelize/ja/cell.html#SetCellStyle
+## Style
+- https://xuri.me/excelize/ja/style.html#SetDefaultFont
+- https://xuri.me/excelize/ja/style.html#NewStyle
+- https://xuri.me/excelize/ja/style.html#border
 ## Utils
 - https://xuri.me/excelize/ja/utils.html#CoordinatesToCellName
 - https://xuri.me/excelize/ja/utils.html#JoinCellName
