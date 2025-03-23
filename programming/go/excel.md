@@ -27,6 +27,7 @@
 ## Data validation
 - https://xuri.me/excelize/ja/data.html#AddDataValidation
 ## Utils
+- https://xuri.me/excelize/ja/utils.html#AddTable
 - https://xuri.me/excelize/ja/utils.html#CoordinatesToCellName
 - https://xuri.me/excelize/ja/utils.html#JoinCellName
 ## Example
