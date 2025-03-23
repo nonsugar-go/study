@@ -9,6 +9,7 @@
 - https://xuri.me/excelize/ja/workbook.html#SaveAs
 - https://xuri.me/excelize/ja/workbook.html#Close
 - https://xuri.me/excelize/ja/workbook.html#SetSheetView
+- https://xuri.me/excelize/ja/workbook.html#SetDefinedName
 ## Worksheet
 - https://xuri.me/excelize/ja/sheet.html#SetSheetName
 - https://xuri.me/excelize/ja/sheet.html#SetSheetRow
