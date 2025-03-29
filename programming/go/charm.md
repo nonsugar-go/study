@@ -8,7 +8,7 @@
 - https://github.com/charmbracelet/bubbles
 # lipgloss
 - https://github.com/charmbracelet/lipgloss
-- [ANSI 16 colors (4-bit)](https://i.sstatic.net/9UVnC.png)
+- [The entire table of ANSI color codes.](https://gist.github.com/JBlond/2fea43a3049b38287e5e9cefc87b2124)
 # log
 - https://github.com/charmbracelet/log
 # other docs
