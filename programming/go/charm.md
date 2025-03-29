@@ -4,6 +4,7 @@
   - https://github.com/charmbracelet/bubbletea/tree/main/tutorials
   - https://www.youtube.com/c/charmcli
 - https://github.com/charmbracelet/bubbles
+- https://github.com/charmbracelet/lipgloss
 - https://github.com/charmbracelet/log
 - https://zenn.dev/kurusugawa/articles/ce4e838bbd2ec3
 - https://zenn.dev/kurusugawa/articles/6cd32c4ab59d58
