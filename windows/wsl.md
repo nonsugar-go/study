@@ -90,6 +90,11 @@ plugins=(git python web-search z)
 ```
 
 - [NeoVim](/tools/vim/neovim.md)
+## プラグイン
+- https://github.com/mattn/vim-lsp-settings
+
+```
+```
 ## CTF で使用できるパッケージ
 ```bash
 $ sudo apt update && sudo apt upgrade -y
