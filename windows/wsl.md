@@ -80,6 +80,10 @@ alias bat="batcat"
 
 export PATH=$PATH:/usr/local/go/bin
 ```
+- 下記の行を変更
+```
+plugins=(git python web-search z)
+```
 ## neovim
 ```
 % sudo apt install neovim -y
