@@ -91,6 +91,9 @@ plugins=(git python web-search z)
 
 - [NeoVim](/tools/vim/neovim.md)
 ## プラグイン
+- https://github.com/junegunn/vim-plug
+- https://github.com/mattn/vim-maketable
+- https://github.com/tpope/vim-commentary
 - https://github.com/mattn/vim-lsp-settings
 
 ```
