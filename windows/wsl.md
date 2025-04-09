@@ -16,7 +16,7 @@ Enter new UNIX username: USERNAME
 New password: PASSWORD
 ```
 ## 既定のインストールパスから別のフォルダーへ移動
-- 既定のインストールパス: c/Users/yutaka/AppData/Local/wsl/
+- 既定のインストールパス: c/Users/USER/AppData/Local/wsl/
 
 PowerShell \[管理者モード]
 ```pwsh
