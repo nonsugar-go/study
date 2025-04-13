@@ -73,12 +73,11 @@ chsh -s /bin/zsh
 - 初回ログイン時の `zsh-newuser-install` の問いには、`(0)  Exit, creating the file ~/.zshrc containing just a comment.` を選択
 ### ~/.zshrc
 ```zsh
-alias vi="nvim"
-alias vim="nvim"
-alias view="nvim -R"
-alias bat="batcat"
-
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$(go env GOPATH)/bin
+export PATH=$PATH:$HOME/bin
+alias open=explorer.exe
+alias bat=batcat
 ```
 - 下記の行を変更
 ```
