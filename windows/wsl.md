@@ -94,8 +94,56 @@ plugins=(git python web-search z)
 - https://github.com/mattn/vim-maketable
 - https://github.com/tpope/vim-commentary
 - https://github.com/mattn/vim-lsp-settings
-
+### ~/.config/nvim/init.vim
 ```
+set number
+autocmd BufReadPost *
+	\ if line("'\"") > 0 && line("'\"") <= line("$") |
+	\   exe "normal! g'\"" |
+	\ endif
+autocmd FileType go setlocal tabstop=4 shiftwidth=4 expandtab
+
+call plug#begin()
+Plug 'mattn/vim-goimports'
+Plug 'mattn/vim-lsp-settings'
+Plug 'mattn/vim-maketable'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'tpope/vim-commentary'
+call plug#end()
+
+function! s:on_lsp_buffer_enabled() abort
+	if &buftype ==# 'nofile' || &filetype =~# '^\(quickrun\)' || getcmdwintype() ==# ':'
+		return
+	endif
+	setlocal omnifunc=lsp#complete
+	setlocal signcolumn=yes
+	if exists('+tagfunc') | setlocal tagfunc=lsp#tagfunc | endif
+	nmap <buffer> gd <plug>(lsp-definition)
+	nmap <buffer> gs <plug>(lsp-document-symbol-search)
+	nmap <buffer> gS <plug>(lsp-workspace-symbol-search)
+	nmap <buffer> gr <plug>(lsp-references)
+	nmap <buffer> gi <plug>(lsp-implementation)
+	"nmap <buffer> gt <plug>(lsp-type-definition)
+"     nmap <buffer> <leader>rn <plug>(lsp-rename)
+	nnoremap <buffer> <f2> <plug>(lsp-rename)
+	nmap <buffer> [g <plug>(lsp-previous-diagnostic)
+	nmap <buffer> ]g <plug>(lsp-next-diagnostic)
+	nmap <buffer> K <plug>(lsp-hover)
+	nnoremap <buffer> <expr><c-f> lsp#scroll(+4)
+	nnoremap <buffer> <expr><c-d> lsp#scroll(-4)
+
+	nmap <buffer> <f3> <plug>(lsp-code-action)
+
+	let g:lsp_format_sync_timeout = 1000
+	autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
+endfunction
+
+augroup vimrc_lsp_install
+	autocmd!
+	autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+augroup END
 ```
 ## CTF で使用できるパッケージ
 ```bash
