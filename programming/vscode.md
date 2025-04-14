@@ -37,7 +37,7 @@
 Visual Studio で VSCode のショートカット キーを使用するには、「メニュー > ツール > オプション > 環境 > キーボード」、「次の追加キーボードマップ スキームを適用」: Visual Studio Code にする。
 # Extensions (Ctrl+Shift+X)
 ## 初期設定
-- Japanese Language Pack for VS Code
+- [Japanese Language Pack for VS Code](https://marketplace.visualstudio.com/items/?itemName=MS-CEINTL.vscode-language-pack-ja)
   - コマンド パレット (Ctrl+Shift+P): Configure Display Language > 日本語 (ja)
 - MSYS2/Cygwin/MinGW/Clang support
   - https://iww.hateblo.jp/entry/20240220/cygwin
