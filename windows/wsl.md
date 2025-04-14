@@ -166,7 +166,8 @@ go install github.com/josharian/impl@latest
 go install github.com/peco/peco/cmd/peco@latest
 go install github.com/tc-hib/go-winres@latest
 go install golang.org/x/tools/cmd/goimports@latest
-go install golang.org/x/tools/cmd/stringer@latest```
+go install golang.org/x/tools/cmd/stringer@latest
+```
 ## CTF で使用できるパッケージ
 ```bash
 $ sudo apt update && sudo apt upgrade -y
