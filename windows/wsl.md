@@ -110,6 +110,7 @@ Plug 'mattn/vim-maketable'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/vim-lsp'
+Plug 'rhysd/vim-go-impl'
 Plug 'tpope/vim-commentary'
 call plug#end()
 
