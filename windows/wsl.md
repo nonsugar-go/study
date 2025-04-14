@@ -147,6 +147,26 @@ augroup vimrc_lsp_install
 	autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 ```
+## Golang
+- https://go.dev/doc/install
+```zsh
+curl -LO https://go.dev/dl/go1.24.2.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.24.2.linux-amd64.tar.gz
+```
+- ~/.zshrc
+```zsh
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$(go env GOPATH)/bin
+export PATH=$PATH:$HOME/bin
+```
+
+```zsh
+go install github.com/fatih/gomodifytags@latest
+go install github.com/josharian/impl@latest
+go install github.com/peco/peco/cmd/peco@latest
+go install github.com/tc-hib/go-winres@latest
+go install golang.org/x/tools/cmd/goimports@latest
+go install golang.org/x/tools/cmd/stringer@latest```
 ## CTF で使用できるパッケージ
 ```bash
 $ sudo apt update && sudo apt upgrade -y
@@ -184,26 +204,6 @@ $ sudo /etc/init.d/ssh start
 ## Podman (Docker でなく Podman を使用する場合)
 ```bash
 $ sudo apt install podman -y
-```
-
-## Golang
-- https://go.dev/doc/install
-```zsh
-curl -LO https://go.dev/dl/go1.24.2.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.24.2.linux-amd64.tar.gz
-```
-- ~/.zshrc
-```zsh
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$(go env GOPATH)/bin
-export PATH=$PATH:$HOME/bin
-```
-
-```zsh
-go install github.com/fatih/gomodifytags@latest
-go install github.com/josharian/impl@latest
-go install github.com/peco/peco/cmd/peco@latest
-go install golang.org/x/tools/cmd/goimports@latest
 ```
 # ネットワークからの接続を許可する
 - https://learn.microsoft.com/ja-jp/windows/wsl/networking?WT.mc_id=AZ-MVP-4021785#default-networking-mode-nat
