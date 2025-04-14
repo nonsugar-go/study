@@ -37,28 +37,10 @@
 Visual Studio で VSCode のショートカット キーを使用するには、「メニュー > ツール > オプション > 環境 > キーボード」、「次の追加キーボードマップ スキームを適用」: Visual Studio Code にする。
 # Extensions (Ctrl+Shift+X)
 ## 初期設定
-- [Japanese Language Pack for VS Code](https://marketplace.visualstudio.com/items/?itemName=MS-CEINTL.vscode-language-pack-ja)
+- [Japanese Language Pack for Visual Studio Code (microsoft.com)](https://marketplace.visualstudio.com/items/?itemName=MS-CEINTL.vscode-language-pack-ja)
   - コマンド パレット (Ctrl+Shift+P): Configure Display Language > 日本語 (ja)
-- MSYS2/Cygwin/MinGW/Clang support
-  - https://iww.hateblo.jp/entry/20240220/cygwin
-    - **規定のプロファイルの選択**で Cygwin を追加
-    - コマンド パレット (Ctrl+Shift+P): Open User Settings JSON
-    ```json
-    "Cygwin": {
-      "path": "C:\\cygwin64\\bin\\bash.exe",
-      "args": [
-         "--login"
-      ]
-      "env": {"CHERE_INVOKING": "1"},
-    }
-    ```
-## Vim
-- https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
-<!-- - https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim -->
-## SSH
-- https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
-## WSL
-- https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
+- [Vim (vscodevim)](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+- [Remote Development (microsoft.com)](https://marketplace.visualstudio.com/items/?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 ## Markdown
 - https://dev.classmethod.jp/articles/non-97-operation-manual/
   - 拡張: Markdown Preview Enhanced
@@ -67,12 +49,14 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 ## CSV
 - https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv
 ## Golang
-- [Go (go.dev)](https://marketplace.visualstudio.com/items?itemName=golang.go)
+- [Go (go.dev)](https://marketplace.visualstudio.com/items/?itemName=golang.Go)
   - Ctrl + Shift + P > Go: Install/Update Tools > 全てチェック
 - [gotemplate-syntax](https://github.com/casualjim/vscode-gotemplate) `html:5<tab>`
 - https://zenn.dev/ikoba/articles/vscode-golang-snippets
 - [VSCode の Go extension でよく利用するコマンド 7選 | フューチャー技術ブログ](https://future-architect.github.io/articles/20200707/)
 - [意外と知らないVSCode上でGoを爆速開発するためのTips5選 #Go - Qiita](https://qiita.com/yagi_eng/items/9e599913605625809d9c)
+## PowerShell
+- [PowerShell (microsoft.com)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
 ## C/C++
 - C/C++ Extension Pack (microsoft.com)
 ## C#
@@ -97,8 +81,6 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 - https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
 ## Swift
 - https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang
-## PowerShell
-- https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell
 ## Protocol Buffer
 - https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3
 ## HTML
@@ -114,6 +96,19 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 - https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio
 ## OpenAPI
 - https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer
+## MSYS2/Cygwin/MinGW/Clang support
+- https://iww.hateblo.jp/entry/20240220/cygwin
+  - **規定のプロファイルの選択**で Cygwin を追加
+  - コマンド パレット (Ctrl+Shift+P): Open User Settings JSON
+```json
+    "Cygwin": {
+      "path": "C:\\cygwin64\\bin\\bash.exe",
+      "args": [
+         "--login"
+      ]
+      "env": {"CHERE_INVOKING": "1"},
+    }
+```
 ## その他
 - https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
 - https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete
