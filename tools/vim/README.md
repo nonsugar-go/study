@@ -3,13 +3,15 @@
 - [NeoVim](neovim.md)
 # 操作
 ## ノーマル モード
-| key | desc |
+| KEY | DESC |
 | --- | ---- |
+| u | C-r | Undo | Redo |
 | gg \| G | 先頭へ \| 末尾へ |
 | CTRL-O | 前の位置に戻る |
 | [[ \| ]] | セクションへ移動 |
 | { \| } | 段落へ移動 |
-| z<CR> | カーソルの位置をトップへ |
+| z<CR> | カーソルの位置をトップの先頭列へ |
+| zt | zz | zb | カーソル位置をトップ | センター | ボトム |
 ## コマンド モード
 | command | desc |
 | ------- | ---- |
@@ -147,6 +149,14 @@ command | desc
 - タブの移動 (:tabm[ove])
 - タブページの一覧 (:tabs)
 
+# レジスタ
+|KEY|DESC|
+|---|---|
+|:reg|numberd and named register の一覧|
+|"0P|ヤンクされた内容を貼り付け|
+|"1P|削除された内容を貼り付け|
+|"jyy|j レジスタに一行ヤンク|
+|"Jyy|j レジスタに1行追加でヤンク|
 # vimdiff (:diffsplit)
 diff が色付きで表示されます。(:sy off をした方が見やすいかも)
  $ vimdiff -o FILE1 FILE2
