@@ -21,7 +21,15 @@
 | command | desc |
 | ------- | ---- |
 | :paste | 貼り付け時に使用(オートインデント抑制) |
-
+# レジスタ
+| KEY | DESC |
+| -- | -- |
+| :reg | numberd and named register の一覧 |
+| "0P | ヤンクされた内容を貼り付け |
+| "1P | 削除された内容を貼り付け |
+| "jyy | j レジスタに一行ヤンク |
+| "Jyy | j レジスタに1行追加でヤンク |
+| "acw | a レジスタに可能し、単語を変更 |
 # コマンド オプション
 ```bash
 $ view FILE  ## FILE を読み取り専用で開く
@@ -154,14 +162,6 @@ command | desc
 - タブの移動 (:tabm[ove])
 - タブページの一覧 (:tabs)
 
-# レジスタ
-| KEY | DESC |
-| -- | -- |
-| :reg | numberd and named register の一覧 |
-| "0P | ヤンクされた内容を貼り付け |
-| "1P | 削除された内容を貼り付け |
-| "jyy | j レジスタに一行ヤンク |
-| "Jyy | j レジスタに1行追加でヤンク |
 # vimdiff (:diffsplit)
 diff が色付きで表示されます。(:sy off をした方が見やすいかも)
  $ vimdiff -o FILE1 FILE2
