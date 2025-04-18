@@ -5,7 +5,7 @@
 ## ノーマル モード
 | KEY | DESC |
 | --- | ---- |
-| u | C-r | Undo | Redo |
+| u \| C-r | Undo \| Redo |
 | gg \| G | 先頭へ \| 末尾へ |
 | CTRL-O | 前の位置に戻る |
 | [[ \| ]] | セクションへ移動 |
@@ -150,13 +150,13 @@ command | desc
 - タブページの一覧 (:tabs)
 
 # レジスタ
-|KEY|DESC|
-|---|---|
-|:reg|numberd and named register の一覧|
-|"0P|ヤンクされた内容を貼り付け|
-|"1P|削除された内容を貼り付け|
-|"jyy|j レジスタに一行ヤンク|
-|"Jyy|j レジスタに1行追加でヤンク|
+| KEY | DESC |
+| -- | -- |
+| :reg | numberd and named register の一覧 |
+| "0P | ヤンクされた内容を貼り付け |
+| "1P | 削除された内容を貼り付け |
+| "jyy | j レジスタに一行ヤンク |
+| "Jyy | j レジスタに1行追加でヤンク |
 # vimdiff (:diffsplit)
 diff が色付きで表示されます。(:sy off をした方が見やすいかも)
  $ vimdiff -o FILE1 FILE2
