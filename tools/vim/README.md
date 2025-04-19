@@ -32,6 +32,7 @@
 | :noh | 検索のハイライトを消す |
 | :paste | 貼り付け時に使用(オートインデント抑制) |
 | %s/old/new/g \| .,$s/old/new/g | ファイル全体 (現在行～末尾まで) old を new に置換 |
+| /pattern1/,/pattern2/s/old/new/g | pattern1 ～ pattern2 まで old を new に置換 |
 # レジスタ
 | KEY | DESC |
 | -- | -- |
