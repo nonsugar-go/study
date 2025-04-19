@@ -3,6 +3,7 @@
 - [NeoVim](neovim.md)
 # 操作
 ## ノーマル モード
+### 編集
 | KEY | DESC |
 | --- | ---- |
 | u \| C-r | Undo \| Redo |
@@ -41,6 +42,7 @@
 | :noh | 検索のハイライトを消す |
 | :set nu \| :set nonu | 行番号表示の ON / OFF |
 | :paste | 貼り付け時に使用(オートインデント抑制) |
+### 置換
 | %s/old/new/g \| .,$s/old/new/g | ファイル全体 (現在行～末尾まで) old を new に置換 |
 | /pattern1/,/pattern2/s/old/new/g | pattern1 ～ pattern2 まで old を new に置換 |
 # レジスタ
