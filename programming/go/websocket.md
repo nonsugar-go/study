@@ -8,3 +8,5 @@
 # URL.Parse
 - https://pkg.go.dev/net/url#example-URL.Parse
 - https://pkg.go.dev/net/url#example-URL.ResolveReference
+# http.NewRequest
+- https://pkg.go.dev/net/http#hdr-Clients_and_Transports
