@@ -7,3 +7,4 @@
 - https://apidog.com/jp/blog/golang-websocket/
 # URL.Parse
 - https://pkg.go.dev/net/url#example-URL.Parse
+- https://pkg.go.dev/net/url#example-URL.ResolveReference
