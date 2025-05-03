@@ -1,0 +1,8 @@
+# FinTech
+# テクニカル分析
+- https://github.com/markcheno/go-talib
+# Bit
+- https://lightning.bitflyer.com/docs
+- https://lightning.bitflyer.com/docs/playground#GETv1%2Fmarkets/javascript
+# HMAC
+- [GolangでHmac署名](https://zenn.dev/sgtkuc1118/articles/670aa90f71687f)
