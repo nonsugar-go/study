@@ -147,6 +147,14 @@ augroup vimrc_lsp_install
 	autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 ```
+## 基本的なパッケージ
+```zsh
+sudo apt install unzip tcpdump w3m bat jq bind9-dnsutils
+```
+## ビルド パッケージなど
+```zsh
+sudo apt install build-essential sqlite3
+```
 ## Golang
 - https://go.dev/doc/install
 ```zsh
