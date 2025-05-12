@@ -42,6 +42,9 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 - [Vim (vscodevim)](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 - [Remote Development (microsoft.com)](https://marketplace.visualstudio.com/items/?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 ## Markdown
+- [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items/?itemName=shd101wyy.markdown-preview-enhanced)
+- [markdownlint](https://marketplace.visualstudio.com/items/?itemName=DavidAnson.vscode-markdownlint)
+
 - https://dev.classmethod.jp/articles/non-97-operation-manual/
   - 拡張: Markdown Preview Enhanced
   - 拡張: Markdown All in One
