@@ -9,6 +9,11 @@
 - https://go.dev/ref/mod#mod-commands
 - https://research.swtch.com/vgo-mvs
 - https://semver.org/lang/ja/
+
+- https://go.dev/ref/mod#environment-variables
+  ```bash
+  go env -w GOPRIVATE="github.com/nonsugar-go"
+  ```
 ## workspaces
 - https://go.dev/doc/tutorial/workspaces
 - https://go.dev/ref/mod#workspaces
