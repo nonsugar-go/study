@@ -120,6 +120,7 @@ $GOPATH/bin/helloworld
 # オブジェクト指向
 - https://golangdocs.com/object-oriented-programming-in-golang
 - https://go.dev/doc/effective_go#embedding
+- https://go.dev/doc/effective_go#interface-names
 - https://dave.cheney.net/2016/08/20/solid-go-design
 - [https://go.dev/talks/2012/splash.article#TOC_15.](https://go.dev/talks/2012/splash.article#TOC_15.)
 # デバッグ
