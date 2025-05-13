@@ -12,6 +12,7 @@
 ## workspaces
 - https://go.dev/doc/tutorial/workspaces
 - https://go.dev/ref/mod#workspaces
+- https://future-architect.github.io/articles/20220216a/
 
 
 ```bash
