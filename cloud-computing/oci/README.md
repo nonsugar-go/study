@@ -1,5 +1,6 @@
 # OCI
 - https://docs.oracle.com/ja-jp/iaas/Content/home.htm
+- https://docs.oracle.com/solutions/?ang=ja
 - https://oracle-japan.github.io/ocidocs/
 - https://oracle-japan.github.io/ocitutorials/
 - https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/home
