@@ -10,3 +10,9 @@
 sudo apt install build-essential sqlite3
 go get github.com/mattn/go-sqlite3
 ```
+# OSS
+- https://github.com/jmoiron/sqlx
+- https://entgo.io
+- https://gorm.io
+- https://sqlc.dev
+- https://pkg.go.dev/github.com/volatiletech/sqlboiler/v4
