@@ -115,6 +115,8 @@ $GOPATH/bin/helloworld
 - https://go.dev/play/
 - https://go.dev/doc/effective_go
 - https://go.dev/wiki/CodeReviewComments
+- https://go.dev/doc/faq
+- https://go.dev/talks/2012/splash.article
 - https://go.dev/blog/using-go-modules
 - https://github.com/golang/go/wiki/
 - https://github.com/golang/go/wiki/Modules/
