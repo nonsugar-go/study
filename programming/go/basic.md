@@ -6,6 +6,7 @@
 ## modules
 - https://go.dev/blog/using-go-modules
 - https://go.dev/doc/modules/version-numbers
+- https://go.dev/ref/mod#mod-commands
 - https://research.swtch.com/vgo-mvs
 - https://semver.org/lang/ja/
 ## workspaces
