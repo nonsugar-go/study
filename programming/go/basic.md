@@ -7,8 +7,10 @@
 - https://go.dev/blog/using-go-modules
 - https://go.dev/doc/modules/version-numbers
 - https://go.dev/ref/mod#mod-commands
+- https://go.dev/doc/modules/release-workflow
 - https://research.swtch.com/vgo-mvs
 - https://semver.org/lang/ja/
+- https://docs.github.com/ja/repositories/releasing-projects-on-github/managing-releases-in-a-repository
 
 - https://go.dev/ref/mod#environment-variables
   ```bash
