@@ -115,6 +115,12 @@ $GOPATH/bin/helloworld
 # 眺めて覚えるGo言語
 - [眺めて覚えるGo言語 - Qiita](https://qiita.com/hiratarich/items/adf6fd3c4ec4cdd436d5)
 - [眺めて覚えるGo言語 その2 - Qiita](https://qiita.com/hiratarich/items/6914c5b2944ec3458915)
+# error
+- https://go.dev/ref/spec#Errors
+- https://pkg.go.dev/errors
+- https://pkg.go.dev/fmt#Errorf
+- https://go.dev/blog/errors-are-values
+- https://go.dev/blog/error-handling-and-go
 # 標準ライブラリ
 - https://pkg.go.dev/std
 # オブジェクト指向
