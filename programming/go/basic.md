@@ -123,6 +123,7 @@ $GOPATH/bin/helloworld
 - https://go.dev/doc/effective_go#interface-names
 - https://dave.cheney.net/2016/08/20/solid-go-design
 - [https://go.dev/talks/2012/splash.article#TOC_15.](https://go.dev/talks/2012/splash.article#TOC_15.)
+- https://research.swtch.com/interfaces
 # デバッグ
 - https://dave.cheney.net/2014/09/28/using-build-to-switch-between-debug-and-release
 # 参考
