@@ -3,6 +3,11 @@
 - [Gopherfest 2015 | Go Proverbs with Rob Pike](https://www.youtube.com/watch?v=PAAkCSZUG1c)
 # プロジェクトの構造
 - https://github.com/golang-standards/project-layout/blob/master/README_ja.md
+## modules
+- https://go.dev/blog/using-go-modules
+- https://go.dev/doc/modules/version-numbers
+- https://research.swtch.com/vgo-mvs
+- https://semver.org/lang/ja/
 ## workspaces
 - https://go.dev/doc/tutorial/workspaces
 - https://go.dev/ref/mod#workspaces
