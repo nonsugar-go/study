@@ -52,7 +52,7 @@ aug vimrc_lsp_install
 	au User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 aug END
 
-aug ext_go
+aug filetype_go
 	au!
 	au FileType go setlocal tabstop=4 shiftwidth=4 expandtab
 	au FileType go nnoremap <F5> :w<CR>:!go run %<CR>
@@ -63,15 +63,21 @@ aug ext_go
 	au FileType go ia pkgm //go:build ignore<CR><CR>package main<CR><CR>func main() {<CR>}<C-o>O
 aug END
 
-aug ext_html
-	au!
-	au FileType html setlocal tabstop=4 shiftwidth=4 expandtab
-aug END
-
-aug ext_c
+aug filetype_c_cpp
 	au!
 	au FileType c,cpp setlocal tabstop=2 shiftwidth=2 expandtab
 	au FileType c,cpp nnoremap <F5> :w<CR>:make SRC=%<CR>
 	au FileType c,cpp inoremap <F5> <Esc>:w<CR>:make SRC=%<CR>
+aug END
+
+aug filetype_python
+	au!
+	au FileType python nnoremap <F5> :w<CR>:!python3 %<CR>
+	au FileType python inoremap <F5> <Esc>:w<CR>:!python3 %<CR>
+aug END
+
+aug filetype_html
+	au!
+	au FileType html setlocal tabstop=4 shiftwidth=4 expandtab
 aug END
 ```
