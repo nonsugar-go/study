@@ -1,8 +1,12 @@
 # C++
+
 # ドキュメント
-- [C++ - Wikipedia](https://ja.wikipedia.org/wiki/C%2B%2B)
 - https://learn.microsoft.com/ja-jp/cpp/windows/overview-of-windows-programming-in-cpp
+- [The C++ Programming Language](https://www.stroustrup.com/4th.html)
+- [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
+
 # インストール
+
 ## Visual Studio
 1. https://visualstudio.microsoft.com/ja/downloads/ から Visual Studio Community Ed. をダウンロードしてインストール
 2. **C++ によるデスクトップ開発** をインストールします。
@@ -11,24 +15,11 @@
    - プロジェクト名: HelloWorld
    - 場所: (任意の場所)
    - ソリューション名: CPP
+
+## Hello, World! (Main.cpp)
+1. 追加 > 新しい項目... > C++ ファイル (.cpp): Main.cpp
+2. メニュー > ビルド > ソリューションのビルド
+3. ▶ローカル Windows デバッガー (**F5**)
+
 ## GCC
 - Cygwin のパッケージ選択で、**gcc-g++** を選択する。
-# Hello, World! (Main.cpp)
-1. 追加 > 新しい項目... > C++ ファイル (.cpp): Main.cpp
-```cpp
-#include <iostream>
-
-int main() {
-	using namespace std;
-	cout << "Hello, " << "World!" << endl;
-	return 0;
-}
-```
-3. メニュー > ビルド > ソリューションのビルド
-4. ▶ローカル Windows デバッガー (**F5**)
-
-# The C++ Programming Language
-- https://www.stroustrup.com/4th.html
-
-# Google C++ Style Guide
-- [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
