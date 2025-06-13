@@ -27,3 +27,5 @@ int main() {
 3. メニュー > ビルド > ソリューションのビルド
 4. ▶ローカル Windows デバッガー (**F5**)
 
+# Google C++ Style Guide
+- [Google C++ Style Guide}(https://google.github.io/styleguide/cppguide.html)
