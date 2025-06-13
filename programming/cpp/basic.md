@@ -27,5 +27,8 @@ int main() {
 3. メニュー > ビルド > ソリューションのビルド
 4. ▶ローカル Windows デバッガー (**F5**)
 
+# The C++ Programming Language
+- https://www.stroustrup.com/4th.html
+
 # Google C++ Style Guide
-- [Google C++ Style Guide}(https://google.github.io/styleguide/cppguide.html)
+- [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
