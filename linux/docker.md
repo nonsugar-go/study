@@ -32,23 +32,6 @@ services:
 
 # rsyslog
 
-## rsyslog.conf
-
-```conf
-module(load="imudp")
-input(type="imudp" port="514")
-*.* /var/log/syslog.log
-```
-
-## Dockerfile
-
-```dockerfile
-FROM alpine:latest
-RUN apk add --no-cache rsyslog
-COPY rsyslog.conf /etc/rsyslog.conf
-CMD ["rsyslogd", "-n"]
-```
-
 ## docker-compose.yaml
 
 ```yaml
@@ -61,6 +44,23 @@ services:
       - "514:514/udp"
     volumes:
       - ./syslog.log:/var/log/syslog.log
+```
+
+## Dockerfile
+
+```dockerfile
+FROM alpine:latest
+RUN apk add --no-cache rsyslog
+COPY rsyslog.conf /etc/rsyslog.conf
+CMD ["rsyslogd", "-n"]
+```
+
+## rsyslog.conf
+
+```conf
+module(load="imudp")
+input(type="imudp" port="514")
+*.* /var/log/syslog.log
 ```
 
 ## syslog.log
