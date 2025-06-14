@@ -62,3 +62,9 @@ services:
     volumes:
       - ./syslog.log:/var/log/syslog.log
 ```
+
+## syslog.log
+
+```bash
+touch syslog.log
+```
