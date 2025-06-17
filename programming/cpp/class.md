@@ -1,4 +1,5 @@
 # クラス
+
 - https://learn.microsoft.com/ja-jp/cpp/cpp/class-cpp
 - https://learn.microsoft.com/ja-jp/cpp/cpp/struct-cpp
 - https://learn.microsoft.com/ja-jp/cpp/cpp/class-member-overview
@@ -10,11 +11,18 @@
 - https://stackoverflow.com/questions/3814865/what-is-an-operator-int-function
 - https://learn.microsoft.com/ja-jp/cpp/cpp/friend-cpp
 - https://learn.microsoft.com/ja-jp/cpp/cpp/smart-pointers-modern-cpp
+
 ## 継承
+
 - https://learn.microsoft.com/ja-jp/cpp/cpp/inheritance-cpp
 - https://learn.microsoft.com/ja-jp/cpp/cpp/virtual-functions
 - https://cpprefjp.github.io/lang/cpp11/inheriting_constructors.html (継承コンストラクタ)
+
+## Cast
+- https://learn.microsoft.com/ja-jp/cpp/cpp/casting-operators
+
 # Rule of 5
+
 - Destructor
 - Copy constructor
 - Copy assignment operator
