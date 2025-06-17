@@ -3,7 +3,8 @@
 ## 数値の制限
 - https://learn.microsoft.com/ja-jp/cpp/standard-library/climits
 - https://learn.microsoft.com/ja-jp/cpp/standard-library/cfloat
-# vector
+# Containers
+- https://hackingcpp.com/cpp/cheat_sheets.html#hfold2a
 - https://learn.microsoft.com/ja-jp/cpp/standard-library/vector-class
 # numeric
 - https://learn.microsoft.com/ja-jp/cpp/standard-library/numeric-functions#accumulate
