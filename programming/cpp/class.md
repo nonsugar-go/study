@@ -13,6 +13,7 @@
 ## 継承
 - https://learn.microsoft.com/ja-jp/cpp/cpp/inheritance-cpp
 - https://learn.microsoft.com/ja-jp/cpp/cpp/virtual-functions
+- https://cpprefjp.github.io/lang/cpp11/inheriting_constructors.html (継承コンストラクタ)
 # Rule of 5
 - Destructor
 - Copy constructor
