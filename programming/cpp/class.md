@@ -11,7 +11,7 @@
 - https://learn.microsoft.com/ja-jp/cpp/cpp/friend-cpp
 - https://learn.microsoft.com/ja-jp/cpp/cpp/smart-pointers-modern-cpp
 ## 継承
-- https://learn.microsoft.com/ja-jp/cpp/cpp/inheritance-cpp?view=msvc-170
+- https://learn.microsoft.com/ja-jp/cpp/cpp/inheritance-cpp
 - https://learn.microsoft.com/ja-jp/cpp/cpp/virtual-functions
 # Rule of 5
 - Destructor
