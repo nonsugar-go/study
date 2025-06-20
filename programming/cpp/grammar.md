@@ -1,4 +1,6 @@
 # 文法
+## Glossary
+- https://www.stroustrup.com/glossary.html
 ## Uniform Initialization
 - https://learn.microsoft.com/ja-jp/cpp/cpp/initializing-classes-and-structs-without-constructors-cpp
 
@@ -37,4 +39,5 @@ int array[3] = { 1, 2, 3 };
 - https://qiita.com/seriru13/items/e5953f88fe23e4140687
 ## once pragma
 - https://learn.microsoft.com/ja-jp/cpp/preprocessor/once
-
+## Exception
+- https://cpprefjp.github.io/reference/exception/exception.html
