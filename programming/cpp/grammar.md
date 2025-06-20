@@ -41,3 +41,6 @@ int array[3] = { 1, 2, 3 };
 - https://learn.microsoft.com/ja-jp/cpp/preprocessor/once
 ## Exception
 - https://cpprefjp.github.io/reference/exception/exception.html
+- https://cpprefjp.github.io/reference/new/runtime_error.html
+- https://cpprefjp.github.io/reference/new/out_of_range.html
+- https://cpprefjp.github.io/reference/new/bad_alloc.html
