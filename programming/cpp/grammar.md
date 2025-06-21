@@ -43,3 +43,5 @@ int array[3] = { 1, 2, 3 };
 - https://cpprefjp.github.io/reference/exception/exception.html
 - https://cpprefjp.github.io/reference/stdexcept.html
 - https://cpprefjp.github.io/reference/new/bad_alloc.html
+## noexcept
+- https://cpprefjp.github.io/lang/cpp11/noexcept.html
