@@ -45,3 +45,5 @@ int array[3] = { 1, 2, 3 };
 - https://cpprefjp.github.io/reference/new/bad_alloc.html
 ## noexcept
 - https://cpprefjp.github.io/lang/cpp11/noexcept.html
+## raw string literals
+- https://cpprefjp.github.io/lang/cpp11/raw_string_literals.html
