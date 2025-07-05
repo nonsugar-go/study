@@ -1,6 +1,7 @@
 # Shell code
 
-- https://shell-storm.org/shellcode/index.html
+- https://shell-storm.org/shellcode
+- https://www.exploit-db.com/shellcodes
 
 ```nasm
 global _start
