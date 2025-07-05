@@ -1,4 +1,4 @@
-# Shell code
+# execve
 
 - https://shell-storm.org/shellcode
 - https://www.exploit-db.com/shellcodes
