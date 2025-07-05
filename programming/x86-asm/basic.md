@@ -8,6 +8,7 @@
 ```bash
 $ locate unistd_32.h
 $ grep exit /usr/include/x86_64-linux-gnu/asm/unistd_32.h
+$ grep exit /usr/include/x86_64-linux-gnu/asm/unistd_64.h
 $ man 2 exit
 $ man syscall
 ```
