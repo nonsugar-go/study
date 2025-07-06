@@ -22,4 +22,8 @@ grep exit /usr/include/x86_64-linux-gnu/asm/unistd_64.h
 man 2 exit
 man syscalls
 man syscall
+vi exit.nasm
+nasm -o exit.o -f elf64 exit.nasm                                   │ indentation
+ld -o exit exit.o
+objdump -D -M intel exit
 ```
