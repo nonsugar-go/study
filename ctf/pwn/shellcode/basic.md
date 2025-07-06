@@ -26,4 +26,5 @@ vi exit.nasm
 nasm -o exit.o -f elf64 exit.nasm                                   │ indentation
 ld -o exit exit.o
 objdump -D -M intel exit
+gdb -q exit
 ```
