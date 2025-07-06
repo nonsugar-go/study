@@ -14,3 +14,12 @@
 5. アセンブリ コードで実装
 6. NULL バイトを避ける
 7. ELF バイナリから シェルコードを抽出
+
+```bash
+find /usr/include -name 'unistd_64.h'
+/usr/include/x86_64-linux-gnu/asm/unistd_64.h
+grep exit /usr/include/x86_64-linux-gnu/asm/unistd_64.h
+man 2 exit
+man syscalls
+man syscall
+```
