@@ -22,9 +22,33 @@ grep exit /usr/include/x86_64-linux-gnu/asm/unistd_64.h
 man 2 exit
 man syscalls
 man syscall
+```
+
+## exit
+
+```bash
 vi exit.nasm
-nasm -o exit.o -f elf64 exit.nasm                                   │ indentation
-ld -o exit exit.o
-objdump -D -M intel exit
-gdb -q exit
+nasm -o exit.o -f elf64 exit.nasm                                              │
+ld -o exit exit.o                                                              │
+objcopy -O binary -j .text exit.o exit.bin                                     │
+xxd -i -n code ./exit.bin >exit.include
+```
+
+```nasm
+section .text
+global _start
+_start:
+	xor rdi, rdi
+	mov dil, 2 ; arg1
+	xor rax, rax
+	mov al, 60 ; exit(2)
+	syscall
+```
+
+```c
+unsigned char code[] = {
+  0x48, 0x31, 0xff, 0x40, 0xb7, 0x02, 0x48, 0x31, 0xc0, 0xb0, 0x3c, 0x0f,
+  0x05
+};
+unsigned int code_len = 13;
 ```
