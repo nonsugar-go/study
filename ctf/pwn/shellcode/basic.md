@@ -16,6 +16,7 @@
 7. ELF バイナリから シェルコードを抽出
 
 ```bash
+sudo apt install nasm strace
 find /usr/include -name 'unistd_64.h'
 /usr/include/x86_64-linux-gnu/asm/unistd_64.h
 grep exit /usr/include/x86_64-linux-gnu/asm/unistd_64.h
