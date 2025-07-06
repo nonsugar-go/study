@@ -28,9 +28,9 @@ man syscall
 
 ```bash
 vi exit.nasm
-nasm -o exit.o -f elf64 exit.nasm                                              │
-ld -o exit exit.o                                                              │
-objcopy -O binary -j .text exit.o exit.bin                                     │
+nasm -o exit.o -f elf64 exit.nasm
+ld -o exit exit.o
+objcopy -O binary -j .text exit.o exit.bin
 xxd -i -n code ./exit.bin >exit.include
 ```
 
