@@ -5,4 +5,4 @@
 
 ## フィルタの種類と適用順序
 
-- https://help.tableau.com/current/pro/desktop/ja-jp/order_of_operations.html
+- https://st-brain.com/media/tableau_filtering_context/
