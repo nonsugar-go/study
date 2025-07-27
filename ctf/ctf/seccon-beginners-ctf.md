@@ -8,6 +8,8 @@
 - https://zenn.dev/claustra01/articles/873cac6a6ad323
 - https://nagi-jp.github.io/p/seccon-beginners-ctf-2025/
 - https://www.youtube.com/watch?v=TG5ZNcorT0A
+- https://emeth.jp/diary/2025/07/seccon-beginners-ctf-2025-writeup/
+- https://qiita.com/kusano_k/items/e06defb55cdd3e4e4631
 
 # SECCON Beginners CTF 2024
 
