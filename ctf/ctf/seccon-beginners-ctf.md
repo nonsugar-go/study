@@ -5,6 +5,7 @@
 - https://melonattacker.github.io/posts/51/
 - https://zenn.dev/juck28/articles/64c6bdca67376e
 - https://yu212.hatenablog.com/entry/2025/07/27/163347
+- https://blog.kuonruri.org/seccon-beginners-ctf-2025-writeup
 - https://zenn.dev/claustra01/articles/873cac6a6ad323
 - https://nagi-jp.github.io/p/seccon-beginners-ctf-2025/
 - https://www.youtube.com/watch?v=TG5ZNcorT0A
