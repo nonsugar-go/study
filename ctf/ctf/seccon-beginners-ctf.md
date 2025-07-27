@@ -1,6 +1,10 @@
 # SECCON Beginners CTF 2025
 
 - https://ctf.beginners.seccon.jp/
+- https://qiita.com/xryuseix/items/c27924ef5e9e9dfb827e
+- https://melonattacker.github.io/posts/51/
+- https://zenn.dev/juck28/articles/64c6bdca67376e
+- https://yu212.hatenablog.com/entry/2025/07/27/163347
 - https://zenn.dev/claustra01/articles/873cac6a6ad323
 - https://nagi-jp.github.io/p/seccon-beginners-ctf-2025/
 - https://www.youtube.com/watch?v=TG5ZNcorT0A
