@@ -1,5 +1,10 @@
+# SECCON Beginners CTF 2025
+
+- https://ctf.beginners.seccon.jp/
+- https://zenn.dev/claustra01/articles/873cac6a6ad323
+
 # SECCON Beginners CTF 2024
-- https://score.beginners.seccon.jp/
+
 - https://zenn.dev/mizar/articles/83515f8291bb76
 - https://melonattacker.github.io/posts/44/
 - https://www.ryotosaito.com/blog/?p=601
@@ -16,6 +21,7 @@
 - https://www.youtube.com/watch?v=DPYlSEbIGsY
 
 # SECCON Beginners CTF 2023
+
 - https://github.com/SECCON/SECCON_Beginners_CTF_2023
 - https://tan.hatenadiary.jp/entry/2023/06/05/001017
 - https://qiita.com/xryuseix/items/1c03bcb43eee608dcb59#web-phisher2-118solved-94pt
