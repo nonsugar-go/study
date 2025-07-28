@@ -1,9 +1,10 @@
 # SECCON Beginners CTF 2025
 
+- https://ctf.beginners.seccon.jp/
+
 ## 作問者 Writeup
 
 - https://blog.kuonruri.org/seccon-beginners-ctf-2025-writeup
-- https://ctf.beginners.seccon.jp/
 - https://melonattacker.github.io/posts/51/
 - https://qiita.com/xryuseix/items/c27924ef5e9e9dfb827e
 - https://yu212.hatenablog.com/entry/2025/07/27/163347
