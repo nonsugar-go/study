@@ -9,7 +9,7 @@
 
 ## データ フィールドの4つの役割
 
-- Dimensions: **DISCRETE** (青) (ほとんど)
+- Dimensions: **DISCRETE** (青) (一般的)
 - Dimentions: **CONTINUOUS** (緑)
-- Measures: **CONTINUOUS** (緑) (ほとんど)
+- Measures: **CONTINUOUS** (緑) (一般的)
 - Measures: **DISCRETE** (青)
