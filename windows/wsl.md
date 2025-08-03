@@ -226,7 +226,7 @@ go install golang.org/x/tools/cmd/stringer@latest
 $ sudo apt update && sudo apt upgrade -y
 
 $ sudo apt install unzip plocate gdb gcc-multilib gdbserver nasm \
-  python3-pip python3-venv python3-z3 python3-scapy \
+  python3-venv python3-z3 python3-scapy \
   ltrace strace socat docker-compose w3m hexer bat peco -y
 
 $ git clone https://github.com/pwndbg/pwndbg
