@@ -20,4 +20,4 @@
 
 ## 初回オーダー日、2回目のオーダー日
 
-- https://kb.tableau.com/HowTo?id=kA00d000000kAUA&lang=ja-jp
+- https://note.com/oukaon/n/n5a3000981171
