@@ -30,8 +30,9 @@
 初回と2回目オーダー日の差: DATEDIFF('day', [初回オーダー日], [2回目オーダー日])
 ```
 
-## GEO: 東京から150km
+## GEO
 
 ```
-BUFFER(MAKEPOINT(35.6895, 139.6917), 150, 'km')
+東京から150km: BUFFER(MAKEPOINT(35.6895, 139.6917), 150, 'km')
+東京からの距離km: DISTANCE(MAKEPOINT(35.6895, 139.6917), MAKEPOINT([Lat], [Lon]), 'km')
 ```
