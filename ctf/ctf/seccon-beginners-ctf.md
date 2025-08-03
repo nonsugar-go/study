@@ -15,6 +15,7 @@
 ## Writeup
 
 - https://emeth.jp/diary/2025/07/seccon-beginners-ctf-2025-writeup/
+- https://kraf.jp/blog/10055
 - https://nagi-jp.github.io/p/seccon-beginners-ctf-2025/
 - https://qiita.com/kusano_k/items/e06defb55cdd3e4e4631
 - https://zazapon.github.io/writeups/2025/07/27/pivot4b++_writeup.html
