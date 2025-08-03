@@ -9,9 +9,9 @@
 
 ## データ フィールドの4つの役割
 
-- Dimensions
-  - **DISCRETE** (青) (一般的)
-  - **CONTINUOUS** (緑)
-- Measures
-  - **DISCRETE** (青)
-  - **CONTINUOUS** (緑) (一般的)
+- https://help.tableau.com/current/pro/desktop/ja-jp/datafields_typesandroles.htm
+
+- **DISCRETE** (青) Dimensions: 不連続ディメンション (一般的)
+- **CONTINUOUS** (緑) Dimensions: 連続ディメンション (稀)
+- **DISCRETE** (青) Measures: 不連続メジャー (稀)
+- **CONTINUOUS** (緑) Measures: 連続メジャー (一般的)
