@@ -224,14 +224,18 @@ go install golang.org/x/tools/cmd/stringer@latest
 
 ```bash
 $ sudo apt update && sudo apt upgrade -y
+
 $ sudo apt install unzip plocate gdb gcc-multilib gdbserver nasm \
-  python3-pycryptodome python3-z3 python3-scapy python3-pip \
-  strace ltrace socat docker-compose w3m hexer bat peco -y
-$ sudo pip3 install -U pwntools
-$ sudo pip3 install -U ropper
+  python3-pip python3-z3 python3-scapy \
+  ltrace strace socat docker-compose w3m hexer bat peco -y
+
 $ git clone https://github.com/pwndbg/pwndbg
 $ cd pwndbg
 $ ./setup.sh
+
+python3 -m venv ~/myenv
+source ~/myenv/bin/activate
+pip3 install -U pwntools ropper pycryptodome sympy
 ```
 
 ### pwndbg (pwndbg でなく gdb-peda を使用する場合)
