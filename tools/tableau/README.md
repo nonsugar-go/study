@@ -15,3 +15,9 @@
 - **CONTINUOUS** (緑) Dimensions: 連続ディメンション (稀)
 - **DISCRETE** (青) Measures: 不連続メジャー (稀)
 - **CONTINUOUS** (緑) Measures: 連続メジャー (一般的)
+
+# 計算式の例
+
+## 初回オーダー日、2回目のオーダー日
+
+- https://kb.tableau.com/HowTo?id=kA00d000000kAUA&lang=ja-jp
