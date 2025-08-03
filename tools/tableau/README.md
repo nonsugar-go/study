@@ -36,3 +36,13 @@
 東京から150km: BUFFER(MAKEPOINT(35.6895, 139.6917), 150, 'km')
 東京からの距離km: DISTANCE(MAKEPOINT(35.6895, 139.6917), MAKEPOINT([Lat], [Lon]), 'km')
 ```
+
+## 標準偏差
+
+- 売上、利益の ±σ の範囲外
+
+```
+ABS(SUM([売上]) - WINDOW_AVG(SUM([売上]))) > WINDOW_STDEV(SUM([売上]))
+AND
+ABS(SUM([利益]) - WINDOW_AVG(SUM([利益]))) > WINDOW_STDEV(SUM([利益]))
+```
