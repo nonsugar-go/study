@@ -7,6 +7,8 @@
 ## 作問者 Writeup
 
 - https://blog.kuonruri.org/seccon-beginners-ctf-2025-writeup
+- https://gist.github.com/shiosa1t/f0e051aba5613efc504a5385072dc43e
+- https://gist.github.com/kotokaze/dc39dbb7dbe4dec389358eefc4abcd10
 - https://melonattacker.github.io/posts/51/
 - https://qiita.com/xryuseix/items/c27924ef5e9e9dfb827e
 - https://yu212.hatenablog.com/entry/2025/07/27/163347
