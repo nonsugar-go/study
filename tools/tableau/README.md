@@ -16,6 +16,20 @@
 - **DISCRETE** (青) Measures: 不連続メジャー (稀)
 - **CONTINUOUS** (緑) Measures: 連続メジャー (一般的)
 
+# DatePart vs Date Trunk
+
+- **DISCRETE** (青) Dimensions: 不連続ディメンション
+  - 年 **2015** `DATEPART('year', [出荷日])`
+  - 四半期 **第 2 四半期** `DATEPART('quarter', [出荷日])`
+  - 月 **5 月** `DATEPART('month', [出荷日])`
+  - 日 **8** `DATEPART('day', [出荷日])`
+- **CONTINUOUS** (緑) Dimensions: 連続ディメンション
+  - 年 **2015** `DATETRUNC('year', [出荷日])`
+  - 四半期 ** 2015 年 第 2 四半期** `DATETRUNC('quarter', [出荷日])`
+  - 月 **2015 年 5 月** `DATETRUNC('month', [出荷日])`
+  - 週番号 **2015 年第 5 週' `DATETRUNC('week', [出荷日])`
+  - 日 **2015 年 5 月 8 日** `DATETRUNC('day', [出荷日])`
+
 # 計算式の例
 
 ## 初回オーダー日、2回目のオーダー日
