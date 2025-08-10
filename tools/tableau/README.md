@@ -7,6 +7,17 @@
 
 - https://st-brain.com/media/tableau_filtering_context/
 
+1. 抽出フィルター
+2. データソースフィルター
+3. コンテキストフィルター
+4. セット、条件フィルター、topN、Fixed LOD表現
+5. ディメンションフィルター
+6. Include/Exclude LOD表現
+7. メジャーフィルター
+8. 予想、集計計算
+9. 表計算フィルター
+10. 傾向線、リファレンスライン
+
 ## データ フィールドの4つの役割
 
 - https://help.tableau.com/current/pro/desktop/ja-jp/datafields_typesandroles.htm
