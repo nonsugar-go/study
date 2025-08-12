@@ -245,6 +245,15 @@ $ git clone https://github.com/longld/peda.git ~/peda
 $ echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
 
+## Ghidra
+
+```zsh
+sudo apt install openjdk-21-jdk
+curl -LO https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_11.4.1_build/ghidra_11.4.1_PUBLIC_20250731.zip
+unzip ./ghidra_11.4.1_PUBLIC_20250731.zip
+~/ghidra_11.4.1_PUBLIC/ghidraRun&
+```
+
 ### IDA
 
 - https://hex-rays.com/ida-free/#download
