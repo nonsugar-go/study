@@ -12,6 +12,13 @@ curl -LO https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghid
 unzip ./ghidra_11.4.1_PUBLIC_20250731.zip
 ~/ghidra_11.4.1_PUBLIC/ghidraRun&
 ```
+## Usage
+
+- Winodw > Bookmarks (Ctrl+B)
+- Window > Bytes
+- Window > Defined Strings
+- Window > Function Call Graph
+- Window > Function Graph
 
 ## CTF
 
