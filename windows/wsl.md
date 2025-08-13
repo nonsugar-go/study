@@ -268,7 +268,7 @@ mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/ida-free-pc-9.1
 ~/ida-free-pc-9.1/ida&
 ```
 
-#### IDA Free 84
+#### IDA Free 8.4
 
 ```bash
 cull -LO https://out7.hex-rays.com/files/idafree84_linux.run
@@ -277,7 +277,8 @@ chmod +x idafree84_linux.run
 rm ./idafree84_linux.run
 ## メッセージを見て足りないライブラリをインストールする
 QT_DEBUG_PLUGINS=1 ~/idafree-8.4/ida64
-sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0 libxcb-xinerama0 libxcb-xkb1 libxkbcommon-x11-0
+sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
+  libxcb-render-util0 libxcb-xinerama0 libxcb-xkb1 libxkbcommon-x11-0
 ```
 
 ## sshd
