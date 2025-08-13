@@ -254,9 +254,21 @@ unzip ./ghidra_11.4.1_PUBLIC_20250731.zip
 ~/ghidra_11.4.1_PUBLIC/ghidraRun&
 ```
 
-### IDA
+### IDA Free
 
-- https://hex-rays.com/ida-free/#download
+- https://hex-rays.com/ida-free
+
+```zsh
+sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
+  libxcb-render-util0 libxcb-shape0 libxcb-xinerama0 libxcb-xkb1 \
+  libxkbcommon-x11-0
+chmod +x ./ida-free-pc_91_x64linux.run
+./ida-free-pc_91_x64linux.run
+mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/ida-free-pc-9.1
+~/ida-free-pc-9.1/ida&
+```
+
+#### IDA Free 84
 
 ```bash
 cull -LO https://out7.hex-rays.com/files/idafree84_linux.run
