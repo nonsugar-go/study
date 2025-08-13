@@ -91,7 +91,7 @@ mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/ida-free-pc-9.1
 
 ## Debugging
 
-|IDA                                 |Ghidra                           |h
+|IDA                                 |Ghidra                           |
 |F2: Breakpoint                      |                                 |
 |F9: Run / Continue                  |                                 |
 |F8: Step Over                       |                                 |
@@ -117,8 +117,8 @@ mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/ida-free-pc-9.1
 
 ## Save
 
-|IDA                                         |Ghidra                           |h
-|--|--|
+|IDA                                         |Ghidra                           |
+|--------------------------------------------|---------------------------------|
 |Ctrl + W: File > Save                       |                                 |
 |Ctrl+Shift+T: View database snapshot manager|                                 |
 |Ctrl+Z: Undo                                |                                 |
