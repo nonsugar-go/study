@@ -2,6 +2,7 @@
 
 - https://github.com/NationalSecurityAgency/ghidra
 - https://github.com/NationalSecurityAgency/ghidra/releases
+- https://static.grumpycoder.net/pixel/docs/CheatSheet.html
 
 ## Install
 
