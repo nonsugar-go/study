@@ -16,19 +16,22 @@ mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/ida-free-pc-9.1
 ~/ida-free-pc-9.1/ida&
 ```
 
-## 起動
-~/id
-```
 # 設定
+
 - Options > General...: Number of opcode bytes (non-graph): 6
+
 # 構造体
+
 - https://hex-rays.com/products/ida/support/tutorials/structs/
+
 # 使い方
+
 ## Navigating
+
 |IDA                                        |Ghidra                           |
-|--|--|
-|Alt + 1/2/3/...: タブの切り替え            |                                 |
-|[space]: Text View <-> Graph View          |Window > Fnction Graph           |
+|-------------------------------------------|---------------------------------|
+|Alt + 1/2/3/...: タブの切り替え             |                                 |
+|`[space]`: Text View <-> Graph View        |Window > Fnction Graph           |
 |1: Zoom -> 100%                            |Zoom to Window                   |
 |G: Jump to Address...                      |G: Navigation > Go to...         |
 |Double Click (Enter): Enter a Func         |Double Click (Enter)             |
@@ -37,22 +40,31 @@ mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/ida-free-pc-9.1
 |N: Rename                                  |L: Rename ...                    |
 |Y: Set item type                           |Ctrl + L: Retype Return          |
 |Shift + F12: View > Open subviews > Strings|Window > Defined Strings         |
+
 ## Exploring
+
 |IDA                                 |Ghidra                           |
-|--|--|
+|------------------------------------|---------------------------------|
 |H/B/R: Hex/Bin/Char                 |Convert                          |
-** Commenting
-|IDA                                 |Ghidra                           |h
-|Ins (Shift + Ins): 前(後)にコメント |　  　　　　　　　　 　　　　　　|
-| : インラインコメント               | ; コメント                      |
-| ; リピータブルコメント             |                                 |
+
+## Commenting
+
+|IDA                                 |Ghidra                           |
+|------------------------------------|---------------------------------|
+|Ins (Shift + Ins): 前(後)にコメント  |　     　　　　　　　　 　　　　　　|
+| : インラインコメント                | ; コメント                       |
+| ; リピータブルコメント              |                                  |
+
 ## Searching
+
 |IDA                                 |Ghidra                           |
 |--|--|
 |ALt + B (Ctrl + B): Byte or "String" Search|S: Memory                 |
 |Alt + T (Ctrl + T): Text Search     |S: Memory                        |
 |Alt + I (Ctrl + I): Immediate Search|                                 |
+
 ## Exploring
+
 |IDA                                  |Ghidra                           |
 |--|--|
 |C: Code                              |D: Disassemble                   |
@@ -66,7 +78,9 @@ mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/ida-free-pc-9.1
 |Ins: Crate Struct                    |{: Create Struct                 |
 |T: Assembly ViewでStructを使用       |                                 |
 |Y: Decompiler ViewでStructを使用     |                                 |
+
 ## Structures
+
 |IDA                                  |Ghidra                           |
 |--|--|
 |Ins: Add Struct type...              |                                 |
@@ -74,14 +88,18 @@ mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/ida-free-pc-9.1
 |D: Data                              |                                 |
 |S: String                            |                                 |
 |N: Rename                            |                                 |
-** Debugging
+
+## Debugging
+
 |IDA                                 |Ghidra                           |h
 |F2: Breakpoint                      |                                 |
 |F9: Run / Continue                  |                                 |
 |F8: Step Over                       |                                 |
 |F7: Setp In                         |                                 |
 |Ctrl + F7: Run until Return         |                                 |
+
 ## Patch
+
 |IDA                                              |Ghidra                           |
 |--|--|
 |Edit > Pache program > Assemble                  |                                 |
@@ -89,13 +107,18 @@ mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/ida-free-pc-9.1
 |Edit > Pache program > Change bytes              |                                 |
 
 - https://yaya.lsv.jp/multibyte-nop/ 参考: NOP 0x90
+
 ## Decompiling
+
 |IDA                                      |Ghidra                           |
 |--|--|
 |F5: Decompile                            |Ctrl + E: Decompile              |
 |Synchronize with > IDA View-A, Hex View-A|                                 |
-** Save
+
+## Save
+
 |IDA                                         |Ghidra                           |h
+|--|--|
 |Ctrl + W: File > Save                       |                                 |
 |Ctrl+Shift+T: View database snapshot manager|                                 |
 |Ctrl+Z: Undo                                |                                 |
