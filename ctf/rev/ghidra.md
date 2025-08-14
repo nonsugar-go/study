@@ -3,6 +3,7 @@
 - https://github.com/NationalSecurityAgency/ghidra
 - https://github.com/NationalSecurityAgency/ghidra/releases
 - https://static.grumpycoder.net/pixel/docs/CheatSheet.html
+- https://github.com/AllsafeCyberSecurity/awesome-ghidra
 - https://kashiwaba-yuki.com/ghidra-ghidrascript-tutorial
 
 ## Install
@@ -56,3 +57,14 @@ Symbol Tree > Imports からヒントになりそうなインポート関数を�
 
 1. Listing の数値を選択し、型を設定 (コンテキストメニューの Data)
 2. コンテキストメニューから Set Eauates (E) で適切な文字列を選択
+
+## Script Manger
+
+```zsh
+mkdir ~/ghidra_scripts
+```
+
+1. Window > Script Manager
+2. `Create New Script` ボタンをクリック
+3. Jython を選択
+4. スクリプト名を指定する
