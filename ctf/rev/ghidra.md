@@ -3,6 +3,7 @@
 - https://github.com/NationalSecurityAgency/ghidra
 - https://github.com/NationalSecurityAgency/ghidra/releases
 - https://static.grumpycoder.net/pixel/docs/CheatSheet.html
+- https://kashiwaba-yuki.com/ghidra-ghidrascript-tutorial
 
 ## Install
 
@@ -20,6 +21,38 @@ unzip ./ghidra_11.4.1_PUBLIC_20250731.zip
 - Window > Function Call Graph
 - Window > Function Graph
 
-## CTF
+## 解析のアプローチ
 
-- https://kashiwaba-yuki.com/ghidra-ghidrascript-tutorial
+### main 関数から解析する
+
+#### PE フォーマットの実行ファイルの場合、main 関数を見つける方法
+
+- Search > Search Memmory (S): 68 00 00 40 00 e8
+
+```asm
+68 00 00 40 00  PUSH IMAGE_DOS_HEADER_00400000
+e8 ..           CALL
+```
+
+### インポート関数から解析する
+
+Symbol Tree > Imports からヒントになりそうなインポート関数をクリックする
+
+### 文字列から解析する
+
+- Window > Defined Strings
+
+## 構造体の自動定義
+
+1. コード内の変数を右クリックして、Auto Create STrucute を実行
+2. Data Type Manager 内の auto_structs に作成される
+3. Data Type と Name を編集する
+
+## 独自構造体の手動定義
+
+1. Data Type Manager の `[実行ファイル名]` を右クリックして、New > Signature...
+
+## Equate の適用
+
+1. Listing の数値を選択し、型を設定 (コンテキストメニューの Data)
+2. コンテキストメニューから Set Eauates (E) で適切な文字列を選択
