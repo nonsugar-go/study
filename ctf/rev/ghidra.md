@@ -14,8 +14,9 @@ curl -LO https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghid
 unzip ./ghidra_11.4.1_PUBLIC_20250731.zip
 ~/ghidra_11.4.1_PUBLIC/ghidraRun&
 ```
-## Usage
+## Settings
 
+- Edit > Tool Options > Listing Fields > Cursor Text Highlight > Mouse Button To Activate: MIDDLE -> LEFT
 - Winodw > Bookmarks (Ctrl+B)
 - Window > Bytes
 - Window > Defined Strings
