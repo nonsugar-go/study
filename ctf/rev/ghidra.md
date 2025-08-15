@@ -6,6 +6,11 @@
 - https://github.com/AllsafeCyberSecurity/awesome-ghidra
 - https://kashiwaba-yuki.com/ghidra-ghidrascript-tutorial
 
+## Golang
+
+- [Goの構造体をGhidraで逆アセンブルして静的解析する #assembly - Qiita](https://qiita.com/taaaaak/items/ee93c460e5dbc5c652ce)
+- https://blogs.trellix.jp/feeding-gophers-to-ghidra
+
 ## Install
 
 ```zsh
