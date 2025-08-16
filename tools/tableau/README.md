@@ -7,6 +7,9 @@
 
 - https://st-brain.com/media/tableau_filtering_context/
 
+> [!IMPORTANT]
+> セット、topN、FIXED などを使う場合は、「ディメンションフィルター」を「コンテキストに追加」すべきかを検討する
+
 1. 抽出フィルター
 2. データソースフィルター
 3. コンテキストフィルター
