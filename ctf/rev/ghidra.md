@@ -11,6 +11,7 @@
 - [Goの構造体をGhidraで逆アセンブルして静的解析する #assembly - Qiita](https://qiita.com/taaaaak/items/ee93c460e5dbc5c652ce)
 - https://blogs.trellix.jp/feeding-gophers-to-ghidra
 - https://github.com/ghidraninja/ghidra_scripts/blob/master/golang_renamer.py
+- https://github.com/felberj/gotools
 
 ### Golang の特徴
 
