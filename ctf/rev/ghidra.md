@@ -12,6 +12,13 @@
 - https://blogs.trellix.jp/feeding-gophers-to-ghidra
 - https://github.com/ghidraninja/ghidra_scripts/blob/master/golang_renamer.py
 
+### Golang の特徴
+
+- エントリポイント: _rt0_ARCH_OS
+- メイン関数: main.main
+- 引数と戻り値: レジスタを介することなくスタック上で実施
+- 関数名は、.gopclntab セクションをパースしてシンボルを復元できる (golang_renamer.py)
+
 ## Install
 
 ```zsh
