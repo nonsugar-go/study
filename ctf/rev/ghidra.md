@@ -12,6 +12,9 @@
 - https://blogs.trellix.jp/feeding-gophers-to-ghidra
 - https://github.com/ghidraninja/ghidra_scripts/blob/master/golang_renamer.py
 - https://github.com/felberj/gotools
+- https://github.com/getCUJO/ThreatIntel/tree/master/Scripts/Ghidra
+- https://github.com/advanced-threat-research/GhidraScripts
+- https://blogs.trellix.jp/feeding-gophers-to-ghidra
 
 ### Golang の特徴
 
