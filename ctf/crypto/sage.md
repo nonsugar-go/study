@@ -1,10 +1,13 @@
 # Sage
+
 - https://doc.sagemath.org/html/ja/tutorial/index.html
 - https://sagecell.sagemath.org/
+- [PythonのSageが使いこなせるようになるチュートリアル #AI - Qiita](https://qiita.com/automation2025/items/66ad0fb64983f78a9ec5)
 
-# Install / Ubuntu
-```bash
-$ sudo apt install sagemath    ## ディスク容量を大量消費します
+## Install / Ubuntu
+
+```zsh
+sudo apt install sagemath    ## ディスク容量を大量消費します
 ```
 
 # 使い方
