@@ -10,3 +10,7 @@ objdump -d -M intel $T >objdump.output
 readelf -S $T >readelf.output
 hexdump -C $T >hexdump.output
 ```
+
+```zsh
+ltrace $%
+```
