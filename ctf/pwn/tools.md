@@ -12,5 +12,5 @@ hexdump -C $T >hexdump.output
 ```
 
 ```zsh
-ltrace $%
+ltrace $T
 ```
