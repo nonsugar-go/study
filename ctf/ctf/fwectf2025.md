@@ -11,8 +11,9 @@
 
 ### その他
 
-- https://zenn.dev/claustra01/articles/7b116f8d542cc4
+- https://github.com/juke-33/Write-ups/tree/main/Full%20Week%20Engineer%20CTF%202025
 - https://www.youtube.com/watch?v=ERRu3Vr3_aw
+- https://zenn.dev/claustra01/articles/7b116f8d542cc4
 
 # Forensic-OSINT
 
