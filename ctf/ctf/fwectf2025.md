@@ -10,6 +10,7 @@
 ### その他
 
 - https://zenn.dev/claustra01/articles/7b116f8d542cc4
+- https://www.youtube.com/watch?v=ERRu3Vr3_aw
 
 # Forensic-OSINT
 
