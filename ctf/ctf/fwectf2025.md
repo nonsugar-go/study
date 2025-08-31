@@ -20,4 +20,7 @@
 
 ## horse_racing
 
+- https://github.com/gitpreUwU/horse_racing/commit/825ca69471333d8b5d2979a6c5c7c56f27730f66 
+- https://github.com/gitpreUwU/horse_racing/compare/ffe38def52bafdd195dba8360caade99a43a9342b36b948712bb3357cbcd36a9efdb9a2f990a0f49 
+ 
 - https://github.com/gitpreUwU/horse_racing/activity?ref=main
