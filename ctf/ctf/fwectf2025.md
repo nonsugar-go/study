@@ -4,6 +4,8 @@
 
 ## Writeup
 
+- https://www.google.com/search?q=Full+Weak+Engineer+CTF+2025+Writeup
+
 ### 作問者
 
 - https://note.com/elbasable_81018/n/n86842f2ad799
