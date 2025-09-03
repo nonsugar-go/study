@@ -22,6 +22,7 @@
 - https://github.com/juke-33/Write-ups/tree/main/Full%20Week%20Engineer%20CTF%202025
 - https://github.com/tepel-chen/My-CTF-Challs/tree/main/Full%20Weak%20Engineer%20CTF%202025
 - https://qiita.com/huzun1/items/b3ac9b38e185870641d5
+- https://qiita.com/MaximumCombo/items/978979ebc9ae2d9b29ad
 - https://zenn.dev/claustra01/articles/7b116f8d542cc4
 
 - https://www.youtube.com/watch?v=ERRu3Vr3_aw
