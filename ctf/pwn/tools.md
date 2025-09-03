@@ -17,7 +17,6 @@ alias w='vi Writeup.md'
 ## ~/CTF/pwncheck.sh
 
 ```zsh
-#!/bin/bash
 f="${1:-chall}"
 file $f
 checksec $f
