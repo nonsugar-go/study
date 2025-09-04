@@ -1,6 +1,7 @@
 # Full Weak Engineer CTF 2025
 
 - https://ctf.fwectf.com/
+- https://github.com/full-weak-engineer/FWE_CTF_2025_public
 
 ## Writeup
 
