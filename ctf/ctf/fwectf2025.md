@@ -15,6 +15,7 @@
 - https://zenn.dev/juck28/articles/a82cfdec0c136f
 - https://zenn.dev/koufu193/articles/b0aa6291d5655c
 - https://github.com/koufu193/CTFWriteups/tree/main/2025/FWECTF
+- https://zenn.dev/siruma/articles/f068760de2d7d2
 
 ### その他
 
