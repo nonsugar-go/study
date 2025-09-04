@@ -12,6 +12,7 @@
 - https://note.com/elbasable_81018/n/n86842f2ad799
 - https://qiita.com/r_k01m/items/e52183c600e913a97288
 - https://zenn.dev/alphe/articles/aa23ae6300af8f
+- https://zenn.dev/juck28/articles/a82cfdec0c136f
 - https://zenn.dev/koufu193/articles/b0aa6291d5655c
 - https://github.com/koufu193/CTFWriteups/tree/main/2025/FWECTF
 
