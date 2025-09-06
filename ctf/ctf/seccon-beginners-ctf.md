@@ -54,3 +54,8 @@
 - https://github.com/SECCON/SECCON_Beginners_CTF_2023
 - https://qiita.com/xryuseix/items/1c03bcb43eee608dcb59
 - https://tan.hatenadiary.jp/entry/2023/06/05/001017
+
+
+# SECCON Beginners CTF 2020
+
+- https://github.com/SECCON/Beginners_CTF_2020
