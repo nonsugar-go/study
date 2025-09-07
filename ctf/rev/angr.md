@@ -36,6 +36,62 @@ for lib, funcs in angr.SIM_PROCEDURES.items():
         print('  ', func)
 ```
 
+# サンプル
+
+## 引数にフラグを指定
+
+```python
+#!/usr/bin/env python3
+import angr
+import claripy
+proj = angr.Project("./chall", auto_load_libs=False)
+N = 64
+PREFIX = b'FLAG{'
+arg1 = claripy.BVS("arg1", 8*N)
+state = proj.factory.entry_state(args=[proj.filename, arg1])
+for c in arg1.chop(8):
+    state.solver.add(claripy.Or(claripy.And(0x20 <= c, c <= 0x7e), c == 0))
+for i, ch in enumerate(PREFIX):
+    state.solver.add(arg1.get_byte(i) == ch)
+simgr = proj.factory.simgr(state)
+simgr.explore(find=lambda s: b"Correct" in s.posix.dumps(1),
+              avoid=lambda s: b"Wrong" in s.posix.dumps(1))
+print(simgr)
+if simgr.found:
+    found = simgr.found[0]
+    flag = found.solver.eval(arg1, cast_to=bytes)
+    print("FLAG:", flag.split(b"\0")[0].decode())
+else:
+    print("No solution found")
+```
+
+## 標準入力にフラグを指定
+
+```
+#!/usr/bin/env python3
+import angr
+import claripy
+proj = angr.Project('./chall', auto_load_libs=False)
+N = 64
+PREFIX = b'FLAG{'
+inp = claripy.BVS('inp', 8*N)
+state = proj.factory.entry_state(stdin=inp)
+for c in inp.chop(8):
+    state.solver.add(
+        claripy.Or(claripy.And(0x20 <= c, c <= 0x7e), c == 0, c == 0xa))
+for i, ch in enumerate(PREFIX):
+    state.solver.add(inp.get_byte(i) == ch)
+simgr = proj.factory.simgr(state)
+simgr.explore(find=lambda s: b'Correct' in s.posix.dumps(1),
+              avoid=lambda s: b'Wrong' in s.posix.dumps(1))
+if simgr.found:
+    found = simgr.found[0]
+    flag = found.solver.eval(inp, cast_to=bytes)
+    print('FLAG:', flag.split(b'\0')[0].decode())
+else:
+    print('No solution found')
+```
+
 # 使用方法
 
 - https://docs.angr.io/en/latest/examples.html
