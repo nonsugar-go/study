@@ -67,7 +67,7 @@ else:
 
 ## 標準入力にフラグを指定
 
-```
+```python
 #!/usr/bin/env python3
 import angr
 import claripy
