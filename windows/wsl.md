@@ -235,7 +235,7 @@ cd pwndbg
 
 python3 -m venv ~/myenv
 source ~/myenv/bin/activate
-pip3 install -U pwntools ropper pycryptodome sympy scapy
+pip3 install -U pwntools ropper pycryptodome gmpy2 sympy scapy
 ```
 
 ### pwndbg (pwndbg でなく gdb-peda を使用する場合)
