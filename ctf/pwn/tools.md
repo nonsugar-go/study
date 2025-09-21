@@ -3,6 +3,8 @@
 ## ~/CTF/aliases.sh
 
 ```zsh
+[ -x "$HOME/ida-free-pc-9.1/ida" ] && alias ida='~/ida-free-pc-9.1/ida'
+[ -x "$HOME/idafree84_linux.run" ] && alias ida='~/idafree84_linux.run'
 alias angr='sudo docker run -it --rm -v $PWD:/local angr/angr'
 alias c='curl -LO'
 alias chromium='/snap/bin/chromium'
@@ -10,12 +12,12 @@ alias firefox='/snap/bin/firefox'
 alias g='grep -Rin'
 alias gdb='gdb -q'
 alias ghidra='~/ghidra_11.4.1_PUBLIC/ghidraRun'
-alias ida='~/ida-free-pc-9.1/ida'
 alias m='mydir=$(printf %02d $(($(ls -d [0-9][0-9]|tail -1)+1)))&&mkdir $mydir&&cd $mydir'
 alias myenv='source ~/myenv/bin/activate'
 alias p='source ~/CTF/pwncheck.sh'
 alias q='vi Question.txt'
 alias w='vi Writeup.md'
+myenv
 ```
 
 ## ~/CTF/pwncheck.sh
@@ -28,6 +30,7 @@ checksec $f
 objdump -d -M intel $f >objdump.output
 readelf -SW $f >sections.output
 readelf -s $f >syms.output
+readelf -r $f >relocs.output
 hexdump -C $f >hexdump.output
 pwn template $f >solver.py
 ```
