@@ -23,10 +23,10 @@
 
 ## プロセス関連（他プロセスも見える場合）
 
-- /proc/<PID>/cmdline : 他プロセスの実行引数
-- /proc/<PID>/environ : 他プロセスの環境変数
-- /proc/<PID>/cwd : そのプロセスの CWD
-- /proc/<PID>/fd/ : そのプロセスが開いているファイル（権限次第で FLAG を読むトリックになる）
+- /proc/`<PID>`/cmdline : 他プロセスの実行引数
+- /proc/`<PID>`/environ : 他プロセスの環境変数
+- /proc/`<PID>`/cwd : そのプロセスの CWD
+- /proc/`<PID>`/fd/ : そのプロセスが開いているファイル（権限次第で FLAG を読むトリックになる）
 
 ## CTF での典型的な利用例
 
