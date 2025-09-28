@@ -70,3 +70,7 @@
 ## 作問者 Writeup
 
 - https://diary.shift-js.info/seccon-beginners-ctf-2020/
+
+## Writeup
+
+- https://www.youtube.com/watch?v=Lpeh8yN7NAg
