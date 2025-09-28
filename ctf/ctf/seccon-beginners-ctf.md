@@ -66,3 +66,7 @@
 # SECCON Beginners CTF 2020
 
 - https://github.com/SECCON/Beginners_CTF_2020
+
+## 作問者 Writeup
+
+- https://diary.shift-js.info/seccon-beginners-ctf-2020/
