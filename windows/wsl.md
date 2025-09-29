@@ -185,7 +185,7 @@ augroup END
 ## 基本的なパッケージ
 
 ```zsh
-sudo apt install bat bind9-dnsutils jq ncal tcpdump unzip w3m
+sudo apt install 7zip bat bind9-dnsutils jq ncal tcpdump unzip w3m
 ```
 
 ## ビルド パッケージなど
