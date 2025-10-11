@@ -63,6 +63,10 @@
 
 - https://github.com/SECCON/Beginners_CTF_2021
 
+## Writeup
+
+- https://qiita.com/mikecat_mixc/items/4d265e77efb2587d398a
+
 # SECCON Beginners CTF 2020
 
 - https://github.com/SECCON/Beginners_CTF_2020
