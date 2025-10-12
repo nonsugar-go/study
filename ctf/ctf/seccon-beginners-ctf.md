@@ -37,6 +37,7 @@
 - https://melonattacker.github.io/posts/44/
 - https://qiita.com/task4233/items/b35cbf3d217cb93fc1c3
 - https://qiita.com/xryuseix/items/ed5fad16a990d27edac4
+- https://www.youtube.com/watch?v=DPYlSEbIGsY
 
 ## Writeup
 
@@ -52,12 +53,22 @@
 # SECCON Beginners CTF 2023
 
 - https://github.com/SECCON/SECCON_Beginners_CTF_2023
-- https://qiita.com/xryuseix/items/1c03bcb43eee608dcb59
+
+## Writeup
+
 - https://tan.hatenadiary.jp/entry/2023/06/05/001017
+- https://qiita.com/xryuseix/items/1c03bcb43eee608dcb59
 
 # SECCON Beginners CTF 2022
 
 - https://github.com/SECCON/Beginners_CTF_2022
+
+## Writeup
+
+- https://b1ue.x0.com/writeup/2022secconb/
+- https://hack.nikkei.com/blog/ctf4b202206/
+- https://qiita.com/flour/items/91d0c32be2d3446d868f
+- https://www.youtube.com/watch?v=r0Ofky8LGJU
 
 # SECCON Beginners CTF 2021
 
