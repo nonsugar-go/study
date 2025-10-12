@@ -80,6 +80,7 @@
 ## Writeup
 
 - https://qiita.com/mikecat_mixc/items/4d265e77efb2587d398a
+- https://www.youtube.com/watch?v=VtnqS3VdJ3Y
 
 # SECCON Beginners CTF 2020
 
