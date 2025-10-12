@@ -57,6 +57,9 @@
 ## Writeup
 
 - https://tan.hatenadiary.jp/entry/2023/06/05/001017
+
+## 作問者 Writeup
+
 - https://qiita.com/xryuseix/items/1c03bcb43eee608dcb59
 
 # SECCON Beginners CTF 2022
