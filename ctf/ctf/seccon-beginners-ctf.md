@@ -37,7 +37,6 @@
 - https://melonattacker.github.io/posts/44/
 - https://qiita.com/task4233/items/b35cbf3d217cb93fc1c3
 - https://qiita.com/xryuseix/items/ed5fad16a990d27edac4
-- https://www.youtube.com/watch?v=DPYlSEbIGsY
 
 ## Writeup
 
