@@ -60,6 +60,7 @@
 ## Writeup
 
 - https://tan.hatenadiary.jp/entry/2023/06/05/001017
+- https://www.youtube.com/watch?v=ygnog9CJPow
 
 # SECCON Beginners CTF 2022
 
