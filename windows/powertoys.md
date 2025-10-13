@@ -9,6 +9,8 @@
   - 入出力 > Keyboard Manager > Keyboard Manger を有効にする: オン
   - 入出力 > Keyboard Manager > キーの再マップ: VK 240 -> F1
 
+> tmux の prefix を F1 に設定しているので、Caps Lock (VK 240) で使える。
+
 ## Shortcut key
 
 - Shortcut Guide: Win + Shift + /
