@@ -55,7 +55,15 @@
 
 ## 作問者 Writeup
 
+- https://feneshi.co/ctf4b2023writeup/
+- https://github.com/satoki/ctf4b_2023_satoki_writeups
+- https://melonattacker.github.io/posts/36/
+- https://qiita.com/Anko_9801/items/3136c49de4c013cde9a5
+- https://qiita.com/motimotipurinn/items/37120313fcf59043f98d
+- https://qiita.com/task4233/items/2958820c903e4a25bf4c
+- https://qiita.com/ushigai_sub/items/f1d0593f52590fe10ca3
 - https://qiita.com/xryuseix/items/1c03bcb43eee608dcb59
+- https://x.com/Sz4rny/status/1665228721861672962
 
 ## Writeup
 
