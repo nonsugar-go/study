@@ -257,18 +257,18 @@ go install golang.org/x/tools/cmd/stringer@latest
 sudo apt update && sudo apt upgrade -y
 
 sudo apt install unzip plocate gdb gcc-multilib gdbserver nasm \
-  python3-venv python3-z3 \
-  ltrace strace socat docker-compose w3m hexer bat peco -y
+  python3-venv ltrace strace socat docker-compose w3m hexer bat peco -y
 
 cd ~/CTF
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
-
 cd ~
+echo "set follow-fork-mode parent" >>~/.gdbinit
+
 python3 -m venv ~/CTF/myenv
 source ~/CTF/myenv/bin/activate
-pip3 install -U pwntools ropper pycryptodome gmpy2 sympy scapy
+pip3 install -U pwntools ropper pycryptodome gmpy2 sympy z3-solver scapy
 ```
 
 ### pwndbg (pwndbg でなく gdb-peda を使用する場合)
