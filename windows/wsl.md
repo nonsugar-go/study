@@ -251,8 +251,8 @@ echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```zsh
 sudo apt install openjdk-21-jdk
 curl -LO https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_11.4.2_build/ghidra_11.4.2_PUBLIC_20250826.zip
-unzip ./ghidra_11.4.2_PUBLIC_20250826.zip
-~/ghidra_11.4.2_PUBLIC/ghidraRun&
+unzip ./ghidra_11.4.2_PUBLIC_20250826.zip -d ~/CTF
+~/CTF/ghidra_11.4.2_PUBLIC/ghidraRun&
 ```
 
 ### IDA Free
