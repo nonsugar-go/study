@@ -73,18 +73,6 @@ ln -s $USERPROFILE/Downloads .
 ln -s $USERPROFILE/OneDrive .
 ```
 
-## vim 関連
-
-```
-if [ ! -d ~/.vim/autoload ]; then
-  mkdir -p ~/.vim/autoload
-  (
-  cd ~/.vim/autoload
-  curl -LO https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  )
-fi
-```
-
 ## zsh
 
 - [zsh](/linux/zsh.md)
@@ -112,6 +100,18 @@ alias bat=batcat
 plugins=(git python web-search z)
 ```
 
+## vim 関連
+
+```
+if [ ! -d ~/.vim/autoload ]; then
+  mkdir -p ~/.vim/autoload
+  (
+  cd ~/.vim/autoload
+  curl -LO https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  )
+fi
+```
+
 ## neovim
 
 ```
@@ -120,7 +120,7 @@ plugins=(git python web-search z)
 
 - [NeoVim](/tools/vim/neovim.md)
 
-## プラグイン
+### プラグイン
 
 - https://github.com/junegunn/vim-plug
 - https://github.com/mattn/vim-maketable
@@ -180,6 +180,35 @@ augroup vimrc_lsp_install
 	autocmd!
 	autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
+```
+
+### PlugInstall
+
+```zsh
+$ vi
+:PlugInstall
+:q!
+
+$ vi foo.md
+:LspInstallServer
+:q!
+
+$ vi foo.go
+:LspInstallServer
+:q!
+
+$ vi foo.py
+:LspInstallServer
+:q!
+
+$ sudo apt install python3-venv
+
+$ vi foo.py
+:LspInstallServer
+:q!
+
+$ vi foo.cpp
+:q!
 ```
 
 ## 基本的なパッケージ
