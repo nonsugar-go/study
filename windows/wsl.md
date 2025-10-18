@@ -200,7 +200,9 @@ $ vi foo.go
 $ vi foo.py
 :LspInstallServer
 :q!
+```
 
+<!--
 $ sudo apt install python3-venv
 
 $ vi foo.py
@@ -209,7 +211,7 @@ $ vi foo.py
 
 $ vi foo.cpp
 :q!
-```
+-->
 
 ## 基本的なパッケージ
 
