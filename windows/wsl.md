@@ -257,7 +257,7 @@ go install golang.org/x/tools/cmd/stringer@latest
 sudo apt update && sudo apt upgrade -y
 
 sudo apt install unzip plocate gdb gcc-multilib gdbserver nasm \
-  python3-venv python3-z3 python3-scapy \
+  python3-venv python3-z3 \
   ltrace strace socat docker-compose w3m hexer bat peco -y
 
 cd ~/CTF
@@ -265,6 +265,7 @@ git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
 
+cd ~
 python3 -m venv ~/CTF/myenv
 source ~/CTF/myenv/bin/activate
 pip3 install -U pwntools ropper pycryptodome gmpy2 sympy scapy
