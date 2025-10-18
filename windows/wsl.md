@@ -246,7 +246,7 @@ git clone https://github.com/longld/peda.git ~/peda
 echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
 
-## Ghidra
+### Ghidra
 
 ```zsh
 sudo apt install openjdk-21-jdk
