@@ -242,8 +242,8 @@ pip3 install -U pwntools ropper pycryptodome gmpy2 sympy scapy
 ### pwndbg (pwndbg でなく gdb-peda を使用する場合)
 
 ```bash
-$ git clone https://github.com/longld/peda.git ~/peda
-$ echo "source ~/peda/peda.py" >> ~/.gdbinit
+git clone https://github.com/longld/peda.git ~/peda
+echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
 
 ## Ghidra
