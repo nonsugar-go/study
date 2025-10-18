@@ -283,6 +283,14 @@ sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
   libxcb-render-util0 libxcb-xinerama0 libxcb-xkb1 libxkbcommon-x11-0
 ```
 
+## Chromium, Firefox
+
+```zsh
+sudo snap install chromium
+sudo snap install firefox
+sudo apt install fonts-noto
+```
+
 ## sshd
 
 ```bash
