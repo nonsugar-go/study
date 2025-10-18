@@ -265,11 +265,12 @@ sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
   libxkbcommon-x11-0
 chmod +x ./ida-free-pc_91_x64linux.run
 ./ida-free-pc_91_x64linux.run
-mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/ida-free-pc-9.1
-~/ida-free-pc-9.1/ida&
+## Installation Directory: /home/yutaka/CTF/ida-free-pc-9.1
+mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/CTF/ida-free-pc-9.1
+~/CTF/ida-free-pc-9.1/ida&
 ```
 
-#### IDA Free 8.4
+#### IDA Free 8.4 (IDA Free 9.x でなく IDA Free 8.4 を使用する場合)
 
 ```bash
 cull -LO https://out7.hex-rays.com/files/idafree84_linux.run
