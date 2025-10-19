@@ -44,6 +44,7 @@
 - https://chatgpt.com/share/1c2e85a4-927a-4846-8793-74e75ab6a7f6
 - https://furutsuki.hatenablog.com/entry/2024/06/16/170151
 - https://github.com/r1ru/ctf-writeups/tree/master/2024/ctf4b
+- https://qiita.com/mae_t/items/91a82f8efe361305c29b
 - https://www.ryotosaito.com/blog/?p=601
 - https://zenn.dev/mizar/articles/83515f8291bb76
 - https://zeosutt.hatenablog.com/entry/2024/06/16/162439
