@@ -256,7 +256,7 @@ go install golang.org/x/tools/cmd/stringer@latest
 ```bash
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install unzip plocate gdb gcc-multilib gdbserver nasm \
+sudo apt install unzip plocate gdb gcc-multilib gdbserver nasm wabt \
   python3-venv ltrace strace socat docker-compose w3m hexer bat peco -y
 
 cd ~/CTF
