@@ -1,10 +1,11 @@
 # WebAssembly
 
 - https://developer.mozilla.org/ja/docs/WebAssembly/Guides/Understanding_the_text_format
+- https://qiita.com/taskooh/items/5915cdd9b9397f7053aa
 
 ## WAT モジュールの全体構造
 
-```
+```wat
 (module
   ;; 1. 型定義（Type Section）
   (type (func (param i32) (result i32)))   ;; 関数型を定義
@@ -51,3 +52,25 @@
 | Memory   | `(memory 1)`                           | モジュールの線形メモリ             |
 | Element  | `(elem (i32.const 0) $f)`              | 関数テーブル初期化               |
 | Data     | `(data (i32.const 0) "Hello")`         | メモリ初期化データ               |
+
+## WABT (pronounced: "wabbit")
+
+```zsh
+## インストール
+sudo apt install wabt
+
+## テキスト形式で確認
+wasm2wat chall.wasm -o chall.wat
+
+## Wasm -> C
+wasm2c chall.wasm -o chall.c
+
+## Export を確認
+wasm-objdump -x chall.wasm
+
+## エクスポート関数を試す
+wasm-interp chall.wasm -r func1
+
+## wat -> wasm
+wat2wasm chall.wat
+```
