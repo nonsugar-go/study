@@ -9,7 +9,7 @@
 - https://github.com/volatilityfoundation/volatility/wiki/Installation
 
 ```zsh
-pip3 install volatility3
+pip3 install -U volatility3
 ```
 
 # Usage
