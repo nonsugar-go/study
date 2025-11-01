@@ -26,5 +26,6 @@ vol -f memdump.mem windows.cmdline
 vol -f memdump.mem windows.filescan
 vol -f memdump.mem windows.netstat
 vol -f memdump.mem windows.netscan
-vol -f memdump.mem windows.dumpfiles --pid PID
+mkdir files
+vol -f memdump.mem -o files windows.dumpfiles --pid PID
 ```
