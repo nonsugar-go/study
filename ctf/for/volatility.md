@@ -16,6 +16,7 @@ pip3 install -U volatility3
 
 - https://github.com/volatilityfoundation/volatility/wiki/Command-Reference#filescan
 - https://github.com/volatilityfoundation/volatility/wiki/Command-Reference#dumpfiles
+- https://github.com/volatilityfoundation/volatility/wiki/Command-Reference#memmap
 
 ```zsh
 vol -f memdump.mem windows.info
