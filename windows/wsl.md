@@ -92,6 +92,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=$PATH:$HOME/bin
 alias open=explorer.exe
 alias bat=batcat
+alias ctf="source ~/CTF/aliases.sh"
 ```
 
 - 下記の行を変更
