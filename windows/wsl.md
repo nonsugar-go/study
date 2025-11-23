@@ -236,7 +236,6 @@ aug END
 ```zsh
 $ vi
 :PlugInstall
-:LspStatus
 :q!
 
 $ vi foo.md
