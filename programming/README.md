@@ -2,13 +2,15 @@
 
 - [Visual Studio Code](vscode.md)
 - [OOD](ood)
-- [Python](python)
-- [Go](go)
+
 - [C#](csharp)
 - [C++](cpp)
+- [Go](go)
 - [Java](java)
 - [JavaScript](javascript)
-- [x86 assembly language](x86-asm)
+- [Python](python)
+- [Rust](rust)
 - [Swift](swift.md)
+- [x86 assembly language](x86-asm)
 - [XML, JSON, YAML](xml-json-yaml.md)
 - [Web development](web-dev)
