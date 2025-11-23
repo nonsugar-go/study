@@ -2,7 +2,6 @@
 
 - [Visual Studio Code](vscode.md)
 - [OOD](ood)
-
 - [C#](csharp)
 - [C++](cpp)
 - [Go](go)
