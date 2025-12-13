@@ -2,6 +2,7 @@
 - https://developer.mozilla.org/en-US/docs/Web/javascript
 - https://en.wikipedia.org/wiki/ECMAScript_version_history
 - https://www.tohoho-web.com/js/index.htm
+- https://caniuse.com/
 
 ## 標準組み込みオブジェクト
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String
