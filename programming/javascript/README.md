@@ -6,6 +6,7 @@
 
 ## DOM
 - https://developer.mozilla.org/ja/docs/Web/API/Document_Object_Model
+- https://developer.mozilla.org/ja/docs/Web/API/Document/getElementById
 
 ## 標準組み込みオブジェクト
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String
