@@ -9,6 +9,7 @@
 - https://developer.mozilla.org/ja/docs/Web/API/Document/getElementById
 - https://developer.mozilla.org/ja/docs/Web/API/Document/querySelector
 - https://developer.mozilla.org/ja/docs/Web/API/Document/querySelectorAll
+- https://developer.mozilla.org/ja/docs/Web/API/Element/classList
 
 ## 標準組み込みオブジェクト
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String
