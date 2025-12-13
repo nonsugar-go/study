@@ -5,4 +5,5 @@
 
 ## CSS
 - https://developer.mozilla.org/ja/docs/Web/CSS/Reference
-- https://zenn.dev/nagan/articles/dac6fa662f4dab
+- https://zenn.dev/nagan/articles/dac6fa662f4dab -- BEM
+- https://qiita.com/YushiYamamoto/items/ffc9a936dc6be3d77ac3 -- SCSSとSASS
