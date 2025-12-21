@@ -351,6 +351,12 @@ git clone https://github.com/longld/peda.git ~/peda
 echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
 
+### Openvpn
+
+```zsh
+sudo apt install openvpn
+```
+
 ### Ghidra
 
 ```zsh
