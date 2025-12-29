@@ -324,6 +324,13 @@ chmod +x ~/.local/bin/rust-analyzer
 rustup component add rust-src
 ```
 
+### VSCode 拡張
+
+VSCode を起動して、以下の拡張をインストールする。
+
+- https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
+- https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
+
 ## CTF で使用できるパッケージ
 
 ```bash
