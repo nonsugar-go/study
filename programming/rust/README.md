@@ -54,7 +54,9 @@ rustup component add rust-src
 # Crates (クレート)
 
 - https://doc.rust-jp.rs/book-ja/ch07-01-packages-and-crates.html
-- https://crates.io/
+
+## crates.io
+
 - https://crates.io/crates/rand
 
 # Docs
