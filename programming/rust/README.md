@@ -42,6 +42,11 @@ rustup component add rust-src
 - https://docs.rs/std
 - https://doc.rust-lang.org/stable/std/
 
+## Option & Result
+
+- https://doc.rust-lang.org/stable/std/option/enum.Option.html
+- https://doc.rust-lang.org/stable/std/result/enum.Result.html
+
 # 所有権
 
 - https://doc.rust-jp.rs/rust-nomicon-ja/ownership.html
