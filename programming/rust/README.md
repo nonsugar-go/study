@@ -59,20 +59,30 @@ rustup component add rust-src
 
 - https://crates.io/crates/rand
 
-# Docs
+# argo
+
+## Docs
 
 ```zsh
 cargo doc --no-deps --open
 ```
 
-# リリース時のコンパイル
+## リリース時のコンパイル
 
 ```zsh
 cargo run --bin NAME --release
 ```
 
+## ライブラリを作成
+
+```zsh
+cargo new --lib lib_demo
+```
+
 # テスト
 
 - https://doc.rust-jp.rs/rust-by-example-ja/testing.html
+
 # command line
+
 - https://rust-cli.github.io/book/index.html
