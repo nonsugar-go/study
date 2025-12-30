@@ -47,6 +47,10 @@ rustup component add rust-src
 - https://doc.rust-lang.org/stable/std/option/enum.Option.html
 - https://doc.rust-lang.org/stable/std/result/enum.Result.html
 
+## std::io
+
+- https://doc.rust-lang.org/stable/std/io/type.Result.html
+
 ## std::net
 
 - https://doc.rust-lang.org/stable/std/net/struct.TcpListener.html
