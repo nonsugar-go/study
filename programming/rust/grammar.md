@@ -1,4 +1,13 @@
 # Grammar
+
+# Result の扱い
+
+| 書き方           | 失敗時 | 何が起きる           | 主な用途        |
+| --------------- | ------ | ------------------- | --------------- |
+| `ok()?`         | Err    | **return None**     | 静かに上へ返す   |
+| `unwrap()`      | Err    | **panic**           | 実験・短いコード |
+| `expect("msg")` | Err    | **panic（msg付き）** | 前提条件        |
+
 # 関数
 ## Closures (クロージャー)
 - https://doc.rust-jp.rs/rust-by-example-ja/fn/closures.html
