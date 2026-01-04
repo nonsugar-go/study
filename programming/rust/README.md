@@ -58,6 +58,11 @@ rustup component add rust-src
 
 - https://doc.rust-lang.org/stable/std/error/trait.Error.html
 
+## std::fmt
+
+- https://doc.rust-lang.org/stable/std/fmt/trait.Debug.html
+- https://doc.rust-lang.org/stable/std/fmt/trait.Display.html
+
 ## std::io
 
 - https://doc.rust-lang.org/stable/std/io/type.Result.html
