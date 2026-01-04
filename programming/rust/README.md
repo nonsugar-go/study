@@ -47,6 +47,13 @@ rustup component add rust-src
 - https://doc.rust-lang.org/stable/std/option/enum.Option.html
 - https://doc.rust-lang.org/stable/std/result/enum.Result.html
 
+## std::convert
+
+- https://doc.rust-lang.org/stable/std/convert/trait.From.html
+- https://doc.rust-lang.org/stable/std/convert/trait.TryFrom.html
+- https://doc.rust-lang.org/stable/std/convert/trait.Into.html
+- https://doc.rust-lang.org/stable/std/convert/trait.TryInto.html
+
 ## std::io
 
 - https://doc.rust-lang.org/stable/std/io/type.Result.html
