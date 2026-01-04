@@ -69,6 +69,7 @@ rustup component add rust-src
 
 ## std::str
 
+- https://doc.rust-lang.org/stable/std/str/trait.FromStr.html
 - https://doc.rust-lang.org/stable/std/primitive.str.html#method.chars
 
 ## std::io
