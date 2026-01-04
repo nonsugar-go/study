@@ -63,6 +63,14 @@ rustup component add rust-src
 - https://doc.rust-lang.org/stable/std/fmt/trait.Debug.html
 - https://doc.rust-lang.org/stable/std/fmt/trait.Display.html
 
+## std::iter
+
+- https://doc.rust-lang.org/stable/std/iter/trait.Iterator.html#method.enumerate
+
+## std::str
+
+- https://doc.rust-lang.org/stable/std/primitive.str.html#method.chars
+
 ## std::io
 
 - https://doc.rust-lang.org/stable/std/io/type.Result.html
