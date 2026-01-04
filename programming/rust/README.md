@@ -54,6 +54,10 @@ rustup component add rust-src
 - https://doc.rust-lang.org/stable/std/convert/trait.Into.html
 - https://doc.rust-lang.org/stable/std/convert/trait.TryInto.html
 
+## std::error
+
+- https://doc.rust-lang.org/stable/std/error/trait.Error.html
+
 ## std::io
 
 - https://doc.rust-lang.org/stable/std/io/type.Result.html
