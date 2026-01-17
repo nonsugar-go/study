@@ -57,3 +57,6 @@ git clone https://github.com/volatilityfoundation/volatility3.git
 ```zsh
 ~/volatility3/vol.py -f memdump.mem windows.info
 ```
+
+## Hayabusa
+- https://github.com/Yamato-Security/hayabusa
