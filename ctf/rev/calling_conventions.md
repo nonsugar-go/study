@@ -6,12 +6,13 @@
 
 # System V AMD64 ABI
 
-- [https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf](System V Application Binary Interface AMD64Architecture Processor Supplement - 3.2.3 Parameter Passing)
+- [System V Application Binary Interface AMD64Architecture Processor Supplement - 3.2.3 Parameter Passing](https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf)
 > If the class is INTEGER, the next available register of the sequence %rdi, %rsi, %rdx, %rcx, %r8 and %r9 is used
 - 整数・ポインタ引数 - RDI, RSI, RDX, RCX, R8, R9
 - 戻り値 - RAX
 - システムコールでは RCX の代わりに R10 を使用
 > man 2 syscall
+>
 > x86-64        rdi   rsi   rdx   r10   r8    r9    -
 - レジスタだけでは引数の数が不足する場合はスタックを利用。
 - System V ABIでは、関数を呼び出す前にスタックは16バイト（128ビット）アラインメントされている必要があると規定されている。ただし、push命令はスタックポインタ（RSP）を8バイトだけデクリメントするので、この命令1つではスタックが16バイトアラインされている保証はない。16バイトアラインメントを維持したい場合は、pushの前後にスタック操作を調整する必要がある。余分なsub rsp, 8などを入れてアラインメントを再調整することがある。
