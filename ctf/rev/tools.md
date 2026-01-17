@@ -7,4 +7,6 @@
 - https://learn.microsoft.com/en-us/sysinternals/downloads/procmon
 - http://www.rohitab.com/apimonitor
 - https://x64dbg.com/
+  デバッガー
 - https://learn.microsoft.com/en-us/windows-hardware/drivers/debuggercmds/windbg-overview
+  デバッガー
