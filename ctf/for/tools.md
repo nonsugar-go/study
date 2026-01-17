@@ -60,3 +60,5 @@ git clone https://github.com/volatilityfoundation/volatility3.git
 
 ## Hayabusa
 - https://github.com/Yamato-Security/hayabusa
+- https://github.com/Yamato-Security/hayabusa/blob/main/README-Japanese.md#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95
+- https://github.com/Yamato-Security/hayabusa/blob/main/doc/TimelineExplorerAnalysis/TimelineExplorerAnalysis-Japanese.md
