@@ -3,7 +3,10 @@
 ## 
 
 ```zsh
-gobuster dir -u http://10.10.10.10/ -w /usr/share/seclists/Discovery/Web-Content/common.txt
+gobuster dir -u http://10.10.10.10/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .php,.txt
+
+## 再帰的には検索しないので、見つかったディレクトリを更に調べる必要がある。
+gobuster dir -u http://10.10.10.10/foo/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .php,.txt
 ```
 
 ## nmap
