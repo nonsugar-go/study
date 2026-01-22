@@ -63,10 +63,10 @@ git clone https://github.com/volatilityfoundation/volatility3.git
 - https://github.com/Yamato-Security/hayabusa/blob/main/README-Japanese.md#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95
 - https://github.com/Yamato-Security/hayabusa/blob/main/doc/TimelineExplorerAnalysis/TimelineExplorerAnalysis-Japanese.md
 
-## cdir-collector
+## MFT の調査
 
-- https://github.com/CyberDefenseInstitute/CDIR
-
-## Eric Zimmerman’s Tools (MFTECmd)
-
-- https://ericzimmerman.github.io/#!index.md
+1. cdir-collector で収集
+   - https://github.com/CyberDefenseInstitute/CDIR
+2. Eric Zimmerman’s Tools (MFTECmd) で MFT を CSV に抽出 
+   - https://ericzimmerman.github.io/#!index.md
+3. Eric Zimmerman’s Tools (Timeline Explorer) で 出力された CSV ファイルを閲覧
