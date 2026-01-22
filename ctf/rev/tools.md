@@ -11,3 +11,5 @@
 - https://learn.microsoft.com/en-us/windows-hardware/drivers/debuggercmds/windbg-overview
   デバッガー
 - https://binary.ninja/
+- https://java-decompiler.github.io/ java 逆コンパイラ
+- https://github.com/skylot/jadx java 逆コンパイラ
