@@ -66,3 +66,7 @@ git clone https://github.com/volatilityfoundation/volatility3.git
 ## cdir-collector
 
 - https://github.com/CyberDefenseInstitute/CDIR
+
+## Eric Zimmerman’s Tools (MFTECmd)
+
+- https://ericzimmerman.github.io/#!index.md
