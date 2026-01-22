@@ -63,7 +63,7 @@ git clone https://github.com/volatilityfoundation/volatility3.git
 - https://github.com/Yamato-Security/hayabusa/blob/main/README-Japanese.md#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95
 - https://github.com/Yamato-Security/hayabusa/blob/main/doc/TimelineExplorerAnalysis/TimelineExplorerAnalysis-Japanese.md
 
-## MFT, Prefetch, レジストリの調査
+## MFT, Prefetch, レジストリ, Chrome の履歴の調査
 
 1. cdir-collector で収集
    - https://github.com/CyberDefenseInstitute/CDIR
@@ -73,3 +73,5 @@ git clone https://github.com/volatilityfoundation/volatility3.git
 4. Eric Zimmerman’s Tools (PECmd.exe) で Prefetch の解析を CSV に抽出
 5. Eric Zimmerman’s Tools (Timeline Explorer) で 出力された CSV ファイルを閲覧
 6. Eric Zimmerman’s Tools (RegistryExplorer.exe) でレジストリを調査
+7. ChromeHistoryView で Chrome の履歴を調査 (Options > Advanced Options で指定)
+   - https://www.nirsoft.net/utils/chrome_history_view.html
