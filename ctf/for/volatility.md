@@ -1,11 +1,22 @@
 # Volatility
 
+- https://volatilityfoundation.org/announcing-the-official-parity-release-of-volatility-3/
+- https://github.com/volatilityfoundation/volatility3
+- https://github.com/volatilityfoundation/volatility/wiki/Command-Reference
+- https://blog.onfvp.com/post/volatility-cheatsheet/
+- [メモリフォレンジックCTF「MemLabs」Lab3にVolatility3で挑戦してみた #Security - Qiita](https://qiita.com/kzzzkr23/items/618a226028bcddc7d495)
 - [メモリフォレンジックCTF「MemLabs」Lab1のWriteUp: NECセキュリティブログ | NEC](https://jpn.nec.com/cybersecurity/blog/200131/index.html)
 - [CTFのフォレンジックにおけるメモリフォレンジックまとめ [Volatility 3, Volatility 2] - はまやんはまやんはまやん](https://blog.hamayanhamayan.com/entry/2022/12/14/231806)
-- https://github.com/volatilityfoundation/volatility/wiki/Command-Reference
-- https://volatilityfoundation.org/announcing-the-official-parity-release-of-volatility-3/
 
-# Install
+## Install on WSL2 (Ubuntu 22.04 LTS)
+
+```zsh
+sudo apt install python3-pip python3-yara python3-capstone python3-pycryptodome
+sudo pip3 install -U pefile leechcorepyc gcsfs s3fs
+git clone https://github.com/volatilityfoundation/volatility3.git
+```
+
+## Install
 
 - https://github.com/volatilityfoundation/volatility/wiki/Installation
 
@@ -13,7 +24,7 @@
 pip3 install -U volatility3
 ```
 
-# Usage
+## Usage
 
 - https://github.com/volatilityfoundation/volatility/wiki/Command-Reference#filescan
 - https://github.com/volatilityfoundation/volatility/wiki/Command-Reference#dumpfiles
