@@ -1,67 +1,7 @@
 # Forensics - Tools
+
 - [Forensics入門（CTF） #CTF - Qiita](https://qiita.com/knqyf263/items/6ebf06e27be7c48aab2e)
 - https://georgeom.net/StegOnline/checklist
-## 7zip
-```zsh
-sudo apt install 7zip
-
-7z e -pPASSWORD a.zip
-```
-## Binwalk
-```zsh
-sudo apt install binwalk
-binwalk -e foo.jpg
-```
-## pngcheck
-```zsh
-sudo apt install pngcheck
-
-pngcheck -v a.png
-```
-## Steghide
-```zsh
-sudo apt install steghide
-
-steghide info foo.jpg
-```
-## John the Ripper
-- https://www.openwall.com/john/doc/EXAMPLES.shtml
-- [john the ripper メモ #JohntheRipper - Qiita](https://qiita.com/shorii-shelly/items/e259c609458e2402432b)
-## pkcrack
-- https://github.com/keyunluo/pkcrack
-- [【CTF】 SECCON 2015 online「Unzip the file」解説](https://zenn.dev/mattsunkun/articles/9a4165634a4f9a)
-- [PkCrack は -d を付けないと処理が終わらない #CTF - Qiita](https://qiita.com/tomii9273/items/e78918b8d72802968e34)
-### Install
-```zsh
-git clone https://github.com/keyunluo/pkcrack
-chmod +x ~/pkcrack/bin/pkcrack
-```
-### Usage
-```zsh
-pkcrack -C encrypted-ZIP -c ciphertextname -P plaintext-ZIP
-      -p plaintextname -d decrypted_file -a
-```
-## Autopsy
-- https://www.autopsy.com/
-## Volatility3
-- https://github.com/volatilityfoundation/volatility3
-- https://blog.onfvp.com/post/volatility-cheatsheet/
-- [メモリフォレンジックCTF「MemLabs」Lab3にVolatility3で挑戦してみた #Security - Qiita](https://qiita.com/kzzzkr23/items/618a226028bcddc7d495)
-### Install on WSL2 (Ubuntu 22.04 LTS)
-```zsh
-sudo apt install python3-pip python3-yara python3-capstone python3-pycryptodome
-sudo pip3 install -U pefile leechcorepyc gcsfs s3fs
-git clone https://github.com/volatilityfoundation/volatility3.git
-```
-### Usage
-```zsh
-~/volatility3/vol.py -f memdump.mem windows.info
-```
-
-## Hayabusa
-- https://github.com/Yamato-Security/hayabusa
-- https://github.com/Yamato-Security/hayabusa/blob/main/README-Japanese.md#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95
-- https://github.com/Yamato-Security/hayabusa/blob/main/doc/TimelineExplorerAnalysis/TimelineExplorerAnalysis-Japanese.md
 
 ## MFT, Prefetch, レジストリ, Chrome の履歴の調査
 
@@ -76,7 +16,99 @@ git clone https://github.com/volatilityfoundation/volatility3.git
 7. ChromeHistoryView で Chrome の履歴を調査 (Options > Advanced Options で指定)
    - https://www.nirsoft.net/utils/chrome_history_view.html
 
-## メモリダンプ取得ツール
+## メモリ解析
+
+### メモリダンプ取得ツール
 
 - https://github.com/Velocidex/WinPmem
 - https://www.exterro.com/digital-forensics-software/ftk-imager
+
+### メモリ解析ツール
+
+- https://github.com/ufrisk/MemProcFS
+- https://github.com/volatilityfoundation
+
+### Volatility3
+
+- https://github.com/volatilityfoundation/volatility3
+- https://blog.onfvp.com/post/volatility-cheatsheet/
+- [メモリフォレンジックCTF「MemLabs」Lab3にVolatility3で挑戦してみた #Security - Qiita](https://qiita.com/kzzzkr23/items/618a226028bcddc7d495)
+
+#### Install on WSL2 (Ubuntu 22.04 LTS)
+
+```zsh
+sudo apt install python3-pip python3-yara python3-capstone python3-pycryptodome
+sudo pip3 install -U pefile leechcorepyc gcsfs s3fs
+git clone https://github.com/volatilityfoundation/volatility3.git
+```
+
+#### Usage
+
+```zsh
+~/volatility3/vol.py -f memdump.mem windows.info
+```
+
+## Autopsy
+
+- https://www.autopsy.com/
+
+## 7zip
+
+```zsh
+sudo apt install 7zip
+
+7z e -pPASSWORD a.zip
+```
+
+## Binwalk
+
+```zsh
+sudo apt install binwalk
+binwalk -e foo.jpg
+```
+
+## pngcheck
+
+```zsh
+sudo apt install pngcheck
+
+pngcheck -v a.png
+```
+
+## Steghide
+
+```zsh
+sudo apt install steghide
+
+steghide info foo.jpg
+```
+
+## John the Ripper
+
+- https://www.openwall.com/john/doc/EXAMPLES.shtml
+- [john the ripper メモ #JohntheRipper - Qiita](https://qiita.com/shorii-shelly/items/e259c609458e2402432b)
+
+## pkcrack
+
+- https://github.com/keyunluo/pkcrack
+- [【CTF】 SECCON 2015 online「Unzip the file」解説](https://zenn.dev/mattsunkun/articles/9a4165634a4f9a)
+- [PkCrack は -d を付けないと処理が終わらない #CTF - Qiita](https://qiita.com/tomii9273/items/e78918b8d72802968e34)
+
+### Install
+
+```zsh
+git clone https://github.com/keyunluo/pkcrack
+chmod +x ~/pkcrack/bin/pkcrack
+```
+
+### Usage
+
+```zsh
+pkcrack -C encrypted-ZIP -c ciphertextname -P plaintext-ZIP
+      -p plaintextname -d decrypted_file -a
+```
+
+## Hayabusa
+- https://github.com/Yamato-Security/hayabusa
+- https://github.com/Yamato-Security/hayabusa/blob/main/README-Japanese.md#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95
+- https://github.com/Yamato-Security/hayabusa/blob/main/doc/TimelineExplorerAnalysis/TimelineExplorerAnalysis-Japanese.md
