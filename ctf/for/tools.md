@@ -21,6 +21,9 @@
 ### メモリダンプ取得ツール
 
 - https://github.com/Velocidex/WinPmem
+  ```zsh
+  winpmem_mini_x64_rc2.exe memdump.mem
+  ```
 - https://www.exterro.com/digital-forensics-software/ftk-imager
 
 ### メモリ解析ツール
