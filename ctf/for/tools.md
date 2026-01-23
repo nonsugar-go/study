@@ -10,10 +10,10 @@
 - https://github.com/Yamato-Security/hayabusa/blob/main/doc/TimelineExplorerAnalysis/TimelineExplorerAnalysis-Japanese.md
 
 ```console
-hayabusa-3.6.0-win-x64.exe help
-hayabusa-3.6.0-win-x64.exe eid-metrics -d C:\Logs
-hayabusa-3.6.0-win-x64.exe csv-timeline -d C:\Logs -o result.csv -p all-field-info
-hayabusa-3.6.0-win-x64.exe search -d C:\Logs -o result.csv -k "10.10.10.10"
+hayabusa-x.x.x-win-x64.exe help
+hayabusa-x.x.x-win-x64.exe eid-metrics -d C:\Logs
+hayabusa-x.x.x-win-x64.exe csv-timeline -d C:\Logs -o result.csv -p all-field-info
+hayabusa-x.x.x-win-x64.exe search -d C:\Logs -o result.csv -k "10.10.10.10"
 ```
 
 ## MFT, Prefetch, レジストリ, Chrome の履歴の調査
