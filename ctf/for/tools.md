@@ -3,6 +3,16 @@
 - [Forensics入門（CTF） #CTF - Qiita](https://qiita.com/knqyf263/items/6ebf06e27be7c48aab2e)
 - https://georgeom.net/StegOnline/checklist
 
+## Hayabusa (イベントビューアの解析)
+
+- https://github.com/Yamato-Security/hayabusa
+- https://github.com/Yamato-Security/hayabusa/blob/main/README-Japanese.md#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95
+- https://github.com/Yamato-Security/hayabusa/blob/main/doc/TimelineExplorerAnalysis/TimelineExplorerAnalysis-Japanese.md
+
+```console
+hayabusa-3.6.0-win-x64.exe eid-metrics -d C:\Logs
+```
+
 ## MFT, Prefetch, レジストリ, Chrome の履歴の調査
 
 1. cdir-collector で収集
@@ -90,8 +100,3 @@ chmod +x ~/pkcrack/bin/pkcrack
 pkcrack -C encrypted-ZIP -c ciphertextname -P plaintext-ZIP
       -p plaintextname -d decrypted_file -a
 ```
-
-## Hayabusa
-- https://github.com/Yamato-Security/hayabusa
-- https://github.com/Yamato-Security/hayabusa/blob/main/README-Japanese.md#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95
-- https://github.com/Yamato-Security/hayabusa/blob/main/doc/TimelineExplorerAnalysis/TimelineExplorerAnalysis-Japanese.md
