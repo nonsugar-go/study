@@ -31,6 +31,7 @@ pip3 install -U volatility3
 - https://github.com/volatilityfoundation/volatility/wiki/Command-Reference#memmap
 
 ```zsh
+vol --help|grep '^\s*windows'
 vol -f memdump.mem windows.info
 vol -f memdump.mem windows.pstree
 vol -f memdump.mem windows.cmdscan
