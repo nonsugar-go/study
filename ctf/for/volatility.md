@@ -35,6 +35,7 @@ vol --help|grep '^\s*windows'
 vol -f memdump.mem windows.info
 vol -f memdump.mem windows.pslist
 vol -f memdump.mem windows.pstree
+vol -f memdump.mem windows.envars
 vol -f memdump.mem windows.cmdscan
 vol -f memdump.mem windows.consoles
 vol -f memdump.mem windows.cmdline
