@@ -75,3 +75,8 @@ git clone https://github.com/volatilityfoundation/volatility3.git
 6. Eric Zimmerman’s Tools (RegistryExplorer.exe) でレジストリを調査
 7. ChromeHistoryView で Chrome の履歴を調査 (Options > Advanced Options で指定)
    - https://www.nirsoft.net/utils/chrome_history_view.html
+
+## メモリダンプ取得ツール
+
+- https://github.com/Velocidex/WinPmem
+- https://www.exterro.com/digital-forensics-software/ftk-imager
