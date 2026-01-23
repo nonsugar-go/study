@@ -12,7 +12,7 @@
 ```console
 hayabusa-3.6.0-win-x64.exe help
 hayabusa-3.6.0-win-x64.exe eid-metrics -d C:\Logs
-hayabusa-3.6.0-win-x64.exe csv-timeline -d C:\Logs -o result.txt -p all-field-info
+hayabusa-3.6.0-win-x64.exe csv-timeline -d C:\Logs -o result.csv -p all-field-info
 ```
 
 ## MFT, Prefetch, レジストリ, Chrome の履歴の調査
