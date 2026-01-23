@@ -28,26 +28,6 @@
 - https://github.com/ufrisk/MemProcFS
 - https://github.com/volatilityfoundation
 
-### Volatility3
-
-- https://github.com/volatilityfoundation/volatility3
-- https://blog.onfvp.com/post/volatility-cheatsheet/
-- [メモリフォレンジックCTF「MemLabs」Lab3にVolatility3で挑戦してみた #Security - Qiita](https://qiita.com/kzzzkr23/items/618a226028bcddc7d495)
-
-#### Install on WSL2 (Ubuntu 22.04 LTS)
-
-```zsh
-sudo apt install python3-pip python3-yara python3-capstone python3-pycryptodome
-sudo pip3 install -U pefile leechcorepyc gcsfs s3fs
-git clone https://github.com/volatilityfoundation/volatility3.git
-```
-
-#### Usage
-
-```zsh
-~/volatility3/vol.py -f memdump.mem windows.info
-```
-
 ## Autopsy
 
 - https://www.autopsy.com/
