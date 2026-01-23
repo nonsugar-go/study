@@ -11,6 +11,7 @@
 - https://attack.mitre.org/techniques/T1033/
 - https://attack.mitre.org/techniques/T1016/
 - https://attack.mitre.org/techniques/T1082/
+- https://attack.mitre.org/techniques/T1547/001/
 
 ```console
 hayabusa-x.x.x-win-x64.exe help
