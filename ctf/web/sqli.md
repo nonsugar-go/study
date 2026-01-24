@@ -2,6 +2,7 @@
 
 - https://portswigger.net/web-security/sql-injection/cheat-sheet
 - https://portswigger.net/web-security/sql-injection/union-attacks
+- https://swisskyrepo.github.io/PayloadsAllTheThings/SQL%20Injection/MySQL%20Injection/#limit-into-method
 
 ## shell sciprt
 
