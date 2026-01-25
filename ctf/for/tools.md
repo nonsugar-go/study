@@ -3,6 +3,10 @@
 - [Forensics入門（CTF） #CTF - Qiita](https://qiita.com/knqyf263/items/6ebf06e27be7c48aab2e)
 - https://georgeom.net/StegOnline/checklist
 
+## URL のチェック
+
+- https://urlscan.io/
+
 ## Hayabusa (イベントビューアの解析)
 
 - https://github.com/Yamato-Security/hayabusa
