@@ -22,6 +22,7 @@
 - https://developer.mozilla.org/ja/docs/Web/API/Document/querySelector
 - https://developer.mozilla.org/ja/docs/Web/API/Document/querySelectorAll
 - https://developer.mozilla.org/ja/docs/Web/API/Element/classList
+- https://developer.mozilla.org/ja/docs/Web/API/EventTarget/addEventListener
 
 ## 標準組み込みオブジェクト
 
