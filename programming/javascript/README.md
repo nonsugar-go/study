@@ -1,5 +1,5 @@
 # HTML
-- https://developer.mozilla.org/ja/docs/Web/HTML
+- https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements
 
 # JavaScript
 - https://developer.mozilla.org/en-US/docs/Web/javascript
