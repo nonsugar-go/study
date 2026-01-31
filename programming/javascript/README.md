@@ -29,6 +29,7 @@
 - https://developer.mozilla.org/ja/docs/Web/API/Document/createElement
 - https://developer.mozilla.org/ja/docs/Web/API/Node/appendChild
 - https://developer.mozilla.org/ja/docs/Web/API/Node/removeChild
+- https://developer.mozilla.org/ja/docs/Web/API/Node/insertBefore
 - https://developer.mozilla.org/ja/docs/Web/API/Node/parentNode
 - https://developer.mozilla.org/ja/docs/Web/API/Node/cloneNode
 - https://developer.mozilla.org/ja/docs/Web/API/Element/innerHTML
