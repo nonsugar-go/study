@@ -58,7 +58,7 @@
 - https://developer.mozilla.org/ja/docs/Web/API/Event
 - https://developer.mozilla.org/ja/docs/Web/API/Event/preventDefault
 - https://developer.mozilla.org/ja/docs/Web/API/Event/stopPropagation
-- https://developer.mozilla.org/ja/docs/Web/API/Window/setInterval
+- https://developer.mozilla.org/ja/docs/Web/API/WorkerGlobalScope/setInterval
 
 ## 標準組み込みオブジェクト
 
