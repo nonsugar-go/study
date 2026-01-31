@@ -28,6 +28,12 @@
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON
 
+## ファイル
+
+- https://developer.mozilla.org/ja/docs/Web/API/File
+- https://developer.mozilla.org/ja/docs/Web/API/FileReader
+- https://developer.mozilla.org/ja/docs/Web/API/FileReader/readAsDataURL
+
 ## Math
 
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Math/random
