@@ -27,6 +27,11 @@
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON
 
+## Math
+
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
+
 ## タイマー
 
 - https://developer.mozilla.org/ja/docs/Web/API/WorkerGlobalScope/setInterval
