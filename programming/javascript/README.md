@@ -21,6 +21,7 @@
 - https://developer.mozilla.org/ja/docs/Web/API/HTMLInputElement
 - https://developer.mozilla.org/ja/docs/Web/API/HTMLAnchorElement
 - https://developer.mozilla.org/ja/docs/Web/API/HTMLImageElement
+- https://developer.mozilla.org/ja/docs/Web/API/Element/setAttribute
 - https://developer.mozilla.org/ja/docs/Web/API/Document/getElementById
 - https://developer.mozilla.org/ja/docs/Web/API/Document/querySelector
 - https://developer.mozilla.org/ja/docs/Web/API/Document/querySelectorAll
