@@ -15,6 +15,23 @@
 - https://www.tohoho-web.com/js/index.htm
 - https://caniuse.com/
 
+## アロー関数式
+
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+## 標準組み込みオブジェクト
+
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Map
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON
+
+## タイマー
+
+- https://developer.mozilla.org/ja/docs/Web/API/WorkerGlobalScope/setInterval
+- https://developer.mozilla.org/ja/docs/Web/API/WorkerGlobalScope/setTimeout
+
 ## DOM
 
 - https://developer.mozilla.org/ja/docs/Web/API/Document_Object_Model
@@ -58,19 +75,6 @@
 - https://developer.mozilla.org/ja/docs/Web/API/Event
 - https://developer.mozilla.org/ja/docs/Web/API/Event/preventDefault
 - https://developer.mozilla.org/ja/docs/Web/API/Event/stopPropagation
-- https://developer.mozilla.org/ja/docs/Web/API/WorkerGlobalScope/setInterval
-
-## 標準組み込みオブジェクト
-
-- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String
-- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array
-- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Map
-- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object
-- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON
-
-## アロー関数式
-
-- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
 # TypeScript
 
