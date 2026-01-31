@@ -18,14 +18,23 @@
 ## DOM
 
 - https://developer.mozilla.org/ja/docs/Web/API/Document_Object_Model
+
+### Element
+
+- https://developer.mozilla.org/ja/docs/Web/API/Document/getElementById
+- https://developer.mozilla.org/ja/docs/Web/API/Document/querySelector
+- https://developer.mozilla.org/ja/docs/Web/API/Document/querySelectorAll
+
 - https://developer.mozilla.org/ja/docs/Web/API/HTMLInputElement
 - https://developer.mozilla.org/ja/docs/Web/API/HTMLAnchorElement
 - https://developer.mozilla.org/ja/docs/Web/API/HTMLImageElement
 - https://developer.mozilla.org/ja/docs/Web/API/Element/setAttribute
-- https://developer.mozilla.org/ja/docs/Web/API/Document/getElementById
-- https://developer.mozilla.org/ja/docs/Web/API/Document/querySelector
-- https://developer.mozilla.org/ja/docs/Web/API/Document/querySelectorAll
-- https://developer.mozilla.org/ja/docs/Web/API/EventTarget/addEventListener
+
+- https://developer.mozilla.org/ja/docs/Web/API/Element/innerHTML
+- https://developer.mozilla.org/ja/docs/Web/API/Node/textContent
+
+### Create Element
+
 - https://developer.mozilla.org/ja/docs/Web/API/Document/createElement
 - https://developer.mozilla.org/ja/docs/Web/API/Node/appendChild
 - https://developer.mozilla.org/ja/docs/Web/API/Node/removeChild
@@ -36,13 +45,19 @@
 - https://developer.mozilla.org/ja/docs/Web/API/Document/firstElementChild
 - https://developer.mozilla.org/ja/docs/Web/API/Node/firstChild
 - https://developer.mozilla.org/ja/docs/Web/API/Node/cloneNode
-- https://developer.mozilla.org/ja/docs/Web/API/Element/innerHTML
-- https://developer.mozilla.org/ja/docs/Web/API/Node/textContent
+
+### Class
+
 - https://developer.mozilla.org/ja/docs/Web/API/Element/classList
 - https://developer.mozilla.org/ja/docs/Web/API/DOMTokenList/add
 - https://developer.mozilla.org/ja/docs/Web/API/DOMTokenList/remove
+
+### Event
+
 - https://developer.mozilla.org/ja/docs/Web/API/EventTarget/addEventListener
 - https://developer.mozilla.org/ja/docs/Web/API/Event
+- https://developer.mozilla.org/ja/docs/Web/API/Event/preventDefault
+- https://developer.mozilla.org/ja/docs/Web/API/Event/stopPropagation
 
 ## 標準組み込みオブジェクト
 
