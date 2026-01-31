@@ -41,6 +41,7 @@
 - https://developer.mozilla.org/ja/docs/Web/API/Element/classList
 - https://developer.mozilla.org/ja/docs/Web/API/DOMTokenList/add
 - https://developer.mozilla.org/ja/docs/Web/API/DOMTokenList/remove
+- https://developer.mozilla.org/ja/docs/Web/API/EventTarget/addEventListener
 
 ## 標準組み込みオブジェクト
 
