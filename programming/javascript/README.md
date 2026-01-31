@@ -30,6 +30,7 @@
 - https://developer.mozilla.org/ja/docs/Web/API/Node/appendChild
 - https://developer.mozilla.org/ja/docs/Web/API/Node/removeChild
 - https://developer.mozilla.org/ja/docs/Web/API/Node/parentNode
+- https://developer.mozilla.org/ja/docs/Web/API/Node/cloneNode
 - https://developer.mozilla.org/ja/docs/Web/API/Element/innerHTML
 - https://developer.mozilla.org/ja/docs/Web/API/Node/textContent
 - https://developer.mozilla.org/ja/docs/Web/API/Element/classList
