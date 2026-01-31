@@ -4,7 +4,7 @@
 
 # CSS
 
-- https://developer.mozilla.org/ja/docs/Web/CSS
+- https://developer.mozilla.org/ja/docs/Web/CSS/Reference
 
 # JavaScript
 
