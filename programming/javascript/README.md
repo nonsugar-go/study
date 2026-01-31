@@ -5,7 +5,8 @@
 # CSS
 
 - https://developer.mozilla.org/ja/docs/Web/CSS/Reference
-- https://mae.chab.in/archives/2553 BEM
+- https://mae.chab.in/archives/2553 BEM, Sass
+- https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass
 
 # JavaScript
 
