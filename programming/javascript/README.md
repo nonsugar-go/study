@@ -1,6 +1,7 @@
 # HTML
 
 - https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements
+- https://developer.mozilla.org/ja/docs/Learn_web_development/Extensions/Forms/Basic_native_form_controls
 
 # CSS
 
