@@ -25,6 +25,8 @@
 - https://developer.mozilla.org/ja/docs/Web/API/Document/createElement
 - https://developer.mozilla.org/ja/docs/Web/API/Node/appendChild
 - https://developer.mozilla.org/ja/docs/Web/API/Node/removeChild
+- https://developer.mozilla.org/ja/docs/Web/API/Element/innerHTML
+- https://developer.mozilla.org/ja/docs/Web/API/Node/textContent
 - https://developer.mozilla.org/ja/docs/Web/API/Element/classList
 - https://developer.mozilla.org/ja/docs/Web/API/DOMTokenList/add
 - https://developer.mozilla.org/ja/docs/Web/API/DOMTokenList/remove
