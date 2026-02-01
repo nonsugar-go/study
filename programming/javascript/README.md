@@ -46,14 +46,15 @@
 - https://developer.mozilla.org/ja/docs/Web/API/FileReader/readAsDataURL
 - https://developer.mozilla.org/ja/docs/Web/API/HTML_Drag_and_Drop_API/File_drag_and_drop
 
-## タイマー
-
-- https://developer.mozilla.org/ja/docs/Web/API/WorkerGlobalScope/setInterval
-- https://developer.mozilla.org/ja/docs/Web/API/WorkerGlobalScope/setTimeout
-
 ## DOM
 
 - https://developer.mozilla.org/ja/docs/Web/API/Document_Object_Model
+
+### Window
+
+- https://developer.mozilla.org/ja/docs/Web/API/Window/setInterval
+- https://developer.mozilla.org/ja/docs/Web/API/Window/setTimeout
+- https://developer.mozilla.org/ja/docs/Web/API/Window/fetch
 
 ### Get Element
 
