@@ -33,6 +33,7 @@
 - https://developer.mozilla.org/ja/docs/Web/API/File
 - https://developer.mozilla.org/ja/docs/Web/API/FileReader
 - https://developer.mozilla.org/ja/docs/Web/API/FileReader/readAsDataURL
+- https://developer.mozilla.org/ja/docs/Web/API/HTML_Drag_and_Drop_API/File_drag_and_drop
 
 ## Math
 
