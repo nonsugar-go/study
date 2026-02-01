@@ -9,12 +9,20 @@
 - https://mae.chab.in/archives/2553 BEM, Sass
 - https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass
 
+# 開発環境
+
+- https://babeljs.io/docs/
+- https://babeljs.io/docs/babel-polyfill
+- https://webpack.js.org/
+- https://qiita.com/yumsn/items/7f553e4babf5b7b261b6 ESLint
+
 # JavaScript
 
 - https://developer.mozilla.org/en-US/docs/Web/javascript
 - https://en.wikipedia.org/wiki/ECMAScript_version_history
 - https://www.tohoho-web.com/js/index.htm
 - https://caniuse.com/
+- https://standardjs.com/readme-ja
 
 ## アロー関数式
 
