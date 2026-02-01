@@ -27,12 +27,17 @@
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON
 
-## 文字列
+### 文字列
 
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/trim
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/match
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/replace
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test
+
+### Math
+
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
 
 ## ファイル
 
@@ -40,11 +45,6 @@
 - https://developer.mozilla.org/ja/docs/Web/API/FileReader
 - https://developer.mozilla.org/ja/docs/Web/API/FileReader/readAsDataURL
 - https://developer.mozilla.org/ja/docs/Web/API/HTML_Drag_and_Drop_API/File_drag_and_drop
-
-## Math
-
-- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
 
 ## タイマー
 
