@@ -22,11 +22,15 @@
 
 ## 標準組み込みオブジェクト
 
-- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Map
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON
+
+## 文字列
+
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/trim
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/replace
 
 ## ファイル
 
