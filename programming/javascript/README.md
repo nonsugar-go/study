@@ -33,7 +33,7 @@
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Map
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object
-- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
 
 ### 文字列
 
