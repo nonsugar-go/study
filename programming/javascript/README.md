@@ -32,6 +32,7 @@
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/trim
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/match
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test
 
 ## ファイル
 
