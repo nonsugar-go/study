@@ -27,6 +27,6 @@ Cipher Block Chaining
          P0               P1               P2      
 ```
 
-P0 := Dec(C0) XOR IV
-P1 := Dec(C1) XOR C0
-P2 := Dec(C2) XOR C1
+- P0 := Dec(C0) XOR IV
+- P1 := Dec(C1) XOR C0
+- P2 := Dec(C2) XOR C1
