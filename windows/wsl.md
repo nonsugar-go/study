@@ -369,9 +369,9 @@ sudo apt install openvpn
 
 ```zsh
 sudo apt install openjdk-21-jdk
-curl -LO https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_11.4.2_build/ghidra_11.4.2_PUBLIC_20250826.zip
-unzip ./ghidra_11.4.2_PUBLIC_20250826.zip -d ~/CTF
-~/CTF/ghidra_11.4.2_PUBLIC/ghidraRun&
+curl -LO https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.0.2_build/ghidra_12.0.2_PUBLIC_20260129.zip
+unzip ./ghidra_12.0.2_PUBLIC_20260129.zip -d ~/CTF
+~/CTF/ghidra_12.0.2_PUBLIC/ghidraRun&
 ```
 
 ### IDA Free
