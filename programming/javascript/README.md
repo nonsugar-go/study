@@ -54,6 +54,11 @@
 - https://developer.mozilla.org/ja/docs/Web/API/FileReader/readAsDataURL
 - https://developer.mozilla.org/ja/docs/Web/API/HTML_Drag_and_Drop_API/File_drag_and_drop
 
+## Intersection Observer
+
+- https://developer.mozilla.org/ja/docs/Web/API/IntersectionObserver
+- https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox/
+
 ## DOM
 
 - https://developer.mozilla.org/ja/docs/Web/API/Document_Object_Model
