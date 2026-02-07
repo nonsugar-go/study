@@ -58,6 +58,7 @@
 
 - https://developer.mozilla.org/ja/docs/Web/API/IntersectionObserver
 - https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox/
+- https://developers.cyberagent.co.jp/blog/archives/6057/
 
 ## DOM
 
