@@ -12,3 +12,6 @@
 - https://www.google.com/search?q=javascript+deobfuscator
 - https://obf-io.deobfuscate.io/
 
+## 難読化ツール
+
+- https://github.com/javascript-obfuscator/javascript-obfuscator
