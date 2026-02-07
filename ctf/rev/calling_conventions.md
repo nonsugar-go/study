@@ -12,7 +12,7 @@
   |--|-------|---|---|---|---|---|
   |0|read|0x00|unsigned int fd|char *buf|size_t count|-|
   |1|write|0x01|unsigned int fd|const char *buf|size_t count|-|
-  |60|exit|0x3c|int error_code|-|-|
+  |60|exit|0x3c|int error_code|-|-|-|
 - [System V Application Binary Interface AMD64Architecture Processor Supplement - 3.2.3 Parameter Passing](https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf)
   > If the class is INTEGER, the next available register of the sequence %rdi, %rsi, %rdx, %rcx, %r8 and %r9 is used
 - 整数・ポインタ引数 - RDI, RSI, RDX, RCX, R8, R9
