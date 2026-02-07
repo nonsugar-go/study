@@ -3,7 +3,7 @@
 
 - [Cloud Computing](cloud-computing)
 - [CTF](ctf)
-  - [VScode](programming/vscode.md)
+  - [VSCode](programming/vscode.md)
 - [Linux](linux)
 - [Network Devices](network-devices)
 - [Programming](programming)
