@@ -9,5 +9,6 @@
 
 ## 難読化解除ツール
 
+- https://www.google.com/search?q=javascript+deobfuscator
 - https://obf-io.deobfuscate.io/
 
