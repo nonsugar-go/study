@@ -69,12 +69,14 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 ## Python
 - https://marketplace.visualstudio.com/items?itemName=ms-python.python
 - https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter
+<!--
   - settings.json
 ```json
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
 ```
+-->
 - https://takuma.tech/?post=20231009_Python_black_fomatter
 - [Visual Studio Codeの設定「虎の巻」：Python編：特集：Visual Studio Codeを使いこなそう！（1/3 ページ） - ＠IT](https://atmarkit.itmedia.co.jp/ait/articles/1711/24/news034.html)
 ## JavaScript
