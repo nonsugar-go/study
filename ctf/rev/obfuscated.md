@@ -7,4 +7,7 @@
 - https://unit42.paloaltonetworks.com/using-llms-obfuscate-malicious-javascript/
 - https://unit42.paloaltonetworks.com/malicious-javascript-using-jsfiretruck-as-obfuscation/
 
+## 難読化解除ツール
+
+- https://obf-io.deobfuscate.io/
 
