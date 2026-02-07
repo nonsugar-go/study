@@ -8,7 +8,7 @@
 - [Programming](programming)
 - [Tools](tools)
 - [Windows](windows)
-  - [wsl](wsl.md)
+  - [wsl](windows/wsl.md)
 
 # About me
 :tomato: :tomato:
