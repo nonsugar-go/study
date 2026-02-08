@@ -36,6 +36,7 @@ hayabusa-x.x.x-win-x64.exe search -d C:\Logs -o result.csv -k "10.10.10.10"
 6. Eric Zimmerman’s Tools (RegistryExplorer.exe) でレジストリを調査
 7. ChromeHistoryView で Chrome の履歴を調査 (Options > Advanced Options で指定)
    - https://www.nirsoft.net/utils/chrome_history_view.html
+   - https://www.nirsoft.net/utils/browsing_history_view.html
 
 ## メモリ解析
 
