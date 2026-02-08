@@ -16,6 +16,10 @@ gobuster dir -u http://$target/foo/ -w /usr/share/seclists/Discovery/Web-Content
 
 - https://github.com/epi052/feroxbuster
 
+```zsh
+ feroxbuster -u http://$target/
+```
+
 ## dirsearch
 
 - https://github.com/maurosoria/dirsearch
