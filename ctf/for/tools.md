@@ -29,7 +29,7 @@ hayabusa-x.x.x-win-x64.exe search -d C:\Logs -o result.csv -k "10.10.10.10"
 - https://github.com/EricZimmerman/evtx
 
 ```console
-EvtxECmd.exe -d C:\Users\Administrator\Desktop\pre-forensics-300\pre-forensics-300\Evtx --csv C:\evet
+EvtxECmd.exe -d C:\Evtx --csv C:\CSV
 ```
 
 > [!NOTE]
