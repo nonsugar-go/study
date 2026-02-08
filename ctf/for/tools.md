@@ -24,9 +24,21 @@ hayabusa-x.x.x-win-x64.exe csv-timeline -d C:\Logs -o result.csv -p all-field-in
 hayabusa-x.x.x-win-x64.exe search -d C:\Logs -o result.csv -k "10.10.10.10"
 ```
 
+## イベントビューアの解析 (Eric Zimmerman's EvtxECmd)
+
+- https://github.com/EricZimmerman/evtx
+
+```console
+EvtxECmd.exe -d C:\Users\Administrator\Desktop\pre-forensics-300\pre-forensics-300\Evtx --csv C:\evet
+```
+
 > [!NOTE]
-> Microsoft-Windows-PowerShell/Operational
-> イベント ID 4104 は、PowerShell が実行したスクリプトの「中身そのもの」を記録したログ
+> **Security**
+> - Event ID 4624: Successful logon
+> - Event ID 4624: An account was loged off
+>
+> **Microsoft-Windows-PowerShell/Operational**
+> - Event ID 4104: PowerShell が実行したスクリプトの「中身そのもの」を記録したログ
 
 ## MFT, Prefetch, レジストリ, Chrome の履歴の調査
 
