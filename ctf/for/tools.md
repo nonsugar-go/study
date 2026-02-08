@@ -87,6 +87,15 @@ sudo apt install steghide
 steghide info foo.jpg
 ```
 
+## hashcat
+
+- https://github.com/hashcat/hashcat
+- https://github.com/zacheller/rockyou
+
+```zsh
+hashcat hash.txt /usr/share/wordlists/rockyou.txt 
+```
+
 ## John the Ripper
 
 - https://www.openwall.com/john/doc/EXAMPLES.shtml
