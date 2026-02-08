@@ -93,8 +93,16 @@ steghide info foo.jpg
 - https://github.com/zacheller/rockyou
 
 ```zsh
-hashcat hash.txt /usr/share/wordlists/rockyou.txt
-hashcat hash.txt /usr/share/wordlists/rockyou.txt -m 1400
+$ hashcat hash.txt /usr/share/wordlists/rockyou.txt
+ (snip)
+  34600 | MD6 (256)                                                  | Raw Hash
+   1400 | SHA2-256                                                   | Raw Hash
+  17400 | SHA3-256                                                   | Raw Hash
+ (snip)
+```
+
+```zsh
+$ hashcat hash.txt /usr/share/wordlists/rockyou.txt -m 1400
 ```
 
 ## John the Ripper
