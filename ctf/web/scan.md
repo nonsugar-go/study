@@ -2,6 +2,8 @@
 
 ## gobuster
 
+- https://github.com/OJ/gobuster
+
 ```zsh
 gobuster dir -u http://10.10.10.10/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .php,.txt
 
@@ -9,8 +11,13 @@ gobuster dir -u http://10.10.10.10/ -w /usr/share/seclists/Discovery/Web-Content
 gobuster dir -u http://10.10.10.10/foo/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .php,.txt
 ```
 
-- https://github.com/maurosoria/dirsearch
+## feroxbuster
+
 - https://github.com/epi052/feroxbuster
+
+## dirsearch
+
+- https://github.com/maurosoria/dirsearch
 
 ## nmap
 
