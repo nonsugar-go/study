@@ -3,6 +3,7 @@
 ## gobuster
 
 - https://github.com/OJ/gobuster
+- https://github.com/danielmiessler/SecLists
 
 ```zsh
 gobuster dir -u http://$target/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .php,.txt
