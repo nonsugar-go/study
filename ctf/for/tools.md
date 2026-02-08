@@ -53,6 +53,8 @@ EvtxECmd.exe -d C:\Evtx --csv C:\CSV
 4. Eric Zimmerman’s Tools (PECmd.exe) で Prefetch の解析を CSV に抽出
 5. Eric Zimmerman’s Tools (Timeline Explorer) で 出力された CSV ファイルを閲覧
 6. Eric Zimmerman’s Tools (RegistryExplorer.exe) でレジストリを調査
+   > [!NOTE]
+   > HKLM:\Software\Microsoft\Windows\CurrentVersion\Run
 7. ChromeHistoryView で Chrome の履歴を調査 (Options > Advanced Options で指定)
    - https://www.nirsoft.net/utils/chrome_history_view.html
    - https://www.nirsoft.net/utils/browsing_history_view.html
