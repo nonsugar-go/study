@@ -24,7 +24,7 @@ hayabusa-x.x.x-win-x64.exe csv-timeline -d C:\Logs -o result.csv -p all-field-in
 hayabusa-x.x.x-win-x64.exe search -d C:\Logs -o result.csv -k "10.10.10.10"
 ```
 
-> [Infomation]
+> [!NOTE]
 > Microsoft-Windows-PowerShell/Operational
 > イベント ID 4104 は、PowerShell が実行したスクリプトの「中身そのもの」を記録したログ
 
