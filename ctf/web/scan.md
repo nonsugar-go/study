@@ -5,10 +5,10 @@
 - https://github.com/OJ/gobuster
 
 ```zsh
-gobuster dir -u http://10.10.10.10/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .php,.txt
+gobuster dir -u http://$target/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .php,.txt
 
 ## 再帰的には検索しないので、見つかったディレクトリを更に調べる必要がある。
-gobuster dir -u http://10.10.10.10/foo/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .php,.txt
+gobuster dir -u http://$target/foo/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .php,.txt
 ```
 
 ## feroxbuster
@@ -23,9 +23,9 @@ gobuster dir -u http://10.10.10.10/foo/ -w /usr/share/seclists/Discovery/Web-Con
 
 ```zsh
 sudo apt install nmap -y
-nmap -T4 192.168.1.0/24
-nmap -A -T4 192.168.1.1
-nmap -A -p 80 --script vulners 192.168.1.1 | tee result.log
+nmap -T4 $target
+nmap -A -T4 $target
+nmap -A -p 80 --script vulners $target | tee result.log
 ```
 
 ## netdiscover
