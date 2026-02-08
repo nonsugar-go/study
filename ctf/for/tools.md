@@ -44,7 +44,10 @@ EvtxECmd.exe -d C:\Evtx --csv C:\CSV
 
 1. cdir-collector で収集
    - https://github.com/CyberDefenseInstitute/CDIR
-2. Eric Zimmerman’s Tools (MFTECmd) で MFT を CSV に抽出 
+2. Eric Zimmerman’s Tools (MFTECmd) で MFT を CSV に抽出
+   ```console
+   MFTECmd.exe -f C_$MFT --csv C:\CSV
+   ```
    - https://ericzimmerman.github.io/#!index.md
 3. Eric Zimmerman’s Tools (Timeline Explorer) で 出力された CSV ファイルを閲覧
 4. Eric Zimmerman’s Tools (PECmd.exe) で Prefetch の解析を CSV に抽出
