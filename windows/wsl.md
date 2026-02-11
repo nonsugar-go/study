@@ -284,8 +284,8 @@ sudo apt install build-essential sqlite3
 - https://go.dev/doc/install
 
 ```zsh
-curl -LO https://go.dev/dl/go1.25.3.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.25.3.linux-amd64.tar.gz
+curl -LO https://go.dev/dl/go1.26.0.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.26.0.linux-amd64.tar.gz
 ```
 
 - ~/.zshrc
