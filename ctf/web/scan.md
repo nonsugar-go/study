@@ -6,10 +6,10 @@
 - https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/common.txt
 
 ```zsh
-gobuster dir -u http://$target/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .php,.txt
+gobuster dir -u http://$target/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .txt
 
 ## 再帰的には検索しないので、見つかったディレクトリを更に調べる必要がある。
-gobuster dir -u http://$target/foo/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .php,.txt
+gobuster dir -u http://$target/foo/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .txt
 ```
 
 ## feroxbuster
