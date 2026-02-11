@@ -341,8 +341,8 @@ echo "set follow-fork-mode parent" >>~/.gdbinit
 
 python3 -m venv ~/CTF/myenv
 source ~/CTF/myenv/bin/activate
-pip3 install -U pwntools ropper pycryptodome gmpy2 sympy z3-solver scapy \
-  randcrack Flask flask-unsign tqdm
+pip3 install -U Flask flask-unsign gmpy2 pwntools pycryptodome randcrack \
+  ropper scapy sympy tqdm z3-solver
 ```
 
 ### pwndbg (pwndbg でなく gdb-peda を使用する場合)
