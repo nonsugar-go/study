@@ -270,8 +270,7 @@ $ vi foo.cpp
 ## 基本的なパッケージ
 
 ```zsh
-sudo apt install 7zip bat bind9-dnsutils build-essential jq ncal sqlite3 \
-tcpdump unzip w3m
+sudo apt install bat build-essential ncal unzip w3m
 ```
 
 ## Golang
@@ -329,10 +328,9 @@ VSCode を起動して、以下の拡張をインストールする。
 ## CTF で使用できるパッケージ
 
 ```bash
-sudo apt update && sudo apt upgrade -y
-
-sudo apt install unzip plocate gdb gcc-multilib gdbserver nasm wabt z80dasm \
-  python3-venv ltrace strace socat docker-compose w3m hexer bat peco -y
+sudo apt install 7zip bind9-dnsutils docker-compose gcc-multilib gdb \
+  gdbserver hexer jq ltrace nasm nmap openvpn python3-venv socat sqlite3 \
+  strace tcpdump tshark upx-ucl wabt z80dasm
 
 cd ~/CTF
 git clone https://github.com/pwndbg/pwndbg
@@ -352,12 +350,6 @@ pip3 install -U pwntools ropper pycryptodome gmpy2 sympy z3-solver scapy \
 ```bash
 git clone https://github.com/longld/peda.git ~/peda
 echo "source ~/peda/peda.py" >> ~/.gdbinit
-```
-
-### Openvpn
-
-```zsh
-sudo apt install openvpn
 ```
 
 ### Ghidra
