@@ -7,6 +7,21 @@
 - [Web](web)
 - [Forensics](for)
 
+## Docker で試す
+
+```zsh
+$ sudo docker-compose up -d
+
+
+$ sudo docker-compose down --rmi all
+```
+
+## Socket で試す
+
+```zsh
+socat tcp-l:4444,reuseaddr,fork exec:'bash ./chall.sh'
+```
+
 ## Links
 
 - https://www.onlinegdb.com/online_python_compiler
