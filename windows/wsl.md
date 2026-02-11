@@ -267,18 +267,13 @@ $ vi foo.cpp
 :q!
 -->
 
-## 基本的なパッケージ
-
-```zsh
-sudo apt install bat build-essential ncal unzip w3m
-```
-
-## CTF で使用できるパッケージ
+## CTF
 
 ```bash
-sudo apt install 7zip bind9-dnsutils docker-compose gcc-multilib gdb \
-  gdbserver hexer jq ltrace nasm nmap openvpn python3-venv socat sqlite3 \
-  strace tcpdump tshark upx-ucl wabt z80dasm
+sudo apt install 7zip bat bind9-dnsutils build-essential docker-compose \
+  gcc-multilib gdb gdbserver hexer jq ltrace nasm ncal nmap openvpn \
+  poppler-utils python3-venv socat sqlite3 strace tcpdump tshark unzip \
+  upx-ucl w3m wabt z80dasm
 
 cd ~/CTF
 git clone https://github.com/pwndbg/pwndbg
