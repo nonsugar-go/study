@@ -270,13 +270,8 @@ $ vi foo.cpp
 ## 基本的なパッケージ
 
 ```zsh
-sudo apt install 7zip bat bind9-dnsutils jq ncal tcpdump unzip w3m
-```
-
-## ビルド パッケージなど
-
-```zsh
-sudo apt install build-essential sqlite3
+sudo apt install 7zip bat bind9-dnsutils build-essential jq ncal sqlite3 \
+tcpdump unzip w3m
 ```
 
 ## Golang
