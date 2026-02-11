@@ -297,12 +297,15 @@ echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
 -->
 
-### gobuster 用のワードリスト
+### gobuster / hashcat 用のワードリスト
 
 ```zsh
 cd ~/CTF
 curl -LO \
   https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt
+curl -LO https://raw.githubusercontent.com/zacheller/rockyou/master/rockyou.txt.tar.gz
+tar xvzf rockyou.txt.tar.gz
+rm rockyou.txt.tar.gz
 ```
 
 ### Ghidra
