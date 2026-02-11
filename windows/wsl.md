@@ -271,7 +271,7 @@ $ vi foo.cpp
 
 ```bash
 sudo apt install 7zip bat bind9-dnsutils build-essential docker-compose \
-  gcc-multilib gdb gdbserver hexer jq ltrace nasm ncal nmap openvpn \
+  gcc-multilib gdb gdbserver gobuster hexer jq ltrace nasm ncal nmap openvpn \
   poppler-utils python3-venv socat sqlite3 strace tcpdump tshark unzip \
   upx-ucl w3m wabt z80dasm
 
@@ -296,6 +296,14 @@ git clone https://github.com/longld/peda.git ~/peda
 echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
 -->
+
+### gobuster 用のワードリスト
+
+```zsh
+cd ~/CTF
+curl -LO \
+  https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt
+```
 
 ### Ghidra
 
