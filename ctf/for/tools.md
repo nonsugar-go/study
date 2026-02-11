@@ -100,6 +100,14 @@ sudo apt install pngcheck
 pngcheck -v a.png
 ```
 
+## poppler-utils
+
+```zsh
+pdfinfo file.pdf
+pdftotext file.pdf
+pdfimages -all file.pdf img
+```
+
 ## Steghide
 
 ```zsh
