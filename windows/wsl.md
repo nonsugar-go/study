@@ -273,58 +273,6 @@ $ vi foo.cpp
 sudo apt install bat build-essential ncal unzip w3m
 ```
 
-## Golang
-
-- https://go.dev/doc/install
-
-```zsh
-curl -LO https://go.dev/dl/go1.26.0.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.26.0.linux-amd64.tar.gz
-```
-
-- ~/.zshrc
-
-```zsh
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$(go env GOPATH)/bin
-export PATH=$PATH:$HOME/bin
-```
-
-```zsh
-go install github.com/fatih/gomodifytags@latest
-go install github.com/josharian/impl@latest
-go install github.com/peco/peco/cmd/peco@latest
-go install github.com/tc-hib/go-winres@latest
-go install golang.org/x/tools/cmd/goimports@latest
-go install golang.org/x/tools/cmd/stringer@latest
-```
-
-## Rust
-
-- https://rust-lang.org/ja/tools/install/
-- https://rust-analyzer.github.io/book/installation.html
-- https://rust-analyzer.github.io/book/rust_analyzer_binary.html
-- https://rust-analyzer.github.io/book/other_editors.html#vim-lsp
-- https://rust-analyzer.github.io/book/configuration.html#check.command
-- https://doc.rust-lang.org/clippy/
-
-```zsh
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-. "$HOME/.cargo/env"
-rustup update
-mkdir -p ~/.local/bin
-curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > ~/.local/bin/rust-analyzer
-chmod +x ~/.local/bin/rust-analyzer
-rustup component add rust-src
-```
-
-### VSCode 拡張
-
-VSCode を起動して、以下の拡張をインストールする。
-
-- https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
-- https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
-
 ## CTF で使用できるパッケージ
 
 ```bash
@@ -388,6 +336,58 @@ QT_DEBUG_PLUGINS=1 ~/idafree-8.4/ida64
 sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
   libxcb-render-util0 libxcb-xinerama0 libxcb-xkb1 libxkbcommon-x11-0
 ```
+
+## Golang
+
+- https://go.dev/doc/install
+
+```zsh
+curl -LO https://go.dev/dl/go1.26.0.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.26.0.linux-amd64.tar.gz
+```
+
+- ~/.zshrc
+
+```zsh
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$(go env GOPATH)/bin
+export PATH=$PATH:$HOME/bin
+```
+
+```zsh
+go install github.com/fatih/gomodifytags@latest
+go install github.com/josharian/impl@latest
+go install github.com/peco/peco/cmd/peco@latest
+go install github.com/tc-hib/go-winres@latest
+go install golang.org/x/tools/cmd/goimports@latest
+go install golang.org/x/tools/cmd/stringer@latest
+```
+
+## Rust
+
+- https://rust-lang.org/ja/tools/install/
+- https://rust-analyzer.github.io/book/installation.html
+- https://rust-analyzer.github.io/book/rust_analyzer_binary.html
+- https://rust-analyzer.github.io/book/other_editors.html#vim-lsp
+- https://rust-analyzer.github.io/book/configuration.html#check.command
+- https://doc.rust-lang.org/clippy/
+
+```zsh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+. "$HOME/.cargo/env"
+rustup update
+mkdir -p ~/.local/bin
+curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > ~/.local/bin/rust-analyzer
+chmod +x ~/.local/bin/rust-analyzer
+rustup component add rust-src
+```
+
+### VSCode 拡張
+
+VSCode を起動して、以下の拡張をインストールする。
+
+- https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
+- https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
 
 ## Chromium, Firefox
 
