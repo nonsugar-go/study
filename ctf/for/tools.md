@@ -119,7 +119,6 @@ steghide info foo.jpg
 ## hashcat
 
 - https://github.com/hashcat/hashcat
-- https://github.com/dizcza/docker-hashcat
 - https://github.com/zacheller/rockyou
 
 ```zsh
