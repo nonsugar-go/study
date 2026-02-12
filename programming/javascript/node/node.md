@@ -9,7 +9,7 @@
 - https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
 
 ```zsh
-https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 source ~/.zshrc
 nvm ls
 nvm install --lts
