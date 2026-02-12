@@ -308,6 +308,12 @@ tar xvzf rockyou.txt.tar.gz
 rm rockyou.txt.tar.gz
 ```
 
+容量に余裕があれば
+
+```zsh
+sudo apt install hashcat
+```
+
 ### Ghidra
 
 ```zsh
@@ -402,7 +408,7 @@ VSCode を起動して、以下の拡張をインストールする。
 ```zsh
 sudo snap install chromium
 sudo snap install firefox
-sudo apt install fonts-noto
+sudo apt install fonts-noto-cjk
 ```
 
 ## sshd
