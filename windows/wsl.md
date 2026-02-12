@@ -274,14 +274,24 @@ sudo apt install 7zip bat bind9-dnsutils build-essential docker-compose \
   gcc-multilib gdb gdbserver gobuster hexer jq ltrace nasm ncal nmap openvpn \
   poppler-utils python3-venv socat sqlite3 strace tcpdump tshark unzip \
   upx-ucl w3m wabt z80dasm
+```
 
+容量に余裕があれば
+
+```zsh
+sudo apt install hashcat
+```
+
+```zsh
 cd ~/CTF
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
 cd ~
 echo "set follow-fork-mode parent" >>~/.gdbinit
+```
 
+```zsh
 python3 -m venv ~/CTF/myenv
 source ~/CTF/myenv/bin/activate
 pip3 install -U Flask flask-unsign gmpy2 pwntools pycryptodome pyshark \
@@ -306,12 +316,6 @@ curl -LO \
 curl -LO https://raw.githubusercontent.com/zacheller/rockyou/master/rockyou.txt.tar.gz
 tar xvzf rockyou.txt.tar.gz
 rm rockyou.txt.tar.gz
-```
-
-容量に余裕があれば
-
-```zsh
-sudo apt install hashcat
 ```
 
 ### Ghidra
