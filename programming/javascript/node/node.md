@@ -10,6 +10,7 @@
 
 ```zsh
 https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+source ~/.zshrc
 nvm ls
 nvm install --lts
 node --version
