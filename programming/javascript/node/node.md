@@ -1,10 +1,18 @@
 # Node.js
-# 概要
+
 - https://nodejs.org/
 - https://www.tohoho-web.com/ex/nodejs.html
+
+# WSL2 に Node.js をインストールする
+
+- https://learn.microsoft.com/ja-jp/windows/dev-environment/javascript/nodejs-on-wsl
+
 ## VSCode
+
 - https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+
 ## my-app
+
 - https://github.com/npm/cli/issues/6971
 - https://stackoverflow.com/questions/66813198/react-app-localhost3000-logo-not-spinning
 
@@ -14,8 +22,11 @@ PS> npx create-react-app my-app
 PS> cd my-app
 PS> npm start
 ```
+
 # asdf を利用した手順
+
 ## asdf のインストール (wsl2)
+
 1. https://asdf-vm.com/ja-jp/guide/getting-started.html
 
 ```zsh
@@ -81,6 +92,7 @@ app.listen(PORT, () => {
 ```
 
 ## グローバルに ts-node を使えるようにする
+
 ```zsh
 npm install -g ts-node
 
