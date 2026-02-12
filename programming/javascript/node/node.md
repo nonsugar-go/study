@@ -6,6 +6,15 @@
 # WSL2 に Node.js をインストールする
 
 - https://learn.microsoft.com/ja-jp/windows/dev-environment/javascript/nodejs-on-wsl
+- https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
+
+```zsh
+https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+nvm ls
+nvm install --lts
+node --version
+npm --version 
+```
 
 ## VSCode
 
