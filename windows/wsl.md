@@ -355,6 +355,14 @@ sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
   libxcb-render-util0 libxcb-xinerama0 libxcb-xkb1 libxkbcommon-x11-0
 ```
 
+## Chromium, Firefox
+
+```zsh
+sudo snap install chromium
+sudo snap install firefox
+sudo apt install fonts-noto-cjk
+```
+
 ## Golang
 
 - https://go.dev/doc/install
@@ -407,13 +415,21 @@ VSCode を起動して、以下の拡張をインストールする。
 - https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
 - https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
 
-## Chromium, Firefox
+## Node.js
 
 ```zsh
-sudo snap install chromium
-sudo snap install firefox
-sudo apt install fonts-noto-cjk
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+source ~/.zshrc
+nvm install --lts
 ```
+
+<!--
+```zsh
+nvm ls
+node --version
+npm --version 
+```
+-->
 
 ## sshd
 
