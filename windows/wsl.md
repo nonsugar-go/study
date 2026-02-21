@@ -404,7 +404,7 @@ myenv
 
 ```zsh
 f="${1:-chall}"
-file $f
+file $f >file.output
 (strings -n 5 $f; strings -n 5 -el $f)|sort -u >strings.output
 checksec $f >checksec.output
 hexdump -C $f >hexdump.output
