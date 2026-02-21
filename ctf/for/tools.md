@@ -158,3 +158,12 @@ chmod +x ~/pkcrack/bin/pkcrack
 pkcrack -C encrypted-ZIP -c ciphertextname -P plaintext-ZIP
       -p plaintextname -d decrypted_file -a
 ```
+
+## bkcrack
+
+```zsh
+cd ~/CTF
+curl -LO https://github.com/kimci86/bkcrack/releases/download/v1.8.1/bkcrack-1.8.1-Linux-x86_64.tar.gz
+tar xvzf bkcrack-1.8.1-Linux-x86_64.tar.gz
+ln -s ~/CTF/bkcrack-1.8.1-Linux-x86_64/bkcrack ~/CTF/bin
+```
