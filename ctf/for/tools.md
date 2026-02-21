@@ -195,7 +195,7 @@ Index Encryption Compression CRC32    Uncompressed  Packed size Name
 ----- ---------- ----------- -------- ------------ ------------ ----------------
     0 None       Deflate     f5db05a6        16628         6649 plain.txt
 
-bkcrack -C chall.zip -c plain.txt -P plain.zip -p plain.txt
+$ bkcrack -C chall.zip -c plain.txt -P plain.zip -p plain.txt
 bkcrack 1.8.1 - 2025-10-25
 [20:30:01] Z reduction using 6642 bytes of known plaintext
 100.0 % (6642 / 6642)
