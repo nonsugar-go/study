@@ -363,6 +363,20 @@ sudo snap install firefox
 sudo apt install fonts-noto-cjk
 ```
 
+### Burp Suite Community Edition
+
+- https://portswigger.net/burp/communitydownload
+
+```zsh
+cd ~/CTF
+curl -L https://portswigger.net/burp/releases/download?product=community&version=2026.1.4&type=Linux -o burpsuite_community_linux.sh
+chmod +x burpsuite_community_linux.sh
+./burpsuite_community_linux.sh
+```
+
+- Select Destination Directory: /home/USER/CTF/BurpSuiteCommunity
+- Select Directory for Symlinks: Create symlinks のチェックを外す
+
 ### ~/CTF/aliases.sh
 
 ```zsh
