@@ -269,6 +269,10 @@ $ vi foo.cpp
 
 ## CTF
 
+```zsh
+mkdir -p ~/CTF/bin
+```
+
 ```bash
 sudo apt install 7zip bat bind9-dnsutils build-essential cmake docker-compose \
   gcc-multilib gdb gdbserver gobuster hexer jq libimage-exiftool-perl ltrace \
@@ -291,13 +295,6 @@ cd ~
 echo "set follow-fork-mode parent" >>~/.gdbinit
 ```
 
-```zsh
-python3 -m venv ~/CTF/myenv
-source ~/CTF/myenv/bin/activate
-pip3 install -U Flask flask-unsign gmpy2 pwntools pycryptodome pyshark \
-  pyzipper randcrack ropper scapy sympy tqdm z3-solver
-```
-
 <!--
 ### pwndbg (pwndbg でなく gdb-peda を使用する場合)
 
@@ -306,6 +303,13 @@ git clone https://github.com/longld/peda.git ~/peda
 echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
 -->
+
+```zsh
+python3 -m venv ~/CTF/myenv
+source ~/CTF/myenv/bin/activate
+pip3 install -U Flask flask-unsign gmpy2 pwntools pycryptodome pyshark \
+  pyzipper randcrack ropper scapy sympy tqdm z3-solver
+```
 
 ### gobuster / hashcat 用のワードリスト
 
@@ -318,13 +322,24 @@ tar xvzf rockyou.txt.tar.gz
 rm rockyou.txt.tar.gz
 ```
 
+### bkcrack
+
+```zsh
+cd ~/CTF
+curl -LO https://github.com/kimci86/bkcrack/releases/download/v1.8.1/bkcrack-1.8.1-Linux-x86_64.tar.gz
+tar xvzf bkcrack-1.8.1-Linux-x86_64.tar.gz
+ln -s ~/CTF/bkcrack-1.8.1-Linux-x86_64/bkcrack ~/CTF/bin
+```
+
 ### Ghidra
+
+- https://github.com/NationalSecurityAgency/ghidra
 
 ```zsh
 sudo apt install openjdk-21-jdk
-curl -LO https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.0.2_build/ghidra_12.0.2_PUBLIC_20260129.zip
-unzip ./ghidra_12.0.2_PUBLIC_20260129.zip -d ~/CTF
-~/CTF/ghidra_12.0.2_PUBLIC/ghidraRun&
+curl -LO https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.0.3_build/ghidra_12.0.3_PUBLIC_20260210.zip
+unzip ./ghidra_12.0.3_PUBLIC_20260210.zip -d ~/CTF
+ln -s ~/CTF/ghidra_12.0.3_PUBLIC/ghidraRun ~/CTF/bin/ghidra
 ```
 
 ### IDA Free
@@ -339,7 +354,7 @@ chmod +x ./ida-free-pc_91_x64linux.run
 ./ida-free-pc_91_x64linux.run
 ## Installation Directory: /home/yutaka/CTF/ida-free-pc-9.1
 mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/CTF/ida-free-pc-9.1
-~/CTF/ida-free-pc-9.1/ida&
+ln -s ~/CTF/ida-free-pc-9.1/ida ~/CTF/bin
 ```
 
 #### IDA Free 8.4 (IDA Free 9.x でなく IDA Free 8.4 を使用する場合)
@@ -353,6 +368,7 @@ rm ./idafree84_linux.run
 QT_DEBUG_PLUGINS=1 ~/idafree-8.4/ida64
 sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
   libxcb-render-util0 libxcb-xinerama0 libxcb-xkb1 libxkbcommon-x11-0
+ln -s ~/CTF/idafree84_linux.run ~/CTF/bin/ida
 ```
 
 ### Chromium, Firefox
@@ -377,17 +393,17 @@ chmod +x burpsuite_community_linux.sh
 - Select Destination Directory: /home/USER/CTF/BurpSuiteCommunity
 - Select Directory for Symlinks: Create symlinks のチェックを外す
 
+```zsh
+ln ~/CTF/BurpSuiteCommunity/BurpSuiteCommunity ~/CTF/bin/burp
+```
+
 ### ~/CTF/aliases.sh
 
 ```zsh
-[ -x "$HOME/CTF/ida-free-pc-9.1/ida" ] && alias ida='~/CTF/ida-free-pc-9.1/ida'
-[ -x "$HOME/CTF/idafree84_linux.run" ] && alias ida='~/CTF/idafree84_linux.run'
 alias angr='sudo docker run -it --rm -v $PWD:/local angr/angr'
-alias burp='~/CTF/BurpSuiteCommunity/BurpSuiteCommunity'
 alias c='curl -LO'
 alias g='grep -Rin'
 alias gdb='gdb -q'
-alias ghidra='~/CTF/ghidra_*.*.*_PUBLIC/ghidraRun'
 alias mkd='mydir=$(printf %02d $(($(ls -d [0-9][0-9]|tail -1)+1)))&&mkdir $mydir&&cd $mydir' # Zsh-only
 alias myenv='source ~/CTF/myenv/bin/activate'
 alias pck='source ~/CTF/pwncheck.sh'
@@ -396,6 +412,10 @@ alias w='vi Writeup.md'
 case ":$PATH:" in
 	*":/snap/bin:"*) ;;
 	*) export PATH="$PATH:/snap/bin" ;;
+esac
+case ":$PATH:" in
+	*":$HOME/CTF/bin:"*) ;;
+	*) export PATH="$PATH:$HOME/CTF/bin" ;;
 esac
 myenv
 ```
