@@ -13,3 +13,4 @@
 - https://binary.ninja/
 - https://java-decompiler.github.io/ java 逆コンパイラ
 - https://github.com/skylot/jadx java 逆コンパイラ
+- https://github.com/dnSpy/dnSpy/releases .NETアプリケーションの逆コンパイラ `dnSpy-net-win64.zip` をダウンロード
