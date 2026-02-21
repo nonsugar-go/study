@@ -2,14 +2,8 @@
 
 ## ~/CTF/aliases.sh
 
-[wsl](/study/windows/wsl)
+[wsl](/windows/wsl.md)
 
 ## ~/ctf/pwncheck.sh
 
-[wsl](/study/windows/wsl)
-
-## ltrace
-
-```zsh
-ltrace $T
-```
+[wsl](/windows/wsl.md)
