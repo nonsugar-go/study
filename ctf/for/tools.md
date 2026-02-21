@@ -145,14 +145,10 @@ $ hashcat hash.txt /usr/share/wordlists/rockyou.txt -m 1400
 - [【CTF】 SECCON 2015 online「Unzip the file」解説](https://zenn.dev/mattsunkun/articles/9a4165634a4f9a)
 - [PkCrack は -d を付けないと処理が終わらない #CTF - Qiita](https://qiita.com/tomii9273/items/e78918b8d72802968e34)
 
-### Install
-
 ```zsh
 git clone https://github.com/keyunluo/pkcrack
 chmod +x ~/pkcrack/bin/pkcrack
 ```
-
-### Usage
 
 ```zsh
 pkcrack -C encrypted-ZIP -c ciphertextname -P plaintext-ZIP
@@ -166,4 +162,56 @@ cd ~/CTF
 curl -LO https://github.com/kimci86/bkcrack/releases/download/v1.8.1/bkcrack-1.8.1-Linux-x86_64.tar.gz
 tar xvzf bkcrack-1.8.1-Linux-x86_64.tar.gz
 ln -s ~/CTF/bkcrack-1.8.1-Linux-x86_64/bkcrack ~/CTF/bin
+```
+
+**既知平文攻撃の条件**
+
+- 暗号化ZIPファイルの暗号化方式がZipCrypto
+- 暗号化ZIPファイと、暗号化ZIPファイルに含まれる1つのファイルの平文
+
+```
+$ ls
+chall.zip  plain.txt
+
+$ bkcrack -L chall.zip
+bkcrack 1.8.1 - 2025-10-25
+Archive: chall.zip
+Index Encryption Compression CRC32    Uncompressed  Packed size Name
+----- ---------- ----------- -------- ------------ ------------ ----------------
+    0 ZipCrypto  Store       bcf5d041           12           24 flag.txt
+    1 ZipCrypto  Deflate     f5db05a6        16628         6661 plain.txt
+
+$ zip plain.zip plain.txt
+  adding: plain.txt (deflated 60%)
+
+## 成功するまで圧縮率を変えて試してみる
+$ zip -9 plain.zip plain.txt
+updating: plain.txt (deflated 60%)
+
+$ bkcrack -L plain.zip
+bkcrack 1.8.1 - 2025-10-25
+Archive: plain.zip
+Index Encryption Compression CRC32    Uncompressed  Packed size Name
+----- ---------- ----------- -------- ------------ ------------ ----------------
+    0 None       Deflate     f5db05a6        16628         6649 plain.txt
+
+bkcrack -C chall.zip -c plain.txt -P plain.zip -p plain.txt
+bkcrack 1.8.1 - 2025-10-25
+[20:30:01] Z reduction using 6642 bytes of known plaintext
+100.0 % (6642 / 6642)
+[20:30:02] Attack on 316 Z values at index 191
+Keys: b8781947 b53b81ae 6f4c1727
+27.5 % (87 / 316)
+Found a solution. Stopping.
+You may resume the attack with the option: --continue-attack 87
+[20:30:02] Keys
+b8781947 b53b81ae 6f4c1727
+
+$ bkcrack -C chall.zip -c flag.txt -k b8781947 b53b81ae 6f4c1727 -d flag.txt
+bkcrack 1.8.1 - 2025-10-25
+[20:32:19] Writing deciphered data flag.txt
+Wrote deciphered data (not compressed).
+
+cat flag.txt
+flag{dummy}
 ```
