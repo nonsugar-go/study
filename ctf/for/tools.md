@@ -181,10 +181,7 @@ Index Encryption Compression CRC32    Uncompressed  Packed size Name
     0 ZipCrypto  Store       bcf5d041           12           24 flag.txt
     1 ZipCrypto  Deflate     f5db05a6        16628         6661 plain.txt
 
-$ zip plain.zip plain.txt
-  adding: plain.txt (deflated 60%)
-
-## 成功するまで圧縮率を変えて試してみる
+## 圧縮率が違うと成功しないので、成功するまで圧縮率を変えて試してみる
 $ zip -9 plain.zip plain.txt
 updating: plain.txt (deflated 60%)
 
@@ -212,6 +209,6 @@ bkcrack 1.8.1 - 2025-10-25
 [20:32:19] Writing deciphered data flag.txt
 Wrote deciphered data (not compressed).
 
-cat flag.txt
+$ cat flag.txt
 flag{dummy}
 ```
