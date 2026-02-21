@@ -355,12 +355,50 @@ sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
   libxcb-render-util0 libxcb-xinerama0 libxcb-xkb1 libxkbcommon-x11-0
 ```
 
-## Chromium, Firefox
+### Chromium, Firefox
 
 ```zsh
 sudo snap install chromium
 sudo snap install firefox
 sudo apt install fonts-noto-cjk
+```
+
+### ~/CTF/aliases.sh
+
+```zsh
+[ -x "$HOME/CTF/ida-free-pc-9.1/ida" ] && alias ida='~/CTF/ida-free-pc-9.1/ida'
+[ -x "$HOME/CTF/idafree84_linux.run" ] && alias ida='~/CTF/idafree84_linux.run'
+alias angr='sudo docker run -it --rm -v $PWD:/local angr/angr'
+alias burp='~/CTF/BurpSuiteCommunity/BurpSuiteCommunity'
+alias c='curl -LO'
+alias g='grep -Rin'
+alias gdb='gdb -q'
+alias ghidra='~/CTF/ghidra_*.*.*_PUBLIC/ghidraRun'
+alias mkd='mydir=$(printf %02d $(($(ls -d [0-9][0-9]|tail -1)+1)))&&mkdir $mydir&&cd $mydir' # Zsh-only
+alias myenv='source ~/CTF/myenv/bin/activate'
+alias pck='source ~/CTF/pwncheck.sh'
+alias q='vi Question.txt'
+alias w='vi Writeup.md'
+case ":$PATH:" in
+	*":/snap/bin:"*) ;;
+	*) export PATH="$PATH:/snap/bin" ;;
+esac
+myenv
+```
+
+### ~/CTF/pwncheck.sh
+
+```zsh
+f="${1:-chall}"
+file $f
+(strings -n 5 $f; strings -n 5 -el $f)|sort -u >strings.output
+checksec $f >checksec.output
+hexdump -C $f >hexdump.output
+objdump -DCM intel $f >objdump.output
+pwn template $f >solver.py
+readelf -SW $f >sections.output
+readelf -r $f >relocs.output
+readelf -sW $f >syms.output
 ```
 
 ## Golang
