@@ -402,13 +402,14 @@ ln ~/CTF/BurpSuiteCommunity/BurpSuiteCommunity ~/CTF/bin/burp
 ```zsh
 alias angr='sudo docker run -it --rm -v $PWD:/local angr/angr'
 alias c='curl -LO'
+alias ckp='source ~/CTF/checkpwn.sh'
 alias g='grep -Rin'
 alias gdb='gdb -q'
 alias mkd='mydir=$(printf %02d $(($(ls -d [0-9][0-9]|tail -1)+1)))&&mkdir $mydir&&cd $mydir' # Zsh-only
 alias myenv='source ~/CTF/myenv/bin/activate'
-alias pck='source ~/CTF/pwncheck.sh'
 alias q='vi Question.txt'
 alias w='vi Writeup.md'
+clip() { iconv -t utf16el "$@" | clip.exe }
 case ":$PATH:" in
 	*":/snap/bin:"*) ;;
 	*) export PATH="$PATH:/snap/bin" ;;
@@ -420,16 +421,16 @@ esac
 myenv
 ```
 
-### ~/CTF/pwncheck.sh
+### ~/CTF/checkpwn.sh
 
 ```zsh
 f="${1:-chall}"
-file $f >file.output
 (strings -n 5 $f; strings -n 5 -el $f)|sort -u >strings.output
-checksec $f >checksec.output
+checksec $f >checksec.output 2>&1
+file $f >file.output
 hexdump -C $f >hexdump.output
 objdump -DCM intel $f >objdump.output
-pwn template $f >solver.py
+pwn template $f >solver.py.output
 readelf -SW $f >sections.output
 readelf -r $f >relocs.output
 readelf -sW $f >syms.output
