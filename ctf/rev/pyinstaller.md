@@ -1,8 +1,6 @@
 # PyInstaller
 
 - https://pyinstaller.org/en/stable/
-
-- https://github.com/extremecoders-re/pyinstxtractor
 - https://github.com/pyinstxtractor/pyinstxtractor-ng
 
 ```zsh
