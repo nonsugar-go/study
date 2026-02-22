@@ -4,7 +4,7 @@
 - https://github.com/pyinstxtractor/pyinstxtractor-ng
 
 ```zsh
-$ curl -LO https://github.com/pyinstxtractor/pyinstxtractor-ng/releases/download/2025.01.05/pyinstxtractor-ng
+curl -LO https://github.com/pyinstxtractor/pyinstxtractor-ng/releases/download/2025.01.05/pyinstxtractor-ng
 ```
 
 ```zsh
