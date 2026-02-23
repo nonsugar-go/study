@@ -322,15 +322,6 @@ tar xvzf rockyou.txt.tar.gz
 rm rockyou.txt.tar.gz
 ```
 
-### bkcrack
-
-```zsh
-cd ~/CTF
-curl -LO https://github.com/kimci86/bkcrack/releases/download/v1.8.1/bkcrack-1.8.1-Linux-x86_64.tar.gz
-tar xvzf bkcrack-1.8.1-Linux-x86_64.tar.gz
-ln -s ~/CTF/bkcrack-1.8.1-Linux-x86_64/bkcrack ~/CTF/bin
-```
-
 ### Ghidra
 
 - https://github.com/NationalSecurityAgency/ghidra
@@ -397,6 +388,28 @@ chmod +x burpsuite_community_linux.sh
 ln ~/CTF/BurpSuiteCommunity/BurpSuiteCommunity ~/CTF/bin/burp
 ```
 
+### bkcrack
+
+```zsh
+cd ~/CTF
+curl -LO https://github.com/kimci86/bkcrack/releases/download/v1.8.1/bkcrack-1.8.1-Linux-x86_64.tar.gz
+tar xvzf bkcrack-1.8.1-Linux-x86_64.tar.gz
+ln -s ~/CTF/bkcrack-1.8.1-Linux-x86_64/bkcrack ~/CTF/bin
+```
+
+## JADX
+
+- https://github.com/skylot/jadx/releases/
+
+```zsh
+cd ~/CTF
+curl -LO https://github.com/skylot/jadx/releases/download/v1.5.4/jadx-1.5.4.zip
+unzip jadx-1.5.4.zip -d jadx
+chmod +x jadx/bin/{jadx,jadx-gui}
+ln -s ~/CTF/jadx/bin/jadx ~/CTF/bin
+ln -s ~/CTF/jadx/bin/jadx-gui ~/CTF/bin
+```
+
 ### ~/CTF/aliases.sh
 
 ```zsh
@@ -409,7 +422,7 @@ alias mkd='mydir=$(printf %02d $(($(ls -d [0-9][0-9]|tail -1)+1)))&&mkdir $mydir
 alias myenv='source ~/CTF/myenv/bin/activate'
 alias q='vi Question.txt'
 alias w='vi Writeup.md'
-clip() { iconv -t utf16el "$@" | clip.exe }
+clip() { iconv -t utf16le "$@" | clip.exe }
 case ":$PATH:" in
 	*":/snap/bin:"*) ;;
 	*) export PATH="$PATH:/snap/bin" ;;
@@ -429,11 +442,13 @@ f="${1:-chall}"
 checksec $f >checksec.output 2>&1
 file $f >file.output
 hexdump -C $f >hexdump.output
+nm $f >nm.output
 objdump -DCM intel $f >objdump.output
 pwn template $f >solver.py.output
 readelf -SW $f >sections.output
 readelf -r $f >relocs.output
 readelf -sW $f >syms.output
+strings -tx $f >strings-tx.output
 ```
 
 ## Golang
