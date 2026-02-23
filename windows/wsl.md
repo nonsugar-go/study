@@ -277,7 +277,7 @@ mkdir -p ~/CTF/bin
 sudo apt install 7zip bat bind9-dnsutils build-essential cmake docker-compose \
   gcc-multilib gdb gdbserver gobuster hexer jq libimage-exiftool-perl ltrace \
   nasm ncal nmap openvpn poppler-utils python3-venv qpdf socat sqlite3 strace \
-  tcpdump tshark unzip upx-ucl w3m wabt wireshark z80dasm zip
+  tcpdump tshark unzip w3m wabt wireshark z80dasm zip
 ```
 
 容量に余裕があれば
@@ -322,6 +322,14 @@ tar xvzf rockyou.txt.tar.gz
 rm rockyou.txt.tar.gz
 ```
 
+### Chromium, Firefox
+
+```zsh
+sudo snap install chromium
+sudo snap install firefox
+sudo apt install fonts-noto-cjk
+```
+
 ### Ghidra
 
 - https://github.com/NationalSecurityAgency/ghidra
@@ -362,14 +370,6 @@ sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
 ln -s ~/CTF/idafree84_linux.run ~/CTF/bin/ida
 ```
 
-### Chromium, Firefox
-
-```zsh
-sudo snap install chromium
-sudo snap install firefox
-sudo apt install fonts-noto-cjk
-```
-
 ### Burp Suite Community Edition
 
 - https://portswigger.net/burp/communitydownload
@@ -385,7 +385,7 @@ chmod +x burpsuite_community_linux.sh
 - Select Directory for Symlinks: Create symlinks のチェックを外す
 
 ```zsh
-ln ~/CTF/BurpSuiteCommunity/BurpSuiteCommunity ~/CTF/bin/burp
+ln -s ~/CTF/BurpSuiteCommunity/BurpSuiteCommunity ~/CTF/bin/burp
 ```
 
 ### bkcrack
@@ -397,17 +397,28 @@ tar xvzf bkcrack-1.8.1-Linux-x86_64.tar.gz
 ln -s ~/CTF/bkcrack-1.8.1-Linux-x86_64/bkcrack ~/CTF/bin
 ```
 
-## JADX
+### UPX
+
+- https://github.com/upx/upx/releases/
+
+```zsh
+cd ~/CTF
+curl -LO https://github.com/upx/upx/releases/download/v5.1.0/upx-5.1.0-amd64_linux.tar.xz
+tar xJf upx-5.1.0-amd64_linux.tar.xz
+ln -s ~/CTF/upx-5.1.0-amd64_linux/upx ~/CTF/bin
+```
+
+### JADX
 
 - https://github.com/skylot/jadx/releases/
 
 ```zsh
 cd ~/CTF
 curl -LO https://github.com/skylot/jadx/releases/download/v1.5.4/jadx-1.5.4.zip
-unzip jadx-1.5.4.zip -d jadx
-chmod +x jadx/bin/{jadx,jadx-gui}
-ln -s ~/CTF/jadx/bin/jadx ~/CTF/bin
-ln -s ~/CTF/jadx/bin/jadx-gui ~/CTF/bin
+unzip jadx-1.5.4.zip -d jadx-1.5.4
+chmod +x jadx-1.5.4/bin/{jadx,jadx-gui}
+ln -s ~/CTF/jadx-1.5.4/bin/jadx ~/CTF/bin
+ln -s ~/CTF/jadx-1.5.4/bin/jadx-gui ~/CTF/bin
 ```
 
 ### ~/CTF/aliases.sh
