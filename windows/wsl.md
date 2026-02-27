@@ -275,15 +275,9 @@ mkdir -p ~/CTF/bin
 
 ```bash
 sudo apt install 7zip bat bind9-dnsutils build-essential cmake docker-compose \
-  gcc-multilib gdb gdbserver gobuster hexer jq libimage-exiftool-perl \
+  gcc-multilib gdb gdbserver gobuster hashcat hexer jq libimage-exiftool-perl \
   libxml2-utils ltrace nasm ncal nmap openvpn poppler-utils python3-venv qpdf \
   socat sqlite3 strace tcpdump tshark unzip w3m wabt wireshark z80dasm zip
-```
-
-容量に余裕があれば
-
-```zsh
-sudo apt install hashcat
 ```
 
 ```zsh
