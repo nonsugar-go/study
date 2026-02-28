@@ -277,7 +277,8 @@ mkdir -p ~/CTF/bin
 sudo apt install 7zip bat bind9-dnsutils build-essential cmake docker-compose \
   gcc-multilib gdb gdbserver gobuster hashcat hexer jq libimage-exiftool-perl \
   libxml2-utils ltrace nasm ncal nmap openvpn poppler-utils python3-venv qpdf \
-  socat sqlite3 strace tcpdump tshark unzip w3m wabt wireshark z80dasm zip
+  socat sqlite3 sqlmap strace tcpdump tshark unzip w3m wabt wireshark z80dasm \
+  zip
 ```
 
 ```zsh
