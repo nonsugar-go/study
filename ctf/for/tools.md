@@ -22,7 +22,13 @@ hayabusa-x.x.x-win-x64.exe help
 hayabusa-x.x.x-win-x64.exe eid-metrics -d C:\Logs
 hayabusa-x.x.x-win-x64.exe csv-timeline -d C:\Logs -o result.csv -p all-field-info
 hayabusa-x.x.x-win-x64.exe search -d C:\Logs -o result.csv -k "10.10.10.10"
+hayabusa-x.x.x-win-x64.exe search -d C:\Logs -k "0x123456" -q -b --sort
 ```
+
+### 注目すべきイベントビューアー
+
+- Sysmon, Event ID 1 (プロセスの作成)
+- Security, Event ID 4624 (ログオン成功イベント)
 
 ## イベントビューアの解析 (Eric Zimmerman's EvtxECmd)
 
