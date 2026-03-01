@@ -64,6 +64,10 @@ EvtxECmd.exe -d C:\Evtx --csv C:\CSV
    - https://www.nirsoft.net/utils/chrome_history_view.html
    - https://www.nirsoft.net/utils/browsing_history_view.html
 
+## Forensic のための収集ツール
+
+- https://github.com/herosi/triage-collector
+
 ## メモリ解析
 
 ### メモリダンプ取得ツール
