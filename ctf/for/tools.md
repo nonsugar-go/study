@@ -81,6 +81,7 @@ EvtxECmd.exe -d C:\Evtx --csv C:\CSV
 ### メモリ解析ツール
 
 - https://github.com/ufrisk/MemProcFS
+- https://github.com/simsong/bulk_extractor
 - https://github.com/volatilityfoundation
 
 ## Autopsy
