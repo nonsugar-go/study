@@ -12,6 +12,14 @@
 - [Windows](windows)
   - [wsl](windows/wsl.md)
 
+# DNS Services
+
+|DNSサービス|IP Addresses|
+|---|---|
+|Cloudflare|1.1.1.1, 1.0.0.1|
+|Google|8.8.8.8, 8.8.4.4|
+|Lumen/Level3|4.2.2.\[1-6\]|
+
 # Tomato
 :tomato: :tomato:
 
