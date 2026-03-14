@@ -23,8 +23,8 @@
    1. Install Gaia on this system
    2. Keyboard Selection: Japanese
    3. Partitions Configuration
-      - System-root (GB): 15
-      - Logs (GB): 11
+      - System-root (GB): 9
+      - Logs (GB): 14
    4. Account Configuration / Password: admin@12345
    5. Management Interface (eth0)
       - IP address: 192.168.1.51
