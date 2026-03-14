@@ -29,6 +29,6 @@
    5. Maintenace password / Password: admin@12345
    6. Management Port: eth0
    7. Management Interface (eth0)
-      - IP address: 192.168.1.51
+      - IP address: 192.168.1.41
       - Netmask: 255.255.255.0
    8. Installation complete: Reboot
