@@ -31,4 +31,4 @@
    7. Management Interface (eth0)
       - IP address: 192.168.1.41
       - Netmask: 255.255.255.0
-   8. Installation complete: Reboot
+   8. Press return to quit: `[Enter]`
