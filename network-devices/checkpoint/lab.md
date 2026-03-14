@@ -95,7 +95,7 @@ External        | eth2 192.0.2.65               |
      1. Downloads and Installation > Clean Install of Security Gateway and Management Server > Clean Install Image
      2. Downloads and Installation > SmartConsole > SmartConsole EXE
 3. 仮想マシンの作成
-   - Name: SG1
+   - Name: CPSMS
    - Type: Red Hat Enterprise Linux (64-bit)
    - CPU: 4 Core
    - Memory: 6144 MB
@@ -107,8 +107,8 @@ External        | eth2 192.0.2.65               |
    1. Install Gaia on this system
    2. Keyboard Selection: Japanese
    3. Partitions Configuration: デフォルト値のままでよい
-   4. Account Configuration / Password: admin@12345
-   5. Maintenace password / Password: admin@12345
+   4. Account Configuration / Password: Lab@12345
+   5. Maintenace password / Password: Lab@12345
    6. Management Port: eth0
    7. Management Interface (eth0)
       - IP address: 192.168.1.41
