@@ -22,9 +22,7 @@
 5. Gaia のインストール
    1. Install Gaia on this system
    2. Keyboard Selection: Japanese
-   3. Partitions Configuration
-      - System-root (GB): 9
-      - Logs (GB): 14
+   3. Partitions Configuration: デフォルト値のままでよい
    4. Account Configuration / Password: admin@12345
    5. Maintenace password / Password: admin@12345
    6. Management Port: eth0
