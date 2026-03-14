@@ -32,3 +32,11 @@
       - IP address: 192.168.1.41
       - Netmask: 255.255.255.0
    8. Press return to quit: `[Enter]`
+6. 再起動後、admin でログインする
+   ```sh
+   set hostname CPSMS
+   set interface eth0 ipv4-address 192.168.1.41 mask-length 24
+   set interface eth0 comments "Mgmt"
+   save config
+   halt
+   ```
