@@ -11,4 +11,4 @@
    3. Installation > SmartConsole > EXE
 4. Check Point R82.10: sk183506
    1. Downloads and Installation > Clean Install of Security Gateway and Management Server > Clean Install Image
-   2. Downloads and Installation > SmartConsole > EXE
+   2. Downloads and Installation > SmartConsole > SmartConsole EXE
