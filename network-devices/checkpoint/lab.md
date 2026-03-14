@@ -29,6 +29,36 @@
 
 # 構築
 
+## VyOS
+
+1. 仮想マシンの作成
+   - Name: VyOS
+   - Type: その他の Linux 5.x 以降 (64 ビット) (VyOS は Debian ベースなので近いものを選ぶ)
+   - CPU: 1 Core
+   - Memory: 1024 MB
+   - HDD: 16 GB (Thin Provisioning)
+   - NIC: 3つ
+   - DVD: vyos-*.*.*-*-rolling-generic-amd64.iso
+   - Firmware: BIOS
+2. VyOS のインストール
+   ```
+   login: vyos
+   Password: vyos
+   $ imstall image
+   ```
+3. 再起動後の設定
+   ```
+   configure
+   sat system hostname VyOS
+   set int eth eth0 addr dhcp
+   set service ssh
+   commit
+   save
+   exit
+   ```
+
+## Check Point
+
 1. Check Point UserCenter アカウント作成
    - https://usercenter.checkpoint.com
 2. インストーラーのダウンロード
