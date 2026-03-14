@@ -26,7 +26,8 @@
       - System-root (GB): 9
       - Logs (GB): 14
    4. Account Configuration / Password: admin@12345
-   5. Management Interface (eth0)
+   5. Maintenace password / Password: admin@12345
+   6. Management Interface (eth0)
       - IP address: 192.168.1.51
       - Netmask: 255.255.255.0
-   6. Installation complete: Reboot
+   7. Installation complete: Reboot
