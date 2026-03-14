@@ -2,7 +2,7 @@
 
 - VyOS
   - eth0/Mgmt: DHCP
-  - eth1:192.0.2.63/26
+  - eth1:192.0.2.62/26
   - eth2: 192.0.2.126/26
 - CPSMS
   - eth0/Mgmt: 192.168.1.41/24
@@ -42,16 +42,23 @@
    - Firmware: BIOS
 2. VyOS のインストール
    ```
-   login: vyos
+   vyos login: vyos
    Password: vyos
-   $ imstall image
+   $ install image
+   $ reboot
    ```
 3. 再起動後の設定
    ```
    configure
-   sat system hostname VyOS
    set int eth eth0 addr dhcp
    set service ssh
+   set system host-name CPLAB-VyOS
+   set system time-zone Asia/Tokyo
+   set system name-server eth0
+   set int eth eth1 addr 192.0.2.62/26
+   set int eth eth2 addr 192.0.2.126/26
+   set nat source rule 100 outbound-interface name eth0
+   set nat source rule 100 translation address masquerade
    commit
    save
    exit
