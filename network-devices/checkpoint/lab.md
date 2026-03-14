@@ -37,7 +37,7 @@
    - CPU: 1 Core
    - Memory: 1024 MB
    - HDD: 16 GB (Thin Provisioning)
-   - NIC: 3つ
+   - NIC: 3つ (VMXNET3)
    - DVD: vyos-*.*.*-*-rolling-generic-amd64.iso
    - Firmware: BIOS
 2. VyOS のインストール
@@ -75,7 +75,7 @@
    - CPU: 4 Core
    - Memory: 6144 MB
    - HDD: 60 GB (Thin Provisioning)
-   - NIC: 5つ
+   - NIC: 5つ (VMXNET3)
    - DVD: Check_Point_R82.10_T464.iso
    - Firmware: BIOS
 5. Gaia のインストール
