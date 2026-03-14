@@ -26,9 +26,9 @@
    - Use a Proxy server: [_}
 5. Date and Time Settings
    - Use Network Time Protocol (NTP): (X)
-- Preferrd NTP Server: ntp.nict.jp, server, Version: 4
-- Secondary NTP Server: time.google.com, server, Version: 4
-- Time Zone: Tokyo, Asia (GMT +9:00)
+     - Preferrd NTP Server: ntp.nict.jp, server, Version: 4
+     - Secondary NTP Server: time.google.com, server, Version: 4
+     - Time Zone: Tokyo, Asia (GMT +9:00)
 6. Installation Type
    - Security Gateway and/or Security Management: [X]
 7. Products
