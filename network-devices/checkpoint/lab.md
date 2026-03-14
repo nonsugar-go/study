@@ -104,3 +104,17 @@
    save config
    halt
    ```
+
+### その他の Check Point 仮想マシンの作成
+
+1. CPSMS を選択し、`[エクスポート]` をクリックする。
+2. CPSMS をエクスポートした OVA ファイルをインポートして CPGW1A 用の仮想マシンを作成する。
+3. 起動後、admin でログインする。
+   ```sh
+   set hostname CPGW1A
+   set interface eth0 ipv4-address 192.168.1.42 mask-length 24
+   set interface eth0 comments "Mgmt"
+   save config
+   halt
+   ```
+4. 同様に CPGW1B, GPGW2 用の仮想マシンを作成する。
