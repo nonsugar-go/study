@@ -100,7 +100,7 @@ External        | eth2 192.0.2.65               |
    - CPU: 4 Core
    - Memory: 6144 MB
    - HDD: 60 GB (Thin Provisioning)
-   - NIC: 3つ (VMXNET3)
+   - NIC: 5つ
    - DVD: Check_Point_R82.10_T464.iso
    - Firmware: BIOS
 5. Gaia のインストール
