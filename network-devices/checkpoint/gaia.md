@@ -86,16 +86,20 @@
 7. Products
    - Security Gateway: [X]
    - Security Management: [_]
-   - Unit is a part of a cluster, type: ClusterXL
-8. Security Management Administrator
+   - Unit is a part of a cluster: [X]
+     - type: ClusterXL
+8. Secure Communication to Management Server
+   - Activation Key: SIC@12345
+   - Connect to your Management as a Service: [_]
+9. Security Management Administrator
    - Define a new administrator
      - Administrator Name: secadmin
      - New Password: Lab@12345
-9. Security Management GUI Clients
+10. Security Management GUI Clients
    - GUI clients can log into the Security Management from: Network
      - IP Address: 192.168.1.0
      - Subnet: 255.255.255.0
-10. First Time Configuration Wizard Summary
+11. First Time Configuration Wizard Summary
     - Update and Data Sharing settings
       - Allow automatic download and installation of security and software updates.: [X]
         - Allow automatic download and installation of new software features: [X]
