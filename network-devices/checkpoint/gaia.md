@@ -97,3 +97,24 @@
        - Allow automatic download and installation of new software features: [X]
      - Allow sending non-personal telemetry data to enable remote monitoring of critical alerts and improve the product and its security: [X]
        - I approve sharing core dumps files and other relevant crash data whitch might contain personal information. All shared data will be processed in accordance with Check Point's Privacy Policy: [_]
+
+## CPGW1B
+
+### configuraiton file による初期設定
+
+```sh
+$ expert
+# config_system -t $(hostname)_config_system_$(date +%Y%m%d-%H%M).txt
+# ls
+CPGW1B_config_system_20260315-0216.txt
+# vi CPGW1B_config_system_20260315-0216.txt
+```
+
+> [! NOTE]
+> 先に作成した CPGW1A で admin のパスワード (ハッシュ値) を調べておく
+> ```
+> $ expert
+> # dbget passwd:admin:passwd
+> $6$MjUc.O..KRXR5cXg$ONOxB895Gxmg.QcaN7cn/LO3yF2yhnXfQIFJHvk2e1.nFMe/rLDqW.0xHkU9uOpaXvvZCir1IPCMhqjX4DD0M/
+> ```
+
