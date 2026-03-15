@@ -30,7 +30,7 @@
      - Secondary NTP Server: time.google.com, server, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
 6. Installation Type
-   - Security Gateway and/or Security Management: [X]
+   - Security Gateway and/or Security Management: (X)
 7. Products
    - Security Gateway: [_]
    - Security Management: [X]
