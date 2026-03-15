@@ -54,3 +54,11 @@
   | CPGW2     | 192.168.1.44 |              |
   | CPSMS     | 192.168.1.41 |              |
   | localhost | 127.0.0.1    | ::1          |
+
+## Network Management > IPv4 Static Routes
+
+| Destination Address | Next Hop Type | Rank | Local Scope | Gateways (Priority)    | Monitored Protocols | Ping | Comment |
+|---------------------|---------------|------|-------------|------------------------|---------------------|------|---------|
+| Default             | Normal        | 60   | N/A         | aaa.bbb.ccc.ddd (None) | None                | No   |         |
+
+(必要に応じて、スタティックルートを追加する)
