@@ -1,6 +1,6 @@
 # ラボ環境
 
-- VyOS
+- CPVYOS (VyOS)
   - eth0/Mgmt: DHCP
   - eth1:192.0.2.62/26
   - eth2: 192.0.2.126/26
@@ -52,7 +52,7 @@
    configure
    set int eth eth0 addr dhcp
    set service ssh
-   set system host-name CPLAB-VyOS
+   set system host-name CPVYOS
    set system time-zone Asia/Tokyo
    set system name-server eth0
    set int eth eth1 addr 192.0.2.62/26
