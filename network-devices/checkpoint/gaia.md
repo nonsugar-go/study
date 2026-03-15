@@ -66,8 +66,8 @@
 3. Internet Connection
    - Interface: eth3
    - Configure IPv4: Manually
-   - IPv4 address: 192.0.2.2
-   - Subnet mask: 255.255.255.0
+   - IPv4 address: 192.0.2.2/26
+   - Subnet mask: 255.255.255.192
    - Configure IPv6: Off
 4. Device Information
    - Host Name: CPSMS
