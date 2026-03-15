@@ -118,7 +118,7 @@
    - Subnet mask: 255.255.255.192
    - Configure IPv6: Off
 4. Device Information
-   - Host Name: CPSMS
+   - Host Name: CPGW1B
    - Domain Name: cplab.test
    - Primary DNS Server: 8.8.8.8
    - Secondary DNS Server: 1.1.1.1
