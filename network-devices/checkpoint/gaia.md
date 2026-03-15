@@ -91,17 +91,9 @@
 8. Secure Communication to Management Server
    - Activation Key: SIC@12345
    - Connect to your Management as a Service: [_]
-9. Security Management Administrator
-   - Define a new administrator
-     - Administrator Name: secadmin
-     - New Password: Lab@12345
-10. Security Management GUI Clients
-   - GUI clients can log into the Security Management from: Network
-     - IP Address: 192.168.1.0
-     - Subnet: 255.255.255.0
-11. First Time Configuration Wizard Summary
-    - Update and Data Sharing settings
-      - Allow automatic download and installation of security and software updates.: [X]
-        - Allow automatic download and installation of new software features: [X]
-      - Allow sending non-personal telemetry data to enable remote monitoring of critical alerts and improve the product and its security: [X]
-        - I approve sharing core dumps files and other relevant crash data whitch might contain personal information. All shared data will be processed in accordance with Check Point's Privacy Policy: [_]
+9. First Time Configuration Wizard Summary
+   - Update and Data Sharing settings
+     - Allow automatic download and installation of security and software updates.: [X]
+       - Allow automatic download and installation of new software features: [X]
+     - Allow sending non-personal telemetry data to enable remote monitoring of critical alerts and improve the product and its security: [X]
+       - I approve sharing core dumps files and other relevant crash data whitch might contain personal information. All shared data will be processed in accordance with Check Point's Privacy Policy: [_]
