@@ -100,9 +100,15 @@
    8. Press return to quit: `[Enter]`
 6. 再起動後、admin でログインする
    ```sh
+   login: admin
+   Password: Lab@12345
+
    set hostname CPSMS
    set interface eth0 ipv4-address 192.168.1.41 mask-length 24
    set interface eth0 comments "Mgmt"
+   set static-route default nexthop gateway address 192.168.1.1 on
+   set expert-password
+   Enter new expert password: Lab@12345
    save config
    halt
    ```
