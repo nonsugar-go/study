@@ -110,7 +110,7 @@ CPGW1B_config_system_20260315-0216.txt
 # vi CPGW1B_config_system_20260315-0216.txt
 ```
 
-> [! NOTE]
+> [!NOTE]
 > 先に作成した CPGW1A で admin のパスワード (ハッシュ値) を調べておく
 > ```
 > $ expert
