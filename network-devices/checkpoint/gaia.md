@@ -111,9 +111,10 @@ CPGW1B_config_system_20260315-0216.txt
 ```
 
 > [!NOTE]
-> 先に作成した CPGW1A で admin のパスワード (ハッシュ値) を調べておく
+> admin のパスワード (ハッシュ値) を調べておく
 > ```
 > $ expert
+> # dbget passwd:admin:passwd
 > # dbget passwd:admin:passwd
 > $6$MjUc.O..KRXR5cXg$ONOxB895Gxmg.QcaN7cn/LO3yF2yhnXfQIFJHvk2e1.nFMe/rLDqW.0xHkU9uOpaXvvZCir1IPCMhqjX4DD0M/
 > ```
