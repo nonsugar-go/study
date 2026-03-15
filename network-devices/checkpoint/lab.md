@@ -109,8 +109,11 @@
    set static-route default nexthop gateway address 192.168.1.1 on
    set expert-password
    Enter new expert password: Lab@12345
+   Enter new expert password (again): Lab@12345
    save config
    halt
+   Are you sure you want to halt?(Y/N)[N]
+   y
    ```
 
 ### その他の Check Point 仮想マシンの作成
