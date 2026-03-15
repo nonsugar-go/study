@@ -23,7 +23,7 @@
    - Primary DNS Server: 8.8.8.8
    - Secondary DNS Server: 1.1.1.1
    - Tertiary DNS Server: (None)
-   - Use a Proxy server: [_}
+   - Use a Proxy server: [_]
 5. Date and Time Settings
    - Use Network Time Protocol (NTP): (X)
      - Preferrd NTP Server: ntp.nict.jp, server, Version: 4
