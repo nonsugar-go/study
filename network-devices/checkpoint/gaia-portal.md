@@ -62,3 +62,11 @@
 | Default             | Normal        | 60   | N/A         | aaa.bbb.ccc.ddd (None) | None                | No   |         |
 
 (必要に応じて、スタティックルートを追加する)
+
+## System Management > Display Format
+
+- Display Format
+  - Time: 24-hour
+  - Date: yyyy/mm/dd
+  - IPv4 netmask: CIDR notation
+  - Autonomous System Number: Dotted-decimal notation
