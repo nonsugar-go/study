@@ -106,7 +106,6 @@
    set hostname CPSMS
    set interface eth0 ipv4-address 192.168.1.41 mask-length 24
    set interface eth0 comments "Mgmt"
-   set static-route default nexthop gateway address 192.168.1.1 on
    set expert-password
    Enter new expert password: Lab@12345
    Enter new expert password (again): Lab@12345
@@ -115,6 +114,7 @@
    Are you sure you want to halt?(Y/N)[N]
    y
    ```
+   <!-- set static-route default nexthop gateway address 192.168.1.1 on -->
 
 ### その他の Check Point 仮想マシンの作成
 
@@ -134,7 +134,7 @@
    save config
    halt
    ```
-5. 同様に GPGW2 用の仮想マシンを作成する。
+5. 同様に CPGW2 用の仮想マシンを作成する。
    ```sh
    set hostname CPGW2
    set interface eth0 ipv4-address 192.168.1.44 mask-length 24
