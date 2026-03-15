@@ -2,6 +2,12 @@
 
 ## Network Management > Network Interfaces > Edit (eth?)
 
+### CPSMS
+
+| eth? | Enable | Comment  | IPv4 address  | Subnet mask     |
+|------|--------|----------|---------------|-----------------|
+| eth0 | [X]    | Mgmt     | 192.168.1.41  | 255.255.255.0   |
+
 ### CPGW1A
 
 | eth? | Enable | Comment  | IPv4 address  | Subnet mask     |
