@@ -1,5 +1,13 @@
 # Gaia Portal (Web UI)
 
+### System Management > Display Format
+
+- Display Format
+  - Time: 24-hour
+  - Date: yyyy/mm/dd
+  - IPv4 netmask: CIDR notation
+  - Autonomous System Number: Plain - single number
+
 ## Network Management > Network Interfaces > Edit (eth?)
 
 ### CPSMS
@@ -63,10 +71,3 @@
 
 (必要に応じて、スタティックルートを追加する)
 
-## System Management > Display Format
-
-- Display Format
-  - Time: 24-hour
-  - Date: yyyy/mm/dd
-  - IPv4 netmask: CIDR notation
-  - Autonomous System Number: Dotted-decimal notation
