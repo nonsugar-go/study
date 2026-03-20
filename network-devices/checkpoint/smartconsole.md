@@ -11,7 +11,7 @@
 
 - Username: secadmin
 - Password: Lab@12345
-- Server: 192.168.1.41
+- Server Name or IP address: 192.168.1.41
 - `[LOGIN →]` をクリック
 
 ## 設定
