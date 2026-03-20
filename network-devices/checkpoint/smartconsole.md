@@ -16,7 +16,7 @@
 
 ## 設定
 
-1. MANAGE & SETTINGS (管理 & 設定) > Preferences (詳細設定) > Language (言語): Japanese (Japan)
+1. MANAGE & SETTINGS (管理 & 設定) > Preferences (詳細設定) > Language (言語): Japanese (Japan) ( 日本語 (日本) )
 2. 管理 & 設定 > 詳細設定 > セッションペインを有効にする
 
 ## CPGW1A / CPGW1B の追加
