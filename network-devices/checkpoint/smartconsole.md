@@ -26,7 +26,7 @@
      - Wizard Mode: (X)
    - Cluster General Properties
      - Cluster Name: CPGW1
-     - Cluster IPv4 Address: 192.168.100.1
+     - Cluster IPv4 Address: 192.168.101.1
      - Cluster IPv6 Address: (None)
      - Choose the Cluster's Solution: Check Point ClusterXL
        - High Availability
@@ -45,5 +45,33 @@
        - Secure Internal Communication
          - Activation Key: SIC@12345
          - `[Initialize]` をクリック後、Trust State が Trust established になることを確認
+     - Cluster Topology
+       - IPv4 Network Address (RO): 192.168.102.0
+       - Net Mask (RO): 255.255.255.0
+       - This network is intended for: Representing a cluster interface
+         - Interface IPv4: 192.168.102.1
+         - Net Mask: 255.255.255.0
+     - Cluster Topology
+       - IPv4 Network Address (RO): 192.0.2.0
+       - Net Mask (RO): 255.255.255.192
+       - This network is intended for: Representing a cluster interface
+         - Interface IPv4: 192.168.102.1
+         - Net Mask: 255.255.255.0
+     - Cluster Topology
+       - IPv4 Network Address (RO): 192.168.255.0
+       - Net Mask (RO): 255.255.255.0
+       - This network is intended for: Cluster Synchronization
+         - Primary: (X)
+     - Cluster Topology
+       - IPv4 Network Address (RO): 192.168.101.0
+       - Net Mask (RO): 255.255.255.0
+       - This network is intended for: Representing a cluster interface
+         - Interface IPv4: 192.168.101.1
+         - Net Mask: 255.255.255.0
+     - Cluster Topology
+       - IPv4 Network Address (RO): 192.168.1.0
+       - Net Mask (RO): 255.255.255.0
+       - This network is intended for: Private use of each member (don't monitor members interface)
+
 
 
