@@ -26,7 +26,24 @@
      - Wizard Mode: (X)
    - Cluster General Properties
      - Cluster Name: CPGW1
-     - Cluster IPv4 Address: 192.168.1.4
-     - Cluster IPv6 Address: None
+     - Cluster IPv4 Address: 192.168.100.1
+     - Cluster IPv6 Address: (None)
      - Choose the Cluster's Solution: Check Point ClusterXL
        - High Availability
+   - Cluster members' properties
+     - Add... > New Cluster Member...
+       - Name: CPGW1A
+       - IPv4 Address: 192.168.1.42
+       - IPv6 Address: (None)
+       - Secure Internal Communication
+         - Activation Key: SIC@12345
+         - `[Initialize]` をクリック後、Trust State が Trust established になることを確認
+     - Add... > New Cluster Member...
+       - Name: CPGW1B
+       - IPv4 Address: 192.168.1.43
+       - IPv6 Address: (None)
+       - Secure Internal Communication
+         - Activation Key: SIC@12345
+         - `[Initialize]` をクリック後、Trust State が Trust established になることを確認
+
+
