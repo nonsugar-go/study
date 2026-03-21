@@ -64,7 +64,7 @@
    - Default Gateway: 192.0.2.62
    - Configure IPv6: Off
 3. Internet Connection
-   - Interface: eth3
+   - Interface: eth4
    - Configure IPv4: Manually
    - IPv4 address: 192.0.2.2
    - Subnet mask: 255.255.255.192
@@ -112,7 +112,7 @@
    - Default Gateway: 192.0.2.62
    - Configure IPv6: Off
 3. Internet Connection
-   - Interface: eth3
+   - Interface: eth4
    - Configure IPv4: Manually
    - IPv4 address: 192.0.2.3
    - Subnet mask: 255.255.255.192
