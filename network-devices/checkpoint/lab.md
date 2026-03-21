@@ -1,5 +1,21 @@
 # ラボ環境
 
+## VyOS
+
+| 名前 | IP Address       | コメント   |
+|------|------------------|-----------|
+| eth0 | (DHCP)           | Mgmt      |
+| eth1 | 192.0.2.62/26    | External1 |
+| eth2 | 192.0.2.126/26   | External2 |
+
+## CPSMS
+
+| 名前 | IP Address       | コメント   |
+|------|------------------|-----------|
+| eth0 | 192.168.1.41/24  | Mgmt      |
+
+## CPGW1
+
 | 名前 | バーチャル IP     | CPGW1A           | CPGW1B           | コメント   |
 |------|------------------|------------------|------------------|-----------|
 | eth0 | Private          | 192.168.1.42/24  | 192.168.1.43/24  | Mgmt      |
@@ -7,35 +23,15 @@
 | eth2 | 192.168.101.1/24 | 192.168.101.2/24 | 192.168.101.3/24 | Internal1 |
 | eth3 | 192.168.102.1/24 | 192.168.102.2/24 | 192.168.102.3/24 | Internal2 |
 | eth4 | 192.0.2.1/26     | 192.0.2.2/26     | 192.0.2.3/26     | External  |
-| eth5 | 192.168.111.1/24 | 192.168.102.2/24 | 192.168.102.3/24 | DMZ       |
+| eth5 | 192.168.111.1/24 | 192.168.111.2/24 | 192.168.111.3/24 | DMZ       |
 
+## CPGW2
 
-- CPVYOS (VyOS)
-  - eth0/Mgmt: DHCP
-  - eth1:192.0.2.62/26
-  - eth2: 192.0.2.126/26
-- CPSMS
-  - eth0/Mgmt: 192.168.1.41/24
-- CPGW1 (Cluster VIP)
-  - eth1/Internal: 192.168.101.1/24
-  - eth3/External: 192.0.2.1/26
-  - eth4/DMZ: 192.168.102.1/24
-- CPGW1A
-  - eth0/Mgmt: 192.168.1.42/24
-  - eth1/Internal: 192.168.101.2/24
-  - eth2/Sync: 192.168.255.1/24
-  - eth3/External: 192.0.2.2/26
-  - eth4/DMZ: 192.168.102.2/24
-- CPGW1B
-  - eth0/Mgmt: 192.168.1.43/24
-  - eth1/Internal: 192.168.101.3/24
-  - eth2/Sync: 192.168.255.2/24
-  - eth3/External: 192.0.2.3/26
-  - eth4/DMZ: 192.168.102.3/24
-- CPGW2
-  - eth0/Mgmt: 192.168.1.44/24
-  - eth1/Internal: 192.168.202.1/24
-  - eth2/External: 192.0.2.65/26
+| 名前 | IP Address       | コメント   |
+|------|------------------|-----------|
+| eth0 | 192.168.1.44/24  | Mgmt      |
+| eth1 | 192.168.201.1/24 | Internal  |
+| eth2 | 192.0.2.65/26    | External  |
 
 # 構築
 
@@ -90,9 +86,9 @@
    - Name: CPSMS
    - Type: Red Hat Enterprise Linux (64-bit)
    - CPU: 4 Core
-   - Memory: 6144 MB
-   - HDD: 100 GB (Thin Provisioning)
-   - NIC: 5つ (VMXNET3)
+   - Memory: 8192 MB
+   - HDD: 160 GB (Thin Provisioning)
+   - NIC: 6つ (VMXNET3)
    - DVD: Check_Point_R82.10_T464.iso
    - Firmware: BIOS
 5. Gaia のインストール
