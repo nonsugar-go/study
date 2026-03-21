@@ -55,7 +55,7 @@
        - IPv4 Network Address (RO): 192.0.2.0
        - Net Mask (RO): 255.255.255.192
        - This network is intended for: Representing a cluster interface
-         - Interface IPv4: 192.168.102.1
+         - Interface IPv4: 192.0.2.1
          - Net Mask: 255.255.255.0
      - Cluster Topology
        - IPv4 Network Address (RO): 192.168.255.0
