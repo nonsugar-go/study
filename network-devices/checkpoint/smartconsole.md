@@ -72,6 +72,7 @@
        - IPv4 Network Address (RO): 192.168.1.0
        - Net Mask (RO): 255.255.255.0
        - This network is intended for: Private use of each member (don't monitor members interface)
-
+2. `[ゲートウェイ & サーバ]` の一覧にクラスタ `CPGW1` が登録されていることを確認し、変更をコミットするために、`[公開]` をクリック
+3. `[ゲートウェイ & サーバ]` の一覧に登録されたクラスタ `CPGW1` をダブルクリックし、`Network Management` をクリック
 
 
