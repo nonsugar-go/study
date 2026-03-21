@@ -18,23 +18,25 @@
 
 ### CPGW1A
 
-| eth? | Enable | Comment  | IPv4 address  | Mask Length |
-|------|--------|----------|---------------|-------------|
-| eth0 | [X]    | Mgmt     | 192.168.1.42  | 24          |
-| eth1 | [X]    | Internal | 192.168.101.2 | 24          |
-| eth2 | [X]    | Sync     | 192.168.255.1 | 24          |
-| eth3 | [X]    | External | 192.0.2.2     | 26          |
-| eth4 | [X]    | DMZ      | 192.168.102.2 | 24          |
+| eth? | Enable | Comment   | IPv4 address  | Mask Length |
+|------|--------|-----------|---------------|-------------|
+| eth0 | [X]    | Mgmt      | 192.168.1.42  | 24          |
+| eth1 | [X]    | Sync      | 192.168.255.1 | 24          |
+| eth2 | [X]    | Internal1 | 192.168.101.2 | 24          |
+| eth3 | [X]    | Internal2 | 192.168.102.2 | 24          |
+| eth4 | [X]    | External  | 192.0.2.2     | 26          |
+| eth5 | [X]    | DMZ       | 192.168.111.2 | 24          |
 
 ### CPGW1B
 
-| eth? | Enable | Comment  | IPv4 address  | Mask Length |
-|------|--------|----------|---------------|-------------|
-| eth0 | [X]    | Mgmt     | 192.168.1.43  | 24          |
-| eth1 | [X]    | Internal | 192.168.101.3 | 24          |
-| eth2 | [X]    | Sync     | 192.168.255.2 | 24          |
-| eth3 | [X]    | External | 192.0.2.3     | 26          |
-| eth4 | [X]    | DMZ      | 192.168.102.3 | 24          |
+| eth? | Enable | Comment   | IPv4 address  | Mask Length |
+|------|--------|-----------|---------------|-------------|
+| eth0 | [X]    | Mgmt      | 192.168.1.43  | 24          |
+| eth1 | [X]    | Sync      | 192.168.255.2 | 24          |
+| eth2 | [X]    | Internal1 | 192.168.101.3 | 24          |
+| eth3 | [X]    | Internal2 | 192.168.102.3 | 24          |
+| eth4 | [X]    | External  | 192.0.2.3     | 26          |
+| eth5 | [X]    | DMZ       | 192.168.111.3 | 24          |
 
 ### CPGW2
 
