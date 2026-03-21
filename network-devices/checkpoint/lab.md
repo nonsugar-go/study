@@ -81,16 +81,14 @@
    - Type: Red Hat Enterprise Linux (64-bit)
    - CPU: 4 Core
    - Memory: 6144 MB
-   - HDD: 80 GB (Thin Provisioning)
+   - HDD: 100 GB (Thin Provisioning)
    - NIC: 5つ (VMXNET3)
    - DVD: Check_Point_R82.10_T464.iso
    - Firmware: BIOS
 5. Gaia のインストール
    1. Install Gaia on this system
    2. Keyboard Selection: Japanese
-   3. Partitions Configuration
-      - System-root (GB): 15
-      - Logs (GB): 15
+   3. Partitions Configuration: (Default)
    4. Account Configuration / Password: Lab@12345
    5. Maintenace password / Password: Lab@12345
    6. Management Port: eth0
