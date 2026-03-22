@@ -78,9 +78,10 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   - Use Network Time Protocol (NTP): (X)
-     - Preferrd NTP Server: ntp.nict.jp, server, Version: 4
-     - Secondary NTP Server: time.google.com, server, Version: 4
+   **時刻が正しくないと評価ライセンスが有効にならない**
+   - Set time manually: (X)
+     - Date: (現在の日付を選択)
+     - Time: (現在の時刻を選択)
      - Time Zone: Tokyo, Asia (GMT +9:00)
 6. Installation Type
    - Security Gateway and/or Security Management: (X)
@@ -126,9 +127,10 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   - Use Network Time Protocol (NTP): (X)
-     - Preferrd NTP Server: ntp.nict.jp, server, Version: 4
-     - Secondary NTP Server: time.google.com, server, Version: 4
+   **時刻が正しくないと評価ライセンスが有効にならない**
+   - Set time manually: (X)
+     - Date: (現在の日付を選択)
+     - Time: (現在の時刻を選択)
      - Time Zone: Tokyo, Asia (GMT +9:00)
 6. Installation Type
    - Security Gateway and/or Security Management: (X)
@@ -174,9 +176,10 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   - Use Network Time Protocol (NTP): (X)
-     - Preferrd NTP Server: ntp.nict.jp, server, Version: 4
-     - Secondary NTP Server: time.google.com, server, Version: 4
+   **時刻が正しくないと評価ライセンスが有効にならない**
+   - Set time manually: (X)
+     - Date: (現在の日付を選択)
+     - Time: (現在の時刻を選択)
      - Time Zone: Tokyo, Asia (GMT +9:00)
 6. Installation Type
    - Security Gateway and/or Security Management: (X)
