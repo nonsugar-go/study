@@ -125,32 +125,40 @@
 1. CPTMPL を選択し、`[エクスポート]` をクリックする。
 2. CPTMPL をエクスポートした ovf, vmdk ファイルをインポートして CPSMS 用の仮想マシンを作成する。
 3. 起動後、admin でログインする。
+
+   **ホスト名 eth0 以外の設定はここでは必須でないが、スナップショットでこの時点に戻せるので、他のインタフェースとデフォルトゲートウェイも設定しておくと良い**
+   
    ```sh
    set hostname CPSMS
    set interface eth0 ipv4-address 192.168.1.41 mask-length 24
+   set interface eth1 ipv4-address 192.168.255.1 mask-length 24
+   set interface eth2 ipv4-address 192.168.101.2 mask-length 24
+   set interface eth3 ipv4-address 192.168.102.2 mask-length 24
+   set interface eth4 ipv4-address 192.0.2.2 mask-length 24
+   set interface eth5 ipv4-address 192.168.111.2 mask-length 24
    save config
    halt
    ```
-4. 同様に CPGW1A 用の仮想マシンを作成する。
+5. 同様に CPGW1A 用の仮想マシンを作成する。
    ```sh
    set hostname CPGW1A
    set interface eth0 ipv4-address 192.168.1.42 mask-length 24
    save config
    halt
    ```
-5. 同様に CPGW1B 用の仮想マシンを作成する。
+6. 同様に CPGW1B 用の仮想マシンを作成する。
    ```sh
    set hostname CPGW1B
    set interface eth0 ipv4-address 192.168.1.43 mask-length 24
    save config
    halt
    ```
-6. 同様に CPGW2 用の仮想マシンを作成する。
+7. 同様に CPGW2 用の仮想マシンを作成する。
    ```sh
    set hostname CPGW2
    set interface eth0 ipv4-address 192.168.1.44 mask-length 24
    save config
    halt
    ```
-7. 仮想マシン CPSMS, CPGW1A, CPGW1B, CPGW2 のスナップショットを取っておく
+8. 仮想マシン CPSMS, CPGW1A, CPGW1B, CPGW2 のスナップショットを取っておく
    **試用期間が切れたら、この時点に戻って再設定する**
