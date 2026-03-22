@@ -1,5 +1,14 @@
 # Gaia Clish
 
+## インターフェース
+
+- https://sc1.checkpoint.com/documents/R82/WebAdminGuides/JP/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Physical-Interfaces.htm
+
+```sh
+show interfaces
+show interface eth0
+```
+
 ## ホスト名
 
 - https://sc1.checkpoint.com/documents/R82/WebAdminGuides/JP/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Hosts-and-DNS-System-Name.htm
