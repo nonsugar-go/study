@@ -25,7 +25,7 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   **時刻が正しくないと評価ライセンスが有効にならないので、手動で設定する (NTP は Gaia Portal で設定)**
+   **時刻が正しくないと評価ライセンスが有効にならない**
    - Set time manually: (X)
      - Date: (現在の日付を選択)
      - Time: (現在の時刻を選択)
