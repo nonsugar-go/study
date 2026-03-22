@@ -83,7 +83,7 @@
      1. Downloads and Installation > Clean Install of Security Gateway and Management Server > Clean Install Image
      2. Downloads and Installation > SmartConsole > SmartConsole EXE
 3. 仮想マシンの作成 (ひな型)
-   - Name: CPTEMP
+   - Name: CPTMPL
    - Type: Red Hat Enterprise Linux (64-bit)
    - CPU: 4 Core
    - Memory: 8192 MB
@@ -107,7 +107,7 @@
    login: admin
    Password: Lab@12345
 
-   set hostname CPTEMP
+   set hostname CPTMPL
    set interface eth0 ipv4-address 192.168.1.40 mask-length 24
    set interface eth0 comments "Mgmt"
    set expert-password
@@ -122,8 +122,8 @@
 
 ### ひな型から Check Point 仮想マシンの作成
 
-1. CPTEMP を選択し、`[エクスポート]` をクリックする。
-2. CPTEMP をエクスポートした ovf, vmdk ファイルをインポートして CPSMS 用の仮想マシンを作成する。
+1. CPTMPL を選択し、`[エクスポート]` をクリックする。
+2. CPTMPL をエクスポートした ovf, vmdk ファイルをインポートして CPSMS 用の仮想マシンを作成する。
 3. 起動後、admin でログインする。
    ```sh
    set hostname CPSMS
