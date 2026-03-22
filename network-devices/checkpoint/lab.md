@@ -121,8 +121,8 @@
    set timezone Asia / Tokyo
    delete ntp server address ntp.checkpoint.com
    delete ntp server address ntp2.checkpoint.com
-   add ntp server address ntp.nict.jp type server
-   add ntp server address time.google.com type server
+   add ntp server address 192.168.1.39 type server
+   add ntp server address ntp.nict.jp type pool
    set ntp active on
    add host name CPSMS ipv4-address 192.168.1.41
    add host name CPGW1A ipv4-address 192.168.1.42
