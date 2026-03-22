@@ -108,6 +108,7 @@
    Password: Lab@12345
 
    set hostname CPTMPL
+   set domainname cplab.test
    set interface eth0 ipv4-address 192.168.1.40 mask-length 24
    set interface eth0 comments "Mgmt"
    set expert-password
