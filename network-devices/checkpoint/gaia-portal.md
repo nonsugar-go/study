@@ -11,6 +11,16 @@
   - IPv4 netmask: CIDR notation
   - Autonomous System Number: Dotted-deimal notation
 
+## System Management > Time
+
+- Set Time and Date
+  - Set Time and Date automatically using Network Time Protocol (NTP): (X)
+    - Address: 192.168.1.39, Version: 4, Type: server
+    - Address: ntp.nict.jp, Version: 4, Type: pool
+    - Preferred Server/Pool: ntp.nict.jp
+- Set Time Zone
+  - Time Zone: Tokyo, Asia (GMT +9:00)
+
 ## Network Management > Network Interfaces > Edit (eth?)
 
 ### CPSMS
@@ -89,13 +99,3 @@
 | Destination Address | Next Hop Type | Rank | Local Scope | Gateways (Priority)    | Monitored Protocols | Ping | Comment |
 |---------------------|---------------|------|-------------|------------------------|---------------------|------|---------|
 | Default             | Normal        | 60   | N/A         | 192.0.2.126     (None) | None                | No   |         |
-
-## System Management > Time
-
-- Set Time and Date
-  - Set Time and Date automatically using Network Time Protocol (NTP): (X)
-    - Address: 192.168.1.39, Version: 4, Type: server
-    - Address: ntp.nict.jp, Version: 4, Type: pool
-    - Preferred Server/Pool: ntp.nict.jp
-- Set Time Zone
-  - Time Zone: Tokyo, Asia (GMT +9:00)
