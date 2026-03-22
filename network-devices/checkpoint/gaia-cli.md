@@ -1,5 +1,21 @@
 # Gaia Clish
 
+## ライセンスの確認
+
+```sh
+CPSMS> cplic print
+Host             Expiration  Features
+
+
+
+======================================================================
+ Check Point product trial period will expire in 15 days.
+ Until then, you will be able to use the complete Check Point Product Suite.
+ Please obtain a permanent license from Check Point User Center at:
+ https://usercenter.checkpoint.com/pub/usercenter/get_started.html
+======================================================================
+```
+
 ## 再起動・停止
 
 - https://sc1.checkpoint.com/documents/R82/WebAdminGuides/JP/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Shut-Down.htm
@@ -72,10 +88,4 @@ ntp.nict.jp              server            4        yes
 time.google.com          server            4        no
 CPSMS> show ntp current
 133.243.238.244
-```
-
-## ライセンスの確認
-
-```sh
-cplic print
 ```
