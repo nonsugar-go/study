@@ -87,7 +87,7 @@
    - Name: CPTMPL
    - Type: Red Hat Enterprise Linux (64-bit)
    - CPU: 4 Core
-   - Memory: 12288 MB
+   - Memory: 8192 MB
    - HDD: 160 GB (Thin Provisioning)
    - NIC: 6つ (VMXNET3)
    - DVD: Check_Point_R82.10_T464.iso
