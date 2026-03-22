@@ -118,8 +118,6 @@
    Are you sure you want to halt?(Y/N)[N]
    y
    ```
-   <!-- set static-route default nexthop gateway address 192.168.1.1 on -->
-
 ### ひな型から Check Point 仮想マシンの作成
 
 1. CPTMPL を選択し、`[エクスポート]` をクリックする。
@@ -131,11 +129,7 @@
    ```sh
    set hostname CPSMS
    set interface eth0 ipv4-address 192.168.1.41 mask-length 24
-   set interface eth1 ipv4-address 192.168.255.1 mask-length 24
-   set interface eth2 ipv4-address 192.168.101.2 mask-length 24
-   set interface eth3 ipv4-address 192.168.102.2 mask-length 24
-   set interface eth4 ipv4-address 192.0.2.2 mask-length 24
-   set interface eth5 ipv4-address 192.168.111.2 mask-length 24
+   set static-route default nexthop gateway address 192.168.1.1 on
    save config
    halt
    ```
@@ -143,6 +137,17 @@
    ```sh
    set hostname CPGW1A
    set interface eth0 ipv4-address 192.168.1.42 mask-length 24
+   set interface eth1 ipv4-address 192.168.255.1 mask-length 24
+   set interface eth1 comments "Sync"
+   set interface eth2 ipv4-address 192.168.101.2 mask-length 24
+   set interface eth2 comments "Internal1"
+   set interface eth3 ipv4-address 192.168.102.2 mask-length 24
+   set interface eth3 comments "Internal2"
+   set interface eth4 ipv4-address 192.0.2.2 mask-length 24
+   set interface eth4 comments "External"
+   set interface eth5 ipv4-address 192.168.111.2 mask-length 24
+   set interface eth5 comments "DMZ"
+   set static-route default nexthop gateway address 192.0.2.62 on
    save config
    halt
    ```
@@ -150,6 +155,17 @@
    ```sh
    set hostname CPGW1B
    set interface eth0 ipv4-address 192.168.1.43 mask-length 24
+   set interface eth1 ipv4-address 192.168.255.2 mask-length 24
+   set interface eth1 comments "Sync"
+   set interface eth2 ipv4-address 192.168.101.3 mask-length 24
+   set interface eth2 comments "Internal1"
+   set interface eth3 ipv4-address 192.168.102.3 mask-length 24
+   set interface eth3 comments "Internal2"
+   set interface eth4 ipv4-address 192.0.2.3 mask-length 24
+   set interface eth4 comments "External"
+   set interface eth5 ipv4-address 192.168.111.3 mask-length 24
+   set interface eth5 comments "DMZ"
+   set static-route default nexthop gateway address 192.0.2.62 on
    save config
    halt
    ```
@@ -157,6 +173,11 @@
    ```sh
    set hostname CPGW2
    set interface eth0 ipv4-address 192.168.1.44 mask-length 24
+   set interface eth1 ipv4-address 192.168.201.1 mask-length 24
+   set interface eth1 comments "Internal"
+   set interface eth2 ipv4-address 192.0.2.65 mask-length 24
+   set interface eth2 comments "External"
+   set static-route default nexthop gateway address 192.0.2.126 on
    save config
    halt
    ```
