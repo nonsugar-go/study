@@ -6,7 +6,7 @@
   - Time: 24-hour
   - Date: yyyy/mm/dd
   - IPv4 netmask: CIDR notation
-  - Autonomous System Number: Plain - single number
+  - Autonomous System Number: Dotted-deimal notation
 
 ## Network Management > Network Interfaces > Edit (eth?)
 
