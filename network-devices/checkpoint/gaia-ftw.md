@@ -1,7 +1,7 @@
 # Gaia
 
 **評価ライセンスを使用するために時刻が合っている必要があります。
-ssh でログインして、`show clock`, `show ntp current` で確認します。
+ssh でログインして、`show clock`  で確認します。
 ## CPSMS
 
 ### First Time Configuration Wizard (FTW)
