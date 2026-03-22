@@ -27,10 +27,16 @@ ssh でログインして、`show clock`  で確認します。
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
+   - Set time manually: (X)
+     - Date: (現在の日付)
+     - Time: (現在の時刻)
+     - Time Zone: Tokyo, Asia (GMT +9:00)
+   <!--
    - Use Network Time Protocol (NTP): (X)
      - Preferred NTP server: ntp.nict.jp, Type: Server, Version: 4
      - Secondary NTP server: time.google.com, Type: Server, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
+   -->
 6. Installation Type
    - Security Gateway and/or Security Management: (X)
 7. Products
