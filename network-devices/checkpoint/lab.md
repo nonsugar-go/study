@@ -121,10 +121,10 @@
    add ntp server address ntp.nict.jp type server
    add ntp server address time.google.com type server
    set ntp active on
-   set host name CPSMS ipv4-address 192.168.1.41
-   set host name CPGW1A ipv4-address 192.168.1.42
-   set host name CPGW1B ipv4-address 192.168.1.43
-   set host name CPGW2 ipv4-address 192.168.1.44
+   add host name CPSMS ipv4-address 192.168.1.41
+   add host name CPGW1A ipv4-address 192.168.1.42
+   add host name CPGW1B ipv4-address 192.168.1.43
+   add host name CPGW2 ipv4-address 192.168.1.44
    save config
    halt
    Are you sure you want to halt?(Y/N)[N]
