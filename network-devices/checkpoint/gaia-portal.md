@@ -67,11 +67,13 @@
 
 ## Network Management > IPv4 Static Routes
 
+(必要に応じて、スタティックルートを追加する)
+
+### CPSMS
+
 | Destination Address | Next Hop Type | Rank | Local Scope | Gateways (Priority)    | Monitored Protocols | Ping | Comment |
 |---------------------|---------------|------|-------------|------------------------|---------------------|------|---------|
-| Default             | Normal        | 60   | N/A         | aaa.bbb.ccc.ddd (None) | None                | No   |         |
-
-(必要に応じて、スタティックルートを追加する)
+| Default             | Normal        | 60   | N/A         | 192.168.1.1     (None) | None                | No   |         |
 
 ## System Management > Time
 
