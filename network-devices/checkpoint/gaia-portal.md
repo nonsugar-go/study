@@ -73,3 +73,11 @@
 
 (必要に応じて、スタティックルートを追加する)
 
+## System Management > Time
+
+- Set Time and Date
+  - Set Time and Date automatically using Network Time Protocol (NTP): (X)
+    - Primary NTP server: ntp.nict.jp, Version: 4
+    - Secondary NTP server: time.google.com, Version: 4
+- Set Time Zone
+  - Time Zone: Tokyo, Asia (GMT +9:00)
