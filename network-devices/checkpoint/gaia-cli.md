@@ -9,6 +9,16 @@ show date
 show time
 ```
 
+## NTP
+
+- https://sc1.checkpoint.com/documents/R82/WebAdminGuides/JP/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Time-Gaia-Clish.htm
+
+```sh
+show ntp servers
+show ntp active
+show ntp current
+```
+
 ## ライセンスの確認
 
 ```sh
