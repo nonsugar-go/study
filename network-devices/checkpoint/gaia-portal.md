@@ -1,7 +1,7 @@
 # Gaia Portal (Web UI)
 
 - 編集前に 🔒 をクリックして、ロックを外す
-- 編集後は、✏ をクリックして、ロックする
+- 編集後に ✏ をクリックして、ロックする
 
 ### System Management > Display Format
 
