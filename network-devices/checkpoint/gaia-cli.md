@@ -8,3 +8,9 @@ set time 19:15:00
 show date
 show time
 ```
+
+## ライセンスの確認
+
+```sh
+cplic print
+```
