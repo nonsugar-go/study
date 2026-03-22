@@ -4,7 +4,7 @@
 
 | 名前 | IP Address       | コメント   |
 |------|------------------|-----------|
-| eth0 | (DHCP)           | Mgmt      |
+| eth0 | 192.168.1.39/24  | Mgmt      |
 | eth1 | 192.0.2.62/26    | External1 |
 | eth2 | 192.0.2.126/26   | External2 |
 
@@ -56,11 +56,12 @@
 3. 再起動後の設定
    ```
    configure
-   set int eth eth0 addr dhcp
+   set int eth eth0 addr 192.168.1.39/24
+   set protocols static route 0.0.0.0/0 next-hop 192.168.1.1
    set service ssh
    set system host-name CPVYOS
    set system time-zone Asia/Tokyo
-   set system name-server eth0
+   set system name-server 8.8.8.8
    set int eth eth1 addr 192.0.2.62/26
    set int eth eth2 addr 192.0.2.126/26
    set nat source rule 100 outbound-interface name eth0
