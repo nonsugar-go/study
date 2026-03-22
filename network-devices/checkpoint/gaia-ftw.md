@@ -1,8 +1,7 @@
 # Gaia
 
 **評価ライセンスを使用するために時刻が合っている必要があります。
-ssh でログインして、`show clock` で時刻が合っていることを確認してから作業します。**
-
+ssh でログインして、`show clock`, `show ntp current` で確認します。
 ## CPSMS
 
 ### First Time Configuration Wizard (FTW)
@@ -28,10 +27,9 @@ ssh でログインして、`show clock` で時刻が合っていることを確
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   **時刻が正しくないと評価ライセンスが有効にならない**
-   - Set time manually: (X)
-     - Date: (現在の日付を選択)
-     - Time: (現在の時刻を選択)
+   - Use Network Time Protocol (NTP): (X)
+     - Preferred NTP server: ntp.nict.jp, Type: Server, Version: 4
+     - Secondary NTP server: time.google.com, Type: Server, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
 6. Installation Type
    - Security Gateway and/or Security Management: (X)
@@ -81,10 +79,9 @@ ssh でログインして、`show clock` で時刻が合っていることを確
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   **時刻が正しくないと評価ライセンスが有効にならない**
-   - Set time manually: (X)
-     - Date: (現在の日付を選択)
-     - Time: (現在の時刻を選択)
+   - Use Network Time Protocol (NTP): (X)
+     - Preferred NTP server: ntp.nict.jp, Type: Server, Version: 4
+     - Secondary NTP server: time.google.com, Type: Server, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
 6. Installation Type
    - Security Gateway and/or Security Management: (X)
@@ -130,10 +127,9 @@ ssh でログインして、`show clock` で時刻が合っていることを確
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   **時刻が正しくないと評価ライセンスが有効にならない**
-   - Set time manually: (X)
-     - Date: (現在の日付を選択)
-     - Time: (現在の時刻を選択)
+   - Use Network Time Protocol (NTP): (X)
+     - Preferred NTP server: ntp.nict.jp, Type: Server, Version: 4
+     - Secondary NTP server: time.google.com, Type: Server, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
 6. Installation Type
    - Security Gateway and/or Security Management: (X)
@@ -179,10 +175,9 @@ ssh でログインして、`show clock` で時刻が合っていることを確
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   **時刻が正しくないと評価ライセンスが有効にならない**
-   - Set time manually: (X)
-     - Date: (現在の日付を選択)
-     - Time: (現在の時刻を選択)
+   - Use Network Time Protocol (NTP): (X)
+     - Preferred NTP server: ntp.nict.jp, Type: Server, Version: 4
+     - Secondary NTP server: time.google.com, Type: Server, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
 6. Installation Type
    - Security Gateway and/or Security Management: (X)
