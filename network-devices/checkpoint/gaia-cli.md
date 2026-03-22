@@ -56,9 +56,13 @@ show clock
 - https://sc1.checkpoint.com/documents/R82/WebAdminGuides/JP/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Time-Gaia-Clish.htm
 
 ```sh
-show ntp servers
-show ntp active
-show ntp current
+CPSMS> show ntp servers
+IP Address               Type              Version  Preferred
+
+ntp.nict.jp              server            4        yes
+time.google.com          server            4        no
+CPSMS> show ntp current
+133.243.238.244
 ```
 
 ## ライセンスの確認
