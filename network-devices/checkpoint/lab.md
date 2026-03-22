@@ -113,6 +113,9 @@
    set expert-password
    Enter new expert password: Lab@12345
    Enter new expert password (again): Lab@12345
+   set dns primary 8.8.8.8
+   set dns secondary 1.1.1.1
+   set dns suffix cplab.test
    delete ntp server address ntp.checkpoint.com
    delete ntp server address ntp2.checkpoint.com
    add ntp server address ntp.nict.jp type server
