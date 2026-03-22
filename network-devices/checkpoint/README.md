@@ -8,3 +8,7 @@
 ## CLI
 
 - [CLI](gaia-cli.md)
+
+## Secureknowledge
+
+- https://community.checkpoint.com/t5/Firewall-and-Security-Management/R82-10-smartconsole-Evaluation-License-Expired/m-p/272789
