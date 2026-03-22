@@ -167,39 +167,38 @@
    - Configure IPv4: Manually
    - IPv4 address: 192.168.1.44
    - Subnet mask: 255.255.255.0
-   <!-- - Default Gateway: 192.0.2.126 -->
-   - Default Gateway: (None)
+   - Default Gateway: 192.0.2.126
    - Configure IPv6: Off
-4. Internet Connection
+3. Internet Connection
    - Interface: eth2
    - Configure IPv4: Manually
    - IPv4 address: 192.0.2.65
    - Subnet mask: 255.255.255.192
    - Configure IPv6: Off
-5. Device Information
+4. Device Information
    - Host Name: CPGW2
    - Domain Name: cplab.test
    - Primary DNS Server: 8.8.8.8
    - Secondary DNS Server: 1.1.1.1
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
-6. Date and Time Settings
+5. Date and Time Settings
    - Use Network Time Protocol (NTP): (X)
      - Preferred NTP server: 192.168.1.39, Type: Server, Version: 4
      - Secondary NTP server: ntp.nict.jp, Type: Pool, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
-7. Installation Type
+6. Installation Type
    - Security Gateway and/or Security Management: (X)
-8. Products
+7. Products
    - Security Gateway: [X]
    - Security Management: [_]
    - Unit is a part of a cluster: [_]
-9. Dynamically Assigned IP
+8. Dynamically Assigned IP
    - Does this gateway have a dynamically assigned IP address (DAIP gateway)?: No
-10. Secure Communication to Management Server
+9. Secure Communication to Management Server
    - Activation Key: SIC@12345
    - Connect to your Management as a Service: [_]
-11. First Time Configuration Wizard Summary
+10. First Time Configuration Wizard Summary
     - Update and Data Sharing settings
       - Allow automatic download and installation of security and software updates.: [X]
         - Allow automatic download and installation of new software features: [X]
