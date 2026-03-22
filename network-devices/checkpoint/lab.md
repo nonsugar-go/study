@@ -117,6 +117,7 @@
    set dns primary 8.8.8.8
    set dns secondary 1.1.1.1
    set dns suffix cplab.test
+   set timezone Asia / Tokyo
    delete ntp server address ntp.checkpoint.com
    delete ntp server address ntp2.checkpoint.com
    add ntp server address ntp.nict.jp type server
