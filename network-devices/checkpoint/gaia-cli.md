@@ -1,5 +1,14 @@
 # Gaia Clish
 
+## 再起動・停止
+
+- https://sc1.checkpoint.com/documents/R82/WebAdminGuides/JP/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Shut-Down.htm
+
+```sh
+reboot
+halt
+```
+
 ## インターフェース
 
 - https://sc1.checkpoint.com/documents/R82/WebAdminGuides/JP/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Physical-Interfaces.htm
