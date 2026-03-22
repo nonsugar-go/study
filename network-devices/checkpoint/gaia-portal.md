@@ -77,7 +77,8 @@
 
 - Set Time and Date
   - Set Time and Date automatically using Network Time Protocol (NTP): (X)
-    - Primary NTP server: ntp.nict.jp, Version: 4
-    - Secondary NTP server: time.google.com, Version: 4
+    - Address: ntp.nict.jp, Version: 4, Type: server
+    - Address: time.google.com, Version: 4, Type: server
+    - Preferred Server/Pool: ntp.nict.jp
 - Set Time Zone
   - Time Zone: Tokyo, Asia (GMT +9:00)
