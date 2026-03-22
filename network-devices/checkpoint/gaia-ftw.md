@@ -166,38 +166,39 @@
    - Configure IPv4: Manually
    - IPv4 address: 192.168.1.44
    - Subnet mask: 255.255.255.0
-   - Default Gateway: 192.0.2.126
+   <!-- - Default Gateway: 192.0.2.126 -->
+   - Default Gateway: (None)
    - Configure IPv6: Off
-3. Internet Connection
+4. Internet Connection
    - Interface: eth2
    - Configure IPv4: Manually
    - IPv4 address: 192.0.2.65
    - Subnet mask: 255.255.255.192
    - Configure IPv6: Off
-4. Device Information
+5. Device Information
    - Host Name: CPGW2
    - Domain Name: cplab.test
    - Primary DNS Server: 8.8.8.8
    - Secondary DNS Server: 1.1.1.1
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
-5. Date and Time Settings
+6. Date and Time Settings
    - Set time manually: (X)
      - Date: (現在の日付)
      - Time: (現在の時刻)
      - Time Zone: Tokyo, Asia (GMT +9:00)
-6. Installation Type
+7. Installation Type
    - Security Gateway and/or Security Management: (X)
-7. Products
+8. Products
    - Security Gateway: [X]
    - Security Management: [_]
    - Unit is a part of a cluster: [_]
-8. Dynamically Assigned IP
+9. Dynamically Assigned IP
    - Does this gateway have a dynamically assigned IP address (DAIP gateway)?: No
-9. Secure Communication to Management Server
+10. Secure Communication to Management Server
    - Activation Key: SIC@12345
    - Connect to your Management as a Service: [_]
-10. First Time Configuration Wizard Summary
+11. First Time Configuration Wizard Summary
     - Update and Data Sharing settings
       - Allow automatic download and installation of security and software updates.: [X]
         - Allow automatic download and installation of new software features: [X]
