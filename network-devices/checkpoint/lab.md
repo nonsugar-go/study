@@ -158,7 +158,7 @@
    set interface eth2 comments "Internal1"
    set interface eth3 ipv4-address 192.168.102.2 mask-length 24
    set interface eth3 comments "Internal2"
-   set interface eth4 ipv4-address 192.0.2.2 mask-length 24
+   set interface eth4 ipv4-address 192.0.2.2 mask-length 26
    set interface eth4 comments "External"
    set interface eth5 ipv4-address 192.168.111.2 mask-length 24
    set interface eth5 comments "DMZ"
@@ -176,7 +176,7 @@
    set interface eth2 comments "Internal1"
    set interface eth3 ipv4-address 192.168.102.3 mask-length 24
    set interface eth3 comments "Internal2"
-   set interface eth4 ipv4-address 192.0.2.3 mask-length 24
+   set interface eth4 ipv4-address 192.0.2.3 mask-length 26
    set interface eth4 comments "External"
    set interface eth5 ipv4-address 192.168.111.3 mask-length 24
    set interface eth5 comments "DMZ"
@@ -190,7 +190,7 @@
    set interface eth0 ipv4-address 192.168.1.44 mask-length 24
    set interface eth1 ipv4-address 192.168.201.1 mask-length 24
    set interface eth1 comments "Internal"
-   set interface eth2 ipv4-address 192.0.2.65 mask-length 24
+   set interface eth2 ipv4-address 192.0.2.65 mask-length 26
    set interface eth2 comments "External"
    set static-route default nexthop gateway address 192.0.2.126 on
    save config
