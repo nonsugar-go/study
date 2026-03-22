@@ -36,8 +36,8 @@
      - Time Zone: Tokyo, Asia (GMT +9:00)
    -->
    - Use Network Time Protocol (NTP): (X)
-     - Preferred NTP server: ntp.nict.jp, Type: Server, Version: 4
-     - Secondary NTP server: time.google.com, Type: Server, Version: 4
+     - Preferred NTP server: 192.168.1.39, Type: Server, Version: 4
+     - Secondary NTP server: ntp.nict.jp, Type: Pool, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
 6. Installation Type
    - Security Gateway and/or Security Management: (X)
@@ -87,9 +87,9 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   - Set time manually: (X)
-     - Date: (現在の日付)
-     - Time: (現在の時刻)
+   - Use Network Time Protocol (NTP): (X)
+     - Preferred NTP server: 192.168.1.39, Type: Server, Version: 4
+     - Secondary NTP server: ntp.nict.jp, Type: Pool, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
 6. Installation Type
    - Security Gateway and/or Security Management: (X)
@@ -135,9 +135,9 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   - Set time manually: (X)
-     - Date: (現在の日付)
-     - Time: (現在の時刻)
+   - Use Network Time Protocol (NTP): (X)
+     - Preferred NTP server: 192.168.1.39, Type: Server, Version: 4
+     - Secondary NTP server: ntp.nict.jp, Type: Pool, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
 6. Installation Type
    - Security Gateway and/or Security Management: (X)
@@ -184,9 +184,9 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 6. Date and Time Settings
-   - Set time manually: (X)
-     - Date: (現在の日付)
-     - Time: (現在の時刻)
+   - Use Network Time Protocol (NTP): (X)
+     - Preferred NTP server: 192.168.1.39, Type: Server, Version: 4
+     - Secondary NTP server: ntp.nict.jp, Type: Pool, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
 7. Installation Type
    - Security Gateway and/or Security Management: (X)
