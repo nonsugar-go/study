@@ -27,6 +27,14 @@ show ntp active
 show ntp current
 ```
 
+## スタティックホストエントリ
+
+- https://sc1.checkpoint.com/documents/R82/WebAdminGuides/JP/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Hosts-and-DNS-Hosts.htm
+
+```sh
+show host names
+```
+
 ## ライセンスの確認
 
 ```sh
