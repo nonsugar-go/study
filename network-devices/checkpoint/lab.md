@@ -82,8 +82,8 @@
    - [Check Point R82.10: sk183506](https://support.checkpoint.com/results/sk/sk183506)
      1. Downloads and Installation > Clean Install of Security Gateway and Management Server > Clean Install Image
      2. Downloads and Installation > SmartConsole > SmartConsole EXE
-3. 仮想マシンの作成
-   - Name: CPSMS
+3. 仮想マシンの作成 (ひな型)
+   - Name: CPTEMPLATE
    - Type: Red Hat Enterprise Linux (64-bit)
    - CPU: 4 Core
    - Memory: 8192 MB
@@ -99,7 +99,7 @@
    5. Maintenace password / Password: Lab@12345
    6. Management Port: eth0
    7. Management Interface (eth0)
-      - IP address: 192.168.1.41
+      - IP address: 192.168.1.40
       - Netmask: 255.255.255.0
    8. Press return to quit: `[Enter]`
 6. 再起動後、admin でログインする
@@ -107,8 +107,8 @@
    login: admin
    Password: Lab@12345
 
-   set hostname CPSMS
-   set interface eth0 ipv4-address 192.168.1.41 mask-length 24
+   set hostname CPTEMPLATE
+   set interface eth0 ipv4-address 192.168.1.40 mask-length 24
    set interface eth0 comments "Mgmt"
    set expert-password
    Enter new expert password: Lab@12345
@@ -120,25 +120,32 @@
    ```
    <!-- set static-route default nexthop gateway address 192.168.1.1 on -->
 
-### その他の Check Point 仮想マシンの作成
+### ひな型から Check Point 仮想マシンの作成
 
-1. CPSMS を選択し、`[エクスポート]` をクリックする。
-2. CPSMS をエクスポートした ovf, vmdk ファイルをインポートして CPGW1A 用の仮想マシンを作成する。
+1. CPTEMPLATE を選択し、`[エクスポート]` をクリックする。
+2. CPTEMPLATE をエクスポートした ovf, vmdk ファイルをインポートして CPSMS 用の仮想マシンを作成する。
 3. 起動後、admin でログインする。
+   ```sh
+   set hostname CPSMS
+   set interface eth0 ipv4-address 192.168.1.41 mask-length 24
+   save config
+   halt
+   ```
+4. 同様に CPGW1A 用の仮想マシンを作成する。
    ```sh
    set hostname CPGW1A
    set interface eth0 ipv4-address 192.168.1.42 mask-length 24
    save config
    halt
    ```
-4. 同様に CPGW1B 用の仮想マシンを作成する。
+5. 同様に CPGW1B 用の仮想マシンを作成する。
    ```sh
    set hostname CPGW1B
    set interface eth0 ipv4-address 192.168.1.43 mask-length 24
    save config
    halt
    ```
-5. 同様に CPGW2 用の仮想マシンを作成する。
+6. 同様に CPGW2 用の仮想マシンを作成する。
    ```sh
    set hostname CPGW2
    set interface eth0 ipv4-address 192.168.1.44 mask-length 24
