@@ -102,7 +102,7 @@
       - IP address: 192.168.1.40
       - Netmask: 255.255.255.0
    8. Press return to quit: `[Enter]`
-6. 再起動後、admin でログインする
+6. 再起動後、admin でログインし、共通設定を実施する
    ```sh
    login: admin
    Password: Lab@12345
@@ -113,6 +113,15 @@
    set expert-password
    Enter new expert password: Lab@12345
    Enter new expert password (again): Lab@12345
+   delete ntp server address ntp.checkpoint.com
+   delete ntp server address ntp2.checkpoint.com
+   add ntp server address ntp.nict.jp type server
+   add ntp server address time.google.com type server
+   set ntp active on
+   set host name CPSMS ipv4-address 192.168.1.41
+   set host name CPGW1A ipv4-address 192.168.1.42
+   set host name CPGW1B ipv4-address 192.168.1.43
+   set host name CPGW2 ipv4-address 192.168.1.44
    save config
    halt
    Are you sure you want to halt?(Y/N)[N]
@@ -120,9 +129,10 @@
    ```
 ### ひな型から Check Point 仮想マシンの作成
 
-1. CPTMPL を選択し、`[エクスポート]` をクリックする。
-2. CPTMPL をエクスポートした ovf, vmdk ファイルをインポートして CPSMS 用の仮想マシンを作成する。
-3. 起動後、admin でログインし、CPSMS のアドレスを設定する。
+1. CPTMPL を選択し、`[エクスポート]` をクリックする
+2. CPTMPL をエクスポートした ovf, vmdk ファイルをインポートして CPSMS 用の仮想マシンを作成する
+3. 仮想マシンの NIC を適切なネットワークに接続する
+4. 起動後、admin でログインし、CPSMS のアドレスを設定する
 
    **ホスト名 eth0 以外の設定はここでは必須でないが、スナップショットでこの時点に戻せるので、他のインタフェースとデフォルトゲートウェイも設定があれば、設定しておくと良い**
    
@@ -133,7 +143,7 @@
    save config
    halt
    ```
-5. 同様に CPGW1A 用の仮想マシンを作成する。
+5. 同様に CPGW1A 用の仮想マシンを作成する
    ```sh
    set hostname CPGW1A
    set interface eth0 ipv4-address 192.168.1.42 mask-length 24
@@ -151,7 +161,7 @@
    save config
    halt
    ```
-6. 同様に CPGW1B 用の仮想マシンを作成する。
+6. 同様に CPGW1B 用の仮想マシンを作成する
    ```sh
    set hostname CPGW1B
    set interface eth0 ipv4-address 192.168.1.43 mask-length 24
@@ -169,7 +179,7 @@
    save config
    halt
    ```
-7. 同様に CPGW2 用の仮想マシンを作成する。
+7. 同様に CPGW2 用の仮想マシンを作成する
    ```sh
    set hostname CPGW2
    set interface eth0 ipv4-address 192.168.1.44 mask-length 24
@@ -182,4 +192,5 @@
    halt
    ```
 8. 仮想マシン CPSMS, CPGW1A, CPGW1B, CPGW2 のスナップショットを取っておく
+
    **試用期間が切れたら、この時点に戻って再設定する**
