@@ -47,9 +47,8 @@ show dns
 ```sh
 set date 2026-03-20
 set time 19:15:00
-show date
-show time
 show timezone
+show clock
 ```
 
 ## NTP
