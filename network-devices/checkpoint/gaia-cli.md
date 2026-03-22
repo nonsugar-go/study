@@ -9,6 +9,14 @@ show interfaces
 show interface eth0
 ```
 
+## スタティックルート
+
+- https://sc1.checkpoint.com/documents/R82/WebAdminGuides/JP/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/IPv4-Static-Routes-Gaia-Clish.htm
+
+```sh
+show route static
+```
+
 ## ホスト名
 
 - https://sc1.checkpoint.com/documents/R82/WebAdminGuides/JP/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Hosts-and-DNS-System-Name.htm
