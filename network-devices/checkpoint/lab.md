@@ -124,6 +124,8 @@
    add ntp server address 192.168.1.39 type server
    add ntp server address ntp.nict.jp type pool
    set ntp active on
+   set format date yyyy/mm/dd
+   set format netmask length
    add host name CPSMS ipv4-address 192.168.1.41
    add host name CPGW1A ipv4-address 192.168.1.42
    add host name CPGW1B ipv4-address 192.168.1.43
