@@ -85,7 +85,7 @@
      2. Downloads and Installation > SmartConsole > SmartConsole EXE
 3. 仮想マシンの作成 (ひな型)
    - Name: CPTMPL
-   - Type: Red Hat Enterprise Linux (64-bit)
+   - Type: Red Hat Enterprise Linux 9 (64-bit)
    - CPU: 4 Core
    - Memory: 8192 MB
    - HDD: 160 GB (Thin Provisioning)
