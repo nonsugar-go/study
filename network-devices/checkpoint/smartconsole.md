@@ -113,3 +113,4 @@
    - Initiate trusted communication now: (X)
      - Gateway's Name: CPGW2
      - One-time Password: SIC@12345
+5. `[公開` をクリック
