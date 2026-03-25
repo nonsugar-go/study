@@ -169,7 +169,7 @@
    - Interface: eth2
    - Configure IPv4: Manually
    - IPv4 address: 192.0.2.65
-   - Subnet mask: 255.255.255.192
+   - Subnet mask: 255.255.255.192 (または 26)
    - Configure IPv6: Off
 4. Device Information
    - Host Name: CPGW2
