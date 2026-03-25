@@ -1,9 +1,5 @@
 # Gaia
 
-**
-評価ライセンスを使用するために時刻が合っている必要があります。
-**
-
 ## CPSMS
 
 ### First Time Configuration Wizard (FTW)
@@ -52,7 +48,7 @@
 9. Security Management GUI Clients
    - GUI clients can log into the Security Management from: Network
      - IP Address: 192.168.1.0
-     - Subnet: 255.255.255.0
+     - Subnet: 255.255.255.0 (または 24)
 10. First Time Configuration Wizard Summary
     - Update and Data Sharing settings
       - Allow automatic download and installation of security and software updates.: [X]
