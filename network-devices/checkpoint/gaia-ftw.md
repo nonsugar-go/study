@@ -162,7 +162,7 @@
    - Interface: eth0
    - Configure IPv4: Manually
    - IPv4 address: 192.168.1.44
-   - Subnet mask: 255.255.255.0
+   - Subnet mask: 255.255.255.0 (または 24)
    - Default Gateway: 192.0.2.126
    - Configure IPv6: Off
 3. Internet Connection
