@@ -108,13 +108,13 @@
    login: admin
    Password: Lab@12345
 
+   set expert-password
+   Enter new expert password: Lab@12345
+   Enter new expert password (again): Lab@12345
    set hostname CPTMPL
    set domainname cplab.test
    set interface eth0 ipv4-address 192.168.1.40 mask-length 24
    set interface eth0 comments "Mgmt"
-   set expert-password
-   Enter new expert password: Lab@12345
-   Enter new expert password (again): Lab@12345
    set dns primary 8.8.8.8
    set dns secondary 1.1.1.1
    set dns suffix cplab.test
