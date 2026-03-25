@@ -100,3 +100,16 @@
    | eth4 | External          | 192.0.2.1/26     | 192.0.2.2/26     | 192.0.2.3/26     | External  |
    | eth5 | This network, DMZ | 192.168.111.1/24 | 192.168.111.2/24 | 192.168.111.3/24 | DMZ       |
 7. 変更をコミットするために、`[公開]` をクリック
+
+## Gateway の追加
+
+1. ゲートウェイ & サーバ > 新規 > Gateway...
+2. Wizard
+3. General Properties
+   - Gateway name: CPGW2
+   - Gateway platform: Open server
+   - Gateway IP address: 192.168.1.44
+4. Trusted Communication
+   - Initiate trusted communication now: (X)
+     - Gateway's Name: CPGW2
+     - One-time Password: SIC@12345
