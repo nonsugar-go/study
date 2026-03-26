@@ -1,5 +1,14 @@
 # ラボ環境
 
+> [!WARNING]
+> - https://community.checkpoint.com/t5/Firewall-and-Security-Management/R82-10-smartconsole-Evaluation-License-Expired/m-p/272789
+> - https://support.checkpoint.com/results/sk/sk184766
+>
+> R82 と R82.10 では、2026年3月1日以降、新規に生成された証明書と CRLs が not yet valid と評価されるため、評価ライセンスが有効になりません。
+> 暫定処置として、日付を過去に戻して FTW を実施する必要があります。
+>
+> NTP サーバの設定は無効にして、手動で過去の時刻に設定します。
+
 ## CPVYOS (VyOS)
 
 | 名前 | IP Address       | コメント   |
@@ -66,6 +75,8 @@
    set int eth eth2 addr 192.0.2.126/26
    set nat source rule 100 outbound-interface name eth0
    set nat source rule 100 translation address masquerade
+   delete service ntp server
+   set service ntp server 127.127.1.0
    commit
    save
    exit
