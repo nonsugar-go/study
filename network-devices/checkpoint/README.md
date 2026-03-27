@@ -4,6 +4,8 @@
 2. [FTW](gaia-ftw.md)
 3. [Gaia Portal](gaia-portal.md)
 4. [SmartConsole](smartconsole.md)
+5. [ポリシー](policy.md)
+6. [NAT](nat.md)
 
 ## CLI
 
