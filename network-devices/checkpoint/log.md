@@ -4,5 +4,5 @@
 
 ```sh
 fw log -f
-CPLogFilePrint /opt/CPsuite-R82.10/fw1/log/fw.log
+CPLogFilePrint $FWDIR/log/fw.log
 ```
