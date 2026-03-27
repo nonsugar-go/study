@@ -23,7 +23,7 @@
    - Interface: eth0
    - Configure IPv4: Manually
    - IPv4 address: 192.168.1.41
-   - Subnet mask: 255.255.255.0 (または 24)
+   - Subnet mask: 255.255.255.0 (または Mask length: 24)
    - Default Gateway: 192.168.1.1
    - Configure IPv6: Off
 3. Internet Connection
@@ -59,7 +59,7 @@
 9. Security Management GUI Clients
    - GUI clients can log into the Security Management from: Network
      - IP Address: 192.168.1.0
-     - Subnet: 255.255.255.0 (または 24)
+     - Subnet: 255.255.255.0 (または Mask length: 24)
 10. First Time Configuration Wizard Summary
     - Update and Data Sharing settings
       - Allow automatic download and installation of security and software updates.: [X]
@@ -77,14 +77,14 @@
    - Interface: eth0
    - Configure IPv4: Manually
    - IPv4 address: 192.168.1.42
-   - Subnet mask: 255.255.255.0 (または 24)
+   - Subnet mask: 255.255.255.0 (または Mask length: 24)
    - Default Gateway: 192.0.2.62
    - Configure IPv6: Off
 3. Internet Connection
    - Interface: eth4
    - Configure IPv4: Manually
    - IPv4 address: 192.0.2.2
-   - Subnet mask: 255.255.255.192 (または 26)
+   - Subnet mask: 255.255.255.192 (または Mask length: 26)
    - Configure IPv6: Off
 4. Device Information
    - Host Name: CPGW1A
@@ -129,14 +129,14 @@
    - Interface: eth0
    - Configure IPv4: Manually
    - IPv4 address: 192.168.1.43
-   - Subnet mask: 255.255.255.0 (または 24)
+   - Subnet mask: 255.255.255.0 (または Mask length: 24)
    - Default Gateway: 192.0.2.62
    - Configure IPv6: Off
 3. Internet Connection
    - Interface: eth4
    - Configure IPv4: Manually
    - IPv4 address: 192.0.2.3
-   - Subnet mask: 255.255.255.192 (または 26)
+   - Subnet mask: 255.255.255.192 (または Mask length: 26)
    - Configure IPv6: Off
 4. Device Information
    - Host Name: CPGW1B
@@ -181,7 +181,7 @@
    - Interface: eth0
    - Configure IPv4: Manually
    - IPv4 address: 192.168.1.44
-   - Subnet mask: 255.255.255.0 (または 24)
+   - Subnet mask: 255.255.255.0 (または Mask length: 24)
    - Default Gateway: 192.0.2.126
    - Configure IPv6: Off
 3. Internet Connection
