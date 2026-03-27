@@ -6,6 +6,7 @@
 4. [SmartConsole](smartconsole.md)
 5. [ポリシー](policy.md)
 6. [NAT](nat.md)
+7. [Log](log.md)
 
 ## CLI
 
