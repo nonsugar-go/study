@@ -59,7 +59,7 @@
    - CPU: 1 Core
    - Memory: 1024 MB
    - HDD: 16 GB (Thin Provisioning)
-   - NIC: 3つ (VMXNET3)
+   - NIC: 2つ (VMXNET3)
    - DVD: vyos-*.*.*-*-rolling-generic-amd64.iso
    - Firmware: BIOS
 2. VyOS のインストール
