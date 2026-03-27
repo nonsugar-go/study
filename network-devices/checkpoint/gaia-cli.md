@@ -92,3 +92,11 @@ time.google.com          server            4        no
 CPSMS> show ntp current
 133.243.238.244
 ```
+
+# ClusterXL
+
+- https://sc1.checkpoint.com/documents/R82/WebAdminGuides/EN/CP_R82_CLI_ReferenceGuide/Content/Topics-CLIG/CXLG/ClusterXL-Monitoring-Commands.htm
+
+```sh
+show cluster state
+```
