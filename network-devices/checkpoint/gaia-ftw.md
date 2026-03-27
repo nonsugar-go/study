@@ -221,12 +221,6 @@
 FTW 後は、eht0 以外は、インタフェースがダウン状態のようです。
 Gaia Portal の `Network Management > Network Interfaces` で有効化するか、下記のように Gaia Clish で有効化します。
 
-> [!NOTE]
-> Gaia Clish で下記のメッセージが表示された場合には、`local database override` を入力する必要があります。
-> ```
-> CLINFR0519  Configuration lock present. Can not execute this command. To acquire the lock use the command 'lock database override'.
-> ```
-
 ### CPGW1A
 
 ```sh
