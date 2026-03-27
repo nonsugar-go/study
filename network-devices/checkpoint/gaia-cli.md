@@ -3,6 +3,16 @@
 - https://sc1.checkpoint.com/documents/R82/WebAdminGuides/JP/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Introduction-to-CLI.htm
 - https://sc1.checkpoint.com/documents/R82/WebAdminGuides/EN/CP_R82_CLI_ReferenceGuide/Content/Topics-CLIG/Introduction.htm
 
+> [!NOTE]
+>
+> Gaia Clish で下記のメッセージが表示された場合には、`local database override` を入力する必要があります。
+>
+> ```
+> CLINFR0519  Configuration lock present. Can not execute this command. To acquire the lock use the command 'lock database override'.
+> ```
+>
+> - https://sc1.checkpoint.com/documents/R82/WebAdminGuides/JP/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Gaia-Clish-Configuration-Lock.htm
+
 ## ライセンスの確認
 
 ```sh
