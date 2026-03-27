@@ -1,4 +1,4 @@
-# Gaia
+# First Time Configuration Wizard (FTW)
 
 > [!WARNING]
 > - https://community.checkpoint.com/t5/Firewall-and-Security-Management/R82-10-smartconsole-Evaluation-License-Expired/m-p/272789
@@ -14,8 +14,6 @@
 > `Subnet mask` は、予め `set format netmask length` を設定した場合は、サブネット長で指定します。
 
 ## CPSMS
-
-### First Time Configuration Wizard (FTW)
 
 1. Deployment Options
    - Setup: Continue with R82.10 configuration
@@ -69,8 +67,6 @@
 
 ## CPGW1A
 
-### First Time Configuration Wizard (FTW)
-
 1. Deployment Options
    - Setup: Continue with R82.10 configuration
 2. Management Connection
@@ -121,8 +117,6 @@
 
 ## CPGW1B
 
-### First Time Configuration Wizard (FTW)
-
 1. Deployment Options
    - Setup: Continue with R82.10 configuration
 2. Management Connection
@@ -172,8 +166,6 @@
        - I approve sharing core dumps files and other relevant crash data whitch might contain personal information. All shared data will be processed in accordance with Check Point's Privacy Policy: [_]
 
 ## CPGW2
-
-### First Time Configuration Wizard (FTW)
 
 1. Deployment Options
    - Setup: Continue with R82.10 configuration
