@@ -108,5 +108,30 @@ CPSMS> show ntp current
 - https://sc1.checkpoint.com/documents/R82/WebAdminGuides/EN/CP_R82_CLI_ReferenceGuide/Content/Topics-CLIG/CXLG/ClusterXL-Monitoring-Commands.htm
 
 ```sh
-show cluster state
+CPGW1A> show cluster state
+
+Cluster Mode:   High Availability (Active Up) with IGMP Membership
+
+ID         Unique Address  Assigned Load   State          Name
+
+1 (local)  192.168.255.1   100%            ACTIVE         CPGW1A
+2          192.168.255.2   0%              STANDBY        CPGW1B
+
+
+Active PNOTEs: None
+
+Last member state change event:
+   Event Code:                 CLUS-114904
+   State change:               ACTIVE(!) -> ACTIVE
+   Reason for state change:    Reason for ACTIVE! alert has been resolved
+   Event time:                 Thu Mar 27 19:16:50 2025
+
+Last cluster failover event:
+   Transition to new ACTIVE:   Member 2 -> Member 1
+   Reason:                     Interface eth5 is down (disconnected / link down)
+   Event time:                 Thu Mar 27 19:13:55 2025
+
+Cluster failover count:
+   Failover counter:           1
+   Time of counter reset:      Thu Mar 27 12:27:27 2025 (reboot)
 ```
