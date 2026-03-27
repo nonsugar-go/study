@@ -215,3 +215,47 @@
         - Allow automatic download and installation of new software features: [X]
       - Allow sending non-personal telemetry data to enable remote monitoring of critical alerts and improve the product and its security: [X]
         - I approve sharing core dumps files and other relevant crash data whitch might contain personal information. All shared data will be processed in accordance with Check Point's Privacy Policy: [_]
+
+## FTW 後のネットワーク インタフェースのアクティブ化
+
+FTW 後は、eht0 以外は、インタフェースがダウン状態のようです。
+Gaia Portal の `Network Management > Network Interfaces` で有効化するか、下記のように Gaia Clish で有効化します。
+
+> [!NOTE]
+> Gaia Clish で下記のメッセージが表示された場合には、`local database override` を入力する必要があります。
+> ```
+> CLINFR0519  Configuration lock present. Can not execute this command. To acquire the lock use the command 'lock database override'.
+> ```
+
+### CPGW1A
+
+```sh
+lock database override
+set interface eth1 state on
+set interface eth2 state on
+set interface eth3 state on
+set interface eth4 state on
+set interface eth5 state on
+save config
+```
+
+### CPGW1B
+
+```sh
+lock database override
+set interface eth1 state on
+set interface eth2 state on
+set interface eth3 state on
+set interface eth4 state on
+set interface eth5 state on
+save config
+```
+
+### CPGW2
+
+```sh
+lock database override
+set interface eth1 state on
+set interface eth2 state on
+save config
+```
