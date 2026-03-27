@@ -1,6 +1,6 @@
 # NAT
 
-> [!INFOMATION]
+> [!INFORMATION]
 > このページは作成中です。
 
 - SmartConsole > ゲートウェイ & サーバ > (クラスタ/ゲートウェイ) > NAT
