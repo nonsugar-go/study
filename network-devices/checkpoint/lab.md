@@ -17,12 +17,12 @@
 | eth0    | 192.168.1.39/24    |            | Mgmt       |
 | eth1.10 | 192.0.2.62/26      |            | External   |
 | eth1.11 | 192.0.2.126/26     |            | External_2 |
-| eth1.10 | 192.0.2.61/26      | External   | External   |
-| eth1.11 | 192.0.2.125/26     | External_2 | External_2 |
-| eth1.12 | 192.168.101.100/24 | Internal1  | Internal1  |
-| eth1.13 | 192.168.102.100/24 | Internal2  | Internal2  |
-| eth1.14 | 192.168.111.100/24 | DMZ        | DMZ        |
-| eth1.16 | 192.168.201.100/24 | Internal_2 | Internal_2 |
+| eth2.10 | 192.0.2.61/26      | External   | External   |
+| eth2.11 | 192.0.2.125/26     | External_2 | External_2 |
+| eth2.12 | 192.168.101.100/24 | Internal1  | Internal1  |
+| eth2.13 | 192.168.102.100/24 | Internal2  | Internal2  |
+| eth2.14 | 192.168.111.100/24 | DMZ        | DMZ        |
+| eth2.16 | 192.168.201.100/24 | Internal_2 | Internal_2 |
 
 ## CPSMS
 
@@ -59,7 +59,7 @@
    - CPU: 1 Core
    - Memory: 1024 MB
    - HDD: 16 GB (Thin Provisioning)
-   - NIC: 2つ (VMXNET3)
+   - NIC: 3つ (VMXNET3)
    - DVD: vyos-*.*.*-*-rolling-generic-amd64.iso
    - Firmware: BIOS
 2. VyOS のインストール
@@ -88,38 +88,38 @@
    set int eth eth1 vif 11 addr 192.0.2.126/26
 
    set vrf name External table '10010'
-   set int eth eth1 vif 10 desc External
-   set int eth eth1 vif 10 vrf External
-   set int eth eth1 vif 10 address '192.0.2.61/26'
+   set int eth eth2 vif 10 desc External
+   set int eth eth2 vif 10 vrf External
+   set int eth eth2 vif 10 address '192.0.2.61/26'
 
    set vrf name External_2 table '10011'
-   set int eth eth1 vif 11 desc External_2
-   set int eth eth1 vif 11 vrf External_2
-   set int eth eth1 vif 11 address '192.0.2.125/26'
+   set int eth eth2 vif 11 desc External_2
+   set int eth eth2 vif 11 vrf External_2
+   set int eth eth2 vif 11 address '192.0.2.125/26'
 
    set vrf name Internal1 table '10012'
    set vrf name Internal1 protocols static route 0.0.0.0/0 next-hop 192.168.101.1
-   set int eth eth1 vif 12 desc Internal1
-   set int eth eth1 vif 12 vrf Internal1
-   set int eth eth1 vif 12 address 192.168.101.100/24
+   set int eth eth2 vif 12 desc Internal1
+   set int eth eth2 vif 12 vrf Internal1
+   set int eth eth2 vif 12 address 192.168.101.100/24
 
    set vrf name Internal2 table '10013'
    set vrf name Internal2 protocols static route 0.0.0.0/0 next-hop 192.168.102.1
-   set int eth eth1 vif 13 desc Internal2
-   set int eth eth1 vif 13 vrf Internal2
-   set int eth eth1 vif 13 address 192.168.102.100/24
+   set int eth eth2 vif 13 desc Internal2
+   set int eth eth2 vif 13 vrf Internal2
+   set int eth eth2 vif 13 address 192.168.102.100/24
 
    set vrf name DMZ table '10014'
    set vrf name DMZ protocols static route 0.0.0.0/0 next-hop 192.168.111.1
-   set int eth eth1 vif 14 desc DMZ
-   set int eth eth1 vif 14 vrf DMZ
-   set int eth eth1 vif 14 address 192.168.111.100/24
+   set int eth eth2 vif 14 desc DMZ
+   set int eth eth2 vif 14 vrf DMZ
+   set int eth eth2 vif 14 address 192.168.111.100/24
 
    set vrf name Internal_2 table '10016'
    set vrf name Internal_2 protocols static route 0.0.0.0/0 next-hop 192.168.201.1
-   set int eth eth1 vif 16 desc Internal_2
-   set int eth eth1 vif 16 vrf Internal_2
-   set int eth eth1 vif 16 address 192.168.201.100/24
+   set int eth eth2 vif 16 desc Internal_2
+   set int eth eth2 vif 16 vrf Internal_2
+   set int eth eth2 vif 16 address 192.168.201.100/24
 
    commit
    save
