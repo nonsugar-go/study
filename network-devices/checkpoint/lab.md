@@ -8,6 +8,7 @@
 > 暫定処置として、日付を過去に戻して FTW を実施する必要があります。
 >
 > NTP サーバの設定は無効にして、手動で過去の時刻に設定します。
+> また、ESXi ホストなどの仮想基盤の時刻を過去の時間に設定しておきます。
 
 ## CPVYOS (VyOS)
 
@@ -75,12 +76,18 @@
    set int eth eth2 addr 192.0.2.126/26
    set nat source rule 100 outbound-interface name eth0
    set nat source rule 100 translation address masquerade
-   delete service ntp server
-   set service ntp server 127.127.1.0
    commit
    save
    exit
    ```
+
+> [!NOTE]
+> R82 と R82.10 では、時刻を NTP サーバへ同期させないようにします。
+>
+> ```
+> delete service ntp server
+> set service ntp server 127.127.1.0
+> ```
 
 ## Check Point
 
@@ -146,6 +153,14 @@
    Are you sure you want to halt?(Y/N)[N]
    y
    ```
+
+> [!NOTE]
+> R82 と R82.10 では、時刻を NTP サーバへ同期させないようにします。
+>
+> ```
+> set ntp active off
+> ```
+   
 ### ひな型から Check Point 仮想マシンの作成
 
 1. CPTMPL を選択し、`[エクスポート]` をクリックする
