@@ -23,7 +23,7 @@
    - Interface: eth0
    - Configure IPv4: Manually
    - IPv4 address: 192.168.1.41
-   - Subnet mask: 255.255.255.0
+   - Subnet mask: 255.255.255.0 (または 24)
    - Default Gateway: 192.168.1.1
    - Configure IPv6: Off
 3. Internet Connection
@@ -38,13 +38,11 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   <!--
-     - Set time manually: (X)
+   - Set time manually: (X) … 手動で設定する場合
      - Date: (現在の日付)
      - Time: (現在の時刻)
      - Time Zone: Tokyo, Asia (GMT +9:00)
-   -->
-   - Use Network Time Protocol (NTP): (X)
+   - Use Network Time Protocol (NTP): (X) … NTP で設定する場合
      - Preferred NTP server: 192.168.1.39, Type: Server, Version: 4
      - Secondary NTP server: ntp.nict.jp, Type: Pool, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
@@ -79,14 +77,14 @@
    - Interface: eth0
    - Configure IPv4: Manually
    - IPv4 address: 192.168.1.42
-   - Subnet mask: 255.255.255.0
+   - Subnet mask: 255.255.255.0 (または 24)
    - Default Gateway: 192.0.2.62
    - Configure IPv6: Off
 3. Internet Connection
    - Interface: eth4
    - Configure IPv4: Manually
    - IPv4 address: 192.0.2.2
-   - Subnet mask: 255.255.255.192
+   - Subnet mask: 255.255.255.192 (または 26)
    - Configure IPv6: Off
 4. Device Information
    - Host Name: CPGW1A
@@ -96,7 +94,11 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   - Use Network Time Protocol (NTP): (X)
+   - Set time manually: (X) … 手動で設定する場合
+     - Date: (現在の日付)
+     - Time: (現在の時刻)
+     - Time Zone: Tokyo, Asia (GMT +9:00)
+   - Use Network Time Protocol (NTP): (X) … NTP で設定する場合
      - Preferred NTP server: 192.168.1.39, Type: Server, Version: 4
      - Secondary NTP server: ntp.nict.jp, Type: Pool, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
@@ -127,14 +129,14 @@
    - Interface: eth0
    - Configure IPv4: Manually
    - IPv4 address: 192.168.1.43
-   - Subnet mask: 255.255.255.0
+   - Subnet mask: 255.255.255.0 (または 24)
    - Default Gateway: 192.0.2.62
    - Configure IPv6: Off
 3. Internet Connection
    - Interface: eth4
    - Configure IPv4: Manually
    - IPv4 address: 192.0.2.3
-   - Subnet mask: 255.255.255.192
+   - Subnet mask: 255.255.255.192 (または 26)
    - Configure IPv6: Off
 4. Device Information
    - Host Name: CPGW1B
@@ -144,7 +146,11 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   - Use Network Time Protocol (NTP): (X)
+   - Set time manually: (X) … 手動で設定する場合
+     - Date: (現在の日付)
+     - Time: (現在の時刻)
+     - Time Zone: Tokyo, Asia (GMT +9:00)
+   - Use Network Time Protocol (NTP): (X) … NTP で設定する場合
      - Preferred NTP server: 192.168.1.39, Type: Server, Version: 4
      - Secondary NTP server: ntp.nict.jp, Type: Pool, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
@@ -192,7 +198,11 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   - Use Network Time Protocol (NTP): (X)
+   - Set time manually: (X) … 手動で設定する場合
+     - Date: (現在の日付)
+     - Time: (現在の時刻)
+     - Time Zone: Tokyo, Asia (GMT +9:00)
+   - Use Network Time Protocol (NTP): (X) … NTP で設定する場合
      - Preferred NTP server: 192.168.1.39, Type: Server, Version: 4
      - Secondary NTP server: ntp.nict.jp, Type: Pool, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
