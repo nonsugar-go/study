@@ -37,7 +37,7 @@
       - Erase the above disk(s) and continue?: y
    4. `reboot` コマンドで、再起動 (再起動後、ISO を外す)
    5. 再起動後、root でログイン
-      ```bash
+      ```sh
       CPAP1:~# setup-desktop
       Which desktop environment?: xfce
       CPAP1:~# apk add open-vm-tools sudo bind-tools curl w3m inetutils-telnet lftp \
@@ -49,4 +49,16 @@
       CPAP1:~# reboot
       ```
    6. GUI にログイン (英語キーボードで認識されている場合 `@` は、Shift + 2 なので注意)
- 
+
+## CLI
+
+```sh
+## root になる
+sudo -i
+
+## IP アドレスの確認
+ip -4 a s eth0
+
+## DHCP 再取得
+ifdown eth0 && ifup eth0
+```
