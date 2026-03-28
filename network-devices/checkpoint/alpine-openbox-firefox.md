@@ -23,10 +23,13 @@
       - Proxy: none
       - Network Time Protocol: busybox
       - APK Mirror: f
-   3. ディスク
-      - Which disk(s): sda
-      - How to use it: sys
-      - Erase disk: y
+      - Setup a user?: no
+      - Which ssh server?: openssh
+      - Allow root ssh login?: yes
+      - Enter ssh key or URL for root: none
+      - Which disk(s) would you like to use?: sda
+      - How would you like to use it? sys
+      - Erase the above disk(s) and continue?: y
    4. 再起動 `reboot` (再起動後、ISO を外す)
    5. 再起動後、root でログイン
       ```bash
