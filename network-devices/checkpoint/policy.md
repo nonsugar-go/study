@@ -17,3 +17,13 @@
 ## レイヤー (Layers)
 
 レイヤーには2つのモードがあり、**Policy (orderd) layers** と **inline layers** と呼ばれる。
+
+## セキュリティ ゾーン
+
+デフォルトで下記の4つがある
+
+- DMZZone
+- ExternalZone
+- InternalZone
+- WirelessZone
+
