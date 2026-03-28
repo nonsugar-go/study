@@ -40,25 +40,11 @@
       ```bash
       # setup-desktop
       Which desktop environment?: xfce
+      # apk add open-vm-tools xf86-video-vmware xf86-input-vmmouse xf86-input-libinput sudo
+      # apk cache purge
+      # rc-service open-vm-tools start
+      # rc-update add open-vm-tools
+      # 
       # reboot
       ```
-      
-      sed -i 's/^#//g; s%^/%#/%g' /etc/apk/repositories
-      apk update
-      apk add --no-cache xorg-server xinit xterm \
-        xf86-video-vesa xf86-input-libinput xf86-video-vmware xf86-input-vmmouse \
-        open-vm-tools openbox tint2 firefox-esr dbus udev
-      rc-service open-vm-tools start
-      rc-update add open-vm-tools
-      rc-service dbus start
-      rc-update add dbus
-      rc-service udev start
-      rc-update add udev
-      echo "exec openbox-session" > ~/.xinitrc
-      echo "tint2 &" >> ~/.xinitrc
-      startx
-      CPAP1:~# setup-desktop
-      Setup a user? (enter a lower-case loginname, or 'no') [no]
-      Which desktop environment? ('gnome', 'plasma', 'xfce', 'mate', 'sway', 'lxqt' or 'none') [none] xfce
-      ```
-   7. 右クリック > メニューで Firefox の起動が可能
+ 
