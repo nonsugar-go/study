@@ -1,0 +1,41 @@
+# Alpine + Openbox + Firefox
+
+検証用に軽量 Linux をインストールします。
+
+1. Alpine のインストーラー (Standard, x86_64) をダウンロードします。[alpinelinux.org](https://alpinelinux.org/downloads/)
+2. 仮想マシンの作成
+   - Name: CPAL1
+   - Type: その他の 3.x Linux (64 ビット)
+   - CPU: 1 Core
+   - Memory: 1024 MB
+   - HDD: 16 GB (Thin Provisioning)
+   - NIC: 1つ (VMXNET3)
+   - DVD: alpine-standard-*.*.*-x86_64.iso
+   - Firmware: BIOS
+3. 仮想マシンの電源を入れて、インストーラーを起動
+   1. login: root (パスワードなし)
+   2. `setup-alpine`
+      - Keyboard：jp
+      - Hostname：CPAP1（任意）
+      - Interface：eth0
+      - IP：dhcp
+      - Timezone：Asia/Tokyo
+      - Mirror：自動
+      - SSH：openssh
+   3. ディスク
+      - Which disk(s): sda
+      - How to use it: sys
+      - Erase disk: y
+   4. 再起動 `reboot` (再起動後、ISO を外す)
+   5. 再起動後、root でログイン
+      ```bash
+      apk update
+      apk add xorg-server xf86-video-vesa xf86-input-libinput openbox obconf tint2 firefox-esr dbus
+      setup-xorg-base
+      rc-update add dbus
+      rc-service dbus start
+      echo "exec openbox-session" > ~/.xinitrc
+      echo "tint2 &" >> ~/.xinitrc
+      startx
+      ```
+   6. 右クリック > メニューで Firefox の起動が可能
