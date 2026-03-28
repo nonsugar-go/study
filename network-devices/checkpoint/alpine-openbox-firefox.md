@@ -27,7 +27,7 @@
       - Timezone：Asia/Tokyo
       - Proxy: none
       - Network Time Protocol: busybox
-      - APK Mirror: f
+      - APK Mirror: 95 (ftp.yz.yamagata-u.ac.jp)
       - Setup a user?: no
       - Which ssh server?: openssh
       - Allow root ssh login?: yes
