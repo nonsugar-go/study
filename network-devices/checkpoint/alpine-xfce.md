@@ -9,7 +9,7 @@
    - Name: CPAL1
    - Type: その他の Linux 5.x 以降 (64 ビット)
    - CPU: 1 Core
-   - Memory: 1024 MB
+   - Memory: 2048 MB
    - HDD: 16 GB (Thin Provisioning)
    - NIC: 1つ (VMXNET3)
    - DVD: alpine-virt-*.*.*-x86_64.iso
