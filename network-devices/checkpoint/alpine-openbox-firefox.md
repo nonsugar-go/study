@@ -38,6 +38,11 @@
    4. `reboot` コマンドで、再起動 (再起動後、ISO を外す)
    5. 再起動後、root でログイン
       ```bash
+      # setup-desktop
+      Which desktop environment?: xfce
+      # reboot
+      ```
+      
       sed -i 's/^#//g; s%^/%#/%g' /etc/apk/repositories
       apk update
       apk add --no-cache xorg-server xinit xterm \
@@ -56,4 +61,4 @@
       Setup a user? (enter a lower-case loginname, or 'no') [no]
       Which desktop environment? ('gnome', 'plasma', 'xfce', 'mate', 'sway', 'lxqt' or 'none') [none] xfce
       ```
-   6. 右クリック > メニューで Firefox の起動が可能
+   7. 右クリック > メニューで Firefox の起動が可能
