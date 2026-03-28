@@ -40,7 +40,7 @@
       sed -i 's/^#//g; s%^/%#/%g' /etc/apk/repositories
       apk update
       apk add --no-cache xorg-server xinit xterm \
-        xf86-video-vesa xf86-input-libinput xf86-input-vmmouse \
+        xf86-video-vesa xf86-input-libinput xf86-video-vmware xf86-input-vmmouse \
         open-vm-tools openbox tint2 firefox-esr dbus udev
       rc-service open-vm-tools start
       rc-update add open-vm-tools
