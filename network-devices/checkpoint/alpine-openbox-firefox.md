@@ -20,7 +20,9 @@
    2. `setup-alpine`
       - Keymap：jp / jp-OADG109A
       - Hostname：CPAP1（任意）
-      - Interface：eth0 / dhcp
+      - Which one do you want to initialize?：eth0
+      - Ip address for eth0?: dhcp
+      - Do you want to do any manual network configuration?: n
       - Root Password: Lab@12345 (任意)
       - Timezone：Asia/Tokyo
       - Proxy: none
