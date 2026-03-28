@@ -45,7 +45,7 @@
       # apk cache purge
       # rc-service open-vm-tools start
       # rc-update add open-vm-tools
-      # sed -i 's/^# %wheel/%wheel/' /etc/sudoers
+      # sed -i.orig 's/^# %wheel/%wheel/' /etc/sudoers
       # reboot
       ```
    6. GUI にログイン (英語キーボードで認識されている場合 `@` は、Shift + 2 なので注意)
