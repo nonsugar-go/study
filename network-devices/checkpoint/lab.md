@@ -149,7 +149,7 @@
    set range 0 stop 192.168.101.99
    top
 
-   edit vrf name Internal1 service dhcp-server shared-network-name Internal2 subnet 192.168.102.0/24
+   edit vrf name Internal2 service dhcp-server shared-network-name Internal2 subnet 192.168.102.0/24
    set subnet-id 13
    set option default-router 192.168.102.1
    set option name-server 8.8.8.8
@@ -157,7 +157,7 @@
    set range 0 stop 192.168.102.99
    top
 
-   edit vrf name Internal1 service dhcp-server shared-network-name DMZ subnet 192.168.111.0/24
+   edit vrf name DMZ service dhcp-server shared-network-name DMZ subnet 192.168.111.0/24
    set subnet-id 14
    set option default-router 192.168.111.1
    set option name-server 8.8.8.8
@@ -165,7 +165,7 @@
    set range 0 stop 192.168.111.99
    top
 
-   edit vrf name Internal1 service dhcp-server shared-network-name Internal_2 subnet 192.168.201.0/24
+   edit vrf name Internal_2 service dhcp-server shared-network-name Internal_2 subnet 192.168.201.0/24
    set subnet-id 16
    set option default-router 192.168.201.1
    set option name-server 8.8.8.8
