@@ -28,10 +28,10 @@
       - Network Time Protocol: busybox
       - APK Mirror: 1
       - Setup a user?: user1
-      - Password: Lab@12345 (任意)
+      - Full name for user user1: user1
+      - New password: Lab@12345 (任意)
+      - Enter ssh key or URL for user1: none
       - Which ssh server?: openssh
-      - Allow root ssh login?: yes
-      - Enter ssh key or URL for root: none
       - Which disk(s) would you like to use?: sda
       - How would you like to use it? sys
       - Erase the above disk(s) and continue?: y
