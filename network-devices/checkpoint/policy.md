@@ -13,3 +13,7 @@
 - SmartConsole > メニュー > ポリシーとレイヤーの管理...
 
 ポリシーの複製が可能。デフォルトの Access Control policy は、**Standard** と呼ばれる。
+
+## レイヤー (Layers)
+
+レイヤーには2つのモードがあり、**Policy (orderd) layers** と **inline layers** と呼ばれる。
