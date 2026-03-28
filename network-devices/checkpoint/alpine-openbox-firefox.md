@@ -30,7 +30,7 @@
       - Which disk(s) would you like to use?: sda
       - How would you like to use it? sys
       - Erase the above disk(s) and continue?: y
-   4. 再起動 `reboot` (再起動後、ISO を外す)
+   4. `reboot` を入力して再起動 (再起動後、ISO を外す)
    5. 再起動後、root でログイン
       ```bash
       apk update
