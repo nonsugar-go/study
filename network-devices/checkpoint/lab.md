@@ -10,6 +10,10 @@
 > ESXi ホストなどの仮想基盤の時刻を過去の時間に設定しておきます。
 > NTP サーバの設定は無効にして、手動で過去の時刻に設定します。
 
+## CPAL1 (Alpine Linux)
+
+- [Alpine + Xfce](alpine-xfce.md)
+
 ## CPVYOS (VyOS)
 
 | 名前    | IP Address         | VRF        | コメント    |
