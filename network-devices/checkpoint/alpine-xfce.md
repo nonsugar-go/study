@@ -40,7 +40,7 @@
       ```bash
       CPAP1:~# setup-desktop
       Which desktop environment?: xfce
-      CPAP1:~# apk add sudo open-vm-tools
+      CPAP1:~# apk add open-vm-tools sudo font-noto-cjk
       CPAP1:~# apk cache purge
       CPAP1:~# rc-service open-vm-tools start
       CPAP1:~# rc-update add open-vm-tools
