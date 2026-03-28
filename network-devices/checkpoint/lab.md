@@ -54,7 +54,7 @@
 ## CPVYOS (VyOS)
 
 1. 仮想マシンの作成
-   - Name: VyOS
+   - Name: CPVYOS
    - Type: その他の Linux 5.x 以降 (64 ビット) (VyOS は Debian ベースなので近いものを選ぶ)
    - CPU: 1 Core
    - Memory: 1024 MB
