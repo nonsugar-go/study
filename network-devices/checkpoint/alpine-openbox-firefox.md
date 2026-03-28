@@ -9,9 +9,9 @@
    - CPU: 1 Core
    - Memory: 1024 MB
    - HDD: 16 GB (Thin Provisioning)
+   - SCSI コントローラ: LSI Logic Parallel
    - NIC: 1つ (VMXNET3)
    - DVD: alpine-standard-*.*.*-x86_64.iso
-   - USB コントローラー: 削除する
    - Firmware: BIOS
 3. 仮想マシンの電源を入れて、インストーラーを起動
    1. login: root (パスワードなし)
