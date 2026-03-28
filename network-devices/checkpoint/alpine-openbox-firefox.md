@@ -37,7 +37,7 @@
    5. 再起動後、root でログイン
       ```bash
       apk update
-      apk add xorg-server open-vm-tools xf86-video-vesa xf86-input-libinput openbox obconf tint2 firefox-esr dbus
+      apk add --no-cache xorg-server open-vm-tools xf86-video-vesa xf86-input-libinput openbox obconf tint2 firefox-esr dbus
       setup-xorg-base
       rc-service open-vm-tools start
       rc-update add open-vm-tools
