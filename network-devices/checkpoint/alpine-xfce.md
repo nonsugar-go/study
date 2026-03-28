@@ -40,7 +40,7 @@
       ```bash
       CPAP1:~# setup-desktop
       Which desktop environment?: xfce
-      CPAP1:~# apk add open-vm-tools sudo bind-tools curl w3m lftp tcpdump wireshark font-noto-cjk
+      CPAP1:~# apk add open-vm-tools sudo bind-tools curl w3m inetutils-telnet lftp tcpdump wireshark font-noto-cjk
       CPAP1:~# apk cache purge
       CPAP1:~# rc-service open-vm-tools start
       CPAP1:~# rc-update add open-vm-tools
