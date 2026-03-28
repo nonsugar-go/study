@@ -34,14 +34,8 @@
       - Which disk(s) would you like to use?: sda
       - How would you like to use it? sys
       - Erase the above disk(s) and continue?: y
-   4. カーネルを入れ替えて、再起動 (再起動後、ISO を外す)
-      ```sh
-      apk add --no-cache linux-virt
-      apk del linux-lts
-      update-initramfs -u
-      reboot
-      ```
-   6. 再起動後、root でログイン
+   4. `reboot` コマンドで、再起動 (再起動後、ISO を外す)
+   5. 再起動後、root でログイン
       ```bash
       apk add --no-cache xorg-server xf86-video-vesa xf86-input-libinput open-vm-tools openbox obconf tint2 firefox-esr dbus
       rc-service open-vm-tools start
@@ -52,4 +46,4 @@
       echo "tint2 &" >> ~/.xinitrc
       startx
       ```
-   7. 右クリック > メニューで Firefox の起動が可能
+   6. 右クリック > メニューで Firefox の起動が可能
