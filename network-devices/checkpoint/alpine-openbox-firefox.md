@@ -51,5 +51,8 @@
       echo "exec openbox-session" > ~/.xinitrc
       echo "tint2 &" >> ~/.xinitrc
       startx
+      CPAP1:~# setup-desktop
+      Setup a user? (enter a lower-case loginname, or 'no') [no]
+      Which desktop environment? ('gnome', 'plasma', 'xfce', 'mate', 'sway', 'lxqt' or 'none') [none] xfce
       ```
    6. 右クリック > メニューで Firefox の起動が可能
