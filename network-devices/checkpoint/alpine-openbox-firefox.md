@@ -40,11 +40,13 @@
       sed -i 's/^#//g; s%^/%#/%g' /etc/apk/repositories
       apk update
       apk add --no-cache xorg-server xf86-video-vesa xf86-input-libinput xinit xterm \
-        open-vm-tools openbox tint2 firefox-esr dbus
+        open-vm-tools openbox tint2 firefox-esr dbus udev
       rc-service open-vm-tools start
       rc-update add open-vm-tools
       rc-service dbus start
       rc-update add dbus
+      rc-service udev start
+      rc-update add udev
       echo "exec openbox-session" > ~/.xinitrc
       echo "tint2 &" >> ~/.xinitrc
       startx
