@@ -1,11 +1,13 @@
 # Alpine + Openbox + Firefox
 
+- https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VMware_ESXi
+
 検証用に軽量 Linux をインストールします。
 
 1. Alpine のインストーラー (Standard, x86_64) をダウンロードします。[alpinelinux.org](https://alpinelinux.org/downloads/)
 2. 仮想マシンの作成
    - Name: CPAL1
-   - Type: その他の 3.x Linux (64 ビット)
+   - Type: その他の Linux 5.x 以降 (64 ビット)
    - CPU: 1 Core
    - Memory: 1024 MB
    - HDD: 16 GB (Thin Provisioning)
@@ -35,10 +37,12 @@
    5. 再起動後、root でログイン
       ```bash
       apk update
-      apk add xorg-server xf86-video-vesa xf86-input-libinput openbox obconf tint2 firefox-esr dbus
+      apk add xorg-server open-vm-tools xf86-video-vesa xf86-input-libinput openbox obconf tint2 firefox-esr dbus
       setup-xorg-base
-      rc-update add dbus
+      rc-service open-vm-tools start
+      rc-update add open-vm-tools
       rc-service dbus start
+      rc-update add dbus
       echo "exec openbox-session" > ~/.xinitrc
       echo "tint2 &" >> ~/.xinitrc
       startx
