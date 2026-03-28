@@ -125,12 +125,14 @@
    set int eth eth2 vif 16 vrf Internal_2
    set int eth eth2 vif 16 address 192.168.201.100/24
 
-   set service dhcp-server shared-network-name Internal1 subnet 192.168.101.0/24 subnet-id 12
-   set service dhcp-server shared-network-name Internal1 subnet 192.168.101.0/24 option default-router 192.168.101.1
-   set service dhcp-server shared-network-name Internal1 subnet 192.168.101.0/24 option name-server 8.8.8.8
-   set service dhcp-server shared-network-name Internal1 subnet 192.168.101.0/24 range 0 start 192.168.101.90
-   set service dhcp-server shared-network-name Internal1 subnet 192.168.101.0/24 range 0 stop 192.168.101.99
-
+   edit vrf name Internal1 service dhcp-server shared-network-name Internal1 subnet 192.168.101.0/24
+   set subnet-id 12
+   set option default-router 192.168.101.1
+   set option name-server 8.8.8.8
+   set range 0 start 192.168.101.90
+   set range 0 stop 192.168.101.99
+   top
+   
    set service dhcp-server shared-network-name Internal2 subnet 192.168.102.0/24 subnet-id 13
    set service dhcp-server shared-network-name Internal2 subnet 192.168.102.0/24 option default-router 192.168.102.1
    set service dhcp-server shared-network-name Internal2 subnet 192.168.102.0/24 option name-server 8.8.8.8
