@@ -36,9 +36,7 @@
    4. `reboot` を入力して再起動 (再起動後、ISO を外す)
    5. 再起動後、root でログイン
       ```bash
-      apk update
-      apk add --no-cache xorg-server open-vm-tools xf86-video-vesa xf86-input-libinput openbox obconf tint2 firefox-esr dbus
-      setup-xorg-base
+      apk add --no-cache xorg-server xf86-video-vesa xf86-input-libinput open-vm-tools openbox obconf tint2 firefox-esr dbus
       rc-service open-vm-tools start
       rc-update add open-vm-tools
       rc-service dbus start
