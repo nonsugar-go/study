@@ -38,15 +38,15 @@
    4. `reboot` コマンドで、再起動 (再起動後、ISO を外す)
    5. 再起動後、root でログイン
       ```bash
-      # setup-desktop
+      CPAP1:~# setup-desktop
       Which desktop environment?: xfce
-      # apk add sudo open-vm-tools \
+      CPAP1:~# apk add sudo open-vm-tools \
         xf86-video-vmware xf86-input-vmmouse xf86-input-libinput 
-      # apk cache purge
-      # rc-service open-vm-tools start
-      # rc-update add open-vm-tools
-      # sed -i.orig 's/^# %wheel/%wheel/' /etc/sudoers
-      # reboot
+      CPAP1:~# apk cache purge
+      CPAP1:~# rc-service open-vm-tools start
+      CPAP1:~# rc-update add open-vm-tools
+      CPAP1:~# sed -i.orig 's/^# %wheel/%wheel/' /etc/sudoers
+      CPAP1:~# reboot
       ```
    6. GUI にログイン (英語キーボードで認識されている場合 `@` は、Shift + 2 なので注意)
  
