@@ -27,7 +27,8 @@
       - Proxy: none
       - Network Time Protocol: busybox
       - APK Mirror: 1
-      - Setup a user?: no
+      - Setup a user?: user1
+      - Password: Lab@12345 (任意)
       - Which ssh server?: openssh
       - Allow root ssh login?: yes
       - Enter ssh key or URL for root: none
