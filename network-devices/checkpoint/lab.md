@@ -125,6 +125,22 @@
    set int eth eth2 vif 16 vrf Internal_2
    set int eth eth2 vif 16 address 192.168.201.100/24
 
+   edit service dhcp-server shared-network-name External
+   set subnet 192.0.2.0/26 subnet-id 10
+   set subnet 192.0.2.0/26 option default-router 192.0.2.62
+   set subnet 192.0.2.0/26 option name-server 8.8.8.8
+   set subnet 192.0.2.0/26 range 0 start 192.0.2.51
+   set subnet 192.0.2.0/26 range 0 stop 192.0.2.60
+   top
+
+   edit service dhcp-server shared-network-name External_2
+   set subnet 192.0.2.64/26 subnet-id 11
+   set subnet 192.0.2.64/26 option default-router 192.0.2.126
+   set subnet 192.0.2.64/26 option name-server 8.8.8.8
+   set subnet 192.0.2.64/26 range 0 start 192.0.2.115
+   set subnet 192.0.2.64/26 range 0 stop 192.0.2.124
+   top
+
    edit vrf name Internal1 service dhcp-server shared-network-name Internal1 subnet 192.168.101.0/24
    set subnet-id 12
    set option default-router 192.168.101.1
