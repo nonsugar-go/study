@@ -15,13 +15,14 @@
 3. 仮想マシンの電源を入れて、インストーラーを起動
    1. login: root (パスワードなし)
    2. `setup-alpine`
-      - Keyboard：jp
+      - Keymap：jp / jp-OADG109A
       - Hostname：CPAP1（任意）
-      - Interface：eth0
-      - IP：dhcp
+      - Interface：eth0 / dhcp
+      - Root Password: Lab@12345 (任意)
       - Timezone：Asia/Tokyo
-      - Mirror：自動
-      - SSH：openssh
+      - Proxy: none
+      - Network Time Protocol: busybox
+      - APK Mirror: f
    3. ディスク
       - Which disk(s): sda
       - How to use it: sys
