@@ -36,8 +36,9 @@
       - How would you like to use it? sys
       - Erase the above disk(s) and continue?: y
    4. `reboot` コマンドで、再起動 (再起動後、ISO を外す)
-   5. 再起動後、root でログイン
+   5. 再起動後、root でログイン、または user1 でログインして、`su -` で root になる
       ```sh
+      CPAP1:~$ su -
       CPAP1:~# setup-desktop
       Which desktop environment?: xfce
       CPAP1:~# apk add open-vm-tools sudo bind-tools curl w3m inetutils-telnet lftp \
