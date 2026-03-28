@@ -1,4 +1,4 @@
-# Alpine + Openbox + Firefox
+# Alpine + Xfce
 
 - https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VMware_ESXi
 
@@ -40,11 +40,13 @@
       ```bash
       # setup-desktop
       Which desktop environment?: xfce
-      # apk add open-vm-tools xf86-video-vmware xf86-input-vmmouse xf86-input-libinput sudo
+      # apk add sudo open-vm-tools \
+        xf86-video-vmware xf86-input-vmmouse xf86-input-libinput 
       # apk cache purge
       # rc-service open-vm-tools start
       # rc-update add open-vm-tools
-      # 
+      # sed -i 's/^# %wheel/%wheel/' /etc/sudoers
       # reboot
       ```
+   6. GUI にログイン (英語キーボードで認識されている場合 `@` は、Shift + 2 なので注意)
  
