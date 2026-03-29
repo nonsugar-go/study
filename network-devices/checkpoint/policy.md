@@ -1,6 +1,18 @@
 # Policy
 
-## SmartConsole > セキュリティ ポリシー > アクセス コントロール > ポリシー
+##  アクセス コントロール ポリシー
+
+### アクセスコントロールルールのベストプラクティス
+
+- https://sc1.checkpoint.com/documents/R82/WebAdminGuides/JP/CP_R82_SecurityManagement_AdminGuide/Content/Topics-SECMG/Best-Practices-for-Access-Control-Rules.htm
+
+1. Stealth rule: セキュリティゲートウェイへの直接攻撃を防ぐための自衛ルール
+2. Explicit rule
+3. Cleanup rule: ポリシーの以前のルールで許可されていないすべてのトラフィックを破棄するクリーンアップルール
+
+### アクセス コントロール ポリシーの設定例
+
+- SmartConsole > セキュリティ ポリシー > アクセス コントロール > ポリシー
 
 | No. | 名前                      | 発信元        | 宛先        | サービス & アプリケーション      | アクション | 追跡     |
 |-----|---------------------------|--------------|-------------|--------------------------------|-----------|---------|
