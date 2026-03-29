@@ -50,6 +50,14 @@
       CPAP1:~# reboot
       ```
    6. GUI にログイン (英語キーボードで認識されている場合 `@` は、Shift + 2 なので注意)
+   7. Applications > Settings > Setting Manager
+      - Keyboard > Layout
+        - Use system defaults: Off
+        - Keyboard model: Japasense 106-key
+        - Keyboard Layout
+          - `Japanse / Japanese (OADG 109A)` を追加 `[＋Add]` して、最上段にする
+      - Xfce Screensaver > Lock Screen
+        - Enable Lock Screen: Off
 
 ## CLI
 
