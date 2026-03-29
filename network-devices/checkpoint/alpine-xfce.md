@@ -55,7 +55,7 @@
         - Use system defaults: Off
         - Keyboard model: Japasense 106-key
         - Keyboard Layout
-          - `Japanse / Japanese (OADG 109A)` を追加 `[＋Add]` して、最上段にする
+          - `Japanse / Japanese (OADG 109A)` を追加 (`[＋Add]`) して、最上段にする
       - Xfce Screensaver > Lock Screen
         - Enable Lock Screen: Off
 
