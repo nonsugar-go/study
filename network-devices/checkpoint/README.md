@@ -11,3 +11,4 @@
 ## CLI
 
 - [CLI](gaia-cli.md)
+- [cp-mgmt-api-go-sdk.md](cp-mgmt-api-go-sdk.md)
