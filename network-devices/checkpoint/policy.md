@@ -1,12 +1,14 @@
 # Policy
 
-## SmartConsole > セキュリティ ポリシー > Access Control > Policy
+## SmartConsole > セキュリティ ポリシー > アクセス コントロール > ポリシー
 
-| No. | 名前                      | 発信元        | 宛先        | VPN | サービス & アプリケーション      | アクション | 追跡     |
-|-----|---------------------------|--------------|-------------|-----|--------------------------------|-----------|---------|
-| 1   | Mgmt to GW                | Any          | Grp_GW_Mgmt | Any | echo-request, https, ssh       | Accept    | Log     |
-| 2   | from Internal to External | InternalZone | Any         | Any | echo-request, dns, http, https | Accept    | Log     |
-| 3   | Cleanup rule              | Any          | Any         | Any | Any                            | Drop      | **Log** |
+| No. | 名前                      | 発信元        | 宛先        | サービス & アプリケーション      | アクション | 追跡     |
+|-----|---------------------------|--------------|-------------|--------------------------------|-----------|---------|
+| 1   | Mgmt to GW                | Any          | Grp_GW_Mgmt | echo-request, https, ssh       | Accept    | Log     |
+| 2   | from Internal to External | InternalZone | Any         | echo-request, dns, http, https | Accept    | Log     |
+| 3   | Cleanup rule              | Any          | Any         | Any                            | Drop      | **Log** |
+
+ヘッダ部分を右クリックして、**ヒット数**、名前、発信元、宛先、サービス & アプリケーション、アクション、追跡、インストール、**コメント**」をチェックして表示するようにすることを推奨
 
 ## ポリシーとレイヤーの管理
 
