@@ -7,15 +7,15 @@
 ## SMS 上で実行
 
 ```sh
-CPSMS> mgmt login user secadmin password Lab@12345
+mgmt login user secadmin password Lab@12345
 
-CPSMS> mgmt add service-udp name "DNS-Service" port 53 comments "DNS service" tags.1 "dns" tags.2 "udp"
-CPSMS> mgmt add service-udp name "DNS-Service" port 53 comments "DNS service" tags.1 "dns" tags.2 "udp" ignore-warnings true
+mgmt add service-udp name "DNS-Service" port 53 comments "DNS service" tags.1 "dns" tags.2 "udp"
+mgmt add service-udp name "DNS-Service" port 53 comments "DNS service" tags.1 "dns" tags.2 "udp" ignore-warnings true
 
-CPSMS> mgmt discard
-CPSMS> mgmt publish
+mgmt discard
+mgmt publish
 
-CPSMS> mgmt logout
+mgmt logout
 ```
 
 ## SmartConsole がインストールされた Windows 上
