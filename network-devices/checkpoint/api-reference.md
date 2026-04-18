@@ -9,7 +9,7 @@
 ```sh
 mgmt login user secadmin password Lab@12345
 
-mgmt add service-udp name "DNS-Service" port 53 comments "DNS service" tags.1 "dns" tags.2 "udp"
+mgmt add host name "host-1" ip-address "192.168.1.10"
 mgmt add service-udp name "DNS-Service" port 53 comments "DNS service" tags.1 "dns" tags.2 "udp" ignore-warnings true
 
 mgmt discard
