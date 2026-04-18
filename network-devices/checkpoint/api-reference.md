@@ -4,20 +4,11 @@
 - https://sc1.checkpoint.com/documents/latest/APIs/?#cli/login
 - https://sc1.checkpoint.com/documents/R82.10/WebAdminGuides/EN/CP_R82.10_SecurityManagement_AdminGuide/Content/Topics-SECMG/CLI/mgmt_cli.htm
 
-SmartConsole がインストールされた Windows 上で実行できます。
-
-```cmd
-cd /d "%ProgramFiles(x86)%\CheckPoint\SmartConsole\<VERSION>\PROGRAM\"
-
-mgmt_cli login user secadmin password Lab@12345 -m 192.168.1.41
-
- :
-```
-
-または、SMS 上で実行できます。
+## SMS 上で実行
 
 ```sh
 CPSMS> mgmt login user secadmin password Lab@12345
+
   :
 
 CPSMS> mgmt discard
@@ -26,3 +17,27 @@ CPSMS> mgmt publish
 
 CPSMS> mgmt logout
 ```
+
+## SmartConsole がインストールされた Windows 上
+
+最初に SmartConsole の設定を変更します。
+
+1. SmartConsole > 管理 & 設定 > ブレード > Management API > 詳細設定...
+   - 許可する API 呼び出し: GUI クライアントで使えるすべての IP アドレス
+2. `[公開]`
+
+```cmd
+cd /d "C:\Program Files (x86)\CheckPoint\SmartConsole\R82.10\PROGRAM"
+
+mgmt_cli login user secadmin password Lab@12345 -m 192.168.1.41
+
+ :
+
+mgmt discard
+
+mgmt publish
+
+mgmt logout
+```
+
+
