@@ -9,10 +9,10 @@
 ```sh
 CPSMS> mgmt login user secadmin password Lab@12345
 
-  :
+CPSMS> mgmt add service-udp name "DNS-Service" port 53 comments "DNS service" tags.1 "dns" tags.2 "udp"
+CPSMS> mgmt add service-udp name "DNS-Service" port 53 comments "DNS service" tags.1 "dns" tags.2 "udp" ignore-warnings true
 
 CPSMS> mgmt discard
-
 CPSMS> mgmt publish
 
 CPSMS> mgmt logout
@@ -32,11 +32,9 @@ cd /d "C:\Program Files (x86)\CheckPoint\SmartConsole\R82.10\PROGRAM"
 mgmt_cli login -u secadmin -p Lab@12345 -m 192.168.1.41 >sid.txt
 
 mgmt_cli add host name "host-1" ip-address "192.168.1.10" -s sid.txt
-
 mgmt_cli add service-udp name "DNS-Service" port 53 comments "DNS service" tags.1 "dns" tags.2 "udp" ignore-warnings true -s sid.txt
 
 mgmt_cli discard -s sid.txt
-
 mgmt_cli publish -s sid.txt
 
 mgmt_cli logout -s sid.txt
