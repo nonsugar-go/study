@@ -9,7 +9,9 @@ SmartConsole がインストールされた Windows 上で実行できます。
 ```cmd
 cd /d "%ProgramFiles(x86)%\CheckPoint\SmartConsole\<VERSION>\PROGRAM\"
 
-mgmt_cli.exe <Command Name> <Command Parameters> <Optional Switches>
+mgmt_cli login user secadmin password Lab@12345 -m 192.168.1.41
+
+ :
 ```
 
 または、SMS 上で実行できます。
