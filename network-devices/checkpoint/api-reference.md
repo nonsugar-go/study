@@ -29,15 +29,15 @@ CPSMS> mgmt logout
 ```cmd
 cd /d "C:\Program Files (x86)\CheckPoint\SmartConsole\R82.10\PROGRAM"
 
-mgmt_cli login user secadmin password Lab@12345 -m 192.168.1.41
+mgmt_cli login -u secadmin -p Lab@12345 -m 192.168.1.41 >sid.txt
 
- :
+mgmt_cli add host name "host-1" ip-address "192.168.1.10" -s sid.txt
 
-mgmt discard
+mgmt discard -s sid.txt
 
-mgmt publish
+mgmt publish -s sid.txt
 
-mgmt logout
+mgmt logout -s sid.txt
 ```
 
 
