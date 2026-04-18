@@ -16,4 +16,11 @@ mgmt_cli.exe <Command Name> <Command Parameters> <Optional Switches>
 
 ```sh
 CPSMS> mgmt login user secadmin password Lab@12345
+  :
+
+CPSMS> mgmt discard
+
+CPSMS> mgmt publish
+
+CPSMS> mgmt logout
 ```
