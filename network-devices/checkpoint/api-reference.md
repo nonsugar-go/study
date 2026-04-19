@@ -3,20 +3,9 @@
 ## SMS 上で実行
 
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/login
-- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/discard
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/publish
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/discard
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/logout
-
-- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-host
-- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-network
-- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-dns-domain
-- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-group
-
-- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-service-tcp
-- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-service-udp
-- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-service-group
-
-- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-access-rule
 
 ```sh
 mgmt login user secadmin password Lab@12345
@@ -29,6 +18,28 @@ mgmt publish
 
 mgmt logout
 ```
+
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-host
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-network
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-dns-domain
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-group
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-service-tcp
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-service-udp
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-service-group
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-access-rule
+
+```sh
+mgmt add host name "New Host 1" ip-address "192.0.2.1"
+```
+
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-hosts
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-access-rulebase
+
+```sh
+mgmt show hosts offset 0 limit 500 details-level "standard" -f json
+mgmt show access-rulebase offset 0 limit 500 name "Network" details-level "standard" -f json
+```
+
 
 ## SmartConsole がインストールされた Windows 上
 
