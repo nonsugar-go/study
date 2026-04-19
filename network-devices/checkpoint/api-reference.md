@@ -32,6 +32,7 @@ mgmt add host name "New Host 1" ip-address "192.0.2.1"
 mgmt add network name "New Network 1" subnet "192.0.2.0" subnet-mask "255.255.255.0"
 mgmt add dns-domain name ".www.example.com" is-sub-domain false
 mgmt add service-tcp name "New_TCP_Service_1" port 5669
+mgmt add service-udp name "New_UDP_Service_1" port 5669
 ```
 
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-hosts
@@ -45,6 +46,8 @@ mgmt show hosts limit 500 offset 0 details-level "standard" -f json
 mgmt show networks limit 500 offset 0 details-level "standard" -f json
 mgmt show dns-domains limit 500 offset 0 details-level "standard" -f json
 mgmt show services-tcp limit 500 offset 0 details-level "standard" -f json
+mgmt show services-udp limit 500 offset 0 details-level "standard" -f json
+
 mgmt show access-rulebase limit 500 offset 0 name "Network" details-level "standard" -f json
 ```
 
