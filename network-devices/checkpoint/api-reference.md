@@ -22,6 +22,7 @@ mgmt logout
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-network
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-dns-domain
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-group
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/set-group
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-service-tcp
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-service-udp
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-service-group
