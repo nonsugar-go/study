@@ -30,8 +30,11 @@ mgmt logout
 
 ```sh
 mgmt add host name "New Host 1" ip-address "192.0.2.1"
+mgmt add host name "New Host 2" ip-address "192.0.2.2"
 mgmt add network name "New Network 1" subnet "192.0.2.0" subnet-mask "255.255.255.0"
 mgmt add dns-domain name ".www.example.com" is-sub-domain false
+mgmt add group name "New Group 1" members.1 "New Host 1" members.2 "New Host 2"
+mgmt set group name "New Group 1" members.add.1 "New Network 1" members.add.2 ".www.example.com"
 mgmt add service-tcp name "New_TCP_Service_1" port 5669
 mgmt add service-udp name "New_UDP_Service_1" port 5669
 mgmt add service-group name "New Service Group 1" members.1 "New_TCP_Service_1" members.2 "New_UDP_Service_1"
