@@ -34,6 +34,7 @@ mgmt add dns-domain name ".www.example.com" is-sub-domain false
 mgmt add service-tcp name "New_TCP_Service_1" port 5669
 mgmt add service-udp name "New_UDP_Service_1" port 5669
 mgmt add service-group name "New Service Group 1" members.1 "New_TCP_Service_1" members.2 "New_UDP_Service_1"
+mgmt add access-rule layer "Network" position 1 name "Rule 1" service.1 "SMTP" service.2 "AOL" action "Accept"
 ```
 
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-hosts
@@ -51,9 +52,16 @@ mgmt show dns-domains limit 500 offset 0 details-level "standard" -f json
 mgmt show services-tcp limit 500 offset 0 details-level "standard" -f json
 mgmt show services-udp limit 500 offset 0 details-level "standard" -f json
 mgmt show service-groups limit 500 offset 0 details-level "standard" -f json
-
 mgmt show access-rulebase limit 500 offset 0 name "Network" details-level "standard" -f json
 ```
+
+> [!NOTE]
+> 下記エラーが出た場合、SmartConsole > 管理 & 設定 > セッションの表示で別セッションを確認して対応する
+> 
+> ```
+>   MGMT9000  code: "generic_error"
+> message: "Action cannot be executed due to: An object is locked by another session."
+> ```
 
 ## SmartConsole がインストールされた Windows 上
 
