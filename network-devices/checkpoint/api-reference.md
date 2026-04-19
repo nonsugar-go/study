@@ -30,15 +30,18 @@ mgmt logout
 ```sh
 mgmt add host name "New Host 1" ip-address "192.0.2.1"
 mgmt add network name "New Network 1" subnet "192.0.2.0" subnet-mask "255.255.255.0"
+mgmt add dns-domain name ".www.example.com" is-sub-domain false
 ```
 
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-hosts
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-networks
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-dns-domains
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-access-rulebase
 
 ```sh
 mgmt show hosts limit 500 offset 0 details-level "standard" -f json
-mgmt show networks limit 500 offset 0 details-level "standard" -f json 
+mgmt show networks limit 500 offset 0 details-level "standard" -f json
+mgmt show dns-domains limit 500 offset 0 details-level "standard" -f json
 mgmt show access-rulebase limit 500 offset 0 name "Network" details-level "standard" -f json
 ```
 
