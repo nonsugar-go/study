@@ -1,12 +1,22 @@
 # Management API Reference
 
-- https://sc1.checkpoint.com/documents/latest/APIs/
-- https://sc1.checkpoint.com/documents/R82.10/WebAdminGuides/EN/CP_R82.10_SecurityManagement_AdminGuide/Content/Topics-SECMG/CLI/mgmt_cli.htm
-
 ## SMS 上で実行
 
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/login
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/discard
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/publish
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/logout
+
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-host
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-network
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-dns-domain
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-group
+
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-service-tcp
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-service-udp
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-service-group
+
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/add-access-rule
 
 ```sh
 mgmt login user secadmin password Lab@12345
@@ -14,13 +24,15 @@ mgmt login user secadmin password Lab@12345
 mgmt add host name "host-1" ip-address "192.168.1.10"
 mgmt add service-udp name "DNS-Service" port 53 comments "DNS service" tags.1 "dns" tags.2 "udp" ignore-warnings true
 
-mgmt discard
+# mgmt discard
 mgmt publish
 
 mgmt logout
 ```
 
 ## SmartConsole がインストールされた Windows 上
+
+- - https://sc1.checkpoint.com/documents/R82.10/WebAdminGuides/EN/CP_R82.10_SecurityManagement_AdminGuide/Content/Topics-SECMG/CLI/mgmt_cli.htm
 
 最初に SmartConsole の設定を変更します。
 
@@ -38,10 +50,9 @@ mgmt_cli login -u secadmin -p Lab@12345 -m 192.168.1.41 >sid.txt
 mgmt_cli add host name "host-1" ip-address "192.168.1.10" -s sid.txt
 mgmt_cli add service-udp name "DNS-Service" port 53 comments "DNS service" tags.1 "dns" tags.2 "udp" ignore-warnings true -s sid.txt
 
-mgmt_cli discard -s sid.txt
+rem mgmt_cli discard -s sid.txt
 mgmt_cli publish -s sid.txt
 
 mgmt_cli logout -s sid.txt
 ```
-
 
