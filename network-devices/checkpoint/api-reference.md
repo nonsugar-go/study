@@ -56,7 +56,7 @@ mgmt show access-rulebase limit 500 offset 0 name "Network" details-level "stand
 ```
 
 > [!NOTE]
-> 下記エラーが出た場合、SmartConsole > 管理 & 設定 > セッションの表示で別セッションを確認して対応する
+> 下記エラーが出た場合、`SmartConsole > 管理 & 設定 > セッションの表示` で別セッションを確認して対応する
 > 
 > ```
 >   MGMT9000  code: "generic_error"
