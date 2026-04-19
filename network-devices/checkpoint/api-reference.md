@@ -1,10 +1,12 @@
 # Management API Reference
 
 - https://sc1.checkpoint.com/documents/latest/APIs/
-- https://sc1.checkpoint.com/documents/latest/APIs/?#cli/login
 - https://sc1.checkpoint.com/documents/R82.10/WebAdminGuides/EN/CP_R82.10_SecurityManagement_AdminGuide/Content/Topics-SECMG/CLI/mgmt_cli.htm
 
 ## SMS 上で実行
+
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/login
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/publish
 
 ```sh
 mgmt login user secadmin password Lab@12345
@@ -25,6 +27,8 @@ mgmt logout
 1. SmartConsole > 管理 & 設定 > ブレード > Management API > 詳細設定...
    - 許可する API 呼び出し: GUI クライアントで使えるすべての IP アドレス
 2. `[公開]`
+
+- https://sc1.checkpoint.com/documents/latest/APIs/?#cli/login
 
 ```cmd
 cd /d "C:\Program Files (x86)\CheckPoint\SmartConsole\R82.10\PROGRAM"
