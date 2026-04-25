@@ -9,6 +9,7 @@
 
 1. JHF をダウンロードしておく
    - https://support.checkpoint.com/results/download/142563
-2. Gaia Portal > Software Updates > Available Updates > + Add Package ▼ > From your computer: Check_Point_R82_10_jumbo_hf    _main_Bundle_T6_FULL.tar
-3. インポートしたパッケージの `[Verify]` をクリック
-4. インポートしたパッケージの `[Install]` をクリック (`The machine will automatically reboot after installation` にチェック)
+2. Gaia Portal 上部の lock icon (🔒) をクリックしてロックを得る
+3. Gaia Portal > Software Updates > Available Updates > + Add Package ▼ > From your computer: Check_Point_R82_10_jumbo_hf    _main_Bundle_T6_FULL.tar
+4. インポートしたパッケージの `[Verify]` をクリック
+5. インポートしたパッケージの `[Install]` をクリック (`The machine will automatically reboot after installation` にチェック)
