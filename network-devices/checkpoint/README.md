@@ -1,5 +1,9 @@
 # Check Point Firewall
 
+> [!WARNING]
+> - https://community.checkpoint.com/t5/Firewall-and-Security-Management/R82-10-smartconsole-Evaluation-License-Expired/m-p/272789
+> - https://support.checkpoint.com/results/sk/sk184766
+
 1. [検証環境の構築](lab.md)
 2. [FTW](gaia-ftw.md)
 3. [JHF](jhf.md)
