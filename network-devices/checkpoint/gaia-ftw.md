@@ -20,7 +20,7 @@
 2. Management Connection
    - Interface: eth0
    - Configure IPv4: Manually
-   - IPv4 address: 192.168.1.41
+   - IPv4 address: 192.168.1.40
    - Subnet mask: 255.255.255.0 (または Mask length: 24)
    - Default Gateway: 192.168.1.1
    - Configure IPv6: Off
