@@ -32,7 +32,7 @@
 
 | 名前 | IP Address       | コメント   |
 |------|------------------|-----------|
-| eth0 | 192.168.1.41/24  | Mgmt      |
+| eth0 | 192.168.1.40/24  | Mgmt      |
 
 ## CPGW1
 
@@ -215,7 +215,7 @@
    5. Maintenace password / Password: Lab@12345
    6. Management Port: eth0
    7. Management Interface (eth0)
-      - IP address: 192.168.1.40
+      - IP address: 192.168.1.49
       - Netmask: 255.255.255.0
    8. Press return to quit: `[Enter]`
 6. 再起動後、admin でログインし、共通設定を実施する
@@ -228,7 +228,7 @@
    Enter new expert password (again): Lab@12345
    set hostname CPTMPL
    set domainname cplab.test
-   set interface eth0 ipv4-address 192.168.1.40 mask-length 24
+   set interface eth0 ipv4-address 192.168.1.49 mask-length 24
    set interface eth0 comments "Mgmt"
    set dns primary 8.8.8.8
    set dns secondary 1.1.1.1
@@ -241,7 +241,7 @@
    set ntp active on
    set format date yyyy/mm/dd
    set format netmask length
-   add host name CPSMS ipv4-address 192.168.1.41
+   add host name CPSMS ipv4-address 192.168.1.40
    add host name CPGW1A ipv4-address 192.168.1.42
    add host name CPGW1B ipv4-address 192.168.1.43
    add host name CPGW2 ipv4-address 192.168.1.44
@@ -269,7 +269,7 @@
    
    ```sh
    set hostname CPSMS
-   set interface eth0 ipv4-address 192.168.1.41 mask-length 24
+   set interface eth0 ipv4-address 192.168.1.40 mask-length 24
    set static-route default nexthop gateway address 192.168.1.1 on
    save config
    halt
