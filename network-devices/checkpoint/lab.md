@@ -196,6 +196,7 @@
      2. Installation > Quantum Security Management and Multi-Domain Server > Clean Install Image
      3. Installation > SmartConsole > EXE
    - [Check Point R82.10: sk183506](https://support.checkpoint.com/results/sk/sk183506)
+   - [R82.10 SmartConsole Build 422](https://support.checkpoint.com/results/download/142561)
      1. Downloads and Installation > Clean Install of Security Gateway and Management Server > Clean Install Image
      2. Downloads and Installation > SmartConsole > SmartConsole EXE
 3. 仮想マシンの作成 (ひな型)
