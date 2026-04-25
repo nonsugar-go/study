@@ -242,6 +242,7 @@
    set format date yyyy/mm/dd
    set format netmask length
    add host name CPSMS ipv4-address 192.168.1.40
+   add host name CPGW1 ipv4-address 192.168.1.41
    add host name CPGW1A ipv4-address 192.168.1.42
    add host name CPGW1B ipv4-address 192.168.1.43
    add host name CPGW2 ipv4-address 192.168.1.44
