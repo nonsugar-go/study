@@ -2,11 +2,12 @@
 
 1. [検証環境の構築](lab.md)
 2. [FTW](gaia-ftw.md)
-3. [Gaia Portal](gaia-portal.md)
-4. [SmartConsole](smartconsole.md)
-5. [ポリシー](policy.md)
-6. [NAT](nat.md)
-7. [Log](log.md)
+3. [JHF](jhf.md)
+4. [Gaia Portal](gaia-portal.md)
+5. [SmartConsole](smartconsole.md)
+6. [ポリシー](policy.md)
+7. [NAT](nat.md)
+8. [Log](log.md)
 
 ## CLI
 
