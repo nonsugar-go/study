@@ -26,11 +26,7 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   - Set time manually: (X) … 手動で設定する場合
-     - Date: (現在の日付)
-     - Time: (現在の時刻)
-     - Time Zone: Tokyo, Asia (GMT +9:00)
-   - Use Network Time Protocol (NTP): (X) … NTP で設定する場合
+   - Use Network Time Protocol (NTP): (X)
      - Preferred NTP server: 192.168.1.39, Type: Server, Version: 4
      - Secondary NTP server: ntp.nict.jp, Type: Pool, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
@@ -80,11 +76,7 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   - Set time manually: (X) … 手動で設定する場合
-     - Date: (現在の日付)
-     - Time: (現在の時刻)
-     - Time Zone: Tokyo, Asia (GMT +9:00)
-   - Use Network Time Protocol (NTP): (X) … NTP で設定する場合
+   - Use Network Time Protocol (NTP): (X)
      - Preferred NTP server: 192.168.1.39, Type: Server, Version: 4
      - Secondary NTP server: ntp.nict.jp, Type: Pool, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
@@ -130,11 +122,7 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   - Set time manually: (X) … 手動で設定する場合
-     - Date: (現在の日付)
-     - Time: (現在の時刻)
-     - Time Zone: Tokyo, Asia (GMT +9:00)
-   - Use Network Time Protocol (NTP): (X) … NTP で設定する場合
+   - Use Network Time Protocol (NTP): (X)
      - Preferred NTP server: 192.168.1.39, Type: Server, Version: 4
      - Secondary NTP server: ntp.nict.jp, Type: Pool, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
@@ -180,11 +168,7 @@
    - Tertiary DNS Server: (None)
    - Use a Proxy server: [_]
 5. Date and Time Settings
-   - Set time manually: (X) … 手動で設定する場合
-     - Date: (現在の日付)
-     - Time: (現在の時刻)
-     - Time Zone: Tokyo, Asia (GMT +9:00)
-   - Use Network Time Protocol (NTP): (X) … NTP で設定する場合
+   - Use Network Time Protocol (NTP): (X)
      - Preferred NTP server: 192.168.1.39, Type: Server, Version: 4
      - Secondary NTP server: ntp.nict.jp, Type: Pool, Version: 4
      - Time Zone: Tokyo, Asia (GMT +9:00)
