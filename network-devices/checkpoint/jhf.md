@@ -5,10 +5,10 @@
 - https://sc1.checkpoint.com/documents/Jumbo_HFA/R82.10/R82.10/R82.10-List-of-all-Resolved-Issues.htm
 - https://support.checkpoint.com/results/sk/sk184766
 
-## JHF を先にダウンロードしておいて、CLI で適用する方法
+## JHF を先にダウンロードしておいて、Gaia Portal で適用する方法
 
 1. JHF をダウンロードしておく
    - https://support.checkpoint.com/results/download/142563
-2. 
-1. SCP などで、/var/log へ JHF をアップロード
-$ scp 
+2. Gaia Portal > Software Updates > Available Updates > + Add Package ▼ > From your computer: Check_Point_R82_10_jumbo_hf    _main_Bundle_T6_FULL.tar
+3. インポートしたパッケージの `[Verify]` をクリック
+4. インポートしたパッケージの `[Install]` をクリック (`The machine will automatically reboot after installation` にチェック)
