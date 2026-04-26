@@ -11,7 +11,7 @@
 
 - Username: secadmin
 - Password: Lab@12345
-- Server Name or IP address: 192.168.1.41
+- Server Name or IP address: 192.168.1.40
 - `[LOGIN →]` をクリック
 
 ## 設定
@@ -26,7 +26,7 @@
      - Wizard Mode: (X)
    - Cluster General Properties
      - Cluster Name: CPGW1
-     - Cluster IPv4 Address: 192.168.101.1
+     - Cluster IPv4 Address: 192.168.1.41
      - Cluster IPv6 Address: (None)
      - Choose the Cluster's Solution: Check Point ClusterXL
        - High Availability
