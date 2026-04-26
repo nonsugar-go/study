@@ -78,7 +78,9 @@
      - Cluster Topology
        - IPv4 Network Address: 192.168.1.0 (read-only)
        - Net Mask: 255.255.255.0 (read-only)
-       - This network is intended for: Private use of each member (don't monitor members interface)
+       - This network is intended for: Representing a cluster interface
+         - Interface IPv4: 192.168.1.41
+         - Net Mask: 255.255.255.0
 2. `[ゲートウェイ & サーバ]` の一覧にクラスタ `CPGW1` が登録されていることを確認し、変更をコミットするために、`[公開]` をクリック
 3. `[ゲートウェイ & サーバ]` の一覧に登録されたクラスタ `CPGW1` をダブルクリックし、`Network Management` をクリック
    1. インタフェースの取得... > トポロジを除くインタフェースを取得 をクリック
