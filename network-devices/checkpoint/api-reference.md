@@ -1,6 +1,6 @@
 # Management API Reference
 
-## SMS 上で実行
+## SMS 上で実行 (Clish)
 
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/login
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/publish
@@ -67,6 +67,19 @@ mgmt show access-rulebase limit 500 offset 0 name "Network" details-level "stand
 > message: "Action cannot be executed due to: An object is locked by another session."
 > ```
 
+## SMS 上で実行 (Expert mode)
+
+```sh
+mgmt_cli login -u secadmin -p Lab@12345 >sid.txt
+
+mgmt_cli add service-udp name "DNS-Service" port 53 comments "DNS service" tags.1 "dns" tags.2 "udp" ignore-warnings true -s sid.txt
+
+rem mgmt_cli discard -s sid.txt
+mgmt_cli publish -s sid.txt
+
+mgmt_cli logout -s sid.txt
+```
+
 ## SmartConsole がインストールされた Windows 上
 
 - - https://sc1.checkpoint.com/documents/R82.10/WebAdminGuides/EN/CP_R82.10_SecurityManagement_AdminGuide/Content/Topics-SECMG/CLI/mgmt_cli.htm
@@ -91,4 +104,3 @@ mgmt_cli publish -s sid.txt
 
 mgmt_cli logout -s sid.txt
 ```
-
