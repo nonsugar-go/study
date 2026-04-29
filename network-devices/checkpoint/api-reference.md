@@ -82,7 +82,7 @@ mgmt show access-rulebase limit 500 offset 0 name "Network" details-level "stand
 ```cmd
 cd /d "C:\Program Files (x86)\CheckPoint\SmartConsole\R82.10\PROGRAM"
 
-mgmt_cli login -u secadmin -p Lab@12345 -m 192.168.1.41 >sid.txt
+mgmt_cli login -u secadmin -p Lab@12345 -m 192.168.1.40 >sid.txt
 
 mgmt_cli add service-udp name "DNS-Service" port 53 comments "DNS service" tags.1 "dns" tags.2 "udp" ignore-warnings true -s sid.txt
 
