@@ -78,6 +78,8 @@ mgmt_cli add service-udp name "DNS-Service" port 53 comments "DNS service" tags.
 mgmt_cli publish -s sid.txt
 
 mgmt_cli logout -s sid.txt
+
+rm sid.txt
 ```
 
 ## SmartConsole がインストールされた Windows 上
