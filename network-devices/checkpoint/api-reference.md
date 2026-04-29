@@ -74,7 +74,7 @@ mgmt_cli login -u secadmin -p Lab@12345 >sid.txt
 
 mgmt_cli add service-udp name "DNS-Service" port 53 comments "DNS service" tags.1 "dns" tags.2 "udp" ignore-warnings true -s sid.txt
 
-rem mgmt_cli discard -s sid.txt
+# mgmt_cli discard -s sid.txt
 mgmt_cli publish -s sid.txt
 
 mgmt_cli logout -s sid.txt
