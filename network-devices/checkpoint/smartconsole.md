@@ -149,3 +149,4 @@
    | eth1 | This network      | 192.168.201.2/24 | Internal  | InternalZone       | ブロックしてログ記録 |
    | eth2 | External          | 192.0.2.65/26    | External  | ExternalZone       | ブロックしてログ記録 |
 9. 変更をコミットするために、`[公開]` をクリック
+10. `[ポリシーのインストール]` をクリック
