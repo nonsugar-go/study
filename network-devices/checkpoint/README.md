@@ -20,7 +20,8 @@
 - [CLI](gaia-cli.md)
 - [API Reference](api-reference.md)
 - [Show Package Tool](show_package.md)
-- [cp-mgmt-api-go-sdk.md](cp-mgmt-api-go-sdk.md)
+- [cp-mgmt-api-go-sdk](cp-mgmt-api-go-sdk.md)
+- https://github.com/CheckPointSW/ExportImportPolicyPackage
 
 ## ClustXL
 
