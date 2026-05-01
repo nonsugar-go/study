@@ -19,7 +19,7 @@
 
 - [CLI](gaia-cli.md)
 - [API Reference](api-reference.md)
-- [sk120342 - Exporting Check Point configuration from a Management Server into readable format using &quot;Show Package Tool&quot;](https://support.checkpoint.com/results/sk/sk120342)
+- [Show Package Tool](show_package.md)
 - [cp-mgmt-api-go-sdk.md](cp-mgmt-api-go-sdk.md)
 
 ## ClustXL
