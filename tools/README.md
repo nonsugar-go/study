@@ -8,5 +8,5 @@
 
 ## Net Admin Tools
 
-- [TeraTerm](https://github.com/TeraTermProject/teraterm/releases) (portable ZIP)
+- [Tera Term](https://github.com/TeraTermProject/teraterm/releases) (portable ZIP)
 - [Tftpd64](https://github.com/PJO2/tftpd64/releases/) (tftpd64_portable_v*.*.zip)
