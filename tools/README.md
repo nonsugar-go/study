@@ -8,5 +8,6 @@
 
 ## Net Admin Tools
 
+- [ExPing](https://www.woodybells.com/exping.html)
 - [Tera Term](https://github.com/TeraTermProject/teraterm/releases) (portable ZIP)
 - [Tftpd64](https://github.com/PJO2/tftpd64/releases/) (tftpd64_portable_v*.*.zip)
