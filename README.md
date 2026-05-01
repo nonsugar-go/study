@@ -12,13 +12,20 @@
 - [Windows](windows)
   - [wsl](windows/wsl.md)
 
+# What is my ip address?
+
+```zsh
+curl ifconfig.io
+```
+
 # DNS Services
 
-|DNSサービス|IP Addresses|
-|---|---|
-|Cloudflare|1.1.1.1, 1.0.0.1|
-|Google|8.8.8.8, 8.8.4.4|
-|Lumen/Level3|4.2.2.\[1-6\]|
+|DNSサービス  |IP Addresses            |
+|------------|------------------------|
+|Cloudflare  |1.1.1.1, 1.0.0.1        |
+|Google      |8.8.8.8, 8.8.4.4        |
+|Quad9       |9.9.9.9, 149.112.112.112|
+|Lumen/Level3|4.2.2.\[1-6\]           |
 
 # Tomato
 :tomato: :tomato:
