@@ -23,6 +23,7 @@
 - [cp-mgmt-api-go-sdk](cp-mgmt-api-go-sdk.md)
 - https://github.com/CheckPointSW/ExportImportPolicyPackage
 
-## ClustXL
+## Misc
 
 - https://sc1.checkpoint.com/documents/R82.10/WebAdminGuides/EN/CP_R82.10_ClusterXL_AdminGuide/CP_R82.10_ClusterXL_AdminGuide.pdf
+- https://support.checkpoint.com/results/sk/sk181190
