@@ -4,6 +4,10 @@
 - https://go.dev/doc/tutorial/web-service-gin
 - https://pkg.go.dev/github.com/go-playground/validator/v10
 
+```zsh
+go get -u github.com/gin-gonic/gin
+```
+
 # Insomnia
 
 - https://insomnia.rest/download
