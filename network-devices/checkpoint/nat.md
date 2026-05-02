@@ -68,6 +68,25 @@ add network name "Net_192.168.101.0" subnet4 192.168.101.0 subnet-mask 255.255.2
 |Automatic Rule: Net_192.168.101.0|Net_192.168.101.0|Any                              |Any        |S) Net_192.168.101.0  (Valid Address)|＝ Oritinal                          |＝ Oritinal   |CPGW1      |
 |Automatic Rule: Net_192.168.101.0|Any              |Net_192.168.101.0 (Valid Address)|Any        |＝ Oritinal                          |S) Net_192.168.101.0  (Valid Address)|＝ Oritinal   |CPGW1      |
 
+### Automatic Hide NAT
+
+- Host (SmartConsole_VM)
+  - NAT
+    - アドレス変換の値
+      - 自動アドレス変換ルールの追加: ✅
+        - 変換メソッド: 非表示
+          - IP アドレスで隠す > IPv4 アドレス: 192.0.2.20
+        - インストール先ゲートウェイ: CPGW1 
+
+```sh
+add host name DMZSRV ip-address 192.168.111.5 color "orange" nat-settings.auto-rule true nat-settings.method "hide" nat-settings.hide-behind "ip-address" nat-settings.ipv4-address "192.0.2.20" nat-settings.install-on "CPGW1"
+```
+
+**Automatic Generated Rules : Machine Hide NAT**
+|名前                           |元の発信元      |元の宛先|元のサービス|変換後の発信元                      |変換後の宛先              |変換後のサービス|インストール|
+|-------------------------------|---------------|-------|-----------|-----------------------------------|-------------------------|--------------|-----------|
+|Automatic Rule: SmartConsole_VM|SmartConsole_VM|Any    |Any        |H) SmartConsole_VM (Hiding Address)|＝ Oritinal              |＝ Oritinal   |CPGW1      |
+
 ### Automatic dynamic NAT
 
 ## Manual static NAT
