@@ -1,6 +1,8 @@
 # Policy
 
-## Gateway Cluster Properties
+## SmartConsole > ゲートウェイ & サーバ
+
+### Gateway Cluster Properties
 
 - General Properties > Network Security
   - Access Control:
@@ -10,6 +12,15 @@
     - URL Filtering: 🔳 → ✅
    - Advanced Networking:
      - ClusterXL: ✅
+
+### Check Point Gateway
+
+- General Properties > Network Security
+  - Access Control:
+    - Firewall: ✅
+    - IPSec VPN: ✅ → 🔳
+    - Application Control: 🔳 → ✅
+    - URL Filtering: 🔳 → ✅
 
 ##  アクセス コントロール ポリシー
 
