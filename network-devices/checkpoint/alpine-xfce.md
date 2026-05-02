@@ -128,5 +128,5 @@ ifdown eth0 && ifup eth0
 
 ```sh
 echo "Welcome to $(ip -4 a s eth0|grep inet|awk '{print $2}')" >index.html
-httpd -p 80 -h . &
+sudo httpd -p 80 -h . &
 ```
