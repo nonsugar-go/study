@@ -114,16 +114,39 @@ ifdown eth0 && ifup eth0
    4. `reboot` コマンドで、再起動 (再起動後、ISO を外す)
    5. 再起動後、root でログイン、または user1 でログインして、`su -` で root になる
       ```sh
-      DMZSRV:~$ su -
-      DMZSRV:~# sed -i 's/^#http/http/g' /etc/apk/repositories
-      DMZSRV:~# apk update
-      DMZSRV:~# apk add open-vm-tools sudo bind-tools curl w3m busybox-extras lftp tcpdump
-      DMZSRV:~# apk cache purge
-      DMZSRV:~# rc-service open-vm-tools start
-      DMZSRV:~# rc-update add open-vm-tools
-      DMZSRV:~# sed -i.orig 's/^# %wheel/%wheel/' /etc/sudoers
-      DMZSRV:~# reboot
+      su -
+      sed -i 's/^#http/http/g' /etc/apk/repositories
+      apk update
+      apk add open-vm-tools sudo bind-tools curl w3m busybox-extras lftp tcpdump
+      apk cache purge
+      rc-service open-vm-tools start
+      rc-update add open-vm-tools
+      sed -i.orig 's/^# %wheel/%wheel/' /etc/sudoers
       ```
+
+### アドレス変更
+
+```sh
+sudo vi /etc/network/interfaces
+```
+
+```sh
+cat /etc/network/interfaces
+auto lo
+iface lo inet loopback
+
+auto eth0
+# iface eth0 inet dhcp
+iface eth0 inet static
+    address 192.168.111.5
+    netmask 255.255.255.0
+    gateway 192.168.111.1
+```
+
+```sh
+sudo rc-service networking restart
+```
+
 ### 簡易 web サーバ
 
 ```sh
