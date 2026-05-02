@@ -117,7 +117,6 @@ ifdown eth0 && ifup eth0
       DMZSRV:~$ su -
       DMZSRV:~# sed -i 's/^#http/http/g' /etc/apk/repositories
       DMZSRV:~# apk update
-      DMZSRV:~# apk add open-vm-tools sudo bind-tools curl w3m inetutils-telnet lftp tcpdump
       DMZSRV:~# apk add open-vm-tools sudo bind-tools curl w3m busybox-extras lftp tcpdump
       DMZSRV:~# apk cache purge
       DMZSRV:~# rc-service open-vm-tools start
