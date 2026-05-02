@@ -8,7 +8,15 @@
 
 ## Automatic NAT
 
-## Automatic static NAT
+## Automatic static NAT (One-to-One)
+
+- Host (DMZSRV)
+  - NAT
+    - アドレス変換の値
+      - 自動アドレス変換ルールの追加: ✅
+        - 変換メソッド: スタティック
+          - IP アドレスに変換 > IPv4 アドレス: 192.0.2.5
+        - インストール先ゲートウェイ: CPGW1 
 
 ## Automatic dynamic NAT
 
