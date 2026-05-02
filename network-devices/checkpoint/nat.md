@@ -18,6 +18,12 @@
           - IP アドレスに変換 > IPv4 アドレス: 192.0.2.5
         - インストール先ゲートウェイ: CPGW1 
 
+**Automatic Generated Rules : Machine Static NAT**
+|No.|名前                  |元の発信元|元の宛先               |元のサービス|変換後の発信元           |変換後の宛先             |変換後のサービス|インストール|
+|---|----------------------|---------|----------------------|-----------|------------------------|------------------------|--------------|-----------|
+|1  |Automatic Rule: DMZSRV|DMZSRV   |Any                   |Any        |S DMZSRV (Valid Address)|＝ Oritinal             |＝ Oritinal   |CPGW1      |
+|2  |Automatic Rule: DMZSRV|Any      |DMZSRV (Valid Address)|Any        |＝ Oritinal             |S DMZSRV (Valid Address)|＝ Oritinal   |CPGW1      |
+
 ## Automatic dynamic NAT
 
 ## Manual static NAT
