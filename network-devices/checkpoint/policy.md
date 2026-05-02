@@ -5,10 +5,10 @@
 - General Properties > Network Security
   - Access Control:
     - Firewall: ✅
-    - IPSec VPN: ✅ → □
-    - Application Control: □ → ✅
-    - URL Filtering: □ → ✅
-   - Advanced Networking & Clustering:
+    - IPSec VPN: ✅ → 🔳
+    - Application Control: 🔳 → ✅
+    - URL Filtering: 🔳 → ✅
+   - Advanced Networking:
      - ClusterXL: ✅
 
 ##  アクセス コントロール ポリシー
