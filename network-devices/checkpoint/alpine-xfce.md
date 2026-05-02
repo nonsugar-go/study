@@ -61,7 +61,7 @@
       - Xfce Screensaver > Lock Screen
         - Enable Lock Screen: Off
 
-## CLI
+### CLI
 
 ```sh
 ## root になる
@@ -124,3 +124,9 @@ ifdown eth0 && ifup eth0
       DMZSRV:~# sed -i.orig 's/^# %wheel/%wheel/' /etc/sudoers
       DMZSRV:~# reboot
       ```
+### 簡易 web サーバ
+
+```sh
+echo "Welcome to $(ip -4 a s eth0|grep inet|awk '{print $2}')" >index.html
+httpd -p 80
+```
