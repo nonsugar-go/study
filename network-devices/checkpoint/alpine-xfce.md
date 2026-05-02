@@ -114,13 +114,14 @@ ifdown eth0 && ifup eth0
    4. `reboot` コマンドで、再起動 (再起動後、ISO を外す)
    5. 再起動後、root でログイン、または user1 でログインして、`su -` で root になる
       ```sh
-      CPAP1:~$ su -
-      CPAP1:~# apk add open-vm-tools sudo bind-tools curl w3m inetutils-telnet lftp tcpdump
-      CPAP1:~# apk cache purge
-      CPAP1:~# rc-service open-vm-tools start
-      CPAP1:~# rc-update add open-vm-tools
-      CPAP1:~# sed -i.orig 's/^# %wheel/%wheel/' /etc/sudoers
-      CPAP1:~# reboot
+      DMZSRV:~$ su -
+      DMZSRV:~# apk update && apk upgrade
+      DMZSRV:~# apk add open-vm-tools sudo bind-tools curl w3m inetutils-telnet lftp tcpdump
+      DMZSRV:~# apk cache purge
+      DMZSRV:~# rc-service open-vm-tools start
+      DMZSRV:~# rc-update add open-vm-tools
+      DMZSRV:~# sed -i.orig 's/^# %wheel/%wheel/' /etc/sudoers
+      DMZSRV:~# reboot
       ```
    6. GUI にログイン (英語キーボードで認識されている場合 `@` は、Shift + 2 なので注意)
    7. Applications > Settings > Setting Manager
