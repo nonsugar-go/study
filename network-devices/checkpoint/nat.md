@@ -68,7 +68,7 @@ add network name "Net_192.168.101.0" subnet4 192.168.101.0 subnet-mask 255.255.2
 |Automatic Rule: Net_192.168.101.0|Net_192.168.101.0|Any                              |Any        |S) Net_192.168.101.0  (Valid Address)|＝ Oritinal                          |＝ Oritinal   |CPGW1      |
 |Automatic Rule: Net_192.168.101.0|Any              |Net_192.168.101.0 (Valid Address)|Any        |＝ Oritinal                          |S) Net_192.168.101.0  (Valid Address)|＝ Oritinal   |CPGW1      |
 
-### Automatic Hide NAT
+### Automatic Hide NAT (Single host hiding behid a unique IP address)
 
 - Host (SmartConsole_VM)
   - NAT
@@ -79,7 +79,7 @@ add network name "Net_192.168.101.0" subnet4 192.168.101.0 subnet-mask 255.255.2
         - インストール先ゲートウェイ: CPGW1 
 
 ```sh
-add host name DMZSRV ip-address 192.168.111.5 color "orange" nat-settings.auto-rule true nat-settings.method "hide" nat-settings.hide-behind "ip-address" nat-settings.ipv4-address "192.0.2.20" nat-settings.install-on "CPGW1"
+add host name SmartConsole_VM ip-address 192.168.1.69 color "crete blue" nat-settings.auto-rule true nat-settings.method "hide" nat-settings.hide-behind "ip-address" nat-settings.ipv4-address "192.0.2.20" nat-settings.install-on "CPGW1"
 ```
 
 **Automatic Generated Rules : Machine Hide NAT**
