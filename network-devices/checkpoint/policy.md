@@ -1,5 +1,16 @@
 # Policy
 
+## Gateway Cluster Properties
+
+- General Properties > Network Security
+  - Access Control:
+    - Firewall: ✅
+    - IPSec VPN: ✅ → □
+    - Application Control: □ → ✅
+    - URL Filtering: □ → ✅
+   - Advanced Networking & Clustering:
+     - ClusterXL: ✅
+
 ##  アクセス コントロール ポリシー
 
 ### アクセスコントロールルールのベストプラクティス
