@@ -8,7 +8,7 @@
 
 ## Automatic NAT
 
-## Automatic static NAT (One-to-One)
+### Automatic static NAT (One-to-One)
 
 - Host (DMZSRV)
   - NAT
@@ -28,7 +28,7 @@ add host name DMZSRV ip-address 192.168.111.5 color "orange" nat-settings.auto-r
 |1  |Automatic Rule: DMZSRV|DMZSRV   |Any                   |Any        |S) DMZSRV (Valid Address)|＝ Oritinal              |＝ Oritinal   |CPGW1      |
 |2  |Automatic Rule: DMZSRV|Any      |DMZSRV (Valid Address)|Any        |＝ Oritinal              |S) DMZSRV (Valid Address)|＝ Oritinal   |CPGW1      |
 
-## Automatic static NAT (Many-to-Many)
+### Automatic static NAT (Many-to-Many)
 
 - Network (Net_192.168.101.0)
   - NAT
@@ -38,6 +38,6 @@ add host name DMZSRV ip-address 192.168.111.5 color "orange" nat-settings.auto-r
           - IP アドレスに変換 > IPv4 アドレス: 192.168.100.0
         - インストール先ゲートウェイ: CPGW1 
 
-## Automatic dynamic NAT
+### Automatic dynamic NAT
 
 ## Manual static NAT
