@@ -23,10 +23,10 @@ add host name DMZSRV ip-address 192.168.111.5 color "orange" nat-settings.auto-r
 ```
 
 **Automatic Generated Rules : Machine Static NAT**
-|No.|名前                  |元の発信元|元の宛先               |元のサービス|変換後の発信元            |変換後の宛先              |変換後のサービス|インストール|
-|---|----------------------|---------|----------------------|-----------|-------------------------|-------------------------|--------------|-----------|
-|1  |Automatic Rule: DMZSRV|DMZSRV   |Any                   |Any        |S) DMZSRV (Valid Address)|＝ Oritinal              |＝ Oritinal   |CPGW1      |
-|2  |Automatic Rule: DMZSRV|Any      |DMZSRV (Valid Address)|Any        |＝ Oritinal              |S) DMZSRV (Valid Address)|＝ Oritinal   |CPGW1      |
+|名前                  |元の発信元|元の宛先               |元のサービス|変換後の発信元            |変換後の宛先              |変換後のサービス|インストール|
+|----------------------|---------|----------------------|-----------|-------------------------|-------------------------|--------------|-----------|
+|Automatic Rule: DMZSRV|DMZSRV   |Any                   |Any        |S) DMZSRV (Valid Address)|＝ Oritinal              |＝ Oritinal   |CPGW1      |
+|Automatic Rule: DMZSRV|Any      |DMZSRV (Valid Address)|Any        |＝ Oritinal              |S) DMZSRV (Valid Address)|＝ Oritinal   |CPGW1      |
 
 ### Automatic static NAT (Many-to-Many)
 
@@ -37,6 +37,13 @@ add host name DMZSRV ip-address 192.168.111.5 color "orange" nat-settings.auto-r
         - 変換メソッド: スタティック
           - IP アドレスに変換 > IPv4 アドレス: 192.168.100.0
         - インストール先ゲートウェイ: CPGW1 
+
+**Automatic Generated Rules : Network Static NAT**
+|名前                              |元の発信元       |元の宛先                          |元のサービス|変換後の発信元                        |変換後の宛先                          |変換後のサービス|インストール|
+|---------------------------------|-----------------|---------------------------------|-----------|-------------------------------------|-------------------------------------|--------------|-----------|
+|Automatic Rule: Net_192.168.101.0|Net_192.168.101.0|Net_192.168.101.0                |Any        |＝ Oritinal                          |＝ Oritinal                          |＝ Oritinal   |CPGW1      |
+|Automatic Rule: Net_192.168.101.0|Net_192.168.101.0|Any                              |Any        |S) Net_192.168.101.0  (Valid Address)|＝ Oritinal                          |＝ Oritinal   |CPGW1      |
+|Automatic Rule: Net_192.168.101.0|Any              |Net_192.168.101.0 (Valid Address)|Any        |＝ Oritinal                          |S) Net_192.168.101.0  (Valid Address)|＝ Oritinal   |CPGW1      |
 
 ### Automatic dynamic NAT
 
