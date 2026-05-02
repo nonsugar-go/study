@@ -115,7 +115,8 @@ ifdown eth0 && ifup eth0
    5. 再起動後、root でログイン、または user1 でログインして、`su -` で root になる
       ```sh
       DMZSRV:~$ su -
-      DMZSRV:~# apk update && apk upgrade
+      DMZSRV:~# sed -i 's/^#http/http/g' /etc/apk/repositories
+      DMZSRV:~# apk update
       DMZSRV:~# apk add open-vm-tools sudo bind-tools curl w3m inetutils-telnet lftp tcpdump
       DMZSRV:~# apk cache purge
       DMZSRV:~# rc-service open-vm-tools start
@@ -123,25 +124,3 @@ ifdown eth0 && ifup eth0
       DMZSRV:~# sed -i.orig 's/^# %wheel/%wheel/' /etc/sudoers
       DMZSRV:~# reboot
       ```
-   6. GUI にログイン (英語キーボードで認識されている場合 `@` は、Shift + 2 なので注意)
-   7. Applications > Settings > Setting Manager
-      - Keyboard > Layout
-        - Use system defaults: Off
-        - Keyboard model: Japasense 106-key
-        - Keyboard Layout
-          - `Japanse / Japanese (OADG 109A)` を追加 (`[＋Add]`) して、最上段にする
-      - Xfce Screensaver > Lock Screen
-        - Enable Lock Screen: Off
-
-## CLI
-
-```sh
-## root になる
-sudo -i
-
-## IP アドレスの確認
-ip -4 a s eth0
-
-## DHCP 再取得
-ifdown eth0 && ifup eth0
-```
