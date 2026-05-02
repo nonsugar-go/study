@@ -18,6 +18,10 @@
           - IP アドレスに変換 > IPv4 アドレス: 192.0.2.5
         - インストール先ゲートウェイ: CPGW1 
 
+```bash
+add host name DMZSRV ip-address 192.168.111.5 color "orange" nat-settings.auto-rule true nat-settings.method "static" nat-settings.ipv4-address "192.0.2.5" nat-settings.install-on "CPGW1"
+```
+
 **Automatic Generated Rules : Machine Static NAT**
 |No.|名前                  |元の発信元|元の宛先               |元のサービス|変換後の発信元            |変換後の宛先              |変換後のサービス|インストール|
 |---|----------------------|---------|----------------------|-----------|-------------------------|-------------------------|--------------|-----------|
