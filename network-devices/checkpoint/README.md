@@ -26,4 +26,5 @@
 ## Misc
 
 - https://sc1.checkpoint.com/documents/R82.10/WebAdminGuides/EN/CP_R82.10_ClusterXL_AdminGuide/CP_R82.10_ClusterXL_AdminGuide.pdf
+- https://sc1.checkpoint.com/documents/R82/WebAdminGuides/EN/CP_R82_ThreatPrevention_AdminGuide/Content/Topics-TPG/The_Check_Point_Threat_Prevention_Solution.htm
 - https://support.checkpoint.com/results/sk/sk181190
