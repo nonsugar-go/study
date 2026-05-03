@@ -172,17 +172,37 @@ add nat-rule package "standard" position "top" name "No NAT" method "static" ori
 
 Manual NAT の場合、Proxy ARP の設定を自動で実施するには、以下の設定が必要となります。
 
-- SmartConsole > グローバル プロパティ...
-  - NAT - Network Address Translation
-    - Automatic NAT rules
-      - Allow bi-directional NAT (for more details see help): ✅
-      - Translate destination on client side: ✅
-      - Automatic ARP configuration: ✅
-        - Merge manual proxy ARP configuration: 🔳 → ✅
-    - Manula NAT rules
-      - Translate destination on client side: ✅
-    - IP Pool NAT
-      - Enable IP Pool NAT: 🔳
-        - Address exhaustion track: Log
-        - Address allocation and release track: None
-  
+> [!WARNING]
+> Merge manual proxy ARP configuration のチェックをいれないと、手動の Proxy ARP 設定が、ポリシーインストール時に消えてしまいます。
+
+1. SmartConsole > グローバル プロパティ...
+   - NAT - Network Address Translation
+     - Automatic NAT rules
+       - Allow bi-directional NAT (for more details see help): ✅
+       - Translate destination on client side: ✅
+       - Automatic ARP configuration: ✅
+         - Merge manual proxy ARP configuration: 🔳 → ✅
+     - Manula NAT rules
+       - Translate destination on client side: ✅
+     - IP Pool NAT
+       - Enable IP Pool NAT: 🔳
+         - Address exhaustion track: Log
+         - Address allocation and release track: None
+2. 公開とポリシーのインストール
+3. 手動で Proxy ARP の設定 (CPGW1A)
+   ```sh
+   add arp proxy ipv4-address 192.0.2.40 interface eth4 real-ipv4-address 192.0.2.2
+   add arp proxy ipv4-address 192.0.2.41 interface eth4 real-ipv4-address 192.0.2.2
+   save config
+   ```
+4. 手動で Proxy ARP の設定 (CPGW1B)
+   ```sh
+   add arp proxy ipv4-address 192.0.2.40 interface eth4 real-ipv4-address 192.0.2.3
+   add arp proxy ipv4-address 192.0.2.41 interface eth4 real-ipv4-address 192.0.2.3
+   save config
+   ```
+5. 再度、ポリシーのインストール
+6. proxy ARP 設定の確認
+   ```sh
+   fw ctl arp -n
+   ```
