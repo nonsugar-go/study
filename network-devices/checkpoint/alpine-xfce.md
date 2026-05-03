@@ -156,3 +156,35 @@ sudo rc-service networking restart
 echo "Welcome to $(ip -4 a s eth0|grep inet|awk '{print $2}')" >index.html
 sudo httpd -p 80 -h . &
 ```
+
+### DNS (bind) サーバ
+
+```sh
+sudo apk add bind
+
+cat <<'EOF'|sudo tee /etc/bind/named.conf
+options {
+        directory "/var/bind";
+        allow-recursion {
+                127.0.0.1/32;
+                10.0.0.0/8;
+                172.16.0.0/12;
+                192.168.0.0/16;
+        };
+        forwarders {
+                9.9.9.9;
+        };
+        forward only;
+        listen-on { any; };
+        listen-on-v6 { none; };
+        allow-transfer { none; };
+};
+EOF
+
+sudo rc-service named start
+sudo rc-update add named
+
+cat <<'EOF'|sudo tee /etc/resolv.conf
+nameserver 127.0.0.1
+EOF
+```
