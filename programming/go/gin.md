@@ -9,6 +9,7 @@ go get -u github.com/gin-gonic/gin
 ```
 
 - https://gin-gonic.com/ja/docs/routing/param-in-path/
+- https://gin-gonic.com/ja/docs/binding/binding-and-validation/
 
 # Insomnia
 
