@@ -89,7 +89,7 @@ add host name SmartConsole_VM ip-address 192.168.1.69 color "crete blue" nat-set
 
 ### Automatic dynamic NAT
 
-> [!WARN]
+> [!IMPORTANT]
 > [NAT Hide failure - there are currently no available ports for hide operation.](https://support.checkpoint.com/results/sk/sk156852)
 
 
