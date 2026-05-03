@@ -2,7 +2,7 @@
 
 ## Automatic NAT
 
-### Automatic static NAT (One-to-One)
+### Automatic Static NAT (One-to-One)
 
 - Host (DMZSRV)
   - NAT
@@ -62,7 +62,7 @@ add network name "Net_192.168.101.0" subnet4 192.168.101.0 subnet-mask 255.255.2
 |Automatic Rule: Net_192.168.101.0|Net_192.168.101.0|Any                              |Any        |S) Net_192.168.101.0  (Valid Address)|＝ Oritinal                          |＝ Oritinal   |CPGW1      |
 |Automatic Rule: Net_192.168.101.0|Any              |Net_192.168.101.0 (Valid Address)|Any        |＝ Oritinal                          |S) Net_192.168.101.0  (Valid Address)|＝ Oritinal   |CPGW1      |
 
-### Automatic hide NAT (Single host hiding behid a unique IP address)
+### Automatic Hide NAT (Single host hiding behid a unique IP address)
 
 - Host (SmartConsole_VM)
   - NAT
@@ -81,7 +81,7 @@ add host name SmartConsole_VM ip-address 192.168.1.69 color "crete blue" nat-set
 |-------------------------------|---------------|-------|-----------|-----------------------------------|-------------------------|--------------|-----------|
 |Automatic Rule: SmartConsole_VM|SmartConsole_VM|Any    |Any        |H) SmartConsole_VM (Hiding Address)|＝ Oritinal              |＝ Oritinal   |CPGW1      |
 
-### Automatic dynamic NAT
+### Automatic Dynamic NAT
 
 > [!IMPORTANT]
 > - [NAT Hide failure - there are currently no available ports for hide operation.](https://support.checkpoint.com/results/sk/sk156852)
@@ -161,9 +161,7 @@ add nat-rule package "standard" position "top" name "No NAT" method "static" ori
 |------|---------|--------|-----------|-------------|----------|---------------|-----------|
 |No Nat|Int_Nets |Int_Nets|Any        |＝ Oritinal  |＝ Oritinal|＝ Oritinal   |CPGW1      |
 
-
-
-## Manual static NAT
+## Manual Hide NAT (Many-to-Less)
 
 ```
 add address-range name "Hide_NAT_Range" ip-address-first "192.0.2.40" ip-address-last "192.0.2.41"
@@ -212,3 +210,5 @@ Manual NAT の場合、Proxy ARP の設定を自動で実施するには、以�
    ```sh
    fw ctl arp -n
    ```
+
+## Manual Static NAT
