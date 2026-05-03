@@ -118,8 +118,6 @@ add host name SmartConsole_VM ip-address 192.168.1.69 color "crete blue" nat-set
 
 ```sh
 add network name "Net_192.168.102.0" subnet4 192.168.102.0 subnet-mask 255.255.255.0 color "sea green" nat-settings.auto-rule true nat-settings.method "hide" nat-settings.hide-behind "gateway" nat-settings.install-on "CPGW1"
-
-add nat-rule package "standard" position "top" name "No NAT" method "static" original-source "Int_Nets" original-destination "Int_Nets" original-service "Any" translated-source "Original" translated-destination "Original" translated-service "Original" install-on.1 "CPGW1"
 ```
 
 **Automatic Generated Rules : Network Hide NAT**
@@ -155,6 +153,8 @@ add network name "Net_192.168.101.0" subnet4 192.168.101.0 subnet-mask 255.255.2
 
 ```sh
 add group name "Int_Nets" members.1 "Net_192.168.1.0" members.2 "Net_192.168.101.0" members.3 "Net_192.168.102.0" members.4 "Net_192.168.111.0"
+
+add nat-rule package "standard" position "top" name "No NAT" method "static" original-source "Int_Nets" original-destination "Int_Nets" original-service "Any" translated-source "Original" translated-destination "Original" translated-service "Original" install-on.1 "CPGW1"
 ```
 
 |名前  |元の発信元|元の宛先 |元のサービス|変換後の発信元|変換後の宛先|変換後のサービス|インストール|
