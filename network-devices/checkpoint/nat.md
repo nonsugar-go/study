@@ -91,6 +91,7 @@ add host name SmartConsole_VM ip-address 192.168.1.69 color "crete blue" nat-set
 
 > [!IMPORTANT]
 > [NAT Hide failure - there are currently no available ports for hide operation.](https://support.checkpoint.com/results/sk/sk156852)
+> [CoreXL Dynamic Balancing](https://support.checkpoint.com/results/sk/sk164155)
 
 - cpview > Advanced > NAT > Pool-IPv4 の High port で現在の dynamic NAT について確認する
 
