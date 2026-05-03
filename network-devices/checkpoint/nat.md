@@ -165,6 +165,12 @@ add nat-rule package "standard" position "top" name "No NAT" method "static" ori
 
 ## Manual static NAT
 
+```
+add address-range name "Hide_NAT_Range" ip-address-first "192.0.2.40" ip-address-last "192.0.2.41"
+
+add nat-rule package "standard" position "bottom" name "Hide NAT Scope" method "hide" original-source "Int_Nets" original-destination "Any" original-service "Any" translated-source "Hide_NAT_Range" translated-destination "Original" translated-service "Original" install-on.1 "CPGW1"
+```
+
 **Manual Lower Rules**
 |名前          |元の発信元|元の宛先|元のサービス|変換後の発信元    |変換後の宛先              |変換後のサービス|インストール|
 |--------------|---------|-------|-----------|-----------------|-------------------------|--------------|-----------|
