@@ -170,3 +170,19 @@ add nat-rule package "standard" position "top" name "No NAT" method "static" ori
 |--------------|---------|-------|-----------|-----------------|-------------------------|--------------|-----------|
 |Hide NAT Scope|Int_Nets |Any    |Any        |H) Hide_NAT_Range|＝ Oritinal              |＝ Oritinal   |CPGW1      |
 
+Manual NAT の場合、Proxy ARP の設定を自動で実施するには、以下の設定が必要となります。
+
+- SmartConsole > グローバル プロパティ...
+  - NAT - Network Address Translation
+    - Automatic NAT rules
+      - Allow bi-directional NAT (for more details see help): ✅
+      - Translate destination on client side: ✅
+      - Automatic ARP configuration: ✅
+        - Merge manual proxy ARP configuration: 🔳 → ✅
+    - Manula NAT rules
+      - Translate destination on client side: ✅
+    - IP Pool NAT
+      - Enable IP Pool NAT: 🔳
+        - Address exhaustion track: Log
+        - Address allocation and release track: None
+  
