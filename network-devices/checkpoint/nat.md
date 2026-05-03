@@ -146,4 +146,19 @@ add network name "Net_192.168.101.0" subnet4 192.168.101.0 subnet-mask 255.255.2
 |Automatic Rule: Net_192.168.101.0|Net_192.168.101.0|Net_192.168.101.0|Any        |＝ Oritinal                           |＝ Oritinal|＝ Oritinal   |CPGW1      |
 |Automatic Rule: Net_192.168.101.0|Net_192.168.101.0|Any              |Any        |H) Net_192.168.101.0  (Hiding Address)|＝ Oritinal|＝ Oritinal   |CPGW1      |
 
+#### 不要な NAT を抑制する
+
+自動アドレス変換では、内部ネットワーク間 (Internal ⇔ DMZ 間など) で意図せずアドレス変換が発生することがある。
+抑制するには、NAT ルールのトップに以下を追加する。
+
+```sh
+add group name "Int_Nets" members.1 "Net_192.168.1.0" members.2 "Net_192.168.101.0" members.3 "Net_192.168.102.0" members.4 "Net_192.168.111.0"
+```
+
+|名前  |元の発信元|元の宛先 |元のサービス|変換後の発信元|変換後の宛先|変換後のサービス|インストール|
+|------|---------|--------|-----------|-------------|----------|---------------|-----------|
+|No Nat|Int_Nets |Int_Nets|Any        |＝ Oritinal  |＝ Oritinal|＝ Oritinal   |CPGW1      |
+
+
+
 ## Manual static NAT
