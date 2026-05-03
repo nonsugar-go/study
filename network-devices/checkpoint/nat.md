@@ -13,7 +13,8 @@
         - インストール先ゲートウェイ: CPGW1 
 
 ```sh
-add host name DMZSRV ip-address 192.168.111.5 color "orange" nat-settings.auto-rule true nat-settings.method "static" nat-settings.ipv4-address "192.0.2.5" nat-settings.install-on "CPGW1"
+add host name DMZSRV ip-address 192.168.111.5 color "orange" \
+  nat-settings.auto-rule true nat-settings.method "static" nat-settings.ipv4-address "192.0.2.5" nat-settings.install-on "CPGW1"
 ```
 
 **Automatic Generated Rules : Machine Static NAT**
@@ -33,7 +34,8 @@ add host name DMZSRV ip-address 192.168.111.5 color "orange" nat-settings.auto-r
         - インストール先ゲートウェイ: CPGW1
 
 ```sh
-add address-range name "Range_192.168.101.20-30" ip-address-first "192.168.101.20" ip-address-last "192.168.101.30" color "sea green" nat-settings.auto-rule true nat-settings.method "static" nat-settings.ip-address "192.168.100.20" nat-settings.install-on "CPGW1"
+add address-range name "Range_192.168.101.20-30" ip-address-first "192.168.101.20" ip-address-last "192.168.101.30" color "sea green" \
+  nat-settings.auto-rule true nat-settings.method "static" nat-settings.ip-address "192.168.100.20" nat-settings.install-on "CPGW1"
 ```
 
 **Automatic Generated Rules : Address Range Static NAT**
@@ -52,7 +54,8 @@ add address-range name "Range_192.168.101.20-30" ip-address-first "192.168.101.2
         - インストール先ゲートウェイ: CPGW1 
 
 ```sh
-add network name "Net_192.168.101.0" subnet4 192.168.101.0 subnet-mask 255.255.255.0 color "sea green" nat-settings.auto-rule true nat-settings.method "static" nat-settings.ip-address "192.168.100.0" nat-settings.install-on "CPGW1"
+add network name "Net_192.168.101.0" subnet4 192.168.101.0 subnet-mask 255.255.255.0 color "sea green" \
+  nat-settings.auto-rule true nat-settings.method "static" nat-settings.ip-address "192.168.100.0" nat-settings.install-on "CPGW1"
 ```
 
 **Automatic Generated Rules : Network Static NAT**
@@ -73,7 +76,8 @@ add network name "Net_192.168.101.0" subnet4 192.168.101.0 subnet-mask 255.255.2
         - インストール先ゲートウェイ: CPGW1 
 
 ```sh
-add host name SmartConsole_VM ip-address 192.168.1.69 color "crete blue" nat-settings.auto-rule true nat-settings.method "hide" nat-settings.hide-behind "ip-address" nat-settings.ipv4-address "192.0.2.20" nat-settings.install-on "CPGW1"
+add host name SmartConsole_VM ip-address 192.168.1.69 color "crete blue" nat-settings.auto-rule true \
+  nat-settings.method "hide" nat-settings.hide-behind "ip-address" nat-settings.ipv4-address "192.0.2.20" nat-settings.install-on "CPGW1"
 ```
 
 **Automatic Generated Rules : Machine Hide NAT**
@@ -89,7 +93,7 @@ add host name SmartConsole_VM ip-address 192.168.1.69 color "crete blue" nat-set
 
 - cpview > Advanced > NAT > Pool-IPv4 の High port で現在の dynamic NAT について確認する
 
-#### Automatic many-to-one (hide behind NAT)
+#### Automatic Many-to-One (hide behind NAT)
 
 以下の3つの設定方法がある
 
@@ -107,6 +111,25 @@ add host name SmartConsole_VM ip-address 192.168.1.69 color "crete blue" nat-set
 ログ上は、NAT Rule Number = 0 で記録される。
 
 ##### 内部ネットワーク・アドレス範囲・ホストをオブジェクトのプロパティでゲートウェイの IP アドレスで隠す
+
+- Network (Net_192.168.102.0)
+  - NAT
+    - アドレス変換の値
+      - 自動アドレス変換ルールの追加: ✅
+        - 変換メソッド: 非表示
+          - ゲートウェイで隠す: 🔘
+        - インストール先ゲートウェイ: CPGW1 
+
+```sh
+add network name "Net_192.168.102.0" subnet4 192.168.102.0 subnet-mask 255.255.255.0 color "sea green" \
+  nat-settings.auto-rule true nat-settings.method "hide" nat-settings.hide-behind "gateway" nat-settings.install-on "CPGW1"
+```
+
+**Automatic Generated Rules : Network Hide NAT**
+|名前                              |元の発信元       |元の宛先|元のサービス|変換後の発信元                         |変換後の宛先|変換後のサービス|インストール|
+|---------------------------------|-----------------|-------|-----------|--------------------------------------|----------|---------------|-----------|
+|Automatic Rule: Net_192.168.102.0|Net_192.168.102.0|Any    |Any        |＝ Oritinal                           |＝ Oritinal|＝ Oritinal   |CPGW1      |
+|Automatic Rule: Net_192.168.102.0|Net_192.168.102.0|Any    |Any        |H) Net_192.168.101.0  (Hiding Address)|＝ Oritinal|＝ Oritinal   |CPGW1      |
 
 ##### 内部ネットワーク・アドレス範囲をオブジェクトのプロパティで指定した IP アドレスで隠す
 
