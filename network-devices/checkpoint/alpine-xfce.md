@@ -124,9 +124,13 @@ ifdown eth0 && ifup eth0
       sed -i.orig 's/^# %wheel/%wheel/' /etc/sudoers
       ```
 
-### アドレス変更
+### ホスト名・アドレス・DNS 変更
 
 ```sh
+sudo vi /etc/hostname
+sudo hostname -F /etc/hostname
+sudo vi /etc/hosts
+sudo vi /etc/resolv.conf
 sudo vi /etc/network/interfaces
 ```
 
