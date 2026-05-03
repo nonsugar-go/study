@@ -8,6 +8,8 @@
 go get -u github.com/gin-gonic/gin
 ```
 
+- https://gin-gonic.com/ja/docs/routing/param-in-path/
+
 # Insomnia
 
 - https://insomnia.rest/download
