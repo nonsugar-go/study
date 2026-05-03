@@ -1,11 +1,5 @@
 # NAT
 
-> [!NOTE]
-> 簡単に、hide NAT の設定をするには、以下ようにします。
->
-> - SmartConsole > ゲートウェイ & サーバ > (クラスタ/ゲートウェイ) > NAT
->   - Hide internal networks behind the Gateway's extend IP: [X]
-
 ## Automatic NAT
 
 ### Automatic static NAT (One-to-One)
@@ -68,7 +62,7 @@ add network name "Net_192.168.101.0" subnet4 192.168.101.0 subnet-mask 255.255.2
 |Automatic Rule: Net_192.168.101.0|Net_192.168.101.0|Any                              |Any        |S) Net_192.168.101.0  (Valid Address)|＝ Oritinal                          |＝ Oritinal   |CPGW1      |
 |Automatic Rule: Net_192.168.101.0|Any              |Net_192.168.101.0 (Valid Address)|Any        |＝ Oritinal                          |S) Net_192.168.101.0  (Valid Address)|＝ Oritinal   |CPGW1      |
 
-### Automatic Hide NAT (Single host hiding behid a unique IP address)
+### Automatic hide NAT (Single host hiding behid a unique IP address)
 
 - Host (SmartConsole_VM)
   - NAT
@@ -95,5 +89,25 @@ add host name SmartConsole_VM ip-address 192.168.1.69 color "crete blue" nat-set
 
 - cpview > Advanced > NAT > Pool-IPv4 の High port で現在の dynamic NAT について確認する
 
+#### Automatic many-to-one (hide behind NAT)
+
+以下の3つの設定方法がある
+
+- 内部ネットワークをゲートウェイ/クラスタのプロパティでゲートウェイの外部 IP アドレスで隠す
+- 内部ネットワーク・アドレス範囲・ホストをオブジェクトのプロパティでゲートウェイの IP アドレスで隠す
+- 内部ネットワーク・アドレス範囲・ホストをオブジェクトのプロパティで指定した IP アドレスで隠す
+
+##### 内部ネットワークをゲートウェイ/クラスタのプロパティでゲートウェイの外部 IP アドレスで隠す
+
+簡単に設定できるが、小規模な環境でのみの利用を推奨
+
+- SmartConsole > ゲートウェイ & サーバ > (クラスタ/ゲートウェイ) > NAT
+  - Hide internal networks behind the Gateway's extend IP: ✅
+
+ログ上は、NAT Rule Number = 0 で記録される。
+
+##### 内部ネットワーク・アドレス範囲・ホストをオブジェクトのプロパティでゲートウェイの IP アドレスで隠す
+
+##### 内部ネットワーク・アドレス範囲をオブジェクトのプロパティで指定した IP アドレスで隠す
 
 ## Manual static NAT
