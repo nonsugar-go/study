@@ -14,7 +14,7 @@ go get -u github.com/gin-gonic/gin
 
 # Air
 
-- https://github.com/air-verse/air
+- https://github.com/air-verse/air/blob/master/README-ja.md
 
 ```bash
 go install github.com/air-verse/air@latest
