@@ -463,8 +463,8 @@ strings -tx $f >strings-tx.output
 - https://go.dev/doc/install
 
 ```zsh
-curl -LO https://go.dev/dl/go1.26.0.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.26.0.linux-amd64.tar.gz
+curl -LO https://go.dev/dl/go1.26.2.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.26.2.linux-amd64.tar.gz
 ```
 
 - ~/.zshrc
@@ -476,10 +476,12 @@ export PATH=$PATH:$HOME/bin
 ```
 
 ```zsh
+go install github.com/air-verse/air@latest
 go install github.com/fatih/gomodifytags@latest
 go install github.com/josharian/impl@latest
 go install github.com/peco/peco/cmd/peco@latest
 go install github.com/tc-hib/go-winres@latest
+go install golang.org/x/tools/cmd/godoc@latest
 go install golang.org/x/tools/cmd/goimports@latest
 go install golang.org/x/tools/cmd/stringer@latest
 ```
