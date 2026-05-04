@@ -38,7 +38,7 @@ mgmt set group name "New Group 1" members.add.1 "New Network 1" members.add.2 ".
 mgmt add service-tcp name "New_TCP_Service_1" port 5669
 mgmt add service-udp name "New_UDP_Service_1" port 5669
 mgmt add service-group name "New Service Group 1" members.1 "New_TCP_Service_1" members.2 "New_UDP_Service_1"
-mgmt add access-rule layer "Network" position 1 name "Rule 1" service.1 "SMTP" service.2 "AOL" action "Accept"
+mgmt add access-rule layer "Network" position.bottom "New rules" name "test-1" enabled false source.1 "InternalZone" destination.1 "ExternalZone" service.1 "http" service.2 "https" action "Accept" track.type "Log" track.accounting true custom-fields.field-1 "first field"
 ```
 
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-objects
