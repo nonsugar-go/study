@@ -41,6 +41,7 @@ mgmt add service-group name "New Service Group 1" members.1 "New_TCP_Service_1" 
 mgmt add access-rule layer "Network" position 1 name "Rule 1" service.1 "SMTP" service.2 "AOL" action "Accept"
 ```
 
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-objects
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-hosts
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-networks
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-dns-domains
@@ -50,6 +51,7 @@ mgmt add access-rule layer "Network" position 1 name "Rule 1" service.1 "SMTP" s
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-access-rulebase
 
 ```sh
+mgmt show objects limit 500 offset 0 details-level "full" order.1.ASC "name" -f json
 mgmt show hosts limit 500 offset 0 details-level "standard" -f json
 mgmt show networks limit 500 offset 0 details-level "standard" -f json
 mgmt show dns-domains limit 500 offset 0 details-level "standard" -f json
