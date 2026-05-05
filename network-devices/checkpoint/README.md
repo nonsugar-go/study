@@ -14,6 +14,7 @@
 6. [ポリシー](policy.md)
 7. [NAT](nat.md)
 8. [Log](log.md)
+9. [バックアップ](backup.md)
 
 ## CLI
 
