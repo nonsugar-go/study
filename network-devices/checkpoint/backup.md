@@ -4,6 +4,14 @@
 
 ## システム バックアップ (system backup)
 
+> [!INFOMATION]
+> system backup は、Gaia OS-level の設定と追加の Check Point 固有データを含みます。
+> リストアは、同じバージョンの Check Point ソフトウェアと同じバージョンの Jumbo Hotfix Accumulator である必要がある。 
+
+1. Gaia Portal にログイン
+2. Maintenance > System Backup > `[Backup]`
+3. Maintenance > System Backup > `[Export]` (PC にバックアップ ファイル .tar.gz をダウンロード)
+
 ## スナップショット (snapshots)
 
 ## サーバー マイグレーション ツール (server migration tools)
