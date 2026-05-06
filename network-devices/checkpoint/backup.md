@@ -36,16 +36,18 @@
 
 ## サーバー マイグレーション ツール (server migration tools)
 
-- https://sc1.checkpoint.com/documents/R81/WebAdminGuides/EN/CP_R81_SecurityManagement_AdminGuide/Topics-SECMG/CLI/migrate_server.htm
+> [!NOTE]
+> `$FWDIR/scripts/migrate_server` にツールが存在します。Management, Log, SmartEvent サーバ上で動作します。
+> Check Point の設定を異なるアプライアンスやプラットフォーム、新しいバージョンの製品に移行するために使用できる。
+> ツール実行時に最新バージョンをダウンロードします。インターネット接続が無い場合、この処理の結果がエラーとなります。
+> エラーを回避して実行するには、`-skip_upgrade_tools_check` オプションを使用します。
+
+- https://support.checkpoint.com/results/sk/sk135172
+- https://sc1.checkpoint.com/documents/R82/WebAdminGuides/EN/CP_R82_SecurityManagement_AdminGuide/Content/Topics-SECMG/CLI/migrate_server.htm
 
 ```sh
+expert
 cd $FWDIR/scripts/
-./migrate_server -h
-./migrate_server verify -v R82.10
-./migrate_server export -v R82.10
-```
-
-```
-Detailed upgrade report is available at /opt/CPsuite-R82.10/fw1/log/upgrade_report/upgrade_report.html
-Exported data to: /opt/CPsuite-R82.10/fw1/scripts/export.6May2026-000747.tgz.
+./migrate_server verify -v R82.10 -skip_upgrade_tools_check
+./migrate_server export -v R82.10 -skip_upgrade_tools_check /var/log/cpsms_export_$(date +%Y%m%d-%H%M).tgz
 ```
