@@ -104,7 +104,7 @@ Result file location: show_package-2026-05-01_11-51-44.tar.gz
 ファイルを PC に移動させるには、`python3 -m http.server 4444` で簡易 Web サーバを立ち上げる方法や、expert モードで `ftp`、`tftp`、`scp` コマンドを使用する方法などが考えられる。
 SMS, GW へ ssh 接続可能な環境であっても、PC からの SCP はできない。(シェルが Clish のため)
 
-### tar.gz ファイルのダウンロード
+## `python3 -m http.server 4444` で簡易 Web サーバを立ち上げる方法
 
 以下、Python で簡易 http サーバを立ち上げてダウンロードする方法を説明します。
 
@@ -119,3 +119,17 @@ Windows PC からファイルを取得します。
 ```powershell
 PS C:\Users\Administrator> wget http://192.168.1.40:4444/show_package-2026-05-01_11-51-44.tar.gz -o show_package-2026-05-01_11-51-44.tar.gz
 ```
+
+## expert モードで `tftp` コマンドを使用する方法
+
+PC 側では、tftp サーバー (Tftpd64 がお勧め) を起動して、Windows Firewall で UDP/69 を許可しておく必要があります。
+
+```sh
+> expert
+# tftp 192.168.1.69
+tftp> binary
+tftp> put cpsms_gaia_config_20260506.conf
+tftp> quit
+```
+
+
