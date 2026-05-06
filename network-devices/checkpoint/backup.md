@@ -7,21 +7,6 @@ save configuration cpsms_gaia_config_20260506.conf
 ```
 
 ホームディレクトリに `cpsms_gaia_config_20260506.conf` の名前でファイルが作成されます。
-このファイルを PC に移動させるには、`python3 -m http.server 4444` で簡易 Web サーバを立ち上げる方法や、expert モードで `ftp` コマンドや `scp` コマンドを使用する方法などが考えられる。
-PC から `scp` コマンドや、Tera Team の SCP 機能でファイル転送する方法は、シェルが cli.sh のままでは使えない。
-ここでは、一時的に /bin/bash に変更する方法を使ってみる。
-
-1. Expert モードで admin のシェルを /bin/bash に変更する
-   ```
-   > expert
-   # chsh -s /bin/bash
-   ```
-2. PC から `scp` コマンドや、Tera Tearm の SCP 機能でファイル転送する
-3. Expert モードで admin のシェルを /etc/cli.sh に戻す
-   ```
-   > expert
-   # chsh -s /etc/cli.sh
-   ```
 
 ## システム バックアップ (system backup)
 
@@ -73,8 +58,6 @@ cd $FWDIR/scripts/
 ./migrate_server export -v R82.10 -skip_upgrade_tools_check /var/log/cpsms_export_$(date +%Y%m%d-%H%M).tgz
 ```
 
-ファイルのダウンロードは、`python3 -m http.server 4444` で簡易 Web サーバを立ち上げるのが簡単です。
-
 # 設定情報の抽出
 
 ## オブジェクト エクスプローラー
@@ -107,9 +90,13 @@ Script finished running successfully!
 Result file location: show_package-2026-05-01_11-51-44.tar.gz
 ```
 
+# SMS, GW から PC へのファイルの移動
+
+ファイルを PC に移動させるには、`python3 -m http.server 4444` で簡易 Web サーバを立ち上げる方法や、expert モードで `ftp`、`tftp`、`scp` コマンドを使用する方法などが考えられる。
+SMS, GW へ ssh 接続可能な環境であっても、PC からの SCP はできない。(シェルが Clish のため)
+
 ### tar.gz ファイルのダウンロード
 
-SMS 上から tar.gz ファイルをダウンロードしたいが、scp クライアントで取得できない。
 以下、Python で簡易 http サーバを立ち上げてダウンロードする方法を説明します。
 
 ```bash
