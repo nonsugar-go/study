@@ -12,7 +12,8 @@
 2. Maintenance > System Backup > `[Backup]`
    1. Backup Type: This appliance
    2. `[Backup]` をクリック (`/var/log/CPbackup/backups/backup_--_HOSTNAME_YYYY_mm_dd_HH_MM_SS.tgz` にバックアップ ファイルが作成される)
-4. Maintenance > System Backup > `[Export]` (PC にバックアップ ファイル .tar.gz をダウンロード)
+3. Maintenance > System Backup > Regular Backup の一覧からバックアップを選択し、`[Export]` をクリック (PC にバックアップ ファイル .tgz をダウンロード)
+4. Maintenance > System Backup > Regular Backup の一覧からバックアップを選択し、`[Delete]` をクリック (/var/log/CPbackup/backups/ 配下の .tgz ファイルを削除)
 
 ## スナップショット (snapshots)
 
