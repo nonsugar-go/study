@@ -123,6 +123,7 @@ PS C:\Users\Administrator> wget http://192.168.1.40:4444/show_package-2026-05-01
 ## expert モードで `tftp` コマンドを使用する方法
 
 PC 側では、tftp サーバー (Tftpd64 がお勧め) を起動して、Windows Firewall で UDP/69 を許可しておく必要があります。
+また、GW から PC へ TFTP を許可するアクセス コントロール ポリシーが必要となります。
 
 ```sh
 > expert
