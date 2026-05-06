@@ -10,7 +10,9 @@
 
 1. Gaia Portal にログイン
 2. Maintenance > System Backup > `[Backup]`
-3. Maintenance > System Backup > `[Export]` (PC にバックアップ ファイル .tar.gz をダウンロード)
+   1. Backup Type: This appliance
+   2. `[Backup]` をクリック (`/var/log/CPbackup/backups/backup_--_HOSTNAME_YYYY_mm_dd_HH_MM_SS.tgz` にバックアップ ファイルが作成される)
+4. Maintenance > System Backup > `[Export]` (PC にバックアップ ファイル .tar.gz をダウンロード)
 
 ## スナップショット (snapshots)
 
