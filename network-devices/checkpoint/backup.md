@@ -5,8 +5,8 @@
 ## システム バックアップ (system backup)
 
 > [!NOTE]
-> system backup は、Gaia OS-level の設定と追加の Check Point 固有データを含みます。
-> リストアは、同じバージョンの Check Point ソフトウェアと同じバージョンの Jumbo Hotfix Accumulator である必要がある。 
+> システムバックアップは、Gaia OS-level の設定と追加の Check Point 固有データを含みます。
+> 復元時は、同じバージョンの Check Point ソフトウェアと Jumbo Hotfix Accumulator が前提となる。
 
 1. Gaia Portal にログイン
 2. Maintenance > System Backup > `[Backup]`
@@ -16,6 +16,23 @@
 4. Maintenance > System Backup > Regular Backup の一覧からバックアップを選択し、`[Delete]` をクリック (/var/log/CPbackup/backups/ 配下の .tgz ファイルを削除)
 
 ## スナップショット (snapshots)
+
+> [!NOTE]
+> スナップショットは、ルートパーティションのバイナリ イメージを含む。
+> 復元時は、同じバージョンの Check Point ソフトウェアと Jumbo Hotfix Accmulator (JHFA) に予めしておく**必要がない**。
+> 復元は、FTW の Deployment Options で `Import existing snapshot` を選択する。
+> スナップショットは、インストール直後、アップグレード前、JHFA 適用前に取得することが推奨される。
+> スナップショットは、インタフェースの MAC アドレスが維持されます。
+> スナップショットの名前と説明は、英数字にすることが推奨される。
+> スナップショットには、ルートパーティションの 1.15 倍の容量が必要とされる。
+> スナップショットのエクスポートには、スナップショットの 2倍の容量が必要とされる。
+> エクスポートされたスナップショットの名前を変更すべきではない。
+
+1. Gaia Portal にログイン
+2. Maintenance > Snapshot Management > Statistics で空き容量の確認をする
+3. Maintenance > Snapshot Management > `[New]` (スナップショットを取得)
+4. Maintenance > Snapshot Management > My Snapshot の一覧からバックアップを選択し、`[Download]` をクリック (PC にスナップショットをダウンロード)
+5. Maintenance > Snapshot Management > My Snapshot の一覧からバックアップを選択し、`[Delete]` をクリック (スナップショットを削除)
 
 ## サーバー マイグレーション ツール (server migration tools)
 
