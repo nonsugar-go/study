@@ -2,6 +2,27 @@
 
 ## Gaia OS レベル 設定ファイル バックアップ (saving the configuration)
 
+```sh
+save configuration cpsms_gaia_config_20260506.conf
+```
+
+ホームディレクトリに `cpsms_gaia_config_20260506.conf` の名前でファイルが作成されます。
+このファイルを PC に移動させるには、`python3 -m http.server 4444` で簡易 Web サーバを立ち上げる方法や、expert モードで `ftp` コマンドや `scp` コマンドを使用する方法などが考えられる。
+PC から `scp` コマンドや、Tera Team の SCP 機能でファイル転送する方法は、シェルが cli.sh のままでは使えない。
+ここでは、一時的に /bin/bash に変更する方法を使ってみる。
+
+1. Expert モードで admin のシェルを /bin/bash に変更する
+   ```
+   > expert
+   # chsh -s /bin/bash
+   ```
+2. PC から `scp` コマンドや、Tera Tearm の SCP 機能でファイル転送する
+3. Expert モードで admin のシェルを /etc/cli.sh に戻す
+   ```
+   > expert
+   # chsh -s /etc/cli.sh
+   ```
+
 ## システム バックアップ (system backup)
 
 > [!NOTE]
