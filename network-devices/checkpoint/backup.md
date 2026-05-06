@@ -1,5 +1,14 @@
 # Backup
 
+> [!NOTE]
+>
+> Clish にログイン時に、以下のようなメッセージが表示された場合には、`lock database override` コマンドを入力して、ロックを得る必要があります。
+> 
+> ```sh
+> CLINFR0771  Config lock is owned by admin. Use the command 'lock database override' to acquire the lock.
+> > lock database override
+```
+
 ## Gaia OS レベル 設定ファイル バックアップ (saving the configuration)
 
 ```sh
