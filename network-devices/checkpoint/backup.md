@@ -51,3 +51,19 @@ cd $FWDIR/scripts/
 ./migrate_server verify -v R82.10 -skip_upgrade_tools_check
 ./migrate_server export -v R82.10 -skip_upgrade_tools_check /var/log/cpsms_export_$(date +%Y%m%d-%H%M).tgz
 ```
+
+# 設定情報の抽出
+
+## オブジェクト エクスプローラー
+
+1. SmartConsole > 対象 ▼ > オブジェクト エクスプローラ
+   1. 抽出したいカテゴリを選択
+   2. アクション ▼ > エクスポート... (CSV ファイルのファイル名を指定してエクスポート)
+
+以下のカテゴリを選択することを推奨
+
+- カテゴリ > ネットワーク オブジェクト > { ネットワーク, ホスト, アドレス範囲, ドメイン }
+- カテゴリ > ネットワーク オブジェクト > グループ (**メンバーの一覧は取得できない**)
+- カテゴリ > サービス > TCP
+- カテゴリ > サービス > UDP
+- カテゴリ > サービス > サービス グループ (**メンバーの一覧は取得できない**)
