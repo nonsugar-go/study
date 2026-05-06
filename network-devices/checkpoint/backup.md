@@ -12,7 +12,7 @@
 ## Gaia OS レベル 設定ファイル バックアップ (saving the configuration)
 
 ```sh
-save configuration cpsms_gaia_config_20260506.conf
+save configuration cpsms_gaia_20260506.conf
 ```
 
 ホームディレクトリに `cpsms_gaia_config_20260506.conf` の名前でファイルが作成されます。
