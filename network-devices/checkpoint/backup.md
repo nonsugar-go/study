@@ -52,6 +52,8 @@ cd $FWDIR/scripts/
 ./migrate_server export -v R82.10 -skip_upgrade_tools_check /var/log/cpsms_export_$(date +%Y%m%d-%H%M).tgz
 ```
 
+ファイルのダウンロードは、`python3 -m http.server 4444` で簡易 Web サーバを立ち上げるのが簡単です。
+
 # 設定情報の抽出
 
 ## オブジェクト エクスプローラー
@@ -67,3 +69,36 @@ cd $FWDIR/scripts/
 - カテゴリ > サービス > TCP
 - カテゴリ > サービス > UDP
 - カテゴリ > サービス > サービス グループ (**メンバーの一覧は取得できない**)
+
+## Show Package Tool
+
+- https://support.checkpoint.com/results/sk/sk120342
+- https://github.com/CheckPointSW/ShowPolicyPackage
+
+### 使い方
+
+```bash
+> expert
+# $FWDIR/scripts/web_api_show_package.sh -h
+
+# $FWDIR/scripts/web_api_show_package.sh
+Script finished running successfully!
+Result file location: show_package-2026-05-01_11-51-44.tar.gz
+```
+
+### tar.gz ファイルのダウンロード
+
+SMS 上から tar.gz ファイルをダウンロードしたいが、scp クライアントで取得できない。
+以下、Python で簡易 http サーバを立ち上げてダウンロードする方法を説明します。
+
+```bash
+# ss -ltn|grep :4444
+# python3 -m http.server 4444
+Serving HTTP on 0.0.0.0 port 4444 (http://0.0.0.0:4444/) ...
+```
+
+Windows PC からファイルを取得します。
+
+```powershell
+PS C:\Users\Administrator> wget http://192.168.1.40:4444/show_package-2026-05-01_11-51-44.tar.gz -o show_package-2026-05-01_11-51-44.tar.gz
+```
