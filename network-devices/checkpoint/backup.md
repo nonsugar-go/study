@@ -1,8 +1,14 @@
 # Backup
 
-- https://sc1.checkpoint.com/documents/R81.10/WebAdminGuides/JP/CP_R81.10_SecurityManagement_AdminGuide/Topics-SECMG/CLI/migrate.htm
+## Gaia OS レベル 設定ファイル バックアップ (saving the configuration)
+
+## システム バックアップ (system backup)
+
+## スナップショット (snapshots)
+
+## サーバー マイグレーション ツール (server migration tools)
+
 - https://sc1.checkpoint.com/documents/R81/WebAdminGuides/EN/CP_R81_SecurityManagement_AdminGuide/Topics-SECMG/CLI/migrate_server.htm
-- https://support.checkpoint.com/results/sk/sk133312
 
 ```sh
 cd $FWDIR/scripts/
