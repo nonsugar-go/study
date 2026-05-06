@@ -4,7 +4,7 @@
 
 ## システム バックアップ (system backup)
 
-> [!INFOMATION]
+> [!INFO]
 > system backup は、Gaia OS-level の設定と追加の Check Point 固有データを含みます。
 > リストアは、同じバージョンの Check Point ソフトウェアと同じバージョンの Jumbo Hotfix Accumulator である必要がある。 
 
