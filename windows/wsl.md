@@ -509,11 +509,20 @@ rustup component add rust-src
 
 VSCode を起動して、以下の拡張をインストールする。
 
+- [Japanese Language Pack for Visual Studio Code (microsoft.com)](https://marketplace.visualstudio.com/items/?itemName=MS-CEINTL.vscode-language-pack-ja)
+- [Vim (vscodevim)](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+- [Remote Development (microsoft.com)](https://marketplace.visualstudio.com/items/?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 - [Go (go.dev)](https://marketplace.visualstudio.com/items/?itemName=golang.Go)
   - CTRL+SHIFT+P: Go: Install/Update Tools
 - [JSON to Go (Mario Petričko)](https://marketplace.visualstudio.com/items?itemName=maracko.json-to-go)
-- https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
-- https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
+- [PowerShell (microsoft.com)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
+- [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items/?itemName=shd101wyy.markdown-preview-enhanced)
+- [markdownlint](https://marketplace.visualstudio.com/items/?itemName=DavidAnson.vscode-markdownlint)
+- [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
+- [Python (microsoft.com)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Black Formatter (microsoft.com)](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
+- [rust-analyzer (The Rust Programming Language)](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+- [CodeLLDB (Vadim Chugunov)](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
 
 ## Node.js
 
