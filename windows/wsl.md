@@ -505,10 +505,13 @@ chmod +x ~/.local/bin/rust-analyzer
 rustup component add rust-src
 ```
 
-### VSCode 拡張
+## VSCode 拡張
 
 VSCode を起動して、以下の拡張をインストールする。
 
+- [Go (go.dev)](https://marketplace.visualstudio.com/items/?itemName=golang.Go)
+  - CTRL+SHIFT+P: Go: Install/Update Tools
+- [JSON to Go (Mario Petričko)](https://marketplace.visualstudio.com/items?itemName=maracko.json-to-go)
 - https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
 - https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
 
