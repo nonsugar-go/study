@@ -505,6 +505,22 @@ chmod +x ~/.local/bin/rust-analyzer
 rustup component add rust-src
 ```
 
+## Node.js
+
+```zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+source ~/.zshrc
+nvm install --lts
+```
+
+<!--
+```zsh
+nvm ls
+node --version
+npm --version 
+```
+-->
+
 ## VSCode 拡張
 
 VSCode を起動して、以下の拡張をインストールする。
@@ -524,28 +540,14 @@ VSCode を起動して、以下の拡張をインストールする。
 - [rust-analyzer (The Rust Programming Language)](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
 - [CodeLLDB (Vadim Chugunov)](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
 
-## Node.js
-
-```zsh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-source ~/.zshrc
-nvm install --lts
-```
-
 <!--
-```zsh
-nvm ls
-node --version
-npm --version 
-```
--->
-
 ## sshd
 
 ```bash
 sudo apt install openssh-server
 sudo /etc/init.d/ssh start
 ```
+-->
 
 <!--
 ## Podman (Docker でなく Podman を使用する場合)
