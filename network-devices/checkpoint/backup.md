@@ -106,7 +106,6 @@ cat Standard_objects.json|jq '.|length'
 cat Standard_objects.json|jq '[.[].type]|unique|sort'
 cat Standard_objects.json|jq '.[]|select(.type=="host")|.name'
 cat Standard_objects.json|jq '.[]|select(.name=="DMZSRV")'
-cat Standard_objects.json|jq -r '[.[]|select(.type=="host")]|sort_by(.name)|.[]|[.name,."ipv4-address"]|@tsv'
 cat Standard_objects.json|jq -r '[.[]|select(.type=="host")]|sort_by(.name)|.[]|[.name,."meta-info".creator,."ipv4-address",."nat-settings"."auto-rule",.color,(.tags|join(";")),.comments]|@tsv'
 ```
 
