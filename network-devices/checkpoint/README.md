@@ -14,7 +14,7 @@
 6. [ポリシー](policy.md)
 7. [NAT](nat.md)
 8. [Log](log.md)
-9. [脅威防御](threat_prevention.md)
+9. [脅威対策](threat_prevention.md)
 10. [バックアップ](backup.md)
 
 ## CLI
