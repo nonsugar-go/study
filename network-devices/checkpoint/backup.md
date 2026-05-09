@@ -99,6 +99,17 @@ Script finished running successfully!
 Result file location: show_package-2026-05-01_11-51-44.tar.gz
 ```
 
+### jq で解析
+
+```zsh
+cat Standard_objects.json|jq '.|length'
+cat Standard_objects.json|jq '[.[].type]|unique|sort'
+cat Standard_objects.json|jq '.[]|select(.type=="host")|.name'
+cat Standard_objects.json|jq '.[]|select(.name=="DMZSRV")'
+cat Standard_objects.json|jq -r '[.[]|select(.type=="host")]|sort_by(.name)|.[]|[.name,."ipv4-address"]|@tsv'
+cat Standard_objects.json|jq -r '[.[]|select(.type=="host")]|sort_by(.name)|.[]|[.name,."meta-info".creator,."ipv4-address",."nat-settings"."auto-rule",.color,(.tags|join(";")),.comments]|@tsv'
+```
+
 # SMS, GW から PC へのファイルの移動
 
 ファイルを PC に移動させるには、`python3 -m http.server 4444` で簡易 Web サーバを立ち上げる方法や、expert モードで `ftp`、`tftp`、`scp` コマンドを使用する方法などが考えられる。
