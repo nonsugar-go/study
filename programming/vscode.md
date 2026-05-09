@@ -54,6 +54,7 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 ## Golang
 - [Go (go.dev)](https://marketplace.visualstudio.com/items/?itemName=golang.Go)
   - Ctrl + Shift + P > Go: Install/Update Tools > 全てチェック
+- [JSON to Go (Mario Petričko)](https://marketplace.visualstudio.com/items?itemName=maracko.json-to-go)
 - [gotemplate-syntax](https://github.com/casualjim/vscode-gotemplate) `html:5<tab>`
 - https://zenn.dev/ikoba/articles/vscode-golang-snippets
 - [VSCode の Go extension でよく利用するコマンド 7選 | フューチャー技術ブログ](https://future-architect.github.io/articles/20200707/)
