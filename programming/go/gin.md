@@ -33,3 +33,11 @@ air
 ```bash
 go get github.com/joho/godotenv
 ```
+
+# golang-jwt
+
+- https://github.com/golang-jwt/jwt
+
+```bash
+go get -u github.com/golang-jwt/jwt/v5
+```
