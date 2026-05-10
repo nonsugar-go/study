@@ -11,4 +11,5 @@ go get -u gorm.io/driver/postgres
 
 - https://gorm.io/ja_JP/docs/models.html
 - https://gorm.io/ja_JP/docs/constraints.html
+- https://gorm.io/ja_JP/docs/migration.html
 - https://gorm.io/ja_JP/docs/create.html
