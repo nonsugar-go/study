@@ -12,7 +12,7 @@
 - [GORM](gorm.md)
 - [Gin](gin.md)
 - [Echo](echo.md)
-- [chi](go-chi.md)
+- [chi](chi.md)
 
 # Links
 
