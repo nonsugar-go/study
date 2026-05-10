@@ -37,6 +37,8 @@ go get github.com/joho/godotenv
 # golang-jwt
 
 - https://github.com/golang-jwt/jwt
+- https://pkg.go.dev/github.com/golang-jwt/jwt/v5#example-NewWithClaims-Hmac
+- https://pkg.go.dev/github.com/golang-jwt/jwt/v5#example-Parse-Hmac
 
 ```bash
 go get -u github.com/golang-jwt/jwt/v5
