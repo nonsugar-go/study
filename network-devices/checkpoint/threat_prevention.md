@@ -8,3 +8,6 @@
 - サンドブラスト
   - TE (脅威エミュレーション)
 
+## カスタム脅威防止
+
+- [sk182106 - Threat Prevention Software Blades in Security Gateways R82 and higher](https://support.checkpoint.com/results/sk/sk182106)
