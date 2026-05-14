@@ -11,6 +11,8 @@
 
 ## Gaia OS レベル 設定ファイル バックアップ (saving the configuration)
 
+### バックアップ
+
 ```sh
 save configuration cpsms_gaia_20260506.conf
 ```
@@ -19,7 +21,7 @@ save configuration cpsms_gaia_20260506.conf
 
 作成されたファイルを作業用の PC にダウンロードします。
 
-## Gaia OS レベル 設定ファイルの読み込み (loading the configuration)
+### 復元
 
 作業用の PC から、予めホームディレクトリにバックアップ ファイルをアップロードしておきます。
 
