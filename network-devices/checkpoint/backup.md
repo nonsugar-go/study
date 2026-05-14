@@ -111,8 +111,25 @@ cat Standard_objects.json|jq -r '[.[]|select(.type=="host")]|sort_by(.name)|.[]|
 
 # SMS, GW から PC へのファイルの移動
 
-ファイルを PC に移動させるには、`python3 -m http.server 4444` で簡易 Web サーバを立ち上げる方法や、expert モードで `ftp`、`tftp`、`scp` コマンドを使用する方法などが考えられる。
-SMS, GW へ ssh 接続可能な環境であっても、PC からの SCP はできない。(シェルが Clish のため)
+ファイルを PC に移動させるには、以下の様な方法が考えられる。
+
+- SCP を使用する。デフォルトでは、Clish のため SCP が機能しない。/bin/bash に変更することにより、SCP 可能となる。
+- `python3 -m http.server 4444` で簡易 Web サーバを立ち上げる
+- expert モードで `ftp`、`tftp`、`scp` コマンドを使用する
+
+## SCP を使用する方法
+
+1. シェルを bash に変更する
+   ```sh
+   > set user admin shell /bin/bash
+   > save config
+   ```
+2. SCP クライアントを使いファイルをアップロード/ダウンロードす
+3. シェルを Clish に戻す
+   ```sh
+   > set user admin shell /etc/cli.sh
+   > save config
+   ```
 
 ## `python3 -m http.server 4444` で簡易 Web サーバを立ち上げる方法
 
