@@ -14,6 +14,8 @@ go get -u github.com/gin-gonic/gin
 - https://gin-gonic.com/ja/docs/middleware/using-middleware/
 - https://gin-gonic.com/ja/docs/middleware/custom-middleware/
 - https://gin-gonic.com/ja/docs/middleware/security-guide/
+- https://github.com/gin-contrib/cors
+
 # Insomnia
 
 - https://insomnia.rest/download
