@@ -6,6 +6,7 @@
 
 ```zsh
 go get -u github.com/gin-gonic/gin
+go get github.com/gin-contrib/cors
 ```
 
 - https://gin-gonic.com/ja/docs/routing/param-in-path/
