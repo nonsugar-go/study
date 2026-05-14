@@ -99,7 +99,7 @@ cd $FWDIR/scripts/
 ```sh
 expert
 cd $FWDIR/scripts/
-./migrate_server import -v R821.0 -skip_upgrade_tools_check /var/log/cpsms_export_20260506-1540.tgz
+./migrate_server import -v R82.10 -skip_upgrade_tools_check /var/log/cpsms_export_20260506-1540.tgz
 ```
 
 # 設定情報の抽出
