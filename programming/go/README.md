@@ -7,6 +7,7 @@
 - [Excel](excel.md)
 - [GUI](gui)
 - [mygodoc](mygodoc.md)
+- [Test](test.md)
 - [Database](database.md)
 - [gRPC](grpc.md)
 - [GORM](gorm.md)
