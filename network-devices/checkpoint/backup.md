@@ -38,12 +38,22 @@ save config
 > システムバックアップは、Gaia OS-level の設定と追加の Check Point 固有データを含みます。
 > 復元時は、同じバージョンの Check Point ソフトウェアと Jumbo Hotfix Accumulator が前提となる。
 
+### バックアップ
+
 1. Gaia Portal にログイン
 2. Maintenance > System Backup > `[Backup]`
    1. Backup Type: This appliance
    2. `[Backup]` をクリック (`/var/log/CPbackup/backups/backup_--_HOSTNAME_YYYY_mm_dd_HH_MM_SS.tgz` にバックアップ ファイルが作成される)
 3. Maintenance > System Backup > Regular Backup の一覧からバックアップを選択し、`[Export]` をクリック (PC にバックアップ ファイル .tgz をダウンロード)
 4. Maintenance > System Backup > Regular Backup の一覧からバックアップを選択し、`[Delete]` をクリック (/var/log/CPbackup/backups/ 配下の .tgz ファイルを削除)
+
+### 復元
+
+1. Check Point ソフトウェアのバージョンと JHFA のバージョンをバックアップ時と同じ状態にします。
+2. Gaia Portal にログイン
+3. Maintenance > System Backup > `[Import]` をクリックして、バックアップ ファイルをインポートする
+4. Maintenance > System Backup > Regular Backup の一覧からバックアップを選択し、`[Restore]` をクリック
+5. Maintenance > System Backup > Regular Backup の一覧からバックアップを選択し、`[Delete]` をクリック (/var/log/CPbackup/backups/ 配下の .tgz ファイルを削除)
 
 ## スナップショット (snapshots)
 
