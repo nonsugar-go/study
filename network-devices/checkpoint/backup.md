@@ -7,7 +7,7 @@
 > ```sh
 > CLINFR0771  Config lock is owned by admin. Use the command 'lock database override' to acquire the lock.
 > > lock database override
-```
+> ```
 
 ## Gaia OS レベル 設定ファイル バックアップ (saving the configuration)
 
@@ -16,6 +16,19 @@ save configuration cpsms_gaia_20260506.conf
 ```
 
 ホームディレクトリに `cpsms_gaia_config_20260506.conf` の名前でファイルが作成されます。
+
+作成されたファイルを作業用の PC にダウンロードします。
+
+## Gaia OS レベル 設定ファイルの読み込み (loading the configuration)
+
+作業用の PC から、予めホームディレクトリにバックアップ ファイルをアップロードしておきます。
+
+```sh
+set clienv on-failure continue
+load configuration cpsms_gaia_20260506.conf
+set clienv on-failure stop
+save config
+```
 
 ## システム バックアップ (system backup)
 
