@@ -1,11 +1,15 @@
 # Test
+
 - https://dave.cheney.net/2019/05/07/prefer-table-driven-tests
+
 ```bash
 go test -v -coverprofile=cover.out
 go tool cover -func=cover.out
 go tool cover -html=./cover.out -o cover.html
 ```
-# 標準出力のテスト
+
+## 標準出力のテスト
+
 - https://zenn.dev/_kazuya/articles/5dd984f95d6fef45b6eb
 
 ```go
@@ -24,5 +28,15 @@ func TestTui_Title(t *testing.T) {
         }
 }
 ```
-# bubbletea test
+
+## bubbletea test
+
 - https://charm.sh/blog/teatest/
+
+## Testify
+
+- https://github.com/stretchr/testify
+
+```zsh
+go get github.com/stretchr/testify
+```
