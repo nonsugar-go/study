@@ -17,6 +17,10 @@ go get github.com/gin-contrib/cors
 - https://gin-gonic.com/ja/docs/middleware/security-guide/
 - https://github.com/gin-contrib/cors
 
+## Test
+
+- https://gin-gonic.com/ja/docs/testing/
+
 # Insomnia
 
 - https://insomnia.rest/download
