@@ -124,14 +124,29 @@ Last member state change event:
    Event Code:                 CLUS-114904
    State change:               ACTIVE(!) -> ACTIVE
    Reason for state change:    Reason for ACTIVE! alert has been resolved
-   Event time:                 Thu Mar 27 19:16:50 2025
-
-Last cluster failover event:
-   Transition to new ACTIVE:   Member 2 -> Member 1
-   Reason:                     Interface eth5 is down (disconnected / link down)
-   Event time:                 Thu Mar 27 19:13:55 2025
+   Event time:                 Fri May 15 10:50:59 2026
 
 Cluster failover count:
-   Failover counter:           1
-   Time of counter reset:      Thu Mar 27 12:27:27 2025 (reboot)
+   Failover counter:           0
+   Time of counter reset:      Fri May 15 09:32:29 2026 (reboot)
+```
+
+## watch で HA ステータスを監視
+
+```sh
+expert
+watch cphaprob state
+```
+
+```
+Every 2.0s: cphaprob state                               CPGW1A: Fri May 15 11:46:39 2026
+
+
+Cluster Mode:   High Availability (Active Up) with IGMP Membership
+
+ID         Unique Address  Assigned Load   State          Name
+
+
+1 (local)  192.168.255.1   100%            ACTIVE         CPGW1A
+2          192.168.255.2   0%              STANDBY        CPGW1B
 ```
