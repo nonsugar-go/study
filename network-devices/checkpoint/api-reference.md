@@ -47,6 +47,10 @@ mgmt add access-rule layer "Network" position.bottom "New rules" name "test-1" e
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-dns-domains
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-services-tcp
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-services-udp
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-services-icmp
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-services-icmp6
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-services-sctp
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-services-other
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-service-groups
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-access-rulebase
 
@@ -57,6 +61,10 @@ mgmt show networks limit 500 offset 0 details-level "standard" -f json
 mgmt show dns-domains limit 500 offset 0 details-level "standard" -f json
 mgmt show services-tcp limit 500 offset 0 details-level "standard" -f json
 mgmt show services-udp limit 500 offset 0 details-level "standard" -f json
+mgmt show services-icmp limit 500 offset 0 details-level "standard" -f json
+mgmt show services-icmp6 limit 500 offset 0 details-level "standard" -f json
+mgmt show services-sctp limit 500 offset 0 details-level "standard" -f json
+mgmt show services-other limit 500 offset 0 details-level "standard" -f json
 mgmt show service-groups limit 500 offset 0 details-level "standard" -f json
 mgmt show access-rulebase limit 500 offset 0 name "Network" details-level "standard" -f json
 ```
