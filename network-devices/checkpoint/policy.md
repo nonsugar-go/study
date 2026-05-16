@@ -103,3 +103,7 @@
    | eth3 | This network      | 192.168.102.1/24 | 192.168.102.2/24 | 192.168.102.3/24 | Internal2 | LAN                | ブロックしてログ記録 |
    | eth4 | External          | 192.0.2.1/26     | 192.0.2.2/26     | 192.0.2.3/26     | External  | WAN                | ブロックしてログ記録 |
    | eth5 | This network, DMZ | 192.168.111.1/24 | 192.168.111.2/24 | 192.168.111.3/24 | DMZ       | DMZ                | ブロックしてログ記録 |
+
+## sk
+
+- [Early drop of a connection before the final rule match](https://support.checkpoint.com/results/sk/sk111643)
