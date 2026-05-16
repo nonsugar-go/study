@@ -52,6 +52,7 @@ mgmt add access-rule layer "Network" position.bottom "New rules" name "test-1" e
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-services-sctp
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-services-other
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-service-groups
+- https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-access-layers
 - https://sc1.checkpoint.com/documents/latest/APIs/?#clish/show-access-rulebase
 
 ```sh
@@ -66,6 +67,7 @@ mgmt show services-icmp6 limit 500 offset 0 details-level "standard" -f json
 mgmt show services-sctp limit 500 offset 0 details-level "standard" -f json
 mgmt show services-other limit 500 offset 0 details-level "standard" -f json
 mgmt show service-groups limit 500 offset 0 details-level "standard" -f json
+mgmt show access-layers limit 500 offset 0 details-level "standard" -f json
 mgmt show access-rulebase limit 500 offset 0 name "Network" details-level "standard" -f json
 ```
 
