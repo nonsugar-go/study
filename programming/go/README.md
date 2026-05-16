@@ -6,14 +6,15 @@
 - [Range](range.md)
 - [Excel](excel.md)
 - [GUI](gui)
-- [mygodoc](mygodoc.md)
 - [Test](test.md)
 - [Database](database.md)
-- [gRPC](grpc.md)
 - [GORM](gorm.md)
+- [REST API](rest-api.md)
 - [Gin](gin.md)
 - [Echo](echo.md)
 - [chi](chi.md)
+- [gRPC](grpc.md)
+- [mygodoc](mygodoc.md)
 
 # Links
 
