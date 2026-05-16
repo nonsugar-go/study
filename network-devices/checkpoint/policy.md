@@ -107,3 +107,4 @@
 ## sk
 
 - [Early drop of a connection before the final rule match](https://support.checkpoint.com/results/sk/sk111643)
+- [Logs from a Security Gateway show "Connection terminated before" in the "Reason" field](https://support.checkpoint.com/results/sk/sk113479)
