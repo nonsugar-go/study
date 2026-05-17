@@ -528,6 +528,7 @@ VSCode を起動して、以下の拡張をインストールする。
 - [Japanese Language Pack for Visual Studio Code (microsoft.com)](https://marketplace.visualstudio.com/items/?itemName=MS-CEINTL.vscode-language-pack-ja)
 - [Vim (vscodevim)](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 - [Remote Development (microsoft.com)](https://marketplace.visualstudio.com/items/?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+- [REST Client (Huachao Mao)](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 - [Go (go.dev)](https://marketplace.visualstudio.com/items/?itemName=golang.Go)
   - CTRL+SHIFT+P: Go: Install/Update Tools
 - [JSON to Go (Mario Petričko)](https://marketplace.visualstudio.com/items?itemName=maracko.json-to-go)
