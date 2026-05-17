@@ -7,6 +7,47 @@
 
 - https://insomnia.rest/download
 
+## REST Client (Huachao Mao)
+
+- [REST Client (Huachao Mao)](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+  - Ctrl+,: 拡張機能 > REST Client
+    - Preview Option: full → exchange
+    - Preview Response Panel Take Focus: ✅ → ☐
+
+- Ctrl+Alt+R: Send Request
+
+**test.http
+
+```
+@hostname = localhost
+@port = 8080
+@baseUrl = http://{{hostname}}:{{port}}
+
+### Signup
+
+POST @{{baseUrl}}/signup
+Content-type: application/json
+
+{
+    "email": "user1@example.com",
+    "password": "user1pass"
+}
+
+### Login
+
+POST @{{baseUrl}}/login
+Content-type: application/json
+
+{
+    "email": "user1@example.com",
+    "password": "user1pass"
+}
+
+### Logout
+
+POST {{baseUrl}}/logout
+```
+
 ## Air
 
 - https://github.com/air-verse/air/blob/master/README-ja.md
