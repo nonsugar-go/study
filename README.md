@@ -8,6 +8,8 @@
 - [Network Devices](network-devices)
 - [Programming](programming)
   - [VSCode](programming/vscode.md)
+  - [Go](programming/go)
+  - [Rust](programming/rust)
 - [Tools](tools)
 - [Windows](windows)
   - [wsl](windows/wsl.md)
