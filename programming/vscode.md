@@ -1,8 +1,11 @@
 # Visual Stadio Code
 - [Insider.NET 全記事一覧 - ＠IT](https://atmarkit.itmedia.co.jp/ait/subtop/features/dotnet/all.html#xe789b9e99b86efbc9aVisualStudioCodee38292e4bdbfe38184e38193e381aae3819de38186)
+
 # Install
 - https://code.visualstudio.com/download
+
 # ショートカット キー
+
 - ショートカットキーの編集 (Ctrl+K, Ctrl+S)
   - 最大化されるパネルの切り替え > 既定でないので Ctrl + Alt + @ に割り当て
 - [VSCodeの選択の便利機能紹介](https://zenn.dev/suba/articles/074b12d4e9c0df)
@@ -33,15 +36,21 @@
 | すべて展開 | Ctrl + K, Ctrl + J |
 | 再帰的にたたむ | Ctrl + K, Ctrl + [ |
 | 再帰手に展開 | Ctrl + K, Ctrl + ] |
+
 ## Visual Studio
 Visual Studio で VSCode のショートカット キーを使用するには、「メニュー > ツール > オプション > 環境 > キーボード」、「次の追加キーボードマップ スキームを適用」: Visual Studio Code にする。
+
 # Extensions (Ctrl+Shift+X)
+
 ## 初期設定
+
 - [Japanese Language Pack for Visual Studio Code (microsoft.com)](https://marketplace.visualstudio.com/items/?itemName=MS-CEINTL.vscode-language-pack-ja)
   - コマンド パレット (Ctrl+Shift+P): Configure Display Language > 日本語 (ja)
 - [Vim (vscodevim)](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 - [Remote Development (microsoft.com)](https://marketplace.visualstudio.com/items/?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+
 ## Markdown
+
 - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items/?itemName=shd101wyy.markdown-preview-enhanced)
 - [markdownlint](https://marketplace.visualstudio.com/items/?itemName=DavidAnson.vscode-markdownlint)
 
@@ -49,9 +58,13 @@ Visual Studio で VSCode のショートカット キーを使用するには、
   - 拡張: Markdown Preview Enhanced
   - 拡張: Markdown All in One
   - 拡張: Excel to Markdown table
+
 ## CSV
+
 - https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv
+
 ## Golang
+
 - [Go (go.dev)](https://marketplace.visualstudio.com/items/?itemName=golang.Go)
   - Ctrl + Shift + P > Go: Install/Update Tools > 全てチェック
 - [JSON to Go (Mario Petričko)](https://marketplace.visualstudio.com/items?itemName=maracko.json-to-go)
@@ -59,15 +72,25 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 - https://zenn.dev/ikoba/articles/vscode-golang-snippets
 - [VSCode の Go extension でよく利用するコマンド 7選 | フューチャー技術ブログ](https://future-architect.github.io/articles/20200707/)
 - [意外と知らないVSCode上でGoを爆速開発するためのTips5選 #Go - Qiita](https://qiita.com/yagi_eng/items/9e599913605625809d9c)
+
 ## PowerShell
+
 - [PowerShell (microsoft.com)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
+
 ## C/C++
+
 - C/C++ Extension Pack (microsoft.com)
+
 ## C#
+
 - C# Dev Kit (microsoft.com)
+
 ## Java
+
 - https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
+
 ## Python
+
 - https://marketplace.visualstudio.com/items?itemName=ms-python.python
 - https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter
 <!--
@@ -80,48 +103,76 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 -->
 - https://takuma.tech/?post=20231009_Python_black_fomatter
 - [Visual Studio Codeの設定「虎の巻」：Python編：特集：Visual Studio Codeを使いこなそう！（1/3 ページ） - ＠IT](https://atmarkit.itmedia.co.jp/ait/articles/1711/24/news034.html)
+
 ## JavaScript
+
 - [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
 - ESLint
+
 ## Rust
+
 - https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
 - https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
+
 ## Swift
+
 - https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang
+
 ## Protocol Buffer
+
 - https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3
+
+## Rest API
+
+- [REST Client (Huachao Mao)](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+
 ## HTML
+
 - https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
 - CSS Peek
 - HTML Boilerplate
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
 ## AWS
+
 - https://docs.aws.amazon.com/ja_jp/toolkit-for-vscode/latest/userguide/setup-toolkit.html
+
 ## Terraform
+
 - https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform
+
 ## Draw.io
+
 - https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio
+
 ## OpenAPI
+
 - https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer
+
 ## MSYS2/Cygwin/MinGW/Clang support
+
 - https://iww.hateblo.jp/entry/20240220/cygwin
   - **規定のプロファイルの選択**で Cygwin を追加
   - コマンド パレット (Ctrl+Shift+P): Open User Settings JSON
-```json
-    "Cygwin": {
-      "path": "C:\\cygwin64\\bin\\bash.exe",
-      "args": [
-         "--login"
-      ]
-      "env": {"CHERE_INVOKING": "1"},
-    }
-```
+  ```json
+      "Cygwin": {
+        "path": "C:\\cygwin64\\bin\\bash.exe",
+        "args": [
+           "--login"
+        ]
+        "env": {"CHERE_INVOKING": "1"},
+      }
+  ```
+
 ## その他
+
 - https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
 - https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete
 - https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense
 - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
 # 参考
+
 - [VS Codeのターミナルにcygwinを使用する - ICT Diary](https://ictdiary.hatenadiary.jp/entry/2022/12/26/VS_Code%E3%81%AE%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%ABcygwin%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B)
 - [Visual Studio Code TIPS - ＠IT](https://atmarkit.itmedia.co.jp/ait/series/9744/index.html)
 - [VS Code の便利なショートカットキー #VSCode - Qiita](https://qiita.com/12345/items/64f4372fbca041e949d0)
