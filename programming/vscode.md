@@ -125,6 +125,9 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 ## Rest API
 
 - [REST Client (Huachao Mao)](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+  - Ctrl+,: 拡張機能 > REST Client
+    - Preview Option: full → exchange
+    - Preview Response Panel Take Focus: ✅ → ☐
 
 ## HTML
 
