@@ -25,7 +25,7 @@
 
 ### Signup
 
-POST @{{baseUrl}}/signup
+POST {{baseUrl}}/signup
 content-type: application/json
 
 {
@@ -35,7 +35,7 @@ content-type: application/json
 
 ### Login
 
-POST @{{baseUrl}}/login
+POST {{baseUrl}}/login
 content-type: application/json
 
 {
