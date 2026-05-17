@@ -42,11 +42,11 @@ content-type: application/json
     "email": "user1@example.com",
     "password": "user1pass"
 }
-```
 
 ### Logout
 
-POST {{baseUrl}}/logout```
+POST {{baseUrl}}/logout
+```
 
 ## Air
 
