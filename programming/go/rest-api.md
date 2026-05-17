@@ -16,7 +16,7 @@
 
 - Ctrl+Alt+R: Send Request
 
-**test.http
+**test.http**
 
 ```
 @hostname = localhost
@@ -26,7 +26,7 @@
 ### Signup
 
 POST @{{baseUrl}}/signup
-Content-type: application/json
+content-type: application/json
 
 {
     "email": "user1@example.com",
@@ -36,17 +36,17 @@ Content-type: application/json
 ### Login
 
 POST @{{baseUrl}}/login
-Content-type: application/json
+content-type: application/json
 
 {
     "email": "user1@example.com",
     "password": "user1pass"
 }
+```
 
 ### Logout
 
-POST {{baseUrl}}/logout
-```
+POST {{baseUrl}}/logout```
 
 ## Air
 
