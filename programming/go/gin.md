@@ -16,6 +16,7 @@ go get github.com/gin-contrib/cors
 - https://gin-gonic.com/ja/docs/middleware/custom-middleware/
 - https://gin-gonic.com/ja/docs/middleware/security-guide/
 - https://github.com/gin-contrib/cors
+- https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/CORS
 
 ## Test
 
