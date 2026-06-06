@@ -326,6 +326,12 @@ sudo snap install firefox
 sudo apt install fonts-noto-cjk
 ```
 
+### Restfox
+
+```zsh
+sudo snap install restfox
+```
+
 ### Ghidra
 
 - https://github.com/NationalSecurityAgency/ghidra
