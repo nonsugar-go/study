@@ -43,7 +43,7 @@ version: '3'
         POSTGRES_PASSWORD: password
         POSTGRES_DB: users
       volumes:
-        - ./db-data/postgres/:/var/lib/postgresql/data/
+        - ./db-data/postgres/:/var/lib/postgresql/18/docker/
 ```
 
 ## Managing connections
