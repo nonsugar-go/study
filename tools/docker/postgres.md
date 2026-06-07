@@ -2,7 +2,8 @@
 
 - https://hub.docker.com/_/postgres/
 
-**docker-compose.yml**
+## docker-compose.yml
+
 ```
 version: '3'
   services:
@@ -20,4 +21,18 @@ version: '3'
         POSTGRES_DB: users
       volumes:
         - ./db-data/postgres/:/var/lib/postgresql/18/docker/
+```
+
+## psql
+
+```zsh
+$ sudo docker exec -it project_postgres_1 psql -U postgres -d users
+psql (18.4 (Debian 18.4-1.pgdg13+1))
+Type "help" for help.
+
+users=# \?
+users=# \dt
+users=# \d public.users
+users=# users=# select * from public.users;
+users=# \q
 ```
