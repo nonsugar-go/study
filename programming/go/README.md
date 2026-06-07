@@ -19,4 +19,5 @@
 
 # Links
 
+- https://awesome-go.com/
 - https://github.com/tsawler
