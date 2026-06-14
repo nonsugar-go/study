@@ -1,8 +1,8 @@
 # SECCON Beginners CTF
 
-- https://ctf.beginners.seccon.jp/
+- https://score.beginners.seccon.jp/
 
-# SECCON Beginners CTF 2025
+# SECCON Beginners CTF 2026
 
 ## 作問者 Writeup
 
