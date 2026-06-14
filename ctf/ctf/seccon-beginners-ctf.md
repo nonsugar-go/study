@@ -8,10 +8,13 @@
 
 ## Writeup
 
+- https://qiita.com/NOTSY/items/f63cb3c66a4c38ca6440
 - https://security-blog-it.com/46836/
 - https://www.youtube.com/watch?v=XrbyjTPfxyw
 
 # SECCON Beginners CTF 2025
+
+- https://github.com/SECCON/SECCON_Beginners_CTF_2025
 
 ## 作問者 Writeup
 
