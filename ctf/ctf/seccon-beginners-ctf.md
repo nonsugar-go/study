@@ -6,6 +6,15 @@
 
 ## 作問者 Writeup
 
+## Writeup
+
+- https://security-blog-it.com/46836/
+- https://www.youtube.com/watch?v=XrbyjTPfxyw
+
+# SECCON Beginners CTF 2025
+
+## 作問者 Writeup
+
 - https://blog.kuonruri.org/seccon-beginners-ctf-2025-writeup
 - https://gist.github.com/shiosa1t/f0e051aba5613efc504a5385072dc43e
 - https://gist.github.com/kotokaze/dc39dbb7dbe4dec389358eefc4abcd10
