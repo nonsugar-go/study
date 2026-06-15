@@ -6,10 +6,15 @@
 
 ## 作問者 Writeup
 
+- https://ham4.hatenablog.jp/entry/2026/06/14/214453
+- https://melonattacker.github.io/posts/52/
+
 ## Writeup
 
 - https://qiita.com/NOTSY/items/f63cb3c66a4c38ca6440
 - https://security-blog-it.com/46836/
+- https://tan.hatenadiary.jp/entry/2026/06/15/020023
+- https://zenn.dev/ctes091x/articles/0d013ee0d58c69
 - https://www.youtube.com/watch?v=XrbyjTPfxyw
 
 # SECCON Beginners CTF 2025
