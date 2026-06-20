@@ -16,6 +16,7 @@
 - https://security-blog-it.com/46836/
 - https://tan.hatenadiary.jp/entry/2026/06/15/020023
 - https://zenn.dev/ctes091x/articles/0d013ee0d58c69
+- https://zenn.dev/goroshirow/articles/f83c2eaa46e9a6
 - https://zenn.dev/vongole_bianco/articles/7654a076a86032
 - https://www.youtube.com/watch?v=XrbyjTPfxyw
 
