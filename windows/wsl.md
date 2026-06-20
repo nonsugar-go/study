@@ -307,6 +307,16 @@ pip3 install -U Flask flask-unsign gmpy2 pwntools pycryptodome pyshark \
   git+https://github.com/RsaCtfTool/RsaCtfTool
 ```
 
+### Docker
+
+```zsh
+sudo usermod -aG docker $USER
+```
+
+```powershell
+wsl --shutdown
+```
+
 ### gobuster / hashcat 用のワードリスト
 
 ```zsh
