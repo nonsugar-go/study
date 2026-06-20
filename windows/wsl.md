@@ -559,6 +559,13 @@ VSCode を起動して、以下の拡張をインストールする。
 - [Black Formatter (microsoft.com)](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
 - [rust-analyzer (The Rust Programming Language)](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
 - [CodeLLDB (Vadim Chugunov)](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
+- [YAML (Red Hat)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+  - [VSCodeでKubernetes YAMLのバリデーションを活用する方法｜neverbird](https://note.com/fminamot/n/n955cb3538d06)
+    ```json
+    "yaml.schemas": {
+      "kubernetes": ["*.yml","*.yaml"]
+    }
+    ```
 
 <!--
 ## sshd
