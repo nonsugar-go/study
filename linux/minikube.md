@@ -15,8 +15,8 @@ kubectl version --client --output=yaml
 
 curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
-minikube start
 
+minikube start --driver=docker
 kubectl get po -A
 minikube kubectl -- get po -A
 alias kubectl="minikube kubectl --"
