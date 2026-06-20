@@ -436,7 +436,7 @@ ln -s ~/CTF/jadx-1.5.4/bin/jadx-gui ~/CTF/bin
 ### ~/CTF/aliases.sh
 
 ```zsh
-alias angr='sudo docker run -it --rm -v $PWD:/local angr/angr'
+alias angr='docker run -it --rm -v $PWD:/local angr/angr'
 alias c='curl -LO'
 alias ckp='source ~/CTF/checkpwn.sh'
 alias g='grep -Rin'
