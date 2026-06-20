@@ -1,18 +1,26 @@
 # Docker
 
-# Install (Ubuntu)
+# Install (WSL2/Ubuntu)
 
-```bash
+```wzh
 sudo apt install docker-compose
+```
+
+```zsh
+sudo usermod -aG docker $USER
+```
+
+```powershell
+wsl --shutdown
 ```
 
 # 起動/停止
 
 ```bash
-sudo docker-compose up -d
-sudo docker-compose down
-sudo docker images
-sudo docker rmi REPOSITORY
+docker-compose up -d
+docker-compose down --rmi all
+docker images
+docker rmi REPOSITORY
 ```
 
 # nginx
