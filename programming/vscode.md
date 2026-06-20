@@ -63,6 +63,16 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 
 - https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv
 
+## YAML
+
+- [YAML (Red Hat)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+  - [VSCodeでKubernetes YAMLのバリデーションを活用する方法｜neverbird](https://note.com/fminamot/n/n955cb3538d06)
+    ```json
+    "yaml.schemas": {
+      "kubernetes": ["*.yml","*.yaml"]
+    }
+    ```
+
 ## Golang
 
 - [Go (go.dev)](https://marketplace.visualstudio.com/items/?itemName=golang.Go)
