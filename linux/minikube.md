@@ -10,6 +10,7 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
 echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+rm kubectl kubectl.sha256
 kubectl version --client
 kubectl version --client --output=yaml
 
@@ -17,8 +18,7 @@ curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikub
 sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
 
 minikube start --driver=docker
+
 kubectl get po -A
-minikube kubectl -- get po -A
-alias kubectl="minikube kubectl --"
 minikube dashboard
 ```
