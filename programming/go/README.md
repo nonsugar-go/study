@@ -4,6 +4,7 @@
 - [Basic](basic.md)
 - [Grammar](grammar.md)
 - [Range](range.md)
+- [JSON / TOML / YAML](json_toml_yaml.md)
 - [Excel](excel.md)
 - [GUI](gui)
 - [Test](test.md)
