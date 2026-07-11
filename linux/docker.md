@@ -22,7 +22,7 @@ PS> wsl --shutdown
 | image | docker image pull | docker pull | |
 | image | docker image rm | docker rmi | docker rmi IMAGE |
 | image | docker image prune | - | docker image prune -a |
-| container | docker container run | docker run | |
+| container | docker container run | docker run | docker run -it ubuntu bash |
 | container | docker container stop | docker stop | |
 | container | docker container ls | docker ps | docker ps -a |
 | container | docker container rm | docker rm | |
