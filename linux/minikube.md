@@ -40,3 +40,18 @@ kubectl delete deployment hello-minikube
 minikube stop
 minikube delete --all
 ```
+
+## minikube の起動・停止・削除
+
+```zsh
+minikube start --driver=docker
+minikube status
+```
+
+```
+minikube stop
+```
+
+```
+minikube delete --all
+```
