@@ -61,9 +61,15 @@ spec:
       image: nginx:1.31.2-alpine3.24
 ```
 
-```
+```zsh
 kubectl apply -f pod.yaml
-kubectl get all
+```
+
+```zsh
+watch -d kubectl get all -o wide
+```
+
+```zsh
 kubectl delete -f pod.yaml
 ```
 
