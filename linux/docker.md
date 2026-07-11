@@ -3,12 +3,12 @@
 ## Install (WSL2/Ubuntu)
 
 ```zsh
-sudo apt install docker-compose-v2
-sudo usermod -aG docker $USER
+$ sudo apt install docker-compose-v2
+$ sudo usermod -aG docker $USER
 ```
 
 ```powershell
-wsl --shutdown
+PS> wsl --shutdown
 ```
 
 ## コマンド一覧
