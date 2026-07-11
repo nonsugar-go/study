@@ -15,7 +15,7 @@ PS> wsl --shutdown
 
 - https://docs.docker.jp/engine/reference/commandline/
 
-| Type | Full | Short | example |
+| Type | Full | Short | Example |
 |---|---|---|---|
 | image | docker image build | docker build | |
 | image | docker image list | docker images | |
@@ -26,6 +26,7 @@ PS> wsl --shutdown
 | container | docker container stop | docker stop | |
 | container | docker container ls | docker ps | docker ps -a |
 | container | docker container rm | docker rm | |
+| compose | docker compose config | - | docker compose config |
 | compose | docker compose up | - | docker-compose up -d |
 | compose | docker compose down | - | docker compose down --rmi all |
 
@@ -51,21 +52,21 @@ docker rmi IMAGE
 **compose.yaml**
 
 ```yaml
-web:
-  image: nginx
-  volumes:
-   - ./templates:/etc/nginx/templates
-  ports:
-   - "8080:80"
-  environment:
-   - NGINX_HOST=foobar.com
-   - NGINX_PORT=80
+services:
+  web:
+    image: nginx
+    volumes:
+     - ./templates:/etc/nginx/templates
+    ports:
+     - "8080:80"
+    environment:
+     - NGINX_HOST=foobar.com
+     - NGINX_PORT=80
 ```
 
 **./templates/default.conf.template**
 
 ```zsh
-cat <<'EOF' >./templates/default.conf.template
 server {
     listen       ${NGINX_PORT};
     server_name  ${NGINX_HOST};
@@ -75,18 +76,6 @@ server {
         index  index.html index.htm;
     }
 }
-EOF
-```
-
-
-```yaml
-services:
-  nginx:
-    image: nginx:latest
-    ports:
-      - "80:80"
-    volumes:
-      - ./index.html:/usr/share/nginx/html/index.html
 ```
 
 ### rsyslog
