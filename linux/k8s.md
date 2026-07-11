@@ -105,6 +105,11 @@ kubectl cp debug:/var/tmp/file2.txt ./file2.txt
 ```
 
 ```zsh
+kubectl describe pod/nginx
+kubectl logs pod/nginx
+```
+
+```zsh
 kubectl delete -f pods.yaml
 ```
 
