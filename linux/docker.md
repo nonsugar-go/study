@@ -40,7 +40,7 @@ docker images
 docker rmi IMAGE
 ```
 
-## docker file / compose
+## docker compose
 
 - https://docs.docker.jp/engine/reference/builder.html
 - https://docs.docker.jp/compose/toc.html
@@ -49,7 +49,7 @@ docker rmi IMAGE
 
 - https://hub.docker.com/_/nginx
 
-**compose.yaml**
+**./compose.yaml**
 
 ```yaml
 services:
@@ -80,6 +80,8 @@ server {
 
 ### rsyslog
 
+**./compose.yaml**
+
 ```yaml
 services:
   rsyslog:
@@ -91,16 +93,17 @@ services:
       - ./syslog.log:/var/log/syslog.log
 ```
 
-**Dockerfile**
+**./Dockerfile**
+
+- https://hub.docker.com/_/alpine
 
 ```dockerfile
 FROM alpine:latest
 RUN apk add --no-cache rsyslog
-COPY rsyslog.conf /etc/rsyslog.conf
-CMD ["rsyslogd", "-n"]
+ENTRYPOINT ["rsyslogd", "-n"]
 ```
 
-**rsyslog.conf**
+**./rsyslog.conf**
 
 ```conf
 module(load="imudp")
@@ -108,7 +111,7 @@ input(type="imudp" port="514")
 *.* /var/log/syslog.log
 ```
 
-**syslog.log**
+**./syslog.log**
 
 ```bash
 touch syslog.log
