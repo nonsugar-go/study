@@ -18,14 +18,14 @@ PS> wsl --shutdown
 | Type | Full | Short | Example |
 |---|---|---|---|
 | image | docker image build | docker build | |
-| image | docker image list | docker images | |
+| image | docker image list | docker images | docker images |
 | image | docker image pull | docker pull | docker pull centos:7 |
 | image | docker image rm | docker rmi | docker rmi IMAGE |
 | image | docker image prune | - | docker image prune -a |
 | container | docker container run | docker run | docker run -it ubuntu bash |
-| container | docker container stop | docker stop | |
+| container | docker container stop | docker stop | docker stop CONTAINER |
 | container | docker container ls | docker ps | docker ps -a |
-| container | docker container rm | docker rm | |
+| container | docker container rm | docker rm | docker rm CONTAINER |
 | container | docker container exec | docker exec | docker exec -it CONTAINER sh |
 | container | docker container logs | docker logs | docker logs CONTAINER |
 | compose | docker compose config | - | docker compose config |
