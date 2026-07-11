@@ -1,6 +1,6 @@
 # Docker
 
-# Install (WSL2/Ubuntu)
+## Install (WSL2/Ubuntu)
 
 ```wzh
 sudo apt install docker-compose
@@ -14,21 +14,34 @@ sudo usermod -aG docker $USER
 wsl --shutdown
 ```
 
-# 起動/停止
+## コマンド一覧
+
+| Type | Full | Short |
+|---|---|---|
+| image | docker image build | docker build |
+| image | docker image list | docker images |
+| image | docker image pull | docker pull |
+| image | docker image rm | docker rmi |
+| container | docker container run | docker run |
+| container | docker container stop | docker stop |
+| container | docker container ls | docker ps |
+| container | docker container rm | docker rm |
+
+## 起動 / 停止
 
 ```bash
 docker-compose up -d
+
 docker-compose down --rmi all
 docker images
 docker rmi REPOSITORY
 ```
 
-# nginx
+## nginx
 
-## Dockerfile
+### Dockerfile
 
 ```dockerfile
-version: "3.9"
 services:
   nginx:
     image: nginx:latest
@@ -38,12 +51,11 @@ services:
       - ./index.html:/usr/share/nginx/html/index.html
 ```
 
-# rsyslog
+## rsyslog
 
-## docker-compose.yaml
+### docker-compose.yaml
 
 ```yaml
-version: "3.9"
 services:
   rsyslog:
     build:
@@ -54,7 +66,7 @@ services:
       - ./syslog.log:/var/log/syslog.log
 ```
 
-## Dockerfile
+### Dockerfile
 
 ```dockerfile
 FROM alpine:latest
@@ -71,7 +83,7 @@ input(type="imudp" port="514")
 *.* /var/log/syslog.log
 ```
 
-## syslog.log
+### syslog.log
 
 ```bash
 touch syslog.log
