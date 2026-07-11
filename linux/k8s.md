@@ -31,21 +31,6 @@
 | ストレージ | PersistentVolume (pv) | 永続データの実態 |
 | ストレージ | PersistentVolumeClaim (pvc) | 永続データの要求 |
 
-## minikube の起動・停止・削除
-
-```zsh
-minikube start --driver=docker
-minikube status
-```
-
-```zsh
-minikube stop
-```
-
-```zsh
-minikube delete --all
-```
-
 ## Pods
 
 ```zsh
@@ -63,14 +48,15 @@ kubectl delete pod/hello
 apiVersion: v1
 kind: Pod
 metadata:
-  name: test
+  name: nginx
   namespace: default
   labels:
-    env: study
+    app: nginx
+    env: dev
 spec:
   containers:
-    - name: hello
-      image: hello-world
+    - name: nginx
+      image: nginx:1.31.2-alpine3.24
 ```
 
 ```
