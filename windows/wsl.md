@@ -273,12 +273,12 @@ $ vi foo.cpp
 mkdir -p ~/CTF/bin
 ```
 
-```bash
-sudo apt install 7zip bat bind9-dnsutils build-essential cmake docker-compose \
-  gcc-multilib gdb gdbserver gobuster hashcat hexer jq libimage-exiftool-perl \
-  libxml2-utils ltrace nasm ncal nmap openvpn poppler-utils python3-venv qpdf \
-  socat sqlite3 sqlmap strace tcpdump tshark unzip w3m wabt wireshark z80dasm \
-  zip
+```zsh
+sudo apt install 7zip bat bind9-dnsutils build-essential cmake \
+  docker-compose-v2 gcc-multilib gdb gdbserver gobuster hashcat hexer jq \
+  libimage-exiftool-perl libxml2-utils ltrace nasm ncal nmap openvpn \
+  poppler-utils python3-venv qpdf socat sqlite3 sqlmap strace tcpdump tshark \
+  unzip w3m wabt wireshark yq z80dasm zip
 ```
 
 ```zsh
@@ -310,11 +310,11 @@ pip3 install -U Flask flask-unsign gmpy2 pwntools pycryptodome pyshark \
 ### Docker
 
 ```zsh
-sudo usermod -aG docker $USER
+$ sudo usermod -aG docker $USER
 ```
 
 ```powershell
-wsl --shutdown
+PS> wsl --shutdown
 ```
 
 ### gobuster / hashcat 用のワードリスト
@@ -479,8 +479,8 @@ strings -tx $f >strings-tx.output
 - https://go.dev/doc/install
 
 ```zsh
-curl -LO https://go.dev/dl/go1.26.4.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.26.4.linux-amd64.tar.gz
+curl -LO https://go.dev/dl/go1.26.5.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.26.5.linux-amd64.tar.gz
 ```
 
 - ~/.zshrc
