@@ -17,7 +17,7 @@ PS> wsl --shutdown
 
 | Type | Full | Short | Example |
 |---|---|---|---|
-| image | docker image build | docker build | |
+| image | docker image build | docker build | docker build -t test . |
 | image | docker image list | docker images | docker images |
 | image | docker image pull | docker pull | docker pull centos:7 |
 | image | docker image rm | docker rmi | docker rmi IMAGE |
