@@ -100,6 +100,11 @@ kubectl exec debug -it -- sh
 exit または ctrl-P, ctrl-Q で抜ける
 
 ```zsh
+kubectl cp ./file1.txt debug:/var/tmp/file1.txt
+kubectl cp debug:/var/tmp/file2.txt ./file2.txt
+```
+
+```zsh
 kubectl delete -f pods.yaml
 ```
 
