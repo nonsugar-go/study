@@ -44,25 +44,49 @@ kubectl delete pod/hello
 
 ### yaml
 
-**pod.yaml**
+**pods.yaml**
 
 ```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug
+  namespace: default
+  labels:
+    env: dev
+spec:
+  containers:
+    - name: debug
+      image: centos:7
+      command:
+        - "sh"
+        - "-c"
+      args:
+        - |
+          while true
+          do
+            sleep ${DELAY}
+          done
+      env:
+        - name: "DELAY"
+          value: "5"
+
+---
 apiVersion: v1
 kind: Pod
 metadata:
   name: nginx
   namespace: default
   labels:
-    app: nginx
     env: dev
 spec:
   containers:
     - name: nginx
-      image: nginx:1.31.2-alpine3.24
+      image: nginx:1.30.3-alpine3.23
 ```
 
 ```zsh
-kubectl apply -f pod.yaml
+kubectl apply -f pods.yaml
 ```
 
 ```zsh
@@ -70,7 +94,13 @@ watch -d kubectl get all -o wide
 ```
 
 ```zsh
-kubectl delete -f pod.yaml
+kubectl exec debug -it -- sh
+```
+
+exit または ctrl-P, ctrl-Q で抜ける
+
+```zsh
+kubectl delete -f pods.yaml
 ```
 
 ## ReplicaSet
