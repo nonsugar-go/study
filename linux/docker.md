@@ -15,31 +15,28 @@ PS> wsl --shutdown
 
 - https://docs.docker.jp/engine/reference/commandline/
 
-| Type | Full | Short |
-|---|---|---|
-| image | docker image build | docker build |
-| image | docker image list | docker images |
-| image | docker image pull | docker pull |
-| image | docker image rm | docker rmi |
-| container | docker container run | docker run |
-| container | docker container stop | docker stop |
-| container | docker container ls | docker ps |
-| container | docker container rm | docker rm |
+| Type | Full | Short | example |
+|---|---|---|---|
+| image | docker image build | docker build | |
+| image | docker image list | docker images | |
+| image | docker image pull | docker pull | |
+| image | docker image rm | docker rmi | docker rmi IMAGE |
+| image | docker image prune | - | docker image prune -a |
+| container | docker container run | docker run | |
+| container | docker container stop | docker stop | |
+| container | docker container ls | docker ps | docker ps -a |
+| container | docker container rm | docker rm | |
+| compose | docker compose up | - | docker-compose up -d |
+| compose | docker compose down | - | docker compose down --rmi all |
 
-### 未使用イメージをすべて削除
-
-```bash
-docker image prune -a
-```
-
-### 起動 / 停止
+### コンテナの起動と停止
 
 ```bash
-docker-compose up -d
+docker compose up -d
 
-docker-compose down --rmi all
+docker compose down --rmi all
 docker images
-docker rmi REPOSITORY
+docker rmi IMAGE
 ```
 
 ## docker file / compose
