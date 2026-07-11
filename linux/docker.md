@@ -26,7 +26,13 @@ PS> wsl --shutdown
 | container | docker container ls | docker ps |
 | container | docker container rm | docker rm |
 
-## 起動 / 停止
+### 未使用イメージをすべて削除
+
+```bash
+docker image prune -a
+```
+
+### 起動 / 停止
 
 ```bash
 docker-compose up -d
@@ -34,12 +40,6 @@ docker-compose up -d
 docker-compose down --rmi all
 docker images
 docker rmi REPOSITORY
-```
-
-## 未使用イメージをすべて削除
-
-```bash
-docker image prune -a
 ```
 
 ## docker file / compose
@@ -64,6 +64,23 @@ web:
    - NGINX_HOST=foobar.com
    - NGINX_PORT=80
 ```
+
+**./templates/default.conf.template**
+
+```zsh
+cat <<'EOF' >./templates/default.conf.template
+server {
+    listen       ${NGINX_PORT};
+    server_name  ${NGINX_HOST};
+
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+    }
+}
+EOF
+```
+
 
 ```yaml
 services:
