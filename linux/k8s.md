@@ -30,3 +30,27 @@
 | 設定 | Secret | 機密情報 |
 | ストレージ | PersistentVolume (pv) | 永続データの実態 |
 | ストレージ | PersistentVolumeClaim (pvc) | 永続データの要求 |
+
+## minikube の起動・停止・削除
+
+```zsh
+minikube start --driver=docker
+minikube status
+```
+
+```zsh
+minikube stop
+```
+
+```zsh
+minikube delete --all
+```
+
+## Pods
+
+```zsh
+kubectl run hello --image hello-world --restart=Never
+kubectl get po
+kubectl logs pod/hello
+kubectl delete pod/hello
+```
