@@ -27,7 +27,7 @@ PS> wsl --shutdown
 | container | docker container ls | docker ps | docker ps -a |
 | container | docker container rm | docker rm | |
 | container | docker container exec | docker exec | docker exec -it CONTAINER sh |
-| container | docker container logs | docker logs | docker logs [OPTIONS] CONTAINER |
+| container | docker container logs | docker logs | docker logs CONTAINER |
 | compose | docker compose config | - | docker compose config |
 | compose | docker compose up | - | docker-compose up -d |
 | compose | docker compose down | - | docker compose down --rmi all |
@@ -82,6 +82,8 @@ server {
 
 ### rsyslog
 
+- https://hub.docker.com/_/alpine
+
 **./compose.yaml**
 
 ```yaml
@@ -97,13 +99,11 @@ services:
 
 **./Dockerfile**
 
-- https://hub.docker.com/_/alpine
-
 ```dockerfile
 FROM alpine:latest
-COPY syslog.log /etc/rsyslog.conf
+COPY rsyslog.conf /etc/rsyslog.conf
 RUN apk add --no-cache rsyslog
-ENTRYPOINT ["rsyslogd", "-n"]
+ENTRYPOINT ["rsyslogd", "-n" ]
 ```
 
 **./rsyslog.conf**
@@ -111,7 +111,7 @@ ENTRYPOINT ["rsyslogd", "-n"]
 ```conf
 module(load="imudp")
 input(type="imudp" port="514")
-*.* /var/log/syslog.log
+action(type="omfile" file="/var/log/syslog.log")
 ```
 
 **./syslog.log**
