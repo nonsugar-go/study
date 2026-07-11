@@ -19,7 +19,7 @@
 - https://kubernetes.io/docs/reference/kubectl/#resource-types
 
 | Category | kind | apiVersion | Description |
-|---|---|---|
+|---|---|---|---|
 | Workloads | Pod (po) | v1 | コンテナの集合 |
 | Workloads | ReplicaSet (rs) | apps/v1 | Pod の集合 |
 | Workloads | Deployment (deploy) | apps/v1 | ReplicaSetの集合。世代管理 |
