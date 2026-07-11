@@ -50,8 +50,5 @@ minikube status
 
 ```
 minikube stop
-```
-
-```
 minikube delete --all
 ```
