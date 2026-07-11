@@ -19,7 +19,7 @@ PS> wsl --shutdown
 |---|---|---|---|
 | image | docker image build | docker build | |
 | image | docker image list | docker images | |
-| image | docker image pull | docker pull | |
+| image | docker image pull | docker pull | docker pull centos:7 |
 | image | docker image rm | docker rmi | docker rmi IMAGE |
 | image | docker image prune | - | docker image prune -a |
 | container | docker container run | docker run | docker run -it ubuntu bash |
