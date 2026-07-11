@@ -6,6 +6,8 @@
 - [CTF](ctf)
   - [pwn/tools](ctf/pwn/tools.md)
 - [Linux](linux)
+  - [Docker](linux/docker.md)
+  - [K8s](linux/k8s.md)
 - [Network Devices](network-devices)
   - [Check Point](network-devices/checkpoint)
   - [FortiGate](network-devices/fortigate)
