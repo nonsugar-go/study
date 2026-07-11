@@ -7,6 +7,7 @@
   - [pwn/tools](ctf/pwn/tools.md)
 - [Linux](linux)
   - [Docker](linux/docker.md)
+  - [minikube](linux/minikube.md)
   - [K8s](linux/k8s.md)
 - [Network Devices](network-devices)
   - [Check Point](network-devices/checkpoint)
