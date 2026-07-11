@@ -31,7 +31,9 @@
 | ストレージ | PersistentVolume (pv) | 永続データの実態 |
 | ストレージ | PersistentVolumeClaim (pvc) | 永続データの要求 |
 
-## Pods
+## Pod
+
+- https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/
 
 ```zsh
 kubectl run hello --image hello-world --restart=Never
@@ -64,3 +66,39 @@ kubectl apply -f pod.yaml
 kubectl get all
 kubectl delete -f pod.yaml
 ```
+
+## ReplicaSet
+
+- https://kubernetes.io/docs/reference/kubernetes-api/apps/replica-set-v1/
+
+## Deployment
+
+- https://kubernetes.io/docs/reference/kubernetes-api/apps/deployment-v1/
+
+## StatefulSet
+
+- https://kubernetes.io/docs/reference/kubernetes-api/apps/stateful-set-v1/
+
+## Service
+
+- https://kubernetes.io/docs/reference/kubernetes-api/core/service-v1/
+
+## Ingress
+
+- https://kubernetes.io/docs/reference/kubernetes-api/networking/ingress-v1/
+
+## ConfigMap
+
+- https://kubernetes.io/docs/reference/kubernetes-api/core/config-map-v1/
+
+## Secret
+
+- https://kubernetes.io/docs/reference/kubernetes-api/core/secret-v1/
+
+## PersistentVolume
+
+- https://kubernetes.io/docs/reference/kubernetes-api/core/persistent-volume-v1/
+
+## PersistentVolumeClaim
+
+- https://kubernetes.io/docs/reference/kubernetes-api/core/persistent-volume-claim-v1/
