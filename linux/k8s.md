@@ -54,3 +54,27 @@ kubectl get po
 kubectl logs pod/hello
 kubectl delete pod/hello
 ```
+
+### yaml
+
+**pod.yaml**
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test
+  namespace: default
+  labels:
+    env: study
+spec:
+  containers:
+    - name: hello
+      image: hello-world
+```
+
+```
+kubectl apply -f pod.yaml
+kubectl get all
+kubectl delete -f pod.yaml
+```
