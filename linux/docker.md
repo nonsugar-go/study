@@ -2,11 +2,8 @@
 
 ## Install (WSL2/Ubuntu)
 
-```wzh
-sudo apt install docker-compose
-```
-
 ```zsh
+sudo apt install docker-compose-v2
 sudo usermod -aG docker $USER
 ```
 
@@ -51,6 +48,22 @@ docker image prune -a
 - https://docs.docker.jp/compose/toc.html
  
 ### nginx
+
+- https://hub.docker.com/_/nginx
+
+**compose.yaml**
+
+```yaml
+web:
+  image: nginx
+  volumes:
+   - ./templates:/etc/nginx/templates
+  ports:
+   - "8080:80"
+  environment:
+   - NGINX_HOST=foobar.com
+   - NGINX_PORT=80
+```
 
 ```yaml
 services:
