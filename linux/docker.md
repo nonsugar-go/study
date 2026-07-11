@@ -27,6 +27,7 @@ PS> wsl --shutdown
 | container | docker container ls | docker ps | docker ps -a |
 | container | docker container rm | docker rm | |
 | container | docker container exec | docker exec | docker exec -it CONTAINER sh |
+| container | docker container logs | docker logs | docker logs [OPTIONS] CONTAINER |
 | compose | docker compose config | - | docker compose config |
 | compose | docker compose up | - | docker-compose up -d |
 | compose | docker compose down | - | docker compose down --rmi all |
