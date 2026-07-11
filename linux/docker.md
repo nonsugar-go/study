@@ -100,7 +100,7 @@ services:
 
 ```dockerfile
 FROM alpine:latest
-COPY syslog.log /etc/rsyslog/syslog.conf
+COPY syslog.log /etc/rsyslog.conf
 RUN apk add --no-cache rsyslog
 ENTRYPOINT ["rsyslogd", "-n"]
 ```
