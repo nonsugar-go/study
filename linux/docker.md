@@ -16,6 +16,8 @@ wsl --shutdown
 
 ## コマンド一覧
 
+- https://docs.docker.jp/engine/reference/commandline/
+
 | Type | Full | Short |
 |---|---|---|
 | image | docker image build | docker build |
@@ -43,11 +45,14 @@ docker rmi REPOSITORY
 docker image prune -a
 ```
 
-## nginx
+## docker file / compose
 
-### Dockerfile
+- https://docs.docker.jp/engine/reference/builder.html
+- https://docs.docker.jp/compose/toc.html
+ 
+### nginx
 
-```dockerfile
+```yaml
 services:
   nginx:
     image: nginx:latest
@@ -57,9 +62,7 @@ services:
       - ./index.html:/usr/share/nginx/html/index.html
 ```
 
-## rsyslog
-
-### docker-compose.yaml
+### rsyslog
 
 ```yaml
 services:
@@ -72,7 +75,7 @@ services:
       - ./syslog.log:/var/log/syslog.log
 ```
 
-### Dockerfile
+**Dockerfile**
 
 ```dockerfile
 FROM alpine:latest
@@ -81,7 +84,7 @@ COPY rsyslog.conf /etc/rsyslog.conf
 CMD ["rsyslogd", "-n"]
 ```
 
-## rsyslog.conf
+**rsyslog.conf**
 
 ```conf
 module(load="imudp")
@@ -89,7 +92,7 @@ input(type="imudp" port="514")
 *.* /var/log/syslog.log
 ```
 
-### syslog.log
+**syslog.log**
 
 ```bash
 touch syslog.log
