@@ -37,6 +37,12 @@ docker images
 docker rmi REPOSITORY
 ```
 
+## 未使用イメージをすべて削除
+
+```bash
+docker image prune -a
+```
+
 ## nginx
 
 ### Dockerfile
