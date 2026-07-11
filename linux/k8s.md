@@ -14,3 +14,19 @@
 - Playgrounds
   - [KodeKloud Playgrounds](https://kodekloud.com/k8s)
   
+## 概要
+
+- https://kubernetes.io/docs/reference/kubectl/#resource-types
+
+| Category | Type | Description |
+|---|---|---|
+| Workloads | Pod (po) | コンテナの集合 |
+| Workloads | ReplicaSet (rs) | Pod の集合 |
+| Workloads | Deployment (deploy) | ReplicaSetの集合。世代管理 |
+| Workloads | StatefulSet (sts) | Pod の集合。Pod をスケールする際の名前が一定。 |
+| Services | Service (svc) | 外部公開、名前解決、L4 ロードバランサー。 |
+| Services | Ingress (ing) | 外部公開、L7 ロードバランサー。 |
+| 設定 | ConfigMap (cm) | 設定情報 |
+| 設定 | Secret | 機密情報 |
+| ストレージ | PersistentVolume (pv) | 永続データの実態 |
+| ストレージ | PersistentVolumeClaim (pvc) | 永続データの要求 |
