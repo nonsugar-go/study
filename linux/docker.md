@@ -15,6 +15,7 @@ PS> wsl --shutdown
 
 - https://docs.docker.jp/engine/reference/commandline/
 
+
 | Type | Full | Short | Example |
 |---|---|---|---|
 | image | docker image build | docker build | docker build -t test . |
@@ -36,6 +37,61 @@ PS> wsl --shutdown
 ## docker run
 
 - https://docs.docker.jp/engine/reference/commandline/run.html
+
+```zsh
+docker pull nginx
+docker images
+docker history nginx
+docker run -p 80:80 --name nginx nginx  # -p (--publish)
+docker ps  # -a (--all) は停止中も含めて
+docker logs -f nginx  # -f (--follow)
+docker inspect nginx
+docker stop nginx
+docker rm nginx
+
+docker run -d -e hello=world -p 8080:80 --rm --name nginx nginx
+  # -d (--detach),  -e (--env), --rm (コンテナ終了時に削除)
+curl "[::1]:8080"
+docker exec -it nginx env
+docker exec -it nginx sh  # shell で接続 --interactive, --tty
+docker stop nginx
+ 
+mkdir html
+docker run -d --rm --name nginx nginx
+docker exec -it nginx find -name '*.html'
+docker cp nginx:/usr/share/nginx/html/index.html ./html/index.html
+vi ./html/index.html
+docker stop nginx
+docker run -d -v "$(pwd)/html":/usr/share/nginx/html -p 80:80 --rm --name nginx nginx  # -v (--volume)
+docker stop nginx
+
+docker run -d -p 80:80 --rm --name nginx nginx
+echo '<html><body><h1>Hello, World!</h1></body></html>' >index.html
+docker cp index.html nginx:/usr/share/nginx/html/
+docker exec -it nginx chown root:root /usr/share/nginx/html/index.html
+docker exec -it nginx chmod 644 /usr/share/nginx/html/index.html   
+docker commit nginx hello  # hello イメージの作成
+docker images
+docker stop nginx 
+docker run -d -p 80:80 --rm --name hello hello
+docker rmi hello # イメージ削除
+
+vi Dockerfile
+FROM nginx:latest
+WORKDIR /usr/share/nginx/html
+COPY index.html index.html
+RUN apt update && apt install -y curl
+
+docker build -t hello . # -t (--tag)
+docker run -d -p 80:80 --rm --name hello hello
+
+docker system prune  # 停止中コンテナと無名のイメージを削除
+docker rm -vf $(docker ps -aq)
+  # 起動中のコンテナ含め削除 -v (--volumes), -f (--force), -a (--all), -q (--quiet)
+docker rmi -f $(docker images -aq)
+  # -f (--force), -a (-all), -q (--quiet)
+docker system df  # ディスク使用率
+```
 
 ## docker compose
 
