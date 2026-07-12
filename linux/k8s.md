@@ -197,6 +197,58 @@ kubectl delete -f deployment.yaml
 
 - https://kubernetes.io/docs/reference/kubernetes-api/core/service-v1/
 
+### ClusterIP
+
+クラスタネットワーク内に IP アドレス公開。名前指定で Pod へ到達できるようにする。
+  
+### NodePort
+
+ClusterIP に加え、Node のポートにポートマッピングして受け付けられるようにする。
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app: web
+    env: dev
+spec:
+  containers:
+    - name: nginx
+      image: nginx:1.30.3-alpine3.23
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-svc
+spec:
+  type: NodePort
+  clusterIP: ""
+  selector:
+    app: web
+    env: dev
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30000
+```
+
+```zsh
+kubectl apply -f service.yaml
+minikube service web-svc
+kubectl delete -f service.yaml
+```
+
+### LoadBalancer
+
+NodePort に加え、クラウドプロバイダーのロードバランサーを利用してサービス公開する。
+
+### ExternalName
+
+外部サービスに接続
+
 ## Ingress
 
 - https://kubernetes.io/docs/reference/kubernetes-api/networking/ingress-v1/
