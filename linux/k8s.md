@@ -18,6 +18,8 @@
 
 - https://kubernetes.io/docs/reference/kubectl/#resource-types
 
+apiVersion は上記のレファレンスを参照するか、`kubectl api-resources|grep replicasets` のようにコマンドで確認する。
+
 | Category | kind | apiVersion | Description |
 |---|---|---|---|
 | Workloads | Pod (po) | v1 | コンテナの集合 |
