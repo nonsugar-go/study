@@ -74,6 +74,7 @@ docker commit nginx hello  # hello イメージの作成
 docker images
 docker stop nginx 
 docker run -d -p 80:80 --rm --name hello hello
+docker stop hello
 docker rmi hello # イメージ削除
 
 vi Dockerfile
