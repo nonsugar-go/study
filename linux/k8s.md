@@ -144,6 +144,49 @@ spec:
 
 - https://kubernetes.io/docs/reference/kubernetes-api/apps/deployment-v1/
 
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  annotations:
+    kubernetes.io/change-cause: "Update nginx 1.30.3"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: web
+      env: dev
+  revisionHistoryLimit: 14
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  template:
+    metadata:
+      name: nginx
+      labels:
+        app: web
+        env: dev
+    spec:
+      containers:
+        - name: nginx
+          # image: nginx:1.30-alpine3.23
+          image: nginx:1.30.3-alpine3.23
+```
+
+```zsh
+kubectl apply -f deployment.yaml
+kubectl rollout history deployment/nginx
+vi deployment.yaml
+kubectl apply -f deployment.yaml
+kubectl rollout history deployment/nginx
+kubectl rollout undo deployment/nginx
+kubectl rollout history deployment/nginx
+kubectl delete -f deployment.yaml
+```
+
 ## StatefulSet
 
 - https://kubernetes.io/docs/reference/kubernetes-api/apps/stateful-set-v1/
