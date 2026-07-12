@@ -33,20 +33,24 @@ PS> wsl --shutdown
 | compose | docker compose up | - | docker-compose up -d |
 | compose | docker compose down | - | docker compose down --rmi all |
 
+## docker run
+
+- https://docs.docker.jp/engine/reference/commandline/run.html
+
+## docker compose
+
+- https://docs.docker.jp/engine/reference/builder.html
+- https://docs.docker.jp/compose/toc.html
+
 ### コンテナの起動と停止
 
-```bash
+```zsh
 docker compose up -d
 
 docker compose down --rmi all
 docker images
 docker rmi IMAGE
 ```
-
-## docker compose
-
-- https://docs.docker.jp/engine/reference/builder.html
-- https://docs.docker.jp/compose/toc.html
  
 ### nginx
 
