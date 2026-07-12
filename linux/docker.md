@@ -75,16 +75,19 @@ docker images
 docker stop nginx 
 docker run -d -p 80:80 --rm --name hello hello
 docker stop hello
-docker rmi hello # イメージ削除
+docker rmi hello  # イメージ削除
 
 vi Dockerfile
 FROM nginx:latest
 WORKDIR /usr/share/nginx/html
 COPY index.html index.html
-RUN apt update && apt install -y curl
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends curl \
+    && rm -rf /var/lib/apt/lists/*
 
-docker build -t hello . # -t (--tag)
-docker run -d -p 80:80 --rm --name hello hello
+docker build -t hello:1.0.0 .  # -t (--tag)
+docker run -d -p 80:80 --rm --name hello hello:1.0.0
 
 docker system prune  # 停止中コンテナと無名のイメージを削除
 docker rm -vf $(docker ps -aq)
