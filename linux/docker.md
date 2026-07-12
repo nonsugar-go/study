@@ -18,6 +18,8 @@ PS> wsl --shutdown
 
 | Type | Full | Short | Example |
 |---|---|---|---|
+| system | docker system df | - | docker system df |
+| system | docker system prune | - | docker system prune |
 | image | docker image build | docker build | docker build -t test . |
 | image | docker image list | docker images | docker images |
 | image | docker image pull | docker pull | docker pull centos:7 |
