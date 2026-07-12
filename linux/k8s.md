@@ -307,6 +307,60 @@ kubectl delete -f configmap.yaml
 
 - https://kubernetes.io/docs/reference/kubernetes-api/core/secret-v1/
 
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: sample-secret
+data:
+  message: aGltaXRzdQ==
+  keyfile: ZGJ1c2VyOiBhZG1pbgpkYnBhc3N3ZDogYWRtaW5wYXNzCg==
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample
+spec:
+  containers:
+  - name: nignx
+    image: nginx:1.30.3-alpine3.23
+    env:
+    - name: MESSAGE
+      valueFrom:
+        secretKeyRef:
+          name: sample-secret
+          key: message
+    volumeMounts:
+    - name: secret-storage
+      mountPath: /home/nginx
+  volumes:
+  - name: secret-storage
+    secret:
+      secretName: sample-secret
+      items:
+      - key: keyfile
+        path: keyfile
+```
+
+コマンドで Secret を作成
+
+```zsh
+kubectl create secret generic sample-secret --from-literal=message='himitsu' --from-file=./keyfile
+kubectl get secret/sample-secret -o yaml
+```
+
+YAML で Secret を作成
+
+```zsh
+echo -n 'himitsu'|base64
+cat keyfile|base64
+vi secret.yaml
+kubectl apply -f secret.yaml
+kubectl exec pod/sample -it -- sh
+kubectl delete -f secret.yaml
+```
+
 ## PersistentVolume
 
 - https://kubernetes.io/docs/reference/kubernetes-api/core/persistent-volume-v1/
