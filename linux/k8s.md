@@ -117,6 +117,29 @@ kubectl delete -f pods.yaml
 
 - https://kubernetes.io/docs/reference/kubernetes-api/apps/replica-set-v1/
 
+```yaml
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: sample
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: web
+      env: dev
+  template:
+    metadata:
+      name: nginx
+      labels:
+        app: web
+        env: dev
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.30.3-alpine3.23
+```
+
 ## Deployment
 
 - https://kubernetes.io/docs/reference/kubernetes-api/apps/deployment-v1/
