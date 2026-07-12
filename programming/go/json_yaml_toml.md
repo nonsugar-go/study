@@ -5,6 +5,7 @@
 # YAML
 
 - https://pkg.go.dev/go.yaml.in/yaml/v4
+- https://yaml.org/spec/1.2.2/
 
 # TOML
 
