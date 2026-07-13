@@ -368,3 +368,43 @@ kubectl delete -f secret.yaml
 ## PersistentVolumeClaim
 
 - https://kubernetes.io/docs/reference/kubernetes-api/core/persistent-volume-claim-v1/
+
+```yaml
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: volume-01
+spec:
+  storageClassName: slow
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 10Mi
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /data/storage
+    type: Directory
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: volume-claim
+spec:
+  storageClassName: slow
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Mi
+```
+
+```zsh
+sudo mkdir -p /data/storage
+kubectl apply -f storage.yaml
+kubectl get pv
+kubectl get pvc
+kubectl delete -f storage.yaml
+kubectl get pvc
+kubectl get pv
+```
