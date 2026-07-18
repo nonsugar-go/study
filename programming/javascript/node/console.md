@@ -3,7 +3,7 @@
 - https://nodejs.org/docs/latest-v24.x/api/console.html
 
 ```javascript
-// console
+// # console
 // format: %s (文字列), %d (数値), %i (整数), %f (少数), %o (オブジェクト), %% (%)
 const number = -123.45;
 const lang = 'Node.js';
@@ -16,4 +16,8 @@ console.info('console.info: ' + fmt, lang, number, number, number, obj)
 console.warn('console.warn: ' + fmt, lang, number, number, number, obj)
 console.error('console.error: ' + fmt, lang, number, number, number, obj)
 
+console.table(Symbol());
+console.table(undefined);
+console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }]);
+console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }], ['b', 'a']);
 ```
