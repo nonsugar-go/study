@@ -116,6 +116,7 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 
 ## JavaScript
 
+- https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
 - [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
 - ESLint
 
@@ -141,7 +142,6 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 
 ## HTML
 
-- https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
 - CSS Peek
 - HTML Boilerplate
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
