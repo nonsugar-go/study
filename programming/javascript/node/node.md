@@ -45,7 +45,7 @@ npm init
 |--|--|--|--|--|
 | コピーレフト | ○ | ○ | ○ | GNU GPL v2 |
 | 準コピーレフト | ○ | ○ | × | MPL |
-| 非コピーレフト | ○ | × | × |  BSD License, MIT License, Apache License |
+| 非コピーレフト | ○ | × | × |  BSD License, ISC License, MIT License, Apache License |
 
 ## my-app
 
