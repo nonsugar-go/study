@@ -32,6 +32,21 @@ npm --version
 
 - https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
 
+## package.json
+
+```zsh
+npm init
+```
+### ライセンス
+
+- https://spdx.org/licenses/
+
+| 種別 |  ライセンス表示・複製・再配布・改変 | 改変部分のソースコード表示 | 他のコードと組み合わせた場合、他のコードの開示 | ライセンス例 |
+|--|--|--|--|--|
+| コピーレフト | ○ | ○ | ○ | GNU GPL v2 |
+| 準コピーレフト | ○ | ○ | × | MPL |
+| 非コピーレフト | ○ | × | × |  BSD License, MIT License, Apache License |
+
 ## my-app
 
 - https://github.com/npm/cli/issues/6971
