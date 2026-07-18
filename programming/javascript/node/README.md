@@ -1,5 +1,6 @@
 - [Node.js](node.md)
 - [Console](console.md)
 - [Process](process.md)
+- [Timers](timers.md)
 - [Class](class.md)
 - [gRPC](grpc.md)
