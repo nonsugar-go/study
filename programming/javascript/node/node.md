@@ -1,6 +1,7 @@
 # Node.js
 
 - https://nodejs.org/
+- https://github.com/nodejs/Release
 - https://www.tohoho-web.com/ex/nodejs.html
 
 # WSL2 に Node.js をインストールする
