@@ -6,6 +6,8 @@
 
 ## 公式ドキュメント
 
+- https://nodejs.org/docs/latest-v24.x/api/index.html
+
 | Stability | Description |
 |--|--|
 | Stability: 0 | 廃止機能 |
