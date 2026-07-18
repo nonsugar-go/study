@@ -2,5 +2,6 @@
 - [Console](console.md)
 - [Process](process.md)
 - [Timers](timers.md)
+- [File](file.md)
 - [Class](class.md)
 - [gRPC](grpc.md)
