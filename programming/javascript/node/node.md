@@ -28,10 +28,6 @@ node --version
 npm --version 
 ```
 
-## VSCode
-
-- https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
-
 ## package.json
 
 ```zsh
@@ -47,6 +43,7 @@ npm init
 | 弱コピーレフト (LGPL/MPL)           | あり | あり (改変ファイルのみ) | なし (ライブラリ使用・分離可能なら) |
 | 非コピーレフト (MIT/BSD/Apache/ISC) | あり | なし (自由)            | なし |
 
+<!-- TODO: ここから先は、再度確認 -->
 ## my-app
 
 - https://github.com/npm/cli/issues/6971
