@@ -1,5 +1,7 @@
 # Class
 
+- https://nodejs.org/docs/latest-v24.x/api/util.html#utilinheritsconstructor-superconstructor
+
 ```javascript
 // # クラスの実現方法
 // ## 1. class
