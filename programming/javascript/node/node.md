@@ -4,6 +4,14 @@
 - https://github.com/nodejs/Release
 - https://www.tohoho-web.com/ex/nodejs.html
 
+## 公式ドキュメント
+
+| Stability | Description |
+|--|--|
+| Stability: 0 | 廃止機能 |
+| Stability: 1 | 試験実装機能 |
+| Stability: 2 | 安定機能 |
+
 # WSL2 に Node.js をインストールする
 
 - https://learn.microsoft.com/ja-jp/windows/dev-environment/javascript/nodejs-on-wsl
