@@ -20,4 +20,14 @@ console.table(Symbol());
 console.table(undefined);
 console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }]);
 console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }], ['b', 'a']);
+
+// # タイマー
+let sum = 0;
+console.time('timer test'); // タイマー スタート
+for (let i = 1; i <= 1000; i++) {
+    if (i % 100 == 0)
+        console.timeLog('timer test', `sum: ${sum}`);
+    sum += i;
+}
+console.timeEnd('timer test'); // タイマー停止
 ```
