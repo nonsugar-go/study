@@ -2,7 +2,6 @@
 
 - https://nodejs.org/
 - https://github.com/nodejs/Release
-- https://www.npmjs.com/
 - https://www.tohoho-web.com/ex/nodejs.html
 
 ## 公式ドキュメント
@@ -29,11 +28,32 @@ node --version
 npm --version 
 ```
 
-## package.json
+## npm
+
+- https://www.npmjs.com/
 
 ```zsh
-npm init
+npm init  # package.json の作成
+
+npm install PKG  # 最新
+npm install PKG@VERSION
+npm install PKG --global  # グローバル インストール
+
+npm uninstall PKG
+
+npm update PKG
+
+npm ls -a
+
+## モジュールを公開・更新
+npm login
+npm publish --access public --dry-run
+npm publish --access public
+
+## モジュールを削除
+npm unpublish PKG --force
 ```
+
 ### ライセンス
 
 - https://spdx.org/licenses/
