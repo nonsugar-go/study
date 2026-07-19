@@ -1,5 +1,7 @@
 # Events
 
+- https://nodejs.org/docs/latest-v24.x/api/events.html#class-eventemitter
+
 ```
 const EventEmitter = require('events');
 const Child = class extends EventEmitter {
