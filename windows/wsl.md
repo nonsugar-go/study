@@ -559,6 +559,7 @@ VSCode を起動して、以下の拡張をインストールする。
 - [Black Formatter (microsoft.com)](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
 - [rust-analyzer (The Rust Programming Language)](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
 - [CodeLLDB (Vadim Chugunov)](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
+- [Extension Pack for Java (Microsoft)](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 - [YAML (Red Hat)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
   ```json
   "yaml.schemas": {
