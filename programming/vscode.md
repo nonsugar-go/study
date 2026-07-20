@@ -97,7 +97,7 @@ Visual Studio で VSCode のショートカット キーを使用するには、
 
 ## Java
 
-- https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
+- [Extension Pack for Java (Microsoft)](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 
 ## Python
 
