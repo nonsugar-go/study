@@ -1,6 +1,7 @@
 # Heap Exploitation
 
 - https://github.com/shellphish/how2heap
+- https://zenn.dev/anko/articles/ctf-heap-exploits
 
 ## ヒープチャンク
 
