@@ -48,6 +48,9 @@ pwndbg> vis
 
 ### House of Force
 
+- https://github.com/shellphish/how2heap/blob/master/glibc_2.27/house_of_force.c
+- https://hacktricks.wiki/ja/binary-exploitation/libc-heap/house-of-force.html
+
 - 前提条件（脆弱性の要件）
   - GLIBC versions < 2.29
   - Top Chunk のサイズ制御: ヒープの末尾にある Top Chunk のサイズ（size field）を、非常に大きな値（例: -1 や 0xffffffffffffffff）に書き換えられること。
