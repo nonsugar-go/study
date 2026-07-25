@@ -40,13 +40,13 @@ child.on('close', (code) => {
 
 // # child_process.fork(filename, [, args][, options]);
 // ## options:
-// | 繝励Ο繝代ユ繧｣ | 蝙・      | 隱ｬ譏・                     | 繝・ヵ繧ｩ繝ｫ繝・       |
+// | プロパティ | 型       | 説明                      | デフォルト        |
 // |-----------|----------|--------------------------|------------------|
-// | cwd       | string   | 蟄舌・繝ｭ繧ｻ繧ｹ縺ｮ cwd          | undefined        |
-// | env       | object   | 迺ｰ蠅・､画焚                  | process.env      |
-// | execPath  | string   | Node.js 縺ｮ螳溯｡後ヵ繧｡繧､繝ｫ繝代せ | process.execPath |
-// | execArgv  | string[] | Node.js 螳溯｡梧凾繧ｪ繝励す繝ｧ繝ｳ   | process.execArgv |
-// | stdio     | string   | 讓呎ｺ門・蜃ｺ蜉帙・謗･邯夊ｨｭ螳・(pipe|ignore|inherit) | 'inherit' |
+// | cwd       | string   | 子プロセスの cwd          | undefined        |
+// | env       | object   | 環境変数                  | process.env      |
+// | execPath  | string   | Node.js の実行ファイルパス | process.execPath |
+// | execArgv  | string[] | Node.js 実行時オプション   | process.execArgv |
+// | stdio     | string   | 標準入出力の接続設定 (pipe|ignore|inherit) | 'inherit' |
 
 // # child_process.ChildProcess
 // ## event
