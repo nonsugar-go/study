@@ -4,5 +4,6 @@
 - [Timers](timers.md)
 - [Events](events.md)
 - [File](file.md)
+- [Http](http.md)
 - [Class](class.md)
 - [gRPC](grpc.md)
