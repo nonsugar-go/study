@@ -1,5 +1,23 @@
 # Http
 
+# Url
+
+- https://nodejs.org/docs/latest-v24.x/api/url.html
+
+```javascript
+const { URL } = require('url');
+const url = new URL('https://www.example.com:2000/blogs/index.php?q=abc&lang=en#12');
+console.log('href:', url.href);
+console.log('protocol:', url.protocol);
+console.log('host:', url.host);
+console.log('hostname:', url.hostname);
+console.log('port:', url.port);
+console.log('search:', url.search);
+console.log('search:', url.hash);
+console.log('searchParams.has:', url.searchParams.has('q'))
+console.log('searchParams.get:', url.searchParams.get('lang'))
+```
+
 # http.Server
 
 - https://nodejs.org/docs/latest-v24.x/api/http.html#class-httpserver
