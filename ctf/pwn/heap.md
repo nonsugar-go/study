@@ -34,3 +34,20 @@ pwndbg> heap
 pwndbg> vis
 ```
 
+## Malloc Hooks 
+
+- __after_morecore_hook 
+- __free_hook 
+- __malloc_hook 
+- __malloc_initialize_hook 
+- __memalign_hook 
+- __realloc_hook 
+
+## 攻撃手法
+
+### House of Force
+
+- 前提条件（脆弱性の要件）
+  - GLIBC versions < 2.29
+  - Top Chunk のサイズ制御: ヒープの末尾にある Top Chunk のサイズ（size field）を、非常に大きな値（例: -1 や 0xffffffffffffffff）に書き換えられること。
+  - malloc() の呼び出し制御: 攻撃者が任意のサイズで malloc() を複数回呼び出せること。
