@@ -21,3 +21,16 @@
 |(prev_size)|(size)     |   |data_______|(size)____1|
 |<------0x10 byte------>|   |<------0x10 byte------>|
 ```
+
+## gdb
+
+```
+gdb -q ./a.out
+pwndbg> set context-sections code
+pwndbg> b main
+pwndbg> r
+pwndbg> vmmap
+pwndbg> heap
+pwndbg> vis
+```
+
