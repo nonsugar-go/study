@@ -146,12 +146,20 @@ one_gadget $(ldd <target program> | grep libc.so | cut -d’ ’ -f3)
 - https://github.com/shellphish/how2heap/blob/master/glibc_2.27/house_of_force.c
 - https://hacktricks.wiki/ja/binary-exploitation/libc-heap/house-of-force.html
 
-- 前提条件（脆弱性の要件）
+#### 前提条件
   - GLIBC versions < 2.29
   - Top Chunk のサイズ制御: ヒープの末尾にある Top Chunk のサイズ（size field）を、非常に大きな値（例: -1 や 0xffffffffffffffff）に書き換えられること。
   - malloc() の呼び出し制御: 攻撃者が任意のサイズで malloc() を複数回呼び出せること。
 
 ### Fastbin Dup
+
+- https://zenn.dev/anko/articles/ctf-heap-exploits#fastbins
+
+#### 前提条件
+
+- Fastbin のサイズカテゴリに属するチャンクであること
+- 二重解放（Double Free）の脆弱性、または不正な書き換えができる脆弱性があること
+- 近年の glibc（glibc 2.27以降など）における保護機構の回避
 
 ### Unsafe Unlink
 
