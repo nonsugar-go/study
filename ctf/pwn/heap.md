@@ -8,17 +8,17 @@
 ### Chunk layout 
 
 ```
- malloc ptr --> |________|size____|
- program ptr -> |userdata_________|
+ chunk ptr ---> |________|size____|
+ mem ptr -----> |userdata_________|
                 |userdata_________|
 ```
 
 ### Chunk layout (detail)
 
 - size == next->prev_size: >= 0x20, n * 0x10
-- P: PREV_INUSE
-- M: IS_MMAPPED
-- A: NON_MAIN_ARENA
+- P: PREV_INUSE ... prev chunk が利用中にセット。解法されても prev chunk が bins で管理されていない場合はセット。解法済みの chunk は連続して存在しないため、空きチャンクの PREV_INUSE は必ずセット。
+- M: IS_MMAPPED ... ヒープ領域でなく、mmap() によって確保された領域上にある場合にセット。
+- A: NON_MAIN_ARENA ... main_arena でない別のアリーナで管理されている場合にセット。
 
 ```
 |解放済(空き)            |   |確保済 (利用中)         |
