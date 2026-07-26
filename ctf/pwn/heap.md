@@ -105,7 +105,7 @@ pwndbg> top-chunk [arena address]
 pwndbg> malloc-chunk [chunk address]
 pwndbg> vis-heap-chunks [count] [heap address]
 pwndbg> tcache [tcache address]
-ppwndbg> mp
+pwndbg> mp
 pwndbg> arenas [arena address]
 pwndbg> bins [arena address] [tcache address] 
 pwndbg> fastbins [arena address]
