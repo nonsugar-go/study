@@ -11,6 +11,7 @@
  chunk ptr ---> |________|size____|
  mem ptr -----> |userdata_________|
                 |userdata_________|
+
                 |<-- 0x10 byte -->|
 ```
 
@@ -41,16 +42,16 @@
 ```
 |<----------- 0x10 byte ------------>|
 |0x4 byte|0x4 byte||0x4 byte|0x4 byte|
-
-|mutex___|flags___||havefastchunks|__|
-|0x20(fastbinY[0])||0x30(fastbinY[1])|
-|0x40(fastbinY[2])||0x50(fastbinY[3])|
-|0x60(fastbinY[4])||0x70(fastbinY[5])|
-|0x80(fastbinY[6])||0x90(fastbinY[7])|
-|0xa0(fastbinY[8])||0xb0(fastbinY[9])|
-|top______________||last_remainder___|
-|unsortedbin fd___||unsorredbin bk___|
-|0x20 fd__________||0x20 bk__________|
+                                           |<-- 0x8 byte --->|     |<-- 0x8 byte --->|
+|mutex___|flags___||havefastchunks|__|       
+|0x20(fastbinY[0])||0x30(fastbinY[1])| --> |prev_size________|
+|0x40(fastbinY[2])||0x50(fastbinY[3])|     |size (=0x30)__AMP|
+|0x60(fastbinY[4])||0x70(fastbinY[5])|     |fd_______________| --> |prev_size________|
+|0x80(fastbinY[6])||0x90(fastbinY[7])|     |~~~~~~~~~~~~~~~~~|     |size_(=0x30)__AMP|
+|0xa0(fastbinY[8])||0xb0(fastbinY[9])|                             |fd (=NULL)_______|
+|top______________||last_remainder___|                             |~~~~~~~~~~~~~~~~~|
+|unsortedbin fd___||unsorredbin bk___|     fastbin で管理されるチャンクの next chunk の
+|0x20 fd__________||0x20 bk__________|     PREV_INUSE は**セットされたまま**
 |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
 |0x80000 fd_______||0x80000 bk_______|
 |________|________||________|________|
