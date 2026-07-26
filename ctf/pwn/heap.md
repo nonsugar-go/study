@@ -145,6 +145,7 @@ pwndbg> smallbins [arena address]
 pwndbg> largebins [arena address]
 pwndbg> unsortedbin [arena address]
 pwndbg> tcachebins [tcache address]
+pwndbg> find-fake-fast &__malloc_hook
 ```
 
 ### pwntools
