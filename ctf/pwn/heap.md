@@ -5,7 +5,7 @@
 
 ## ヒープチャンク
 
-- size == next->prev_size
+- size == next->prev_size: >= 0x20, n * 0x10
 - P: PREV_INUSE
 - M: IS_MMAPPED
 - A: NON_MAIN_ARENA
@@ -25,6 +25,10 @@
 
 ## gdb
 
+```c
+void* a = malloc(1);
+```
+
 ```
 gdb -q ./a.out
 pwndbg> set context-sections code
@@ -33,6 +37,8 @@ pwndbg> r
 pwndbg> vmmap
 pwndbg> heap
 pwndbg> vis
+pwndbg> top-chunk
+pwndbg> dq &a-16
 ```
 
 ## Malloc Hooks 
