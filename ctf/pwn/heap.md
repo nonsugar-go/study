@@ -103,14 +103,24 @@ pwndbg> arenas
   arena type    arena address    heap address    map start    map end    perm    size    offset    file
 ------------  ---------------  --------------  -----------  ---------  ------  ------  --------  ------
   main_arena   0x7ffff7dd0b60        0x602000     0x602000   0x623000    rw-p   21000         0  [heap]
-pwndbg> dq &main_arena
+pwndbg> dq &main_arena 20
 00007ffff7dd0b60     0000000000000000 0000000000000001
 00007ffff7dd0b70     0000000000602020 0000000000000000
 00007ffff7dd0b80     0000000000000000 0000000000000000
 00007ffff7dd0b90     0000000000000000 0000000000000000
-pwndbg> fastbins
+00007ffff7dd0ba0     0000000000000000 0000000000000000
+00007ffff7dd0bb0     0000000000000000 0000000000000000
+00007ffff7dd0bc0     0000000000602060 0000000000000000
+00007ffff7dd0bd0     00007ffff7dd0bc0 00007ffff7dd0bc0
+00007ffff7dd0be0     00007ffff7dd0bd0 00007ffff7dd0bd0
+00007ffff7dd0bf0     00007ffff7dd0be0 00007ffff7dd0be0
+ppwndbg> fastbins
 fastbins
 0x20: 0x602020 —▸ 0x602000 ◂— 0
+pwndbg> top-chunk
+Top chunk | PREV_INUSE
+Addr: 0x602060
+Size: 0x20fa0 (with flag bits: 0x20fa1)
 ```
 
 ```
@@ -119,7 +129,7 @@ pwndbg> set context-sections code
 pwndbg> b main
 pwndbg> r
 pwndbg> dq a-16
-pwndbg> dq &main_arena
+pwndbg> dq &main_arena 20
 pwndbg> vmmap
 pwndbg> vis
 pwndbg> heap [heap address]
