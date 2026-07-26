@@ -37,8 +37,6 @@
 ### Arena Layout
 
 ```
-|<------------0x10 byte ------------>|
-|________|________||________|________|
 |mutex___|flags___||havefastchunks|__|
 |0x20_____________||0x30_____________|
 |0x40_____________||0x50_____________|
@@ -55,6 +53,7 @@
 |next_____________|next_free_________|
 |attached_threads_|system_mem________|
 |max_system_mem___|__________________|
+|<----------- 0x10 byte ------------>|
 ```
 
 ## GLIBC functions
@@ -106,7 +105,7 @@ pwndbg> top-chunk [arena address]
 pwndbg> malloc-chunk [chunk address]
 pwndbg> vis-heap-chunks [count] [heap address]
 pwndbg> tcache [tcache address]
-pwndbg> mp
+pwndbg> mp  # mp_ struct's contents
 pwndbg> arenas [arena address]
 pwndbg> bins [arena address] [tcache address] 
 pwndbg> fastbins [arena address]
