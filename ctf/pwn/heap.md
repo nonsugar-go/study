@@ -124,6 +124,27 @@ Size: 0x20fa0 (with flag bits: 0x20fa1)
 ```
 
 ```
+pwndbg> find-fake-fast &__malloc_hook
+Searching for fastbin size fields up to 0x80, starting at 0x7ffff7dd0ad8 resulting in an overlap of 0x7ffff7dd0b50
+FAKE CHUNKS
+Fake chunk | PREV_INUSE | IS_MMAPED | NON_MAIN_ARENA
+Addr: 0x7ffff7dd0b2d
+prev_size: 0xfff7dccee0000000
+size: 0x78 (with flag bits: 0x7f)
+fd: 0xfff7a9fa10000000
+bk: 0xfff7a9fed000007f
+fd_nextsize: 0x7f
+bk_nextsize: 0x00
+pwndbg> p/x (void*)&__malloc_hook - 0x7ffff7dd0b2d
+$13 = 0x23
+pwndbg> dq (void*)&__malloc_hook-0x23
+00007ffff7dd0b2d     fff7dccee0000000 000000000000007f
+00007ffff7dd0b3d     fff7a9fa10000000 fff7a9fed000007f
+00007ffff7dd0b4d     000000000000007f 0000000000000000
+00007ffff7dd0b5d     0000000000000000 0000000001000000
+```
+
+```
 gdb -q ./a.out
 pwndbg> set context-sections code
 pwndbg> b main
