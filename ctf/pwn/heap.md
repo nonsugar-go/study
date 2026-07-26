@@ -15,7 +15,7 @@
 
 ### Chunk layout (detail)
 
-- size == next->prev_size: >= 0x20, n * 0x10
+- size == next->prev_size: >= 0x20, 16 (0x10) バイト アラインメント
 - P: PREV_INUSE ... prev chunk が利用中にセット。解法されても prev chunk が bins で管理されていない場合はセット。解法済みの chunk は連続して存在しないため、空きチャンクの PREV_INUSE は必ずセット。
 - M: IS_MMAPPED ... ヒープ領域でなく、mmap() によって確保された領域上にある場合にセット。
 - A: NON_MAIN_ARENA ... main_arena でない別のアリーナで管理されている場合にセット。
@@ -84,7 +84,7 @@ memset(a, 'a', 0x1);
 ```
 
 ```
-pwndbg> vis```
+pwndbg> vis
  (snip)
 0x555555559290  0x0000000000000000      0x0000000000000021      ........!.......
 0x5555555592a0  0x0000000000000061      0x0000000000000000      a...............
