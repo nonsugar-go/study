@@ -101,9 +101,9 @@ pwndbg> dq a-16
 pwndbg> vmmap
 pwndbg> vis
 pwndbg> heap [heap address]
-pwndbg> top_chunk [arena address]
-pwndbg> malloc_chunk [chunk address]
-pwndbg> vis_heap_chunks [count] [heap address]
+pwndbg> top-chunk [arena address]
+pwndbg> malloc-chunk [chunk address]
+pwndbg> vis-heap-chunks [count] [heap address]
 pwndbg> tcache [tcache address]
 ppwndbg> mp
 pwndbg> arenas [arena address]
