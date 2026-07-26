@@ -48,7 +48,7 @@ pwndbg> vmmap
 pwndbg> heap
 pwndbg> vis
 pwndbg> top-chunk
-pwndbg> dq &a-16
+pwndbg> dq a-16
 ```
 
 ## Malloc Hooks 
