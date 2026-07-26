@@ -79,12 +79,12 @@
 
 ### malloc hooks 
 
-- __after_morecore_hook 
-- __free_hook 
-- __malloc_hook 
-- __malloc_initialize_hook 
-- __memalign_hook 
-- __realloc_hook 
+- void *(*volatile __malloc_hook)(size_t size, const void *caller);
+- void *(*volatile __realloc_hook)(void *ptr, size_t size, const void *caller);
+- void *(*volatile __memalign_hook)(size_t alignment, size_t size, const void *caller);
+- void (*volatile __free_hook)(void *ptr, const void *caller);
+- void (*__malloc_initialize_hook)(void);
+- void (*volatile __after_morecore_hook)(void);
 
 ## tools
 
