@@ -8,7 +8,7 @@
 ### Chunk layout 
 
 ```
- chunk ptr ---> |________|size____|
+ chunk ptr ---> |........|size____|
  mem ptr -----> |userdata_________|
                 |userdata_________|
 
