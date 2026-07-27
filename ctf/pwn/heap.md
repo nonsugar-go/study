@@ -3,11 +3,14 @@
 - https://github.com/shellphish/how2heap
 - https://zenn.dev/anko/articles/ctf-heap-exploits
 - https://qiita.com/kaityo256/items/9e78b507940b2292bf79
+- https://www.slideshare.net/slideshow/glibc-malloc/8555290
 - https://www.youtube.com/watch?v=0-vWT-t0UHg
 
 ## Layout
 
 ### Chunk layout
+
+- https://codebrowser.dev/glibc/glibc/malloc/malloc.c.html#malloc_chunk
 
 ```
 *********** 解放済(空き) *************              ********** 確保済(利用中) ************
