@@ -68,6 +68,35 @@
 - binmap: チャンクがつながっている bins のインデックスに対応するフラグが立つマップ
 - system_mem: システムから確保したメモリプールの総量
 
+### Tcache (thread cache) Layout
+
+```
+|<----------- 0x10 byte ------------>|
+                                           (凡例)
+|c[0]|c[1|c[2]|c[3||c[4]|c[5|c[6]|c[7|     c[0] ... counts[0]
+|c[8]|c[9|c[10|c11||c[12|c13|c[14|c15|     c[1] ... counts[1]
+|c[16|c17|c[18|c19||c[20|c21|c[22|c23|     c[n] ... counts[n]
+|c[24|c25|c[26|c27||c[28|c29|c[30|c31|
+|c[32|c33|c[34|c35||c[36|c37|c[38|c39|     |<-- 0x8 byte --->|     |<-- 0x8 byte --->|
+|c[40|c41|c[42|c43||c[44|c45|c[46|c47|
+|c[48|c49|c[50|c51||c[52|c53|c[54|c55|     |prev_size________|     |prev_size________| 
+|c[56|c57|c[58|c59||c[60|c61|c[62|c63|     |size (=0x30)__AMP|     |size (=0x30)__AMP|
+|0x20 (entries[0])||0x30 (entries[1])| --> |next_____________| --> |next (=NULL)_____|
+|0x40 (entries[2])||0x50 (entries[3])|     |key______________|     |key______________|
+|0x60 (entries[4])||0x70 (entries[5])|     |~~~~~~~~~~~~~~~~~|     |~~~~~~~~~~~~~~~~~|     
+|0x80 (entries[6])||0x90 (entries[7])|
+|0xa0 (entries[8])||0xb0 (entries[9])|     tcache では bins と違いチャンクの先頭から x010
+|0xc0(entries[10])||0xd0(entries[11])|     オフセットした位置を指してるので注意
+|0xe0(entries[11])||0xf0(entries[12])|
+|0x100(entries[13]||0x110(entries[14]|     tcache で管理されるチャンクの next chunk の
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|     PREV_INUSE はセットされたまま
+|0x330(entries[60]||0x3f0(entries[61]|
+|0x400(entries[62]||0x410(entries[63]|
+```
+
+- GLIBC versions >= 2.26
+- TCACHE_MAX_BINS = 64 と定義されているので、counts および entries は共に 64 個の要素を持つ配列
+
 ## GLIBC functions
 
 ### malloc functions
