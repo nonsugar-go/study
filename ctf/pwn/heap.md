@@ -2,6 +2,8 @@
 
 - https://github.com/shellphish/how2heap
 - https://zenn.dev/anko/articles/ctf-heap-exploits
+- https://qiita.com/kaityo256/items/9e78b507940b2292bf79
+- https://www.youtube.com/watch?v=0-vWT-t0UHg
 
 ## Layout
 
