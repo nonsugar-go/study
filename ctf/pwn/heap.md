@@ -233,6 +233,7 @@ one_gadget $(ldd <target program> | grep libc.so | cut -d’ ’ -f3)
 
 - https://github.com/shellphish/how2heap/blob/master/glibc_2.27/house_of_force.c
 - https://hacktricks.wiki/ja/binary-exploitation/libc-heap/house-of-force.html
+- https://kyuri.hatenablog.jp/entry/2017/03/31/194025
 
 #### 前提条件
   - GLIBC versions < 2.29
