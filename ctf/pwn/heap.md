@@ -241,9 +241,11 @@ one_gadget $(ldd <target program> | grep libc.so | cut -d’ ’ -f3)
 - https://kyuri.hatenablog.jp/entry/2017/03/31/194025
 
 #### 前提条件
-  - GLIBC versions < 2.29
-  - Top Chunk のサイズ制御: ヒープの末尾にある Top Chunk のサイズ（size field）を、非常に大きな値（例: -1 や 0xffffffffffffffff）に書き換えられること。
-  - malloc() の呼び出し制御: 攻撃者が任意のサイズで malloc() を複数回呼び出せること。
+
+- top chunk のサイズフィールドを大きな値で上書きし、その後、top chunk とターゲット間のギャップを埋めるのに十分なメモリを要求します。このようにして行われた割り当ては仮想アドレス（VA）空間を wrap around させることができ、この手法により、ヒープよりも低いアドレスにあるメモリを標的にすることが可能になる。
+- GLIBC versions < 2.29
+- Top Chunk のサイズ制御: ヒープの末尾にある Top Chunk のサイズ（size field）を、非常に大きな値（例: -1 や 0xffffffffffffffff）に書き換えられること。
+- malloc() の呼び出し制御: 攻撃者が任意のサイズで malloc() を複数回呼び出せること。
 
 ### Fastbin Dup
 
