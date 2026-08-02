@@ -190,6 +190,10 @@ pwndbg> b main
 pwndbg> r
 pwndbg> dq a-16
 pwndbg> dq main_arena 20
+pwndbg> dq &__malloc_hook
+pwndbg> u __malloc_hook
+pwndbg> f 4
+pwndbg> context code
 pwndbg> vmmap
 pwndbg> vis
 pwndbg> heap [heap address]
