@@ -189,7 +189,7 @@ pwndbg> set context-sections code
 pwndbg> b main
 pwndbg> r
 pwndbg> dq a-16
-pwndbg> dq &main_arena 20
+pwndbg> dq main_arena 20
 pwndbg> vmmap
 pwndbg> vis
 pwndbg> heap [heap address]
