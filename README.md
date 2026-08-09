@@ -19,6 +19,7 @@
   - [Go](programming/go)
   - [Rust](programming/rust)
 - [Tools](tools)
+  - [Vim](vim)
   - [Zabbix](tools/zabbix)
 - [Windows](windows)
   - [wsl](windows/wsl.md)
