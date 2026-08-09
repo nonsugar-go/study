@@ -130,3 +130,24 @@ $ sudo systemctl enable zabbix-server zabbix-agent2 nginx php8.3-fpm
 - https://www.zabbix.com/documentation/current/jp/manual/installation/frontend
 
 - http://<zb1>:8080/
+
+- Welcome (ようこそ)
+  - Default language: **Japanese (ja_JP)**
+- 前提条件のチェック: [次のステップ]
+- データベース接続設定
+  - データベースのタイプ: MySQL
+  - データベースのホスト: localhost
+  - データベースポート: 0
+  - データベース名: zabbix
+  - 資格情報保存先: プレーンテキスト
+    - ユーザー: zabbix
+    - パスワード: password
+- 設定
+  - Zabbix サーバー名: (blank)
+  - デフォルトのタイムゾーン: **(UTC+09:00) Asia/Tokyo**
+  - デフォルトのテーマ: Blue
+  - Web インターフェースからの接続を暗号化する: [ ]
+- 設定パラメータの確認: [次のステップ]
+- インストール: [完了]
+
+- ユーザー名: Admin / パスワード: zabbix でログインする
