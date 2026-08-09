@@ -13,11 +13,15 @@
 - Database: MySQL
 - Web server: Nginx
 
-### Ubuntu 24.04 LTS
+### Intall Ubuntu 24.04 LTS
 
-# Install
+#### Create Virtual Machine
 
-## Install Ubuntu 24.04 LTS
+- CPU: 2 Core
+- Memory: 2 GB
+- HDD: 16 GB (Thin)
+
+#### Install Ubuntu 24.04 LTS
 
 - GNU GRUB: Try or Install Ubuntu Server
 - Select your language: English
@@ -63,4 +67,3 @@
 $ tmux
 $ sudo apt update && sudo apt upgrade -y
 ```
-
