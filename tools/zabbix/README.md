@@ -150,4 +150,8 @@ $ sudo systemctl enable zabbix-server zabbix-agent2 nginx php8.3-fpm
 - 設定パラメータの確認: [次のステップ]
 - インストール: [完了]
 
+#### ログイン
+
+- https://www.zabbix.com/documentation/current/jp/manual/quickstart/login
+
 - ユーザー名: Admin / パスワード: zabbix でログインする
