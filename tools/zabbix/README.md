@@ -6,7 +6,7 @@
 
 ### 環境
 
-- https://www.zabbix.com/download?zabbix=7.4&os_distribution=ubuntu&os_version=24.04&components=server_frontend_agent_2&db=mysql&ws=apache
+- https://www.zabbix.com/download?zabbix=7.4&os_distribution=ubuntu&os_version=24.04&components=server_frontend_agent_2&db=mysql&ws=nginx
 - Zabbix: 7.4
 - OS: Ubuntu 24.04 Noble (amd64)
 - Zabbix component: Server, Frontend, Agent 2
@@ -66,4 +66,11 @@
 ```
 $ tmux
 $ sudo apt update && sudo apt upgrade -y
+$ sudo hostnamectl hostname zb1.example.test
+$ sudo cp -p /etc/hosts{,.orig}
+
+$ sudo vi /etc/hosts
+127.0.0.1 localhost
+127.0.1.1 zb1.example.test zb1
+ (snip)
 ```
