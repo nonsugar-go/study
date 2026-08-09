@@ -119,4 +119,6 @@ $ sudo systemctl enable zabbix-server zabbix-agent2 nginx php8.3-fpm
 
 #### Zabbix UI web page
 
+- https://www.zabbix.com/documentation/current/jp/manual/installation/frontend
+
 - http://<zb1>:8080/
