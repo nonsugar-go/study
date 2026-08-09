@@ -4,6 +4,7 @@
 - [tmux](tmux)
 - [Vim](vim)
 - [Docker](docker)
+- [Zabbix](zabbix)
 - [UML](uml.md)
 - [Links](links.md)
 
