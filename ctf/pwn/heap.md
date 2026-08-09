@@ -191,6 +191,7 @@ pwndbg> r
 pwndbg> dq a-16
 pwndbg> dq main_arena 20
 pwndbg> dq &__malloc_hook
+pwndbg> dq mp_.sbrk_base 38
 pwndbg> u __malloc_hook
 pwndbg> f 4
 pwndbg> context code
