@@ -74,3 +74,49 @@ $ sudo vi /etc/hosts
 127.0.1.1 zb1.example.test zb1
  (snip)
 ```
+
+```bash
+$ sudo wget https://repo.zabbix.com/zabbix/7.4/release/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.4+ubuntu24.04_all.deb
+$ sudo dpkg -i zabbix-release_latest_7.4+ubuntu24.04_all.deb
+$ sudo apt update
+$ sudo apt install zabbix-server-mysql zabbix-frontend-php zabbix-nginx-conf zabbix-sql-scripts zabbix-agent2
+$ sudo apt install mysql-server nginx
+$ sudo systemctl enable --now mysql
+$ sudo systemctl enable --now nginx
+
+$ sudo mysql -uroot
+mysql> create database zabbix character set utf8mb4 collate utf8mb4_bin;
+mysql> create user zabbix@localhost identified by 'password';
+mysql> grant all privileges on zabbix.* to zabbix@localhost;
+mysql> set global log_bin_trust_function_creators = 1;
+mysql> quit;
+
+$ zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | sudo mysql --default-character-set=utf8mb4 -uzabbix -ppassword zabbix
+
+$ sudo mysql -uroot
+mysql> set global log_bin_trust_function_creators = 0;
+mysql> quit;
+
+$ sudo cp -a /etc/zabbix{,.orig}
+$ sudo cp -p /etc/zabbix/zabbix_server.conf{,.orig}
+
+$ sudo vi /etc/zabbix/zabbix_server.conf
+ (snip)
+DBPassword=password
+ (snip)
+
+$ sudo cp -p /etc/zabbix/nginx.conf{,.orig}
+
+$ sudo vi /etc/zabbix/nginx.conf
+ (snip)
+        listen          8080;
+        server_name     zb1.example.test;
+ (snip)
+
+$ sudo systemctl restart zabbix-server zabbix-agent2 nginx php8.3-fpm
+$ sudo systemctl enable zabbix-server zabbix-agent2 nginx php8.3-fpm
+```
+
+#### Zabbix UI web page
+
+- http://<zb1>:8080/
