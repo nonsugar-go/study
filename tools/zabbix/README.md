@@ -114,6 +114,13 @@ $ sudo vi /etc/zabbix/nginx.conf
         server_name     zb1.example.test;
  (snip)
 
+$ sudo cp -p /etc/locale.gen{,.orig}
+
+$ sudo vi /etc/locale.gen
+ (snip)
+ja_JP.UTF-8 UTF-8
+ (snip)
+
 $ sudo systemctl restart zabbix-server zabbix-agent2 nginx php8.3-fpm
 $ sudo systemctl enable zabbix-server zabbix-agent2 nginx php8.3-fpm
 ```
