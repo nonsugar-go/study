@@ -264,6 +264,10 @@ one_gadget $(ldd <target program> | grep libc.so | cut -d’ ’ -f3)
 
 ### Unsafe Unlink
 
+#### 前提条件
+
+- GLIBC versions <= 2.3.3
+
 ```
 +->[................][size____________]
 |  [__free_hook-0x18][shellcode addr__]
