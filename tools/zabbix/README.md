@@ -3,6 +3,7 @@
 ## Install
 
 - https://www.zabbix.com/documentation/current/jp/manual/installation
+- https://www.zabbix.com/documentation/current/jp/manual/appendix/install/locales
 
 ### 環境
 
