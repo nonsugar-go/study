@@ -39,25 +39,25 @@
 ### Arena Layout
 
 ```
-|<----------- 0x10 byte ------------>|
-|0x4 byte|0x4 byte||0x4 byte|0x4 byte|
-                                           |<-- 0x8 byte --->|     |<-- 0x8 byte --->|
-|mutex___|flags___||havefastchunks|__|       
-|0x20(fastbinY[0])||0x30(fastbinY[1])| --> |prev_size________|
-|0x40(fastbinY[2])||0x50(fastbinY[3])|     |size (=0x30)__AMP|
-|0x60(fastbinY[4])||0x70(fastbinY[5])|     |fd_______________| --> |prev_size________|
-|0x80(fastbinY[6])||0x90(fastbinY[7])|     |~~~~~~~~~~~~~~~~~|     |size (=0x30)__AMP|
-|0xa0(fastbinY[8])||0xb0(fastbinY[9])|                             |fd (=NULL)_______|
-|top______________||last_remainder___|                             |~~~~~~~~~~~~~~~~~|
-|unsortedbin fd___||unsorredbin bk___|     fastbin で管理されるチャンクの next chunk の
-|0x20 fd__________||0x20 bk__________|     PREV_INUSE はセットされたまま
-|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
-|0x80000 fd_______||0x80000 bk_______|
-|________|________||________|________|
-|binmap[0|binmap[1||binmap[2|binmap[3|
-|next_____________|next_free_________|
-|attached_threads_|system_mem________|
-|max_system_mem___|__________________|
+   |<----------- 0x10 byte ------------>|
+   |0x4 byte|0x4 byte||0x4 byte|0x4 byte|
+                                              |<-- 0x8 byte --->|     |<-- 0x8 byte --->|
+00 |mutex___|flags___||havefastchunks|__|       
+10 |0x20(fastbinY[0])||0x30(fastbinY[1])| --> |prev_size________|
+20 |0x40(fastbinY[2])||0x50(fastbinY[3])|     |size (=0x30)__AMP|
+30 |0x60(fastbinY[4])||0x70(fastbinY[5])|     |fd_______________| --> |prev_size________|
+40 |0x80(fastbinY[6])||0x90(fastbinY[7])|     |~~~~~~~~~~~~~~~~~|     |size (=0x30)__AMP|
+50 |0xa0(fastbinY[8])||0xb0(fastbinY[9])|                             |fd (=NULL)_______|
+60 |top______________||last_remainder___|                             |~~~~~~~~~~~~~~~~~|
+70 |unsortedbin fd___||unsorredbin bk___|     fastbin で管理されるチャンクの next chunk の
+80 |0x20 fd__________||0x20 bk__________|     PREV_INUSE はセットされたまま
+   |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+   |0x80000 fd_______||0x80000 bk_______|
+   |________|________||________|________|
+   |binmap[0|binmap[1||binmap[2|binmap[3|
+   |next_____________|next_free_________|
+   |attached_threads_|system_mem________|
+   |max_system_mem___|__________________|
 ```
 
 - fastbinsY: fastbin をサイズ別に管理する単方向の線形リストの配列
