@@ -1,6 +1,7 @@
 # Heap Exploitation
 
 - https://github.com/shellphish/how2heap
+- https://azeria-labs.com/heap-exploitation-part-1-understanding-the-glibc-heap-implementation/
 - https://zenn.dev/anko/articles/ctf-heap-exploits
 - https://qiita.com/kaityo256/items/9e78b507940b2292bf79
 - https://inaz2.hatenablog.com/entry/2016/10/13/203019
