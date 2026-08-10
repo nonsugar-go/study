@@ -297,6 +297,17 @@ one_gadget $(ldd <target program> | grep libc.so | cut -d’ ’ -f3)
 
 ### House of Orange
 
+#### 攻撃の主なステップ
+
+House of Orange の大まかな流れは以下の3つの段階に分かれます。
+
+1. malloc_consolidation を誘発する (Top Chunk の拡張と破棄)
+   ヒープの最末端にある領域は Top Chunk と呼ばれ、メモリ要求に応じるための「余剰スペース」として管理されています。攻撃者は、あらかじめ確保されたヒープサイズを超えるような巨大なメモリを malloc() で要求します。要求されたサイズを満たすため、現在の Top Chunk は小さすぎて使えないと判断され、既存の Top Chunk は自動的に解放され、Unsorted Bin へ送られます。この際、古い Top Chunk のサイズ情報（Size）を意図的に小さく書き換えておくことで、内部処理の整合性を狂わせ、glibc に構造体の破損を検知させます。
+2. Unsorted Bin Attack による書き換え
+   Top Chunk が Unsorted Bin に繋がれる際の一連の処理を利用し、任意のメモリ領域（通常は glibc 内の `_io_list_all` など）に特定のポインタを書き込みます。これにより、ファイルストリームの管理リストを乗っ取る足がかりを作ります。
+3. FSOP (File Stream Oriented Programming) による実行フローの乗っ取り
+   現代の glibc では、ヒープ上の関数ポインタを単純に書き換えるだけでは `_dl_runtime_resolve` などの保護機構（Safe Linking や各種チェック）に阻まれます。そこで House of Orange では、C標準入出力で使用される FILE 構造体（`_IO_FILE_plus`）を利用する FSOP というテクニックに持ち込みます。`_io_list_all` が指すリストの先頭を書き換えることで、プログラム終了時やエラー出力時（abort() 時など）に glibc が自動的に走査するファイルストリームの仮想関数テーブル（vtable）を偽装します。偽装した仮想関数テーブル内の vtable->overflow などの関数ポインタを、攻撃者が実行したいコード（One Gadget など）に書き換えることで、最終的に任意のシェルを奪取します。
+
 ### House of Spirit
 
 ### House of Lore
