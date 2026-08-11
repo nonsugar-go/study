@@ -11,6 +11,7 @@
 
 ## Writeup
 
+- https://hack.nikkei.com/blog/seccon_beginners_2026_writeup/
 - https://koufu193.hatenablog.com/entry/2026/06/16/153826
 - https://qiita.com/NOTSY/items/f63cb3c66a4c38ca6440
 - https://security-blog-it.com/46836/
