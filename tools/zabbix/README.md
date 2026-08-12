@@ -155,3 +155,7 @@ $ sudo systemctl enable zabbix-server zabbix-agent2 nginx php8.3-fpm
 - https://www.zabbix.com/documentation/current/jp/manual/quickstart/login
 
 - ユーザー名: Admin / パスワード: zabbix でログインする
+
+## Quick Start
+
+- [Quick Start](quick_start.md)
