@@ -81,9 +81,11 @@ $ sudo wget https://repo.zabbix.com/zabbix/7.4/release/ubuntu/pool/main/z/zabbix
 $ sudo dpkg -i zabbix-release_latest_7.4+ubuntu24.04_all.deb
 $ sudo apt update
 $ sudo apt install zabbix-server-mysql zabbix-frontend-php zabbix-nginx-conf zabbix-sql-scripts zabbix-agent2
-$ sudo apt install mysql-server nginx
+$ sudo apt install mysql-server nginx fonts-noto-cjk
 $ sudo systemctl enable --now mysql
 $ sudo systemctl enable --now nginx
+$ sudo rm /etc/alternatives/zabbix-frontend-font
+$ sudo ln -s /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc /etc/alternatives/zabbix-frontend-font
 
 $ sudo mysql -uroot
 mysql> create database zabbix character set utf8mb4 collate utf8mb4_bin;
