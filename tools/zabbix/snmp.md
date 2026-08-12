@@ -22,5 +22,11 @@ graph TD
     
     Server --> Item1
     Server --> Item2
+```
 
-    ```
+## SNMP トラップ形式
+
+```
+[timestamp] [the trap, part 1] ZBXTRAP [address] [the trap, part 2]
+```
+
