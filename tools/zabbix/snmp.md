@@ -7,7 +7,7 @@ graph TD
     %% ノードの定義
     Device["ネットワーク機器等\n[device]"]
     Trapd["snmptrapd\n(受信デーモン)"]
-    Receiver["zabbix_trap_receiver.py\n(Python/Perlスクリプト)"]
+    Receiver["zabbix_trap_receiver.pl\n(Perlスクリプト)"]
     Log["snmptrap.log\n(ログファイル)"]
     Server["Zabbix Server\n(SNMPTrapperプロセス)"]
     
@@ -23,7 +23,4 @@ graph TD
     Server --> Item1
     Server --> Item2
 
-    %% スタイリング（見やすさのため）
-    style Log fill:#f9f,stroke:#333,stroke-width:2px
-    style Server fill:#bbf,stroke:#333,stroke-width:2px
     ```
