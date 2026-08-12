@@ -11,4 +11,7 @@
 ### Cisco の設定例
 
 ```
+snmp-server community Himitsu RO
+snmp-server host 192.168.1.35 version 2c Himitsu
+snmp-server enable traps
 ```
