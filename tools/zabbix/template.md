@@ -4,6 +4,10 @@
 
 - https://www.zabbix.com/documentation/current/jp/manual/config/templates_out_of_the_box/zabbix_agent2
 
+### 確認
+
+- https://www.zabbix.com/documentation/current/jp/manual/concepts/get
+
 ## ネットワーク デバイス
 
 - https://www.zabbix.com/documentation/current/jp/manual/config/templates_out_of_the_box/network_devices
