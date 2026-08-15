@@ -96,6 +96,7 @@
 
 - GLIBC versions >= 2.26
 - TCACHE_MAX_BINS = 64 と定義されているので、counts および entries は共に 64 個の要素を持つ配列
+- LIFO
 
 ### 解法されたチャックの管理機構
 
