@@ -16,7 +16,7 @@ docker stop basic_rsa
 docker rmi basic_rsa
 ```
 
-```ptyhon
+```python
 #!/usr/bin/env python3
 from pwn import context, log, remote
 # context.log_level = "debug"
