@@ -40,3 +40,11 @@ graph TD
 [timestamp] [the trap, part 1] ZBXTRAP [address] [the trap, part 2]
 ```
 
+## 設定: snmptrapd と Bash の受信スクリプトを使用して、トラップを Zabbix サーバーに渡す例
+
+### zabbix_server.conf に次を追加
+
+```
+StartSNMPTrapper=1
+SNMPTrapperFile=/var/lib/zabbix/snmptraps/snmptraps.log
+```
