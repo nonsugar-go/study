@@ -93,4 +93,13 @@ sudo systemctl restart zabbix-server snmptrapd
 
 ## アイテムの作成
 
+- https://www.zabbix.com/documentation/current/jp/manual/config/items/item
 - https://www.zabbix.com/documentation/current/jp/manual/config/items/itemtypes/snmptrap
+
+### 設定例
+
+- Type: SNMP trap
+- Type of information: Log
+- Host interface: SNMP 127.0.0.1
+- Key: snmptrap["linkUp"]
+- Log time format: yyyyMMdd.hhmmss
