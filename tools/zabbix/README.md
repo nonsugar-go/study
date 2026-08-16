@@ -74,6 +74,8 @@ $ sudo vi /etc/hosts
 127.0.0.1 localhost
 127.0.1.1 zb1.example.test zb1
  (snip)
+
+$ sudo timedatectl set-timezone Asia/Tokyo
 ```
 
 ```bash
