@@ -115,7 +115,7 @@ sudo systemctl restart zabbix-server snmptrapd
 - タイプ: SNMP トラップ
 - キー: snmptrap["linkUp"]
 - データ型: ログ
-- ホストインターフェース: SNMP 127.0.0.1
+- ホストインターフェース: SNMP 127.0.0.1:161
 - ログの時間の形式: yyyy-MM-ddThh:mm:ss
 
 #### テスト
@@ -130,8 +130,15 @@ snmptrap -v 2c -c Himitsu localhost '' linkUp.0
 - タイプ: SNMP トラップ
 - キー: snmptrap["linkDown"]
 - データ型: ログ
-- ホストインターフェース: SNMP (192.168.1.63)
+- ホストインターフェース: SNMP 192.168.1.63:161
 - ログの時間の形式: yyyy-MM-ddThh:mm:ss
+
+名前: CISCO-CONFIG-MAN-MIB
+タイプ: SNMP トラップ
+キー: snmptrap["SNMPv2-SMI::enterprises.9.9.43.2.0.1"]
+データ型: ログ
+ホストインターフェース: SNMP 192.168.1.63:161
+ログの時間の形式: yyyy-MM-ddThh:mm:ss
 
 #### Cisco の設定
 
