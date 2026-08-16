@@ -69,20 +69,33 @@ ZABBIX_TRAPS_FILE="/var/log/snmptrap/snmptrap.log"
  (snip)
 __EOF__
 
-sudo mkdir -p /var/log/snmptrap
+sudo mkdir -pm 755 /var/log/snmptrap
+sudo chown Debian-snmp:Debian-snmp /var/log/snmptrap
 ```
 
 ```zsh
 ## snmptrapd.conf の設定
 
-sudo apt install snmp snmptrapd
+sudo apt install snmp snmptrapd snmp-mibs-downloader
 
 sudo cp -p /etc/snmp/snmptrapd.conf{,.orig}
 
 sudo vi /etc/snmp/snmptrapd.conf
  (snip)
+authCommunity log,execute,net Himitsu
 traphandle default /bin/bash /usr/sbin/zabbix_trap_handler.sh
 __EOF__
+
+## snmp.conf の設定 (mibs の行をコメントアウト)
+
+sudo cp -p /etc/snmp/snmp.conf{,.orig}
+
+sudo vi /etc/snmp/snmp.conf
+
+ (snip)
+##mibs :
+ (snip)
+__END__
 ```
 
 ```zsh
@@ -105,3 +118,8 @@ sudo systemctl restart zabbix-server snmptrapd
 - ホストインターフェース: SNMP 127.0.0.1
 - ログの時間の形式: yyyyMMdd.hhmmss
 
+#### テスト
+
+```zsh
+snmptrap -v 2c -c Himitsu localhost '' linkUp.0
+```
