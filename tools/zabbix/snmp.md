@@ -109,17 +109,37 @@ sudo systemctl restart zabbix-server snmptrapd
 - https://www.zabbix.com/documentation/current/jp/manual/config/items/item
 - https://www.zabbix.com/documentation/current/jp/manual/config/items/itemtypes/snmptrap
 
-### 設定例
+### 設定例1 (ローカル試験用)
 
 - 名前: SNMP trap test
 - タイプ: SNMP トラップ
 - キー: snmptrap["linkUp"]
 - データ型: ログ
 - ホストインターフェース: SNMP 127.0.0.1
-- ログの時間の形式: yyyyMMdd.hhmmss
+- ログの時間の形式: yyyy-MM-ddThh:mm:ss
 
 #### テスト
 
 ```zsh
 snmptrap -v 2c -c Himitsu localhost '' linkUp.0
 ```
+
+### 設定例2 (Cisco)
+
+- 名前: linkDown
+- タイプ: SNMP トラップ
+- キー: snmptrap["linkDown"]
+- データ型: ログ
+- ホストインターフェース: SNMP (192.168.1.63)
+- ログの時間の形式: yyyy-MM-ddThh:mm:ss
+
+#### Cisco の設定
+
+```
+snmp-server community Himitsu RO
+snmp-server trap-source GigabitEthernet1
+snmp-server enable traps snmp linkdown linkup coldstart warmstart
+snmp-server enable traps config
+snmp-server host 192.168.1.35 vrf Mgmt-intf version 2c Himitsu
+```
+
