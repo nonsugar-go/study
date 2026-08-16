@@ -126,6 +126,8 @@ snmptrap -v 2c -c Himitsu localhost '' linkUp.0
 
 ### 設定例2 (Cisco)
 
+#### リンクダウン
+
 - 名前: linkDown
 - タイプ: SNMP トラップ
 - キー: snmptrap["linkDown"]
@@ -133,20 +135,30 @@ snmptrap -v 2c -c Himitsu localhost '' linkUp.0
 - ホストインターフェース: SNMP 192.168.1.63:161
 - ログの時間の形式: yyyy-MM-ddThh:mm:ss
 
-名前: CISCO-CONFIG-MAN-MIB
-タイプ: SNMP トラップ
-キー: snmptrap["SNMPv2-SMI::enterprises.9.9.43.2.0.1"]
-データ型: ログ
-ホストインターフェース: SNMP 192.168.1.63:161
-ログの時間の形式: yyyy-MM-ddThh:mm:ss
+#### 設定保存
+
+- 名前: CISCO-CONFIG-MAN-MIB
+- タイプ: SNMP トラップ
+- キー: snmptrap["SNMPv2-SMI::enterprises.9.9.43.2.0.1"]
+- データ型: ログ
+- ホストインターフェース: SNMP 192.168.1.63:161
+- ログの時間の形式: yyyy-MM-ddThh:mm:ss
 
 #### Cisco の設定
 
 ```
+conf t
 snmp-server community Himitsu RO
 snmp-server trap-source GigabitEthernet1
 snmp-server enable traps snmp linkdown linkup coldstart warmstart
 snmp-server enable traps config
 snmp-server host 192.168.1.35 vrf Mgmt-intf version 2c Himitsu
+end
+wr
 ```
 
+```
+## 試験
+test snmp trap snmp linkdown
+test snmp trap config
+```
