@@ -48,3 +48,7 @@ graph TD
 StartSNMPTrapper=1
 SNMPTrapperFile=/var/lib/zabbix/snmptraps/snmptraps.log
 ```
+
+## アイテムの作成
+
+- https://www.zabbix.com/documentation/current/jp/manual/config/items/itemtypes/snmptrap
