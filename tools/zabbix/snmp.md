@@ -42,11 +42,53 @@ graph TD
 
 ## 設定: snmptrapd と Bash の受信スクリプトを使用して、トラップを Zabbix サーバーに渡す例
 
-### zabbix_server.conf に次を追加
+```zsh
+## zabbix_server.conf の設定
 
-```
+sudo vi /etc/zabbix/zabbix_server.conf
+
+ (snip)
+SNMPTrapperFile=/var/log/snmptrap/snmptrap.log
+ (snip)
 StartSNMPTrapper=1
-SNMPTrapperFile=/var/lib/zabbix/snmptraps/snmptraps.log
+ (snip)
+__EOF__
+```
+
+```zsh
+## /usr/sbin/zabbix_trap_handler.sh の設定
+
+sudo curl -o /usr/sbin/zabbix_trap_handler.sh https://raw.githubusercontent.com/zabbix/zabbix-docker/7.4/templates/scripts/snmptraps/zabbix_trap_handler.sh
+
+sudo chmod 755 /usr/sbin/zabbix_trap_handler.sh 
+
+sudo vi /usr/sbin/zabbix_trap_handler.sh 
+
+ (snip)
+ZABBIX_TRAPS_FILE="/var/log/snmptrap/snmptrap.log"
+ (snip)
+__EOF__
+
+sudo mkdir -p /var/log/snmptrap
+```
+
+```zsh
+## snmptrapd.conf の設定
+
+sudo apt install snmp snmptrapd
+
+sudo cp -p /etc/snmp/snmptrapd.conf{,.orig}
+
+sudo vi /etc/snmp/snmptrapd.conf
+ (snip)
+traphandle default /bin/bash /usr/sbin/zabbix_trap_handler.sh
+__EOF__
+```
+
+```zsh
+## サービスを再起動
+
+sudo systemctl restart zabbix-server snmptrapd
 ```
 
 ## アイテムの作成
