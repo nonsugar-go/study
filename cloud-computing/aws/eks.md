@@ -15,3 +15,7 @@ tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
 sudo install -m 0755 /tmp/eksctl /usr/local/bin && rm /tmp/eksctl
 eksctl version
 ```
+
+## 使用例
+
+- https://www.devopsstarterpack.com/docs/eks/intro/
