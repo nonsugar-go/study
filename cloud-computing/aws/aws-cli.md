@@ -2,3 +2,8 @@
 
 - https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html
 - https://www.devopsstarterpack.com/docs/intro/environment/aws-cli/
+
+```zsh
+sudo snap install aws-cli --classic
+/snap/bin/aws --version
+```
