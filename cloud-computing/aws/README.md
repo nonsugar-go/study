@@ -2,8 +2,7 @@
 
 - [IAM Identity Center](iam-identity-center.md)
 - [AWS CLI](aws-cli.md)
-- [Amazon EKS](eks.md)
-- [Terraform](terraform.md)
+- [Amazon EKS](/study/linux/k8s/eks.md)
 
 ## 料金
 
