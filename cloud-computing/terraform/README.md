@@ -3,6 +3,7 @@
 - https://developer.hashicorp.com/terraform/tutorials
 - https://developer.hashicorp.com/terraform/docs
 - https://www.devopsstarterpack.com/docs/intro/environment/terraform/
+- https://github.com/masa0221/terraform-vpc-example-for-eks
 - https://github.com/zealvora/terraform-beginner-to-advanced-resource
 
 ## Install
