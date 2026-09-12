@@ -10,7 +10,7 @@
 - [Linux](linux)
   - [Docker](linux/docker.md)
   - [minikube](linux/minikube.md)
-  - [K8s](linux/k8s.md)
+  - [K8s](linux/k8s)
 - [Network Devices](network-devices)
   - [Check Point](network-devices/checkpoint)
   - [FortiGate](network-devices/fortigate)
