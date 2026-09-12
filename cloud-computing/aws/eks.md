@@ -6,6 +6,8 @@
 
 ## eksctl
 
+### インストール
+
 - https://docs.aws.amazon.com/eks/latest/eksctl/installation.html
 - https://www.devopsstarterpack.com/docs/intro/environment/eksctl/
 
@@ -18,10 +20,20 @@ sudo install -m 0755 /tmp/eksctl /usr/local/bin && rm /tmp/eksctl
 eksctl version
 ```
 
-## 使用例
+### クラスタの作成
 
 - https://docs.aws.amazon.com/ja_jp/eks/latest/userguide/kubernetes-versions.html // 標準サポートのバージョンを指定！
 - https://docs.aws.amazon.com/eks/latest/eksctl/creating-and-managing-clusters.html
 
+```zsh
+eksctl create cluster \
+  --name hello-eks \
+  --version 1.36 \
+  --region ap-northeast-1 \
+  --nodegroup-name workers \
+  --node-type t3.medium \
+  --nodes 2
+```
 
+### クラスタの削除
 
