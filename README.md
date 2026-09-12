@@ -3,6 +3,9 @@
 ネットワークとプログラミング言語の学習用
 
 - [Cloud Computing](cloud-computing)
+  - [aws](aws)
+  - [Azure](azuzre)
+  - [oci](oci)
 - [CTF](ctf)
   - [pwn/tools](ctf/pwn/tools.md)
 - [Linux](linux)
