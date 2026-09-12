@@ -8,4 +8,5 @@
 
 ```zsh
 sudo snap install helm --classic
+/snap/bin/helm version
 ```
