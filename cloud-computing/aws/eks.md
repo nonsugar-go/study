@@ -23,7 +23,6 @@ eksctl version
 ### クラスタの作成
 
 - https://docs.aws.amazon.com/ja_jp/eks/latest/userguide/kubernetes-versions.html // 標準サポートのバージョンを指定！
-- https://docs.aws.amazon.com/eks/latest/eksctl/creating-and-managing-clusters.html
 
 ```zsh
 eksctl create cluster \
@@ -41,3 +40,15 @@ eksctl create cluster \
 eksctl delete cluster --name hello-eks
 ```
 
+### YAML ファイルを使用
+
+- https://docs.aws.amazon.com/eks/latest/eksctl/creating-and-managing-clusters.html
+- https://schema.eksctl.io/
+
+```zsh
+eksctl create cluster -f cluster.yaml
+```
+
+```zsh
+eksctl delete cluster -f cluster.yaml
+```
