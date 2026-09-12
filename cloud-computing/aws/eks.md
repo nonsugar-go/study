@@ -37,3 +37,7 @@ eksctl create cluster \
 
 ### クラスタの削除
 
+```zsh
+eksctl delete cluster --name hello-eks
+```
+
