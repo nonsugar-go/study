@@ -20,3 +20,7 @@ eksctl version
 
 ## 使用例
 
+- https://docs.aws.amazon.com/ja_jp/eks/latest/userguide/kubernetes-versions.html // 標準サポートのバージョンを指定！
+
+
+
