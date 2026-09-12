@@ -1,6 +1,7 @@
 # Amazon Elastic Kubernetes Service (Amazon EKS)
 
 - https://docs.aws.amazon.com/ja_jp/eks/latest/userguide/what-is-eks.html
+- https://aws.amazon.com/jp/eks/pricing/
 
 ## eksctl
 
@@ -18,4 +19,3 @@ eksctl version
 
 ## 使用例
 
-- https://www.devopsstarterpack.com/docs/eks/intro/
