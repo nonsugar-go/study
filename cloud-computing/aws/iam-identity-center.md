@@ -1,6 +1,4 @@
-# AWS
-
-## AM Identity Center
+# IAM Identity Center
 
 - https://docs.aws.amazon.com/ja_jp/singlesignon/latest/userguide/what-is.html
 - https://www.devopsstarterpack.com/docs/intro/environment/aws-cli/iam-identity-center/
