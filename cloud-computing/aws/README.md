@@ -27,6 +27,7 @@
    - グループの選択: (設定不要)
 2. IAM Identity Center > 許可セット > アクセス許可セットを作成
    - アクセス許可セットタイプ: 事前定義済みのアクセス許可セット (AdministratorAccess)
+   - セッション期間: 8時間
    - リレーステート-オプション: https://ap-northeast-1.console.aws.amazon.com
 3. IAM Identity Center > AWS アカウント > (組織をチェックして) ユーザーまたはグループを割り当て 
    - 作成したユーザーをチェック
