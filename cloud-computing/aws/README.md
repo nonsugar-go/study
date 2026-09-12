@@ -4,3 +4,7 @@
 - [AWS CLI](aws-cli.md)
 - [Amazon EKS](eks.md)
 - [Terraform](terraform.md)
+
+## 料金
+
+- https://calculator.aws/
