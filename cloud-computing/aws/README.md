@@ -10,3 +10,7 @@
  admin ---> Administrator ---> Admiinstraotr Access 
 ```
 
+# IAM Identity Center を有効にする
+
+- 現在の AWS リージョン: アジアパシフィック (東京)
+- インスタンスの設定: 単一リージョンインスタンス
