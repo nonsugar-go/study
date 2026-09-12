@@ -3,7 +3,6 @@
 - https://docs.aws.amazon.com/ja_jp/eks/latest/userguide/what-is-eks.html
 - https://aws.amazon.com/jp/eks/pricing/
 - https://aws.amazon.com/jp/ec2/pricing/on-demand/
-- https://calculator.aws/
 
 ## eksctl
 
