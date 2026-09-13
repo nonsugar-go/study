@@ -14,3 +14,15 @@ kubectl kustomize <kustomization_directory>
 ```zsh
 kubectl apply -k <kustomization_directory>
 ```
+
+## 例: kustomization.yaml
+
+```yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../base
+
+patches:
+  - path: deployment.yaml
+```
