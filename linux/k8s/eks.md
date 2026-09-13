@@ -53,7 +53,3 @@ eksctl create cluster -f cluster.yaml
 eksctl delete cluster -f cluster.yaml
 ```
 
-## Ingress
-
-- https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.7/deploy/installation/
-- https://docs.aws.amazon.com/ja_jp/eks/latest/userguide/aws-load-balancer-controller.html
