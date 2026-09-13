@@ -1,5 +1,6 @@
 # minikube
 
+- https://docs.aws.amazon.com/ja_jp/eks/latest/userguide/install-kubectl.html
 - https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-kubectl-binary-with-curl-on-linux
 - https://minikube.sigs.k8s.io/docs/start/
 
