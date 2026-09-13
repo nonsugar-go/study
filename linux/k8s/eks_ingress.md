@@ -85,3 +85,5 @@ kubectl delete -f ./manifests
 helm uninstall aws-load-balancer-controller --namespace kube-system
 eksctl delete cluster -f ./cluster.yaml
 ```
+
+- IAM > ポリシー: `AWSLoadBalancerControllerIAMPolicy` を削除
