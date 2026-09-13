@@ -8,7 +8,7 @@
 
 ### インストール
 
-- https://docs.aws.amazon.com/eks/latest/eksctl/installation.html
+- https://docs.aws.amazon.com/ja_jp/eks/latest/eksctl/installation.html
 - https://www.devopsstarterpack.com/docs/intro/environment/eksctl/
 
 ```zsh
