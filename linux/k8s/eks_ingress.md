@@ -48,6 +48,8 @@ cluster="my-cluster"
     --override-existing-serviceaccounts \
     --region $region \
     --approve
+
+    kubectl get sa aws-load-balancer-controller -n kube-system --output yaml
    ```
 
 ## AWS Load Balancer Controller をインストール
