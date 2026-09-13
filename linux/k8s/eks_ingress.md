@@ -71,3 +71,17 @@ cluster="my-cluster"
    ```zsh
    kubectl get deployment -n kube-system aws-load-balancer-controller
    ```
+
+## マニフェストの適用
+
+```zsh
+kubectl apply -f ./manifests
+```
+
+## 削除
+
+```zsh
+kubectl delete -f ./manifests
+helm uninstall aws-load-balancer-controller --namespace kube-system
+eksctl delete cluster -f ./cluster.yaml
+```
