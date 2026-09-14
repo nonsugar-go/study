@@ -112,6 +112,24 @@ if len(sm.found) > 0:
     print('FOUND:', sm.found[0].posix.dumps(0))
 ```
 
+## wanictf2020 reversing/complex
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/reversing/complex
+
+```python
+#!/usr/bin/env python3
+import angr
+proj = angr.Project("./file/complex")
+base_addr = proj.loader.main_object.min_addr
+target_addr = base_addr + 0x001cb9
+avoid_addr = base_addr + 0x001c94
+state = proj.factory.entry_state()
+simgr = proj.factory.simgr(state)
+simgr.explore(find=target_addr, avoid=avoid_addr)
+state = simgr.found[0]
+print(state.posix.dumps(0))
+```
+
 # Tim Nosco
 
 - https://www.youtube.com/watch?v=9dQFM5O4KFk
