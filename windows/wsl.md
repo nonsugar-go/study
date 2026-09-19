@@ -282,7 +282,7 @@ sudo apt install 7zip bat bind9-dnsutils build-essential cmake \
 ```
 
 ```zsh
-# for Docker
+## for Docker
 $ sudo usermod -aG docker $USER
 ```
 
