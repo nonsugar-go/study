@@ -452,13 +452,31 @@ chmod 755 ~/CTF/bin/burpsuite
 ```zsh
 alias angr='docker run -it --rm -v $PWD:/local angr/angr'
 alias c='curl -LO'
-alias ckp='source ~/CTF/checkpwn.sh'
 alias g='grep -Rin'
 alias gdb='gdb -q'
 alias mkd='mydir=$(printf %02d $(($(ls -d [0-9][0-9]|tail -1)+1)))&&mkdir $mydir&&cd $mydir' # Zsh-only
-alias myenv='source ~/CTF/myenv/bin/activate'
 alias q='vi Question.txt'
 alias w='vi Writeup.md'
+ckp() {
+	f="${1:-chall}"
+	(strings -n 5 $f; strings -n 5 -el $f)|sort -u >strings.output
+	checksec $f >checksec.output 2>&1
+	file $f >file.output
+	hexdump -C $f >hexdump.output
+	ldd $f >ldd.output
+	nm $f >nm.output
+	objdump -DCM intel $f >objdump.output
+	objdump -TC $f >dyn-syms.output
+	objdump -dC $f -j .rodata >syms_rodata.output
+	objdump -tC $f -j .bss >syms_bss.output
+	objdump -tC $f -j .data >syms_data.output
+	objdump -tC $f -j .text >syms_text.output
+	pwn template $f >solver.py.output
+	readelf -SW $f >sections.output
+	readelf -r $f >relocs.output
+	readelf -sW $f >syms.output
+	strings -tx $f >strings-tx.output
+}
 clip() { iconv -t utf16le "$@" | clip.exe }
 case ":$PATH:" in
 	*":/snap/bin:"*) ;;
@@ -468,24 +486,7 @@ case ":$PATH:" in
 	*":$HOME/CTF/bin:"*) ;;
 	*) export PATH="$PATH:$HOME/CTF/bin" ;;
 esac
-myenv
-```
-
-### ~/CTF/checkpwn.sh
-
-```zsh
-f="${1:-chall}"
-(strings -n 5 $f; strings -n 5 -el $f)|sort -u >strings.output
-checksec $f >checksec.output 2>&1
-file $f >file.output
-hexdump -C $f >hexdump.output
-nm $f >nm.output
-objdump -DCM intel $f >objdump.output
-pwn template $f >solver.py.output
-readelf -SW $f >sections.output
-readelf -r $f >relocs.output
-readelf -sW $f >syms.output
-strings -tx $f >strings-tx.output
+source ~/CTF/ctf-env/.venv/bin/activate
 ```
 
 ## Golang
