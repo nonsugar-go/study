@@ -17,6 +17,7 @@
   - [VyOS](network-devices/vyos)
 - [Programming](programming)
   - [VSCode](programming/vscode.md)
+  - [Python](programming/python)
   - [Go](programming/go)
   - [Rust](programming/rust)
 - [Tools](tools)
