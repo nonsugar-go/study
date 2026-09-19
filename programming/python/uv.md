@@ -16,6 +16,14 @@ uv tool install ruff
 
 - https://docs.astral.sh/uv/guides/tools/#installing-tools
 
+```zsh
+uv tool install ruff
+```
+
+```zsh
+uv tool upgrade ruff
+```
+
 ### プロジェクト
 
 - https://docs.astral.sh/uv/guides/projects/
