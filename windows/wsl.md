@@ -422,30 +422,17 @@ ln -sf ~/CTF/ghidra_12.1.3_PUBLIC/ghidraRun ~/CTF/bin/ghidra
 ### IDA Free
 
 - https://hex-rays.com/ida-free
+- https://hex-rays.com/pricing?section=individuals
 
 ```zsh
-sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
+sudo apt install libxcb-cursor0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
   libxcb-render-util0 libxcb-shape0 libxcb-xinerama0 libxcb-xkb1 \
   libxkbcommon-x11-0
-chmod +x ./ida-free-pc_91_x64linux.run
-./ida-free-pc_91_x64linux.run
-## Installation Directory: /home/XXXX/CTF/ida-free-pc-9.1
-mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/CTF/ida-free-pc-9.1
-ln -sf ~/CTF/ida-free-pc-9.1/ida ~/CTF/bin
-```
-
-#### IDA Free 8.4 (IDA Free 9.x でなく IDA Free 8.4 を使用する場合)
-
-```bash
-cull -LO https://out7.hex-rays.com/files/idafree84_linux.run
-chmod +x idafree84_linux.run
-./idafree84_linux.run
-rm ./idafree84_linux.run
-## メッセージを見て足りないライブラリをインストールする
-QT_DEBUG_PLUGINS=1 ~/idafree-8.4/ida64
-sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
-  libxcb-render-util0 libxcb-xinerama0 libxcb-xkb1 libxkbcommon-x11-0
-ln -sf ~/CTF/idafree84_linux.run ~/CTF/bin/ida
+chmod +x ./ida-free-pc_94_x64linux.run
+./ida-free-pc_94_x64linux.run
+## Installation Directory: /home/XXXX/CTF/ida-free-9.4
+mv ./idafree_*-*-*-*.hexlic ~/CTF/ida-free-9.4/
+ln -sf ~/CTF/ida-free-9.4/ida ~/CTF/bin
 ```
 
 ### Burp Suite Community Edition
