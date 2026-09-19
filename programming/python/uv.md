@@ -30,3 +30,8 @@ uv tool upgrade --all
 ### プロジェクト
 
 - https://docs.astral.sh/uv/guides/projects/
+- https://docs.astral.sh/uv/concepts/projects/sync/#syncing-development-dependencies
+
+```zsh
+uv lock --upgrade
+```
