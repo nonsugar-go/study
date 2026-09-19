@@ -494,8 +494,9 @@ source ~/CTF/ctf-env/.venv/bin/activate
 - https://go.dev/doc/install
 
 ```zsh
-curl -LO https://go.dev/dl/go1.26.5.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.26.5.linux-amd64.tar.gz
+curl -LO https://go.dev/dl/go1.27.1.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.27.1.linux-amd64.tar.gz
+rm ./go1.27.1.linux-amd64.tar.gz
 ```
 
 - ~/.zshrc
