@@ -489,6 +489,13 @@ esac
 source ~/CTF/ctf-env/.venv/bin/activate
 ```
 
+## C++
+
+```zsh
+sudo apt install clangd libboost-all-dev
+cat /usr/include/boost/version.hpp | grep "BOOST_LIB_VERSION"
+```
+
 ## Golang
 
 - https://go.dev/doc/install
