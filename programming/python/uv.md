@@ -21,7 +21,7 @@ uv tool install ruff
 ```
 
 ```zsh
-uv tool upgrade ruff
+uv tool upgrade --all
 ```
 
 ### プロジェクト
