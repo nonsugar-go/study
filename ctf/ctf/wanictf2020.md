@@ -6,18 +6,14 @@
 
 ```python
 #!/usr/bin/env python3
-def encrypt(s: bytes, t: bytes) -> bytes:
-    result = b""
-    for ss, tt in zip(s, t):
-        result += int.to_bytes(ss ^ tt)
-    return result
+def encrypt(s: str, t: str) -> str:
+    return "".join([chr(ord(ss) ^ ord(tt)) for ss, tt in zip(s, t)])
 
 
-ct = open("./output.txt").readline().strip()
-key_start = bytes.fromhex("070e02")
-flag_start = b"FLA"
-key = encrypt(key_start, flag_start) * 19
-print(encrypt(ct.encode("latin-1"), key))
+ct = open("output.txt").readline().strip()
+key = encrypt("FLA", ct[:3]) * 19
+flag = encrypt(ct, key)
+print(f"{flag=}")
 ```
 
 ## veni_vidi
