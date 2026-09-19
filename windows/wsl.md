@@ -273,12 +273,56 @@ $ vi foo.cpp
 mkdir -p ~/CTF/bin
 ```
 
-```zsh
+```
 sudo apt install 7zip bat bind9-dnsutils build-essential cmake \
   docker-compose-v2 gcc-multilib gdb gdbserver gobuster hashcat hexer jq \
   libimage-exiftool-perl libxml2-utils ltrace nasm ncal nmap openvpn \
   poppler-utils python3-venv qpdf ruby-full socat sqlite3 sqlmap strace \
   tcpdump tshark unzip w3m wabt wireshark yq z80dasm zip
+```
+
+- https://docs.astral.sh/uv/getting-started/installation/#installation-methods
+
+```zsh
+curl -LsSf https://astral.sh/uv/install.sh | sh
+source $HOME/.local/bin/env
+```
+
+```zsh
+uv tool install flask-unsign
+uv tool install git+https://github.com/RsaCtfTool/RsaCtfTool
+uv tool install ropper
+uv tool install ruff
+uv init ~/CTF/ctf-env
+uv add --directory ~/CTF/ctf-env \
+  Flask gmpy2 pwntools pycryptodome pyshark pyzipper randcrack scapy \
+  sympy z3-solver
+```
+
+```zsh
+## for activate venv
+. ~/CTF/ctf-env/.venv/bin/activate
+```
+
+```zsh
+## for upgrade
+uv tool upgrade --all
+uv lock --upgrade --directory ~/CTF/ctf-env
+uv sync --directory ~/CTF/ctf-env
+```
+
+<!--
+```zsh
+python3 -m venv ~/CTF/myenv
+source ~/CTF/myenv/bin/activate
+pip3 install -U Flask flask-unsign gmpy2 pwntools pycryptodome pyshark \
+  pyzipper randcrack ropper scapy sympy z3-solver \
+  git+https://github.com/RsaCtfTool/RsaCtfTool
+```
+-->
+
+```zsh
+sudo gem install one_gadget seccomp-tools
 ```
 
 ```zsh
@@ -298,18 +342,6 @@ git clone https://github.com/longld/peda.git ~/peda
 echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
 -->
-
-```zsh
-python3 -m venv ~/CTF/myenv
-source ~/CTF/myenv/bin/activate
-pip3 install -U Flask flask-unsign gmpy2 pwntools pycryptodome pyshark \
-  pyzipper randcrack ropper scapy sympy tqdm z3-solver \
-  git+https://github.com/RsaCtfTool/RsaCtfTool
-```
-
-```zsh
-sudo gem install one_gadget seccomp-tools
-```
 
 ### Docker
 
