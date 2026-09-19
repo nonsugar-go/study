@@ -34,4 +34,5 @@ uv tool upgrade --all
 
 ```zsh
 uv lock --upgrade
+uv sync
 ```
