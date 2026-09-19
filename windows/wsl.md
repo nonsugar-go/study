@@ -281,7 +281,14 @@ sudo apt install 7zip bat bind9-dnsutils build-essential cmake \
   tcpdump tshark unzip w3m wabt wireshark yq z80dasm zip
 ```
 
-- https://docs.astral.sh/uv/getting-started/installation/#installation-methods
+```zsh
+# for Docker
+$ sudo usermod -aG docker $USER
+```
+
+```powershell
+PS> wsl --shutdown
+```
 
 ```zsh
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -342,16 +349,6 @@ git clone https://github.com/longld/peda.git ~/peda
 echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
 -->
-
-### Docker
-
-```zsh
-$ sudo usermod -aG docker $USER
-```
-
-```powershell
-PS> wsl --shutdown
-```
 
 ### gobuster / hashcat 用のワードリスト
 
