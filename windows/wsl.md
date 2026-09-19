@@ -273,12 +273,12 @@ $ vi foo.cpp
 mkdir -p ~/CTF/bin
 ```
 
-```
+```zsh
 sudo apt install 7zip bat bind9-dnsutils build-essential cmake \
-  docker-compose-v2 gcc-multilib gdb gdbserver gobuster hashcat hexer jq \
-  libimage-exiftool-perl libxml2-utils ltrace nasm ncal nmap openvpn \
-  poppler-utils python3-venv qpdf ruby-full socat sqlite3 sqlmap strace \
-  tcpdump tshark unzip w3m wabt wireshark yq z80dasm zip
+  docker-compose-v2 fonts-noto-cjk gcc-multilib gdb gdbserver gobuster \
+  hashcat hexer jq libimage-exiftool-perl libxml2-utils ltrace nasm ncal nmap \
+  openjdk-25-jdk openvpn poppler-utils python3-venv qpdf ruby-full socat \
+  sqlite3 sqlmap strace tcpdump tshark unzip w3m wabt wireshark yq z80dasm zip
 ```
 
 ```zsh
@@ -361,11 +361,10 @@ tar xvzf rockyou.txt.tar.gz
 rm rockyou.txt.tar.gz
 ```
 
-### Chromium, Firefox, Restfox
+## Chromium, Firefox, Restfox
 
 ```zsh
 sudo snap install chromium firefox restfox
-sudo apt install fonts-noto-cjk
 ```
 
 ```zsh
@@ -373,15 +372,15 @@ sudo apt install fonts-noto-cjk
 sudo snap refresh
 ```
 
-### Ghidra
+## Ghidra
 
 - https://github.com/NationalSecurityAgency/ghidra
 
 ```zsh
-sudo apt install openjdk-21-jdk
-curl -LO https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.0.3_build/ghidra_12.0.3_PUBLIC_20260210.zip
-unzip ./ghidra_12.0.3_PUBLIC_20260210.zip -d ~/CTF
-ln -s ~/CTF/ghidra_12.0.3_PUBLIC/ghidraRun ~/CTF/bin/ghidra
+curl -LO https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.1.3_build/ghidra_12.1.3_PUBLIC_20260817.zip
+unzip ./ghidra_12.1.3_PUBLIC_20260817.zip -d ~/CTF
+rm ./ghidra_12.1.3_PUBLIC_20260817.zip
+sudo ln -s ~/CTF/ghidra_12.1.3_PUBLIC/ghidraRun /usr/local/bin/ghidra
 ```
 
 ### IDA Free
