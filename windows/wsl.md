@@ -350,7 +350,7 @@ echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
 -->
 
-## Chromium, Firefox, Restfox
+### Chromium, Firefox, Restfox
 
 ```zsh
 sudo snap install chromium firefox restfox
@@ -372,7 +372,43 @@ tar xvzf rockyou.txt.tar.gz
 rm rockyou.txt.tar.gz
 ```
 
-## Ghidra
+### bkcrack
+
+- https://github.com/kimci86/bkcrack/releases/
+
+```zsh
+cd ~/CTF
+curl -LO https://github.com/kimci86/bkcrack/releases/download/v1.8.1/bkcrack-1.8.1-Linux-x86_64.tar.gz
+tar xvzf bkcrack-1.8.1-Linux-x86_64.tar.gz
+rm bkcrack-1.8.1-Linux-x86_64.tar.gz
+ln -sf ~/CTF/bkcrack-1.8.1-Linux-x86_64/bkcrack ~/CTF/bin
+```
+
+### UPX
+
+- https://github.com/upx/upx/releases/
+
+```zsh
+cd ~/CTF
+curl -LO https://github.com/upx/upx/releases/download/v5.2.1/upx-5.2.1-amd64_linux.tar.xz
+tar xJf upx-5.2.1-amd64_linux.tar.xz
+rm upx-5.2.1-amd64_linux.tar.xz
+ln -sf ~/CTF/upx-5.2.1-amd64_linux/upx ~/CTF/bin
+```
+
+### JADX
+
+- https://github.com/skylot/jadx/releases/
+
+```zsh
+cd ~/CTF
+curl -LO https://github.com/skylot/jadx/releases/download/v1.5.6/jadx-1.5.6.zip
+unzip jadx-1.5.6.zip -d jadx-1.5.6
+rm jadx-1.5.6.zip
+ln -sf ~/CTF/jadx-1.5.6/bin/jadx{,-gui} ~/CTF/bin
+```
+
+### Ghidra
 
 - https://github.com/NationalSecurityAgency/ghidra
 
@@ -380,7 +416,7 @@ rm rockyou.txt.tar.gz
 curl -LO https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.1.3_build/ghidra_12.1.3_PUBLIC_20260817.zip
 unzip ./ghidra_12.1.3_PUBLIC_20260817.zip -d ~/CTF
 rm ./ghidra_12.1.3_PUBLIC_20260817.zip
-sudo ln -s ~/CTF/ghidra_12.1.3_PUBLIC/ghidraRun /usr/local/bin/ghidra
+ln -sf ~/CTF/ghidra_12.1.3_PUBLIC/ghidraRun ~/CTF/bin/ghidra
 ```
 
 ### IDA Free
@@ -393,9 +429,9 @@ sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
   libxkbcommon-x11-0
 chmod +x ./ida-free-pc_91_x64linux.run
 ./ida-free-pc_91_x64linux.run
-## Installation Directory: /home/yutaka/CTF/ida-free-pc-9.1
+## Installation Directory: /home/XXXX/CTF/ida-free-pc-9.1
 mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/CTF/ida-free-pc-9.1
-sudo ln -s ~/CTF/ida-free-pc-9.1/ida /usr/local/bin
+ln -sf ~/CTF/ida-free-pc-9.1/ida ~/CTF/bin
 ```
 
 #### IDA Free 8.4 (IDA Free 9.x でなく IDA Free 8.4 を使用する場合)
@@ -409,58 +445,19 @@ rm ./idafree84_linux.run
 QT_DEBUG_PLUGINS=1 ~/idafree-8.4/ida64
 sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
   libxcb-render-util0 libxcb-xinerama0 libxcb-xkb1 libxkbcommon-x11-0
-sudo ln -s ~/CTF/idafree84_linux.run /usr/local/bin/ida
+ln -sf ~/CTF/idafree84_linux.run ~/CTF/bin/ida
 ```
 
 ### Burp Suite Community Edition
 
 - https://portswigger.net/burp/communitydownload
+- https://portswigger.net/burp/documentation/desktop/troubleshooting/launch-from-command-line
 
 ```zsh
 cd ~/CTF
-curl -L https://portswigger.net/burp/releases/download?product=community&version=2026.1.4&type=Linux -o burpsuite_community_linux.sh
-chmod +x burpsuite_community_linux.sh
-./burpsuite_community_linux.sh
-```
-
-- Select Destination Directory: /home/USER/CTF/BurpSuiteCommunity
-- Select Directory for Symlinks: Create symlinks のチェックを外す
-
-```zsh
-sudo ln -s ~/CTF/BurpSuiteCommunity/BurpSuiteCommunity /usr/local/bin/burp
-```
-
-### bkcrack
-
-```zsh
-cd ~/CTF
-curl -LO https://github.com/kimci86/bkcrack/releases/download/v1.8.1/bkcrack-1.8.1-Linux-x86_64.tar.gz
-tar xvzf bkcrack-1.8.1-Linux-x86_64.tar.gz
-sudo ln -s ~/CTF/bkcrack-1.8.1-Linux-x86_64/bkcrack /usr/local/bin
-```
-
-### UPX
-
-- https://github.com/upx/upx/releases/
-
-```zsh
-cd ~/CTF
-curl -LO https://github.com/upx/upx/releases/download/v5.1.0/upx-5.1.0-amd64_linux.tar.xz
-tar xJf upx-5.1.0-amd64_linux.tar.xz
-sudo ln -s ~/CTF/upx-5.1.0-amd64_linux/upx /usr/local/bin
-```
-
-### JADX
-
-- https://github.com/skylot/jadx/releases/
-
-```zsh
-cd ~/CTF
-curl -LO https://github.com/skylot/jadx/releases/download/v1.5.4/jadx-1.5.4.zip
-unzip jadx-1.5.4.zip -d jadx-1.5.4
-chmod +x jadx-1.5.4/bin/{jadx,jadx-gui}
-sudo ln -s ~/CTF/jadx-1.5.4/bin/jadx /usr/local/bin
-sudo ln -s ~/CTF/jadx-1.5.4/bin/jadx-gui /usr/local/bin
+curl -L 'https://portswigger.net/burp/releases/download?product=desktop&version=2026.8&type=Jar' -o burpsuite_desktop_v2026.8.jar
+echo -e '#!/bin/sh\njava -jar -Xmx4g ~/CTF/burpsuite_desktop_v2026.8.jar' >~/CTF/bin/burpsuite
+chmod 755 ~/CTF/bin/burpsuite
 ```
 
 ### ~/CTF/aliases.sh
