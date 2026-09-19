@@ -350,17 +350,6 @@ echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
 -->
 
-### gobuster / hashcat 用のワードリスト
-
-```zsh
-cd ~/CTF
-curl -LO \
-  https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt
-curl -LO https://raw.githubusercontent.com/zacheller/rockyou/master/rockyou.txt.tar.gz
-tar xvzf rockyou.txt.tar.gz
-rm rockyou.txt.tar.gz
-```
-
 ## Chromium, Firefox, Restfox
 
 ```zsh
@@ -370,6 +359,17 @@ sudo snap install chromium firefox restfox
 ```zsh
 ## for update
 sudo snap refresh
+```
+
+### gobuster / hashcat 用のワードリスト
+
+```zsh
+cd ~/CTF
+curl -LO \
+  https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt
+curl -LO https://raw.githubusercontent.com/zacheller/rockyou/master/rockyou.txt.tar.gz
+tar xvzf rockyou.txt.tar.gz
+rm rockyou.txt.tar.gz
 ```
 
 ## Ghidra
@@ -395,7 +395,7 @@ chmod +x ./ida-free-pc_91_x64linux.run
 ./ida-free-pc_91_x64linux.run
 ## Installation Directory: /home/yutaka/CTF/ida-free-pc-9.1
 mv ~/idafree_XX-XXXX-XXXX-XX.hexlic ~/CTF/ida-free-pc-9.1
-ln -s ~/CTF/ida-free-pc-9.1/ida ~/CTF/bin
+sudo ln -s ~/CTF/ida-free-pc-9.1/ida /usr/local/bin
 ```
 
 #### IDA Free 8.4 (IDA Free 9.x でなく IDA Free 8.4 を使用する場合)
@@ -409,7 +409,7 @@ rm ./idafree84_linux.run
 QT_DEBUG_PLUGINS=1 ~/idafree-8.4/ida64
 sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
   libxcb-render-util0 libxcb-xinerama0 libxcb-xkb1 libxkbcommon-x11-0
-ln -s ~/CTF/idafree84_linux.run ~/CTF/bin/ida
+sudo ln -s ~/CTF/idafree84_linux.run /usr/local/bin/ida
 ```
 
 ### Burp Suite Community Edition
@@ -427,7 +427,7 @@ chmod +x burpsuite_community_linux.sh
 - Select Directory for Symlinks: Create symlinks のチェックを外す
 
 ```zsh
-ln -s ~/CTF/BurpSuiteCommunity/BurpSuiteCommunity ~/CTF/bin/burp
+sudo ln -s ~/CTF/BurpSuiteCommunity/BurpSuiteCommunity /usr/local/bin/burp
 ```
 
 ### bkcrack
@@ -436,7 +436,7 @@ ln -s ~/CTF/BurpSuiteCommunity/BurpSuiteCommunity ~/CTF/bin/burp
 cd ~/CTF
 curl -LO https://github.com/kimci86/bkcrack/releases/download/v1.8.1/bkcrack-1.8.1-Linux-x86_64.tar.gz
 tar xvzf bkcrack-1.8.1-Linux-x86_64.tar.gz
-ln -s ~/CTF/bkcrack-1.8.1-Linux-x86_64/bkcrack ~/CTF/bin
+sudo ln -s ~/CTF/bkcrack-1.8.1-Linux-x86_64/bkcrack /usr/local/bin
 ```
 
 ### UPX
@@ -447,7 +447,7 @@ ln -s ~/CTF/bkcrack-1.8.1-Linux-x86_64/bkcrack ~/CTF/bin
 cd ~/CTF
 curl -LO https://github.com/upx/upx/releases/download/v5.1.0/upx-5.1.0-amd64_linux.tar.xz
 tar xJf upx-5.1.0-amd64_linux.tar.xz
-ln -s ~/CTF/upx-5.1.0-amd64_linux/upx ~/CTF/bin
+sudo ln -s ~/CTF/upx-5.1.0-amd64_linux/upx /usr/local/bin
 ```
 
 ### JADX
@@ -459,8 +459,8 @@ cd ~/CTF
 curl -LO https://github.com/skylot/jadx/releases/download/v1.5.4/jadx-1.5.4.zip
 unzip jadx-1.5.4.zip -d jadx-1.5.4
 chmod +x jadx-1.5.4/bin/{jadx,jadx-gui}
-ln -s ~/CTF/jadx-1.5.4/bin/jadx ~/CTF/bin
-ln -s ~/CTF/jadx-1.5.4/bin/jadx-gui ~/CTF/bin
+sudo ln -s ~/CTF/jadx-1.5.4/bin/jadx /usr/local/bin
+sudo ln -s ~/CTF/jadx-1.5.4/bin/jadx-gui /usr/local/bin
 ```
 
 ### ~/CTF/aliases.sh
