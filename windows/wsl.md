@@ -361,18 +361,16 @@ tar xvzf rockyou.txt.tar.gz
 rm rockyou.txt.tar.gz
 ```
 
-### Chromium, Firefox
+### Chromium, Firefox, Restfox
 
 ```zsh
-sudo snap install chromium
-sudo snap install firefox
+sudo snap install chromium firefox restfox
 sudo apt install fonts-noto-cjk
 ```
 
-### Restfox
-
 ```zsh
-sudo snap install restfox
+## for update
+sudo snap refresh
 ```
 
 ### Ghidra
