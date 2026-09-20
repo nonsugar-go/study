@@ -64,6 +64,11 @@
 
 #### Scope
 
+- Plan Scope Management
+- Elicit and Analyze Requirements
+- Define Scope
+- Develop Scope Structure
+
 #### Schedule
 
 #### Finance
