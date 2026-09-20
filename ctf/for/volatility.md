@@ -45,3 +45,9 @@ vol -f memdump.mem windows.netscan
 mkdir files
 vol -f memdump.mem -o files windows.dumpfiles --pid PID
 ```
+
+## 使用例
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/forensics/ALLIGATOR_01
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/forensics/ALLIGATOR_02
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/forensics/ALLIGATOR_03
