@@ -341,8 +341,12 @@ io.stream()
 curl -s 'http://localhost:8080/index.php?year=(2016)OR(1)=(1)' | grep -o 'FLAG{.*}'
 ```
 
+## SQL_challenge_2
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/web/SQL_challenge_2
+
 ```zsh
-curl -s 'http://localhost:8080/index.php?year=years' | grep -o 'FLAG{.*}'
+curl -s 'http://localhost:8080/index.php?year=0' | grep -o 'FLAG{.*}'
 ```
 
 # pwn
