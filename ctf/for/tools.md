@@ -126,7 +126,7 @@ sudo apt install steghide
 
 steghide info foo.jpg
 
-steghide extract -sf foo.jpg -xf flag.txt
+steghide extract -sf foo.jpg
 ```
 
 ## hashcat
