@@ -121,6 +121,8 @@ pdfimages -all file.pdf img
 
 ## Steghide
 
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/forensics/logged_flag
+
 ```zsh
 sudo apt install steghide
 
