@@ -213,6 +213,68 @@ File: eaten.png (142793 bytes)
 No errors detected in eaten.png (10 chunks, 97.5% compression).
 ```
 
+## zero_size_png
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/forensics/zero_size_png
+- https://www.setsuki.com/hsp/ext/chunk/IHDR.htm
+
+```zsh
+$ pngcheck -v dyson.png
+File: dyson.png (650046 bytes)
+  chunk IHDR at offset 0x0000c, length 13:  invalid image dimensions (0x0)
+ERRORS DETECTED in dyson.png
+
+$ xxd -l0x21 dyson.png
+00000000: 8950 4e47 0d0a 1a0a 0000 000d 4948 4452  .PNG........IHDR
+00000010: 0000 0000 0000 0000 0806 0000 00b5 5951  ..............YQ
+00000020: a1                                       .
+```
+
+```zsh
+$ ./solver.py
+w=00000257, h=0000030d
+
+$ xxd -l0x21 dyson.png
+00000000: 8950 4e47 0d0a 1a0a 0000 000d 4948 4452  .PNG........IHDR
+00000010: 0000 0257 0000 030d 0806 0000 00b5 5951  ...W..........YQ
+00000020: a1
+
+$ pngcheck -v dyson.png
+File: dyson.png (650046 bytes)
+  chunk IHDR at offset 0x0000c, length 13
+    599 x 781 image, 32-bit RGB+alpha, non-interlaced
+  chunk gAMA at offset 0x00025, length 4: 0.45455
+  chunk pHYs at offset 0x00035, length 9: 3780x3780 pixels/meter (96 dpi)
+  chunk IDAT at offset 0x0004a, length 65458
+    zlib: deflated, 32K window, fast compression
+  chunk IDAT at offset 0x10008, length 65524
+  chunk IDAT at offset 0x20008, length 65524
+  chunk IDAT at offset 0x30008, length 65524
+  chunk IDAT at offset 0x40008, length 65524
+  chunk IDAT at offset 0x50008, length 65524
+  chunk IDAT at offset 0x60008, length 65524
+  chunk IDAT at offset 0x70008, length 65524
+  chunk IDAT at offset 0x80008, length 65524
+  chunk IDAT at offset 0x90008, length 60194
+  chunk IEND at offset 0x9eb36, length 0
+No errors detected in dyson.png (14 chunks, 65.3% compression).
+```
+
+### solver.py
+
+```zsh
+#!/usr/bin/env python3
+from binascii import crc32
+
+for w in range(1, 0xfff):
+    for h in range(1, 0xfff):
+        data = (b"IHDR" + w.to_bytes(4, "big") + h.to_bytes(4, "big") +
+                b"\x08\x06\x00\x00\x00")
+        if (crc32(data) & 0xffffffff) == 0xb55951a1:
+            print(f"{w=:08x}, {h=:08x}")
+            exit()
+```
+
 # pwn
 
 ## 01-netcat
