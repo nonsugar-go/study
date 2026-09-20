@@ -84,6 +84,15 @@ chsh -s /bin/zsh
 
 - 初回ログイン時の `zsh-newuser-install` の問いには、`(0)  Exit, creating the file ~/.zshrc containing just a comment.` を選択
 
+### Oh My Zsh
+
+- https://ohmyz.sh/
+
+```zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cat ~/.zshrc.pre-oh-my-zsh >>~/.zshrc
+```
+
 ### ~/.zshrc
 
 ```zsh
