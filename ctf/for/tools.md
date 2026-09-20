@@ -137,7 +137,6 @@ steghide extract -sf foo.jpg
 
 - https://github.com/hashcat/hashcat
 - https://github.com/zacheller/rockyou
-
 - https://github.com/wani-hackase/wanictf2020-writeup/tree/master/forensics/ALLIGATOR_03
 
 ```zsh
