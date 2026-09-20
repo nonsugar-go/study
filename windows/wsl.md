@@ -468,7 +468,7 @@ echo -e '#!/bin/sh\njava -jar -Xmx4g ~/CTF/burpsuite_desktop_v2026.8.jar' >~/CTF
 chmod 755 ~/CTF/bin/burpsuite
 ```
 
-### ~/CTF/aliases.sh
+### ~/CTF/env
 
 ```zsh
 alias angr='docker run -it --rm -v $PWD:/local angr/angr'
@@ -479,45 +479,47 @@ alias mkd='mydir=$(printf %02d $(($(ls -d [0-9][0-9]|tail -1)+1)))&&mkdir $mydir
 alias q='vi Question.txt'
 alias w='vi Writeup.md'
 ckp() {
-	f="${1:-chall}"
-	(strings -n 5 $f; strings -n 5 -el $f)|sort -u >strings.output
-	checksec $f >checksec.output 2>&1
-	file $f >file.output
-	hexdump -C $f >hexdump.output
-	ldd $f >ldd.output
-	nm $f >nm.output
-	objdump -DCM intel $f >objdump.output
-	objdump -TC $f >dyn-syms.output
-	objdump -dC $f -j .rodata >syms_rodata.output
-	objdump -tC $f -j .bss >syms_bss.output
-	objdump -tC $f -j .data >syms_data.output
-	objdump -tC $f -j .text >syms_text.output
-	pwn template $f >solver.py.output
-	readelf -SW $f >sections.output
-	readelf -r $f >relocs.output
-	readelf -sW $f >syms.output
-	strings -tx $f >strings-tx.output
+  f="${1:-chall}"
+  (strings -n 5 $f; strings -n 5 -el $f)|sort -u >strings.output
+  checksec $f >checksec.output 2>&1
+  file $f >file.output
+  hexdump -C $f >hexdump.output
+  ldd $f >ldd.output
+  nm $f >nm.output
+  objdump -DCM intel $f >objdump.output
+  objdump -TC $f >dyn-syms.output
+  objdump -dC $f -j .rodata >syms_rodata.output
+  objdump -tC $f -j .bss >syms_bss.output
+  objdump -tC $f -j .data >syms_data.output
+  objdump -tC $f -j .text >syms_text.output
+  pwn template $f >solver.py.output
+  readelf -SW $f >sections.output
+  readelf -r $f >relocs.output
+  readelf -sW $f >syms.output
+  strings -tx $f >strings-tx.output
 }
 clip() { iconv -t utf16le "$@" | clip.exe }
 case ":$PATH:" in
-	*":/snap/bin:"*) ;;
-	*) export PATH="$PATH:/snap/bin" ;;
+  *":/snap/bin:"*) ;;
+  *) export PATH="$PATH:/snap/bin" ;;
 esac
 case ":$PATH:" in
-	*":$HOME/CTF/bin:"*) ;;
-	*) export PATH="$PATH:$HOME/CTF/bin" ;;
+  *":$HOME/CTF/bin:"*) ;;
+  *) export PATH="$PATH:$HOME/CTF/bin" ;;
 esac
 source ~/CTF/ctf-env/.venv/bin/activate
 ```
 
-## C++
+## プログラミング言語
+
+### C++
 
 ```zsh
 sudo apt install clangd libboost-all-dev
 cat /usr/include/boost/version.hpp | grep "BOOST_LIB_VERSION"
 ```
 
-## Golang
+### Golang
 
 - https://go.dev/doc/install
 
@@ -546,7 +548,7 @@ go install golang.org/x/tools/cmd/goimports@latest
 go install golang.org/x/tools/cmd/stringer@latest
 ```
 
-## Rust
+### Rust
 
 - https://rust-lang.org/ja/tools/install/
 - https://rust-analyzer.github.io/book/installation.html
@@ -565,7 +567,7 @@ chmod +x ~/.local/bin/rust-analyzer
 rustup component add rust-src
 ```
 
-## Node.js
+### Node.js
 
 ```zsh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
@@ -581,7 +583,7 @@ npm --version
 ```
 -->
 
-## VSCode 拡張
+### VSCode 拡張
 
 VSCode を起動して、以下の拡張をインストールする。
 
@@ -628,7 +630,9 @@ $ sudo apt install podman -y
 ```
 -->
 
-# ネットワークからの接続を許可する
+# その他
+
+## ネットワークからの接続を許可する
 
 - https://learn.microsoft.com/ja-jp/windows/wsl/networking?WT.mc_id=AZ-MVP-4021785#default-networking-mode-nat
 
@@ -649,11 +653,11 @@ netsh int portproxy del v4tov4 listenport=$port listenaddress=0.0.0.0
 Remove-NetFirewallRule -DisplayName "TCP_$port"
 ```
 
-# ミラーモード
+## ミラーモード
 
 - https://learn.microsoft.com/ja-jp/windows/wsl/networking
 
-## `C:\Users\USER\.wslconfig`
+### `C:\Users\USER\.wslconfig`
 
 ```bash
 vi /mnt/c/Users/USER/.wslconfig
@@ -664,13 +668,13 @@ vi /mnt/c/Users/USER/.wslconfig
 networkingMode=mirrored
 ```
 
-## WSL2 を停止して、再起動
+### WSL2 を停止して、再起動
 
 ```pwsh
 wsl --shutdown
 ```
 
-## Hyper-V Firewall Rule
+### Hyper-V Firewall Rule
 
 - PowerShell (管理者)
 
@@ -678,7 +682,7 @@ wsl --shutdown
 Set-NetFirewallHyperVVMSetting -Name '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}' -DefaultInboundAction Allow
 ```
 
-# Windows Terminal の設定
+## Windows Terminal の設定
 
 - Ctrl + V の無効化: 設定 > ⌨ 操作 > 貼り付け > Ctrl + V: 設定を🗑️をクリックして消す
 - ビープ音を消す: 設定 > 規定値 > 詳細設定 > ベル通知スタイル > 音によるチャイム: チェックを外す
