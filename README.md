@@ -9,6 +9,7 @@
   - [CTF大会](ctf/ctf/)
   - [Forensics - Tools](ctf/for/tools.md)
   - [pwn/tools](ctf/pwn/tools.md)
+  - [web/SQL injection](ctf/web/sqli.md)
 - [Linux](linux)
   - [Docker](linux/docker.md)
   - [K8s](linux/k8s)
