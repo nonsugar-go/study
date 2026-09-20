@@ -78,7 +78,7 @@ ln -s $USERPROFILE/OneDrive
 - [zsh](/linux/zsh.md)
 
 ```bash
-sudo apt install zsh -y
+sudo apt install zsh
 chsh -s /bin/zsh
 ```
 
