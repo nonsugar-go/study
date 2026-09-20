@@ -105,6 +105,8 @@ binwalk -e foo.jpg
 
 ## pngcheck
 
+- https://www.setsuki.com/hsp/ext/png.htm
+
 ```zsh
 sudo apt install pngcheck
 
