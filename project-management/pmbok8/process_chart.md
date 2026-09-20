@@ -10,4 +10,72 @@
 | Resources (資源) | N/A | - Plan Resource Management (資源マネジメントの計画)<br> - Estimate Resources (資源の見積り) | - Acuire Resources (資源の獲得)<br> - Lead the Team (チームのリード) | - Monitor and Control Resourcing (資源の監視コントロール) | N/A |
 | Risk (リスク) | N/A | - Plan Risk Management(リスク・マネジメントの計画)<br> - Identify Risks (リスクの特定)<br> - Perform Risk Analysis (リスク分析の実行)<br> - Plan Risk Responses (リスク対応の計画) | - Implement Risk Responses (リスク対応の実装) | - Monitor Risks (リスクの監視) | N/A |
 
-- 7 つのパフォーマンスドメインと 40 のプロセス
+## 7 つのパフォーマンスドメインと 40 のプロセス
+
+### Initiating Focus Area
+
+#### Governance
+
+- Initiate Project or Phase
+
+#### Stakeholders
+
+- Identify Stakeholders
+
+### Planning Focus Area
+
+#### Governance
+
+- Integrate and Align Project Plans
+- Plan Sourcing Strategy
+
+#### Scope
+
+#### Schedule
+
+#### Finance
+
+#### Stakeholders
+
+#### Resources
+
+#### Risk
+
+### Executing Focus Area
+
+#### Governance
+
+- Manage Project Execution
+- Manage Quality Assurance
+- Manage Project Knowledge
+
+#### Stakeholders
+
+#### Resources
+
+#### Risk
+
+### Monitoring and Controlling Focus Area
+
+#### Governance
+
+- Monitor and Control Project Performance
+- Assess and Implement Changes
+
+#### Scope
+
+#### Schedule
+
+#### Finance
+
+#### Stakeholders
+
+#### Resources
+
+#### Risk
+
+### Closing Focus Area
+
+#### Governance
+
+- Close Project or Phase
