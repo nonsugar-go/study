@@ -96,19 +96,30 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ### ~/.zshrc
 
-```zsh
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$(go env GOPATH)/bin
-export PATH=$PATH:$HOME/bin
-alias open=explorer.exe
-alias bat=batcat
-alias ctf="source ~/CTF/aliases.sh"
-```
-
 - 下記の行を変更
 
 ```
 plugins=(git python web-search z)
+```
+
+- 末尾に追加
+
+```zsh
+case ":$PATH:" in
+  *":/snap/bin:"*) ;;
+  *) export PATH="$PATH:/snap/bin" ;;
+esac
+case ":$PATH:" in
+  *":/usr/local/go/bin:"*) ;;
+  *) export PATH="$PATH:/usr/local/go/bin" ;;
+esac
+case ":$PATH:" in
+  *":`go env GOPATH`/bin:"*) ;;
+  *) export PATH="$PATH:$(go env GOPATH)/bin" ;;
+esac
+alias open=explorer.exe
+alias bat=batcat
+alias ctf="source ~/CTF/env"
 ```
 
 ## vim 関連
