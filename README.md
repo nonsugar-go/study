@@ -21,6 +21,8 @@
   - [Python](programming/python)
   - [Go](programming/go)
   - [Rust](programming/rust)
+- [プロジェクト管理](project-management)
+  - [PMBOK 8 Edition Process Chart](project-management/pmbok8/process_chart.md)
 - [Tools](tools)
   - [Vim](tools/vim)
   - [Zabbix](tools/zabbix)
