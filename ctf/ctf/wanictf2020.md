@@ -1,5 +1,11 @@
 # crypto
 
+## veni_vidi
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/crypto/veni_vidi
+
+ROT13
+
 ## exclusive
 
 - https://github.com/wani-hackase/wanictf2020-writeup/tree/master/crypto/exclusive
@@ -15,12 +21,6 @@ key = encrypt("FLA", ct[:3]) * 19
 flag = encrypt(ct, key)
 print(f"{flag=}")
 ```
-
-## veni_vidi
-
-- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/crypto/veni_vidi
-
-ROT13
 
 ## basic_rsa
 
@@ -84,6 +84,57 @@ io.sendline(b"cat flag.txt")
 io.recvuntil(b"FLAG{")
 log.success("FLAG{%s", io.recvuntil(b"}").decode("latin-1"))
 io.close()
+```
+
+## lcg
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/crypto/lcg
+
+```zsh
+#!/usr/bin/env python3
+import math
+from pwn import log, remote
+io = remote("::1", 50001)
+
+
+def read_num() -> int:
+    io.recvuntil(b"> ")
+    io.sendline(b"1")
+    i = int(io.recvline(drop=True))
+    log.info("read_num(): %d", i)
+    return i
+
+
+x0 = read_num()
+x1 = read_num()
+x2 = read_num()
+x3 = read_num()
+x4 = read_num()
+y0 = x1 - x0
+y1 = x2 - x1
+y2 = x3 - x2
+y3 = x4 - x3
+m = math.gcd(abs(y3*y1 - y2*y2), abs(y2*y0 - y1*y1))
+log.info(f"{m=}")
+a = y1 * pow(y0, -1, m)
+log.info(f"{a=}")
+b = (x1 - a*x0) % m
+log.info(f"{b=}")
+
+io.recvuntil(b"> ")
+io.sendline(b"2")
+
+for _ in range(10):
+    next_val = (a * x4 + b) % m
+    log.info(f"{next_val=}")
+    log.info("%s", io.recvuntil(b"> "))
+    io.sendline(str(next_val).encode())
+    x4 = next_val
+
+io.timeout = 1
+io.recvuntil(b"FLAG{")
+log.success("FLAG{%s", io.recvuntil(b"}"))
+io.stream()
 ```
 
 ## 02-var-rewrite
