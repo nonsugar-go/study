@@ -302,6 +302,35 @@ $ 7z x -p"ilovewani" wani_secret.zip
 $ cat wani_secret/flag.txt|grep FLAG
 ```
 
+# misc
+
+## number
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/misc/number
+
+```python
+#!/usr/bin/env python3
+from pwn import context, log, remote
+context.log_level = "info"
+io = remote("::1", 60000)
+mi, ma = 0, 500000
+while True:
+    chall = (mi + ma) // 2
+    io.sendlineafter(b"input:", str(chall).encode())
+    result = io.recvline(drop=True)
+    log.info(f"{result=}")
+    if result == b"too small":
+        mi = chall + 1
+    elif result == b"too big":
+        ma = chall - 1
+    else:
+        break
+io.time = 1
+io.recvuntil(b"FLAG{")
+log.success("FLAG{%s", io.recvuntil(b"}").decode())
+io.stream()
+```
+
 # pwn
 
 ## 01-netcat
