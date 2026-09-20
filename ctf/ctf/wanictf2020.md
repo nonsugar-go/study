@@ -137,6 +137,81 @@ yes 0000000000000000|nc ::1 50002|grep FLAG
 ```zsh
 $ extract -sf secret.jpg
 ```
+## chunk_eater
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/forensics/chunk_eater
+- https://ja.wikipedia.org/wiki/Portable_Network_Graphics
+- https://www.setsuki.com/hsp/ext/png.htm
+
+```zsh
+$ strings -tx eaten.png|grep WANI
+      c WANI
+    3ab PWANIx^
+  10008 WANI
+  20008 WANI
+  22dc1 WANI
+
+$ xxd -l16 eaten.png
+00000000: 8950 4e47 0d0a 1a0a 0000 000d 5741 4e49  .PNG........WANI
+
+$ xxd -l16 -s0x3a0 eaten.png
+000003a0: 7222 3f3e b86c af91 0000 fc50 5741 4e49  r"?>.l.....PWANI
+
+xxd -l16 -s0x10000 eaten.png
+00010000: 77f7 6320 0000 fff4 5741 4e49 0a42 3417  w.c ....WANI.B4.
+
+xxd -l16 -s0x20000 eaten.png
+00020000: 4177 9914 0000 2dad 5741 4e49 c58b e5b2  Aw....-.WANI....
+
+xxd -l16 -s0x22dc0 eaten.png
+00022dc0: 0057 414e 49ae 4260 82                   .WANI.B`.
+
+$ hexer eaten.png
+
+$ diff <(xxd file/eaten.png) <(xxd eaten.png)
+1c1
+< 00000000: 8950 4e47 0d0a 1a0a 0000 000d 5741 4e49  .PNG........WANI
+---
+> 00000000: 8950 4e47 0d0a 1a0a 0000 000d 4948 4452  .PNG........IHDR
+59c59
+< 000003a0: 7222 3f3e b86c af91 0000 fc50 5741 4e49  r"?>.l.....PWANI
+---
+> 000003a0: 7222 3f3e b86c af91 0000 fc50 4944 4154  r"?>.l.....PIDAT
+4097c4097
+< 00010000: 77f7 6320 0000 fff4 5741 4e49 0a42 3417  w.c ....WANI.B4.
+---
+> 00010000: 77f7 6320 0000 fff4 4944 4154 0a42 3417  w.c ....IDAT.B4.
+8193c8193
+< 00020000: 4177 9914 0000 2dad 5741 4e49 c58b e5b2  Aw....-.WANI....
+---
+> 00020000: 4177 9914 0000 2dad 4944 4154 c58b e5b2  Aw....-.IDAT....
+8925c8925
+< 00022dc0: 0057 414e 49ae 4260 82                   .WANI.B`.
+---
+> 00022dc0: 0049 454e 44ae 4260 82                   .IEND.B`.
+
+$ file eaten.png
+eaten.png: PNG image data, 1136 x 1232, 8-bit/color RGBA, non-interlaced
+
+$ pngcheck -v eaten.png
+File: eaten.png (142793 bytes)
+  chunk IHDR at offset 0x0000c, length 13
+    1136 x 1232 image, 32-bit RGB+alpha, non-interlaced
+  chunk sRGB at offset 0x00025, length 1
+    rendering intent = perceptual
+  chunk gAMA at offset 0x00032, length 4: 0.45455
+  chunk pHYs at offset 0x00042, length 9: 3780x3780 pixels/meter (96 dpi)
+  chunk tEXt at offset 0x00057, length 25, keyword: Software
+  chunk iTXt at offset 0x0007c, length 804, keyword: XML:com.adobe.xmp
+    uncompressed, no language tag
+    no translated keyword, 783 bytes of UTF-8 text
+  chunk IDAT at offset 0x003ac, length 64592
+    zlib: deflated, 32K window, fast compression
+  chunk IDAT at offset 0x10008, length 65524
+  chunk IDAT at offset 0x20008, length 11693
+  chunk IEND at offset 0x22dc1, length 0
+No errors detected in eaten.png (10 chunks, 97.5% compression).
+```
 
 # pwn
 
