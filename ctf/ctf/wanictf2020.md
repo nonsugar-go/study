@@ -120,12 +120,22 @@ log.success("FLAG{%s", io.recvuntil(b"}"))
 io.stream()
 ```
 
-# Writeup
+## l0g0n
 
 - https://github.com/wani-hackase/wanictf2020-writeup/tree/master/crypto/l0g0n
 
 ```zsh
 yes 0000000000000000|nc ::1 50002|grep FLAG
+```
+
+# forensics
+
+## logged_flag
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/forensics/logged_flag
+
+```zsh
+$ extract -sf secret.jpg
 ```
 
 # pwn
