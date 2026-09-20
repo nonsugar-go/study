@@ -275,6 +275,33 @@ for w in range(1, 0xfff):
             exit()
 ```
 
+## ALLIGATOR_03
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/forensics/ALLIGATOR_03
+
+```
+$ cat hash.txt
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:fc525c9683e8fe067095ba2ddc971889:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+IEUser:1000:aad3b435b51404eeaad3b435b51404ee:fc525c9683e8fe067095ba2ddc971889:::
+sshd:1001:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+sshd_server:1002:aad3b435b51404eeaad3b435b51404ee:8d0a16cfc061c3359db455d00ec27035:::
+ALLIGATOR:1003:aad3b435b51404eeaad3b435b51404ee:5e7a211fee4f7249f9db23e4a07d7590:::
+
+$ hashcat hash.txt ~/CTF/rockyou.txt -m 1000
+ (snip)
+31d6cfe0d16ae931b73c59d7e0c089c0:
+fc525c9683e8fe067095ba2ddc971889:Passw0rd!
+5e7a211fee4f7249f9db23e4a07d7590:ilovewani
+ (snip)
+```
+
+```zsh
+$ 7z x -p"ilovewani" wani_secret.zip
+
+$ cat wani_secret/flag.txt|grep FLAG
+```
+
 # pwn
 
 ## 01-netcat
