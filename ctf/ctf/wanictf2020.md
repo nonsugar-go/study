@@ -69,23 +69,6 @@ io.success("FLAG{%s", io.recvuntil(b"}").decode())
 io.interactive()
 ```
 
-# pwn
-
-## 01-netcat
-
-- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/pwn/01-netcat
-
-```python
-#!/usr/bin/env python3
-from pwn import log, remote
-io = remote("::1", 9001)
-io.recvuntil(b"congratulation!\n")
-io.sendline(b"cat flag.txt")
-io.recvuntil(b"FLAG{")
-log.success("FLAG{%s", io.recvuntil(b"}").decode("latin-1"))
-io.close()
-```
-
 ## lcg
 
 - https://github.com/wani-hackase/wanictf2020-writeup/tree/master/crypto/lcg
@@ -135,6 +118,23 @@ io.timeout = 1
 io.recvuntil(b"FLAG{")
 log.success("FLAG{%s", io.recvuntil(b"}"))
 io.stream()
+```
+
+# pwn
+
+## 01-netcat
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/pwn/01-netcat
+
+```python
+#!/usr/bin/env python3
+from pwn import log, remote
+io = remote("::1", 9001)
+io.recvuntil(b"congratulation!\n")
+io.sendline(b"cat flag.txt")
+io.recvuntil(b"FLAG{")
+log.success("FLAG{%s", io.recvuntil(b"}").decode("latin-1"))
+io.close()
 ```
 
 ## 02-var-rewrite
