@@ -125,6 +125,8 @@ pdfimages -all file.pdf img
 sudo apt install steghide
 
 steghide info foo.jpg
+
+steghide extract -sf foo.jpg -xf flag.txt
 ```
 
 ## hashcat
