@@ -120,6 +120,14 @@ log.success("FLAG{%s", io.recvuntil(b"}"))
 io.stream()
 ```
 
+# Writeup
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/crypto/l0g0n
+
+```zsh
+yes 0000000000000000|nc ::1 50002|grep FLAG
+```
+
 # pwn
 
 ## 01-netcat
