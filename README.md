@@ -6,6 +6,7 @@
   - [aws](cloud-computing/aws)
   - [oci](cloud-computing/oci)
 - [CTF](ctf)
+  - [CTF](ctf/ctf/)
   - [pwn/tools](ctf/pwn/tools.md)
 - [Linux](linux)
   - [Docker](linux/docker.md)
