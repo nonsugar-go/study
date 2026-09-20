@@ -529,14 +529,6 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.27.1.linux-amd64.ta
 rm ./go1.27.1.linux-amd64.tar.gz
 ```
 
-- ~/.zshrc
-
-```zsh
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$(go env GOPATH)/bin
-export PATH=$PATH:$HOME/bin
-```
-
 ```zsh
 go install github.com/air-verse/air@latest
 go install github.com/fatih/gomodifytags@latest
