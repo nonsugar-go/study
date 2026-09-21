@@ -333,6 +333,14 @@ io.stream()
 
 # web
 
+## devtools_1
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/web/devtools_1
+
+```zsh
+curl -s http://localhost:30001 | grep -o 'FLAG{.*}'
+```
+
 ## SQL_challenge_1
 
 - https://github.com/wani-hackase/wanictf2020-writeup/tree/master/web/SQL_challenge_1
