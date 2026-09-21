@@ -406,6 +406,43 @@ flag = "".join([chr(c) for c in codes])
 print(f"{flag=}")
 ```
 
+## complex
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/reversing/complex
+
+```c
+undefined8 check_13(long param_1)
+
+{
+  char local_68 [48];
+  char local_38 [44];
+  int local_c;
+  
+  builtin_strncpy(local_38,"7631491152978154664681564351104854247",0x25);
+  builtin_strncpy(local_68,"S_WnMVDnGWX[THjW^SW]gE]SkAPEDBZgCU^AR",0x25);
+  local_c = 0;
+  while( true ) {
+    if (0x24 < local_c) {
+      return 2;
+    }
+    if (((int)local_38[local_c] ^ (uint)*(byte *)(param_1 + local_c)) != (int)local_68[local_c])
+    break;
+    local_c = local_c + 1;
+  }
+  return 1;
+}
+```
+
+## Solver
+
+```python
+#!/usr/bin/env python3
+a = b"7631491152978154664681564351104854247"
+b = b"S_WnMVDnGWX[THjW^SW]gE]SkAPEDBZgCU^AR"
+flag = "".join([chr(a ^ b) for a, b in zip(a, b)])
+print("FLAG{" + f"{flag}" + "}")
+```
+
 # pwn
 
 ## 01-netcat
