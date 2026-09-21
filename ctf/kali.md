@@ -6,6 +6,8 @@
 
 ### ESXi にインストールする例
 
+- インストーラー: Kili Linux 2026.2 x86_64 Installe
+  (https://cdimage.kali.org/kali-2026.2/kali-linux-2026.2-installer-amd64.iso)
 - ゲスト OS: Linux / その他の Linux 4.x 以降 (64 ビット)
 - CPU: 4コア
 - Memory: 4GB
