@@ -341,6 +341,12 @@ io.stream()
 curl -s http://localhost:30001 | grep -o 'FLAG{.*}'
 ```
 
+## devtools_2
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/web/devtools_2
+
+開発者ツールで、5000000000000000 に書き換える
+
 ## SQL_challenge_1
 
 - https://github.com/wani-hackase/wanictf2020-writeup/tree/master/web/SQL_challenge_1
