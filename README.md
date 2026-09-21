@@ -7,6 +7,7 @@
   - [oci](cloud-computing/oci)
 - [CTF](ctf)
   - [CTF大会](ctf/ctf/)
+  - [Kali Linux](ctf/kali.md)
   - [Forensics - Tools](ctf/for/tools.md)
   - [pwn/tools](ctf/pwn/tools.md)
   - [web/SQL injection](ctf/web/sqli.md)
