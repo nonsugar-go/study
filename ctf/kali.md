@@ -20,4 +20,10 @@
 sudo systemctl enable ssh --now
 sudo apt install xrdp
 sudo systemctl enable xrdp --now
+echo 'setw -g mode-keys vi' >~/.tmux.conf
+tmux
+sudo apt update && sudo apt upgrade -y
+cp /usr/share/wordlists/rockyou.txt.gz .
+gunzip rockyou.txt.gz
+sudo apt install ffmpeg hexer mediainfo pngcheck
 ```
