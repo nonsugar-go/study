@@ -120,6 +120,7 @@ esac
 alias open=explorer.exe
 alias bat=batcat
 alias ctf="source ~/CTF/env"
+clip() { iconv -t utf16le "$@" | clip.exe }
 ```
 
 ## vim 関連
@@ -498,7 +499,6 @@ ckp() {
   readelf -sW $f >syms.output
   strings -tx $f >strings-tx.output
 }
-clip() { iconv -t utf16le "$@" | clip.exe }
 case ":$PATH:" in
   *":/snap/bin:"*) ;;
   *) export PATH="$PATH:/snap/bin" ;;
