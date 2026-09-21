@@ -19,6 +19,7 @@ git clone https://github.com/volatilityfoundation/volatility3.git
 ## Install
 
 - https://github.com/volatilityfoundation/volatility/wiki/Installation
+- https://pypi.org/project/volatility3/
 
 ```zsh
 pip3 install -U volatility3
