@@ -381,6 +381,16 @@ curl -s 'http://localhost:8080/index.php?year=(2016)OR(1)=(1)' | grep -o 'FLAG{.
 curl -s 'http://localhost:8080/index.php?year=0' | grep -o 'FLAG{.*}'
 ```
 
+# reversing
+
+## strings
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/reversing/strings
+
+```zsh
+strings file/strings|grep -o 'FLAG{.*}'
+```
+
 # pwn
 
 ## 01-netcat
