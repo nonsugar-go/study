@@ -121,3 +121,65 @@ d = pow(e, -1, phi)
 m = pow(c, d, n)
 print(long_to_bytes(m).decode())
 ```
+
+## fusion
+
+- https://github.com/wani-hackase/wanictf2023-writeup/tree/main/cry/fusion
+
+### Solutoin 1
+
+```python
+#!/usr/bin/env python3
+import sys
+
+from Crypto.Util.number import long_to_bytes
+from z3 import BitVec, Solver, sat
+
+n = e = c = r = 0
+exec(open("file/output.txt").read())
+bits = 1024
+P = BitVec('P', bits)
+Q = BitVec('Q', bits)
+s = Solver()
+s.add(P * Q == n)
+mask1 = int("55" * 128, 16)
+mask2 = mask1 << 1
+s.add(r == (P & mask1) + (Q & mask2))
+if s.check() == sat:
+    m = s.model()
+    p = m[P].as_long()
+    q = m[Q].as_long()
+else:
+    sys.exit(1)
+phi = (p-1)*(q-1)
+d = pow(e, -1, phi)
+m = pow(c, d, n)
+print(long_to_bytes(m).decode())
+```
+
+### Solution 2
+
+```python
+#!/usr/bin/env python3
+from Crypto.Util.number import long_to_bytes
+
+n = e = c = r = 0
+exec(open("file/output.txt").read())
+mask = int("55" * 128, 16)
+p = r & mask
+mask = mask << 1
+q = r & mask
+for i in range(128*8):
+    mask = 1 << i
+    if i % 2 == 0:
+        if (n & mask) != (p*q & mask):
+            q ^= mask
+    else:
+        if (n & mask) != (p*q & mask):
+            p ^= mask
+assert n == p*q
+phi = (p-1)*(q-1)
+d = pow(e, -1, phi)
+m = pow(c, d, n)
+print(long_to_bytes(m).decode())
+```
