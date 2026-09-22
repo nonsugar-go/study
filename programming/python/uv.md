@@ -40,6 +40,8 @@ uv sync
 ### Virtual Environment (activate で有効化)
 
 - https://docs.astral.sh/uv/pip/environments/
+- https://docs.astral.sh/uv/pip/packages/
+- https://docs.astral.sh/uv/pip/inspection/
 
 ```zsh
 uv venv
