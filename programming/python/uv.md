@@ -27,16 +27,6 @@ uv tool install ruff
 uv tool upgrade --all
 ```
 
-### プロジェクト
-
-- https://docs.astral.sh/uv/guides/projects/
-- https://docs.astral.sh/uv/concepts/projects/sync/#syncing-development-dependencies
-
-```zsh
-uv lock --upgrade
-uv sync
-```
-
 ### Virtual Environment (activate で有効化)
 
 - https://docs.astral.sh/uv/pip/environments/
@@ -54,3 +44,14 @@ source .venv/bin/activate
 deactivate
 ```
 
+### プロジェクト
+
+- https://docs.astral.sh/uv/guides/projects/
+- https://docs.astral.sh/uv/concepts/projects/sync/#syncing-development-dependencies
+
+(作成中)
+
+```zsh
+uv lock --upgrade
+uv sync
+```
