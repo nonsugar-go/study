@@ -183,3 +183,63 @@ d = pow(e, -1, phi)
 m = pow(c, d, n)
 print(long_to_bytes(m).decode())
 ```
+
+## dsa
+
+- https://github.com/wani-hackase/wanictf2023-writeup/tree/main/cry/dsa
+
+```python
+#!/usr/bin/env python3
+from math import gcd
+
+from Crypto.Util.number import long_to_bytes
+from pwn import log, remote
+
+
+def read_num(io, base: int) -> int:
+    io.recvuntil(b" = ")
+    return int(io.recvline(drop=True), base)
+
+
+# p = 2791...
+# q = 1395...
+# g = 2
+# y = 9844...
+# FLAG = *****************************
+# sha256(FLAG) = 7aad....
+# r = 6140....
+# s = 4416....
+def get_params():
+    io = remote("::1", 50010)
+    p = read_num(io, 10)
+    q = read_num(io, 10)
+    g = read_num(io, 10)
+    y = read_num(io, 10)
+    io.readline()  # FLAG
+    sha256flag = read_num(io, 16)
+    r = read_num(io, 10)
+    s = read_num(io, 10)
+    io.stream()
+    io.close()
+    return p, q, g, y, sha256flag, r, s
+
+
+while True:
+    params = []
+    for i in range(4):
+        params.append(get_params())
+
+    xk = []
+    for i in range(0, 4, 2):
+        p1, q1, g1, y1, sha256flag1, r1, s1 = params[i]
+        p2, q2, g2, y2, sha256flag2, r2, s2 = params[i+1]
+        assert r1 == r2
+        assert q1 == q2
+        diff_s = (s1-s2) % q1
+        xk.append((diff_s * pow(r1, -1, q1)) % q1)
+
+    flag = long_to_bytes(gcd(*xk))
+    if b"FLAG{" in flag:
+        log.success("%s", flag.decode())
+        break
+```
