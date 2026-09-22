@@ -138,28 +138,48 @@ fi
 ## neovim
 
 ```
-% sudo apt install neovim -y
+sudo apt install neovim
+sudo update-alternatives --config vi
+sudo update-alternatives --config vim
+sudo update-alternatives --config view
+sudo update-alternatives --display vi
+sudo update-alternatives --display vim
+sudo update-alternatives --display view
 ```
 
 - [NeoVim](/tools/vim/neovim.md)
 
-### プラグイン
+### Plugin
 
 - https://github.com/junegunn/vim-plug
 - https://github.com/mattn/vim-maketable
 - https://github.com/tpope/vim-commentary
 - https://github.com/mattn/vim-lsp-settings
+- https://github.com/mattn/vim-goimports
+
+```zsh
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+mkdir -p ~/.config/nvim
+```
 
 ### ~/.config/nvim/init.vim
 
 ```
 set number
 set colorcolumn=80
+set scrolloff=5
 tnoremap <C-w><C-w> <C-\><C-n><C-w>w
 autocmd BufReadPost *
   \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \ exe "normal! g'\"" |
   \ endif
+aug AutoLexplore
+  au!
+  au VimEnter * if isdirectory(expand('%')) | Lexplore | endif
+aug END
+let g:netrw_banner = 0
+let g:netrw_winsize = 25
 
 call plug#begin()
 Plug 'mattn/vim-goimports'
