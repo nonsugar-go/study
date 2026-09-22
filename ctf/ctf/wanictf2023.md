@@ -11,16 +11,16 @@ q = 5
 n = p*q
 e = 65535
 # c ≡ m^e (mod n) ≡ 10 (mod n)
-for m in range(1, 0xffffff):
+for m in range(1, n):
     c = pow(m, e, n)
     if c == 10:
         break
-print(f"{m=}")
+print(f"FLAG{{{m}}}")
 
 phi = (p-1)*(q-1)
 d = pow(e, -1, phi)
 m2 = pow(c, d, n)
-print(f"{m2=}")
+print(f"FLAG{{{m2}}}")
 ```
 
 ## EZDORSA_Lv2
