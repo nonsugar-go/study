@@ -243,3 +243,13 @@ while True:
         log.success("%s", flag.decode())
         break
 ```
+
+# web
+
+## indexeddb
+
+- https://github.com/wani-hackase/wanictf2023-writeup/tree/main/web/indexeddb
+
+```zsh
+curl -s http://localhost/ | grep -o 'FLAG{.*}'
+```
