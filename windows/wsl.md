@@ -445,12 +445,13 @@ chmod 755 ~/CTF/bin/burpsuite
 ### ~/CTF/env
 
 ```zsh
-alias angr='docker run -it --rm -v $PWD:/local angr/angr'
+alias angr='docker run -it --rm -v "$PWD":/work -w /work angr/angr'
 alias cur='curl -LO'
 alias gdb='gdb -q'
 alias gre='grep -Rin'
 alias mkd='mydir=$(printf %02d $(($(ls -d [0-9][0-9]|tail -1)+1)))&&mkdir $mydir&&cd $mydir'  # Zsh-only
 alias que='vi Question.txt'
+alias sage='docker run -it --rm -v "$PWD":/work -w /work sagemath/sagemath sage'
 ckp() {
   f="${1:-chall}"
   (strings $f; strings -el $f)|sort -u >strings.output
