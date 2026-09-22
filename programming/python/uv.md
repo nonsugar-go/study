@@ -15,7 +15,7 @@ uv self update
 
 - https://docs.astral.sh/uv/getting-started/features/
 
-### ツールのインストール
+### ツールのインストール ($HOME/.local/bin/ にインストール)
 
 - https://docs.astral.sh/uv/guides/tools/#installing-tools
 
@@ -37,10 +37,11 @@ uv lock --upgrade
 uv sync
 ```
 
-### Virtual Environment
+### Virtual Environment (.venv/bin/activate で有効化)
 
 - https://docs.astral.sh/uv/pip/environments/
 
 ```zsh
 uv venv
+uv pip install pycryptodome
 ```
