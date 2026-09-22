@@ -270,28 +270,14 @@ $ vi
 
 $ vi foo.md
 :LspInstallServer
-:LspStatus
-:q!
-
-$ vi foo.go
-:LspInstallServer
-:LspStatus
 :q!
 
 $ vi foo.py
 :LspInstallServer
-:LspStatus
 :q!
 ```
 
 <!--
-$ sudo apt install python3-venv
-
-$ vi foo.py
-:LspInstallServer
-:LspStatus
-:q!
-
 $ vi foo.cpp
 :LspStatus
 :q!
@@ -527,6 +513,12 @@ sudo apt install clangd libboost-all-dev
 cat /usr/include/boost/version.hpp | grep "BOOST_LIB_VERSION"
 ```
 
+```zsh
+$ vi foo.cpp
+:LspInstallServer
+:q!
+```
+
 ### Golang
 
 - https://go.dev/doc/install
@@ -546,6 +538,12 @@ go install github.com/tc-hib/go-winres@latest
 go install golang.org/x/tools/cmd/godoc@latest
 go install golang.org/x/tools/cmd/goimports@latest
 go install golang.org/x/tools/cmd/stringer@latest
+```
+
+```zsh
+$ vi foo.go
+:LspInstallServer
+:q!
 ```
 
 ### Rust
