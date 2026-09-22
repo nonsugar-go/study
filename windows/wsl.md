@@ -123,18 +123,6 @@ alias ctf="source ~/CTF/env"
 clip() { iconv -t utf16le "$@" | clip.exe }
 ```
 
-## vim 関連
-
-```
-if [ ! -d ~/.vim/autoload ]; then
-  mkdir -p ~/.vim/autoload
-  (
-  cd ~/.vim/autoload
-  curl -LO https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  )
-fi
-```
-
 ## neovim
 
 ```
