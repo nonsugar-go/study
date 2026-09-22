@@ -36,3 +36,7 @@ uv tool upgrade --all
 uv lock --upgrade
 uv sync
 ```
+
+### Virtual Environment
+
+- https://docs.astral.sh/uv/pip/environments/
