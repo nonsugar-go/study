@@ -46,6 +46,7 @@ uv sync
 ```zsh
 uv venv
 uv pip install -U pwntools
+uv pip list
 source .venv/bin/activate
 ```
 
