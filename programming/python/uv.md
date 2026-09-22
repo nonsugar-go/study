@@ -40,3 +40,7 @@ uv sync
 ### Virtual Environment
 
 - https://docs.astral.sh/uv/pip/environments/
+
+```zsh
+uv venv
+```
