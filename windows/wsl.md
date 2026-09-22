@@ -162,7 +162,7 @@ au BufReadPost *
   \ if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 aug AutoLexplore
   au!
-  au VimEnter * if isdirectory(expand('%')) | 
+  au VimEnter * if isdirectory(expand('%')) |
     \ execute 'Lexplore ' . fnameescape(expand('%')) | endif
 aug END
 let g:netrw_banner = 0
@@ -226,32 +226,33 @@ au User lsp_setup call lsp#register_server({
 aug filetype_go
   au!
   au FileType go setlocal tabstop=4 shiftwidth=4 expandtab
-  au FileType go nnoremap <F5> :w<CR>:!go run %<CR>
-  au FileType go inoremap <F5> <Esc>:w<CR>:!go run %<CR>
-  au FileType go ia _las http.ListenAndServe(":8080", nil)
-  au FileType go ia _wr w http.ResponseWriter, r *http.Request
+  au FileType go nnoremap <F5> :w<CR>:!go run %:S<CR>
+  au FileType go inoremap <F5> <Esc>:w<CR>:!go run %:S<CR>
   au FileType go ia iferr if err != nil {<CR>return nil, err<CR>}
-  au FileType go ia pkgm //go:build ignore<CR><CR>package main<CR><CR>func main() {<CR>}<C-o>O
+  au FileType go ia
+    \ pkgm //go:build ignore<CR><CR>package main<CR><CR>func main() {<CR>}<C-o>O
 aug END
 
 aug filetype_rust
   au!
-  au FileType rust nnoremap <F5> :w<CR>:!cargo run %<CR>
-  au FileType rust inoremap <F5> <Esc>:w<CR>:!cargo run %<CR>
+  au FileType rust nnoremap <F5> :w<CR>:!cargo run<CR>
+  au FileType rust inoremap <F5> <Esc>:w<CR>:!cargo run<CR>
 aug END
 
 aug filetype_c_cpp
   au!
   au FileType c,cpp setlocal tabstop=2 shiftwidth=2 expandtab
-  au FileType c,cpp nnoremap <F5> :w<CR>:make SRC=%<CR>
-  au FileType c,cpp inoremap <F5> <Esc>:w<CR>:make SRC=%<CR>
+  au FileType c,cpp nnoremap <F5> :w<CR>:make SRC=%:S<CR>
+  au FileType c,cpp inoremap <F5> <Esc>:w<CR>:make SRC=%:S<CR>
   au FileType c,cpp setlocal commentstring=//\ %s
 aug END
 
 aug filetype_python
   au!
-  au FileType python nnoremap <F5> :w<CR>:!python3 %<CR>
-  au FileType python inoremap <F5> <Esc>:w<CR>:!python3 %<CR>
+  au FileType python nnoremap 
+    \ <F5> :w<CR>:!ruff check --fix %:S<CR>:e!<CR>:!python3 %:S<CR>
+  au FileType python inoremap
+    \ <F5> <Esc>:w<CR>:!ruff check --fix %:S<CR>:e!<CR>:!python3 %:S<CR>
 aug END
 
 aug filetype_html
