@@ -158,13 +158,12 @@ set number
 set colorcolumn=80
 set scrolloff=5
 tnoremap <C-w><C-w> <C-\><C-n><C-w>w
-autocmd BufReadPost *
-  \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \ exe "normal! g'\"" |
-  \ endif
+au BufReadPost *
+  \ if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 aug AutoLexplore
   au!
-  au VimEnter * if isdirectory(expand('%')) | Lexplore | endif
+  au VimEnter * if isdirectory(expand('%')) | 
+    \ execute 'Lexplore ' . fnameescape(expand('%')) | endif
 aug END
 let g:netrw_banner = 0
 let g:netrw_winsize = 25
