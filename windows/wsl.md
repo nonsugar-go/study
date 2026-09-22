@@ -277,12 +277,6 @@ $ vi foo.py
 :q!
 ```
 
-<!--
-$ vi foo.cpp
-:LspStatus
-:q!
--->
-
 ## CTF
 
 ```zsh
