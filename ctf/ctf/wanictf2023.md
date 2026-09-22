@@ -267,7 +267,7 @@ from pwnlib import gdb
 
 exe = context.binary = ELF("file/chall", checksec=False)
 if args.GDB:
-    io = gdb.debug(exe.path, gdbscript="b main\n c")
+    io = gdb.debug(exe.path, gdbscript="b main\nc")
 elif args.REMOTE:
     io = remote("::1", 9003)
 else:
