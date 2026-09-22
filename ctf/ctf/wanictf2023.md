@@ -82,3 +82,42 @@ d = pow(e, -1, phi)
 m = pow(c, d, n)
 print(long_to_bytes(m).decode())
 ```
+
+## pqqp
+
+- https://github.com/wani-hackase/wanictf2023-writeup/tree/main/cry/pqqp
+
+```python
+#!/usr/bin/env sage
+with open("file/output.txt") as f:
+    n = int(f.readline())
+    e = int(f.readline())
+    c = int(f.readline())
+    s = int(f.readline())
+x = PolynomialRing(QQ, 'x').gen()
+f = x^2 - s*x + n
+roots = f.roots()
+p = roots[0][0]
+q = roots[1][0]
+print(f"{p = }")
+print(f"{q = }")
+```
+
+```python
+#!/usr/bin/env python3
+from Crypto.Util.number import long_to_bytes
+
+with open("file/output.txt") as f:
+    n = int(f.readline())
+    e = int(f.readline())
+    c = int(f.readline())
+    s = int(f.readline())
+
+p = 176330063921012922700637991462863541103998854114502331637244568587102359549595630463000846482379642953757505012490743127493606379742898143117619312114492521189590382203087267098186155670651109512140181571865807227830860711167013696000707228430366770561270525802688909225479987434756271082423940874678428380699
+q = 176327691686650177337984785396165958425418762904937364650285527113808599587807083096381029342960394300966162359226409359465329273568982843053136832536771445246955230479323425838863005081078400440102768529159941473729515115826868898933717551687460781540377358906498802364948817391298332874416942797525620440227
+
+phi = (p-1)*(q-1)
+d = pow(e, -1, phi)
+m = pow(c, d, n)
+print(long_to_bytes(m).decode())
+```
