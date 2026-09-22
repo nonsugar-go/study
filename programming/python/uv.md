@@ -46,3 +46,8 @@ uv venv
 uv pip install -U pwntools
 source .venv/bin/activate
 ```
+
+```zsh
+deactivate
+```
+
