@@ -303,6 +303,7 @@ PS> wsl --shutdown
 ```zsh
 curl -LsSf https://astral.sh/uv/install.sh | sh
 source $HOME/.local/bin/env
+uv self update  ## for update
 ```
 
 ```zsh
@@ -310,33 +311,17 @@ uv tool install flask-unsign
 uv tool install git+https://github.com/RsaCtfTool/RsaCtfTool
 uv tool install ropper
 uv tool install ruff
-uv init ~/CTF/ctf-env
-uv add --directory ~/CTF/ctf-env \
+uv tool upgrade --all  # for update
+```
+
+```zsh
+cd ~/CTF
+uv venv
+uv pip install -U \
   Flask gmpy2 pwntools pycryptodome pyshark pyzipper randcrack scapy \
   sympy z3-solver
+source ~/CTF/.venv/bin/activate  # for activate venv
 ```
-
-```zsh
-## for activate venv
-. ~/CTF/ctf-env/.venv/bin/activate
-```
-
-```zsh
-## for upgrade
-uv tool upgrade --all
-uv lock --upgrade --directory ~/CTF/ctf-env
-uv sync --directory ~/CTF/ctf-env
-```
-
-<!--
-```zsh
-python3 -m venv ~/CTF/myenv
-source ~/CTF/myenv/bin/activate
-pip3 install -U Flask flask-unsign gmpy2 pwntools pycryptodome pyshark \
-  pyzipper randcrack ropper scapy sympy z3-solver \
-  git+https://github.com/RsaCtfTool/RsaCtfTool
-```
--->
 
 ```zsh
 sudo gem install one_gadget seccomp-tools
@@ -461,15 +446,14 @@ chmod 755 ~/CTF/bin/burpsuite
 
 ```zsh
 alias angr='docker run -it --rm -v $PWD:/local angr/angr'
-alias c='curl -LO'
-alias g='grep -Rin'
+alias cur='curl -LO'
 alias gdb='gdb -q'
-alias mkd='mydir=$(printf %02d $(($(ls -d [0-9][0-9]|tail -1)+1)))&&mkdir $mydir&&cd $mydir' # Zsh-only
-alias q='vi Question.txt'
-alias w='vi Writeup.md'
+alias gre='grep -Rin'
+alias mkd='mydir=$(printf %02d $(($(ls -d [0-9][0-9]|tail -1)+1)))&&mkdir $mydir&&cd $mydir'  # Zsh-only
+alias que='vi Question.txt'
 ckp() {
   f="${1:-chall}"
-  (strings -n 5 $f; strings -n 5 -el $f)|sort -u >strings.output
+  (strings $f; strings -el $f)|sort -u >strings.output
   checksec $f >checksec.output 2>&1
   file $f >file.output
   hexdump -C $f >hexdump.output
@@ -487,6 +471,10 @@ ckp() {
   readelf -sW $f >syms.output
   strings -tx $f >strings-tx.output
 }
+wri() {
+  [ -f Writeup.md ] || echo -e "# Writeup\n" >Writeup.md
+  vi Writeup.md
+}
 case ":$PATH:" in
   *":/snap/bin:"*) ;;
   *) export PATH="$PATH:/snap/bin" ;;
@@ -495,7 +483,7 @@ case ":$PATH:" in
   *":$HOME/CTF/bin:"*) ;;
   *) export PATH="$PATH:$HOME/CTF/bin" ;;
 esac
-source ~/CTF/ctf-env/.venv/bin/activate
+source ~/CTF/.venv/bin/activate
 ```
 
 ## プログラミング言語
