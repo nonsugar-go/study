@@ -37,11 +37,12 @@ uv lock --upgrade
 uv sync
 ```
 
-### Virtual Environment (.venv/bin/activate で有効化)
+### Virtual Environment (activate で有効化)
 
 - https://docs.astral.sh/uv/pip/environments/
 
 ```zsh
 uv venv
-uv pip install pycryptodome
+uv pip install -U pwntools
+source .venv/bin/activate
 ```
