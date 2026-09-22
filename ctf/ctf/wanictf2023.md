@@ -25,7 +25,7 @@ print(f"FLAG{{{m2}}}")
 
 ## EZDORSA_Lv2
 
-- https://github.com/wani-hackase/wanictf2023-writeup/tree/main/
+- https://github.com/wani-hackase/wanictf2023-writeup/tree/main/cry/EZDORSA_Lv2
 
 ```python
 #!/usr/bin/env python3
