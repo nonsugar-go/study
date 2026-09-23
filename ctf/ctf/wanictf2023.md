@@ -279,7 +279,7 @@ io.sendline(b"cat FLAG")
 io.stream()
 ```
 
-# Writeup
+## only_once
 
 - https://github.com/wani-hackase/wanictf2023-writeup/tree/main/pwn/only_once
 
