@@ -279,6 +279,35 @@ io.sendline(b"cat FLAG")
 io.stream()
 ```
 
+## netcat
+
+- https://github.com/wani-hackase/wanictf2023-writeup/tree/main/pwn/netcat
+
+```python
+#!/usr/bin/env python3
+from pwn import ELF, args, context, log, process, remote
+
+context.log_level = "info"
+exe = context.binary = ELF("file/chall", checksec=False)
+if args.REMOTE:
+    io = remote("::1", 9001)
+else:
+    io = process(exe.path)
+while True:
+    line = io.recvregex(b"\n| = ").removesuffix(b"\n")
+    log.info("RECV: %s", line)
+    if b"Congrats!" in line:
+        break
+    if b" =" not in line:
+        continue
+    a, b = line.split(b" = ")[0].split(b" + ")
+    ans = int(a.strip()) + int(b.strip())
+    log.info("ANSW: %d", ans)
+    io.sendline(str(ans).encode())
+io.sendline(b"cat FLAG")
+io.stream()
+```
+
 ## only_once
 
 - https://github.com/wani-hackase/wanictf2023-writeup/tree/main/pwn/only_once
