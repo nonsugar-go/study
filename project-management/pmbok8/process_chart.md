@@ -8,7 +8,7 @@
 | Finance (財務) | N/A | - Plan Finance Management (財務マネジメントの計画)<br> - Estimate Costs (コストの見積り)<br> - Develop Budget (予算の策定) | N/A | - Monitor and Control Finances (財務の監視・コントロール)| N/A |
 | Stakeholders (ステークホルダー)| - Identify Stakeholders (ステークホルダーの特定) | - Plan Stakeholder Engagement (ステークホルダー・エンゲージメントの計画) <br> - Plan Communications Management (コミュニケーション・マネジメントの計画) | - Manage Stakeholder Engagement (ステークホルダー・エンゲージメントのマネージメント)<br> - Manage Communications (コミュニケーションのマネジメント) | - Monitor Stakeholder Engagement (ステークホルダー・エンゲージメントの監視)<br> - Monitor Communications (コミュニケーションの監視) | N/A |
 | Resources (資源) | N/A | - Plan Resource Management (資源マネジメントの計画)<br> - Estimate Resources (資源の見積り) | - Acuire Resources (資源の獲得)<br> - Lead the Team (チームのリード) | - Monitor and Control Resourcing (資源の監視・コントロール) | N/A |
-| Risk (リスク) | N/A | - Plan Risk Management(リスク・マネジメントの計画)<br> - Identify Risks (リスクの特定)<br> - Perform Risk Analysis (リスク分析の実行)<br> - Plan Risk Responses (リスク対応の計画) | - Implement Risk Responses (リスク対応の実装) | - Monitor Risks (リスクの監視) | N/A |
+| Risk (リスク) | N/A | - Plan Risk Management(リスク・マネジメントの計画)<br> - Identify Risks (リスクの特定)<br> - Perform Risk Analysis (リスク分析の実行)<br> - Plan Risk Responses (リスク対応の計画) | - Implement Risk Responses (リスク対応の実行) | - Monitor Risks (リスクの監視) | N/A |
 
 ## 7 つのパフォーマンスドメインと 40 のプロセス
 
