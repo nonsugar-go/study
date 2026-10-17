@@ -565,33 +565,37 @@ npm --version
 
 ### VSCode 拡張
 
-VSCode を起動して、以下の拡張をインストールする。
+- https://code.visualstudio.com/download
+  - `VSCodeUserSetup-x64-1.*.*.exe`
 
-- [Japanese Language Pack for Visual Studio Code (microsoft.com)](https://marketplace.visualstudio.com/items/?itemName=MS-CEINTL.vscode-language-pack-ja)
-- [Vim (vscodevim)](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-- [Remote Development (microsoft.com)](https://marketplace.visualstudio.com/items/?itemName=ms-vscode-remote.vscode-remote-extensionpack)
-- [REST Client (Huachao Mao)](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
-  - Ctrl+,: 拡張機能 > REST Client
-    - Preview Option: full → exchange
-    - Preview Response Panel Take Focus: ✅ → ☐
-- [Go (go.dev)](https://marketplace.visualstudio.com/items/?itemName=golang.Go)
-  - CTRL+SHIFT+P: Go: Install/Update Tools
-- [JSON to Go (Mario Petričko)](https://marketplace.visualstudio.com/items?itemName=maracko.json-to-go)
-- [PowerShell (microsoft.com)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
-- [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items/?itemName=shd101wyy.markdown-preview-enhanced)
-- [markdownlint](https://marketplace.visualstudio.com/items/?itemName=DavidAnson.vscode-markdownlint)
-- [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
-- [Python (microsoft.com)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [Black Formatter (microsoft.com)](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
-- [rust-analyzer (The Rust Programming Language)](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
-- [CodeLLDB (Vadim Chugunov)](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
-- [Extension Pack for Java (Microsoft)](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
-- [YAML (Red Hat)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
-  ```json
-  "yaml.schemas": {
-    "kubernetes": ["*.yml","*.yaml"]
-  }
-  ```
+- ローカル
+  - [Japanese Language Pack for Visual Studio Code (Microsoft)](https://marketplace.visualstudio.com/items/?itemName=MS-CEINTL.vscode-language-pack-ja)
+  - [Vim (vscodevim)](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+  - [Remote Development (Microsoft)](https://marketplace.visualstudio.com/items/?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+  - [Markdown Preview Enhanced (Yiyi Wang)](https://marketplace.visualstudio.com/items/?itemName=shd101wyy.markdown-preview-enhanced)
+  - [PowerShell (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
+- WSL: UBUNTU
+  - [Live Sass Compiler (Glenn Marks)](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
+  - [Python (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+  - [Black Formatter (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
+  - [Go (Go Team at Google)](https://marketplace.visualstudio.com/items/?itemName=golang.Go)
+    - CTRL+SHIFT+P: Go: Install/Update Tools
+  - [JSON to Go (Mario Petričko)](https://marketplace.visualstudio.com/items?itemName=maracko.json-to-go)
+  - [rust-analyzer (The Rust Programming Language)](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+  - [CodeLLDB (Vadim Chugunov)](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
+  - [Extension Pack for Java (Microsoft)](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+  - [YAML (Red Hat)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+    ```json
+    "yaml.schemas": {
+      "kubernetes": ["*.yml","*.yaml"]
+    }
+    ```
+  - [REST Client (Huachao Mao)](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+    - Ctrl+,: 拡張機能 > REST Client
+      - Preview Option: full → exchange
+      - Preview Response Panel Take Focus: ✅ → ☐
+
+# その他
 
 <!--
 ## sshd
@@ -609,8 +613,6 @@ sudo /etc/init.d/ssh start
 $ sudo apt install podman -y
 ```
 -->
-
-# その他
 
 ## ネットワークからの接続を許可する
 
