@@ -169,12 +169,12 @@ let g:netrw_banner = 0
 let g:netrw_winsize = 25
 
 call plug#begin()
-Plug 'mattn/vim-goimports'
-Plug 'mattn/vim-lsp-settings'
-Plug 'mattn/vim-maketable'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-goimports'
+Plug 'mattn/vim-lsp-settings'
+Plug 'mattn/vim-maketable'
 Plug 'rhysd/vim-go-impl'
 Plug 'tpope/vim-commentary'
 call plug#end()
