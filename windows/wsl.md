@@ -352,8 +352,7 @@ sudo snap install chromium firefox restfox
 ```
 
 ```zsh
-## for update
-sudo snap refresh
+sudo snap refresh  ## for update
 ```
 
 ### gobuster / hashcat 用のワードリスト
