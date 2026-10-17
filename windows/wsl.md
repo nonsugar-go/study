@@ -407,10 +407,10 @@ ln -sf ~/CTF/jadx-1.5.6/bin/jadx{,-gui} ~/CTF/bin
 - https://github.com/NationalSecurityAgency/ghidra
 
 ```zsh
-curl -LO https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.1.3_build/ghidra_12.1.3_PUBLIC_20260817.zip
-unzip ./ghidra_12.1.3_PUBLIC_20260817.zip -d ~/CTF
-rm ./ghidra_12.1.3_PUBLIC_20260817.zip
-ln -sf ~/CTF/ghidra_12.1.3_PUBLIC/ghidraRun ~/CTF/bin/ghidra
+curl -LO https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.1.4_build/ghidra_12.1.4_PUBLIC_20260921.zip
+unzip ./ghidra_12.1.4_PUBLIC_20260921.zip -d ~/CTF
+rm ./ghidra_12.1.4_PUBLIC_20260921.zip
+ln -sf ~/CTF/ghidra_12.1.4_PUBLIC/ghidraRun ~/CTF/bin/ghidra
 ```
 
 ### IDA Free
