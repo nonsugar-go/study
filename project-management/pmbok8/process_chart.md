@@ -6,86 +6,67 @@
 | Scope (スコープ) | N/A | - Plan Scope Management (スコープ・マネジメントの計画)<br> - Elicit and Analyze Requirements (要求事項の引き出しと分析)<br> - Define Scope (スコープの定義)<br> - Develop Scope Structure (スコープ構造の作成)| N/A | - Monitor and Control Scope (スコープの監視・コントロール)<br> - Validate Scope (スコープの妥当性確認) | N/A |
 | Schedule (スケジュール) | N/A | - Plan Schedule Management (スケジュール・マネジメントの計画)<br> - Develop Schedule (スケジュールの作成) | N/A | - Monitor and Control Schedule (スケジュールの監視・コントロール)| N/A |
 | Finance (財務) | N/A | - Plan Finance Management (財務マネジメントの計画)<br> - Estimate Costs (コストの見積り)<br> - Develop Budget (予算の策定) | N/A | - Monitor and Control Finances (財務の監視・コントロール)| N/A |
-| Stakeholders (ステークホルダー)| - Identify Stakeholders (ステークホルダーの特定) | - Plan Stakeholder Engagement (ステークホルダー・エンゲージメントの計画) <br> - Plan Communications Management (コミュニケーション・マネジメントの計画) | - Manage Stakeholder Engagement (ステークホルダー・エンゲージメントのマネージメント)<br> - Manage Communications (コミュニケーションのマネジメント) | - Monitor Stakeholder Engagement (ステークホルダー・エンゲージメントの監視)<br> - Monitor Communications (コミュニケーションの監視) | N/A |
+| Stakeholders (ステークホルダー) | - Identify Stakeholders (ステークホルダーの特定) | - Plan Stakeholder Engagement (ステークホルダー・エンゲージメントの計画) <br> - Plan Communications Management (コミュニケーション・マネジメントの計画) | - Manage Stakeholder Engagement (ステークホルダー・エンゲージメントのマネージメント)<br> - Manage Communications (コミュニケーションのマネジメント) | - Monitor Stakeholder Engagement (ステークホルダー・エンゲージメントの監視)<br> - Monitor Communications (コミュニケーションの監視) | N/A |
 | Resources (資源) | N/A | - Plan Resource Management (資源マネジメントの計画)<br> - Estimate Resources (資源の見積り) | - Acuire Resources (資源の獲得)<br> - Lead the Team (チームのリード) | - Monitor and Control Resourcing (資源の監視・コントロール) | N/A |
 | Risk (リスク) | N/A | - Plan Risk Management(リスク・マネジメントの計画)<br> - Identify Risks (リスクの特定)<br> - Perform Risk Analysis (リスク分析の実行)<br> - Plan Risk Responses (リスク対応の計画) | - Implement Risk Responses (リスク対応の実行) | - Monitor Risks (リスクの監視) | N/A |
 
-## 7 つのパフォーマンスドメインと 40 のプロセス
+## 主要アウトプット
 
-### Initiating Focus Area
+### Governance (ガバナンス)
 
-#### Governance
+- プロジェクト憲章
+- 前提条件ログ
+- プロジェクトマネジメント計画書
+- 作業パフォーマンス報告書
+- 変更ログ
+- 教訓登録簿
 
-- Initiate Project or Phase
+### Scope (スコープ)
 
-#### Stakeholders
+- 要求事項文書
+- プロジェクト・スコープ記述書
+- WBS と WBS辞書
+- プロダクト・バックログ (適応型)
 
-- Identify Stakeholders
+### Schedule (スケジュール)
 
-### Planning Focus Area
+- プロジェクト・スケジュール
+- スケジュール・ベースライン
+- スケジュール・データ
+- プロジェクト・カレンダー
+- スケジュール予測
 
-#### Governance
+### Finance (財務)
 
-- Integrate and Align Project Plans
-- Plan Sourcing Strategy
+- 資金調達戦略
+- コスト見積り
+- 見積りの根拠
+- コスト・ベースライン
+- プロジェクト資金要求事項
+- 収益およびコスト予測
 
-#### Scope
+### Stakeholders (ステークホルダー)
 
-- Plan Scope Management
-- Elicit and Analyze Requirements
-- Define Scope
-- Develop Scope Structure
+- ステークホルダー登録簿
+- ステークホルダー・エンゲージメント計画書
+- コミュニケーション・マネジメント計画書
+- プロジェクト伝達事項
 
-#### Schedule
+### Resources (資源)
 
-#### Finance
+- 資源マネジメント計画書
+- チーム検証
+- 資源要求事項
+- 見積りの根拠
+- 資源ブレークダウン・ストラクチャ (RBS)
+- 物理・バーチャル資源割当て
+- プロジェクト・チームの任命
+- 資源カレンダー
+- チームのパフォーマンス評価
+- 作業パフォーマンス情報
 
-#### Stakeholders
+### Risk (リスク)
 
-#### Resources
-
-#### Risk
-
-### Executing Focus Area
-
-#### Governance
-
-- Manage Project Execution
-- Manage Quality Assurance
-- Manage Project Knowledge
-
-#### Stakeholders
-
-#### Resources
-
-#### Risk
-
-### Monitoring and Controlling Focus Area
-
-#### Governance
-
-- Monitor and Control Project Performance
-- Assess and Implement Changes
-
-#### Scope
-
-- Plan Scope Management
-- Elicit and Analyze Requirements
-- Define Scope
-- Develop Scope Structure
-
-#### Schedule
-
-#### Finance
-
-#### Stakeholders
-
-#### Resources
-
-#### Risk
-
-### Closing Focus Area
-
-#### Governance
-
-- Close Project or Phase
+- リスク・マネジメント計画書
+- リスク登録簿
+- リスク報告書
