@@ -16,7 +16,7 @@
 
 - Project Charter (プロジェクト憲章)
 - Assumption Log (前提条件ログ)
-- プロジェクトマネジメント計画書
+- Project Management Plan (プロジェクトマネジメント計画書)
 - Work Performance Report (作業パフォーマンス報告書)
 - Change Log (変更ログ)
 - Lessons Learned Register (教訓登録簿)
