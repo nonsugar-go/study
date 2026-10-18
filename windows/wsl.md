@@ -157,7 +157,11 @@ mkdir -p ~/.config/nvim
 set number
 set colorcolumn=80
 set scrolloff=5
-tnoremap <C-w><C-w> <C-\><C-n><C-w>w
+nn <C-\> :bel sp<BAR>te<CR>
+tno <C-W><C-W> <C-\><C-N><C-W>w
+tno <C-W><C-P> <C-\><C-N><C-W>p
+let g:netrw_banner = 0
+let g:netrw_winsize = 20
 au BufReadPost *
   \ if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 aug AutoLexplore
@@ -165,8 +169,6 @@ aug AutoLexplore
   au VimEnter * if isdirectory(expand('%')) |
     \ execute 'Lexplore ' . fnameescape(expand('%')) | endif
 aug END
-let g:netrw_banner = 0
-let g:netrw_winsize = 25
 
 call plug#begin()
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
