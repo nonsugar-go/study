@@ -157,9 +157,21 @@ mkdir -p ~/.config/nvim
 set number
 set colorcolumn=80
 set scrolloff=5
-nn <C-\> :bel sp<BAR>te<CR>
-tno <C-W><C-W> <C-\><C-N><C-W>w
-tno <C-W><C-P> <C-\><C-N><C-W>p
+fu! s:toggle_terminal()
+  for i in range(1, winnr('$'))
+    if getbufvar(winbufnr(i), '&buftype') ==# 'terminal'
+      exe i . 'winc w'
+      star
+      retu
+    end
+  endfo
+  bel sp | te
+  star
+endf
+nn <silent> <C-\> :call <SID>toggle_terminal()<CR>
+tno <silent> <C-\> <C-\><C-N><C-W>k
+tno <silent> <C-W><C-W> <C-\><C-N><C-W>w
+tno <silent> <C-W><C-P> <C-\><C-N><C-W>p
 let g:netrw_banner = 0
 let g:netrw_winsize = 20
 au BufReadPost *
@@ -232,7 +244,7 @@ aug filetype_go
   au FileType go inoremap <F5> <Esc>:w<CR>:!go run %:S<CR>
   au FileType go ia iferr if err != nil {<CR>return nil, err<CR>}
   au FileType go ia
-    \ pkgm //go:build ignore<CR><CR>package main<CR><CR>func main() {<CR>}<C-o>O
+    \ pkgm //go:build ignore<CR><CR>package main<CR><CR>func main() {<CR>}<C-O>O
 aug END
 
 aug filetype_rust
