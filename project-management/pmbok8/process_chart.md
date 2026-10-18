@@ -14,7 +14,7 @@
 
 ### Governance (ガバナンス)
 
-- プロジェクト憲章
+- プロジェクト憲章 (Project Charter)
 - 前提条件ログ
 - プロジェクトマネジメント計画書
 - 作業パフォーマンス報告書
@@ -25,7 +25,8 @@
 
 - 要求事項文書
 - プロジェクト・スコープ記述書
-- WBS と WBS辞書
+- WBS (Work_Breakdown_Structure)
+- WBS辞書 (WBS Dictionary)
 - プロダクト・バックログ (適応型)
 
 ### Schedule (スケジュール)
@@ -48,14 +49,14 @@
 ### Stakeholders (ステークホルダー)
 
 - ステークホルダー登録簿
-- ステークホルダー・エンゲージメント計画書
+- ステークホルダー・エンゲージメント計画書 (Stakeholder Engagement Plan)
 - コミュニケーション・マネジメント計画書
 - プロジェクト伝達事項
 
 ### Resources (資源)
 
-- 資源マネジメント計画書
-- チーム検証
+- 資源マネジメント計画書 (Resource Management Plan)
+- チーム検証 (Team Charter)
 - 資源要求事項
 - 見積りの根拠
 - 資源ブレークダウン・ストラクチャ (RBS)
