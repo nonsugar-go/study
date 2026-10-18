@@ -14,60 +14,60 @@
 
 ### Governance (ガバナンス)
 
-- プロジェクト憲章 (Project Charter)
-- 前提条件ログ
+- Project Charter (プロジェクト憲章)
+- Assumption Log (前提条件ログ)
 - プロジェクトマネジメント計画書
-- 作業パフォーマンス報告書
-- 変更ログ
-- 教訓登録簿
+- Work Performance Report (作業パフォーマンス報告書)
+- Change Log (変更ログ)
+- Lessons Learned Register (教訓登録簿)
 
 ### Scope (スコープ)
 
-- 要求事項文書
-- プロジェクト・スコープ記述書
-- WBS (Work_Breakdown_Structure)
-- WBS辞書 (WBS Dictionary)
+- Requirements Documentation (要求事項文書)
+- Project Scope_Statement (プロジェクト・スコープ記述書)
+- Work Breakdown Structure (WBS)
+- WBS Dictionary (WBS辞書)
 - プロダクト・バックログ (適応型)
 
 ### Schedule (スケジュール)
 
-- プロジェクト・スケジュール
-- スケジュール・ベースライン
+- Project Schedule (プロジェクト・スケジュール)
+- Schedule Baseline (スケジュール・ベースライン)
 - スケジュール・データ
-- プロジェクト・カレンダー
+- Project Calendar (プロジェクト・カレンダー)
 - スケジュール予測
 
 ### Finance (財務)
 
-- 資金調達戦略
+- Funding Strategy (資金調達戦略)
 - コスト見積り
-- 見積りの根拠
-- コスト・ベースライン
-- プロジェクト資金要求事項
+- Basis of Estimates (見積りの根拠)
+- Cost Baseline (コスト・ベースライン)
+- Project Funding Requirements (プロジェクト資金要求事項)
 - 収益およびコスト予測
 
 ### Stakeholders (ステークホルダー)
 
-- ステークホルダー登録簿
-- ステークホルダー・エンゲージメント計画書 (Stakeholder Engagement Plan)
-- コミュニケーション・マネジメント計画書
+- Stakeholder Register (ステークホルダー登録簿)
+- Stakeholder Engagement Plan (ステークホルダー・エンゲージメント計画書)
+- Communication Management Plan (コミュニケーション・マネジメント計画書)
 - プロジェクト伝達事項
 
 ### Resources (資源)
 
-- 資源マネジメント計画書 (Resource Management Plan)
-- チーム検証 (Team Charter)
-- 資源要求事項
-- 見積りの根拠
-- 資源ブレークダウン・ストラクチャ (RBS)
+- Resource Management Plan (資源マネジメント計画書)
+- Team Charter (チーム憲章)
+- Resource Requirements (資源要求事項)
+- Resource Basis of Estimates (見積りの根拠)
+- Resource Breakdown Structure (資源ブレークダウン・ストラクチャ / RBS)
 - 物理・バーチャル資源割当て
 - プロジェクト・チームの任命
 - 資源カレンダー
-- チームのパフォーマンス評価
-- 作業パフォーマンス情報
+- Team Performance Assessment (チームのパフォーマンス評価)
+- Work Performance Information (作業パフォーマンス情報)
 
 ### Risk (リスク)
 
-- リスク・マネジメント計画書
-- リスク登録簿
+- Risk Management Plan (リスク・マネジメント計画書)
+- Risk Register (リスク登録簿)
 - リスク報告書
