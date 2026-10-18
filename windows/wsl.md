@@ -165,7 +165,7 @@ fu! s:toggle_terminal()
       retu
     end
   endfo
-  bel sp | te
+  bel 5sp | te
   star
 endf
 nn <silent> <C-\> :call <SID>toggle_terminal()<CR>
