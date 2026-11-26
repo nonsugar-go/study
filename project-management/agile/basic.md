@@ -1,13 +1,47 @@
 # Agile
+
+## アジャイル・マニフェスト (Agile Manifesto)
+
+### アジャイル・マニフェストの4つの価値
+
+- プロセスやツール < 個々と対話
+- 包括的なドキュメント < 動作するソフトウェア
+- 契約交渉 < 顧客とのコラボレーション
+- 計画に従順 < 変更への対応
+
+### アジャイル12の原則 (Twelve Principles of Agile Software)
+
+- 顧客満足度
+  1. 早期かつ継続的に納品することを優先して顧客を満足させること
+  2. 開発のあらゆる段階で変更を歓迎すること
+  3. 動作中のソフトウェアを頻繁に納品すること
+- 品質
+  4. 動くソフトウェアこそが進捗で最も重要視されること
+  5. 技術的に優れ柔軟性と拡張性がある設計に注意すること
+  6. シンプルさを求め、ムダなく作れる量を最大限にすることが本質であること
+- チームワーク
+  7. ビジネス側と開発者は日々一緒に働くこと
+  8. 意欲に満ちた人々でプロジェクトを構成し信頼すること
+  9. もっとも効果的なフェイス・トゥ・フェイスで話すこと
+- プロジェクト管理
+  10. 持続可能で一定のペースを継続的に維持できるようにすること
+  11. 最良のアーキテクチャ・要求・設計のために、自己組織的なチーム作りをすること
+  12. チームがもっと効率を高めることができるかを定期的に振り返り、やり方を最適に調整していくこと
+
 ## Manifesto for Agile Software Development - アジャイルソフトウェア開発宣言
+
 - https://agilemanifesto.org/
 - https://agilemanifesto.org/iso/ja/manifesto.html
+
 ### Agile Manifesto Values
+
 - Individuals and interactions over processes and tools / プロセスやツールよりも個人と対話を、
 - Working software over comprehensive documentation / 包括的なドキュメントよりも動くソフトウェアを、
 - Customer collaboration over contract negotiation / 契約交渉よりも顧客との協調を、
 - Responding to change over following a plan / 計画に従うことよりも変化への対応を、
+
 ### Twelve Principles of Agile Software - アジャイルソフトウェアの12の原則
+
 - https://agilemanifesto.org/principles.html
 - https://agilemanifesto.org/iso/ja/principles.html
 
@@ -86,7 +120,9 @@ its behavior accordingly.
 /
 チームがもっと効率を高めることができるかを定期的に振り返り、
 それに基づいて自分たちのやり方を最適に調整します。
+
 # Agile Terms
+
 - https://enlyt.co.jp/blog/agile/
 - https://abi-agile.com/retrospective/
 
