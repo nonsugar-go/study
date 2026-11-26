@@ -125,7 +125,6 @@ its behavior accordingly.
 
 - https://enlyt.co.jp/blog/agile/
 - https://abi-agile.com/retrospective/
-
 - Product Owner
 - Agile Project Manager/Scram Master
 - Product Backlog
